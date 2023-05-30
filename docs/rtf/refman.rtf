@@ -1,0 +1,1769 @@
+{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment AntestL Backend  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0.0 \par
+}}AntestL Backend}
+{\comment \'D1\'EE\'E7\'E4\'E0\'ED\'EE \'F1\'E8\'F1\'F2\'E5\'EC\'EE\'E9 doxygen 1.9.7.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt AntestL Backend}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+\'C2\'E5\'F0\'F1\'E8\'FF 1.0.0\par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'CE\'E3\'EB\'E0\'E2\'EB\'E5\'ED\'E8\'E5\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'F1\'F2\'F0\'F3\'EA\'F2\'F3\'F0 \'E4\'E0\'ED\'ED\'FB\'F5\par \pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'F1\'F2\'F0\'F3\'EA\'F2\'F3\'F0 \'E4\'E0\'ED\'ED\'FB\'F5}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D1\'F2\'F0\'F3\'EA\'F2\'F3\'F0\'FB \'E4\'E0\'ED\'ED\'FB\'F5\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'D1\'F2\'F0\'F3\'EA\'F2\'F3\'F0\'FB \'E4\'E0\'ED\'ED\'FB\'F5 \'F1 \'E8\'F5 \'EA\'F0\'E0\'F2\'EA\'E8\'EC \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Logger} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TcpServer} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2\par \pard\plain 
+{\tc \v \'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b src/{\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/socket/{\b server.hpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b src/utils/{\b logger.hpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D1\'F2\'F0\'F3\'EA\'F2\'F3\'F0\'FB \'E4\'E0\'ED\'ED\'FB\'F5{\tc \v \'D1\'F2\'F0\'F3\'EA\'F2\'F3\'F0\'FB \'E4\'E0\'ED\'ED\'FB\'F5}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 Logger\par \pard\plain 
+{\tc\tcl2 \v Logger}
+{\xe \v Logger}
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+\par
+{
+{\f2 #include <logger.hpp>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F1\'F2\'E0\'F2\'E8\'F7\'E5\'F1\'EA\'E8\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b init} (int level)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b log} (int level, const std::string &message)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'C7\'E0\'EA\'F0\'FB\'F2\'FB\'E5 \'F1\'F2\'E0\'F2\'E8\'F7\'E5\'F1\'EA\'E8\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static std::string {\b get_current_time} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b print_to_console} (const std::string &message)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'C7\'E0\'EA\'F0\'FB\'F2\'FB\'E5 \'F1\'F2\'E0\'F2\'E8\'F7\'E5\'F1\'EA\'E8\'E5 \'E4\'E0\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static int {\b log_level}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 20}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v get_current_time\:Logger}
+{\xe \v Logger\:get_current_time}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static std::string Logger::get_current_time (){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 23}}\par
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'E0 \'F4\'F3\'ED\'EA\'F6\'E8\'E8:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_logger_ad1ed4aec03676a821f148f7bcaf00ec3_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v print_to_console\:Logger}
+{\xe \v Logger\:print_to_console}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void Logger::print_to_console (const std::string &  {\i message}){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 47}}\par
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'E0 \'F4\'F3\'ED\'EA\'F6\'E8\'E8:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_logger_a4825613142ebb093bf8fa26f21f7f3fc_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v init\:Logger}
+{\xe \v Logger\:init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void Logger::init (int  {\i level}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 52}}\par
+}
+{\xe \v log\:Logger}
+{\xe \v Logger\:log}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void Logger::log (int  {\i level}, const std::string &  {\i message}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 56}}\par
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'EE\'E2:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_logger_af7709105c2708359b7b082218f4cc3e1_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'E0 \'F4\'F3\'ED\'EA\'F6\'E8\'E8:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_logger_af7709105c2708359b7b082218f4cc3e1_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'EB\'FF\par
+\pard\plain 
+{\xe \v log_level\:Logger}
+{\xe \v Logger\:log_level}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Logger::log_level{\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 21}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'E0 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E5:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/utils/{\b logger.hpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 TcpServer\par \pard\plain 
+{\tc\tcl2 \v TcpServer}
+{\xe \v TcpServer}
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+\par
+{
+{\f2 #include <server.hpp>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TcpServer} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TcpServer} (unsigned short {\b port})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TcpServer} (unsigned long {\b address}, unsigned short {\b port})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b set_termination} (std::string term)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b create} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b wait_client} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b is_exist} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b read_data} (std::string &data)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b send_data} (std::string data)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'C7\'E0\'EA\'F0\'FB\'F2\'FB\'E5 \'E4\'E0\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKET {\b server} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKET {\b client} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKADDR_IN {\b server_address} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKADDR_IN {\b client_address} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned long {\b address}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned short {\b port}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b termination}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+WSADATA {\b WSAData} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b exist} = false\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 33}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v TcpServer\:TcpServer}
+{\xe \v TcpServer\:TcpServer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TcpServer::TcpServer ()}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 47}}\par
+}
+{\xe \v TcpServer\:TcpServer}
+{\xe \v TcpServer\:TcpServer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TcpServer::TcpServer (unsigned short  {\i port}){\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 54}}\par
+}
+{\xe \v TcpServer\:TcpServer}
+{\xe \v TcpServer\:TcpServer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TcpServer::TcpServer (unsigned long  {\i address}, unsigned short  {\i port})}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 61}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v set_termination\:TcpServer}
+{\xe \v TcpServer\:set_termination}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void TcpServer::set_termination (std::string  {\i term})}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 68}}\par
+}
+{\xe \v create\:TcpServer}
+{\xe \v TcpServer\:create}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int TcpServer::create ()}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 72}}\par
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'EE\'E2:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_tcp_server_aec9080ff53118e76729a0ef0e7f41574_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v wait_client\:TcpServer}
+{\xe \v TcpServer\:wait_client}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int TcpServer::wait_client ()}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 102}}\par
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'EE\'E2:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_tcp_server_af23614d55cb80204c789e338878c5cc7_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v is_exist\:TcpServer}
+{\xe \v TcpServer\:is_exist}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool TcpServer::is_exist ()}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 126}}\par
+}
+{\xe \v read_data\:TcpServer}
+{\xe \v TcpServer\:read_data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int TcpServer::read_data (std::string &  {\i data})}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 130}}\par
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'EE\'E2:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_tcp_server_a166f47de7f0428b3f6f3844f890d305e_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v send_data\:TcpServer}
+{\xe \v TcpServer\:send_data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int TcpServer::send_data (std::string  {\i data})}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 164}}\par
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'EE\'E2:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_tcp_server_aefca8a50ccda35f8939062f7441a4149_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'EB\'FF\par
+\pard\plain 
+{\xe \v server\:TcpServer}
+{\xe \v TcpServer\:server}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKET TcpServer::server \{\}{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 34}}\par
+}
+{\xe \v client\:TcpServer}
+{\xe \v TcpServer\:client}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKET TcpServer::client \{\}{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 34}}\par
+}
+{\xe \v server_address\:TcpServer}
+{\xe \v TcpServer\:server_address}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKADDR_IN TcpServer::server_address \{\}{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 35}}\par
+}
+{\xe \v client_address\:TcpServer}
+{\xe \v TcpServer\:client_address}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKADDR_IN TcpServer::client_address \{\}{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 35}}\par
+}
+{\xe \v address\:TcpServer}
+{\xe \v TcpServer\:address}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned long TcpServer::address{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 37}}\par
+}
+{\xe \v port\:TcpServer}
+{\xe \v TcpServer\:port}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned short TcpServer::port{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 38}}\par
+}
+{\xe \v termination\:TcpServer}
+{\xe \v TcpServer\:termination}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string TcpServer::termination{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 40}}\par
+}
+{\xe \v WSAData\:TcpServer}
+{\xe \v TcpServer\:WSAData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+WSADATA TcpServer::WSAData \{\}{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 42}}\par
+}
+{\xe \v exist\:TcpServer}
+{\xe \v TcpServer\:exist}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool TcpServer::exist = false{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 44}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'E0 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E5:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+src/socket/{\b server.hpp}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D4\'E0\'E9\'EB\'FB{\tc \v \'D4\'E0\'E9\'EB\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB src/main.cpp\par \pard\plain 
+{\tc\tcl2 \v src/main.cpp}
+{\xe \v src/main.cpp}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <visa.h>}\par
+{\f2 #include <cstdio>}\par
+{\f2 #include <cstring>}\par
+{\f2 #include <winsock2.h>}\par
+{\f2 #include "socket/server.hpp"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'EC\'FB\'F5 \'E7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2 \'E4\'EB\'FF main.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E0\'EA\'F0\'EE\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_CNT}\~ 200\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+DWORD WINAPI {\b serverReceive} (LPVOID lpParam)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+DWORD WINAPI {\b serverSend} (LPVOID lpParam)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b prepare} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} (int argc, char *argv[])\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+WSADATA {\b WSAData}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKET {\b server}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKET {\b client}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKADDR_IN {\b serverAddr}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKADDR_IN {\b clientAddr}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E0\'EA\'F0\'EE\'F1\'FB\par
+\pard\plain 
+{\xe \v MAX_CNT\:main.cpp}
+{\xe \v main.cpp\:MAX_CNT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_CNT\~ 200}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 9}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v serverReceive\:main.cpp}
+{\xe \v main.cpp\:serverReceive}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DWORD WINAPI serverReceive (LPVOID  {\i lpParam})}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 17}}\par
+}
+{\xe \v serverSend\:main.cpp}
+{\xe \v main.cpp\:serverSend}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DWORD WINAPI serverSend (LPVOID  {\i lpParam})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 36}}\par
+}
+{\xe \v prepare\:main.cpp}
+{\xe \v main.cpp\:prepare}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int prepare ()}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 53}}\par
+}
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main (int  {\i argc}, char *  {\i argv}[])}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+ViStatus status; ViSession defaultRM, instr; ViPUInt32 retCount; ViPBuf buffer[MAX_CNT];\par
+status = viOpenDefaultRM(&defaultRM);\par
+if (status < VI_SUCCESS) return -1;\par
+status = viOpen( defaultRM, "TCPIP0::K-N9020B-11111::5025::SOCKET", VI_NULL, VI_NULL, &instr);\par
+status = viSetAttribute(instr, VI_ATTR_TMO_VALUE, 5000);\par
+status = viWrite(instr, reinterpret_cast<ViConstBuf>("*IDN?\\n"), 6, reinterpret_cast<ViPUInt32>(&retCount)); status = viRead(instr, reinterpret_cast<ViPBuf>(buffer), MAX_CNT, reinterpret_cast<ViPUInt32>(&retCount));\par
+printf("%s", buffer);\par
+status = viClose(instr); status = viClose(defaultRM);\par
+WSADATA WSAData; //\'C4\'E0\'ED\'ED\'FB\'E5 SOCKET server, client; //\'D1\'EE\'EA\'E5\'F2\'FB \'F1\'E5\'F0\'E2\'E5\'F0\'E0 \'E8 \'EA\'EB\'E8\'E5\'ED\'F2\'E0 SOCKADDR_IN serverAddr, clientAddr; //\'C0\'E4\'F0\'E5\'F1\'E0 \'F1\'EE\'EA\'E5\'F2\'EE\'E2 WSAStartup(MAKEWORD(2, 0), &WSAData); server = socket(AF_INET, SOCK_STREAM, 0); //\'D1\'EE\'E7\'E4\'E0\'EB\'E8 \'F1\'E5\'F0\'E2\'E5\'F0 if (server == INVALID_SOCKET) \{ cout << "Socket creation failed with error:" << WSAGetLastError() << endl; return -1; \} serverAddr.sin_addr.s_addr = INADDR_ANY; serverAddr.sin_family = AF_INET; serverAddr.sin_port = htons(5555); if (bind(server, (SOCKADDR*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) \{ cout << "Bind function failed with error: " << WSAGetLastError() << endl; return -1; \}\par
+if (listen(server, 0) == SOCKET_ERROR) \{ //\'C5\'F1\'EB\'E8 \'ED\'E5 \'F3\'E4\'E0\'EB\'EE\'F1\'FC \'EF\'EE\'EB\'F3\'F7\'E8\'F2\'FC \'E7\'E0\'EF\'F0\'EE\'F1 cout << "Listen function failed with error:" << WSAGetLastError() << endl; return -1; \} cout << "Listening for incoming connections...." << endl;\par
+char buffer[1024]; //\'D1\'EE\'E7\'E4\'E0\'F2\'FC \'E1\'F3\'F4\'E5\'F0 \'E4\'EB\'FF \'E4\'E0\'ED\'ED\'FB\'F5 int clientAddrSize = sizeof(clientAddr); //\'C8\'ED\'E8\'F6\'E8\'E0\'EB\'E8\'E7\'E8\'F0\'EE\'E2\'E0\'F2\'FC \'E0\'E4\'E5\'F0\'F1 \'EA\'EB\'E8\'E5\'ED\'F2\'E0 if ((client = accept(server, (SOCKADDR*)&clientAddr, &clientAddrSize)) != INVALID_SOCKET) \{ \'C5\'F1\'EB\'E8 \'F1\'EE\'E5\'E4\'E8\'ED\'E5\'ED\'E8\'E5 \'F3\'F1\'F2\'E0\'ED\'EE\'E2\'EB\'E5\'ED\'EE cout << "Client connected!" << endl; cout << "Now you can use our live chat application. " << "Enter \\"exit\\" to disconnect" << endl;\par
+DWORD tid; //\'C8\'E4\'E5\'ED\'F2\'E8\'F4\'E8\'EA\'E0\'F2\'EE\'F0 HANDLE t1 = CreateThread(NULL, 0, serverReceive, &client, 0, &tid); //\'D1\'EE\'E7\'E4\'E0\'ED\'E8\'E5 \'EF\'EE\'F2\'EE\'EA\'E0 \'E4\'EB\'FF \'EF\'EE\'EB\'F3\'F7\'E5\'ED\'E8\'FF \'E4\'E0\'ED\'ED\'FB\'F5 if (t1 == NULL) \{ //\'CE\'F8\'E8\'E1\'EA\'E0 \'F1\'EE\'E7\'E4\'E0\'ED\'E8\'FF \'EF\'EE\'F2\'EE\'EA\'E0 cout << "Thread Creation Error: " << WSAGetLastError() << endl; \} HANDLE t2 = CreateThread(NULL, 0, serverSend, &client, 0, &tid); //\'D1\'EE\'E7\'E4\'E0\'ED\'E8\'E5 \'EF\'EE\'F2\'EE\'EA\'E0 \'E4\'EB\'FF \'EE\'F2\'EF\'F0\'E0\'E2\'EA\'E8 \'E4\'E0\'ED\'ED\'FB\'F5 if (t2 == NULL) \{ cout << "Thread Creation Error: " << WSAGetLastError() << endl; \}\par
+WaitForSingleObject(t1, INFINITE); WaitForSingleObject(t2, INFINITE);\par
+closesocket(client); //\'C7\'E0\'EA\'F0\'FB\'F2\'FC \'F1\'EE\'EA\'E5\'F2 if (closesocket(server) == SOCKET_ERROR) \{ //\'CE\'F8\'E8\'E1\'EA\'E0 \'E7\'E0\'EA\'F0\'FB\'F2\'E8\'FF \'F1\'EE\'EA\'E5\'F2\'E0 cout << "Close socket failed with error: " << WSAGetLastError() << endl; return -1; \} WSACleanup(); \}\par
+}{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 69}}\par
+\'C3\'F0\'E0\'F4 \'E2\'FB\'E7\'EE\'E2\'EE\'E2:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+{\xe \v WSAData\:main.cpp}
+{\xe \v main.cpp\:WSAData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+WSADATA WSAData}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 13}}\par
+}
+{\xe \v server\:main.cpp}
+{\xe \v main.cpp\:server}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKET server}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 14}}\par
+}
+{\xe \v client\:main.cpp}
+{\xe \v main.cpp\:client}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKET client}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 14}}\par
+}
+{\xe \v serverAddr\:main.cpp}
+{\xe \v main.cpp\:serverAddr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKADDR_IN serverAddr}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 15}}\par
+}
+{\xe \v clientAddr\:main.cpp}
+{\xe \v main.cpp\:clientAddr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKADDR_IN clientAddr}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b main.cpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 15}}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.cpp\par \pard\plain 
+{\tc\tcl2 \v src/main.cpp}
+{\xe \v src/main.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+\'D1\'EC. \'E4\'EE\'EA\'F3\'EC\'E5\'ED\'F2\'E0\'F6\'E8\'FE.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf21 #include <iostream>}\par
+00002 {\cf21 #include <visa.h>}\par
+00003 {\cf21 #include <iostream>}\par
+00004 {\cf21 #include <cstdio>}\par
+00005 {\cf21 #include <cstring>}\par
+00006 {\cf21 #include <winsock2.h>}\par
+00007 {\cf21 #include "socket/server.hpp"}\par
+00008 \par
+00009 {\cf21 #define MAX_CNT 200}\par
+00010 \par
+00011 {\cf17 using namespace }std;\par
+00012 \par
+00013 WSADATA WSAData; {\cf20 //\'C4\'E0\'ED\'ED\'FB\'E5}\par
+00014 SOCKET server, client; {\cf20 //\'D1\'EE\'EA\'E5\'F2\'FB \'F1\'E5\'F0\'E2\'E5\'F0\'E0 \'E8 \'EA\'EB\'E8\'E5\'ED\'F2\'E0}\par
+00015 SOCKADDR_IN serverAddr, clientAddr; {\cf20 //\'C0\'E4\'F0\'E5\'F1\'E0 \'F1\'EE\'EA\'E5\'F2\'EE\'E2}\par
+00016 \par
+00017 DWORD WINAPI serverReceive(LPVOID lpParam) \{ {\cf20 //\'CF\'EE\'EB\'F3\'F7\'E5\'ED\'E8\'E5 \'E4\'E0\'ED\'ED\'FB\'F5 \'EE\'F2 \'EA\'EB\'E8\'E5\'ED\'F2\'E0}\par
+00018     {\cf18 char} buffer[1024] = \{ 0 \}; {\cf20 //\'C1\'F3\'F4\'E5\'F0 \'E4\'EB\'FF \'E4\'E0\'ED\'ED\'FB\'F5}\par
+00019     SOCKET client = *(SOCKET*)lpParam; {\cf20 //\'D1\'EE\'EA\'E5\'F2 \'E4\'EB\'FF \'EA\'EB\'E8\'E5\'ED\'F2\'E0}\par
+00020     {\cf19 while} ({\cf17 true}) \{ {\cf20 //\'D6\'E8\'EA\'EB \'F0\'E0\'E1\'EE\'F2\'FB \'F1\'E5\'F0\'E2\'E5\'F0\'E0}\par
+00021         {\cf19 if} (recv(client, buffer, {\cf17 sizeof}(buffer), 0) == SOCKET_ERROR) \{\par
+00022             {\cf20 //\'C5\'F1\'EB\'E8 \'ED\'E5 \'F3\'E4\'E0\'EB\'EE\'F1\'FC \'EF\'EE\'EB\'F3\'F7\'E8\'F2\'FC \'E4\'E0\'ED\'ED\'FB\'E5 \'E1\'F3\'F4\'E5\'F0\'E0, \'F1\'EE\'EE\'E1\'F9\'E8\'F2\'FC \'EE\'E1 \'EE\'F8\'E8\'E1\'EA\'E5 \'E8 \'E2\'FB\'E9\'F2\'E8}\par
+00023             cout << {\cf22 "recv function failed with error "} << WSAGetLastError() << endl;\par
+00024             {\cf19 return} -1;\par
+00025         \}\par
+00026         {\cf19 if} (strcmp(buffer, {\cf22 "exit\\n"}) == 0) \{ {\cf20 //\'C5\'F1\'EB\'E8 \'EA\'EB\'E8\'E5\'ED\'F2 \'EE\'F2\'F1\'EE\'E5\'E4\'E8\'ED\'E8\'EB\'F1\'FF}\par
+00027             cout << {\cf22 "Client Disconnected."} << endl;\par
+00028             {\cf19 break};\par
+00029         \}\par
+00030         cout << {\cf22 "Client: "} << buffer << endl; {\cf20 //\'C8\'ED\'E0\'F7\'E5 \'E2\'FB\'E2\'E5\'F1\'F2\'E8 \'F1\'EE\'EE\'E1\'F9\'E5\'ED\'E8\'E5 \'EE\'F2 \'EA\'EB\'E8\'E5\'ED\'F2\'E0 \'E8\'E7 \'E1\'F3\'F4\'E5\'F0\'E0}\par
+00031         memset(buffer, 0, {\cf17 sizeof}(buffer)); {\cf20 //\'CE\'F7\'E8\'F1\'F2\'E8\'F2\'FC \'E1\'F3\'F4\'E5\'F0}\par
+00032     \}\par
+00033     {\cf19 return} 1;\par
+00034 \}\par
+00035 \par
+00036 DWORD WINAPI serverSend(LPVOID lpParam) \{ {\cf20 //\'CE\'F2\'EF\'F0\'E0\'E2\'EA\'E0 \'E4\'E0\'ED\'ED\'FB\'F5 \'EA\'EB\'E8\'E5\'ED\'F2\'F3}\par
+00037     {\cf18 char} buffer[1024] = \{ 0 \};\par
+00038     SOCKET client = *(SOCKET*)lpParam;\par
+00039     {\cf19 while} ({\cf17 true}) \{\par
+00040         fgets(buffer, 1024, stdin);\par
+00041         {\cf19 if} (send(client, buffer, {\cf17 sizeof}(buffer), 0) == SOCKET_ERROR) \{\par
+00042             cout << {\cf22 "send failed with error "} << WSAGetLastError() << endl;\par
+00043             {\cf19 return} -1;\par
+00044         \}\par
+00045         {\cf19 if} (strcmp(buffer, {\cf22 "exit\\n"}) == 0) \{\par
+00046             cout << {\cf22 "Thank you for using the application"} << endl;\par
+00047             {\cf19 break};\par
+00048         \}\par
+00049     \}\par
+00050     {\cf19 return} 1;\par
+00051 \}\par
+00052 \par
+00053 {\cf18 int} prepare() \{\par
+00054     WSAStartup(MAKEWORD(2, 0), &WSAData);\par
+00055     server = socket(AF_INET, SOCK_STREAM, 0); {\cf20 //\'D1\'EE\'E7\'E4\'E0\'EB\'E8 \'F1\'E5\'F0\'E2\'E5\'F0}\par
+00056     {\cf19 if} (server == INVALID_SOCKET) \{\par
+00057         cout << {\cf22 "Socket creation failed with error:"} << WSAGetLastError() << endl;\par
+00058         {\cf19 return} -1;\par
+00059     \}\par
+00060     serverAddr.sin_addr.s_addr = INADDR_ANY;\par
+00061     serverAddr.sin_family = AF_INET;\par
+00062     serverAddr.sin_port = htons(5555);\par
+00063     {\cf19 if} (bind(server, (SOCKADDR*)&serverAddr, {\cf17 sizeof}(serverAddr)) == SOCKET_ERROR) \{\par
+00064         cout << {\cf22 "Bind function failed with error: "} << WSAGetLastError() << endl;\par
+00065         {\cf19 return} -1;\par
+00066     \}\par
+00067 \}\par
+00068 \par
+00069 {\cf18 int} main({\cf18 int} argc, {\cf18 char}* argv[]) \{\par
+00148     TcpServer server(5555);\par
+00149     server.create();\par
+00150     server.wait_client();\par
+00151 \par
+00152     server.send_data({\cf22 "test 1"});\par
+00153     server.send_data({\cf22 "test 2"});\par
+00154     server.send_data({\cf22 "test 3 fdj20q4jdq23pjd0q23jq023j19    j0d[qd0j23[d0q23j9d[dj[a23d[a39d[2dj[d0aw1-329je-j1"});\par
+00155 \par
+00156     std::string buffer;\par
+00157     server.read_data(buffer);\par
+00158 \par
+00159     logger::log(LEVEL_DEBUG, buffer);\par
+00160 \par
+00161     {\cf19 return} 0;\par
+00162 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB src/socket/server.hpp\par \pard\plain 
+{\tc\tcl2 \v src/socket/server.hpp}
+{\xe \v src/socket/server.hpp}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <cstdio>}\par
+{\f2 #include <cstring>}\par
+{\f2 #include <utility>}\par
+{\f2 #include <winsock2.h>}\par
+{\f2 #include "../utils/logger.hpp"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'EC\'FB\'F5 \'E7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2 \'E4\'EB\'FF server.hpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "server_8hpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'F4\'E0\'E9\'EB\'EE\'E2, \'E2 \'EA\'EE\'F2\'EE\'F0\'FB\'E5 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'F2\'F1\'FF \'FD\'F2\'EE\'F2 \'F4\'E0\'E9\'EB:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "server_8hpp__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D1\'F2\'F0\'F3\'EA\'F2\'F3\'F0\'FB \'E4\'E0\'ED\'ED\'FB\'F5\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TcpServer}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E0\'EA\'F0\'EE\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DEFAULT_ADDRESS}\~ 0x0100007F\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DEFAULT_PORT}\~ 5025\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DEFAULT_BUFFER_SIZE}\~ 128\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DEFAULT_TERMINATION}\~ "\\r\\n"\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b SOCKET_NOT_CREATED}\~ 0x00\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b SOCKET_NOT_BOUND}\~ 0x01\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b SOCKET_NOT_LISTENING}\~ 0x02\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b SOCKET_OK}\~ 0x03\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CLIENT_CONNECTED}\~ 0x04\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CLIENT_NONE}\~ 0x05\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DATA_SEND_OK}\~ 0x06\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DATA_SEND_ERROR}\~ 0x07\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DATA_READ_OK}\~ 0x08\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DATA_READ_ERROR}\~ 0x09\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'FF \'F2\'E8\'EF\'EE\'E2\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef {\b TcpServer} {\b tcp_server}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E0\'EA\'F0\'EE\'F1\'FB\par
+\pard\plain 
+{\xe \v DEFAULT_ADDRESS\:server.hpp}
+{\xe \v server.hpp\:DEFAULT_ADDRESS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DEFAULT_ADDRESS\~ 0x0100007F}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 11}}\par
+}
+{\xe \v DEFAULT_PORT\:server.hpp}
+{\xe \v server.hpp\:DEFAULT_PORT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DEFAULT_PORT\~ 5025}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 12}}\par
+}
+{\xe \v DEFAULT_BUFFER_SIZE\:server.hpp}
+{\xe \v server.hpp\:DEFAULT_BUFFER_SIZE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DEFAULT_BUFFER_SIZE\~ 128}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 14}}\par
+}
+{\xe \v DEFAULT_TERMINATION\:server.hpp}
+{\xe \v server.hpp\:DEFAULT_TERMINATION}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DEFAULT_TERMINATION\~ "\\r\\n"}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 16}}\par
+}
+{\xe \v SOCKET_NOT_CREATED\:server.hpp}
+{\xe \v server.hpp\:SOCKET_NOT_CREATED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define SOCKET_NOT_CREATED\~ 0x00}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 18}}\par
+}
+{\xe \v SOCKET_NOT_BOUND\:server.hpp}
+{\xe \v server.hpp\:SOCKET_NOT_BOUND}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define SOCKET_NOT_BOUND\~ 0x01}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 19}}\par
+}
+{\xe \v SOCKET_NOT_LISTENING\:server.hpp}
+{\xe \v server.hpp\:SOCKET_NOT_LISTENING}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define SOCKET_NOT_LISTENING\~ 0x02}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 20}}\par
+}
+{\xe \v SOCKET_OK\:server.hpp}
+{\xe \v server.hpp\:SOCKET_OK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define SOCKET_OK\~ 0x03}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 22}}\par
+}
+{\xe \v CLIENT_CONNECTED\:server.hpp}
+{\xe \v server.hpp\:CLIENT_CONNECTED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CLIENT_CONNECTED\~ 0x04}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 24}}\par
+}
+{\xe \v CLIENT_NONE\:server.hpp}
+{\xe \v server.hpp\:CLIENT_NONE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CLIENT_NONE\~ 0x05}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 25}}\par
+}
+{\xe \v DATA_SEND_OK\:server.hpp}
+{\xe \v server.hpp\:DATA_SEND_OK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DATA_SEND_OK\~ 0x06}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 27}}\par
+}
+{\xe \v DATA_SEND_ERROR\:server.hpp}
+{\xe \v server.hpp\:DATA_SEND_ERROR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DATA_SEND_ERROR\~ 0x07}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 28}}\par
+}
+{\xe \v DATA_READ_OK\:server.hpp}
+{\xe \v server.hpp\:DATA_READ_OK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DATA_READ_OK\~ 0x08}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 30}}\par
+}
+{\xe \v DATA_READ_ERROR\:server.hpp}
+{\xe \v server.hpp\:DATA_READ_ERROR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DATA_READ_ERROR\~ 0x09}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 31}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D2\'E8\'EF\'FB\par
+\pard\plain 
+{\xe \v tcp_server\:server.hpp}
+{\xe \v server.hpp\:tcp_server}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef {\b TcpServer} {\b tcp_server}}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b server.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 181}}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+server.hpp\par \pard\plain 
+{\tc\tcl2 \v src/socket/server.hpp}
+{\xe \v src/socket/server.hpp}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+\'D1\'EC. \'E4\'EE\'EA\'F3\'EC\'E5\'ED\'F2\'E0\'F6\'E8\'FE.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf21 #ifndef ANTESTL_BACKEND_SERVER_HPP}\par
+00002 {\cf21 #define ANTESTL_BACKEND_SERVER_HPP}\par
+00003 \par
+00004 {\cf21 #include <iostream>}\par
+00005 {\cf21 #include <cstdio>}\par
+00006 {\cf21 #include <cstring>}\par
+00007 {\cf21 #include <utility>}\par
+00008 {\cf21 #include <winsock2.h>}\par
+00009 {\cf21 #include "../utils/logger.hpp"}\par
+00010 \par
+00011 {\cf21 #define DEFAULT_ADDRESS         0x0100007F  }{\cf20 // IP = 127.0.0.1}\par
+00012 {\cf21 #define DEFAULT_PORT            5025}\par
+00013 \par
+00014 {\cf21 #define DEFAULT_BUFFER_SIZE     128}\par
+00015 \par
+00016 {\cf21 #define DEFAULT_TERMINATION     "\\r\\n"}\par
+00017 \par
+00018 {\cf21 #define SOCKET_NOT_CREATED      0x00}\par
+00019 {\cf21 #define SOCKET_NOT_BOUND        0x01}\par
+00020 {\cf21 #define SOCKET_NOT_LISTENING    0x02}\par
+00021 \par
+00022 {\cf21 #define SOCKET_OK               0x03}\par
+00023 \par
+00024 {\cf21 #define CLIENT_CONNECTED        0x04}\par
+00025 {\cf21 #define CLIENT_NONE             0x05}\par
+00026 \par
+00027 {\cf21 #define DATA_SEND_OK            0x06}\par
+00028 {\cf21 #define DATA_SEND_ERROR         0x07}\par
+00029 \par
+00030 {\cf21 #define DATA_READ_OK            0x08}\par
+00031 {\cf21 #define DATA_READ_ERROR         0x09}\par
+00032 \par
+00033 {\cf17 class }TcpServer \{\par
+00034     SOCKET server\{\}, client\{\};\par
+00035     SOCKADDR_IN server_address\{\}, client_address\{\};\par
+00036 \par
+00037     {\cf18 unsigned} {\cf18 long} address;\par
+00038     {\cf18 unsigned} {\cf18 short} port;\par
+00039 \par
+00040     std::string termination;\par
+00041 \par
+00042     WSADATA WSAData\{\};\par
+00043 \par
+00044     {\cf18 bool} exist = {\cf17 false};\par
+00045 \par
+00046 {\cf17 public}:\par
+00047     TcpServer() \{\par
+00048         this->address = DEFAULT_ADDRESS;\par
+00049         this->port = DEFAULT_PORT;\par
+00050 \par
+00051         this->termination = DEFAULT_TERMINATION;\par
+00052     \}\par
+00053 \par
+00054     {\cf17 explicit} TcpServer({\cf18 unsigned} {\cf18 short} port) \{\par
+00055         this->address = DEFAULT_ADDRESS;\par
+00056         this->port = port;\par
+00057 \par
+00058         this->termination = DEFAULT_TERMINATION;\par
+00059     \}\par
+00060 \par
+00061     TcpServer({\cf18 unsigned} {\cf18 long} address, {\cf18 unsigned} {\cf18 short} port) \{\par
+00062         this->address = address;\par
+00063         this->port = port;\par
+00064 \par
+00065         this->termination = DEFAULT_TERMINATION;\par
+00066     \}\par
+00067 \par
+00068     {\cf18 void} set_termination(std::string term) \{\par
+00069         this->termination = std::move(term);\par
+00070     \}\par
+00071 \par
+00072     {\cf18 int} create() \{\par
+00073         WSAStartup(MAKEWORD(2, 0), &WSAData);\par
+00074 \par
+00075         server = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);\par
+00076         {\cf19 if} (server == INVALID_SOCKET) \{\par
+00077             exist = {\cf17 false};\par
+00078 \par
+00079             logger::log(LEVEL_DEBUG, {\cf22 "Can't create socket!"});\par
+00080             {\cf19 return} SOCKET_NOT_CREATED;\par
+00081         \}\par
+00082 \par
+00083         server_address.sin_family = AF_INET;\par
+00084         server_address.sin_addr.s_addr = address;\par
+00085         server_address.sin_port = htons(port);\par
+00086 \par
+00087         {\cf18 int} result = bind(server, (SOCKADDR *) &server_address, {\cf17 sizeof}(server_address));\par
+00088         {\cf19 if} (result == SOCKET_ERROR) \{\par
+00089             exist = {\cf17 false};\par
+00090 \par
+00091             logger::log(LEVEL_ERROR, {\cf22 "Can't bind socket"});\par
+00092             {\cf19 return} SOCKET_NOT_BOUND;\par
+00093         \}\par
+00094 \par
+00095         std::stringstream message;\par
+00096         message << {\cf22 "Created socket ("} << inet_ntoa(server_address.sin_addr) << {\cf22 ":"} << port << {\cf22 ")"};\par
+00097 \par
+00098         logger::log(LEVEL_INFO, message.str());\par
+00099         {\cf19 return} SOCKET_OK;\par
+00100     \}\par
+00101 \par
+00102     {\cf18 int} wait_client() \{\par
+00103         {\cf19 if} (listen(server, 0) == SOCKET_ERROR) \{\par
+00104             exist = {\cf17 false};\par
+00105 \par
+00106             logger::log(LEVEL_ERROR, {\cf22 "Socket can't listen"});\par
+00107             {\cf19 return} SOCKET_NOT_LISTENING;\par
+00108         \}\par
+00109 \par
+00110         logger::log(LEVEL_INFO, {\cf22 "Listening..."});\par
+00111 \par
+00112         {\cf18 int} client_address_size = {\cf17 sizeof}(client_address);\par
+00113         {\cf19 if} ((client = accept(server, (SOCKADDR*)&client_address, &client_address_size)) != INVALID_SOCKET) \{\par
+00114 \par
+00115             std::stringstream message;\par
+00116             message << {\cf22 "Connected client with address "} << inet_ntoa(client_address.sin_addr);\par
+00117             logger::log(LEVEL_INFO, message.str());\par
+00118 \par
+00119             {\cf19 return} CLIENT_CONNECTED;\par
+00120         \}\par
+00121 \par
+00122         logger::log(LEVEL_ERROR, {\cf22 "No clients..."});\par
+00123         {\cf19 return} CLIENT_NONE;\par
+00124     \}\par
+00125 \par
+00126     {\cf18 bool} is_exist() \{\par
+00127         {\cf19 return} exist;\par
+00128     \}\par
+00129 \par
+00130     {\cf18 int} read_data(std::string &data) \{\par
+00131         {\cf18 char} buffer[DEFAULT_BUFFER_SIZE] = \{ 0 \};\par
+00132         {\cf18 bool} finish = {\cf17 false};\par
+00133 \par
+00134         {\cf19 while} ({\cf17 true}) \{\par
+00135             {\cf19 if} (recv(client, buffer, {\cf17 sizeof}(buffer), 0) == SOCKET_ERROR) \{\par
+00136                 {\cf19 return} DATA_READ_ERROR;\par
+00137             \}\par
+00138 \par
+00139             {\cf19 for} ({\cf18 int} pos = 0; pos < DEFAULT_BUFFER_SIZE; ++pos) \{\par
+00140                 {\cf19 if} (buffer[pos] == termination[0]) \{\par
+00141                     finish = {\cf17 true};\par
+00142                 \} {\cf19 else} {\cf19 if} (buffer[pos] == termination[1] && finish) \{\par
+00143                     memset(buffer, 0, {\cf17 sizeof}(buffer));\par
+00144 \par
+00145                     logger::log(LEVEL_INFO, {\cf22 "Data was read from client"});\par
+00146                     logger::log(LEVEL_DEBUG, data);\par
+00147 \par
+00148                     {\cf19 return} DATA_READ_OK;\par
+00149                 \} {\cf19 else} {\cf19 if} (buffer[pos] == {\cf23 '\\0'}) \{\par
+00150                     {\cf19 continue};\par
+00151                 \} {\cf19 else} \{\par
+00152                     {\cf19 if} (finish) \{\par
+00153                         finish = {\cf17 false};\par
+00154                     \}\par
+00155 \par
+00156                     data += buffer[pos];\par
+00157                 \}\par
+00158             \}\par
+00159 \par
+00160             memset(buffer, 0, {\cf17 sizeof}(buffer));\par
+00161         \}\par
+00162     \}\par
+00163 \par
+00164     {\cf18 int} send_data(std::string data) \{\par
+00165         logger::log(LEVEL_INFO, {\cf22 "Sending data to client"});\par
+00166         logger::log(LEVEL_DEBUG, data);\par
+00167 \par
+00168         data.append(termination);\par
+00169 \par
+00170         {\cf19 if} (send(client, data.c_str(), data.length(), 0) == SOCKET_ERROR) \{\par
+00171             logger::log(LEVEL_ERROR, {\cf22 "Can't send message!"});\par
+00172             {\cf19 return} DATA_SEND_ERROR;\par
+00173         \}\par
+00174 \par
+00175         logger::log(LEVEL_INFO, {\cf22 "Data sent to client"});\par
+00176 \par
+00177         {\cf19 return} DATA_SEND_OK;\par
+00178     \}\par
+00179 \};\par
+00180 \par
+00181 {\cf17 typedef} TcpServer tcp_server;\par
+00182 \par
+00183 \par
+00184 {\cf21 #endif }{\cf20 //ANTESTL_BACKEND_SERVER_HPP}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB src/utils/logger.hpp\par \pard\plain 
+{\tc\tcl2 \v src/utils/logger.hpp}
+{\xe \v src/utils/logger.hpp}
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include <sys/time.h>}\par
+{\f2 #include <sstream>}\par
+{\f2 #include <cmath>}\par
+{\f2 #include <cstdarg>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'EC\'FB\'F5 \'E7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2 \'E4\'EB\'FF logger.hpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "logger_8hpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'F4\'E0\'E9\'EB\'EE\'E2, \'E2 \'EA\'EE\'F2\'EE\'F0\'FB\'E5 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'F2\'F1\'FF \'FD\'F2\'EE\'F2 \'F4\'E0\'E9\'EB:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "logger_8hpp__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D1\'F2\'F0\'F3\'EA\'F2\'F3\'F0\'FB \'E4\'E0\'ED\'ED\'FB\'F5\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Logger}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E0\'EA\'F0\'EE\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b LEVEL_INFO}\~ 0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b LEVEL_ERROR}\~ 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b LEVEL_DEBUG}\~ 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b STR_TIME_BUFFER}\~ 128\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b TIME_FORMAT}\~ "%Y-%m-%d %H:%M:%S"\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'FF \'F2\'E8\'EF\'EE\'E2\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef unsigned long long int {\b size_t}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef {\b Logger} {\b logger}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E0\'EA\'F0\'EE\'F1\'FB\par
+\pard\plain 
+{\xe \v LEVEL_INFO\:logger.hpp}
+{\xe \v logger.hpp\:LEVEL_INFO}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define LEVEL_INFO\~ 0}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 10}}\par
+}
+{\xe \v LEVEL_ERROR\:logger.hpp}
+{\xe \v logger.hpp\:LEVEL_ERROR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define LEVEL_ERROR\~ 1}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 11}}\par
+}
+{\xe \v LEVEL_DEBUG\:logger.hpp}
+{\xe \v logger.hpp\:LEVEL_DEBUG}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define LEVEL_DEBUG\~ 2}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 12}}\par
+}
+{\xe \v STR_TIME_BUFFER\:logger.hpp}
+{\xe \v logger.hpp\:STR_TIME_BUFFER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define STR_TIME_BUFFER\~ 128}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 14}}\par
+}
+{\xe \v TIME_FORMAT\:logger.hpp}
+{\xe \v logger.hpp\:TIME_FORMAT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define TIME_FORMAT\~ "%Y-%m-%d %H:%M:%S"}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 16}}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D2\'E8\'EF\'FB\par
+\pard\plain 
+{\xe \v size_t\:logger.hpp}
+{\xe \v logger.hpp\:size_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef unsigned long long int {\b size_t}}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 18}}\par
+}
+{\xe \v logger\:logger.hpp}
+{\xe \v logger.hpp\:logger}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef {\b Logger} {\b logger}}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 {\b logger.hpp} \'F1\'F2\'F0\'EE\'EA\'E0 {\b 82}}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+logger.hpp\par \pard\plain 
+{\tc\tcl2 \v src/utils/logger.hpp}
+{\xe \v src/utils/logger.hpp}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\'D1\'EC. \'E4\'EE\'EA\'F3\'EC\'E5\'ED\'F2\'E0\'F6\'E8\'FE.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf21 #ifndef LOGGER_HPP}\par
+00002 {\cf21 #define LOGGER_HPP}\par
+00003 \par
+00004 {\cf21 #include <string>}\par
+00005 {\cf21 #include <sys/time.h>}\par
+00006 {\cf21 #include <sstream>}\par
+00007 {\cf21 #include <cmath>}\par
+00008 {\cf21 #include <cstdarg>}\par
+00009 \par
+00010 {\cf21 #define LEVEL_INFO  0}\par
+00011 {\cf21 #define LEVEL_ERROR 1}\par
+00012 {\cf21 #define LEVEL_DEBUG 2}\par
+00013 \par
+00014 {\cf21 #define STR_TIME_BUFFER 128}\par
+00015 \par
+00016 {\cf21 #define TIME_FORMAT "%Y-%m-%d %H:%M:%S"}\par
+00017 \par
+00018 {\cf17 typedef} {\cf18 unsigned} {\cf18 long} {\cf18 long} {\cf18 int} size_t;\par
+00019 \par
+00020 {\cf17 class }Logger \{\par
+00021     {\cf17 static} {\cf18 int} log_level;\par
+00022 \par
+00023     {\cf17 static} std::string get_current_time() \{\par
+00024         {\cf17 struct }timeval time_value\{\};\par
+00025         {\cf17 struct }tm *time_struct;\par
+00026 \par
+00027         gettimeofday(&time_value, NULL);\par
+00028         {\cf18 int} milliseconds = lrint(time_value.tv_usec / 1000.0);\par
+00029 \par
+00030         {\cf19 if} (milliseconds >= 1000) \{\par
+00031             milliseconds -= 1000;\par
+00032             time_value.tv_sec++;\par
+00033         \}\par
+00034 \par
+00035         time_t current_time = time_value.tv_sec;\par
+00036         time_struct = localtime(&current_time);\par
+00037 \par
+00038         {\cf18 char} str_time[STR_TIME_BUFFER];\par
+00039         strftime(str_time, STR_TIME_BUFFER, TIME_FORMAT, time_struct);\par
+00040 \par
+00041         {\cf18 char} full_str_time[STR_TIME_BUFFER];\par
+00042         sprintf(full_str_time, {\cf22 "%s.%d"}, str_time, milliseconds);\par
+00043 \par
+00044         {\cf19 return} full_str_time;\par
+00045     \}\par
+00046 \par
+00047     {\cf17 static} {\cf18 void} print_to_console({\cf17 const} std::string &message) \{\par
+00048         printf({\cf22 "%s\\n"}, message.c_str());\par
+00049     \}\par
+00050 \par
+00051 {\cf17 public}:\par
+00052     {\cf17 static} {\cf18 void} init({\cf18 int} level) \{\par
+00053         log_level = level;\par
+00054     \}\par
+00055 \par
+00056     {\cf17 static} {\cf18 void} log({\cf18 int} level, {\cf17 const} std::string& message) \{\par
+00057         std::string time = get_current_time();\par
+00058         std::string level_tag\{\};\par
+00059 \par
+00060         {\cf19 switch} (level) \{\par
+00061             {\cf19 case} LEVEL_INFO:\par
+00062                 level_tag = {\cf22 " INFO"};\par
+00063                 {\cf19 break};\par
+00064             {\cf19 case} LEVEL_ERROR:\par
+00065                 level_tag = {\cf22 "ERROR"};\par
+00066                 {\cf19 break};\par
+00067             {\cf19 case} LEVEL_DEBUG:\par
+00068                 level_tag = {\cf22 "DEBUG"};\par
+00069                 {\cf19 break};\par
+00070             {\cf19 default}:\par
+00071                 {\cf19 return};\par
+00072         \}\par
+00073 \par
+00074         std::stringstream formatted_message;\par
+00075         formatted_message << time << {\cf22 " ["} << level_tag << {\cf22 "] "} << message;\par
+00076 \par
+00077         print_to_console(formatted_message.str());\par
+00078         {\cf20 // TODO: print_to_file();}\par
+00079     \}\par
+00080 \};\par
+00081 \par
+00082 {\cf17 typedef} Logger logger;\par
+00083 \par
+00084 {\cf21 #endif }{\cf20 //LOGGER_HPP}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC\par 
+\pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
