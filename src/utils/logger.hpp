@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief Заголовочный файл, в котором реализуется простой логгер
+ *
+ * \author Александр Горбунов
+ * \date 30 мая 2023
+ */
+
 #ifndef LOGGER_HPP
 #define LOGGER_HPP
 
@@ -39,7 +47,7 @@ class Logger {
         strftime(str_time, STR_TIME_BUFFER, TIME_FORMAT, time_struct);
 
         char full_str_time[STR_TIME_BUFFER];
-        sprintf(full_str_time, "%s.%d", str_time, milliseconds);
+        sprintf(full_str_time, "%s.%03d", str_time, milliseconds);
 
         return full_str_time;
     }

@@ -1,3 +1,13 @@
+/**
+ * \file
+ * \brief Заголовочный файл, в котором реализуется TCP сервер
+ *
+ * Объект сервера содержит в себе методы для обмена данными между сервером и клиентом
+ *
+ * \author Александр Горбунов
+ * \date 30 мая 2023
+ */
+
 #ifndef ANTESTL_BACKEND_SERVER_HPP
 #define ANTESTL_BACKEND_SERVER_HPP
 

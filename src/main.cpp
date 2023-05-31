@@ -5,6 +5,7 @@
 #include <cstring>
 #include <winsock2.h>
 #include "socket/server.hpp"
+#include "utils/visa_device.hpp"
 
 #define MAX_CNT 200
 
@@ -145,18 +146,12 @@ int main(int argc, char* argv[]) {
         WSACleanup();
     } */
 
-    TcpServer server(5555);
-    server.create();
-    server.wait_client();
+    VisaDevice device("TCPIP0::K-N9020B-11111::inst0::INSTR");
+    std::string data{};
 
-    server.send_data("test 1");
-    server.send_data("test 2");
-    server.send_data("test 3 fdj20q4jdq23pjd0q23jq023j19    j0d[qd0j23[d0q23j9d[dj[a23d[a39d[2dj[d0aw1-329je-j1");
+    device.query("*IDN?", data);
 
-    std::string buffer;
-    server.read_data(buffer);
-
-    logger::log(LEVEL_DEBUG, buffer);
+    printf("%s\n", data.c_str());
 
     return 0;
 }

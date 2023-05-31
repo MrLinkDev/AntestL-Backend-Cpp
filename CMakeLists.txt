@@ -11,7 +11,8 @@ add_executable(
         antestl_backend
         src/main.cpp
         src/socket/server.hpp
-        src/utils/logger.hpp)
+        src/utils/logger.hpp
+        src/utils/visa_device.hpp)
 
 target_link_libraries(
         antestl_backend
