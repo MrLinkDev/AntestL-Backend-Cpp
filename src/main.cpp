@@ -149,6 +149,9 @@ int main(int argc, char* argv[]) {
     VisaDevice device("TCPIP0::K-N9020B-11111::inst0::INSTR");
     std::string data{};
 
+    TcpServer server;
+    server.read_data(data);
+
     device.query("*IDN?", data);
 
     printf("%s\n", data.c_str());
