@@ -6,19 +6,15 @@
 #include <string>
 #include <cstring>
 
-#define READ_BUFFER_SIZE        128
+#define BUFFER_SIZE             128
 
 #define DEFAULT_TIMEOUT         10000
 #define DEFAULT_TERMINATION     '\n'
 
-#define WRITE_SUCCESS           0x00
-#define WRITE_FAILURE           0x01
+#define SUCCESS                 0x00
+#define FAILURE                 0x01
 
-#define READ_SUCCESS            0x02
-#define READ_FAILURE            0x03
-
-#define QUERY_SUCCESS           0x04
-#define QUERY_FAILURE           0x05
+#define CMD_IDN                 "*IDN?"
 
 using namespace std;
 
@@ -54,9 +50,7 @@ public:
             logger::log(LEVEL_DEBUG, "Opened default resource manager");
         }
 
-        stringstream message;
-        message << "Connecting to device with address '" << device_config.address << "'";
-        logger::log(LEVEL_INFO, message.str());
+        logger::log(LEVEL_INFO, "Connecting to device with address", device_config.address.c_str(), NULL);
 
         status = viOpen(
                 resource_manager,
@@ -82,10 +76,7 @@ public:
             exist = false;
             return;
         } else {
-            stringstream message;
-            message << "Timeout set to " << device_config.timeout;
-
-            logger::log(LEVEL_INFO, message.str());
+            logger::log(LEVEL_DEBUG, "Timeout set to", to_string(device_config.timeout).c_str(), NULL);
         }
 
         status = viSetAttribute(device, VI_ATTR_TERMCHAR, DEFAULT_TERMINATION);
@@ -96,15 +87,15 @@ public:
             exist = false;
             return;
         } else {
-            stringstream message;
-            message << "Termination character set to (code) " << (int) device_config.term_char;
-
-            logger::log(LEVEL_INFO, message.str());
+            logger::log(LEVEL_DEBUG, "Termination character set to (code)", to_string((int) device_config.term_char).c_str(), NULL);
         }
 
         exist = true;
 
+        string device_info;
+        this->idn(device_info);
 
+        logger::log(LEVEL_INFO, "Device info:", device_info.c_str(), NULL);
     }
 
     VisaDevice(visa_config config) {
@@ -118,25 +109,25 @@ public:
         status = viWrite(device, command_buffer, command.length(), ret_count);
 
         if (status < VI_SUCCESS) {
-            return WRITE_FAILURE;
+            return FAILURE;
         }
 
-        return WRITE_SUCCESS;
+        return SUCCESS;
     }
 
     int read(string &data) {
-        ViChar buffer[READ_BUFFER_SIZE];
+        ViChar buffer[BUFFER_SIZE];
 
         while (true) {
-            status = viRead(device, reinterpret_cast<ViPBuf>(buffer), READ_BUFFER_SIZE, ret_count);
+            status = viRead(device, reinterpret_cast<ViPBuf>(buffer), BUFFER_SIZE, ret_count);
 
             if (status < VI_SUCCESS) {
-                return READ_FAILURE;
+                return FAILURE;
             }
 
-            for (int pos = 0; pos < READ_BUFFER_SIZE; ++pos) {
+            for (int pos = 0; pos < BUFFER_SIZE; ++pos) {
                 if (buffer[pos] == device_config.term_char) {
-                    return READ_SUCCESS;
+                    return SUCCESS;
                 }
 
                 data += buffer[pos];
@@ -147,15 +138,23 @@ public:
     }
 
     int query(string command, string &data) {
-        if (write(command) == WRITE_FAILURE) {
-            return QUERY_FAILURE;
+        int status;
+
+        status = write(command);
+        if (status == FAILURE) {
+            return FAILURE;
         }
 
-        if (read(data) == READ_FAILURE) {
-            return QUERY_FAILURE;
+        status = read(data);
+        if (status == FAILURE) {
+            return FAILURE;
         }
 
-        return QUERY_SUCCESS;
+        return SUCCESS;
+    }
+    
+    int idn(string &device_info) {
+        return query(CMD_IDN, device_info);
     }
 };
 

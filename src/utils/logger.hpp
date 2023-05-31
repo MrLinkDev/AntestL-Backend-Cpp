@@ -15,8 +15,8 @@
 #include <cmath>
 #include <cstdarg>
 
-#define LEVEL_INFO  0
-#define LEVEL_ERROR 1
+#define LEVEL_ERROR 0
+#define LEVEL_INFO  1
 #define LEVEL_DEBUG 2
 
 #define STR_TIME_BUFFER 128
@@ -66,11 +66,11 @@ public:
         std::string level_tag{};
 
         switch (level) {
-            case LEVEL_INFO:
-                level_tag = " INFO";
-                break;
             case LEVEL_ERROR:
                 level_tag = "ERROR";
+                break;
+            case LEVEL_INFO:
+                level_tag = " INFO";
                 break;
             case LEVEL_DEBUG:
                 level_tag = "DEBUG";
@@ -81,6 +81,41 @@ public:
 
         std::stringstream formatted_message;
         formatted_message << time << " [" << level_tag << "] " << message;
+
+        print_to_console(formatted_message.str());
+        // TODO: print_to_file();
+    }
+
+    static void log(int level, ...) {
+        std::string time = get_current_time();
+        std::string level_tag{};
+
+        switch (level) {
+            case LEVEL_ERROR:
+                level_tag = "ERROR";
+                break;
+            case LEVEL_INFO:
+                level_tag = " INFO";
+                break;
+            case LEVEL_DEBUG:
+                level_tag = "DEBUG";
+                break;
+            default:
+                return;
+        }
+
+        std::stringstream formatted_message;
+        formatted_message << time << " [" << level_tag << "]";
+
+        va_list args;
+        va_start(args, 0);
+
+        char *arg;
+        while ((arg = va_arg(args, char*)) != NULL) {
+            formatted_message << " " << arg;
+        }
+
+        va_end(args);
 
         print_to_console(formatted_message.str());
         // TODO: print_to_file();
