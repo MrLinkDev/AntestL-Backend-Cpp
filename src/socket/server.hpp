@@ -27,7 +27,7 @@
 #define DEFAULT_BUFFER_SIZE     128
 
 /// Стандартная последовательность конца посылки
-#define DEFAULT_TERMINATION     "\r\n"
+#define DEFAULT_SOCKET_TERM     "\r\n"
 
 /// Возвращаемый статус, если сокет не был создан
 #define SOCKET_NOT_CREATED      0x00
@@ -89,7 +89,7 @@ public:
         this->address = DEFAULT_ADDRESS;
         this->port = DEFAULT_PORT;
 
-        this->termination = DEFAULT_TERMINATION;
+        this->termination = DEFAULT_SOCKET_TERM;
     }
 
     /**
@@ -109,7 +109,7 @@ public:
         this->address = DEFAULT_ADDRESS;
         this->port = port;
 
-        this->termination = DEFAULT_TERMINATION;
+        this->termination = DEFAULT_SOCKET_TERM;
     }
 
     /**
@@ -129,7 +129,7 @@ public:
         this->address = address;
         this->port = port;
 
-        this->termination = DEFAULT_TERMINATION;
+        this->termination = DEFAULT_SOCKET_TERM;
     }
 
     /**

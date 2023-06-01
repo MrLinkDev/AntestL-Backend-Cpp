@@ -6,6 +6,8 @@
 #include <winsock2.h>
 #include "socket/server.hpp"
 #include "utils/visa_device.hpp"
+#include "devices/keysight_m9807a.cpp"
+#include <json.hpp>
 
 #define MAX_CNT 200
 
@@ -146,15 +148,26 @@ int main(int argc, char* argv[]) {
         WSACleanup();
     } */
 
-    VisaDevice device("TCPIP0::K-N9020B-11111::inst0::INSTR");
+    KeysightM9807A device("TCPIP0::K-N9020B-11111::inst0::INSTR");
     std::string data{};
 
     TcpServer server;
     server.read_data(data);
 
-    device.query("*IDN?", data);
+    device.send("*IDN?", &data);
 
     printf("%s\n", data.c_str());
+    device.full_preset();
+    device.preset();
+    device.send_wait_err("IIIIIIDN", &data);
+
+    nlohmann::json j;
+    j["one"] = 1;
+    j["two"] = "two";
+    j["three"] = 3.0f;
+
+    cout << j << endl;
+    cout << j["four"] << endl;
 
     return 0;
 }

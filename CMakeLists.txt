@@ -4,7 +4,7 @@ project(antestl_backend)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXE_LINKER_FLAGS "-static")
 
-include_directories(libs/ktvisa)
+include_directories(libs/ktvisa libs/nlohman)
 link_directories(libs)
 
 add_executable(
@@ -12,7 +12,10 @@ add_executable(
         src/main.cpp
         src/socket/server.hpp
         src/utils/logger.hpp
-        src/utils/visa_device.hpp)
+        src/utils/visa_device.hpp
+        src/utils/device_set.hpp
+        src/utils/task_manager.hpp
+        src/devices/keysight_m9807a.cpp)
 
 target_link_libraries(
         antestl_backend

@@ -105,14 +105,14 @@ public:
         }
 
         std::stringstream formatted_message;
-        formatted_message << time << " [" << level_tag << "]";
+        formatted_message << time << " [" << level_tag << "] ";
 
         va_list args;
         va_start(args, 0);
 
         char *arg;
         while ((arg = va_arg(args, char*)) != NULL) {
-            formatted_message << " " << arg;
+            formatted_message << arg;
         }
 
         va_end(args);
