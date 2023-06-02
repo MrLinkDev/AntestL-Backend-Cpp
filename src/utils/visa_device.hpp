@@ -216,6 +216,10 @@ public:
         setup_device();
     }
 
+    bool is_exist() {
+        return exist;
+    }
+
     int send(string command, string *data = nullptr) {
         if (command[command.length() - 1] == '?') {
             if (data == nullptr) {
@@ -278,7 +282,7 @@ public:
         logger::log(LEVEL_DEBUG, "Called preset function");
     }
 
-    virtual int configure(float rbw = DEFAULT_RBW, int source_port = DEFAULT_SOURCE_PORT) {
+    virtual void configure(int meas_type, float rbw, int source_port, bool ext_gen) {
         logger::log(LEVEL_DEBUG, "Called configure function");
     }
 };

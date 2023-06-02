@@ -26,7 +26,7 @@
 typedef unsigned long long int size_t;
 
 class Logger {
-    static int log_level;
+    inline static int log_level = LEVEL_DEBUG;
 
     static std::string get_current_time() {
         struct timeval time_value{};
@@ -62,6 +62,10 @@ public:
     }
 
     static void log(int level, const std::string& message) {
+        if (level > log_level) {
+            return;
+        }
+
         std::string time = get_current_time();
         std::string level_tag{};
 
@@ -87,6 +91,10 @@ public:
     }
 
     static void log(int level, ...) {
+        if (level > log_level) {
+            return;
+        }
+
         std::string time = get_current_time();
         std::string level_tag{};
 

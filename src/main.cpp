@@ -7,6 +7,7 @@
 #include "socket/server.hpp"
 #include "utils/visa_device.hpp"
 #include "devices/keysight_m9807a.cpp"
+#include "utils/task_manager.hpp"
 #include <json.hpp>
 
 #define MAX_CNT 200
@@ -148,26 +149,38 @@ int main(int argc, char* argv[]) {
         WSACleanup();
     } */
 
-    KeysightM9807A device("TCPIP0::K-N9020B-11111::inst0::INSTR");
-    std::string data{};
+    string test_task_json = "{\"task\":{\"type\":\"connect\",\"args\":{\"m9807a\":\"TCPIP0::localhost::5025::SOCKET\",\"ext_gen\":\"TCPIP0::localhost::5026::SOCKET\",\"rbd_2\":{\"azimuth\":\"...\",\"elevation\":\"...\",\"roll\":\"...\"}}}}";
+    string test_task_list_json = "{\"1task\":{\"type\":\"connect\",\"args\":{\"m9807a\":\"TCPIP0::localhost::5025::SOCKET\",\"ext_gen\":\"TCPIP0::localhost::5026::SOCKET\",\"rbd_2\":{\"azimuth\":\"...\",\"elevation\":\"...\",\"roll\":\"...\"}}}}";
 
-    TcpServer server;
-    server.read_data(data);
+    string task_connect = "{\n"
+                          "\t\"task\": {\n"
+                          "\t\t\"type\": \"connect\",\n"
+                          "\t\t\"args\": {\n"
+                          "\t\t\t\"m9807a\": \"TCPIP0::K-N9020B-11111::inst0::INSTR\"\n"
+                          "\t\t}\n"
+                          "\t}}";
 
-    device.send("*IDN?", &data);
+    string task_configure = "{\"task\": {\n"
+                            "\t\t\"type\": \"configure\",\n"
+                            "\t\t\t\"args\": {\n"
+                            "\t\t\t\t\"meas_type\": 0,\n"
+                            "\t\t\t\t\"rbw\": 1000,\n"
+                            "\t\t\t\t\"source_port\": 1,\n"
+                            "\t\t\t\t\"external\": true\n"
+                            "\t\t\t},\n"
+                            "\t\t\t\"nested\": 0\n"
+                            "\t}}";
 
-    printf("%s\n", data.c_str());
-    device.full_preset();
-    device.preset();
-    device.send_wait_err("IIIIIIDN", &data);
+    //logger::init(LEVEL_ERROR);
 
+    TaskManager task_manager;
     nlohmann::json j;
-    j["one"] = 1;
-    j["two"] = "two";
-    j["three"] = 3.0f;
 
+    j = task_manager.parse_data(&task_connect);
     cout << j << endl;
-    cout << j["four"] << endl;
+
+    j = task_manager.parse_data(&task_configure);
+    cout << j << endl;
 
     return 0;
 }

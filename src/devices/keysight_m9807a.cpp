@@ -6,6 +6,8 @@ class KeysightM9807A : public VisaDevice {
     char port_names[7]  = {'D', 'B', 'H', 'F', 'C', 'E', 'G'};
     int port_numbers[7] = {4, 2, 8, 6, 3, 5, 7};
 
+    int meas_type       = MEAS_TRANSITION;
+
     float power         = DEFAULT_POWER;
     float rbw           = DEFAULT_RBW;
     int source_port     = DEFAULT_SOURCE_PORT;
@@ -38,8 +40,14 @@ public:
         this->send(":SYSTEM:PRESET");
     }
 
-    int configure(float rbw = DEFAULT_RBW, int source_port = DEFAULT_SOURCE_PORT) override {
+    void configure(int meas_type, float rbw, int source_port, bool ext_gen) override {
+        full_preset();
+
+        this->meas_type = meas_type;
+
         this->rbw = rbw;
         this->source_port = source_port;
+
+        this->using_ext_gen = ext_gen;
     }
 };
