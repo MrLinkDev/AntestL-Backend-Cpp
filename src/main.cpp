@@ -6,8 +6,9 @@
 #include <winsock2.h>
 #include "socket/server.hpp"
 #include "utils/visa_device.hpp"
-#include "devices/keysight_m9807a.cpp"
+#include "devices/vna/keysight_m9807a.cpp"
 #include "utils/task_manager.hpp"
+#include "utils/utils.hpp"
 #include <json.hpp>
 
 #define MAX_CNT 200
@@ -68,6 +69,8 @@ int prepare() {
         cout << "Bind function failed with error: " << WSAGetLastError() << endl;
         return -1;
     }
+
+    return 0;
 }
 
 int main(int argc, char* argv[]) {
@@ -166,12 +169,28 @@ int main(int argc, char* argv[]) {
                             "\t\t\t\t\"meas_type\": 0,\n"
                             "\t\t\t\t\"rbw\": 1000,\n"
                             "\t\t\t\t\"source_port\": 1,\n"
-                            "\t\t\t\t\"external\": true\n"
+                            "\t\t\t\t\"external\": false\n"
                             "\t\t\t},\n"
                             "\t\t\t\"nested\": 0\n"
                             "\t}}";
 
-    //logger::init(LEVEL_ERROR);
+    string task_set_power = "{\"task\": {\n"
+                            "\t\t\t\"type\": \"set_power\",\n"
+                            "\t\t\t\"args\": {\n"
+                            "\t\t\t\t\"value\": -20\n"
+                            "\t\t\t}\n"
+                            "\t}}";
+
+    string task_set_freq_range = "{\"task\": {\n"
+                                 "\t\t\"type\": \"set_freq_range\",\n"
+                                 "\t\t\"args\": {\n"
+                                 "\t\t\t\"start\": 2e9,\n"
+                                 "\t\t\t\"stop\": 11e9,\n"
+                                 "\t\t\t\"points\": 11\n"
+                                 "\t\t}\n"
+                                 "\t}}";
+
+    //logger::init(LEVEL_INFO);
 
     TaskManager task_manager;
     nlohmann::json j;
@@ -181,6 +200,20 @@ int main(int argc, char* argv[]) {
 
     j = task_manager.parse_data(&task_configure);
     cout << j << endl;
+
+    j = task_manager.parse_data(&task_set_power);
+    cout << j << endl;
+
+    j = task_manager.parse_data(&task_set_freq_range);
+    cout << j << endl;
+
+    stoi("123");
+
+    try {
+        stoi("asd");
+    } catch (std::invalid_argument invalid_argument) {
+        cout << stoi("567") << endl;
+    }
 
     return 0;
 }

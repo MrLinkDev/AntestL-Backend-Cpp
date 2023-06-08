@@ -31,13 +31,6 @@
 #define OPC_PASS_STR_KEYSIGHT   "+1"
 #define OPC_PASS_STR_PLANAR     "1"
 
-#define DEFAULT_POWER           -20
-#define DEFAULT_RBW             1000
-#define DEFAULT_SOURCE_PORT     1
-
-#define MEAS_TRANSITION         0x00
-#define MEAS_REFLECTION         0x01
-
 using namespace std;
 
 struct visa_config {
@@ -47,15 +40,18 @@ struct visa_config {
 };
 
 class VisaDevice {
+
+private:
     ViSession resource_manager{}, device{};
     ViStatus status{};
 
     ViPUInt32 ret_count{};
     visa_config device_config{};
 
+protected:
     bool exist = false;
 
-    void setup_device() {
+    virtual void setup_device() {
         status = viOpenDefaultRM(&resource_manager);
 
         if (status < VI_SUCCESS) {
@@ -82,7 +78,7 @@ class VisaDevice {
             exist = false;
             return;
         } else {
-            logger::log(LEVEL_INFO, "Connected to device");
+            logger::log(LEVEL_INFO, "Connected");
         }
 
         status = viSetAttribute(device, VI_ATTR_TMO_VALUE, DEFAULT_TIMEOUT);
@@ -108,11 +104,31 @@ class VisaDevice {
         }
 
         exist = true;
+    }
 
-        string device_info;
-        this->idn(device_info);
+public:
+    bool using_ext_gen = false;
 
-        logger::log(LEVEL_INFO, "Device info: ", device_info.c_str(), NULL);
+    VisaDevice() = default;
+
+    VisaDevice(const string device_address) {
+        device_config.address = device_address;
+
+        setup_device();
+    }
+
+    VisaDevice(visa_config config) {
+        device_config = config;
+
+        setup_device();
+    }
+
+    bool is_exist() {
+        return exist;
+    }
+
+    void clear() {
+        viClear(device);
     }
 
     int write(string command) {
@@ -197,93 +213,77 @@ class VisaDevice {
         }
     }
 
-    int idn(string &device_info) {
-        return query(CMD_IDN, &device_info);
+    int idn() {
+        string device_info;
+
+        if (query(CMD_IDN, &device_info) == FAILURE) {
+            return FAILURE;
+        }
+
+        logger::log(LEVEL_INFO, "Device info: ", device_info.c_str(), NULL);
+        return SUCCESS;
     }
 
-public:
-    VisaDevice() = default;
-
-    VisaDevice(const string device_address) {
-        device_config.address = device_address;
-
-        setup_device();
-    }
-
-    VisaDevice(visa_config config) {
-        device_config = config;
-
-        setup_device();
-    }
-
-    bool is_exist() {
-        return exist;
-    }
-
-    int send(string command, string *data = nullptr) {
+    void send(string command, string *data = nullptr) {
         if (command[command.length() - 1] == '?') {
             if (data == nullptr) {
-                return FAILURE;
+                logger::log(LEVEL_ERROR, "Got query, but no buffer for reading...", NULL);
+                throw FAILURE;
             }
 
-            if (query(command, data) == SUCCESS) {
-                return SUCCESS;
+            if (query(command, data) == FAILURE) {
+                throw FAILURE;
             }
 
-            return FAILURE;
         } else {
-            return write(command);
+            if (write(command) == FAILURE) {
+                throw FAILURE;
+            }
         }
     }
 
-    int send_wait(string command, string *data = nullptr) {
-        if (send(command, data) == FAILURE) {
-            return  FAILURE;
+    void send_wait(string command, string *data = nullptr) {
+        try {
+            send(command, data);
+        } catch (int code) {
+            if (code == FAILURE) {
+                throw FAILURE;
+            }
         }
 
         wait();
-
-        return SUCCESS;
     }
 
-    int send_err(string command, string *data = nullptr) {
-        if (send(command, data) == FAILURE) {
-            return  FAILURE;
+    void send_err(string command, string *data = nullptr) {
+        try {
+            send(command, data);
+        } catch (int code) {
+            if (code == FAILURE) {
+                throw FAILURE;
+            }
         }
 
         int error_status =  check_error();
 
         if (error_status == FAILURE || error_status == ERRORS) {
-            return FAILURE;
+            throw FAILURE;
         }
-
-        return SUCCESS;
     }
 
-    int send_wait_err(string command, string *data = nullptr) {
-        if (send_wait(command, data) == FAILURE) {
-            return FAILURE;
+    void send_wait_err(string command, string *data = nullptr) {
+        try {
+            send_wait(command, data);
+        } catch (int code) {
+            if (code == FAILURE) {
+                throw FAILURE;
+            }
         }
 
         int error_status =  check_error();
 
         if (error_status == FAILURE || error_status == ERRORS) {
-            return FAILURE;
+            throw FAILURE;
         }
-
-        return SUCCESS;
-    }
-
-    virtual int full_preset() {
-        logger::log(LEVEL_DEBUG, "Called full preset function");
-    }
-
-    virtual int preset() {
-        logger::log(LEVEL_DEBUG, "Called preset function");
-    }
-
-    virtual void configure(int meas_type, float rbw, int source_port, bool ext_gen) {
-        logger::log(LEVEL_DEBUG, "Called configure function");
     }
 };
 
