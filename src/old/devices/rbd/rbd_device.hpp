@@ -4,8 +4,9 @@
 #include "../../utils/visa_device.hpp"
 
 class RbdDevice : public VisaDevice {
-    VisaDevice *axes;
-    int axis_count = 0;
+    float start_angle;
+    float stop_angle;
+    int points;
 
 public:
     RbdDevice() = default;

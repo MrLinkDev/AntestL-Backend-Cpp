@@ -2,7 +2,7 @@
 #define ANTESTL_BACKEND_DEVICE_SET_HPP
 
 #include <algorithm>
-#include <json.hpp>
+#include "json.hpp"
 
 #include "visa_device.hpp"
 #include "../devices/ext_gen/ext_gen_device.hpp"

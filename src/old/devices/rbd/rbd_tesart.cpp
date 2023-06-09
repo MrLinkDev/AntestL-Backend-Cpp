@@ -6,8 +6,8 @@
 
 #define ADDRESS_DELIMITER   ';'
 
-#define RBD_2_SLEEP_TIME_INIT   10000ms
-#define RBD_2_SLEEP_TIME_WAIT   10000ms
+#define RBD_T_SLEEP_TIME_INIT   10000ms
+#define RBD_T_SLEEP_TIME_WAIT   10000ms
 
 #define BIT_REF_SET             0x00020000
 #define BIT_IN_POS              0x00080000
@@ -15,7 +15,7 @@
 
 #define SCALE                   1000
 
-class Rbd2 : public RbdDevice {
+class RbdTesart : public RbdDevice {
     VisaDevice *axes;
     int axis_count = 0;
 
@@ -44,9 +44,9 @@ class Rbd2 : public RbdDevice {
     }
 
 public:
-    Rbd2() = default;
+    RbdTesart() = default;
 
-    Rbd2(const string device_addresses) {
+    RbdTesart(const string device_addresses) {
         axis_count = count(device_addresses, ADDRESS_DELIMITER);
 
         string *address_list;
@@ -61,7 +61,7 @@ public:
             axes[axis_num].write("EN");
 
             axes[axis_num].clear();
-            std::this_thread::sleep_for(RBD_2_SLEEP_TIME_INIT);
+            std::this_thread::sleep_for(RBD_T_SLEEP_TIME_INIT);
 
             if (!(status(axis_num) & BIT_REF_SET)) {
                 axes[axis_num].write("MH");
@@ -102,7 +102,7 @@ public:
 
     void wait(int axis_num) {
         while (!is_stopped(axis_num)) {
-            std::this_thread::sleep_for(RBD_2_SLEEP_TIME_WAIT);
+            std::this_thread::sleep_for(RBD_T_SLEEP_TIME_WAIT);
         }
     }
 };
