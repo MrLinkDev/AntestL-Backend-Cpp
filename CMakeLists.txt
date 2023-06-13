@@ -20,7 +20,10 @@ add_executable(
         src/utils/socket/socket_server.cpp
 
         src/devices/visa_device.hpp
-        src/devices/visa_device.cpp)
+        src/devices/visa_device.cpp
+
+        src/devices/vna/vna_device.hpp
+)
 
 target_link_libraries(
         antestl_backend
@@ -31,4 +34,5 @@ target_link_libraries(
         visaext.lib
 
         wsock32
-        ws2_32)
+        ws2_32
+)
