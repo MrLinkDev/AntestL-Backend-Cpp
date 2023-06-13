@@ -3,6 +3,7 @@
 
 #include "utils/socket/socket_server.hpp"
 #include "devices/visa_device.hpp"
+#include "devices/vna/keysight_m9807a.hpp"
 
 
 int main() {
@@ -24,8 +25,14 @@ int main() {
         std::cout << device.send_wait("*IDNA?") << std::endl;
     } catch (int error_code) {
         std::cout << "ERROR: " << error_code << std::endl;
-        return 0;
     }
+
+    VnaDevice *vna = new KeysightM9807A("TCPIP0::K-N9020B-11111::inst0::INSTR");
+
+    vna->full_preset();
+    vna->init_channel();
+    vna->set_power(-2.23f);
+    vna->set_freq(11e9, 13e9, 113);
 
     return 0;
 }

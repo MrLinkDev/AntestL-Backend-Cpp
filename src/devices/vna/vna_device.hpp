@@ -2,6 +2,7 @@
 #define ANTESTL_BACKEND_VNA_DEVICE_HPP
 
 #include "../visa_device.hpp"
+#include "../../utils/exceptions.hpp"
 
 #define DEFAULT_VNA_START_FREQ      1000000000
 #define DEFAULT_VNA_STOP_FREQ       9000000000
@@ -35,28 +36,36 @@ protected:
 
 public:
     VnaDevice() = default;
+
     VnaDevice(const std::string device_address) : VisaDevice(device_address){
+        this->connect();
+
         if (idn().empty()) {
             this->connected = false;
+            throw NO_CONNECTION;
         }
     }
+
     VnaDevice(visa_config config) : VisaDevice(config) {
+        this->connect();
+
         if (idn().empty()) {
             this->connected = false;
+            throw NO_CONNECTION;
         }
     }
 
-    virtual void preset() = 0;
-    virtual void full_preset() = 0;
+    virtual void preset() {};
+    virtual void full_preset() {};
 
-    virtual void init_channel() = 0;
-    virtual void configure(int meas_type, double rbw, int source_port, bool ext_gen) = 0;
+    virtual void init_channel() {};
+    virtual void configure(int meas_type, double rbw, int source_port, bool ext_gen) {};
 
-    virtual void set_power(float power) = 0;
-    virtual void set_freq(double start, double stop, int points) = 0;
-    virtual void set_path(int path_list) = 0;
+    virtual void set_power(float power) {};
+    virtual void set_freq(double start, double stop, int points) {};
+    virtual void set_path(int path_list) {};
 
-    virtual void get_data(int port_list) = 0;
+    virtual void get_data(int port_list) {};
 };
 
 

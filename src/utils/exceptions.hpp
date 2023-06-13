@@ -6,4 +6,6 @@
 #define GOT_ERROR_FROM_WRITE    0xE2
 #define GOT_ERROR_FROM_DEVICE   0xE3
 
+#define NO_CONNECTION           0xEF
+
 #endif //ANTESTL_BACKEND_EXCEPTIONS_HPP

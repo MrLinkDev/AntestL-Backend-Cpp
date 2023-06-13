@@ -23,6 +23,9 @@ add_executable(
         src/devices/visa_device.cpp
 
         src/devices/vna/vna_device.hpp
+
+        src/devices/vna/keysight_m9807a.hpp
+        src/devices/vna/keysight_m9807a.cpp
 )
 
 target_link_libraries(

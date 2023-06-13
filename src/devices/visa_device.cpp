@@ -255,3 +255,4 @@ std::string VisaDevice::send_wait_err(std::string command) {
 
     return data;
 }
+

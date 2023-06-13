@@ -77,6 +77,62 @@ public:
     std::string send_wait(std::string command);
     std::string send_err(std::string command);
     std::string send_wait_err(std::string command);
+
+    template <typename... T>
+    std::string send(const std::string &fmt, T &&...args) {
+        std::string command = std::vformat(fmt, std::make_format_args(args...));
+        std::string data{};
+
+        try {
+            data = send(command);
+        } catch (int error_code) {
+            throw error_code;
+        }
+
+        return data;
+    }
+
+    template <typename... T>
+    std::string send_wait(const std::string &fmt, T &&...args) {
+        std::string command = std::vformat(fmt, std::make_format_args(args...));
+        std::string data{};
+
+        try {
+            data = send_wait(command);
+        } catch (int error_code) {
+            throw error_code;
+        }
+
+        return data;
+    }
+
+    template <typename... T>
+    std::string send_err(const std::string &fmt, T &&...args) {
+        std::string command = std::vformat(fmt, std::make_format_args(args...));
+        std::string data{};
+
+        try {
+            data = send_err(command);
+        } catch (int error_code) {
+            throw error_code;
+        }
+
+        return data;
+    }
+
+    template <typename... T>
+    std::string send_wait_err(const std::string &fmt, T &&...args) {
+        std::string command = std::vformat(fmt, std::make_format_args(args...));
+        std::string data{};
+
+        try {
+            data = send_wait_err(command);
+        } catch (int error_code) {
+            throw error_code;
+        }
+
+        return data;
+    }
 };
 
 typedef VisaDevice visa_device;
