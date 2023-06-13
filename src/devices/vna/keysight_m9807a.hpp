@@ -4,13 +4,13 @@
 #include "vna_device.hpp"
 
 #define M9807A_PORT_COUNT   8
-#define M9807A_SWITCH_COUNT 4
+#define M9807A_MODULE_COUNT 4
 
 class KeysightM9807A : public VnaDevice {
     char port_names[M9807A_PORT_COUNT]  = {'D', 'B', 'H', 'F', 'C', 'E', 'G', 'A'};
     int port_numbers[M9807A_PORT_COUNT] = {4, 2, 8, 6, 3, 5, 7, 1};
 
-    std::array<int, M9807A_SWITCH_COUNT> path_list = {1, 1, 1, 1};
+    std::array<int, M9807A_MODULE_COUNT> path_list = {1, 1, 1, 1};
 public:
     KeysightM9807A() = default;
     KeysightM9807A(const std::string device_address);
@@ -24,7 +24,7 @@ public:
 
     void set_power(float power) override;
     void set_freq(double start, double stop, int points) override;
-    void set_path(std::array<int, M9807A_SWITCH_COUNT> path_list);
+    void set_path(int *path_list, int module_count) override;
 
     void get_data(int port_list) override;
 };

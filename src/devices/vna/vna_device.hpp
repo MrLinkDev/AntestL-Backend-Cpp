@@ -63,7 +63,8 @@ public:
 
     virtual void set_power(float power) {};
     virtual void set_freq(double start, double stop, int points) {};
-    virtual void set_path(int path_list) {};
+
+    virtual void set_path(int *path_list, int module_count) {};
 
     virtual void get_data(int port_list) {};
 };

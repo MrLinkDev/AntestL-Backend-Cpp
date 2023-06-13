@@ -53,18 +53,19 @@ void KeysightM9807A::set_freq(double start, double stop, int points) {
     send_wait_err(":SENSe:SWEep:POINts {}", this->points);
 }
 
-void KeysightM9807A::set_path(std::array<int, M9807A_SWITCH_COUNT> path_list) {
-    for (int mod = 0; mod < M9807A_SWITCH_COUNT; ++mod) {
+void KeysightM9807A::set_path(int *path_list, int module_count = M9807A_MODULE_COUNT) {
+    for (int mod = 0; mod < M9807A_MODULE_COUNT; ++mod) {
         if (this->path_list[mod] == path_list[mod]) {
             continue;
         }
 
-        send_wait_err("SENS:SWIT:M9157:MOD{}:SWIT:PATH STAT{}", mod, path_list[mod]);
+        send_wait_err("SENS:SWIT:M9157:MOD{}:SWIT:PATH STAT{}", mod + 1, path_list[mod]);
+        this->path_list[mod] = path_list[mod];
     }
 
     send_wait_err("INIT");
-
-    std::copy(path_list.begin(), path_list.end(), this->path_list.begin());
 }
 
-void KeysightM9807A::get_data(int port_list) {}
+void KeysightM9807A::get_data(int port_list) {
+
+}
