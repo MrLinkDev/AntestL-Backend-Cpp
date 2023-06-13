@@ -1,10 +1,6 @@
 #ifndef ANTESTL_BACKEND_SOCKET_SERVER_HPP
 #define ANTESTL_BACKEND_SOCKET_SERVER_HPP
 
-#include <iostream>
-#include <cstdio>
-#include <cstring>
-#include <utility>
 #include <winsock2.h>
 #include "../logger.hpp"
 
@@ -39,11 +35,6 @@
 /// Возвращаемый статус, если данные не были отправлены
 #define DATA_SEND_ERROR         0x07
 
-/// Возвращаемый статус, если данные были успешно приняты
-#define DATA_READ_OK            0x08
-/// Возвращаемый статус, если данные не были приняты
-#define DATA_READ_ERROR         0x09
-
 typedef unsigned long address_t;
 typedef unsigned short port_t;
 
@@ -63,8 +54,16 @@ public:
     SocketServer(port_t port);
     SocketServer(address_t address, port_t port);
 
-    
+    void set_termination(std::string termination);
+
+    int create();
+    int wait_client();
+
+    std::string read_data();
+    int send_data(std::string data);
 };
+
+typedef SocketServer server_t;
 
 
 #endif //ANTESTL_BACKEND_SOCKET_SERVER_HPP

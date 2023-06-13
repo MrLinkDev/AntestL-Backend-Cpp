@@ -13,11 +13,9 @@
 #define DEFAULT_BUFFER_SIZE     128
 #define DEFAULT_TIME_FORMAT     "%Y-%m-%d %H:%M:%S"
 
-using namespace std;
-
 namespace string_utils {
 
-    int count(const string &target, char symbol) {
+    inline int count(const std::string &target, char symbol) {
         int count = 0;
 
         for (char t : target) {
@@ -29,9 +27,9 @@ namespace string_utils {
         return count;
     }
 
-    vector<string> split(const string &source, char delimiter = DEFAULT_DELIMITER) {
-        vector<string> out{};
-        string cache{};
+    inline std::vector<std::string> split(const std::string &source, char delimiter = DEFAULT_DELIMITER) {
+        std::vector<std::string> out{};
+        std::string cache{};
 
         for(char symbol : source) {
             if (symbol != delimiter) {
@@ -48,11 +46,11 @@ namespace string_utils {
         return out;
     }
 
-    string lstrip(const string &source, char strip_symbol) {
-        return source.substr(source.find(strip_symbol) + 1, string::npos);
+    inline std::string lstrip(const std::string &source, char strip_symbol) {
+        return source.substr(source.find(strip_symbol) + 1, std::string::npos);
     }
 
-    string rstrip(const string &source, char strip_symbol) {
+    inline std::string rstrip(const std::string &source, char strip_symbol) {
         return source.substr(0, source.rfind(strip_symbol));
     }
 }
@@ -77,7 +75,7 @@ namespace time_utils {
         char str_time[DEFAULT_BUFFER_SIZE];
         strftime(str_time, DEFAULT_BUFFER_SIZE, DEFAULT_TIME_FORMAT, time_struct);
 
-        return string(str_time) + format(".{:03}", milliseconds);
+        return std::string(str_time) + std::format(".{:03}", milliseconds);
     }
 }
 

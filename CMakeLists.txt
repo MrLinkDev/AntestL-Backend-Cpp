@@ -14,9 +14,13 @@ add_executable(
 
         src/utils/utils.hpp
         src/utils/logger.hpp
+        src/utils/exceptions.hpp
 
         src/utils/socket/socket_server.hpp
-        src/utils/socket/socket_server.cpp)
+        src/utils/socket/socket_server.cpp
+
+        src/devices/visa_device.hpp
+        src/devices/visa_device.cpp)
 
 target_link_libraries(
         antestl_backend

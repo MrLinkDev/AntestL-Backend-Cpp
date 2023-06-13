@@ -8,21 +8,20 @@
 #include "utils.hpp"
 
 #define LEVEL_ERROR 0
-#define LEVEL_INFO  1
-#define LEVEL_DEBUG 2
-
-using namespace std;
-
-typedef unsigned long long int size_t;
+#define LEVEL_WARN  1
+#define LEVEL_INFO  2
+#define LEVEL_DEBUG 3
 
 class Logger {
 
     inline static int log_level = LEVEL_DEBUG;
 
-    static string get_tag(int level) {
+    static std::string get_tag(int level) {
         switch (level) {
             case LEVEL_ERROR:
                 return "ERROR";
+            case LEVEL_WARN:
+                return " WARN";
             case LEVEL_INFO:
                 return " INFO";
             case LEVEL_DEBUG:
@@ -32,11 +31,11 @@ class Logger {
         }
     }
 
-    static void print_to_console(const string &message) {
-        cout << message << endl;
+    static void print_to_console(const std::string &message) {
+        std::cout << message << std::endl;
     }
 
-    static void print_to_file(const string &message) {
+    static void print_to_file(const std::string &message) {
         // TODO: Добавить сохранение логов в файл
     }
 
@@ -45,27 +44,27 @@ public:
         log_level = level;
     }
 
-    static void log(int level, const string &message) {
+    static void log(int level, const std::string &message) {
         if (level > log_level) return;
 
-        string time = time_utils::get_current_time();
-        string log_level_tag = get_tag(level);
+        std::string time = time_utils::get_current_time();
+        std::string log_level_tag = get_tag(level);
 
-        string log_message = time + " [" + log_level_tag + "] " + message;
+        std::string log_message = time + " [" + log_level_tag + "] " + message;
 
         print_to_console(log_message);
         print_to_file(log_message);
     }
 
     template <typename... T>
-    static void log(int level, const string &fmt, T&&... args) {
+    static void log(int level, const std::string &fmt, T&&... args) {
         if (level > log_level) return;
 
-        string time = time_utils::get_current_time();
-        string log_level_tag = get_tag(level);
+        std::string time = time_utils::get_current_time();
+        std::string log_level_tag = get_tag(level);
 
-        string log_message = time + " [" + log_level_tag + "] ";
-        log_message += vformat(fmt, make_format_args(args...));
+        std::string log_message = time + " [" + log_level_tag + "] ";
+        log_message += std::vformat(fmt, std::make_format_args(args...));
 
         print_to_console(log_message);
         print_to_file(log_message);
