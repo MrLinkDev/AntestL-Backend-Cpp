@@ -22,11 +22,20 @@ public:
     void init_channel() override;
     void configure(int meas_type, double rbw, int source_port, bool ext_gen) override;
 
+    void create_traces(int *port_list, int length) override;
+
     void set_power(float power) override;
     void set_freq(double start, double stop, int points) override;
+    void set_freq(double freq) override;
     void set_path(int *path_list, int module_count) override;
 
-    void get_data(int port_list) override;
+    void rf_off() override;
+    void rf_off(int port) override;
+
+    void rf_on() override;
+    void rf_on(int port) override;
+
+    iq_data_t get_data(int *port_list, int length) override;
 };
 
 

@@ -58,6 +58,13 @@ VisaDevice::VisaDevice(visa_config config) {
     device_config = config;
 }
 
+VisaDevice::~VisaDevice() {
+    if (connected) {
+        clear();
+        viClose(device);
+    }
+}
+
 void VisaDevice::connect() {
     status = viOpenDefaultRM(&resource_manager);
 

@@ -35,6 +35,49 @@ void KeysightM9807A::configure(int meas_type, double rbw, int source_port, bool 
     send_wait_err(":SENSe:BANDwidth:RESolution {}", this->rbw);
 }
 
+void KeysightM9807A::create_traces(int *port_list, int length) {
+    send_wait_err(":CALCulate:PARameter:DELete:ALL");
+
+    std::string trace_name{};
+    std::string trace_params{};
+
+    int trace_arg = external ? 0 : source_port;
+
+    for (int pos = 0; pos < length; ++ pos) {
+        if (external) {
+            char port_name = port_names[
+                    array_utils::index(
+                            port_numbers,
+                            M9807A_PORT_COUNT,
+                            port_list[pos]
+                    )];
+
+            char source_port_name = port_names[
+                    array_utils::index(
+                            port_numbers,
+                            M9807A_PORT_COUNT,
+                            port_list[source_port]
+                    )];
+
+            if (meas_type == MEAS_TRANSITION) {
+                trace_name = std::format("{}/{}", port_name, source_port_name);
+                trace_params = std::format("{},{}", trace_name, trace_arg);
+            } else {
+                trace_name = trace_params = std::format("S{}{}", port_list[pos], port_list[pos]);
+            }
+        } else {
+            if (meas_type == MEAS_TRANSITION) {
+                trace_name = trace_params = std::format("S{}{}", port_list[pos], source_port);
+            } else {
+                trace_name = trace_params = std::format("S{}{}", port_list[pos], port_list[pos]);
+            }
+        }
+
+        send_wait_err(":CALCulate1:CUSTom:DEFine \"TR{}\",\"Standard\",\"{}\"", port_list[pos], trace_params);
+        send_wait_err(":DISPlay:WINDow:TRACe{}:FEED \"TR{}\"", port_list[pos], port_list[pos]);
+    }
+}
+
 void KeysightM9807A::set_power(float power) {
     this->power = power;
 
@@ -47,6 +90,16 @@ void KeysightM9807A::set_freq(double start, double stop, int points) {
     this->start_freq = start;
     this->stop_freq = stop;
     this->points = points;
+
+    send_wait_err(":SENSe:FREQuency:STARt {}", this->start_freq);
+    send_wait_err(":SENSe:FREQuency:STOP {}", this->stop_freq);
+    send_wait_err(":SENSe:SWEep:POINts {}", this->points);
+}
+
+void KeysightM9807A::set_freq(double freq) {
+    this->start_freq = freq;
+    this->stop_freq = freq;
+    this->points = 1;
 
     send_wait_err(":SENSe:FREQuency:STARt {}", this->start_freq);
     send_wait_err(":SENSe:FREQuency:STOP {}", this->stop_freq);
@@ -66,6 +119,33 @@ void KeysightM9807A::set_path(int *path_list, int module_count = M9807A_MODULE_C
     send_wait_err("INIT");
 }
 
-void KeysightM9807A::get_data(int port_list) {
+void KeysightM9807A::rf_off() {
+    send_wait_err(":SOURce:POWer:COUPle 0");
+
+    for (int port = 1; port < M9807A_PORT_COUNT + 1; ++port) {
+        send_wait_err(":SOURce:POWer{}:MODE OFF", port);
+    }
+}
+
+void KeysightM9807A::rf_off(int port) {
+    send_wait_err(":SOURce:POWer:COUPle 0");
+    send_wait_err(":SOURce:POWer{}:MODE OFF", port);
+}
+
+void KeysightM9807A::rf_on() {
+    send_wait_err(":SOURce:POWer:COUPle 0");
+
+    for (int port = 1; port < M9807A_PORT_COUNT + 1; ++port) {
+        send_wait_err(":SOURce:POWer{}:MODE ON", port);
+    }
+}
+
+void KeysightM9807A::rf_on(int port) {
+    send_wait_err(":SOURce:POWer:COUPle 0");
+    send_wait_err(":SOURce:POWer{}:MODE ON", port);
+}
+
+
+iq_data_t KeysightM9807A::get_data(int *port_list, int length) {
 
 }

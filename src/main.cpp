@@ -28,11 +28,15 @@ int main() {
     vna->set_power(-2.23f);
     vna->set_freq(11e9, 13e9, 113);
 
-    int a[4] = {1, 3, 4, 2};
-    vna->set_path(a, 4);
+    //int a[4] = {1, 3, 4, 2};
+    //vna->set_path(a, 4);
 
-    int b[4] = {2, 2, 2, 2};
-    vna->set_path(b, 4);
+    //int b[4] = {2, 2, 2, 2};
+    //vna->set_path(b, 4);
+
+    int c[5] = {1, 3, 5, 6, 7};
+    std::cout << array_utils::index(c, 5, 2) << std::endl;
+    std::cout << array_utils::index(c, 5, 6) << std::endl;
 
     return 0;
 }

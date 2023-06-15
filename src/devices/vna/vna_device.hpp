@@ -18,6 +18,8 @@
 #define MEAS_TRANSITION             0x00
 #define MEAS_REFLECTION             0x01
 
+typedef std::pair<std::vector<std::string>, std::vector<std::string>> iq_data_t;
+
 class VnaDevice : public VisaDevice {
 
 protected:
@@ -31,6 +33,7 @@ protected:
     float power         = DEFAULT_VNA_POWER;
 
     int source_port     = DEFAULT_VNA_SOURCE_PORT;
+    bool external       = false;
 
     int meas_type       = MEAS_TRANSITION;
 
@@ -61,12 +64,21 @@ public:
     virtual void init_channel() {};
     virtual void configure(int meas_type, double rbw, int source_port, bool ext_gen) {};
 
+    virtual void create_traces(int *port_list, int length) {};
+
     virtual void set_power(float power) {};
     virtual void set_freq(double start, double stop, int points) {};
+    virtual void set_freq(double freq) {};
 
     virtual void set_path(int *path_list, int module_count) {};
 
-    virtual void get_data(int port_list) {};
+    virtual void rf_off() {};
+    virtual void rf_off(int port) {};
+
+    virtual void rf_on() {};
+    virtual void rf_on(int port) {};
+
+    virtual iq_data_t get_data(int *port_list, int length) {};
 };
 
 

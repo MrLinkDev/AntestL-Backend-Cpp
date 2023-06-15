@@ -61,6 +61,8 @@ public:
     VisaDevice(const std::string device_address);
     VisaDevice(visa_config config);
 
+    ~VisaDevice();
+
     virtual void connect();
 
     bool is_connected();

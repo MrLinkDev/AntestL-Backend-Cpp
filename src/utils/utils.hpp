@@ -79,4 +79,18 @@ namespace time_utils {
     }
 }
 
+namespace array_utils {
+
+    template <typename T>
+    inline int index(T *target_array, int array_length, T item) {
+        for (int pos = 0; pos < array_length; ++pos) {
+            if (target_array[pos] == item) {
+                return pos;
+            }
+        }
+
+        return -1;
+    }
+}
+
 #endif //ANTESTL_BACKEND_UTILS_HPP
