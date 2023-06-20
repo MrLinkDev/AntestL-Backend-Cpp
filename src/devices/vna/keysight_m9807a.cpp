@@ -20,7 +20,7 @@ void KeysightM9807A::full_preset() {
 }
 
 void KeysightM9807A::init_channel() {
-    send_wait_err(":CALCulate1:CUSTom:DEFine \"TR0\",\"Standard\",\"S11\"");
+    send_wait_err(R"(:CALCulate1:CUSTom:DEFine "TR0","Standard","S11")");
 }
 
 void KeysightM9807A::configure(int meas_type, double rbw, int source_port, bool ext_gen) {
@@ -35,7 +35,7 @@ void KeysightM9807A::configure(int meas_type, double rbw, int source_port, bool 
     send_wait_err(":SENSe:BANDwidth:RESolution {}", this->rbw);
 }
 
-void KeysightM9807A::create_traces(int *port_list, int length) {
+void KeysightM9807A::create_traces(int *port_list, int length, bool external) {
     send_wait_err(":CALCulate:PARameter:DELete:ALL");
 
     std::string trace_name{};
@@ -73,7 +73,7 @@ void KeysightM9807A::create_traces(int *port_list, int length) {
             }
         }
 
-        send_wait_err(":CALCulate1:CUSTom:DEFine \"TR{}\",\"Standard\",\"{}\"", port_list[pos], trace_params);
+        send_wait_err(R"(:CALCulate1:CUSTom:DEFine "TR{}","Standard","{}")", port_list[pos], trace_params);
         send_wait_err(":DISPlay:WINDow:TRACe{}:FEED \"TR{}\"", port_list[pos], port_list[pos]);
     }
 }
@@ -145,7 +145,25 @@ void KeysightM9807A::rf_on(int port) {
     send_wait_err(":SOURce:POWer{}:MODE ON", port);
 }
 
+void KeysightM9807A::trigger() {
+    send_wait_err(":TRIGger:SEQuence:SOURce MANual");
+    send_wait_err(":TRIGger:SEQuence:SCOPe CURRent");
 
-iq_data_t KeysightM9807A::get_data(int *port_list, int length) {
+    send_wait_err("TRIG:SCOP ALL");
+}
 
+
+iq_data_t KeysightM9807A::get_data(int trace_index) {
+    iq_data_t iq_data{};
+
+    send_wait_err("INIT");
+
+    std::string received_data = send(":CALCULATE:MEASURE{}:DATA:SDATA?", trace_index + 1);
+    std::vector<std::string> cached_data = string_utils::split(received_data, DATA_DELIMITER);
+
+    for (int pos = 0; pos < cached_data.size(); pos += 2) {
+        iq_data.emplace_back(cached_data[pos], cached_data[pos + 1]);
+    }
+
+    return iq_data;
 }

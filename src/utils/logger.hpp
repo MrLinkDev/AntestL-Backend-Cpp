@@ -12,6 +12,8 @@
 #define LEVEL_INFO  2
 #define LEVEL_DEBUG 3
 
+#define MAX_MESSAGE_LENGTH  84
+
 class Logger {
 
     inline static int log_level = LEVEL_DEBUG;
@@ -52,6 +54,10 @@ public:
 
         std::string log_message = time + " [" + log_level_tag + "] " + message;
 
+        if (log_message.length() > MAX_MESSAGE_LENGTH) {
+            log_message = log_message.substr(0, MAX_MESSAGE_LENGTH) + "...";
+        }
+
         print_to_console(log_message);
         print_to_file(log_message);
     }
@@ -65,6 +71,10 @@ public:
 
         std::string log_message = time + " [" + log_level_tag + "] ";
         log_message += std::vformat(fmt, std::make_format_args(args...));
+
+        if (log_message.length() > MAX_MESSAGE_LENGTH) {
+            log_message = log_message.substr(0, MAX_MESSAGE_LENGTH) + "...";
+        }
 
         print_to_console(log_message);
         print_to_file(log_message);

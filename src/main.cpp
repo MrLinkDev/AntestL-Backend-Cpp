@@ -23,10 +23,20 @@ int main() {
 
     VnaDevice *vna = new KeysightM9807A("TCPIP0::K-N9020B-11111::inst0::INSTR");
 
+    int port_list[] = {2};
+
     vna->full_preset();
     vna->init_channel();
     vna->set_power(-2.23f);
     vna->set_freq(11e9, 13e9, 113);
+    vna->create_traces(port_list, 1, false);
+    vna->trigger();
+    iq_data_t iq_data = vna->get_data(0);
+
+    for (int i = 0; i < 5; ++i) {
+        std::cout << iq_data.at(i).first << " | " << iq_data.at(i).second << std::endl;
+    }
+
 
     //int a[4] = {1, 3, 4, 2};
     //vna->set_path(a, 4);

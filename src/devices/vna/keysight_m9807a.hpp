@@ -22,7 +22,7 @@ public:
     void init_channel() override;
     void configure(int meas_type, double rbw, int source_port, bool ext_gen) override;
 
-    void create_traces(int *port_list, int length) override;
+    void create_traces(int *port_list, int length, bool external) override;
 
     void set_power(float power) override;
     void set_freq(double start, double stop, int points) override;
@@ -35,7 +35,9 @@ public:
     void rf_on() override;
     void rf_on(int port) override;
 
-    iq_data_t get_data(int *port_list, int length) override;
+    void trigger() override;
+
+    iq_data_t get_data(int trace_index) override;
 };
 
 
