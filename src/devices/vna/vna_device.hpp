@@ -81,7 +81,7 @@ public:
 
     virtual void trigger() {};
 
-    virtual iq_data_t get_data(int trace_index) {};
+    virtual iq_data_t get_data(int trace_index) {return iq_data_t{};};
 };
 
 

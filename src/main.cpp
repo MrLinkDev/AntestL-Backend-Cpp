@@ -12,6 +12,7 @@ int main() {
     logger::log(LEVEL_ERROR, "Error msg");
     logger::log(LEVEL_INFO, "Info msg");
     logger::log(LEVEL_DEBUG, "Debug msg");
+    logger::log(LEVEL_WARN, "Warn msg");
 
     std::string test = "12345";
     logger::log(LEVEL_DEBUG, "{} {}", test, 123);
@@ -30,7 +31,7 @@ int main() {
     vna->set_power(-2.23f);
     vna->set_freq(11e9, 13e9, 113);
     vna->create_traces(port_list, 1, false);
-    vna->trigger();
+    //vna->trigger();
     iq_data_t iq_data = vna->get_data(0);
 
     for (int i = 0; i < 5; ++i) {

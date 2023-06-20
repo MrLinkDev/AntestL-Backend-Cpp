@@ -12,24 +12,28 @@
 #define LEVEL_INFO  2
 #define LEVEL_DEBUG 3
 
+#define NO_COLOR    false
+#define COLORED     true
+
 #define MAX_MESSAGE_LENGTH  84
 
 class Logger {
 
     inline static int log_level = LEVEL_DEBUG;
+    inline static bool colored  = COLORED;
 
-    static std::string get_tag(int level) {
+    static std::string get_tag(int level, bool for_file) {
         switch (level) {
             case LEVEL_ERROR:
-                return "ERROR";
+                return (!for_file & colored) ? "\033[31mERROR\033[0m" : "ERROR";
             case LEVEL_WARN:
-                return " WARN";
+                return (!for_file & colored) ? "\033[33m WARN\033[0m" : " WARN";
             case LEVEL_INFO:
-                return " INFO";
+                return (!for_file & colored) ? "\033[37m INFO\033[0m" : " INFO";
             case LEVEL_DEBUG:
                 return "DEBUG";
             default:
-                return "";
+                return std::string{};
         }
     }
 
@@ -46,19 +50,26 @@ public:
         log_level = level;
     }
 
+    static void set_color_state(bool color_state) {
+        colored = color_state;
+    }
+
     static void log(int level, const std::string &message) {
         if (level > log_level) return;
 
         std::string time = time_utils::get_current_time();
-        std::string log_level_tag = get_tag(level);
 
-        std::string log_message = time + " [" + log_level_tag + "] " + message;
+        std::string log_level_tag_colored   = get_tag(level, false);
+        std::string log_level_tag           = get_tag(level, true);
 
-        if (log_message.length() > MAX_MESSAGE_LENGTH) {
-            log_message = log_message.substr(0, MAX_MESSAGE_LENGTH) + "...";
+        std::string log_message_colored = time + " [" + log_level_tag_colored + "] " + message;
+        std::string log_message         = time + " [" + log_level_tag + "] " + message;
+
+        if (log_message_colored.length() > MAX_MESSAGE_LENGTH) {
+            log_message_colored = log_message.substr(0, MAX_MESSAGE_LENGTH) + "...";
         }
 
-        print_to_console(log_message);
+        print_to_console(log_message_colored);
         print_to_file(log_message);
     }
 
@@ -67,16 +78,21 @@ public:
         if (level > log_level) return;
 
         std::string time = time_utils::get_current_time();
-        std::string log_level_tag = get_tag(level);
+
+        std::string log_level_tag_colored   = get_tag(level, false);
+        std::string log_level_tag           = get_tag(level, true);
+
+        std::string log_message_colored = time + " [" + log_level_tag_colored + "] ";
+        log_message_colored += std::vformat(fmt, std::make_format_args(args...));
 
         std::string log_message = time + " [" + log_level_tag + "] ";
         log_message += std::vformat(fmt, std::make_format_args(args...));
 
-        if (log_message.length() > MAX_MESSAGE_LENGTH) {
-            log_message = log_message.substr(0, MAX_MESSAGE_LENGTH) + "...";
+        if (log_message_colored.length() > MAX_MESSAGE_LENGTH) {
+            log_message_colored = log_message_colored.substr(0, MAX_MESSAGE_LENGTH) + "...";
         }
 
-        print_to_console(log_message);
+        print_to_console(log_message_colored);
         print_to_file(log_message);
     }
 
