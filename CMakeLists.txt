@@ -26,6 +26,11 @@ add_executable(
 
         src/devices/vna/keysight_m9807a.hpp
         src/devices/vna/keysight_m9807a.cpp
+
+        src/devices/gen/gen_device.hpp
+
+        src/devices/gen/keysight_gen.hpp
+        src/devices/gen/keysight_gen.cpp
 )
 
 target_link_libraries(
