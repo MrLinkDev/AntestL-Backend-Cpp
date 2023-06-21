@@ -31,7 +31,7 @@ class Logger {
             case LEVEL_INFO:
                 return (!for_file & colored) ? "\033[1;97mINF\033[0m" : "INF";
             case LEVEL_DEBUG:
-                return (!for_file & colored) ? "\033[37mDBG\033[0m" : "DBG";
+                return (!for_file & colored) ? "\033[1;90mDBG\033[0m" : "DBG";
             default:
                 return std::string{};
         }
