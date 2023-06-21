@@ -193,7 +193,7 @@ void VisaDevice::wait() {
     } while (opc_status != OPC_PASS);
 }
 
-std::string VisaDevice::send(std::string command) {
+std::string VisaDevice::send(std::string command, bool read_data) {
     std::string data{};
 
     if (command[command.length() - 1] == '?') {
@@ -207,6 +207,15 @@ std::string VisaDevice::send(std::string command) {
         if (write(command) == FAILURE) {
             logger::log(LEVEL_ERROR, "Unable to send data");
             throw GOT_ERROR_FROM_WRITE;
+        }
+
+        if (read_data) {
+            data = read();
+
+            if (data.empty()) {
+                logger::log(LEVEL_ERROR, "No data from device");
+                throw NO_DATA_FROM_DEVICE;
+            }
         }
     }
 

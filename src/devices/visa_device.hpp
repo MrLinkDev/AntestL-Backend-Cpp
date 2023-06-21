@@ -75,7 +75,7 @@ public:
 
     void wait();
 
-    std::string send(std::string command);
+    std::string send(std::string command, bool read_data = false);
     std::string send_wait(std::string command);
     std::string send_err(std::string command);
     std::string send_wait_err(std::string command);

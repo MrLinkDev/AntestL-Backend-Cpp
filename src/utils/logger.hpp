@@ -15,7 +15,7 @@
 #define NO_COLOR    false
 #define COLORED     true
 
-#define MAX_MESSAGE_LENGTH  84
+#define MAX_MESSAGE_LENGTH  128
 
 class Logger {
 
@@ -25,13 +25,13 @@ class Logger {
     static std::string get_tag(int level, bool for_file) {
         switch (level) {
             case LEVEL_ERROR:
-                return (!for_file & colored) ? "\033[31mERROR\033[0m" : "ERROR";
+                return (!for_file & colored) ? "\033[1;31mERR\033[0m" : "ERR";
             case LEVEL_WARN:
-                return (!for_file & colored) ? "\033[33m WARN\033[0m" : " WARN";
+                return (!for_file & colored) ? "\033[1;33mWRN\033[0m" : "WRN";
             case LEVEL_INFO:
-                return (!for_file & colored) ? "\033[37m INFO\033[0m" : " INFO";
+                return (!for_file & colored) ? "\033[1;97mINF\033[0m" : "INF";
             case LEVEL_DEBUG:
-                return "DEBUG";
+                return (!for_file & colored) ? "\033[37mDBG\033[0m" : "DBG";
             default:
                 return std::string{};
         }
