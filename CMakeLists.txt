@@ -16,11 +16,14 @@ add_executable(
         src/utils/logger.hpp
         src/utils/exceptions.hpp
 
-        src/utils/socket/socket_server.hpp
-        src/utils/socket/socket_server.cpp
+        src/socket/socket_server.hpp
+        src/socket/socket_server.cpp
 
         src/devices/visa_device.hpp
         src/devices/visa_device.cpp
+
+        src/devices/device_set.hpp
+        src/devices/device_set.cpp
 
         src/devices/vna/vna_device.hpp
 

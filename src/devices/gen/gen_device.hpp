@@ -52,7 +52,8 @@ public:
 
     virtual void preset() {};
 
-    virtual void set_freq(double start, double stop, int points) {};
+    virtual void set_freq(double freq) {};
+    virtual void set_freq_range(double start, double stop, int points) {};
 
     virtual void set_power(float value) {};
 

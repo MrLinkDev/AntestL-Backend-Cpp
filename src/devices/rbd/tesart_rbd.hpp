@@ -26,6 +26,8 @@ class TesartRbd : public RbdDevice {
     int status(int axis_num);
     int status(VisaDevice *axis);
 
+    void init_params(size_t axis_count) override;
+
 public:
     TesartRbd() = default;
     TesartRbd(const std::string& device_addresses);
@@ -34,6 +36,15 @@ public:
 
     void move(float pos, int axis_num) override;
     void stop() override;
+
+    void set_angle(float angle, int axis_num = 0) override;
+    void set_angle_range(float start_angle, float stop_angle, int points, int axis_num = 0) override;
+
+    void next_angle(int axis_num = 0) override;
+    void prev_angle(int axis_num = 0) override;
+
+    void move_to_start_angle(int axis_num = 0) override;
+    void move_to_stop_angle(int axis_num = 0)override;
 
     float get_pos(int axis_num) override;
 

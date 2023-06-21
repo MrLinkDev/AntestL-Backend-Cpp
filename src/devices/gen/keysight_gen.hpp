@@ -13,7 +13,8 @@ public:
 
     void preset() override;
 
-    void set_freq(double start, double stop, int points) override;
+    void set_freq(double freq) override;
+    void set_freq_range(double start, double stop, int points) override;
 
     void set_power(float value) override;
 

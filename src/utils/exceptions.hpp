@@ -9,5 +9,6 @@
 #define NO_CONNECTION           0xEF
 
 #define FREQ_OUT_OF_BOUND       0xF0
+#define ANGLE_OUT_OF_BOUND      0xF1
 
 #endif //ANTESTL_BACKEND_EXCEPTIONS_HPP

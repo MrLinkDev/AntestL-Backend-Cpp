@@ -11,7 +11,19 @@ void KeysightGen::preset() {
     send("OUTPUT:STATE OFF");
 }
 
-void KeysightGen::set_freq(double start, double stop, int points) {
+void KeysightGen::set_freq(double freq) {
+    this->start_freq = freq;
+    this->stop_freq = freq;
+
+    this->current_freq = freq;
+
+    this->points = 1;
+    this->current_point = 0;
+
+    send_wait(":FREQ {}", current_freq);
+}
+
+void KeysightGen::set_freq_range(double start, double stop, int points) {
     this->start_freq = start;
     this->stop_freq = stop;
 
@@ -21,6 +33,8 @@ void KeysightGen::set_freq(double start, double stop, int points) {
 
     current_freq = start_freq;
     current_point = 0;
+
+    move_to_start_freq();
 }
 
 void KeysightGen::set_power(float value) {
@@ -70,7 +84,6 @@ void KeysightGen::move_to_start_freq() {
     current_point = 0;
 
     send_wait(":FREQ {}", current_freq);
-    send(":FREQ?");
 }
 
 void KeysightGen::move_to_stop_freq() {
@@ -80,6 +93,5 @@ void KeysightGen::move_to_stop_freq() {
     current_point = points - 1;
 
     send_wait(":FREQ {}", current_freq);
-    send(":FREQ?");
 }
 
