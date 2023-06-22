@@ -25,7 +25,7 @@ public:
     void create_traces(int *port_list, int length, bool external) override;
 
     void set_power(float power) override;
-    void set_freq(double start, double stop, int points) override;
+    void set_freq_range(double start, double stop, int points) override;
     void set_freq(double freq) override;
     void set_path(int *path_list, int module_count) override;
 
@@ -36,6 +36,8 @@ public:
     void rf_on(int port) override;
 
     void trigger() override;
+
+    void init() override;
 
     iq_data_t get_data(int trace_index) override;
 };

@@ -26,6 +26,8 @@ public:
 
     void move_to_start_freq() override;
     void move_to_stop_freq() override;
+
+    double get_current_freq() override;
 };
 
 

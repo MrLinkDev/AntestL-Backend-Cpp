@@ -53,6 +53,15 @@ namespace string_utils {
     inline std::string rstrip(const std::string &source, char strip_symbol) {
         return source.substr(0, source.rfind(strip_symbol));
     }
+
+    inline void join(std::string *source, std::string item) {
+        source->append(item);
+    }
+
+    inline void join(std::string *source, std::string item, char delimiter) {
+        source->push_back(delimiter);
+        source->append(item);
+    }
 }
 
 namespace time_utils {

@@ -86,14 +86,17 @@ void KeysightM9807A::set_power(float power) {
     }
 }
 
-void KeysightM9807A::set_freq(double start, double stop, int points) {
+void KeysightM9807A::set_freq_range(double start, double stop, int points) {
     this->start_freq = start;
     this->stop_freq = stop;
     this->points = points;
 
+    freq_step = this->points <= 1 ? 0 : (this->stop_freq - this->start_freq) / (this->points - 1);
+
+    send_wait_err(":SENSe:SWEep:POINts {}", this->points);
+
     send_wait_err(":SENSe:FREQuency:STARt {}", this->start_freq);
     send_wait_err(":SENSe:FREQuency:STOP {}", this->stop_freq);
-    send_wait_err(":SENSe:SWEep:POINts {}", this->points);
 }
 
 void KeysightM9807A::set_freq(double freq) {
@@ -101,9 +104,12 @@ void KeysightM9807A::set_freq(double freq) {
     this->stop_freq = freq;
     this->points = 1;
 
+    freq_step = 0;
+
+    send_wait_err(":SENSe:SWEep:POINts {}", this->points);
+
     send_wait_err(":SENSe:FREQuency:STARt {}", this->start_freq);
     send_wait_err(":SENSe:FREQuency:STOP {}", this->stop_freq);
-    send_wait_err(":SENSe:SWEep:POINts {}", this->points);
 }
 
 void KeysightM9807A::set_path(int *path_list, int module_count = M9807A_MODULE_COUNT) {
@@ -150,6 +156,10 @@ void KeysightM9807A::trigger() {
     send_wait_err(":TRIGger:SEQuence:SCOPe CURRent");
 
     send_wait_err("TRIG:SCOP ALL");
+}
+
+void KeysightM9807A::init() {
+    send_wait_err("INIT");
 }
 
 

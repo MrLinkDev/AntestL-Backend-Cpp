@@ -79,6 +79,16 @@ TesartRbd::TesartRbd(const std::string &device_addresses) {
     init_params(axes.size());
 }
 
+bool TesartRbd::is_connected() {
+    bool connected = true;
+
+    for (VisaDevice axis : axes) {
+        connected &= axis.is_connected();
+    }
+
+    return connected;
+}
+
 bool TesartRbd::is_stopped(int axis_num) {
     int status_code = status(axis_num);
 
@@ -120,7 +130,7 @@ void TesartRbd::set_angle_range(float start_angle, float stop_angle, int points,
 
     angle_step[axis_num] =
             this->points[axis_num] <= 1 ?
-            0 : (this->start_angle[axis_num] - this->stop_angle[axis_num]) / (this->points[axis_num] - 1);
+            0 : (this->stop_angle[axis_num] - this->start_angle[axis_num]) / (this->points[axis_num] - 1);
 
     this->points[axis_num] = points;
     this->current_point[axis_num] = 0;

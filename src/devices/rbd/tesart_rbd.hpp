@@ -32,6 +32,8 @@ public:
     TesartRbd() = default;
     TesartRbd(const std::string& device_addresses);
 
+    bool is_connected() override;
+
     bool is_stopped(int axis_num);
 
     void move(float pos, int axis_num) override;

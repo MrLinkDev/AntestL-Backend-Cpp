@@ -20,6 +20,8 @@ protected:
 public:
     RbdDevice() = default;
 
+    virtual bool is_connected() {return false;};
+
     virtual void move(float pos, int axis_num = 0) {};
     virtual void stop() {};
 
@@ -32,7 +34,7 @@ public:
     virtual void move_to_start_angle(int axis_num = 0) {};
     virtual void move_to_stop_angle(int axis_num = 0) {};
 
-    virtual float get_pos(int axis_num = 0) {};
+    virtual float get_pos(int axis_num = 0) {return 0.0f;};
 };
 
 #endif //ANTESTL_BACKEND_RBD_DEVICE_HPP

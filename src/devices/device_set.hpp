@@ -13,10 +13,42 @@
 #define DEVICE_GEN  0xD1
 #define DEVICE_RBD  0xD2
 
+#define DEFAULT_ANGLE       0.0
+
+#define COLUMN_DELIMITER    ','
+#define ROW_DELIMITER       ';'
+
+struct data_struct_t {
+    float angle;
+    double freq;
+
+    std::vector<std::string> port_i;
+    std::vector<std::string> port_q;
+
+    void insert_port_data(iq_data_item_t port_data) {
+        port_i.push_back(port_data.first);
+        port_q.push_back(port_data.second);
+    }
+
+    std::string to_string() {
+        std::string out = std::format("{}{}{}", angle,COLUMN_DELIMITER , freq);
+
+        for (int pos = 0; pos < port_i.size(); ++pos) {
+            string_utils::join(&out, port_i[pos], COLUMN_DELIMITER);
+            string_utils::join(&out, port_q[pos], COLUMN_DELIMITER);
+        }
+
+        return out;
+    }
+};
+
 class DeviceSet {
-    VnaDevice *vna{};
-    GenDevice *ext_gen{};
-    RbdDevice *rbd{};
+    VnaDevice *vna = nullptr;
+    GenDevice *ext_gen = nullptr;
+    RbdDevice *rbd = nullptr;
+
+    int meas_type = MEAS_TRANSITION;
+    bool using_ext_gen = false;
 
 public:
     DeviceSet() = default;
@@ -29,8 +61,22 @@ public:
     bool set_freq(double freq);
     bool set_freq_range(double start_freq, double stop_freq, int points);
 
-    void next_freq();
-    void prev_freq();
+    bool next_freq();
+    bool prev_freq();
+
+    void move_to_start_freq();
+
+    bool set_angle(float angle, int axis_num);
+    bool set_angle_range(float start_angle, float stop_angle, int points, int axis_num);
+
+    bool next_angle(int axis_num);
+    bool prev_angle(int axis_num);
+
+    void move_to_start_angle(int axis_num);
+
+    bool change_path(int *paths, int length);
+
+    std::string get_data(int *ports, int length, int axis_num);
 };
 
 

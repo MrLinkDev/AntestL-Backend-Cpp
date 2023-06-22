@@ -15,7 +15,7 @@
 #define NO_COLOR    false
 #define COLORED     true
 
-#define MAX_MESSAGE_LENGTH  128
+#define MAX_MESSAGE_LENGTH  160
 
 class Logger {
 

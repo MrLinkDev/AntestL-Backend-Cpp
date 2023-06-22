@@ -65,6 +65,8 @@ public:
 
     virtual void move_to_start_freq() {};
     virtual void move_to_stop_freq() {};
+
+    virtual double get_current_freq() {return 0.0;};
 };
 
 #endif //ANTESTL_BACKEND_GEN_DEVICE_HPP

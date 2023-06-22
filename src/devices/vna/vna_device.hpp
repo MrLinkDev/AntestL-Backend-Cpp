@@ -20,13 +20,15 @@
 
 #define DATA_DELIMITER              ','
 
-typedef std::vector<std::pair<std::string, std::string>> iq_data_t;
+typedef std::pair<std::string, std::string> iq_data_item_t;
+typedef std::vector<iq_data_item_t> iq_data_t;
 
 class VnaDevice : public VisaDevice {
 
 protected:
     double start_freq   = DEFAULT_VNA_START_FREQ;
     double stop_freq    = DEFAULT_VNA_STOP_FREQ;
+    double freq_step    = 0;
 
     int points          = DEFAULT_VNA_POINTS;
 
@@ -59,6 +61,19 @@ public:
         }
     }
 
+    int get_source_port() {
+        return source_port;
+    };
+
+    double get_freq_by_point_num(int point_num) {
+        logger::log(LEVEL_DEBUG, "Freq step = {}", freq_step);
+        return start_freq + freq_step * point_num;
+    }
+
+    int get_points() {
+        return points;
+    }
+
     virtual void preset() {};
     virtual void full_preset() {};
 
@@ -68,7 +83,7 @@ public:
     virtual void create_traces(int *port_list, int length, bool external) {};
 
     virtual void set_power(float power) {};
-    virtual void set_freq(double start, double stop, int points) {};
+    virtual void set_freq_range(double start, double stop, int points) {};
     virtual void set_freq(double freq) {};
 
     virtual void set_path(int *path_list, int module_count) {};
@@ -80,6 +95,8 @@ public:
     virtual void rf_on(int port) {};
 
     virtual void trigger() {};
+
+    virtual void init() {};
 
     virtual iq_data_t get_data(int trace_index) {return iq_data_t{};};
 };

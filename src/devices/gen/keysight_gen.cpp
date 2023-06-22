@@ -29,7 +29,7 @@ void KeysightGen::set_freq_range(double start, double stop, int points) {
 
     this->points = points;
 
-    freq_step = this->points <= 1 ? 0 : (this->start_freq - this->stop_freq) / (this->points - 1);
+    freq_step = this->points <= 1 ? 0 : (this->stop_freq - this->start_freq) / (this->points - 1);
 
     current_freq = start_freq;
     current_point = 0;
@@ -74,7 +74,6 @@ void KeysightGen::prev_freq() {
     --current_point;
 
     send_wait(":FREQ {}", current_freq);
-    send(":FREQ?");
 }
 
 void KeysightGen::move_to_start_freq() {
@@ -93,5 +92,10 @@ void KeysightGen::move_to_stop_freq() {
     current_point = points - 1;
 
     send_wait(":FREQ {}", current_freq);
+}
+
+double KeysightGen::get_current_freq() {
+    std::string current_freq = send(":FREQ?");
+    return std::stod(current_freq);
 }
 
