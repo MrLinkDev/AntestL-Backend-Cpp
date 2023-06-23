@@ -53,14 +53,6 @@ class DeviceSet {
 public:
     DeviceSet() = default;
 
-    int vna_switch_module_count() {
-        if (vna != nullptr && vna->is_connected()) {
-            return vna->get_switch_module_count();
-        } else {
-            return 0;
-        }
-    }
-
     bool connect(int device_type, std::string device_model, std::string device_address);
     bool configure(int meas_type, float rbw, int source_port, bool using_ext_gen);
 
@@ -84,7 +76,12 @@ public:
 
     bool change_path(std::vector<int> path_list);
 
-    std::string get_data(std::vector<int> port_list, int axis_num);
+    std::vector<iq_data_t> get_data(std::vector<int> port_list);
+
+    int get_vna_switch_module_count();
+
+    std::string get_current_angle_list();
+    double get_current_freq(int point_pos);
 };
 
 

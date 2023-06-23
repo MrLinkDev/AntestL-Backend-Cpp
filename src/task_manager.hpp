@@ -19,6 +19,7 @@
 #define TASK_TYPE_SET_ANGLE_RANGE   "set_angle_range"
 #define TASK_TYPE_CHANGE_PATH       "change_path"
 #define TASK_TYPE_GET_DATA          "get_data"
+#define TASK_TYPE_DISCONNECT        "disconnect"
 
 #define DEVICE_EXT_GEN              "ext_gen"
 #define DEVICE_RBD_UPKB             "rbd_upkb"
@@ -80,19 +81,20 @@ class TaskManager {
     json proceed_task_list(json task_list);
 
     json connect_task(json device_list);
-    json configure_task(json config_params);
 
-    json set_power_task(json power_value);
+    bool configure_task(json config_params);
 
-    json set_freq_task(json freq_value);
-    json set_freq_range_task(json freq_range);
+    bool set_power_task(json power_value);
 
-    json set_angle_task(json angle_value);
-    json set_angle_range_task(json angle_range);
+    bool set_freq_task(json freq_value);
+    bool set_freq_range_task(json freq_range);
 
-    json change_path_task(json path_values);
+    bool set_angle_task(json angle_value);
+    bool set_angle_range_task(json angle_range);
 
-    json get_data_task(json port_list);
+    bool change_path_task(json path_values);
+
+    std::vector<std::string> get_data_task(json port_list);
 
 public:
     TaskManager() = default;

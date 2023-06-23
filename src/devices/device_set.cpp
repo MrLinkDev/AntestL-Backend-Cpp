@@ -240,39 +240,17 @@ bool DeviceSet::change_path(std::vector<int> path_list) {
     return true;
 }
 
-std::string DeviceSet::get_data(std::vector<int> port_list, int axis_num = 0) {
+std::vector<iq_data_t> DeviceSet::get_data(std::vector<int> port_list) {
     logger::log(LEVEL_TRACE, "Preparing to acquire data");
 
-    std::string data{};
-    std::vector<data_struct_t> data_list{};
-
-    iq_data_t raw_data{};
-
-    float current_angle = DEFAULT_ANGLE;
-    double current_freq{};
-
-    if (rbd != nullptr && rbd->is_connected()) {
-        try {
-            current_angle = rbd->get_pos(axis_num);
-        } catch (int error_code) {
-            logger::log(LEVEL_ERROR, "Can't get position of RBD axis {}", axis_num);
-        }
-    }
-
-    if (ext_gen != nullptr && ext_gen->is_connected() && using_ext_gen) {
-        try {
-            current_freq = ext_gen->get_current_freq();
-        } catch (int error_code) {
-            logger::log(LEVEL_ERROR, "Can't get current frequency from external gen");
-        }
-    }
+    std::vector<iq_data_t> acquired_data{};
 
     try {
         vna->create_traces(port_list, using_ext_gen);
         logger::log(LEVEL_TRACE, "Traces created");
     } catch (int error_code) {
         logger::log(LEVEL_ERROR, "Can't create traces");
-        return data;
+        return acquired_data;
     }
 
     for (int port_pos = 0; port_pos < port_list.size(); ++port_pos) {
@@ -290,7 +268,7 @@ std::string DeviceSet::get_data(std::vector<int> port_list, int axis_num = 0) {
                 logger::log(LEVEL_TRACE, "Source port enabled");
             } catch (int error_code) {
                 logger::log(LEVEL_ERROR, "Can't enable source port");
-                return data;
+                return acquired_data;
             }
         } else if (meas_type == MEAS_REFLECTION) {
             try {
@@ -303,7 +281,7 @@ std::string DeviceSet::get_data(std::vector<int> port_list, int axis_num = 0) {
                 logger::log(LEVEL_TRACE, "Port {} enabled", port_num);
             } catch (int error_code) {
                 logger::log(LEVEL_ERROR, "Can't enable port {}", port_num);
-                return data;
+                return acquired_data;
             }
         }
 
@@ -313,15 +291,15 @@ std::string DeviceSet::get_data(std::vector<int> port_list, int axis_num = 0) {
             logger::log(LEVEL_TRACE, "Measurements restarted");
         } catch (int error_code) {
             logger::log(LEVEL_ERROR, "Can't restart measurement");
-            return data;
+            return acquired_data;
         }
 
         try {
-            raw_data = vna->get_data(port_pos);
+            acquired_data.push_back(vna->get_data(port_pos));
             logger::log(LEVEL_TRACE, "Data for port {} acquired", port_num);
         } catch (int error_code) {
             logger::log(LEVEL_ERROR, "Can't acquire data for port {} from VNA", port_num);
-            return data;
+            return acquired_data;
         }
 
         if (meas_type == MEAS_TRANSITION) {
@@ -335,7 +313,7 @@ std::string DeviceSet::get_data(std::vector<int> port_list, int axis_num = 0) {
                 logger::log(LEVEL_TRACE, "Source port disabled");
             } catch (int error_code) {
                 logger::log(LEVEL_ERROR, "Can't disable source port");
-                return data;
+                return acquired_data;
             }
         } else if (meas_type == MEAS_REFLECTION) {
             try {
@@ -348,42 +326,47 @@ std::string DeviceSet::get_data(std::vector<int> port_list, int axis_num = 0) {
                 logger::log(LEVEL_TRACE, "Port {} disabled", port_num);
             } catch (int error_code) {
                 logger::log(LEVEL_ERROR, "Can't disable port {}", port_num);
-                return data;
-            }
-        }
-
-        if (port_pos == 0) {
-            for (int pos = 0; pos < raw_data.size(); ++pos) {
-                data_struct_t data_struct{};
-
-                data_struct.angle = current_angle;
-
-                if (using_ext_gen) {
-                    data_struct.freq = current_freq;
-                } else {
-                    data_struct.freq = vna->get_freq_by_point_num(pos);
-                }
-
-                data_struct.insert_port_data(raw_data[pos]);
-                data_list.push_back(data_struct);
-            }
-        } else {
-            for (int pos = 0; pos < raw_data.size(); ++pos) {
-                data_list[pos].insert_port_data(raw_data[pos]);
+                return acquired_data;
             }
         }
     }
 
-    for (data_struct_t &item : data_list) {
-        if (&item != &data_list.back()) {
-            data.append(item.to_string() + ROW_DELIMITER);
-        } else {
-            data.append(item.to_string());
-        }
+    return acquired_data;
+}
 
-        logger::log(LEVEL_DEBUG, item.to_string());
+int DeviceSet::get_vna_switch_module_count()  {
+    if (vna != nullptr && vna->is_connected()) {
+        return vna->get_switch_module_count();
+    } else {
+        return 0;
+    }
+}
+
+std::string DeviceSet::get_current_angle_list() {
+    std::string angle_list{};
+
+    if (rbd != nullptr && rbd->is_connected()) {
+        for (int axis = 0; axis < rbd->get_axes_count(); ++axis) {
+            if (axis == 0) {
+                angle_list = std::to_string(rbd->get_pos(axis));
+            } else {
+                angle_list += std::to_string(rbd->get_pos(axis));
+            }
+        }
     }
 
-    return data;
+    return angle_list;
+}
+
+double DeviceSet::get_current_freq(int point_pos) {
+    if (using_ext_gen) {
+        if (ext_gen != nullptr && ext_gen->is_connected()) {
+            return ext_gen->get_current_freq();
+        } else {
+            return 0.0;
+        }
+    } else {
+        return vna->get_freq_by_point_num(point_pos);
+    }
 }
 

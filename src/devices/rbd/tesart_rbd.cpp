@@ -95,10 +95,6 @@ bool TesartRbd::is_stopped(int axis_num) {
     return bool(status_code & BIT_IN_POS) and bool(!(status_code & BIT_MOVE_BLOCK));
 }
 
-int TesartRbd::get_axes_count() {
-    return axes.size();
-}
-
 void TesartRbd::move(float pos, int axis_num) {
     logger::log(LEVEL_DEBUG, "Axis {} pos = ", axis_num, pos);
 
@@ -186,4 +182,8 @@ float TesartRbd::get_pos(int axis_num) {
     answer = stof(str_answer) / SCALE;
 
     return answer;
+}
+
+int TesartRbd::get_axes_count() {
+    return axes.size();
 }

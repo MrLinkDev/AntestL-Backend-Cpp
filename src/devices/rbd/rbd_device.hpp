@@ -35,6 +35,8 @@ public:
     virtual void move_to_stop_angle(int axis_num = 0) {};
 
     virtual float get_pos(int axis_num = 0) {return 0.0f;};
+
+    virtual int get_axes_count() {return 0;}
 };
 
 #endif //ANTESTL_BACKEND_RBD_DEVICE_HPP
