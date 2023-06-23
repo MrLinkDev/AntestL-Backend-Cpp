@@ -16,18 +16,20 @@ public:
     KeysightM9807A(const std::string device_address);
     KeysightM9807A(visa_config config);
 
+    int get_switch_module_count() override;
+
     void preset() override;
     void full_preset() override;
 
     void init_channel() override;
     void configure(int meas_type, double rbw, int source_port, bool ext_gen) override;
 
-    void create_traces(int *port_list, int length, bool external) override;
+    void create_traces(std::vector<int> port_list, bool external) override;
 
     void set_power(float power) override;
     void set_freq_range(double start, double stop, int points) override;
     void set_freq(double freq) override;
-    void set_path(int *path_list, int module_count) override;
+    void set_path(std::vector<int> path_list) override;
 
     void rf_off() override;
     void rf_off(int port) override;

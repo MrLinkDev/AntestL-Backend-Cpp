@@ -3,24 +3,24 @@
 bool DeviceSet::connect(int device_type, std::string device_model, std::string device_address) {
     std::transform(device_model.begin(), device_model.end(), device_model.begin(), ::toupper);
 
-    switch (device_type) {
-        case DEVICE_VNA:
-            if (device_model == "M9807A") {
-                vna = new KeysightM9807A(device_address);
-                vna->preset();
-            } else {
-                return false;
-            }
+    try {
+        switch (device_type) {
+            case DEVICE_VNA:
+                if (device_model == "M9807A") {
+                    vna = new KeysightM9807A(device_address);
+                    vna->preset();
+                } else {
+                    return false;
+                }
 
-            return vna->is_connected();
+                return vna->is_connected();
 
-        case DEVICE_GEN:
-            ext_gen = new KeysightGen(device_address);
+            case DEVICE_GEN:
+                ext_gen = new KeysightGen(device_address);
 
-            return ext_gen->is_connected();
+                return ext_gen->is_connected();
 
-        case DEVICE_RBD:
-            try {
+            case DEVICE_RBD:
                 if (device_model == "tesart") {
                     rbd = new TesartRbd(device_address);
                 } else if (device_model == "upkb") {
@@ -28,12 +28,12 @@ bool DeviceSet::connect(int device_type, std::string device_model, std::string d
                 } else {
                     return false;
                 }
-            } catch (int error_code) {
-                return false;
-            }
 
-        default:
-            return false;
+            default:
+                return false;
+        }
+    } catch (int error_code) {
+        return false;
     }
 }
 
@@ -54,7 +54,7 @@ bool DeviceSet::configure(int meas_type, float rbw, int source_port, bool using_
         return false;
     }
 
-    logger::log(LEVEL_INFO, "VNA configured");
+    logger::log(LEVEL_DEBUG, "VNA configured");
     return true;
 }
 
@@ -62,10 +62,10 @@ bool DeviceSet::set_power(float power) {
     try {
         if (using_ext_gen) {
             ext_gen->set_power(power);
-            logger::log(LEVEL_INFO, "External gen: power = {}", power);
+            logger::log(LEVEL_DEBUG, "External gen power = {}", power);
         } else {
             vna->set_power(power);
-            logger::log(LEVEL_INFO, "VNA: power = {}", power);
+            logger::log(LEVEL_DEBUG, "VNA power = {}", power);
         }
     } catch (int error_code) {
         if (using_ext_gen) {
@@ -84,10 +84,10 @@ bool DeviceSet::set_freq(double freq) {
     try {
         if (using_ext_gen) {
             ext_gen->set_freq(freq);
-            logger::log(LEVEL_INFO, "External gen: frequency = {}", freq);
+            logger::log(LEVEL_DEBUG, "External gen frequency = {}", freq);
         } else {
             vna->set_freq(freq);
-            logger::log(LEVEL_INFO, "VNA: frequency = {}", freq);
+            logger::log(LEVEL_DEBUG, "VNA frequency = {}", freq);
         }
     } catch (int error_code) {
         if (using_ext_gen) {
@@ -106,10 +106,10 @@ bool DeviceSet::set_freq_range(double start_freq, double stop_freq, int points) 
     try {
         if (using_ext_gen) {
             ext_gen->set_freq_range(start_freq, stop_freq, points);
-            logger::log(LEVEL_INFO, "External gen: frequency range = [{}; {}] ({} points)", start_freq, stop_freq, points);
+            logger::log(LEVEL_DEBUG, "External gen frequency range = [{}; {}] ({} points)", start_freq, stop_freq, points);
         } else {
             vna->set_freq_range(start_freq, stop_freq, points);
-            logger::log(LEVEL_INFO, "VNA: frequency range = [{}; {}] ({} points)", start_freq, stop_freq, points);
+            logger::log(LEVEL_DEBUG, "VNA frequency range = [{}; {}] ({} points)", start_freq, stop_freq, points);
         }
     } catch (int error_code) {
         if (using_ext_gen) {
@@ -228,9 +228,9 @@ void DeviceSet::move_to_start_angle(int axis_num) {
     }
 }
 
-bool DeviceSet::change_path(int *paths, int length) {
+bool DeviceSet::change_path(std::vector<int> path_list) {
     try {
-        vna->set_path(paths, length);
+        vna->set_path(path_list);
     } catch (int error_code) {
         logger::log(LEVEL_ERROR, "Can't change switch paths on VNA");
         return false;
@@ -240,8 +240,8 @@ bool DeviceSet::change_path(int *paths, int length) {
     return true;
 }
 
-std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
-    logger::log(LEVEL_DEBUG, "Preparing to acquire data");
+std::string DeviceSet::get_data(std::vector<int> port_list, int axis_num = 0) {
+    logger::log(LEVEL_TRACE, "Preparing to acquire data");
 
     std::string data{};
     std::vector<data_struct_t> data_list{};
@@ -268,16 +268,16 @@ std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
     }
 
     try {
-        vna->create_traces(ports, length, using_ext_gen);
-        logger::log(LEVEL_DEBUG, "Traces created");
+        vna->create_traces(port_list, using_ext_gen);
+        logger::log(LEVEL_TRACE, "Traces created");
     } catch (int error_code) {
         logger::log(LEVEL_ERROR, "Can't create traces");
         return data;
     }
 
-    for (int port_pos = 0; port_pos < length; ++port_pos) {
-        int port_num = ports[port_pos];
-        logger::log(LEVEL_DEBUG, "Port = {}", port_num);
+    for (int port_pos = 0; port_pos < port_list.size(); ++port_pos) {
+        int port_num = port_list[port_pos];
+        logger::log(LEVEL_TRACE, "Port = {}", port_num);
 
         if (meas_type == MEAS_TRANSITION) {
             try {
@@ -287,7 +287,7 @@ std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
                     vna->rf_on(vna->get_source_port());
                 }
 
-                logger::log(LEVEL_DEBUG, "Source port enabled");
+                logger::log(LEVEL_TRACE, "Source port enabled");
             } catch (int error_code) {
                 logger::log(LEVEL_ERROR, "Can't enable source port");
                 return data;
@@ -300,7 +300,7 @@ std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
                     vna->rf_on(port_num);
                 }
 
-                logger::log(LEVEL_DEBUG, "Port {} enabled", port_num);
+                logger::log(LEVEL_TRACE, "Port {} enabled", port_num);
             } catch (int error_code) {
                 logger::log(LEVEL_ERROR, "Can't enable port {}", port_num);
                 return data;
@@ -310,7 +310,7 @@ std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
         try {
             vna->trigger();
             vna->init();
-            logger::log(LEVEL_DEBUG, "Measurements restarted");
+            logger::log(LEVEL_TRACE, "Measurements restarted");
         } catch (int error_code) {
             logger::log(LEVEL_ERROR, "Can't restart measurement");
             return data;
@@ -318,7 +318,7 @@ std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
 
         try {
             raw_data = vna->get_data(port_pos);
-            logger::log(LEVEL_DEBUG, "Data for port {} acquired", port_num);
+            logger::log(LEVEL_TRACE, "Data for port {} acquired", port_num);
         } catch (int error_code) {
             logger::log(LEVEL_ERROR, "Can't acquire data for port {} from VNA", port_num);
             return data;
@@ -332,7 +332,7 @@ std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
                     vna->rf_off(vna->get_source_port());
                 }
 
-                logger::log(LEVEL_DEBUG, "Source port disabled");
+                logger::log(LEVEL_TRACE, "Source port disabled");
             } catch (int error_code) {
                 logger::log(LEVEL_ERROR, "Can't disable source port");
                 return data;
@@ -345,7 +345,7 @@ std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
                     vna->rf_off(port_num);
                 }
 
-                logger::log(LEVEL_DEBUG, "Port {} disabled", port_num);
+                logger::log(LEVEL_TRACE, "Port {} disabled", port_num);
             } catch (int error_code) {
                 logger::log(LEVEL_ERROR, "Can't disable port {}", port_num);
                 return data;

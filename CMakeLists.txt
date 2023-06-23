@@ -12,6 +12,9 @@ add_executable(
 
         src/main.cpp
 
+        src/task_manager.hpp
+        src/task_manager.cpp
+
         src/utils/utils.hpp
         src/utils/logger.hpp
         src/utils/exceptions.hpp

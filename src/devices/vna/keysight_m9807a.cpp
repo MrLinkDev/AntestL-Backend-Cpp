@@ -4,6 +4,10 @@ KeysightM9807A::KeysightM9807A(const std::string device_address) : VnaDevice(dev
 
 KeysightM9807A::KeysightM9807A(visa_config config) : VnaDevice(config) {}
 
+int KeysightM9807A::get_switch_module_count() {
+    return M9807A_MODULE_COUNT;
+}
+
 void KeysightM9807A::preset() {
     send(":SYSTEM:PRESET");
 }
@@ -43,7 +47,7 @@ void KeysightM9807A::configure(int meas_type, double rbw, int source_port, bool 
     send_wait_err(":SENSe:BANDwidth:RESolution {}", this->rbw);
 }
 
-void KeysightM9807A::create_traces(int *port_list, int length, bool external) {
+void KeysightM9807A::create_traces(std::vector<int> port_list, bool external) {
     send_wait_err(":CALCulate:PARameter:DELete:ALL");
 
     std::string trace_name{};
@@ -51,7 +55,7 @@ void KeysightM9807A::create_traces(int *port_list, int length, bool external) {
 
     int trace_arg = external ? 0 : source_port;
 
-    for (int pos = 0; pos < length; ++ pos) {
+    for (int pos = 0; pos < port_list.size(); ++ pos) {
         if (external) {
             char port_name = port_names[
                     array_utils::index(
@@ -120,9 +124,9 @@ void KeysightM9807A::set_freq(double freq) {
     send_wait_err(":SENSe:FREQuency:STOP {}", this->stop_freq);
 }
 
-void KeysightM9807A::set_path(int *path_list, int module_count = M9807A_MODULE_COUNT) {
+void KeysightM9807A::set_path(std::vector<int> path_list) {
     for (int mod = 0; mod < M9807A_MODULE_COUNT; ++mod) {
-        if (this->path_list[mod] == path_list[mod]) {
+        if (this->path_list[mod] == path_list[mod] || path_list[mod] == -1) {
             continue;
         }
 

@@ -46,7 +46,7 @@ public:
     VnaDevice(const std::string device_address) : VisaDevice(device_address){
         this->connect();
 
-        if (idn().empty()) {
+        if (!this->is_connected() || idn().empty()) {
             this->connected = false;
             throw NO_CONNECTION;
         }
@@ -55,7 +55,7 @@ public:
     VnaDevice(visa_config config) : VisaDevice(config) {
         this->connect();
 
-        if (idn().empty()) {
+        if (!this->is_connected() || idn().empty()) {
             this->connected = false;
             throw NO_CONNECTION;
         }
@@ -73,19 +73,21 @@ public:
         return points;
     }
 
+    virtual int get_switch_module_count() {return 0;}
+
     virtual void preset() {};
     virtual void full_preset() {};
 
     virtual void init_channel() {};
     virtual void configure(int meas_type, double rbw, int source_port, bool ext_gen) {};
 
-    virtual void create_traces(int *port_list, int length, bool external) {};
+    virtual void create_traces(std::vector<int> port_list, bool external) {};
 
     virtual void set_power(float power) {};
     virtual void set_freq_range(double start, double stop, int points) {};
     virtual void set_freq(double freq) {};
 
-    virtual void set_path(int *path_list, int module_count) {};
+    virtual void set_path(std::vector<int> path_list) {};
 
     virtual void rf_off() {};
     virtual void rf_off(int port) {};

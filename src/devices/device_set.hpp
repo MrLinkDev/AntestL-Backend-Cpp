@@ -53,6 +53,14 @@ class DeviceSet {
 public:
     DeviceSet() = default;
 
+    int vna_switch_module_count() {
+        if (vna != nullptr && vna->is_connected()) {
+            return vna->get_switch_module_count();
+        } else {
+            return 0;
+        }
+    }
+
     bool connect(int device_type, std::string device_model, std::string device_address);
     bool configure(int meas_type, float rbw, int source_port, bool using_ext_gen);
 
@@ -74,9 +82,9 @@ public:
 
     void move_to_start_angle(int axis_num);
 
-    bool change_path(int *paths, int length);
+    bool change_path(std::vector<int> path_list);
 
-    std::string get_data(int *ports, int length, int axis_num);
+    std::string get_data(std::vector<int> port_list, int axis_num);
 };
 
 

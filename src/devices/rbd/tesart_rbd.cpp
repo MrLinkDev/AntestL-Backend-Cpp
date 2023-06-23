@@ -95,8 +95,12 @@ bool TesartRbd::is_stopped(int axis_num) {
     return bool(status_code & BIT_IN_POS) and bool(!(status_code & BIT_MOVE_BLOCK));
 }
 
+int TesartRbd::get_axes_count() {
+    return axes.size();
+}
+
 void TesartRbd::move(float pos, int axis_num) {
-    logger::log(LEVEL_INFO, "Axis {} pos = ", axis_num, pos);
+    logger::log(LEVEL_DEBUG, "Axis {} pos = ", axis_num, pos);
 
     axes[axis_num].send(
             "ORDER 0 {} {} 8192 {} {} 0 -1 0 0",

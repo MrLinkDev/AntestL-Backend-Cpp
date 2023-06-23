@@ -2,7 +2,7 @@
 #include "../utils/exceptions.hpp"
 
 int VisaDevice::write(std::string command) {
-    logger::log(LEVEL_DEBUG, "WRITE: {}", command);
+    logger::log(LEVEL_TRACE, "WRITE: {}", command);
     command += device_config.termination;
 
     ViConstBuf command_buffer = reinterpret_cast<ViConstBuf>(command.c_str());
@@ -28,7 +28,7 @@ std::string VisaDevice::read() {
 
         for (char b : buffer) {
             if (b == device_config.termination) {
-                logger::log(LEVEL_DEBUG, "READ: {}", data);
+                logger::log(LEVEL_TRACE, "READ: {}", data);
                 return data;
             }
 
@@ -74,7 +74,7 @@ void VisaDevice::connect() {
         connected = false;
         return;
     } else {
-        logger::log(LEVEL_DEBUG, "Opened default resource manager");
+        logger::log(LEVEL_TRACE, "Opened default resource manager");
     }
 
     logger::log(LEVEL_INFO, "Connecting to device with address {}", device_config.address);
@@ -103,7 +103,7 @@ void VisaDevice::connect() {
         connected = false;
         return;
     } else {
-        logger::log(LEVEL_DEBUG, "Timeout set to {}", device_config.timeout);
+        logger::log(LEVEL_TRACE, "Timeout set to {}", device_config.timeout);
     }
 
     status = viSetAttribute(device, VI_ATTR_TERMCHAR, DEFAULT_VISA_TERM);
@@ -114,7 +114,7 @@ void VisaDevice::connect() {
         connected = false;
         return;
     } else {
-        logger::log(LEVEL_DEBUG, "Termination character set to (code) {}", ((int) device_config.termination));
+        logger::log(LEVEL_TRACE, "Termination character set to (code) {}", ((int) device_config.termination));
     }
 
     connected = true;

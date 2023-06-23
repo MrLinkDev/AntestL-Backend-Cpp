@@ -36,6 +36,8 @@ public:
 
     bool is_stopped(int axis_num);
 
+    int get_axes_count();
+
     void move(float pos, int axis_num) override;
     void stop() override;
 
