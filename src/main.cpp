@@ -7,7 +7,7 @@
 
 
 int main() {
-    logger::set_log_level(LEVEL_TRACE);
+    logger::set_log_level(LEVEL_DEBUG);
     //logger::set_color_state(NO_COLOR);
 
     logger::log(LEVEL_ERROR, "Error msg");

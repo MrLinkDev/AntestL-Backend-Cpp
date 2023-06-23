@@ -20,7 +20,7 @@
 
 class Logger {
 
-    inline static int log_level = LEVEL_DEBUG;
+    inline static int log_level = LEVEL_TRACE;
     inline static bool colored  = COLORED;
 
     static std::string get_tag(int level, bool for_file) {
