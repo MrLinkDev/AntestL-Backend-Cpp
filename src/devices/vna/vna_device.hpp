@@ -66,7 +66,6 @@ public:
     };
 
     double get_freq_by_point_num(int point_num) {
-        logger::log(LEVEL_DEBUG, "Freq step = {}", freq_step);
         return start_freq + freq_step * point_num;
     }
 

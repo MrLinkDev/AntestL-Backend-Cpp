@@ -324,6 +324,34 @@ std::string DeviceSet::get_data(int *ports, int length, int axis_num) {
             return data;
         }
 
+        if (meas_type == MEAS_TRANSITION) {
+            try {
+                if (using_ext_gen) {
+                    ext_gen->rf_off();
+                } else {
+                    vna->rf_off(vna->get_source_port());
+                }
+
+                logger::log(LEVEL_DEBUG, "Source port disabled");
+            } catch (int error_code) {
+                logger::log(LEVEL_ERROR, "Can't disable source port");
+                return data;
+            }
+        } else if (meas_type == MEAS_REFLECTION) {
+            try {
+                if (using_ext_gen) {
+                    ext_gen->rf_off();
+                } else {
+                    vna->rf_off(port_num);
+                }
+
+                logger::log(LEVEL_DEBUG, "Port {} disabled", port_num);
+            } catch (int error_code) {
+                logger::log(LEVEL_ERROR, "Can't disable port {}", port_num);
+                return data;
+            }
+        }
+
         if (port_pos == 0) {
             for (int pos = 0; pos < raw_data.size(); ++pos) {
                 data_struct_t data_struct{};

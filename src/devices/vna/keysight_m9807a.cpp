@@ -21,6 +21,14 @@ void KeysightM9807A::full_preset() {
 
 void KeysightM9807A::init_channel() {
     send_wait_err(R"(:CALCulate1:CUSTom:DEFine "TR0","Standard","S11")");
+
+    send_wait_err(":SOURce:POWer:COUPle 1");
+
+    for (int port = 1; port < M9807A_PORT_COUNT + 1; ++port) {
+        send_wait_err(":SOURce:POWer{}:MODE OFF", port);
+    }
+
+    send_wait_err(":SOURce:POWer:COUPle 0");
 }
 
 void KeysightM9807A::configure(int meas_type, double rbw, int source_port, bool ext_gen) {
