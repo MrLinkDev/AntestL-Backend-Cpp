@@ -30,7 +30,7 @@ int SocketServer::create() {
 
     server = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if (server == INVALID_SOCKET) {
-        logger::log(LEVEL_DEBUG, "Can't create socket!");
+        logger::log(LEVEL_ERROR, "Can't create socket!");
         return SOCKET_NOT_CREATED;
     }
 

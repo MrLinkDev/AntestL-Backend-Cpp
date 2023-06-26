@@ -9,7 +9,7 @@
 
 #define BUFFER_SIZE             128
 
-#define DEFAULT_TIMEOUT         10000
+#define DEFAULT_TIMEOUT         1000000
 #define DEFAULT_VISA_TERM       '\n'
 
 #define DEFAULT_OPC_SLEEP_TIME  250

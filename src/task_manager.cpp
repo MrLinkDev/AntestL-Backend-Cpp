@@ -2,6 +2,7 @@
 
 json TaskManager::proceed_task(json task) {
     json result;
+    logger::log(LEVEL_TRACE, "\'proceed_task\' got argument = {}", to_string(task));
 
     if (task[WORD_TASK_TYPE] == TASK_TYPE_CONNECT) {
         result[WORD_RESULT] = connect_task(task[WORD_TASK_ARGS]);
@@ -109,7 +110,177 @@ json TaskManager::proceed_task(json task) {
 }
 
 json TaskManager::proceed_task_list(json task_list) {
-    //TODO: Добавить обработку списка заданий с вложенностями
+    json result;
+    json nested_result;
+
+    std::vector<json> nested_task_list{};
+    std::vector<json> task_cache = task_list.get<std::vector<json>>();
+
+    for (json task : task_cache) {
+        logger::log(LEVEL_DEBUG, to_string(task));
+        if (!task.contains(WORD_NESTED)) {
+            result = proceed_task(task);
+
+            if (result[WORD_RESULT][WORD_RESULT_ID] != 0) {
+                return result;
+            }
+        } else if (task.contains(WORD_NESTED) && (task[WORD_TASK_TYPE] == TASK_TYPE_CONNECT ||
+        task[WORD_TASK_TYPE] == TASK_TYPE_CONFIGURE || task[WORD_TASK_TYPE] == TASK_TYPE_SET_POWER ||
+        task[WORD_TASK_TYPE] == TASK_TYPE_SET_ANGLE || task[WORD_TASK_TYPE] == TASK_TYPE_SET_FREQ ||
+        task[WORD_TASK_TYPE] == TASK_TYPE_DISCONNECT)) {
+            logger::log(
+                    LEVEL_WARN,
+                    R"(Task '{}' has arg 'nested', but this task cannot be nested. This arg ignored.)",
+                    task[WORD_TASK_TYPE].get<std::string>());
+
+            task.erase(WORD_NESTED);
+            result = proceed_task(task);
+
+            if (result[WORD_RESULT][WORD_RESULT_ID] != 0) {
+                return result;
+            }
+        } else {
+            nested_task_list.push_back(task);
+        }
+    }
+
+    if (result[WORD_RESULT][WORD_RESULT_ID] != 0) {
+        return result;
+    }
+
+    std::sort(nested_task_list.begin(), nested_task_list.end(), array_utils::compare_nested);
+    nested_result = proceed_nested_task_list(nested_task_list);
+
+    if (nested_result[WORD_RESULT][WORD_RESULT_ID] != 0) {
+        return nested_result;
+    } else {
+        result[WORD_RESULT][WORD_RESULT_DATA] = nested_result[WORD_RESULT][WORD_RESULT_DATA];
+    }
+
+    return result;
+}
+
+json TaskManager::proceed_nested_task_list(std::vector<json> nested_task_list) {
+    json result;
+    std::string data{};
+
+    for (json &nested_task : nested_task_list) {
+        if (nested_task[WORD_TASK_TYPE] == TASK_TYPE_GET_DATA) {
+            continue;
+        } else if (nested_task[WORD_TASK_TYPE] == TASK_TYPE_SET_ANGLE_RANGE) {
+            logger::log(LEVEL_DEBUG, to_string(nested_task[WORD_TASK_ARGS]));
+            result = proceed_task(nested_task);
+
+            if (result[WORD_RESULT][WORD_RESULT_ID] != 0) {
+                return result;
+            }
+
+            nested_task[WORD_TASK_TYPE] = TASK_TYPE_NEXT_ANGLE;
+            nested_task[WORD_AXIS] = nested_task[WORD_TASK_ARGS][WORD_AXIS];
+
+            nested_task.erase(WORD_TASK_ARGS);
+        } else if (nested_task[WORD_TASK_TYPE] == TASK_TYPE_SET_FREQ_RANGE) {
+            result = proceed_task(nested_task);
+
+            if (result[WORD_RESULT][WORD_RESULT_ID] != 0) {
+                return result;
+            }
+
+            nested_task[WORD_TASK_TYPE] = TASK_TYPE_NEXT_FREQ;
+            nested_task.erase(WORD_TASK_ARGS);
+        }
+    }
+
+    for (int nested_pos = 0; nested_pos < nested_task_list.size(); ++nested_pos) {
+        logger::log(LEVEL_DEBUG, "Nested pos = {}", nested_pos);
+
+        if (nested_task_list[nested_pos][WORD_TASK_TYPE] == TASK_TYPE_GET_DATA) {
+            std::vector<std::string> task_result = get_data_task(nested_task_list[nested_pos][WORD_TASK_ARGS]);
+            std::string angle_list = device_set.get_current_angle_list();
+
+            if (!task_result.empty()) {
+                for (int point_pos = 0; point_pos < task_result.size(); ++point_pos) {
+                    if (!data.empty()) {
+                        data += ROW_DELIMITER;
+                    }
+
+                    if (!angle_list.empty()) {
+                        data += angle_list + COLUMN_DELIMITER;
+                    }
+
+                    data += std::to_string(device_set.get_current_freq(point_pos)) + COLUMN_DELIMITER + task_result[point_pos];
+                }
+            } else {
+                result[WORD_RESULT] = {
+                        {WORD_RESULT_ID, ERR_GETTING_DATA_ID},
+                        {WORD_RESULT_MSG, ERR_GETTING_DATA_MSG},
+                        {WORD_RESULT_DATA, data}
+                };
+
+                return result;
+            }
+        } else if (nested_task_list[nested_pos][WORD_TASK_TYPE] == TASK_TYPE_NEXT_FREQ) {
+            if (!device_set.is_using_ext_gen()) {
+                continue;
+            } else {
+                switch (next_freq_task()) {
+                    case NEXT_FREQ_OK:
+                        nested_pos = -1;
+                        continue;
+                    case NEXT_FREQ_BOUND:
+                        if (device_set.move_to_start_freq()) {
+                            continue;
+                        } else {
+                            result[WORD_RESULT] = {
+                                    {WORD_RESULT_ID, ERR_SET_FREQ_ID},
+                                    {WORD_RESULT_MSG, ERR_SET_FREQ_MSG},
+                                    {WORD_RESULT_DATA, false}
+                            };
+                        }
+                    default:
+                        result[WORD_RESULT] = {
+                                {WORD_RESULT_ID, ERR_SET_FREQ_ID},
+                                {WORD_RESULT_MSG, ERR_SET_FREQ_MSG},
+                                {WORD_RESULT_DATA, false}
+                        };
+
+                        return result;
+                }
+            }
+        } else if (nested_task_list[nested_pos][WORD_TASK_TYPE] == TASK_TYPE_NEXT_ANGLE) {
+            switch (next_angle_task(nested_task_list[nested_pos][WORD_AXIS].get<int>())) {
+                case NEXT_ANGLE_OK:
+                    nested_pos = -1;
+                    continue;
+                case NEXT_ANGLE_BOUND:
+                    if (device_set.move_to_start_angle(nested_task_list[nested_pos][WORD_AXIS].get<int>())) {
+                        continue;
+                    } else {
+                        result[WORD_RESULT] = {
+                                {WORD_RESULT_ID, ERR_SET_ANGLE_ID},
+                                {WORD_RESULT_MSG, ERR_SET_ANGLE_MSG},
+                                {WORD_RESULT_DATA, false}
+                        };
+                    }
+                default:
+                    result[WORD_RESULT] = {
+                            {WORD_RESULT_ID, ERR_SET_ANGLE_ID},
+                            {WORD_RESULT_MSG, ERR_SET_ANGLE_MSG},
+                            {WORD_RESULT_DATA, false}
+                    };
+
+                    return result;
+            }
+        }
+    }
+
+    result[WORD_RESULT] = {
+            {WORD_RESULT_ID, RESULT_OK_ID},
+            {WORD_RESULT_MSG, RESULT_OK_MSG},
+            {WORD_RESULT_DATA, data}
+    };
+
+    return result;
 }
 
 json TaskManager::connect_task(nlohmann::json device_list) {
@@ -132,7 +303,7 @@ json TaskManager::connect_task(nlohmann::json device_list) {
                 output[WORD_RESULT_MSG] = EXT_GEN_NO_CONNECTION_MSG;
                 break;
             }
-        } else if (device == DEVICE_RBD_UPKB || device == DEVICE_RBD_TESART) {
+        } else if (device == DEVICE_RBD_UPKB || device == DEVICE_RBD_TESART || device == DEVICE_RBD_DEMO) {
             device_results[json_item.key()] = device_set.connect(DEVICE_RBD, device, json_item.value());
 
             if (!device_results[json_item.key()]) {
@@ -193,6 +364,8 @@ bool TaskManager::set_freq_range_task(json freq_range) {
     int points          = freq_range["points"].get<int>();
 
     bool result = device_set.set_freq_range(start_freq, stop_freq, points);
+    result &= device_set.move_to_start_freq();
+
     return result;
 }
 
@@ -215,6 +388,8 @@ bool TaskManager::set_angle_range_task(json angle_range) {
     int axis_num        = angle_range["axis"].get<int>();
 
     bool result = device_set.set_angle_range(start_angle, stop_angle, points, axis_num);
+    result &= device_set.move_to_start_angle(axis_num);
+
     return result;
 }
 
@@ -260,6 +435,14 @@ std::vector<std::string> TaskManager::get_data_task(json port_list) {
     return result_data;
 }
 
+int TaskManager::next_freq_task() {
+    return device_set.next_freq();
+}
+
+int TaskManager::next_angle_task(int axis_num) {
+    return device_set.next_angle(axis_num);
+}
+
 json TaskManager::parse_and_proceed(std::string input_data) {
     json data = json::parse(input_data);
     json answer;
@@ -267,9 +450,11 @@ json TaskManager::parse_and_proceed(std::string input_data) {
     logger::log(LEVEL_DEBUG, "Input data: {}", to_string(data));
 
     if (data.contains(WORD_TASK)) {
+        logger::log(LEVEL_INFO, "Received task");
         answer = proceed_task(data[WORD_TASK]);
     } else if (data.contains(WORD_TASK_LIST)) {
-        answer = proceed_task_list(data);
+        logger::log(LEVEL_INFO, "Received task list");
+        answer = proceed_task_list(data[WORD_TASK_LIST]);
     } else {
         answer = {
                 WORD_RESULT, {

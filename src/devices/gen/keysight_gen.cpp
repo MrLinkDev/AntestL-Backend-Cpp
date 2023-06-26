@@ -33,8 +33,6 @@ void KeysightGen::set_freq_range(double start, double stop, int points) {
 
     current_freq = start_freq;
     current_point = 0;
-
-    move_to_start_freq();
 }
 
 void KeysightGen::set_power(float value) {

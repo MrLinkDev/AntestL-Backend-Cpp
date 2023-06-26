@@ -39,6 +39,7 @@ add_executable(
         src/devices/gen/keysight_gen.cpp
 
         src/devices/rbd/rbd_device.hpp
+        src/devices/rbd/demo_rdb.hpp
 
         src/devices/rbd/tesart_rbd.hpp
         src/devices/rbd/tesart_rbd.cpp

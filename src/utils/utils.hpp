@@ -7,6 +7,7 @@
 #include <sys/time.h>
 #include <cmath>
 #include <format>
+#include "json.hpp"
 
 #define DEFAULT_DELIMITER       ' '
 
@@ -99,6 +100,10 @@ namespace array_utils {
         }
 
         return -1;
+    }
+
+    inline bool compare_nested(nlohmann::json j1, nlohmann::json j2) {
+        return(j1["nested"].get<int>() < j2["nested"].get<int>());
     }
 }
 

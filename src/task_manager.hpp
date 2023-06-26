@@ -10,20 +10,33 @@
 #define WORD_TASK_TYPE              "type"
 #define WORD_TASK_ARGS              "args"
 
+#define WORD_NESTED                 "nested"
+
+#define WORD_AXIS                   "axis"
+
 #define TASK_TYPE_CONNECT           "connect"
 #define TASK_TYPE_CONFIGURE         "configure"
+
 #define TASK_TYPE_SET_POWER         "set_power"
+
 #define TASK_TYPE_SET_FREQ          "set_freq"
 #define TASK_TYPE_SET_FREQ_RANGE    "set_freq_range"
+#define TASK_TYPE_NEXT_FREQ         "next_freq"
+
 #define TASK_TYPE_SET_ANGLE         "set_angle"
 #define TASK_TYPE_SET_ANGLE_RANGE   "set_angle_range"
+#define TASK_TYPE_NEXT_ANGLE        "next_angle"
+
 #define TASK_TYPE_CHANGE_PATH       "change_path"
+
 #define TASK_TYPE_GET_DATA          "get_data"
+
 #define TASK_TYPE_DISCONNECT        "disconnect"
 
 #define DEVICE_EXT_GEN              "ext_gen"
-#define DEVICE_RBD_UPKB             "rbd_upkb"
-#define DEVICE_RBD_TESART           "rbd_tesart"
+#define DEVICE_RBD_UPKB             "upkb_rbd"
+#define DEVICE_RBD_TESART           "tesart_rbd"
+#define DEVICE_RBD_DEMO             "demo_rbd"
 
 #define WORD_RESULT                 "result"
 #define WORD_RESULT_ID              "id"
@@ -80,6 +93,8 @@ class TaskManager {
     json proceed_task(json task);
     json proceed_task_list(json task_list);
 
+    json proceed_nested_task_list(std::vector<json> nested_task_list);
+
     json connect_task(json device_list);
 
     bool configure_task(json config_params);
@@ -95,6 +110,9 @@ class TaskManager {
     bool change_path_task(json path_values);
 
     std::vector<std::string> get_data_task(json port_list);
+
+    int next_freq_task();
+    int next_angle_task(int axis_num);
 
 public:
     TaskManager() = default;

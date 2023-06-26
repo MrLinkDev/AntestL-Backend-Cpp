@@ -18,6 +18,14 @@
 #define COLUMN_DELIMITER    ','
 #define ROW_DELIMITER       ';'
 
+#define NEXT_FREQ_OK        0
+#define NEXT_FREQ_BOUND     1
+#define NEXT_FREQ_ERROR     2
+
+#define NEXT_ANGLE_OK       3
+#define NEXT_ANGLE_BOUND    4
+#define NEXT_ANGLE_ERROR    5
+
 struct data_struct_t {
     float angle;
     double freq;
@@ -61,18 +69,18 @@ public:
     bool set_freq(double freq);
     bool set_freq_range(double start_freq, double stop_freq, int points);
 
-    bool next_freq();
-    bool prev_freq();
+    int next_freq();
+    int prev_freq();
 
-    void move_to_start_freq();
+    bool move_to_start_freq();
 
     bool set_angle(float angle, int axis_num);
     bool set_angle_range(float start_angle, float stop_angle, int points, int axis_num);
 
-    bool next_angle(int axis_num);
-    bool prev_angle(int axis_num);
+    int next_angle(int axis_num);
+    int prev_angle(int axis_num);
 
-    void move_to_start_angle(int axis_num);
+    bool move_to_start_angle(int axis_num);
 
     bool change_path(std::vector<int> path_list);
 
@@ -82,6 +90,7 @@ public:
 
     std::string get_current_angle_list();
     double get_current_freq(int point_pos);
+    bool is_using_ext_gen();
 };
 
 

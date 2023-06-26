@@ -87,6 +87,10 @@ void KeysightM9807A::create_traces(std::vector<int> port_list, bool external) {
 
         send_wait_err(R"(:CALCulate1:CUSTom:DEFine "TR{}","Standard","{}")", port_list[pos], trace_params);
         send_wait_err(":DISPlay:WINDow:TRACe{}:FEED \"TR{}\"", port_list[pos], port_list[pos]);
+
+        //send_wait_err(":DISPLAY:WINDOW:TRACE{}:STATE OFF", port_list[pos]);
+        //TODO: Отключение отрисовки трасс не влияет на обновление измерений.
+        //      Требуется создавать трассу только перед измерением
     }
 }
 
@@ -178,6 +182,8 @@ void KeysightM9807A::init() {
 iq_data_t KeysightM9807A::get_data(int trace_index) {
     iq_data_t iq_data{};
 
+    //send_wait_err(":DISPLAY:WINDOW:TRACE{}:STATE ON", trace_index + 2);
+
     send_wait_err("INIT");
 
     std::string received_data = send(":CALCULATE:MEASURE{}:DATA:SDATA?", trace_index + 1);
@@ -186,6 +192,8 @@ iq_data_t KeysightM9807A::get_data(int trace_index) {
     for (int pos = 0; pos < cached_data.size(); pos += 2) {
         iq_data.emplace_back(cached_data[pos], cached_data[pos + 1]);
     }
+
+    //send_wait_err(":DISPLAY:WINDOW:TRACE{}:STATE OFF", trace_index + 2);
 
     return iq_data;
 }

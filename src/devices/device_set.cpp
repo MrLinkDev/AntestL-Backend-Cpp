@@ -1,4 +1,5 @@
 #include "device_set.hpp"
+#include "rbd/demo_rdb.hpp"
 
 bool DeviceSet::connect(int device_type, std::string device_model, std::string device_address) {
     std::transform(device_model.begin(), device_model.end(), device_model.begin(), ::toupper);
@@ -14,21 +15,22 @@ bool DeviceSet::connect(int device_type, std::string device_model, std::string d
                 }
 
                 return vna->is_connected();
-
             case DEVICE_GEN:
                 ext_gen = new KeysightGen(device_address);
 
                 return ext_gen->is_connected();
-
             case DEVICE_RBD:
-                if (device_model == "tesart") {
+                if (device_model == "TESART_RBD") {
                     rbd = new TesartRbd(device_address);
-                } else if (device_model == "upkb") {
+                } else if (device_model == "UPKB_RBD") {
                     //TODO: Добавить инициализацию объекта
+                } else if (device_model == "DEMO_RBD") {
+                    rbd = new DemoRbd(device_address);
                 } else {
                     return false;
                 }
 
+                return rbd->is_connected();
             default:
                 return false;
         }
@@ -124,44 +126,49 @@ bool DeviceSet::set_freq_range(double start_freq, double stop_freq, int points) 
     return true;
 }
 
-bool DeviceSet::next_freq() {
+int DeviceSet::next_freq() {
     try {
         ext_gen->next_freq();
     } catch (int error_code) {
         if (error_code == FREQ_OUT_OF_BOUND) {
-            logger::log(LEVEL_ERROR, "Trying to set frequency out of range!");
+            logger::log(LEVEL_WARN, "Trying to set frequency out of range!");
+            return NEXT_FREQ_BOUND;
         } else {
             logger::log(LEVEL_ERROR, "Can't set frequency on external gen");
+            return NEXT_FREQ_ERROR;
         }
-
-        return false;
     }
 
-    return true;
+    return NEXT_FREQ_OK;
 }
 
-bool DeviceSet::prev_freq() {
+int DeviceSet::prev_freq() {
     try {
         ext_gen->next_freq();
     } catch (int error_code) {
         if (error_code == FREQ_OUT_OF_BOUND) {
-            logger::log(LEVEL_ERROR, "Trying to set frequency out of range!");
+            logger::log(LEVEL_WARN, "Trying to set frequency out of range!");
+            return NEXT_FREQ_BOUND;
         } else {
             logger::log(LEVEL_ERROR, "Can't set frequency on external gen");
+            return NEXT_FREQ_ERROR;
         }
+    }
 
-        return false;
+    return NEXT_FREQ_OK;
+}
+
+bool DeviceSet::move_to_start_freq() {
+    if (using_ext_gen) {
+        try {
+            ext_gen->move_to_start_freq();
+        } catch (int error_code) {
+            logger::log(LEVEL_ERROR, "Can't set frequency on external gen");
+            return false;
+        }
     }
 
     return true;
-}
-
-void DeviceSet::move_to_start_freq() {
-    try {
-        ext_gen->move_to_start_freq();
-    } catch (int error_code) {
-        logger::log(LEVEL_ERROR, "Can't set frequency on external gen");
-    }
 }
 
 bool DeviceSet::set_angle(float angle, int axis_num) {
@@ -188,44 +195,47 @@ bool DeviceSet::set_angle_range(float start_angle, float stop_angle, int points,
     return true;
 }
 
-bool DeviceSet::next_angle(int axis_num) {
+int DeviceSet::next_angle(int axis_num) {
     try {
         rbd->next_angle(axis_num);
     } catch (int error_code) {
         if (error_code == ANGLE_OUT_OF_BOUND) {
-            logger::log(LEVEL_ERROR, "Trying to set angle out of range (axis {})!", axis_num);
+            //logger::log(LEVEL_ERROR, "Trying to set angle out of range (axis {})!", axis_num);
+            return NEXT_ANGLE_BOUND;
         } else {
             logger::log(LEVEL_ERROR, "Can't set angle on RBD (axis {})", axis_num);
+            return NEXT_ANGLE_ERROR;
         }
-
-        return false;
     }
 
-    return true;
+    return NEXT_ANGLE_OK;
 }
 
-bool DeviceSet::prev_angle(int axis_num) {
+int DeviceSet::prev_angle(int axis_num) {
     try {
         rbd->prev_angle(axis_num);
     } catch (int error_code) {
         if (error_code == ANGLE_OUT_OF_BOUND) {
-            logger::log(LEVEL_ERROR, "Trying to set angle out of range (axis {})!", axis_num);
+            //logger::log(LEVEL_ERROR, "Trying to set angle out of range (axis {})!", axis_num);
+            return NEXT_ANGLE_BOUND;
         } else {
             logger::log(LEVEL_ERROR, "Can't set angle on RBD (axis {})", axis_num);
+            return NEXT_ANGLE_ERROR;
         }
+    }
 
+    return NEXT_ANGLE_OK;
+}
+
+bool DeviceSet::move_to_start_angle(int axis_num) {
+    try {
+        rbd->move_to_start_angle(axis_num);
+    } catch (int error_code) {
+        logger::log(LEVEL_ERROR, "Can't set angle on RBD (axis {})", axis_num);
         return false;
     }
 
     return true;
-}
-
-void DeviceSet::move_to_start_angle(int axis_num) {
-    try {
-        rbd->prev_angle(axis_num);
-    } catch (int error_code) {
-        logger::log(LEVEL_ERROR, "Can't set angle on RBD (axis {})", axis_num);
-    }
 }
 
 bool DeviceSet::change_path(std::vector<int> path_list) {
@@ -350,7 +360,7 @@ std::string DeviceSet::get_current_angle_list() {
             if (axis == 0) {
                 angle_list = std::to_string(rbd->get_pos(axis));
             } else {
-                angle_list += std::to_string(rbd->get_pos(axis));
+                angle_list += "," + std::to_string(rbd->get_pos(axis));
             }
         }
     }
@@ -368,5 +378,9 @@ double DeviceSet::get_current_freq(int point_pos) {
     } else {
         return vna->get_freq_by_point_num(point_pos);
     }
+}
+
+bool DeviceSet::is_using_ext_gen() {
+    return using_ext_gen;
 }
 
