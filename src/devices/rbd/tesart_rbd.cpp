@@ -1,5 +1,6 @@
 #include "tesart_rbd.hpp"
 #include "../../utils/exceptions.hpp"
+#include "../../utils/string_utils.hpp"
 
 int TesartRbd::status(int axis_num) {
     std::string str_answer{};
@@ -43,19 +44,6 @@ int TesartRbd::status(VisaDevice *axis) {
     return answer;
 }
 
-void TesartRbd::init_params(size_t axis_count) {
-    for (size_t i = 0; i < axis_count; ++i) {
-        start_angle.push_back(0.0f);
-        stop_angle.push_back(0.0f);
-
-        angle_step.push_back(0.0f);
-        current_angle.push_back(0.0f);
-
-        points.push_back(0);
-        current_point.push_back(0);
-    }
-}
-
 TesartRbd::TesartRbd(const std::string &device_addresses) {
     std::vector<std::string> address_list = string_utils::split(device_addresses, ADDRESS_DELIMITER);
 
@@ -76,13 +64,13 @@ TesartRbd::TesartRbd(const std::string &device_addresses) {
         axes.push_back(axis);
     }
 
-    init_params(axes.size());
+    init_params();
 }
 
 bool TesartRbd::is_connected() {
     bool connected = true;
 
-    for (VisaDevice axis : axes) {
+    for (const VisaDevice &axis : axes) {
         connected &= axis.is_connected();
     }
 
@@ -96,7 +84,7 @@ bool TesartRbd::is_stopped(int axis_num) {
 }
 
 void TesartRbd::move(float pos, int axis_num) {
-    logger::log(LEVEL_DEBUG, "Axis {} pos = ", axis_num, pos);
+    logger::log(LEVEL_TRACE, "Axis {} pos = ", axis_num, pos);
 
     axes[axis_num].send(
             "ORDER 0 {} {} 8192 {} {} 0 -1 0 0",
@@ -105,8 +93,12 @@ void TesartRbd::move(float pos, int axis_num) {
 }
 
 void TesartRbd::stop() {
-    for (VisaDevice axis : axes) {
-        axis.send("STOP");
+    for (int axis_num = 0; axis_num < axes.size(); ++axis_num) {
+        axes[axis_num].send("STOP");
+
+        while (!is_stopped(axis_num)) {
+            std::this_thread::sleep_for(50ms);
+        }
     }
 }
 
@@ -126,36 +118,41 @@ void TesartRbd::set_angle_range(float start_angle, float stop_angle, int points,
     this->start_angle[axis_num] = start_angle;
     this->stop_angle[axis_num] = stop_angle;
 
-    this->current_angle[axis_num] = start_angle;
+
+    this->points[axis_num] = points;
 
     angle_step[axis_num] =
             this->points[axis_num] <= 1 ?
             0 : (this->stop_angle[axis_num] - this->start_angle[axis_num]) / (this->points[axis_num] - 1);
 
-    this->points[axis_num] = points;
+    this->current_angle[axis_num] = start_angle;
     this->current_point[axis_num] = 0;
 }
 
-void TesartRbd::next_angle(int axis_num) {
+int TesartRbd::next_angle(int axis_num) {
     if (current_point[axis_num] == points[axis_num] - 1) {
-        throw ANGLE_OUT_OF_BOUND;
+        return ANGLE_MOVE_BOUND;
     }
 
     current_angle[axis_num] += angle_step[axis_num];
     ++current_point[axis_num];
 
     move(current_angle[axis_num], axis_num);
+
+    return ANGLE_MOVE_OK;
 }
 
-void TesartRbd::prev_angle(int axis_num) {
+int TesartRbd::prev_angle(int axis_num) {
     if (current_point[axis_num] == 0) {
-        throw ANGLE_OUT_OF_BOUND;
+        return ANGLE_MOVE_BOUND;
     }
 
     current_angle[axis_num] -= angle_step[axis_num];
     --current_point[axis_num];
 
     move(current_angle[axis_num], axis_num);
+
+    return ANGLE_MOVE_OK;
 }
 
 void TesartRbd::move_to_start_angle(int axis_num) {

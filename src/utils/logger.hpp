@@ -4,8 +4,8 @@
 #include <string>
 #include <iostream>
 #include <sstream>
-
-#include "utils.hpp"
+#include <sys/time.h>
+#include <cmath>
 
 #define LEVEL_ERROR 0
 #define LEVEL_WARN  1
@@ -17,6 +17,30 @@
 #define COLORED     true
 
 #define MAX_MESSAGE_LENGTH  192
+
+#define DEFAULT_BUFFER_SIZE     128
+#define DEFAULT_TIME_FORMAT     "%Y-%m-%d %H:%M:%S"
+
+static std::string get_current_time() {
+    struct timeval time_value{};
+    struct tm *time_struct;
+
+    gettimeofday(&time_value, NULL);
+    int milliseconds = lrint(time_value.tv_usec / 1000.0);
+
+    if (milliseconds >= 1000) {
+        milliseconds -= 1000;
+        time_value.tv_sec++;
+    }
+
+    time_t current_time = time_value.tv_sec;
+    time_struct = localtime(&current_time);
+
+    char str_time[DEFAULT_BUFFER_SIZE];
+    strftime(str_time, DEFAULT_BUFFER_SIZE, DEFAULT_TIME_FORMAT, time_struct);
+
+    return std::string(str_time) + std::format(".{:03}", milliseconds);
+}
 
 class Logger {
 
@@ -60,7 +84,7 @@ public:
     static void log(int level, const std::string &message) {
         if (level > log_level) return;
 
-        std::string time = time_utils::get_current_time();
+        std::string time = get_current_time();
 
         std::string log_level_tag_colored   = get_tag(level, false);
         std::string log_level_tag           = get_tag(level, true);
@@ -80,7 +104,7 @@ public:
     static void log(int level, const std::string &fmt, T&&... args) {
         if (level > log_level) return;
 
-        std::string time = time_utils::get_current_time();
+        std::string time = get_current_time();
 
         std::string log_level_tag_colored   = get_tag(level, false);
         std::string log_level_tag           = get_tag(level, true);

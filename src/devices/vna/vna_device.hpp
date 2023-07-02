@@ -4,6 +4,8 @@
 #include "../visa_device.hpp"
 #include "../../utils/exceptions.hpp"
 
+#include <vector>
+
 #define DEFAULT_VNA_START_FREQ      1000000000
 #define DEFAULT_VNA_STOP_FREQ       9000000000
 
@@ -11,7 +13,7 @@
 
 #define DEFAULT_VNA_POINTS          201
 
-#define DEFAULT_VNA_POWER           -20
+#define DEFAULT_VNA_POWER           -20;
 
 #define DEFAULT_VNA_SOURCE_PORT     1
 
@@ -20,74 +22,58 @@
 
 #define DATA_DELIMITER              ','
 
-typedef std::pair<std::string, std::string> iq_data_item_t;
-typedef std::vector<iq_data_item_t> iq_data_t;
+struct iq {
+    std::string i{};
+    std::string q{};
+};
+
+typedef std::vector<iq> iq_port_data_t;
 
 class VnaDevice : public VisaDevice {
 
 protected:
-    double start_freq   = DEFAULT_VNA_START_FREQ;
-    double stop_freq    = DEFAULT_VNA_STOP_FREQ;
-    double freq_step    = 0;
+    double start_freq = DEFAULT_VNA_START_FREQ;
+    double stop_freq = DEFAULT_VNA_STOP_FREQ;
 
-    int points          = DEFAULT_VNA_POINTS;
+    float rbw = DEFAULT_VNA_RBW;
+    int points = DEFAULT_VNA_POINTS;
 
-    float rbw           = DEFAULT_VNA_RBW;
+    double freq_step = (stop_freq - start_freq) / (points - 1);
 
-    float power         = DEFAULT_VNA_POWER;
+    float power = DEFAULT_VNA_POWER;
 
-    int source_port     = DEFAULT_VNA_SOURCE_PORT;
-
-    int meas_type       = MEAS_TRANSITION;
+    int source_port = DEFAULT_VNA_SOURCE_PORT;
+    int meas_type = MEAS_TRANSITION;
 
 public:
     VnaDevice() = default;
 
-    VnaDevice(const std::string device_address) : VisaDevice(device_address){
+    explicit VnaDevice(std::string device_address) : VisaDevice(std::move(device_address)){
         this->connect();
 
         if (!this->is_connected() || idn().empty()) {
             this->connected = false;
-            throw NO_CONNECTION;
+
+            logger::log(LEVEL_ERROR, NO_CONNECTION_MSG);
+            throw antestl_exception(NO_CONNECTION_MSG, NO_CONNECTION_CODE);
         }
     }
-
-    VnaDevice(visa_config config) : VisaDevice(config) {
-        this->connect();
-
-        if (!this->is_connected() || idn().empty()) {
-            this->connected = false;
-            throw NO_CONNECTION;
-        }
-    }
-
-    int get_source_port() {
-        return source_port;
-    };
-
-    double get_freq_by_point_num(int point_num) {
-        return start_freq + freq_step * point_num;
-    }
-
-    int get_points() {
-        return points;
-    }
-
-    virtual int get_switch_module_count() {return 0;}
 
     virtual void preset() {};
     virtual void full_preset() {};
 
     virtual void init_channel() {};
-    virtual void configure(int meas_type, double rbw, int source_port, bool ext_gen) {};
+    virtual void configure(int meas_type, float rbw, int source_port) {};
 
     virtual void create_traces(std::vector<int> port_list, bool external) {};
 
     virtual void set_power(float power) {};
-    virtual void set_freq_range(double start, double stop, int points) {};
+
+    virtual void set_freq_range(double start_freq, double stop_freq, int points) {};
     virtual void set_freq(double freq) {};
 
     virtual void set_path(std::vector<int> path_list) {};
+    virtual int get_switch_module_count() {return 0;}
 
     virtual void rf_off() {};
     virtual void rf_off(int port) {};
@@ -99,7 +85,23 @@ public:
 
     virtual void init() {};
 
-    virtual iq_data_t get_data(int trace_index) {return iq_data_t{};};
+    virtual iq_port_data_t get_data(int trace_index) {return iq_port_data_t{};};
+
+    int get_source_port() const {
+        return source_port;
+    };
+
+    double get_start_freq() const {
+        return start_freq;
+    }
+
+    double get_freq_step() const {
+        return freq_step;
+    }
+
+    int get_points() const {
+        return points;
+    }
 };
 
 

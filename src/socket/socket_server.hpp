@@ -23,7 +23,7 @@
 #define SOCKET_NOT_LISTENING    0x02
 
 /// Возвращаемый статус, если сокет был успешно создан
-#define SOCKET_OK               0x03
+#define SOCKET_CREATED          0x03
 
 /// Возвращаемый статус, если клиент был подключен к серверу
 #define CLIENT_CONNECTED        0x04
@@ -54,6 +54,8 @@ public:
     SocketServer(port_t port);
     SocketServer(address_t address, port_t port);
 
+    void set_port(port_t port);
+
     void set_termination(std::string termination);
 
     int create();
@@ -62,8 +64,6 @@ public:
     std::string read_data();
     int send_data(std::string data);
 };
-
-typedef SocketServer server_t;
 
 
 #endif //ANTESTL_BACKEND_SOCKET_SERVER_HPP

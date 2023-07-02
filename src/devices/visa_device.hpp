@@ -1,8 +1,8 @@
 #ifndef ANTESTL_BACKEND_VISA_DEVICE_HPP
 #define ANTESTL_BACKEND_VISA_DEVICE_HPP
 
+#include <format>
 #include <cstring>
-#include <windows.h>
 
 #include "visa.h"
 #include "../utils/logger.hpp"
@@ -58,16 +58,14 @@ protected:
 
 public:
     VisaDevice() = default;
-    VisaDevice(const std::string device_address);
-    VisaDevice(visa_config config);
+    explicit VisaDevice(std::string device_address);
 
     ~VisaDevice();
 
     virtual void connect();
 
-    bool is_connected();
-
-    void clear();
+    bool is_connected() const;
+    void clear() const;
 
     std::string idn();
     int opc();
@@ -85,11 +83,7 @@ public:
         std::string command = std::vformat(fmt, std::make_format_args(args...));
         std::string data{};
 
-        try {
-            data = send(command);
-        } catch (int error_code) {
-            throw error_code;
-        }
+        data = send(command);
 
         return data;
     }
@@ -99,11 +93,7 @@ public:
         std::string command = std::vformat(fmt, std::make_format_args(args...));
         std::string data{};
 
-        try {
-            data = send_wait(command);
-        } catch (int error_code) {
-            throw error_code;
-        }
+        data = send_wait(command);
 
         return data;
     }
@@ -113,11 +103,7 @@ public:
         std::string command = std::vformat(fmt, std::make_format_args(args...));
         std::string data{};
 
-        try {
-            data = send_err(command);
-        } catch (int error_code) {
-            throw error_code;
-        }
+        data = send_err(command);
 
         return data;
     }
@@ -127,16 +113,12 @@ public:
         std::string command = std::vformat(fmt, std::make_format_args(args...));
         std::string data{};
 
-        try {
-            data = send_wait_err(command);
-        } catch (int error_code) {
-            throw error_code;
-        }
+        data = send_wait_err(command);
 
         return data;
     }
 };
 
-typedef VisaDevice visa_device;
+typedef VisaDevice visa_device_t;
 
 #endif //ANTESTL_BACKEND_VISA_DEVICE_HPP

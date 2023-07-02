@@ -13,23 +13,23 @@ class KeysightM9807A : public VnaDevice {
     std::array<int, M9807A_MODULE_COUNT> path_list = {1, 1, 1, 1};
 public:
     KeysightM9807A() = default;
-    KeysightM9807A(const std::string device_address);
-    KeysightM9807A(visa_config config);
-
-    int get_switch_module_count() override;
+    explicit KeysightM9807A(std::string device_address);
 
     void preset() override;
     void full_preset() override;
 
     void init_channel() override;
-    void configure(int meas_type, double rbw, int source_port, bool ext_gen) override;
+    void configure(int meas_type, float rbw, int source_port) override;
 
     void create_traces(std::vector<int> port_list, bool external) override;
 
-    void set_power(float power) override;
-    void set_freq_range(double start, double stop, int points) override;
+    void set_power(float power_) override;
+
+    void set_freq_range(double start_freq, double stop_freq, int points) override;
     void set_freq(double freq) override;
+
     void set_path(std::vector<int> path_list) override;
+    int get_switch_module_count() override;
 
     void rf_off() override;
     void rf_off(int port) override;
@@ -41,7 +41,7 @@ public:
 
     void init() override;
 
-    iq_data_t get_data(int trace_index) override;
+    iq_port_data_t get_data(int trace_index) override;
 };
 
 

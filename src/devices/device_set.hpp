@@ -15,38 +15,80 @@
 
 #define DEFAULT_ANGLE       0.0
 
-#define COLUMN_DELIMITER    ','
-#define ROW_DELIMITER       ';'
+#define COLUMN_DELIMITER    ","
+#define ROW_DELIMITER       ";"
 
-#define NEXT_FREQ_OK        0
-#define NEXT_FREQ_BOUND     1
-#define NEXT_FREQ_ERROR     2
+struct iq_port_list_t {
+    std::vector<iq> iq_port_list;
 
-#define NEXT_ANGLE_OK       3
-#define NEXT_ANGLE_BOUND    4
-#define NEXT_ANGLE_ERROR    5
+    iq_port_list_t(iq iq_item) {
+        insert_item(std::move(iq_item));
+    }
 
-struct data_struct_t {
-    float angle;
-    double freq;
-
-    std::vector<std::string> port_i;
-    std::vector<std::string> port_q;
-
-    void insert_port_data(iq_data_item_t port_data) {
-        port_i.push_back(port_data.first);
-        port_q.push_back(port_data.second);
+    void insert_item(iq iq_item) {
+        iq_port_list.push_back(std::move(iq_item));
     }
 
     std::string to_string() {
-        std::string out = std::format("{}{}{}", angle,COLUMN_DELIMITER , freq);
+        std::string result{};
 
-        for (int pos = 0; pos < port_i.size(); ++pos) {
-            string_utils::join(&out, port_i[pos], COLUMN_DELIMITER);
-            string_utils::join(&out, port_q[pos], COLUMN_DELIMITER);
+        for (const iq &item : iq_port_list) {
+            result += (result.empty() ? "" : COLUMN_DELIMITER) + item.i + COLUMN_DELIMITER + item.q;
         }
 
-        return out;
+        return result;
+    }
+};
+
+struct data_t {
+    std::vector<std::string> angle_list{};
+    std::vector<double> freq_list{};
+
+    std::vector<iq_port_list_t> iq_data_list{};
+
+    void insert_angles(std::string angles) {
+        angle_list.push_back(std::move(angles));
+    }
+
+    void insert_freq(double freq) {
+        freq_list.push_back(freq);
+    }
+
+    void insert_freq_list(std::vector<double> freq_list) {
+        this->freq_list = std::move(freq_list);
+    }
+
+    void insert_iq_port_data(iq_port_data_t iq_port_data) {
+        if (iq_data_list.empty()) {
+            for (const iq &item : iq_port_data) {
+                iq_data_list.push_back(iq_port_list_t(item));
+            }
+        } else {
+            for (int pos = 0; pos < iq_port_data.size(); ++pos) {
+                iq_data_list[pos].insert_item(iq_port_data[pos]);
+            }
+        }
+    }
+
+    std::string to_string() {
+        std::string result{};
+
+        for (int pos = 0; pos < iq_data_list.size(); ++pos) {
+            if (angle_list.size() == 1 && angle_list[0].empty()) {
+                result +=
+                        (result.empty() ? "" : ROW_DELIMITER) +
+                        std::to_string(freq_list.size() > 1 ? freq_list[pos] : freq_list[0]) + COLUMN_DELIMITER +
+                        iq_data_list[pos].to_string();
+            } else {
+                result +=
+                        (result.empty() ? "" : ROW_DELIMITER) +
+                        (angle_list.size() > 1 ? angle_list[pos] : angle_list[0]) + COLUMN_DELIMITER +
+                        std::to_string(freq_list.size() > 1 ? freq_list[pos] : freq_list[0]) + COLUMN_DELIMITER +
+                        iq_data_list[pos].to_string();
+            }
+        }
+
+        return result;
     }
 };
 
@@ -58,10 +100,14 @@ class DeviceSet {
     int meas_type = MEAS_TRANSITION;
     bool using_ext_gen = false;
 
+    bool traces_configured = false;
+
+    bool stop_requested = false;
+
 public:
     DeviceSet() = default;
 
-    bool connect(int device_type, std::string device_model, std::string device_address);
+    bool connect(int device_type, std::string device_model, const std::string &device_address);
     bool configure(int meas_type, float rbw, int source_port, bool using_ext_gen);
 
     bool set_power(float power);
@@ -74,6 +120,9 @@ public:
 
     bool move_to_start_freq();
 
+    double get_current_freq();
+    std::vector<double> get_freq_list();
+
     bool set_angle(float angle, int axis_num);
     bool set_angle_range(float start_angle, float stop_angle, int points, int axis_num);
 
@@ -82,15 +131,18 @@ public:
 
     bool move_to_start_angle(int axis_num);
 
-    bool change_path(std::vector<int> path_list);
+    std::string get_current_angles();
 
-    std::vector<iq_data_t> get_data(std::vector<int> port_list);
-
+    bool set_path(std::vector<int> path_list);
     int get_vna_switch_module_count();
 
-    std::string get_current_angle_list();
-    double get_current_freq(int point_pos);
-    bool is_using_ext_gen();
+    bool is_using_ext_gen() const;
+
+    data_t get_data(std::vector<int> port_list);
+
+    void request_stop();
+
+    void reset_stop_request();
 };
 
 

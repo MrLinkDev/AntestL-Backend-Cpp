@@ -1,8 +1,6 @@
 #include "keysight_gen.hpp"
 
-KeysightGen::KeysightGen(const std::string device_address) : GenDevice(device_address) {}
-
-KeysightGen::KeysightGen(visa_config config) : GenDevice(config) {}
+KeysightGen::KeysightGen(std::string device_address) : GenDevice(std::move(device_address)) {}
 
 void KeysightGen::preset() {
     send("SYSTEM:PRESET");
@@ -12,20 +10,20 @@ void KeysightGen::preset() {
 }
 
 void KeysightGen::set_freq(double freq) {
-    this->start_freq = freq;
-    this->stop_freq = freq;
+    start_freq = freq;
+    stop_freq = freq;
 
-    this->current_freq = freq;
+    current_freq = freq;
 
-    this->points = 1;
-    this->current_point = 0;
+    points = 1;
+    current_point = 0;
 
     send_wait(":FREQ {}", current_freq);
 }
 
-void KeysightGen::set_freq_range(double start, double stop, int points) {
-    this->start_freq = start;
-    this->stop_freq = stop;
+void KeysightGen::set_freq_range(double start_freq, double stop_freq, int points) {
+    this->start_freq = start_freq;
+    this->stop_freq = stop_freq;
 
     this->points = points;
 
@@ -35,8 +33,10 @@ void KeysightGen::set_freq_range(double start, double stop, int points) {
     current_point = 0;
 }
 
-void KeysightGen::set_power(float value) {
-    send(":SOURCE:POWER {}", value);
+void KeysightGen::set_power(float power) {
+    this->power = power;
+
+    send(":SOURCE:POWER {}", this->power);
 }
 
 void KeysightGen::rf_off() {
@@ -47,9 +47,9 @@ void KeysightGen::rf_on() {
     send("OUTPUT:STATE ON");
 }
 
-void KeysightGen::next_freq() {
+int KeysightGen::next_freq() {
     if (current_point == points - 1) {
-        throw FREQ_OUT_OF_BOUND;
+        return FREQ_MOVE_BOUND;
     }
 
     rf_off();
@@ -59,11 +59,13 @@ void KeysightGen::next_freq() {
 
     send_wait(":FREQ {}", current_freq);
     send(":FREQ?");
+
+    return FREQ_MOVE_OK;
 }
 
-void KeysightGen::prev_freq() {
+int KeysightGen::prev_freq() {
     if (current_point == 0) {
-        throw FREQ_OUT_OF_BOUND;
+        return FREQ_MOVE_BOUND;
     }
 
     rf_off();
@@ -72,6 +74,8 @@ void KeysightGen::prev_freq() {
     --current_point;
 
     send_wait(":FREQ {}", current_freq);
+
+    return FREQ_MOVE_OK;
 }
 
 void KeysightGen::move_to_start_freq() {

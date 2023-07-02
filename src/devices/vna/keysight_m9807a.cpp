@@ -1,12 +1,8 @@
 #include "keysight_m9807a.hpp"
+#include "../../utils/string_utils.hpp"
+#include "../../utils/array_utils.hpp"
 
-KeysightM9807A::KeysightM9807A(const std::string device_address) : VnaDevice(device_address) {}
-
-KeysightM9807A::KeysightM9807A(visa_config config) : VnaDevice(config) {}
-
-int KeysightM9807A::get_switch_module_count() {
-    return M9807A_MODULE_COUNT;
-}
+KeysightM9807A::KeysightM9807A(std::string device_address) : VnaDevice(std::move(device_address)) {}
 
 void KeysightM9807A::preset() {
     send(":SYSTEM:PRESET");
@@ -35,7 +31,7 @@ void KeysightM9807A::init_channel() {
     send_wait_err(":SOURce:POWer:COUPle 0");
 }
 
-void KeysightM9807A::configure(int meas_type, double rbw, int source_port, bool ext_gen) {
+void KeysightM9807A::configure(int meas_type, float rbw, int source_port) {
     this->meas_type = meas_type;
 
     this->rbw = rbw;
@@ -55,7 +51,7 @@ void KeysightM9807A::create_traces(std::vector<int> port_list, bool external) {
 
     int trace_arg = external ? 0 : source_port;
 
-    for (int pos = 0; pos < port_list.size(); ++ pos) {
+    for (int pos = 0; pos < port_list.size(); ++pos) {
         if (external) {
             char port_name = port_names[
                     array_utils::index(
@@ -87,10 +83,6 @@ void KeysightM9807A::create_traces(std::vector<int> port_list, bool external) {
 
         send_wait_err(R"(:CALCulate1:CUSTom:DEFine "TR{}","Standard","{}")", port_list[pos], trace_params);
         send_wait_err(":DISPlay:WINDow:TRACe{}:FEED \"TR{}\"", port_list[pos], port_list[pos]);
-
-        //send_wait_err(":DISPLAY:WINDOW:TRACE{}:STATE OFF", port_list[pos]);
-        //TODO: Отключение отрисовки трасс не влияет на обновление измерений.
-        //      Требуется создавать трассу только перед измерением
     }
 }
 
@@ -102,9 +94,9 @@ void KeysightM9807A::set_power(float power) {
     }
 }
 
-void KeysightM9807A::set_freq_range(double start, double stop, int points) {
-    this->start_freq = start;
-    this->stop_freq = stop;
+void KeysightM9807A::set_freq_range(double start_freq, double stop_freq, int points) {
+    this->start_freq = start_freq;
+    this->stop_freq = stop_freq;
     this->points = points;
 
     freq_step = this->points <= 1 ? 0 : (this->stop_freq - this->start_freq) / (this->points - 1);
@@ -116,26 +108,26 @@ void KeysightM9807A::set_freq_range(double start, double stop, int points) {
 }
 
 void KeysightM9807A::set_freq(double freq) {
-    this->start_freq = freq;
-    this->stop_freq = freq;
-    this->points = 1;
+    start_freq = freq;
+    stop_freq = freq;
+    points = 1;
 
     freq_step = 0;
 
-    send_wait_err(":SENSe:SWEep:POINts {}", this->points);
+    send_wait_err(":SENSe:SWEep:POINts {}", points);
 
-    send_wait_err(":SENSe:FREQuency:STARt {}", this->start_freq);
-    send_wait_err(":SENSe:FREQuency:STOP {}", this->stop_freq);
+    send_wait_err(":SENSe:FREQuency:STARt {}", start_freq);
+    send_wait_err(":SENSe:FREQuency:STOP {}", stop_freq);
 }
 
 void KeysightM9807A::set_path(std::vector<int> path_list) {
     for (int mod = 0; mod < M9807A_MODULE_COUNT; ++mod) {
-        if (this->path_list[mod] == path_list[mod] || path_list[mod] == -1) {
+        if (path_list[mod] == this->path_list[mod] || path_list[mod] == -1) {
             continue;
         }
 
-        send_wait_err("SENS:SWIT:M9157:MOD{}:SWIT:PATH STAT{}", mod + 1, path_list[mod]);
         this->path_list[mod] = path_list[mod];
+        send_wait_err("SENS:SWIT:M9157:MOD{}:SWIT:PATH STAT{}", mod + 1, this->path_list[mod]);
     }
 
     send_wait_err("INIT");
@@ -179,12 +171,8 @@ void KeysightM9807A::init() {
 }
 
 
-iq_data_t KeysightM9807A::get_data(int trace_index) {
-    iq_data_t iq_data{};
-
-    //send_wait_err(":DISPLAY:WINDOW:TRACE{}:STATE ON", trace_index + 2);
-
-    send_wait_err("INIT");
+iq_port_data_t KeysightM9807A::get_data(int trace_index) {
+    iq_port_data_t iq_data{};
 
     std::string received_data = send(":CALCULATE:MEASURE{}:DATA:SDATA?", trace_index + 1);
     std::vector<std::string> cached_data = string_utils::split(received_data, DATA_DELIMITER);
@@ -193,7 +181,9 @@ iq_data_t KeysightM9807A::get_data(int trace_index) {
         iq_data.emplace_back(cached_data[pos], cached_data[pos + 1]);
     }
 
-    //send_wait_err(":DISPLAY:WINDOW:TRACE{}:STATE OFF", trace_index + 2);
-
     return iq_data;
+}
+
+int KeysightM9807A::get_switch_module_count() {
+    return M9807A_MODULE_COUNT;
 }

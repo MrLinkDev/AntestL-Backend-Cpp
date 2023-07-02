@@ -5,7 +5,7 @@ int VisaDevice::write(std::string command) {
     logger::log(LEVEL_TRACE, "WRITE: {}", command);
     command += device_config.termination;
 
-    ViConstBuf command_buffer = reinterpret_cast<ViConstBuf>(command.c_str());
+    auto command_buffer = reinterpret_cast<ViConstBuf>(command.c_str());
     status = viWrite(device, command_buffer, command.length(), ret_count);
 
     if (status < VI_SUCCESS) {
@@ -42,7 +42,7 @@ std::string VisaDevice::read() {
 std::string VisaDevice::query(std::string command) {
     std::string data{};
 
-    if (write(command) == FAILURE) {
+    if (write(std::move(command)) == FAILURE) {
         return std::string{};
     }
 
@@ -50,12 +50,8 @@ std::string VisaDevice::query(std::string command) {
     return data;
 }
 
-VisaDevice::VisaDevice(const std::string device_address) {
-    device_config.address = device_address;
-}
-
-VisaDevice::VisaDevice(visa_config config) {
-    device_config = config;
+VisaDevice::VisaDevice(std::string device_address) {
+    device_config.address = std::move(device_address);
 }
 
 VisaDevice::~VisaDevice() {
@@ -73,11 +69,9 @@ void VisaDevice::connect() {
 
         connected = false;
         return;
-    } else {
-        logger::log(LEVEL_TRACE, "Opened default resource manager");
     }
 
-    logger::log(LEVEL_INFO, "Connecting to device with address {}", device_config.address);
+    logger::log(LEVEL_TRACE, "Connecting to device with address {}", device_config.address);
 
     status = viOpen(
             resource_manager,
@@ -92,7 +86,7 @@ void VisaDevice::connect() {
         connected = false;
         return;
     } else {
-        logger::log(LEVEL_INFO, "Connected");
+        logger::log(LEVEL_INFO, "Connected to device with address {}", device_config.address);
     }
 
     status = viSetAttribute(device, VI_ATTR_TMO_VALUE, DEFAULT_TIMEOUT);
@@ -102,8 +96,6 @@ void VisaDevice::connect() {
 
         connected = false;
         return;
-    } else {
-        logger::log(LEVEL_TRACE, "Timeout set to {}", device_config.timeout);
     }
 
     status = viSetAttribute(device, VI_ATTR_TERMCHAR, DEFAULT_VISA_TERM);
@@ -113,18 +105,16 @@ void VisaDevice::connect() {
 
         connected = false;
         return;
-    } else {
-        logger::log(LEVEL_TRACE, "Termination character set to (code) {}", ((int) device_config.termination));
     }
 
     connected = true;
 }
 
-bool VisaDevice::is_connected() {
+bool VisaDevice::is_connected() const {
     return connected;
 }
 
-void VisaDevice::clear() {
+void VisaDevice::clear() const {
     viClear(device);
 }
 
@@ -161,9 +151,7 @@ int VisaDevice::opc() {
 }
 
 int VisaDevice::err() {
-    std::string error_info{};
-
-    error_info = query(CMD_ERR);
+    std::string error_info = query(CMD_ERR);
 
     if (error_info.empty()) {
         logger::log(LEVEL_WARN, "No error data from device");
@@ -186,8 +174,8 @@ void VisaDevice::wait() {
         opc_status = opc();
 
         if (opc_status == FAILURE) {
-            logger::log(LEVEL_ERROR, "Unable to execute OPC");
-            throw GOT_ERROR_FROM_OPC;
+            logger::log(LEVEL_ERROR, OPC_ERROR_MSG);
+            throw antestl_exception(OPC_ERROR_MSG, OPC_ERROR_CODE);
         }
 
     } while (opc_status != OPC_PASS);
@@ -200,21 +188,21 @@ std::string VisaDevice::send(std::string command, bool read_data) {
         data = query(command);
 
         if (data.empty()) {
-            logger::log(LEVEL_ERROR, "No data from device");
-            throw NO_DATA_FROM_DEVICE;
+            logger::log(LEVEL_ERROR, READ_ERROR_MSG);
+            throw antestl_exception(READ_ERROR_MSG, READ_ERROR_CODE);
         }
     } else {
         if (write(command) == FAILURE) {
-            logger::log(LEVEL_ERROR, "Unable to send data");
-            throw GOT_ERROR_FROM_WRITE;
+            logger::log(LEVEL_ERROR, WRITE_ERROR_MSG);
+            throw antestl_exception(WRITE_ERROR_MSG, WRITE_ERROR_CODE);
         }
 
         if (read_data) {
             data = read();
 
             if (data.empty()) {
-                logger::log(LEVEL_ERROR, "No data from device");
-                throw NO_DATA_FROM_DEVICE;
+                logger::log(LEVEL_ERROR, READ_ERROR_MSG);
+                throw antestl_exception(READ_ERROR_MSG, READ_ERROR_CODE);
             }
         }
     }
@@ -225,12 +213,8 @@ std::string VisaDevice::send(std::string command, bool read_data) {
 std::string VisaDevice::send_wait(std::string command) {
     std::string data{};
 
-    try {
-        data = send(command);
-        wait();
-    } catch (int error_code) {
-        throw error_code;
-    }
+    data = send(std::move(command));
+    wait();
 
     return data;
 }
@@ -238,16 +222,11 @@ std::string VisaDevice::send_wait(std::string command) {
 std::string VisaDevice::send_err(std::string command) {
     std::string data{};
 
-    try {
-        data = send(command);
-    } catch (int error_code) {
-        throw error_code;
-    }
+    data = send(std::move(command));
 
-    int error_status = err();
-
-    if (error_status == FAILURE || error_status == ERRORS) {
-        throw GOT_ERROR_FROM_DEVICE;
+    if (err() == ERRORS) {
+        logger::log(LEVEL_ERROR, DEVICE_ERROR_MSG);
+        throw antestl_exception(DEVICE_ERROR_MSG, DEVICE_ERROR_CODE);
     }
 
     return data;
@@ -256,19 +235,12 @@ std::string VisaDevice::send_err(std::string command) {
 std::string VisaDevice::send_wait_err(std::string command) {
     std::string data{};
 
-    try {
-        data = send(command);
-        wait();
-    } catch (int error_code) {
-        throw error_code;
-    }
+    send_wait(std::move(command));
 
-    int error_status = err();
-
-    if (error_status == FAILURE || error_status == ERRORS) {
-        throw GOT_ERROR_FROM_DEVICE;
+    if (err() == ERRORS) {
+        logger::log(LEVEL_ERROR, DEVICE_ERROR_MSG);
+        throw antestl_exception(DEVICE_ERROR_MSG, DEVICE_ERROR_CODE);
     }
 
     return data;
 }
-

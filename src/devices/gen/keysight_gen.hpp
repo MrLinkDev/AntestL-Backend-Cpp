@@ -8,21 +8,20 @@ class KeysightGen : public GenDevice {
 
 public:
     KeysightGen() = default;
-    KeysightGen(const std::string device_address);
-    KeysightGen(visa_config config);
+    explicit KeysightGen(std::string device_address);
 
     void preset() override;
 
     void set_freq(double freq) override;
-    void set_freq_range(double start, double stop, int points) override;
+    void set_freq_range(double start_freq, double stop_freq, int points) override;
 
-    void set_power(float value) override;
+    void set_power(float power) override;
 
     void rf_off() override;
     void rf_on() override;
 
-    void next_freq() override;
-    void prev_freq() override;
+    int next_freq() override;
+    int prev_freq() override;
 
     void move_to_start_freq() override;
     void move_to_stop_freq() override;

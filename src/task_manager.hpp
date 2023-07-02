@@ -1,7 +1,7 @@
 #ifndef ANTESTL_BACKEND_TASK_MANAGER_HPP
 #define ANTESTL_BACKEND_TASK_MANAGER_HPP
 
-#include <json.hpp>
+#include "json.hpp"
 #include "devices/device_set.hpp"
 
 #define WORD_TASK                   "task"
@@ -79,21 +79,24 @@
 #define ERR_GETTING_DATA_ID         0x60
 #define ERR_GETTING_DATA_MSG        "Can't acquire data from VNA"
 
-#define WRONG_TASK_TYPE_ID          0xFE
+#define MEASUREMENTS_STOPS_ID       0xA0
+#define MEASUREMENTS_STOPS_MSG      "Measurements stopped"
+
+#define WRONG_TASK_TYPE_ID          0xFD
 #define WRONG_TASK_TYPE_MSG         "Wrong task type"
 
-#define NO_TASK_ID                  0xFF
+#define NO_TASK_ID                  0xFE
 #define NO_TASK_MSG                 "No task or task list"
+
+#define PARSE_ERROR_ID              0xFF
+#define PARSE_ERROR_MSG             "Input data cannot be parsed into json"
 
 using namespace nlohmann;
 
 class TaskManager {
     DeviceSet device_set;
 
-    json proceed_task(json task);
-    json proceed_task_list(json task_list);
-
-    json proceed_nested_task_list(std::vector<json> nested_task_list);
+    bool stop_requested = false;
 
     json connect_task(json device_list);
 
@@ -104,20 +107,30 @@ class TaskManager {
     bool set_freq_task(json freq_value);
     bool set_freq_range_task(json freq_range);
 
+    int next_freq_task();
+
     bool set_angle_task(json angle_value);
     bool set_angle_range_task(json angle_range);
 
-    bool change_path_task(json path_values);
-
-    std::vector<std::string> get_data_task(json port_list);
-
-    int next_freq_task();
     int next_angle_task(int axis_num);
+
+    bool set_path_task(json path_values);
+
+    std::string get_data_task(json port_list);
+
+    json proceed_task(const json &task);
+    json proceed_task_list(const json& task_list);
+
+    json proceed_nested_task_list(std::vector<json> nested_task_list);
 
 public:
     TaskManager() = default;
 
-    json parse_and_proceed(std::string input_data);
+    std::string proceed(const std::string &input_data);
+
+    void request_stop();
+
+    void reset_stop_request();
 };
 
 

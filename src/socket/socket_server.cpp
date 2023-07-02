@@ -1,28 +1,32 @@
 #include "socket_server.hpp"
 
 SocketServer::SocketServer() {
-    this->address   = DEFAULT_ADDRESS;
-    this->port      = DEFAULT_PORT;
+    this->address = DEFAULT_ADDRESS;
+    this->port = DEFAULT_PORT;
 
     this->termination = DEFAULT_SOCKET_TERM;
 }
 
 SocketServer::SocketServer(port_t port) {
-    this->address   = DEFAULT_ADDRESS;
-    this->port      = port;
+    this->address = DEFAULT_ADDRESS;
+    this->port = port;
 
     this->termination = DEFAULT_SOCKET_TERM;
 }
 
 SocketServer::SocketServer(address_t address, port_t port) {
-    this->address   = address;
-    this->port      = port;
+    this->address = address;
+    this->port = port;
 
     this->termination = DEFAULT_SOCKET_TERM;
 }
 
+void SocketServer::set_port(port_t port) {
+    this->port = port;
+}
+
 void SocketServer::set_termination(std::string termination) {
-    this->termination = termination;
+    this->termination = std::move(termination);
 }
 
 int SocketServer::create() {
@@ -30,7 +34,7 @@ int SocketServer::create() {
 
     server = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if (server == INVALID_SOCKET) {
-        logger::log(LEVEL_ERROR, "Can't create socket!");
+        logger::log(LEVEL_ERROR, "SOCKET({}): Can't create socket!", port);
         return SOCKET_NOT_CREATED;
     }
 
@@ -40,32 +44,29 @@ int SocketServer::create() {
 
     int result = bind(server, (SOCKADDR *) &server_address, sizeof(server_address));
     if (result == SOCKET_ERROR) {
-        logger::log(LEVEL_ERROR, "Can't bind socket");
+        logger::log(LEVEL_ERROR, "SOCKET({}): Can't bind socket", port);
         return SOCKET_NOT_BOUND;
     }
 
-    logger::log(LEVEL_INFO, "Created socket ({}:{})", inet_ntoa(server_address.sin_addr), port);
-    return SOCKET_OK;
+    logger::log(LEVEL_DEBUG, "SOCKET({}): Created", port);
+    return SOCKET_CREATED;
 }
 
 int SocketServer::wait_client() {
     if (listen(server, 0) == SOCKET_ERROR) {
-        logger::log(LEVEL_ERROR, "Socket can't listen");
+        logger::log(LEVEL_ERROR, "SOCKET({}): Can't start listening", port);
         return SOCKET_NOT_LISTENING;
     }
 
-    logger::log(LEVEL_INFO, "Listening...");
+    logger::log(LEVEL_INFO, "SOCKET({}): Listening...", port);
 
     int client_address_size = sizeof(client_address);
     if ((client = accept(server, (SOCKADDR*)&client_address, &client_address_size)) != INVALID_SOCKET) {
-
-        std::stringstream message;
-        logger::log(LEVEL_INFO, "Connected client with address {}", inet_ntoa(client_address.sin_addr));
-
+        logger::log(LEVEL_INFO, "SOCKET({}): Connected client with address {}", port, inet_ntoa(client_address.sin_addr));
         return CLIENT_CONNECTED;
     }
 
-    logger::log(LEVEL_ERROR, "No clients...");
+    logger::log(LEVEL_ERROR, "SOCKET({}): No clients...", port);
     return CLIENT_NONE;
 }
 
@@ -86,8 +87,7 @@ std::string SocketServer::read_data() {
             } else if (buffer[pos] == termination[1] && finish) {
                 memset(buffer, 0, sizeof(buffer));
 
-                logger::log(LEVEL_INFO, "Data was read from client");
-                logger::log(LEVEL_DEBUG, data);
+                logger::log(LEVEL_TRACE, "SOCKET({}): Got data from client = {}", port, data);
 
                 return data;
             } else if (buffer[pos] == '\0') {
@@ -106,8 +106,7 @@ std::string SocketServer::read_data() {
 }
 
 int SocketServer::send_data(std::string data) {
-    logger::log(LEVEL_INFO, "Sending data to client");
-    logger::log(LEVEL_DEBUG, data);
+    logger::log(LEVEL_TRACE, "SOCKET({}): Sending data to client = {}0", data);
 
     data.append(termination);
 
@@ -115,8 +114,6 @@ int SocketServer::send_data(std::string data) {
         logger::log(LEVEL_ERROR, "Can't send message!");
         return DATA_SEND_ERROR;
     }
-
-    logger::log(LEVEL_INFO, "Data sent to client");
 
     return DATA_SEND_OK;
 }

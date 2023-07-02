@@ -12,21 +12,17 @@ add_executable(
 
         src/main.cpp
 
-        src/task_manager.hpp
-        src/task_manager.cpp
-
-        src/utils/utils.hpp
-        src/utils/logger.hpp
         src/utils/exceptions.hpp
+        src/utils/array_utils.hpp
+        src/utils/string_utils.hpp
+        src/utils/logger.hpp
+        src/utils/test_json_requests.hpp
 
         src/socket/socket_server.hpp
         src/socket/socket_server.cpp
 
         src/devices/visa_device.hpp
         src/devices/visa_device.cpp
-
-        src/devices/device_set.hpp
-        src/devices/device_set.cpp
 
         src/devices/vna/vna_device.hpp
 
@@ -43,6 +39,12 @@ add_executable(
 
         src/devices/rbd/tesart_rbd.hpp
         src/devices/rbd/tesart_rbd.cpp
+
+        src/devices/device_set.hpp
+        src/devices/device_set.cpp
+
+        src/task_manager.hpp
+        src/task_manager.cpp
 )
 
 target_link_libraries(

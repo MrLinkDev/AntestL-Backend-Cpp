@@ -1,264 +1,65 @@
-#include <iostream>
-#include "utils/logger.hpp"
-
-#include "devices/visa_device.hpp"
+#include "devices/vna/keysight_m9807a.hpp"
 #include "devices/device_set.hpp"
+#include "utils/string_utils.hpp"
+#include "utils/test_json_requests.hpp"
 #include "task_manager.hpp"
+#include "socket/socket_server.hpp"
 
+#define DEFAULT_TASK_PORT           5006
+#define DEFAULT_DATA_PORT           5007
 
-int main() {
-    logger::set_log_level(LEVEL_DEBUG);
-    //logger::set_color_state(NO_COLOR);
+#define LOG_LEVEL_PARAM             "-log"
+#define LOG_LEVEL_PARAM_SHORT       "-l"
 
-    logger::log(LEVEL_ERROR, "Error msg");
-    logger::log(LEVEL_INFO, "Info msg");
-    logger::log(LEVEL_DEBUG, "Debug msg");
-    logger::log(LEVEL_WARN, "Warn msg");
-    logger::log(LEVEL_TRACE, "Trace msg");
+#define LOG_LEVEL_TRACE             "trace"
+#define LOG_LEVEL_DEBUG             "debug"
+#define LOG_LEVEL_INFO              "info"
+#define LOG_LEVEL_WARN              "warn"
+#define LOG_LEVEL_ERROR             "error"
 
-    std::string connection_task = "{\n"
-                                  "\t\"task\": {\n"
-                                  "\t\t\"type\": \"connect\",\n"
-                                  "\t\t\"args\": {\n"
-                                  "\t\t\t\"m9807a\": \"TCPIP0::K-N9020B-11111::inst0::INSTR\"\n"
-                                  "\t\t}\n"
-                                  "\t}}";
+#define TASK_PORT_PARAM             "-task"
+#define TASK_PORT_PARAM_SHORT       "-t"
 
-    std::string connection_task_2 = "{\n"
-                                    "\t\"task\": {\n"
-                                    "\t\t\"type\": \"connect\",\n"
-                                    "\t\t\"args\": {\n"
-                                    "\t\t\t\"m9807a\": \"TCPIP0::localhost::5025::SOCKET\",\n"
-                                    "\t\t\t\"ext_gen\": \"TCPIP0::localhost::5026::SOCKET\",\n"
-                                    "\t\t\t\"rbd_2\": \"TCPIP0::localhost::5001::SOCKET;TCPIP0::localhost::5002::SOCKET\"\n"
-                                    "\t\t}\n"
-                                    "\t}}";
+#define DATA_PORT_PARAM             "-data"
+#define DATA_PORT_PARAM_SHORT       "-d"
 
-    std::string configure_task = "{\n"
-                                 "\t\"task\": {\n"
-                                 "\t\t\"type\": \"configure\",\n"
-                                 "\t\t\"args\": {\n"
-                                 "\t\t\t\"meas_type\": 1,\n"
-                                 "\t\t\t\"rbw\": 1e3,\n"
-                                 "\t\t\t\"source_port\": 1,\n"
-                                 "\t\t\t\"external\": false\n"
-                                 "\t\t}\n"
-                                 "\t}\n"
-                                 "}";
+SocketServer task_server(DEFAULT_TASK_PORT);
+SocketServer data_server(DEFAULT_DATA_PORT);
 
-    std::string set_power_task = "{\n"
-                                 "\t\"task\": {\n"
-                                 "\t\t\"type\": \"set_power\",\n"
-                                 "\t\t\"args\": {\n"
-                                 "\t\t\t\"value\": -13.2\n"
-                                 "\t\t}\n"
-                                 "\t}\n"
-                                 "}";
+TaskManager task_manager();
 
-    std::string set_freq_task = "{\n"
-                                "\t\"task\": {\n"
-                                "\t\t\"type\": \"set_freq\",\n"
-                                "\t\t\"args\": {\n"
-                                "\t\t\t\"value\": 3.7e9\n"
-                                "\t\t}\n"
-                                "\t}\n"
-                                "}";
+void usage();
 
-    std::string set_freq_range_task = "{\n"
-                                      "\t\"task\": {\n"
-                                      "\t\t\"type\": \"set_freq_range\",\n"
-                                      "\t\t\"args\": {\n"
-                                      "\t\t\t\"start\": 2e9,\n"
-                                      "\t\t\t\"stop\": 5.8e9,\n"
-                                      "\t\t\t\"points\": 201\n"
-                                      "\t\t}\n"
-                                      "\t}\n"
-                                      "}";
+int main(int argc, char* argv[]) {
+    logger::log(LEVEL_INFO, "Starting AntestL backend...");
+    logger::set_log_level(LEVEL_INFO);
 
-    std::string change_path_task = "{\n"
-                                   "\t\"task\": {\n"
-                                   "\t\t\"type\": \"change_path\",\n"
-                                   "\t\t\"args\": {\n"
-                                   "\t\t\t\"switch_1\": 1,\n"
-                                   "\t\t\t\"switch_2\": 5,\n"
-                                   "\t\t\t\"switch_3\": 2,\n"
-                                   "\t\t\t\"switch_4\": 4\n"
-                                   "\t\t}\n"
-                                   "\t}\n"
-                                   "}";
+    for (int arg_pos = 1; arg_pos < argc; ++arg_pos) {
+        if (strcmp(argv[arg_pos], LOG_LEVEL_PARAM) == 0 || strcmp(argv[arg_pos], LOG_LEVEL_PARAM_SHORT) == 0) {
+            ++arg_pos;
 
-    std::string get_data_task = "{\n"
-                                "\t\"task\": {\n"
-                                "\t\t\"type\": \"get_data\",\n"
-                                "\t\t\"args\": {\n"
-                                "\t\t\t\"ports\": [2, 3, 4, 5, 6, 7, 8]\n"
-                                "\t\t}\n"
-                                "\t}\n"
-                                "}";
-
-    std::string task_list_test = "{"
-                                 "\"task_list\": [\n"
-                                 "\t\t{\n"
-                                 "\t\t\"type\": \"connect\",\n"
-                                 "\t\t\"args\": {\n"
-                                 "\t\t\t\"m9807a\": \"TCPIP0::K-N9020B-11111::inst0::INSTR\"\n"
-                                 "\t\t\t}\n"
-                                 "\t\t},\n"
-                                 "\t\t{\n"
-                                 "\t\t\t\"type\": \"configure\",\n"
-                                 "\t\t\t\"args\": {\n"
-                                 "\t\t\t\t\"meas_type\": 0,\n"
-                                 "\t\t\t\t\"rbw\": 1000,\n"
-                                 "\t\t\t\t\"source_port\": 1,\n"
-                                 "\t\t\t\t\"external\": false\n"
-                                 "\t\t\t}\n"
-                                 "\t\t},\n"
-                                 "\t\t{\n"
-                                 "\t\t\t\"type\": \"set_power\",\n"
-                                 "\t\t\t\"args\": {\n"
-                                 "\t\t\t\t\"value\": -20\n"
-                                 "\t\t\t}\n"
-                                 "\t\t},\n"
-                                 "\t\t{\n"
-                                 "\t\t\t\"type\": \"set_freq_range\",\n"
-                                 "\t\t\t\"args\": {\n"
-                                 "\t\t\t\t\"start\": 1000000000,\n"
-                                 "\t\t\t\t\"stop\": 9000000000,\n"
-                                 "\t\t\t\t\"points\": 11\n"
-                                 "\t\t\t},\n"
-                                 "\t\t\t\"nested\": 1\n"
-                                 "\t\t},\n"
-                                 "\t\t{\n"
-                                 "\t\t\t\"type\": \"get_data\",\n"
-                                 "\t\t\t\"args\": {\n"
-                                 "\t\t\t\t\"ports\": [2, 5, 4]\n"
-                                 "\t\t\t},\n"
-                                 "\t\t\t\"nested\": 0\n"
-                                 "\t\t}\n"
-                                 "\t]}";
-
-    std::string task_list_test_2 = "{"
-                                 "\"task_list\": [\n"
-                                 "\t\t{\n"
-                                 "\t\t\"type\": \"connect\",\n"
-                                 "\t\t\"args\": {\n"
-                                 "\t\t\t\"m9807a\": \"TCPIP0::K-N9020B-11111::inst0::INSTR\"\n"
-                                 "\t\t\t},\n"
-                                 "\t\t\"nested\": 0\n"
-                                 "\t\t},\n"
-                                 "\t\t{\n"
-                                 "\t\t\t\"type\": \"configure\",\n"
-                                 "\t\t\t\"args\": {\n"
-                                 "\t\t\t\t\"meas_type\": 0,\n"
-                                 "\t\t\t\t\"rbw\": 1000,\n"
-                                 "\t\t\t\t\"source_port\": 1,\n"
-                                 "\t\t\t\t\"external\": false\n"
-                                 "\t\t\t},\n"
-                                 "\t\t\"nested\": 1\n"
-                                 "\t\t},\n"
-                                 "\t\t{\n"
-                                 "\t\t\t\"type\": \"set_power\",\n"
-                                 "\t\t\t\"args\": {\n"
-                                 "\t\t\t\t\"value\": -20\n"
-                                 "\t\t\t}\n"
-                                 "\t\t},\n"
-                                 "\t\t{\n"
-                                 "\t\t\t\"type\": \"set_freq_range\",\n"
-                                 "\t\t\t\"args\": {\n"
-                                 "\t\t\t\t\"start\": 1000000000,\n"
-                                 "\t\t\t\t\"stop\": 9000000000,\n"
-                                 "\t\t\t\t\"points\": 11\n"
-                                 "\t\t\t},\n"
-                                 "\t\t\t\"nested\": 1\n"
-                                 "\t\t},\n"
-                                 "\t\t{\n"
-                                 "\t\t\t\"type\": \"get_data\",\n"
-                                 "\t\t\t\"args\": {\n"
-                                 "\t\t\t\t\"ports\": [2, 5, 4]\n"
-                                 "\t\t\t},\n"
-                                 "\t\t\t\"nested\": 0\n"
-                                 "\t\t}\n"
-                                 "\t]}";
-
-    std::string task_list_test_3 = "{\"task_list\": [\n"
-                                   "\t\t{\n"
-                                   "\t\t\t\"type\": \"connect\",\n"
-                                   "\t\t\t\"args\": {\n"
-                                   "\t\t\t\t\"m9807a\": \"TCPIP0::K-N9020B-11111::inst0::INSTR\",\n"
-                                   "\t\t\t\t\"demo_rbd\": \"addr1;addr2;addr3\"\n"
-                                   "\t\t\t\t}\n"
-                                   "\t\t},\n"
-                                   "\t\t{\n"
-                                   "\t\t\t\"type\": \"configure\",\n"
-                                   "\t\t\t\"args\": {\n"
-                                   "\t\t\t\t\"meas_type\": 0,\n"
-                                   "\t\t\t\t\"rbw\": 1000,\n"
-                                   "\t\t\t\t\"source_port\": 1,\n"
-                                   "\t\t\t\t\"external\": false\n"
-                                   "\t\t\t}\n"
-                                   "\t\t},\n"
-                                   "\t\t{\n"
-                                   "\t\t\t\"type\": \"set_power\",\n"
-                                   "\t\t\t\"args\": {\n"
-                                   "\t\t\t\t\"value\": -20\n"
-                                   "\t\t\t}\n"
-                                   "\t\t},\n"
-                                   "\t\t{\n"
-                                   "\t\t\t\"type\": \"set_freq_range\",\n"
-                                   "\t\t\t\"args\": {\n"
-                                   "\t\t\t\t\"start\": 1000000000,\n"
-                                   "\t\t\t\t\"stop\": 9000000000,\n"
-                                   "\t\t\t\t\"points\": 11\n"
-                                   "\t\t\t},\n"
-                                   "\t\t\t\"nested\": 1\n"
-                                   "\t\t},\n"
-                                   "\t\t{\n"
-                                   "\t\t\t\"type\": \"set_angle_range\",\n"
-                                   "\t\t\t\"args\": {\n"
-                                   "\t\t\t\t\"start\": -30,\n"
-                                   "\t\t\t\t\"stop\": 30,\n"
-                                   "\t\t\t\t\"points\": 11,\n"
-                                   "\t\t\t\t\"axis\": 0\n"
-                                   "\t\t\t},\n"
-                                   "\t\t\t\"nested\": 2\n"
-                                   "\t\t},\n"
-                                   "\t\t{\n"
-                                   "\t\t\t\"type\": \"set_angle_range\",\n"
-                                   "\t\t\t\"args\": {\n"
-                                   "\t\t\t\t\"start\": -20,\n"
-                                   "\t\t\t\t\"stop\": 20,\n"
-                                   "\t\t\t\t\"points\": 11,\n"
-                                   "\t\t\t\t\"axis\": 1\n"
-                                   "\t\t\t},\n"
-                                   "\t\t\t\"nested\": 3\n"
-                                   "\t\t},\n"
-                                   "\t\t{\n"
-                                   "\t\t\t\"type\": \"set_angle_range\",\n"
-                                   "\t\t\t\"args\": {\n"
-                                   "\t\t\t\t\"start\": -10,\n"
-                                   "\t\t\t\t\"stop\": 10,\n"
-                                   "\t\t\t\t\"points\": 11,\n"
-                                   "\t\t\t\t\"axis\": 2\n"
-                                   "\t\t\t},\n"
-                                   "\t\t\t\"nested\": 4\n"
-                                   "\t\t},\n"
-                                   "\t\t{\n"
-                                   "\t\t\t\"type\": \"get_data\",\n"
-                                   "\t\t\t\"args\": {\n"
-                                   "\t\t\t\t\"ports\": [2, 5, 4]\n"
-                                   "\t\t\t},\n"
-                                   "\t\t\t\"nested\": 0\n"
-                                   "\t\t}\n"
-                                   "\t]}";
-
-    TaskManager task_manager;
-    std::string result;
-
-    result = to_string(task_manager.parse_and_proceed(task_list_test_3));
-
-    std::vector<std::string> cache = string_utils::split(result, ';');
-    for (std::string item : cache)
-        logger::log(LEVEL_DEBUG, item);
+            if (strcmp(argv[arg_pos], LOG_LEVEL_TRACE) == 0) {
+                logger::set_log_level(LEVEL_TRACE);
+            } else if (strcmp(argv[arg_pos], LOG_LEVEL_DEBUG) == 0) {
+                logger::set_log_level(LEVEL_DEBUG);
+            } else if (strcmp(argv[arg_pos], LOG_LEVEL_WARN) == 0) {
+                logger::set_log_level(LEVEL_WARN);
+            } else if (strcmp(argv[arg_pos], LOG_LEVEL_ERROR) == 0) {
+                logger::set_log_level(LEVEL_ERROR);
+            }
+        } else if (strcmp(argv[arg_pos], TASK_PORT_PARAM) == 0 || strcmp(argv[arg_pos], TASK_PORT_PARAM_SHORT) == 0) {
+            task_server.set_port(atoi(argv[++arg_pos]));
+        } else if (strcmp(argv[arg_pos], DATA_PORT_PARAM) == 0 || strcmp(argv[arg_pos], DATA_PORT_PARAM_SHORT) == 0) {
+            data_server.set_port(atoi(argv[++arg_pos]));
+        } else {
+            usage();
+            exit(0);
+        }
+    }
 
     return 0;
+}
+
+void usage() {
+    std::cout << "Usage was here" << std::endl;
 }
