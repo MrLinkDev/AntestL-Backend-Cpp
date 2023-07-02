@@ -486,26 +486,10 @@ json TaskManager::proceed_nested_task_list(std::vector<json> nested_task_list) {
     return result;
 }
 
-std::string TaskManager::proceed(const std::string &input_data) {
-    json data;
+std::string TaskManager::proceed(const json &data) {
     json answer;
 
     // TODO: Добавить измерение времени выполнения задания
-
-    try {
-        data = json::parse(input_data);
-    } catch (const json::parse_error &err) {
-        logger::log(LEVEL_ERROR, "Seems like input data cannot be parsed into json. Check input data!");
-
-        answer = {
-                WORD_RESULT, {
-                        {WORD_RESULT_ID, PARSE_ERROR_ID},
-                        {WORD_RESULT_MSG, PARSE_ERROR_MSG}
-                }
-        };
-
-        return answer;
-    }
 
     if (data.contains(WORD_TASK)) {
         logger::log(LEVEL_INFO, "Received task");

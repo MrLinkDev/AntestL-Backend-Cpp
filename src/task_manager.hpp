@@ -128,7 +128,7 @@ class TaskManager {
 public:
     TaskManager() = default;
 
-    std::string proceed(const std::string &input_data);
+    std::string proceed(const json &data);
 
     void request_stop();
 

@@ -1,3 +1,5 @@
+#include <condition_variable>
+
 #include "socket/socket_server.hpp"
 #include "task_manager.hpp"
 
@@ -27,7 +29,19 @@ SocketServer data_server(DEFAULT_DATA_PORT, DATA_SERVER_TAG);
 
 TaskManager task_manager{};
 
-void task_server_thread_f();
+std::jthread *task_thread;
+std::jthread *data_thread;
+
+std::condition_variable cv;
+std::mutex mtx;
+
+bool received = false;
+bool processed = true;
+
+json input_data{};
+json data_buffer{};
+
+void task_server_thread_f(std::stop_token s_token);
 void data_server_thread_f();
 
 void usage();
@@ -59,17 +73,73 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    task_thread = new std::jthread{task_server_thread_f};
+    std::this_thread::sleep_for(50ms);
 
+    data_thread = new std::jthread{data_server_thread_f};
+
+    task_thread->join();
 
     return 0;
 }
 
-void task_server_thread_f() {
+void task_server_thread_f(std::stop_token s_token) {
+    if (task_server.create() != SOCKET_CREATED) {
+        exit(1);
+    }
 
+    if (task_server.wait_client() != CLIENT_CONNECTED) {
+        exit(1);
+    }
+
+    while (!s_token.stop_requested()) {
+
+        try {
+            input_data = std::move(json::parse(task_server.read_data()));
+        } catch (const json::parse_error &err) {
+            logger::log(LEVEL_ERROR, "Seems like input data cannot be parsed into json. Check input data!");
+
+            std::this_thread::sleep_for(50ms);
+            continue;
+        }
+
+        std::unique_lock u_lk(mtx);
+        cv.wait(u_lk, []{return processed;});
+
+        data_buffer = std::move(input_data);
+
+        received = true;
+        processed = false;
+
+        u_lk.unlock();
+        cv.notify_one();
+    }
 }
 
 void data_server_thread_f() {
+    if (data_server.create() != SOCKET_CREATED) {
+        exit(1);
+    }
 
+    if (data_server.wait_client() != CLIENT_CONNECTED) {
+        exit(1);
+    }
+
+    std::string result{};
+
+    while (true) {
+        std::unique_lock u_lk(mtx);
+        cv.wait(u_lk, []{return received;});
+
+        result = std::move(task_manager.proceed(data_buffer));
+        data_server.send_data(result);
+
+        processed = true;
+        received = false;
+
+        u_lk.unlock();
+        cv.notify_one();
+    }
 }
 
 void usage() {
