@@ -44,6 +44,12 @@ bool DeviceSet::connect(int device_type, std::string device_model, const std::st
     }
 }
 
+void DeviceSet::disconnect() {
+    delete vna;
+    delete ext_gen;
+    delete rbd;
+}
+
 bool DeviceSet::configure(int meas_type, float rbw, int source_port, bool using_ext_gen) {
     try {
         vna->full_preset();

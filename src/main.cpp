@@ -1,12 +1,11 @@
-#include "devices/vna/keysight_m9807a.hpp"
-#include "devices/device_set.hpp"
-#include "utils/string_utils.hpp"
-#include "utils/test_json_requests.hpp"
-#include "task_manager.hpp"
 #include "socket/socket_server.hpp"
+#include "task_manager.hpp"
 
 #define DEFAULT_TASK_PORT           5006
 #define DEFAULT_DATA_PORT           5007
+
+#define TASK_SERVER_TAG             "TASK_S"
+#define DATA_SERVER_TAG             "DATA_S"
 
 #define LOG_LEVEL_PARAM             "-log"
 #define LOG_LEVEL_PARAM_SHORT       "-l"
@@ -23,10 +22,13 @@
 #define DATA_PORT_PARAM             "-data"
 #define DATA_PORT_PARAM_SHORT       "-d"
 
-SocketServer task_server(DEFAULT_TASK_PORT);
-SocketServer data_server(DEFAULT_DATA_PORT);
+SocketServer task_server(DEFAULT_TASK_PORT, TASK_SERVER_TAG);
+SocketServer data_server(DEFAULT_DATA_PORT, DATA_SERVER_TAG);
 
-TaskManager task_manager();
+TaskManager task_manager{};
+
+void task_server_thread_f();
+void data_server_thread_f();
 
 void usage();
 
@@ -57,7 +59,17 @@ int main(int argc, char* argv[]) {
         }
     }
 
+
+
     return 0;
+}
+
+void task_server_thread_f() {
+
+}
+
+void data_server_thread_f() {
+
 }
 
 void usage() {

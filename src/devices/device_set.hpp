@@ -108,6 +108,8 @@ public:
     DeviceSet() = default;
 
     bool connect(int device_type, std::string device_model, const std::string &device_address);
+    void disconnect();
+
     bool configure(int meas_type, float rbw, int source_port, bool using_ext_gen);
 
     bool set_power(float power);

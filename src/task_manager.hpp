@@ -100,6 +100,8 @@ class TaskManager {
 
     json connect_task(json device_list);
 
+    void disconnect_task();
+
     bool configure_task(json config_params);
 
     bool set_power_task(json power_value);

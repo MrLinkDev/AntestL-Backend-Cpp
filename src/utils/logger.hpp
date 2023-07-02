@@ -6,6 +6,7 @@
 #include <sstream>
 #include <sys/time.h>
 #include <cmath>
+#include <format>
 
 #define LEVEL_ERROR 0
 #define LEVEL_WARN  1

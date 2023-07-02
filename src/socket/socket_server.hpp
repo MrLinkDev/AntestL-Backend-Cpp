@@ -9,6 +9,8 @@
 /// Стандартный порт
 #define DEFAULT_PORT            5025
 
+#define DEFAULT_TAG             "SOCKET"
+
 /// Стандартный размер буфера
 #define DEFAULT_BUFFER_SIZE     128
 
@@ -45,14 +47,16 @@ class SocketServer {
     address_t address;
     port_t port;
 
+    std::string tag;
+
     std::string termination;
 
     WSADATA WSAData{};
 
 public:
     SocketServer();
-    SocketServer(port_t port);
-    SocketServer(address_t address, port_t port);
+    SocketServer(port_t port, std::string tag = DEFAULT_TAG);
+    SocketServer(address_t address, port_t port, std::string tag = DEFAULT_TAG);
 
     void set_port(port_t port);
 

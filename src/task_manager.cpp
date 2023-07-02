@@ -44,13 +44,20 @@ json TaskManager::connect_task(nlohmann::json device_list) {
     return output;
 }
 
+void TaskManager::disconnect_task() {
+    logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_DISCONNECT);
+
+    device_set.disconnect();
+    logger::log(LEVEL_DEBUG, "Disconnected from devices");
+}
+
 bool TaskManager::configure_task(json config_params) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_CONFIGURE);
 
-    int meas_type   = config_params["meas_type"].get<int>();
-    float rbw       = config_params["rbw"].get<float>();
+    int meas_type = config_params["meas_type"].get<int>();
+    float rbw = config_params["rbw"].get<float>();
     int source_port = config_params["source_port"].get<int>();
-    bool external   = config_params["external"].get<bool>();
+    bool external = config_params["external"].get<bool>();
     
     logger::log(
             LEVEL_DEBUG, 
@@ -82,9 +89,9 @@ bool TaskManager::set_freq_task(json freq_value) {
 bool TaskManager::set_freq_range_task(json freq_range) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_FREQ_RANGE);
 
-    double start_freq   = freq_range["start"].get<double>();
-    double stop_freq    = freq_range["stop"].get<double>();
-    int points          = freq_range["points"].get<int>();
+    double start_freq = freq_range["start"].get<double>();
+    double stop_freq = freq_range["stop"].get<double>();
+    int points = freq_range["points"].get<int>();
     
     logger::log(
             LEVEL_DEBUG, 
@@ -116,10 +123,10 @@ bool TaskManager::set_angle_task(json angle_value) {
 bool TaskManager::set_angle_range_task(json angle_range) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_ANGLE_RANGE);
 
-    float start_angle  = angle_range["start"].get<float>();
-    float stop_angle   = angle_range["stop"].get<float>();
-    int points          = angle_range["points"].get<int>();
-    int axis_num        = angle_range["axis"].get<int>();
+    float start_angle = angle_range["start"].get<float>();
+    float stop_angle = angle_range["stop"].get<float>();
+    int points = angle_range["points"].get<int>();
+    int axis_num = angle_range["axis"].get<int>();
 
     logger::log(
             LEVEL_DEBUG,
@@ -175,6 +182,14 @@ json TaskManager::proceed_task(const json &task) {
 
     if (task[WORD_TASK_TYPE] == TASK_TYPE_CONNECT) {
         result[WORD_RESULT] = connect_task(task[WORD_TASK_ARGS]);
+    } else if (task[WORD_TASK_TYPE] == TASK_TYPE_DISCONNECT) {
+        disconnect_task();
+
+        result[WORD_RESULT] = {
+                {WORD_RESULT_ID, RESULT_OK_ID},
+                {WORD_RESULT_MSG, RESULT_OK_MSG},
+                {WORD_RESULT_DATA, true}
+        };
     } else if (task[WORD_TASK_TYPE] == TASK_TYPE_CONFIGURE) {
         bool task_result = configure_task(task[WORD_TASK_ARGS]);
 

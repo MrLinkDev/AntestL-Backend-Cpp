@@ -83,6 +83,12 @@ std::string get_data_task = "{\n"
                             "\t}\n"
                             "}";
 
+std::string disconnect_task = "{\n"
+                              "\t\"task\": {\n"
+                              "\t\t\"type\": \"disconnect\"\n"
+                              "\t}\n"
+                              "}";
+
 std::string task_list_test = "{"
                              "\"task_list\": [\n"
                              "\t\t{\n"
