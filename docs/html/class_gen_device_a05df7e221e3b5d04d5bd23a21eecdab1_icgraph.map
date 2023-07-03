@@ -1,0 +1,7 @@
+<map id="GenDevice::set_freq_range" name="GenDevice::set_freq_range">
+<area shape="rect" id="Node000001" title=" " alt="" coords="388,5,525,48"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a81333bd867a092fbc16af707c6b25198" title=" " alt="" coords="207,5,340,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,29,340,29,340,24,373,24"/>
+<area shape="rect" id="Node000003" href="$class_task_manager.html#ac63779261327a9f2b120a6c7dd648110" title=" " alt="" coords="5,5,159,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,29,159,29,159,24,192,24"/>
+</map>

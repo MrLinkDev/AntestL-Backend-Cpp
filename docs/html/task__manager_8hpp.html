@@ -1,0 +1,1196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Файл src/task_manager.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('task__manager_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a>  </div>
+  <div class="headertitle"><div class="title">Файл task_manager.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;json.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="device__set_8hpp_source.html">devices/device_set.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для task_manager.hpp:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="task__manager_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="task__manager_8hpp__dep__incl.svg" width="283" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="task__manager_8hpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html">TaskManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:aa87bed964ca1a400aa2b3e3d2e3817c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aa87bed964ca1a400aa2b3e3d2e3817c4">WORD_TASK</a>&#160;&#160;&#160;&quot;task&quot;</td></tr>
+<tr class="separator:aa87bed964ca1a400aa2b3e3d2e3817c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62847b445253574adb8a4490a1ad65cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a62847b445253574adb8a4490a1ad65cc">WORD_TASK_LIST</a>&#160;&#160;&#160;&quot;task_list&quot;</td></tr>
+<tr class="separator:a62847b445253574adb8a4490a1ad65cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7b73ceacd72383b27ded6f9a13f425"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#abe7b73ceacd72383b27ded6f9a13f425">WORD_TASK_TYPE</a>&#160;&#160;&#160;&quot;type&quot;</td></tr>
+<tr class="separator:abe7b73ceacd72383b27ded6f9a13f425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa662aecb17495fcf9f6b407cd85d42a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aa662aecb17495fcf9f6b407cd85d42a3">WORD_TASK_ARGS</a>&#160;&#160;&#160;&quot;args&quot;</td></tr>
+<tr class="separator:aa662aecb17495fcf9f6b407cd85d42a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ae8770894192692817b1e9722b477f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a15ae8770894192692817b1e9722b477f">WORD_NESTED</a>&#160;&#160;&#160;&quot;nested&quot;</td></tr>
+<tr class="separator:a15ae8770894192692817b1e9722b477f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9436c337775cae39cfeeeb740b4977bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a9436c337775cae39cfeeeb740b4977bc">WORD_AXIS</a>&#160;&#160;&#160;&quot;axis&quot;</td></tr>
+<tr class="separator:a9436c337775cae39cfeeeb740b4977bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2199464a897264e14adf070e6cd3318"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aa2199464a897264e14adf070e6cd3318">TASK_TYPE_CONNECT</a>&#160;&#160;&#160;&quot;connect&quot;</td></tr>
+<tr class="separator:aa2199464a897264e14adf070e6cd3318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2300c5115aa895ef9760be3faf55225a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a2300c5115aa895ef9760be3faf55225a">TASK_TYPE_CONFIGURE</a>&#160;&#160;&#160;&quot;configure&quot;</td></tr>
+<tr class="separator:a2300c5115aa895ef9760be3faf55225a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2110f305d9d5b6f55919d757aece20e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a2110f305d9d5b6f55919d757aece20e4">TASK_TYPE_SET_POWER</a>&#160;&#160;&#160;&quot;set_power&quot;</td></tr>
+<tr class="separator:a2110f305d9d5b6f55919d757aece20e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0f5dd3b36512a97911b905e20f0688"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a4b0f5dd3b36512a97911b905e20f0688">TASK_TYPE_SET_FREQ</a>&#160;&#160;&#160;&quot;set_freq&quot;</td></tr>
+<tr class="separator:a4b0f5dd3b36512a97911b905e20f0688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9c739de28f68a1d4c3d3ede5a6b3bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a4e9c739de28f68a1d4c3d3ede5a6b3bd">TASK_TYPE_SET_FREQ_RANGE</a>&#160;&#160;&#160;&quot;set_freq_range&quot;</td></tr>
+<tr class="separator:a4e9c739de28f68a1d4c3d3ede5a6b3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0ada679526ff09d0655e02aa51e78d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a1d0ada679526ff09d0655e02aa51e78d">TASK_TYPE_NEXT_FREQ</a>&#160;&#160;&#160;&quot;next_freq&quot;</td></tr>
+<tr class="separator:a1d0ada679526ff09d0655e02aa51e78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49893c14de78d2cabcb044878096f30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#ad49893c14de78d2cabcb044878096f30">TASK_TYPE_SET_ANGLE</a>&#160;&#160;&#160;&quot;set_angle&quot;</td></tr>
+<tr class="separator:ad49893c14de78d2cabcb044878096f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba620c39fc165ca00244d23fd5af4abc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aba620c39fc165ca00244d23fd5af4abc">TASK_TYPE_SET_ANGLE_RANGE</a>&#160;&#160;&#160;&quot;set_angle_range&quot;</td></tr>
+<tr class="separator:aba620c39fc165ca00244d23fd5af4abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383b124cebb02003ea7143e2605d5848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a383b124cebb02003ea7143e2605d5848">TASK_TYPE_NEXT_ANGLE</a>&#160;&#160;&#160;&quot;next_angle&quot;</td></tr>
+<tr class="separator:a383b124cebb02003ea7143e2605d5848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1b38ade4f536e30b0b53cab9e04584"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#abe1b38ade4f536e30b0b53cab9e04584">TASK_TYPE_CHANGE_PATH</a>&#160;&#160;&#160;&quot;change_path&quot;</td></tr>
+<tr class="separator:abe1b38ade4f536e30b0b53cab9e04584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87b2380367ee139ec4bc8afda82b39e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#af87b2380367ee139ec4bc8afda82b39e">TASK_TYPE_GET_DATA</a>&#160;&#160;&#160;&quot;get_data&quot;</td></tr>
+<tr class="separator:af87b2380367ee139ec4bc8afda82b39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c892f8a0f6d69a03b5a42193caf7d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a35c892f8a0f6d69a03b5a42193caf7d2">TASK_TYPE_DISCONNECT</a>&#160;&#160;&#160;&quot;disconnect&quot;</td></tr>
+<tr class="separator:a35c892f8a0f6d69a03b5a42193caf7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9d18fbc855fe972c066be45842ddf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a1a9d18fbc855fe972c066be45842ddf0">TASK_TYPE_STOP</a>&#160;&#160;&#160;&quot;stop&quot;</td></tr>
+<tr class="separator:a1a9d18fbc855fe972c066be45842ddf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadaad9dd32eedc3e66e2e69fbfcbcd34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aadaad9dd32eedc3e66e2e69fbfcbcd34">DEVICE_EXT_GEN</a>&#160;&#160;&#160;&quot;ext_gen&quot;</td></tr>
+<tr class="separator:aadaad9dd32eedc3e66e2e69fbfcbcd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd10a18fbb82547eaa2467527e0dfef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aefd10a18fbb82547eaa2467527e0dfef">DEVICE_RBD_UPKB</a>&#160;&#160;&#160;&quot;upkb_rbd&quot;</td></tr>
+<tr class="separator:aefd10a18fbb82547eaa2467527e0dfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7077c36872a08cfde96f3027e565e4a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a7077c36872a08cfde96f3027e565e4a3">DEVICE_RBD_TESART</a>&#160;&#160;&#160;&quot;tesart_rbd&quot;</td></tr>
+<tr class="separator:a7077c36872a08cfde96f3027e565e4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab062359a5cf16c6e09bca74159c95cd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#ab062359a5cf16c6e09bca74159c95cd9">DEVICE_RBD_DEMO</a>&#160;&#160;&#160;&quot;demo_rbd&quot;</td></tr>
+<tr class="separator:ab062359a5cf16c6e09bca74159c95cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5013b3e59909ffa20cc0d6c3ad884cf5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a5013b3e59909ffa20cc0d6c3ad884cf5">WORD_RESULT</a>&#160;&#160;&#160;&quot;result&quot;</td></tr>
+<tr class="separator:a5013b3e59909ffa20cc0d6c3ad884cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1473d1c4eaedde64b2437b36c0fb4901"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a1473d1c4eaedde64b2437b36c0fb4901">WORD_RESULT_ID</a>&#160;&#160;&#160;&quot;id&quot;</td></tr>
+<tr class="separator:a1473d1c4eaedde64b2437b36c0fb4901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24194ce62d209754151fd685c89e1f3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a24194ce62d209754151fd685c89e1f3c">WORD_RESULT_MSG</a>&#160;&#160;&#160;&quot;message&quot;</td></tr>
+<tr class="separator:a24194ce62d209754151fd685c89e1f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1a8e0577a3117d85c92351ee451abc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#afd1a8e0577a3117d85c92351ee451abc">WORD_RESULT_DATA</a>&#160;&#160;&#160;&quot;data&quot;</td></tr>
+<tr class="separator:afd1a8e0577a3117d85c92351ee451abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89edd5955113b1acf4fc97e8c80a86c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a89edd5955113b1acf4fc97e8c80a86c7">RESULT_OK_ID</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a89edd5955113b1acf4fc97e8c80a86c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252dc005c072b09fb9e34f09e7932b36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a252dc005c072b09fb9e34f09e7932b36">RESULT_OK_MSG</a>&#160;&#160;&#160;&quot;Complete&quot;</td></tr>
+<tr class="separator:a252dc005c072b09fb9e34f09e7932b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a36930d4b0f51a4895d5abc30532605"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a6a36930d4b0f51a4895d5abc30532605">VNA_NO_CONNECTION_ID</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a6a36930d4b0f51a4895d5abc30532605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3328c7f51bbaf972a3d75a1bf7c5291"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#af3328c7f51bbaf972a3d75a1bf7c5291">VNA_NO_CONNECTION_MSG</a>&#160;&#160;&#160;&quot;No connection with vna&quot;</td></tr>
+<tr class="separator:af3328c7f51bbaf972a3d75a1bf7c5291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e17f1ecee12289503fa400d73a4a9d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a8e17f1ecee12289503fa400d73a4a9d3">EXT_GEN_NO_CONNECTION_ID</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a8e17f1ecee12289503fa400d73a4a9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f7ce6b3acc708611447c4546bab397"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a59f7ce6b3acc708611447c4546bab397">EXT_GEN_NO_CONNECTION_MSG</a>&#160;&#160;&#160;&quot;No connection with external generator&quot;</td></tr>
+<tr class="separator:a59f7ce6b3acc708611447c4546bab397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3d93843b950624a7fc64546b7ea061"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a9f3d93843b950624a7fc64546b7ea061">RBD_NO_CONNECTION_ID</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:a9f3d93843b950624a7fc64546b7ea061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa171cd82fc13892a917bbb73e6210298"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aa171cd82fc13892a917bbb73e6210298">RBD_NO_CONNECTION_MSG</a>&#160;&#160;&#160;&quot;No connection with RBD&quot;</td></tr>
+<tr class="separator:aa171cd82fc13892a917bbb73e6210298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c2ffd84cc42d089ef98540374267f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a64c2ffd84cc42d089ef98540374267f4">VNA_CONFIGURE_ERR_ID</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:a64c2ffd84cc42d089ef98540374267f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e00456e8f1010904e4f1521172e3b0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a2e00456e8f1010904e4f1521172e3b0e">VNA_CONFIGURE_ERR_MSG</a>&#160;&#160;&#160;&quot;Can't configure VNA&quot;</td></tr>
+<tr class="separator:a2e00456e8f1010904e4f1521172e3b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe075543d8a73ea8087ad5e135df7d9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#abe075543d8a73ea8087ad5e135df7d9c">ERR_SET_POWER_ID</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:abe075543d8a73ea8087ad5e135df7d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac213bd01a1e7bd5c177be9f7a0f0d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a2ac213bd01a1e7bd5c177be9f7a0f0d4">ERR_SET_POWER_MSG</a>&#160;&#160;&#160;&quot;Can't set power&quot;</td></tr>
+<tr class="separator:a2ac213bd01a1e7bd5c177be9f7a0f0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f1f6ec54b79e150c5d70c8b9e2217b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#ac7f1f6ec54b79e150c5d70c8b9e2217b">ERR_SET_FREQ_ID</a>&#160;&#160;&#160;0x30</td></tr>
+<tr class="separator:ac7f1f6ec54b79e150c5d70c8b9e2217b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b453ac83afa9774290f56db5bcfa96e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a9b453ac83afa9774290f56db5bcfa96e">ERR_SET_FREQ_MSG</a>&#160;&#160;&#160;&quot;Can't set frequency&quot;</td></tr>
+<tr class="separator:a9b453ac83afa9774290f56db5bcfa96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfbc436a8ce63d9a3c21c5698e7a0b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a7dfbc436a8ce63d9a3c21c5698e7a0b2">ERR_SET_FREQ_RANGE_ID</a>&#160;&#160;&#160;0x31</td></tr>
+<tr class="separator:a7dfbc436a8ce63d9a3c21c5698e7a0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e537891493800a705e52928dcb5ef3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a6e537891493800a705e52928dcb5ef3c">ERR_SET_FREQ_RANGE_MSG</a>&#160;&#160;&#160;&quot;Can't set frequency range&quot;</td></tr>
+<tr class="separator:a6e537891493800a705e52928dcb5ef3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56514fa9a26ceed65f36f04bbe1ee067"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a56514fa9a26ceed65f36f04bbe1ee067">ERR_SET_ANGLE_ID</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="separator:a56514fa9a26ceed65f36f04bbe1ee067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d389ef4c8ce3e892167889f0478456"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a46d389ef4c8ce3e892167889f0478456">ERR_SET_ANGLE_MSG</a>&#160;&#160;&#160;&quot;Can't set angle&quot;</td></tr>
+<tr class="separator:a46d389ef4c8ce3e892167889f0478456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98a7646ec55e6764d8767c33a1b7306"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aa98a7646ec55e6764d8767c33a1b7306">ERR_SET_ANGLE_RANGE_ID</a>&#160;&#160;&#160;0x41</td></tr>
+<tr class="separator:aa98a7646ec55e6764d8767c33a1b7306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d184028dbfbffa82dd5d898dec5e0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#af2d184028dbfbffa82dd5d898dec5e0e">ERR_SET_ANGLE_RANGE_MSG</a>&#160;&#160;&#160;&quot;Can't set angle range&quot;</td></tr>
+<tr class="separator:af2d184028dbfbffa82dd5d898dec5e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0bdd7da6306bac42c2aac4593e8b79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aba0bdd7da6306bac42c2aac4593e8b79">ERR_CHANGE_SWITCH_PATH_ID</a>&#160;&#160;&#160;0x50</td></tr>
+<tr class="separator:aba0bdd7da6306bac42c2aac4593e8b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825f97f7eb8e7253255771e26c621f0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a825f97f7eb8e7253255771e26c621f0c">ERR_CHANGE_SWITCH_PATH_MSG</a>&#160;&#160;&#160;&quot;Can't change switch path&quot;</td></tr>
+<tr class="separator:a825f97f7eb8e7253255771e26c621f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8335a96f75f8c1e9747ad5f4f1a7c077"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a8335a96f75f8c1e9747ad5f4f1a7c077">ERR_GETTING_DATA_ID</a>&#160;&#160;&#160;0x60</td></tr>
+<tr class="separator:a8335a96f75f8c1e9747ad5f4f1a7c077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8177583388c6bc13e4d51b32662d974"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#ad8177583388c6bc13e4d51b32662d974">ERR_GETTING_DATA_MSG</a>&#160;&#160;&#160;&quot;Can't acquire data from VNA&quot;</td></tr>
+<tr class="separator:ad8177583388c6bc13e4d51b32662d974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab556b30d31ed448582a4bcfde946f676"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#ab556b30d31ed448582a4bcfde946f676">MEASUREMENTS_STOPS_ID</a>&#160;&#160;&#160;0xA0</td></tr>
+<tr class="separator:ab556b30d31ed448582a4bcfde946f676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37da09d2e09f306e9d303d47fd279e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#af37da09d2e09f306e9d303d47fd279e0">MEASUREMENTS_STOPS_MSG</a>&#160;&#160;&#160;&quot;Measurements stopped&quot;</td></tr>
+<tr class="separator:af37da09d2e09f306e9d303d47fd279e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ec21082d15145908a3d22d15adc956"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a36ec21082d15145908a3d22d15adc956">WRONG_TASK_TYPE_ID</a>&#160;&#160;&#160;0xFD</td></tr>
+<tr class="separator:a36ec21082d15145908a3d22d15adc956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b042fcfcd1dfb09a0a4373c1ca9ff3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a4b042fcfcd1dfb09a0a4373c1ca9ff3c">WRONG_TASK_TYPE_MSG</a>&#160;&#160;&#160;&quot;Wrong task type&quot;</td></tr>
+<tr class="separator:a4b042fcfcd1dfb09a0a4373c1ca9ff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad001e4160b947bd603f710f2d4623a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#aad001e4160b947bd603f710f2d4623a2">NO_TASK_ID</a>&#160;&#160;&#160;0xFE</td></tr>
+<tr class="separator:aad001e4160b947bd603f710f2d4623a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a771210d05cde6ae043788d0e934e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a78a771210d05cde6ae043788d0e934e1">NO_TASK_MSG</a>&#160;&#160;&#160;&quot;No task or task list&quot;</td></tr>
+<tr class="separator:a78a771210d05cde6ae043788d0e934e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac930e625f1433f82540109a2df197d8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#ac930e625f1433f82540109a2df197d8d">PARSE_ERROR_ID</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:ac930e625f1433f82540109a2df197d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a089b89558138a1dd5ebcd11c8a8a86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__manager_8hpp.html#a1a089b89558138a1dd5ebcd11c8a8a86">PARSE_ERROR_MSG</a>&#160;&#160;&#160;&quot;Input data cannot be parsed into json&quot;</td></tr>
+<tr class="separator:a1a089b89558138a1dd5ebcd11c8a8a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="aa87bed964ca1a400aa2b3e3d2e3817c4" name="aa87bed964ca1a400aa2b3e3d2e3817c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87bed964ca1a400aa2b3e3d2e3817c4">&#9670;&#160;</a></span>WORD_TASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_TASK&#160;&#160;&#160;&quot;task&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00007">7</a></p>
+
+</div>
+</div>
+<a id="a62847b445253574adb8a4490a1ad65cc" name="a62847b445253574adb8a4490a1ad65cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62847b445253574adb8a4490a1ad65cc">&#9670;&#160;</a></span>WORD_TASK_LIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_TASK_LIST&#160;&#160;&#160;&quot;task_list&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00008">8</a></p>
+
+</div>
+</div>
+<a id="abe7b73ceacd72383b27ded6f9a13f425" name="abe7b73ceacd72383b27ded6f9a13f425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe7b73ceacd72383b27ded6f9a13f425">&#9670;&#160;</a></span>WORD_TASK_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_TASK_TYPE&#160;&#160;&#160;&quot;type&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00010">10</a></p>
+
+</div>
+</div>
+<a id="aa662aecb17495fcf9f6b407cd85d42a3" name="aa662aecb17495fcf9f6b407cd85d42a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa662aecb17495fcf9f6b407cd85d42a3">&#9670;&#160;</a></span>WORD_TASK_ARGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_TASK_ARGS&#160;&#160;&#160;&quot;args&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00011">11</a></p>
+
+</div>
+</div>
+<a id="a15ae8770894192692817b1e9722b477f" name="a15ae8770894192692817b1e9722b477f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ae8770894192692817b1e9722b477f">&#9670;&#160;</a></span>WORD_NESTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_NESTED&#160;&#160;&#160;&quot;nested&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00013">13</a></p>
+
+</div>
+</div>
+<a id="a9436c337775cae39cfeeeb740b4977bc" name="a9436c337775cae39cfeeeb740b4977bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9436c337775cae39cfeeeb740b4977bc">&#9670;&#160;</a></span>WORD_AXIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_AXIS&#160;&#160;&#160;&quot;axis&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00015">15</a></p>
+
+</div>
+</div>
+<a id="aa2199464a897264e14adf070e6cd3318" name="aa2199464a897264e14adf070e6cd3318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2199464a897264e14adf070e6cd3318">&#9670;&#160;</a></span>TASK_TYPE_CONNECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_CONNECT&#160;&#160;&#160;&quot;connect&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00017">17</a></p>
+
+</div>
+</div>
+<a id="a2300c5115aa895ef9760be3faf55225a" name="a2300c5115aa895ef9760be3faf55225a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2300c5115aa895ef9760be3faf55225a">&#9670;&#160;</a></span>TASK_TYPE_CONFIGURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_CONFIGURE&#160;&#160;&#160;&quot;configure&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00018">18</a></p>
+
+</div>
+</div>
+<a id="a2110f305d9d5b6f55919d757aece20e4" name="a2110f305d9d5b6f55919d757aece20e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2110f305d9d5b6f55919d757aece20e4">&#9670;&#160;</a></span>TASK_TYPE_SET_POWER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_SET_POWER&#160;&#160;&#160;&quot;set_power&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="a4b0f5dd3b36512a97911b905e20f0688" name="a4b0f5dd3b36512a97911b905e20f0688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0f5dd3b36512a97911b905e20f0688">&#9670;&#160;</a></span>TASK_TYPE_SET_FREQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_SET_FREQ&#160;&#160;&#160;&quot;set_freq&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<a id="a4e9c739de28f68a1d4c3d3ede5a6b3bd" name="a4e9c739de28f68a1d4c3d3ede5a6b3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9c739de28f68a1d4c3d3ede5a6b3bd">&#9670;&#160;</a></span>TASK_TYPE_SET_FREQ_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_SET_FREQ_RANGE&#160;&#160;&#160;&quot;set_freq_range&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<a id="a1d0ada679526ff09d0655e02aa51e78d" name="a1d0ada679526ff09d0655e02aa51e78d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d0ada679526ff09d0655e02aa51e78d">&#9670;&#160;</a></span>TASK_TYPE_NEXT_FREQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_NEXT_FREQ&#160;&#160;&#160;&quot;next_freq&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="ad49893c14de78d2cabcb044878096f30" name="ad49893c14de78d2cabcb044878096f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad49893c14de78d2cabcb044878096f30">&#9670;&#160;</a></span>TASK_TYPE_SET_ANGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_SET_ANGLE&#160;&#160;&#160;&quot;set_angle&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<a id="aba620c39fc165ca00244d23fd5af4abc" name="aba620c39fc165ca00244d23fd5af4abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba620c39fc165ca00244d23fd5af4abc">&#9670;&#160;</a></span>TASK_TYPE_SET_ANGLE_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_SET_ANGLE_RANGE&#160;&#160;&#160;&quot;set_angle_range&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a id="a383b124cebb02003ea7143e2605d5848" name="a383b124cebb02003ea7143e2605d5848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383b124cebb02003ea7143e2605d5848">&#9670;&#160;</a></span>TASK_TYPE_NEXT_ANGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_NEXT_ANGLE&#160;&#160;&#160;&quot;next_angle&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00028">28</a></p>
+
+</div>
+</div>
+<a id="abe1b38ade4f536e30b0b53cab9e04584" name="abe1b38ade4f536e30b0b53cab9e04584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe1b38ade4f536e30b0b53cab9e04584">&#9670;&#160;</a></span>TASK_TYPE_CHANGE_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_CHANGE_PATH&#160;&#160;&#160;&quot;change_path&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="af87b2380367ee139ec4bc8afda82b39e" name="af87b2380367ee139ec4bc8afda82b39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87b2380367ee139ec4bc8afda82b39e">&#9670;&#160;</a></span>TASK_TYPE_GET_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_GET_DATA&#160;&#160;&#160;&quot;get_data&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00032">32</a></p>
+
+</div>
+</div>
+<a id="a35c892f8a0f6d69a03b5a42193caf7d2" name="a35c892f8a0f6d69a03b5a42193caf7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c892f8a0f6d69a03b5a42193caf7d2">&#9670;&#160;</a></span>TASK_TYPE_DISCONNECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_DISCONNECT&#160;&#160;&#160;&quot;disconnect&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<a id="a1a9d18fbc855fe972c066be45842ddf0" name="a1a9d18fbc855fe972c066be45842ddf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9d18fbc855fe972c066be45842ddf0">&#9670;&#160;</a></span>TASK_TYPE_STOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_TYPE_STOP&#160;&#160;&#160;&quot;stop&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00036">36</a></p>
+
+</div>
+</div>
+<a id="aadaad9dd32eedc3e66e2e69fbfcbcd34" name="aadaad9dd32eedc3e66e2e69fbfcbcd34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadaad9dd32eedc3e66e2e69fbfcbcd34">&#9670;&#160;</a></span>DEVICE_EXT_GEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEVICE_EXT_GEN&#160;&#160;&#160;&quot;ext_gen&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="aefd10a18fbb82547eaa2467527e0dfef" name="aefd10a18fbb82547eaa2467527e0dfef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd10a18fbb82547eaa2467527e0dfef">&#9670;&#160;</a></span>DEVICE_RBD_UPKB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEVICE_RBD_UPKB&#160;&#160;&#160;&quot;upkb_rbd&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<a id="a7077c36872a08cfde96f3027e565e4a3" name="a7077c36872a08cfde96f3027e565e4a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7077c36872a08cfde96f3027e565e4a3">&#9670;&#160;</a></span>DEVICE_RBD_TESART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEVICE_RBD_TESART&#160;&#160;&#160;&quot;tesart_rbd&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00040">40</a></p>
+
+</div>
+</div>
+<a id="ab062359a5cf16c6e09bca74159c95cd9" name="ab062359a5cf16c6e09bca74159c95cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab062359a5cf16c6e09bca74159c95cd9">&#9670;&#160;</a></span>DEVICE_RBD_DEMO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEVICE_RBD_DEMO&#160;&#160;&#160;&quot;demo_rbd&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a id="a5013b3e59909ffa20cc0d6c3ad884cf5" name="a5013b3e59909ffa20cc0d6c3ad884cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5013b3e59909ffa20cc0d6c3ad884cf5">&#9670;&#160;</a></span>WORD_RESULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_RESULT&#160;&#160;&#160;&quot;result&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00043">43</a></p>
+
+</div>
+</div>
+<a id="a1473d1c4eaedde64b2437b36c0fb4901" name="a1473d1c4eaedde64b2437b36c0fb4901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1473d1c4eaedde64b2437b36c0fb4901">&#9670;&#160;</a></span>WORD_RESULT_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_RESULT_ID&#160;&#160;&#160;&quot;id&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00044">44</a></p>
+
+</div>
+</div>
+<a id="a24194ce62d209754151fd685c89e1f3c" name="a24194ce62d209754151fd685c89e1f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24194ce62d209754151fd685c89e1f3c">&#9670;&#160;</a></span>WORD_RESULT_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_RESULT_MSG&#160;&#160;&#160;&quot;message&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a id="afd1a8e0577a3117d85c92351ee451abc" name="afd1a8e0577a3117d85c92351ee451abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1a8e0577a3117d85c92351ee451abc">&#9670;&#160;</a></span>WORD_RESULT_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_RESULT_DATA&#160;&#160;&#160;&quot;data&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00046">46</a></p>
+
+</div>
+</div>
+<a id="a89edd5955113b1acf4fc97e8c80a86c7" name="a89edd5955113b1acf4fc97e8c80a86c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89edd5955113b1acf4fc97e8c80a86c7">&#9670;&#160;</a></span>RESULT_OK_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESULT_OK_ID&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00048">48</a></p>
+
+</div>
+</div>
+<a id="a252dc005c072b09fb9e34f09e7932b36" name="a252dc005c072b09fb9e34f09e7932b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252dc005c072b09fb9e34f09e7932b36">&#9670;&#160;</a></span>RESULT_OK_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESULT_OK_MSG&#160;&#160;&#160;&quot;Complete&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a id="a6a36930d4b0f51a4895d5abc30532605" name="a6a36930d4b0f51a4895d5abc30532605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a36930d4b0f51a4895d5abc30532605">&#9670;&#160;</a></span>VNA_NO_CONNECTION_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VNA_NO_CONNECTION_ID&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00051">51</a></p>
+
+</div>
+</div>
+<a id="af3328c7f51bbaf972a3d75a1bf7c5291" name="af3328c7f51bbaf972a3d75a1bf7c5291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3328c7f51bbaf972a3d75a1bf7c5291">&#9670;&#160;</a></span>VNA_NO_CONNECTION_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VNA_NO_CONNECTION_MSG&#160;&#160;&#160;&quot;No connection with vna&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00052">52</a></p>
+
+</div>
+</div>
+<a id="a8e17f1ecee12289503fa400d73a4a9d3" name="a8e17f1ecee12289503fa400d73a4a9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e17f1ecee12289503fa400d73a4a9d3">&#9670;&#160;</a></span>EXT_GEN_NO_CONNECTION_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXT_GEN_NO_CONNECTION_ID&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00054">54</a></p>
+
+</div>
+</div>
+<a id="a59f7ce6b3acc708611447c4546bab397" name="a59f7ce6b3acc708611447c4546bab397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f7ce6b3acc708611447c4546bab397">&#9670;&#160;</a></span>EXT_GEN_NO_CONNECTION_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXT_GEN_NO_CONNECTION_MSG&#160;&#160;&#160;&quot;No connection with external generator&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00055">55</a></p>
+
+</div>
+</div>
+<a id="a9f3d93843b950624a7fc64546b7ea061" name="a9f3d93843b950624a7fc64546b7ea061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3d93843b950624a7fc64546b7ea061">&#9670;&#160;</a></span>RBD_NO_CONNECTION_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RBD_NO_CONNECTION_ID&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00057">57</a></p>
+
+</div>
+</div>
+<a id="aa171cd82fc13892a917bbb73e6210298" name="aa171cd82fc13892a917bbb73e6210298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa171cd82fc13892a917bbb73e6210298">&#9670;&#160;</a></span>RBD_NO_CONNECTION_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RBD_NO_CONNECTION_MSG&#160;&#160;&#160;&quot;No connection with RBD&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00058">58</a></p>
+
+</div>
+</div>
+<a id="a64c2ffd84cc42d089ef98540374267f4" name="a64c2ffd84cc42d089ef98540374267f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c2ffd84cc42d089ef98540374267f4">&#9670;&#160;</a></span>VNA_CONFIGURE_ERR_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VNA_CONFIGURE_ERR_ID&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00060">60</a></p>
+
+</div>
+</div>
+<a id="a2e00456e8f1010904e4f1521172e3b0e" name="a2e00456e8f1010904e4f1521172e3b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e00456e8f1010904e4f1521172e3b0e">&#9670;&#160;</a></span>VNA_CONFIGURE_ERR_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VNA_CONFIGURE_ERR_MSG&#160;&#160;&#160;&quot;Can't configure VNA&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00061">61</a></p>
+
+</div>
+</div>
+<a id="abe075543d8a73ea8087ad5e135df7d9c" name="abe075543d8a73ea8087ad5e135df7d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe075543d8a73ea8087ad5e135df7d9c">&#9670;&#160;</a></span>ERR_SET_POWER_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_POWER_ID&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00063">63</a></p>
+
+</div>
+</div>
+<a id="a2ac213bd01a1e7bd5c177be9f7a0f0d4" name="a2ac213bd01a1e7bd5c177be9f7a0f0d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac213bd01a1e7bd5c177be9f7a0f0d4">&#9670;&#160;</a></span>ERR_SET_POWER_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_POWER_MSG&#160;&#160;&#160;&quot;Can't set power&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00064">64</a></p>
+
+</div>
+</div>
+<a id="ac7f1f6ec54b79e150c5d70c8b9e2217b" name="ac7f1f6ec54b79e150c5d70c8b9e2217b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f1f6ec54b79e150c5d70c8b9e2217b">&#9670;&#160;</a></span>ERR_SET_FREQ_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_FREQ_ID&#160;&#160;&#160;0x30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00066">66</a></p>
+
+</div>
+</div>
+<a id="a9b453ac83afa9774290f56db5bcfa96e" name="a9b453ac83afa9774290f56db5bcfa96e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b453ac83afa9774290f56db5bcfa96e">&#9670;&#160;</a></span>ERR_SET_FREQ_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_FREQ_MSG&#160;&#160;&#160;&quot;Can't set frequency&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00067">67</a></p>
+
+</div>
+</div>
+<a id="a7dfbc436a8ce63d9a3c21c5698e7a0b2" name="a7dfbc436a8ce63d9a3c21c5698e7a0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dfbc436a8ce63d9a3c21c5698e7a0b2">&#9670;&#160;</a></span>ERR_SET_FREQ_RANGE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_FREQ_RANGE_ID&#160;&#160;&#160;0x31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00069">69</a></p>
+
+</div>
+</div>
+<a id="a6e537891493800a705e52928dcb5ef3c" name="a6e537891493800a705e52928dcb5ef3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e537891493800a705e52928dcb5ef3c">&#9670;&#160;</a></span>ERR_SET_FREQ_RANGE_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_FREQ_RANGE_MSG&#160;&#160;&#160;&quot;Can't set frequency range&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00070">70</a></p>
+
+</div>
+</div>
+<a id="a56514fa9a26ceed65f36f04bbe1ee067" name="a56514fa9a26ceed65f36f04bbe1ee067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56514fa9a26ceed65f36f04bbe1ee067">&#9670;&#160;</a></span>ERR_SET_ANGLE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_ANGLE_ID&#160;&#160;&#160;0x40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00072">72</a></p>
+
+</div>
+</div>
+<a id="a46d389ef4c8ce3e892167889f0478456" name="a46d389ef4c8ce3e892167889f0478456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d389ef4c8ce3e892167889f0478456">&#9670;&#160;</a></span>ERR_SET_ANGLE_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_ANGLE_MSG&#160;&#160;&#160;&quot;Can't set angle&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00073">73</a></p>
+
+</div>
+</div>
+<a id="aa98a7646ec55e6764d8767c33a1b7306" name="aa98a7646ec55e6764d8767c33a1b7306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98a7646ec55e6764d8767c33a1b7306">&#9670;&#160;</a></span>ERR_SET_ANGLE_RANGE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_ANGLE_RANGE_ID&#160;&#160;&#160;0x41</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00075">75</a></p>
+
+</div>
+</div>
+<a id="af2d184028dbfbffa82dd5d898dec5e0e" name="af2d184028dbfbffa82dd5d898dec5e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d184028dbfbffa82dd5d898dec5e0e">&#9670;&#160;</a></span>ERR_SET_ANGLE_RANGE_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_SET_ANGLE_RANGE_MSG&#160;&#160;&#160;&quot;Can't set angle range&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00076">76</a></p>
+
+</div>
+</div>
+<a id="aba0bdd7da6306bac42c2aac4593e8b79" name="aba0bdd7da6306bac42c2aac4593e8b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0bdd7da6306bac42c2aac4593e8b79">&#9670;&#160;</a></span>ERR_CHANGE_SWITCH_PATH_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_CHANGE_SWITCH_PATH_ID&#160;&#160;&#160;0x50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00078">78</a></p>
+
+</div>
+</div>
+<a id="a825f97f7eb8e7253255771e26c621f0c" name="a825f97f7eb8e7253255771e26c621f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825f97f7eb8e7253255771e26c621f0c">&#9670;&#160;</a></span>ERR_CHANGE_SWITCH_PATH_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_CHANGE_SWITCH_PATH_MSG&#160;&#160;&#160;&quot;Can't change switch path&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00079">79</a></p>
+
+</div>
+</div>
+<a id="a8335a96f75f8c1e9747ad5f4f1a7c077" name="a8335a96f75f8c1e9747ad5f4f1a7c077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8335a96f75f8c1e9747ad5f4f1a7c077">&#9670;&#160;</a></span>ERR_GETTING_DATA_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_GETTING_DATA_ID&#160;&#160;&#160;0x60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00081">81</a></p>
+
+</div>
+</div>
+<a id="ad8177583388c6bc13e4d51b32662d974" name="ad8177583388c6bc13e4d51b32662d974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8177583388c6bc13e4d51b32662d974">&#9670;&#160;</a></span>ERR_GETTING_DATA_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR_GETTING_DATA_MSG&#160;&#160;&#160;&quot;Can't acquire data from VNA&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00082">82</a></p>
+
+</div>
+</div>
+<a id="ab556b30d31ed448582a4bcfde946f676" name="ab556b30d31ed448582a4bcfde946f676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab556b30d31ed448582a4bcfde946f676">&#9670;&#160;</a></span>MEASUREMENTS_STOPS_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEASUREMENTS_STOPS_ID&#160;&#160;&#160;0xA0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00084">84</a></p>
+
+</div>
+</div>
+<a id="af37da09d2e09f306e9d303d47fd279e0" name="af37da09d2e09f306e9d303d47fd279e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37da09d2e09f306e9d303d47fd279e0">&#9670;&#160;</a></span>MEASUREMENTS_STOPS_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEASUREMENTS_STOPS_MSG&#160;&#160;&#160;&quot;Measurements stopped&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00085">85</a></p>
+
+</div>
+</div>
+<a id="a36ec21082d15145908a3d22d15adc956" name="a36ec21082d15145908a3d22d15adc956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ec21082d15145908a3d22d15adc956">&#9670;&#160;</a></span>WRONG_TASK_TYPE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRONG_TASK_TYPE_ID&#160;&#160;&#160;0xFD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00087">87</a></p>
+
+</div>
+</div>
+<a id="a4b042fcfcd1dfb09a0a4373c1ca9ff3c" name="a4b042fcfcd1dfb09a0a4373c1ca9ff3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b042fcfcd1dfb09a0a4373c1ca9ff3c">&#9670;&#160;</a></span>WRONG_TASK_TYPE_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRONG_TASK_TYPE_MSG&#160;&#160;&#160;&quot;Wrong task type&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00088">88</a></p>
+
+</div>
+</div>
+<a id="aad001e4160b947bd603f710f2d4623a2" name="aad001e4160b947bd603f710f2d4623a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad001e4160b947bd603f710f2d4623a2">&#9670;&#160;</a></span>NO_TASK_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_TASK_ID&#160;&#160;&#160;0xFE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00090">90</a></p>
+
+</div>
+</div>
+<a id="a78a771210d05cde6ae043788d0e934e1" name="a78a771210d05cde6ae043788d0e934e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a771210d05cde6ae043788d0e934e1">&#9670;&#160;</a></span>NO_TASK_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_TASK_MSG&#160;&#160;&#160;&quot;No task or task list&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00091">91</a></p>
+
+</div>
+</div>
+<a id="ac930e625f1433f82540109a2df197d8d" name="ac930e625f1433f82540109a2df197d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac930e625f1433f82540109a2df197d8d">&#9670;&#160;</a></span>PARSE_ERROR_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_ERROR_ID&#160;&#160;&#160;0xFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00093">93</a></p>
+
+</div>
+</div>
+<a id="a1a089b89558138a1dd5ebcd11c8a8a86" name="a1a089b89558138a1dd5ebcd11c8a8a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a089b89558138a1dd5ebcd11c8a8a86">&#9670;&#160;</a></span>PARSE_ERROR_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_ERROR_MSG&#160;&#160;&#160;&quot;Input data cannot be parsed into json&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00094">94</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="task__manager_8hpp.html">task_manager.hpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Исходный файл src/utils/exceptions.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('exceptions_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">exceptions.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="exceptions_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef ANTESTL_BACKEND_EXCEPTIONS_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define ANTESTL_BACKEND_EXCEPTIONS_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#add026b7d69f83f24d0189c2800d6e971">   14</a></span><span class="preprocessor">#define OPC_ERROR_MSG           &quot;Unable to execute OPC&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#a1179bec505840f95b5278e3a2c1750d5">   16</a></span><span class="preprocessor">#define OPC_ERROR_CODE          0xE000</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#a807770d0e97a5b1cccd90fca3b8dd8c5">   19</a></span><span class="preprocessor">#define READ_ERROR_MSG          &quot;Can&#39;t read data from device&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#a25f43503b9071085158d30722f41c347">   21</a></span><span class="preprocessor">#define READ_ERROR_CODE         0xE100</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#a55cc52f16a821730eaa5640b9990ff80">   24</a></span><span class="preprocessor">#define WRITE_ERROR_MSG         &quot;Can&#39;t write data into device&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#add00d47696968ccb8ffc0d01ef12da66">   26</a></span><span class="preprocessor">#define WRITE_ERROR_CODE        0xE200</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#a5421540cb9a1702861cd11bc6174a7b7">   29</a></span><span class="preprocessor">#define DEVICE_ERROR_MSG        &quot;Caught error from device&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#a3a253142b6944ac14e2520878351d07d">   31</a></span><span class="preprocessor">#define DEVICE_ERROR_CODE       0xE300</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#a4acc455b5f6fd1fbf9a01108b8467631">   34</a></span><span class="preprocessor">#define NO_CONNECTION_MSG       &quot;No connection with device&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="exceptions_8hpp.html#aba74e534f559fcb7241e2c5289664bf1">   36</a></span><span class="preprocessor">#define NO_CONNECTION_CODE      0xEF00</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classantestl__exception.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="classantestl__exception.html">antestl_exception</a> : <span class="keyword">public</span> std::exception {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classantestl__exception.html#a8a749fe2cc751c15ab7b9b41bd2371de">   43</a></span>    std::string <a class="code hl_variable" href="classantestl__exception.html#a8a749fe2cc751c15ab7b9b41bd2371de">message</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classantestl__exception.html#a89286175e3fe910ed890ba46ebda5894">   45</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classantestl__exception.html#a89286175e3fe910ed890ba46ebda5894">code</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classantestl__exception.html#af914dbd7fc939cf5caebd4080f4ade85">   56</a></span>    <a class="code hl_function" href="classantestl__exception.html#af914dbd7fc939cf5caebd4080f4ade85">antestl_exception</a>(std::string <a class="code hl_variable" href="classantestl__exception.html#a8a749fe2cc751c15ab7b9b41bd2371de">message</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="classantestl__exception.html#a89286175e3fe910ed890ba46ebda5894">code</a>) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        this-&gt;message = std::move(<a class="code hl_variable" href="classantestl__exception.html#a8a749fe2cc751c15ab7b9b41bd2371de">message</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        this-&gt;code = <a class="code hl_variable" href="classantestl__exception.html#a89286175e3fe910ed890ba46ebda5894">code</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classantestl__exception.html#a4cde4a5685c756c7219ec5c9740a6a8e">   66</a></span>    std::string <a class="code hl_function" href="classantestl__exception.html#a4cde4a5685c756c7219ec5c9740a6a8e">what</a>() {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classantestl__exception.html#a8a749fe2cc751c15ab7b9b41bd2371de">message</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classantestl__exception.html#a8f90c752082c79f1cbf60d25135d2314">   75</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classantestl__exception.html#a8f90c752082c79f1cbf60d25135d2314">error_code</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classantestl__exception.html#a89286175e3fe910ed890ba46ebda5894">code</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif </span><span class="comment">//ANTESTL_BACKEND_EXCEPTIONS_HPP</span></div>
+<div class="ttc" id="aclassantestl__exception_html"><div class="ttname"><a href="classantestl__exception.html">antestl_exception</a></div><div class="ttdoc">Класс исключения, содержащий в себе сообщение код исключения</div><div class="ttdef"><b>Definition</b> <a href="exceptions_8hpp_source.html#l00041">exceptions.hpp:41</a></div></div>
+<div class="ttc" id="aclassantestl__exception_html_a4cde4a5685c756c7219ec5c9740a6a8e"><div class="ttname"><a href="classantestl__exception.html#a4cde4a5685c756c7219ec5c9740a6a8e">antestl_exception::what</a></div><div class="ttdeci">std::string what()</div><div class="ttdoc">Функция, возвращающая сообщение исключения</div><div class="ttdef"><b>Definition</b> <a href="exceptions_8hpp_source.html#l00066">exceptions.hpp:66</a></div></div>
+<div class="ttc" id="aclassantestl__exception_html_a89286175e3fe910ed890ba46ebda5894"><div class="ttname"><a href="classantestl__exception.html#a89286175e3fe910ed890ba46ebda5894">antestl_exception::code</a></div><div class="ttdeci">int code</div><div class="ttdoc">Код исключения</div><div class="ttdef"><b>Definition</b> <a href="exceptions_8hpp_source.html#l00045">exceptions.hpp:45</a></div></div>
+<div class="ttc" id="aclassantestl__exception_html_a8a749fe2cc751c15ab7b9b41bd2371de"><div class="ttname"><a href="classantestl__exception.html#a8a749fe2cc751c15ab7b9b41bd2371de">antestl_exception::message</a></div><div class="ttdeci">std::string message</div><div class="ttdoc">Сообщение исключения</div><div class="ttdef"><b>Definition</b> <a href="exceptions_8hpp_source.html#l00043">exceptions.hpp:43</a></div></div>
+<div class="ttc" id="aclassantestl__exception_html_a8f90c752082c79f1cbf60d25135d2314"><div class="ttname"><a href="classantestl__exception.html#a8f90c752082c79f1cbf60d25135d2314">antestl_exception::error_code</a></div><div class="ttdeci">int error_code() const</div><div class="ttdoc">Функция, возвращающая код исключения</div><div class="ttdef"><b>Definition</b> <a href="exceptions_8hpp_source.html#l00075">exceptions.hpp:75</a></div></div>
+<div class="ttc" id="aclassantestl__exception_html_af914dbd7fc939cf5caebd4080f4ade85"><div class="ttname"><a href="classantestl__exception.html#af914dbd7fc939cf5caebd4080f4ade85">antestl_exception::antestl_exception</a></div><div class="ttdeci">antestl_exception(std::string message, int code)</div><div class="ttdoc">Конструктор объекта</div><div class="ttdef"><b>Definition</b> <a href="exceptions_8hpp_source.html#l00056">exceptions.hpp:56</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="exceptions_8hpp.html">exceptions.hpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

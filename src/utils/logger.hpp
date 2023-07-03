@@ -3,7 +3,7 @@
  * \brief Библиотека, осуществляющая логирование
  *
  * \author Александр Горбунов
- * \date 3 июля 2023 года
+ * \date 3 июля 2023
  */
 
 #ifndef ANTESTL_BACKEND_LOGGER_HPP

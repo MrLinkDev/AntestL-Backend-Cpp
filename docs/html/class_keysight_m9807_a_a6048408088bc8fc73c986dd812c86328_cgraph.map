@@ -1,0 +1,25 @@
+<map id="KeysightM9807A::preset" name="KeysightM9807A::preset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,170,133"/>
+<area shape="rect" id="Node000002" href="$class_visa_device.html#ad659ba652605f5c983958400fde8c808" title=" " alt="" coords="218,107,339,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,117,203,117,203,123,170,123"/>
+<area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="729,81,814,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="321,104,386,87,468,70,533,60,598,59,681,67,717,74,716,79,680,72,598,64,534,66,469,76,388,92,323,109"/>
+<area shape="rect" id="Node000008" href="$class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e" title=" " alt="" coords="387,132,512,159"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="340,126,373,131,372,137,339,132"/>
+<area shape="rect" id="Node000009" href="$class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title=" " alt="" coords="561,81,680,108"/>
+<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="339,113,546,97,547,103,340,118"/>
+<area shape="rect" id="Node000010" href="$class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title=" " alt="" coords="560,132,681,159"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="303,132,341,152,388,168,432,174,477,173,558,160,559,165,477,178,431,179,386,173,339,157,300,136"/>
+<area shape="rect" id="Node000004" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="885,5,1003,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="793,79,861,42,878,35,880,40,863,46,795,83"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="888,56,999,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="814,86,873,77,874,82,815,91"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="862,107,1025,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="815,98,847,103,847,108,814,104"/>
+<area shape="rect" id="Node000007" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="877,157,1011,184"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="795,106,863,143,880,150,878,155,861,148,793,111"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="497,129,558,110,560,115,498,134"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="513,143,545,143,545,148,513,148"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="680,92,714,92,714,97,680,97"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="662,129,715,111,717,116,664,134"/>
+</map>

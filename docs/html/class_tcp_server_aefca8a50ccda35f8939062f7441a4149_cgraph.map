@@ -1,0 +1,9 @@
+<map id="TcpServer::send_data" name="TcpServer::send_data">
+<area shape="rect" id="Node000001" title="Функция, осуществляющая отправку данных клиенту." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title=" " alt="" coords="200,31,285,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,41,185,41,185,47,152,47"/>
+<area shape="rect" id="Node000003" href="$class_logger.html#ad1ed4aec03676a821f148f7bcaf00ec3" title=" " alt="" coords="333,5,498,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,35,318,30,319,36,286,40"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title=" " alt="" coords="334,56,497,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="286,48,320,53,319,58,285,53"/>
+</map>

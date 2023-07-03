@@ -1,0 +1,11 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$class_visa_device.html" title=" " alt="" coords="5,31,91,57"/>
+<area shape="rect" id="Node000001" href="$class_gen_device.html" title=" " alt="" coords="139,5,222,32"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="105,30,138,24,139,29,106,36"/>
+<area shape="rect" id="Node000003" href="$class_vna_device.html" title=" " alt="" coords="139,56,222,83"/>
+<area shape="poly" id="edge6_Node000000_Node000003" title=" " alt="" coords="106,52,139,59,138,64,105,58"/>
+<area shape="rect" id="Node000002" href="$class_keysight_gen.html" title=" " alt="" coords="282,5,378,32"/>
+<area shape="poly" id="edge5_Node000001_Node000002" title=" " alt="" coords="237,16,282,16,282,21,237,21"/>
+<area shape="rect" id="Node000004" href="$class_keysight_m9807_a.html" title=" " alt="" coords="270,56,390,83"/>
+<area shape="poly" id="edge7_Node000003_Node000004" title=" " alt="" coords="237,67,269,67,269,72,237,72"/>
+</map>

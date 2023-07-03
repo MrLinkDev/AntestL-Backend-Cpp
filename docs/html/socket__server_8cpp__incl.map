@@ -1,0 +1,21 @@
+<map id="src/socket/socket_server.cpp" name="src/socket/socket_server.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="102,5,293,32"/>
+<area shape="rect" id="Node000002" href="$socket__server_8hpp.html" title=" " alt="" coords="134,80,261,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,33,200,65,195,65,195,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="90,155,177,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="188,109,156,145,152,142,184,105"/>
+<area shape="rect" id="Node000004" href="$logger_8hpp.html" title="Библиотека, осуществляющая логирование" alt="" coords="201,155,322,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="210,105,243,142,239,145,206,109"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,229,59,256"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="222,184,74,231,72,226,221,179"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="83,229,154,256"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="238,184,158,225,155,220,235,179"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="178,229,246,256"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="255,183,231,219,226,216,251,180"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="271,229,353,256"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="272,180,297,216,293,219,268,183"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="377,229,434,256"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="288,179,368,220,366,225,285,184"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="458,229,515,256"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="301,179,445,225,443,230,300,184"/>
+</map>

@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Файл src/utils/exceptions.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('exceptions_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a>  </div>
+  <div class="headertitle"><div class="title">Файл exceptions.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Заголовочный файл, содержащий класс antestl_exsceptions, сообщения исключений и коды исключений  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="exceptions_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="exceptions_8hpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classantestl__exception.html">antestl_exception</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс исключения, содержащий в себе сообщение код исключения  <a href="classantestl__exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:add026b7d69f83f24d0189c2800d6e971"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#add026b7d69f83f24d0189c2800d6e971">OPC_ERROR_MSG</a>&#160;&#160;&#160;&quot;Unable to execute OPC&quot;</td></tr>
+<tr class="memdesc:add026b7d69f83f24d0189c2800d6e971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщение исключения при невозможности выполнения команды "*OPC?".  <br /></td></tr>
+<tr class="separator:add026b7d69f83f24d0189c2800d6e971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1179bec505840f95b5278e3a2c1750d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a1179bec505840f95b5278e3a2c1750d5">OPC_ERROR_CODE</a>&#160;&#160;&#160;0xE000</td></tr>
+<tr class="memdesc:a1179bec505840f95b5278e3a2c1750d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код исключения при невозможности выполнения команды "*OPC?".  <br /></td></tr>
+<tr class="separator:a1179bec505840f95b5278e3a2c1750d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807770d0e97a5b1cccd90fca3b8dd8c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a807770d0e97a5b1cccd90fca3b8dd8c5">READ_ERROR_MSG</a>&#160;&#160;&#160;&quot;Can't read data from device&quot;</td></tr>
+<tr class="memdesc:a807770d0e97a5b1cccd90fca3b8dd8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщение исключения при ошибке получения данных от устройства  <br /></td></tr>
+<tr class="separator:a807770d0e97a5b1cccd90fca3b8dd8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f43503b9071085158d30722f41c347"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a25f43503b9071085158d30722f41c347">READ_ERROR_CODE</a>&#160;&#160;&#160;0xE100</td></tr>
+<tr class="memdesc:a25f43503b9071085158d30722f41c347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код исключения при ошибке получения данных от устройства  <br /></td></tr>
+<tr class="separator:a25f43503b9071085158d30722f41c347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cc52f16a821730eaa5640b9990ff80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a55cc52f16a821730eaa5640b9990ff80">WRITE_ERROR_MSG</a>&#160;&#160;&#160;&quot;Can't write data into device&quot;</td></tr>
+<tr class="memdesc:a55cc52f16a821730eaa5640b9990ff80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщение исключения при ошибке отправки данных на устройство  <br /></td></tr>
+<tr class="separator:a55cc52f16a821730eaa5640b9990ff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add00d47696968ccb8ffc0d01ef12da66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#add00d47696968ccb8ffc0d01ef12da66">WRITE_ERROR_CODE</a>&#160;&#160;&#160;0xE200</td></tr>
+<tr class="memdesc:add00d47696968ccb8ffc0d01ef12da66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код исключения при ошибке отправки данных на устройство  <br /></td></tr>
+<tr class="separator:add00d47696968ccb8ffc0d01ef12da66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5421540cb9a1702861cd11bc6174a7b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a5421540cb9a1702861cd11bc6174a7b7">DEVICE_ERROR_MSG</a>&#160;&#160;&#160;&quot;Caught error from device&quot;</td></tr>
+<tr class="memdesc:a5421540cb9a1702861cd11bc6174a7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщение исключения в случае, когда ошибка возникла на устройстве  <br /></td></tr>
+<tr class="separator:a5421540cb9a1702861cd11bc6174a7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a253142b6944ac14e2520878351d07d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a3a253142b6944ac14e2520878351d07d">DEVICE_ERROR_CODE</a>&#160;&#160;&#160;0xE300</td></tr>
+<tr class="memdesc:a3a253142b6944ac14e2520878351d07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код исключения в случае, когда ошибка возникла на устройстве  <br /></td></tr>
+<tr class="separator:a3a253142b6944ac14e2520878351d07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acc455b5f6fd1fbf9a01108b8467631"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a4acc455b5f6fd1fbf9a01108b8467631">NO_CONNECTION_MSG</a>&#160;&#160;&#160;&quot;No connection with device&quot;</td></tr>
+<tr class="memdesc:a4acc455b5f6fd1fbf9a01108b8467631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщение исключения в случае, когда не получилось подключиться к устройству  <br /></td></tr>
+<tr class="separator:a4acc455b5f6fd1fbf9a01108b8467631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba74e534f559fcb7241e2c5289664bf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#aba74e534f559fcb7241e2c5289664bf1">NO_CONNECTION_CODE</a>&#160;&#160;&#160;0xEF00</td></tr>
+<tr class="memdesc:aba74e534f559fcb7241e2c5289664bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код исключения в случае, когда не получилось подключиться к устройству  <br /></td></tr>
+<tr class="separator:aba74e534f559fcb7241e2c5289664bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл, содержащий класс antestl_exsceptions, сообщения исключений и коды исключений </p>
+<dl class="section author"><dt>Автор</dt><dd>Александр Горбунов </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>3 июля 2023 года </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a></p>
+</div><h2 class="groupheader">Макросы</h2>
+<a id="add026b7d69f83f24d0189c2800d6e971" name="add026b7d69f83f24d0189c2800d6e971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add026b7d69f83f24d0189c2800d6e971">&#9670;&#160;</a></span>OPC_ERROR_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPC_ERROR_MSG&#160;&#160;&#160;&quot;Unable to execute OPC&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сообщение исключения при невозможности выполнения команды "*OPC?". </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00014">14</a></p>
+
+</div>
+</div>
+<a id="a1179bec505840f95b5278e3a2c1750d5" name="a1179bec505840f95b5278e3a2c1750d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1179bec505840f95b5278e3a2c1750d5">&#9670;&#160;</a></span>OPC_ERROR_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPC_ERROR_CODE&#160;&#160;&#160;0xE000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Код исключения при невозможности выполнения команды "*OPC?". </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00016">16</a></p>
+
+</div>
+</div>
+<a id="a807770d0e97a5b1cccd90fca3b8dd8c5" name="a807770d0e97a5b1cccd90fca3b8dd8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807770d0e97a5b1cccd90fca3b8dd8c5">&#9670;&#160;</a></span>READ_ERROR_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define READ_ERROR_MSG&#160;&#160;&#160;&quot;Can't read data from device&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сообщение исключения при ошибке получения данных от устройства </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="a25f43503b9071085158d30722f41c347" name="a25f43503b9071085158d30722f41c347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f43503b9071085158d30722f41c347">&#9670;&#160;</a></span>READ_ERROR_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define READ_ERROR_CODE&#160;&#160;&#160;0xE100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Код исключения при ошибке получения данных от устройства </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<a id="a55cc52f16a821730eaa5640b9990ff80" name="a55cc52f16a821730eaa5640b9990ff80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cc52f16a821730eaa5640b9990ff80">&#9670;&#160;</a></span>WRITE_ERROR_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_ERROR_MSG&#160;&#160;&#160;&quot;Can't write data into device&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сообщение исключения при ошибке отправки данных на устройство </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="add00d47696968ccb8ffc0d01ef12da66" name="add00d47696968ccb8ffc0d01ef12da66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add00d47696968ccb8ffc0d01ef12da66">&#9670;&#160;</a></span>WRITE_ERROR_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_ERROR_CODE&#160;&#160;&#160;0xE200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Код исключения при ошибке отправки данных на устройство </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<a id="a5421540cb9a1702861cd11bc6174a7b7" name="a5421540cb9a1702861cd11bc6174a7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5421540cb9a1702861cd11bc6174a7b7">&#9670;&#160;</a></span>DEVICE_ERROR_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEVICE_ERROR_MSG&#160;&#160;&#160;&quot;Caught error from device&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сообщение исключения в случае, когда ошибка возникла на устройстве </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a id="a3a253142b6944ac14e2520878351d07d" name="a3a253142b6944ac14e2520878351d07d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a253142b6944ac14e2520878351d07d">&#9670;&#160;</a></span>DEVICE_ERROR_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEVICE_ERROR_CODE&#160;&#160;&#160;0xE300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Код исключения в случае, когда ошибка возникла на устройстве </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00031">31</a></p>
+
+</div>
+</div>
+<a id="a4acc455b5f6fd1fbf9a01108b8467631" name="a4acc455b5f6fd1fbf9a01108b8467631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4acc455b5f6fd1fbf9a01108b8467631">&#9670;&#160;</a></span>NO_CONNECTION_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_CONNECTION_MSG&#160;&#160;&#160;&quot;No connection with device&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сообщение исключения в случае, когда не получилось подключиться к устройству </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<a id="aba74e534f559fcb7241e2c5289664bf1" name="aba74e534f559fcb7241e2c5289664bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba74e534f559fcb7241e2c5289664bf1">&#9670;&#160;</a></span>NO_CONNECTION_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_CONNECTION_CODE&#160;&#160;&#160;0xEF00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Код исключения в случае, когда не получилось подключиться к устройству </p>
+
+<p class="definition">См. определение в файле <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a> строка <a class="el" href="exceptions_8hpp_source.html#l00036">36</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="exceptions_8hpp.html">exceptions.hpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

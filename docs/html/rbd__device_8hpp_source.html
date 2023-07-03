@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Исходный файл src/devices/rbd/rbd_device.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rbd__device_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rbd_device.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rbd__device_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ANTESTL_BACKEND_RBD_DEVICE_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ANTESTL_BACKEND_RBD_DEVICE_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;../visa_device.hpp&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="rbd__device_8hpp.html#a45158b0c98ccdf01cd14b538c042b0d7">    7</a></span><span class="preprocessor">#define ANGLE_MOVE_OK       0xF2</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">    8</a></span><span class="preprocessor">#define ANGLE_MOVE_BOUND    0xF3</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="rbd__device_8hpp.html#a22a042f508d6fef9d68f2c3da00b929b">   10</a></span><span class="preprocessor">#define ADDRESS_DELIMITER   &#39;;&#39;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_rbd_device.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">   15</a></span>    std::vector&lt;float&gt; <a class="code hl_variable" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">start_angle</a>{};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">   16</a></span>    std::vector&lt;float&gt; <a class="code hl_variable" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">stop_angle</a>{};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_rbd_device.html#afd7ae5ccfe5ce87671de1f42f189bdb4">   18</a></span>    std::vector&lt;float&gt; <a class="code hl_variable" href="class_rbd_device.html#afd7ae5ccfe5ce87671de1f42f189bdb4">angle_step</a>{};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a0aa091e8248fc68abc406f2826794509">   19</a></span>    std::vector&lt;float&gt; <a class="code hl_variable" href="class_rbd_device.html#a0aa091e8248fc68abc406f2826794509">current_angle</a>{};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">   21</a></span>    std::vector&lt;int&gt; <a class="code hl_variable" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">points</a>{};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a8dba0eeb62e5a7dbc3b76ab3c8b83610">   22</a></span>    std::vector&lt;int&gt; <a class="code hl_variable" href="class_rbd_device.html#a8dba0eeb62e5a7dbc3b76ab3c8b83610">current_point</a>{};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5">   24</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5">init_params</a>(<span class="keywordtype">int</span> axis_count = 0) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; axis_count; ++i) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            this-&gt;<a class="code hl_variable" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">start_angle</a>.push_back(0);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            this-&gt;<a class="code hl_variable" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">stop_angle</a>.push_back(0);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            this-&gt;<a class="code hl_variable" href="class_rbd_device.html#afd7ae5ccfe5ce87671de1f42f189bdb4">angle_step</a>.push_back(0);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            this-&gt;<a class="code hl_variable" href="class_rbd_device.html#a0aa091e8248fc68abc406f2826794509">current_angle</a>.push_back(0);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            this-&gt;<a class="code hl_variable" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">points</a>.push_back(0);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            this-&gt;<a class="code hl_variable" href="class_rbd_device.html#a8dba0eeb62e5a7dbc3b76ab3c8b83610">current_point</a>.push_back(0);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    };</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a7d00819d3b7ea7b01f4e385806da97ac">   38</a></span>    <a class="code hl_function" href="class_rbd_device.html#a7d00819d3b7ea7b01f4e385806da97ac">RbdDevice</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9">   40</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9">is_connected</a>() {<span class="keywordflow">return</span> <span class="keyword">false</span>;};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a522ec68bb18ad6db7bff2c1318f0d587">   42</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_rbd_device.html#a522ec68bb18ad6db7bff2c1318f0d587">move</a>(<span class="keywordtype">float</span> pos, <span class="keywordtype">int</span> axis_num) {};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">   43</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">stop</a>() {};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285">   45</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285">set_angle</a>(<span class="keywordtype">float</span> angle, <span class="keywordtype">int</span> axis_num) {};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">   46</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">start_angle</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">stop_angle</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">points</a>, <span class="keywordtype">int</span> axis_num) {};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">   48</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">next_angle</a>(<span class="keywordtype">int</span> axis_num) {<span class="keywordflow">return</span> <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>;};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">   49</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">prev_angle</a>(<span class="keywordtype">int</span> axis_num) {<span class="keywordflow">return</span> <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>;};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0">   51</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0">move_to_start_angle</a>(<span class="keywordtype">int</span> axis_num) {};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">move_to_stop_angle</a>(<span class="keywordtype">int</span> axis_num) {};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">   54</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">get_pos</a>(<span class="keywordtype">int</span> axis_num) {<span class="keywordflow">return</span> 0.0f;};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b">   56</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b">get_axes_count</a>() {<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">//ANTESTL_BACKEND_RBD_DEVICE_HPP</span></div>
+<div class="ttc" id="aclass_rbd_device_html"><div class="ttname"><a href="class_rbd_device.html">RbdDevice</a></div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00012">rbd_device.hpp:12</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a0aa091e8248fc68abc406f2826794509"><div class="ttname"><a href="class_rbd_device.html#a0aa091e8248fc68abc406f2826794509">RbdDevice::current_angle</a></div><div class="ttdeci">std::vector&lt; float &gt; current_angle</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00019">rbd_device.hpp:19</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a0f3dad1a0133405e7aec1e9dd2236f0f"><div class="ttname"><a href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">RbdDevice::next_angle</a></div><div class="ttdeci">virtual int next_angle(int axis_num)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00048">rbd_device.hpp:48</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a18b96b3ec533ebb30651702b58a72ab5"><div class="ttname"><a href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">RbdDevice::start_angle</a></div><div class="ttdeci">std::vector&lt; float &gt; start_angle</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00015">rbd_device.hpp:15</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a1e6ead71a94fa3f7c0963f15d8c32f4d"><div class="ttname"><a href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">RbdDevice::stop_angle</a></div><div class="ttdeci">std::vector&lt; float &gt; stop_angle</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00016">rbd_device.hpp:16</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a38ac9ca45cdf5ee9526ac2488baa1285"><div class="ttname"><a href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285">RbdDevice::set_angle</a></div><div class="ttdeci">virtual void set_angle(float angle, int axis_num)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00045">rbd_device.hpp:45</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a3a167e5b35a407ebda8203b7474d380d"><div class="ttname"><a href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">RbdDevice::prev_angle</a></div><div class="ttdeci">virtual int prev_angle(int axis_num)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00049">rbd_device.hpp:49</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a3ce90b05c72560d35522397fa1295c8c"><div class="ttname"><a href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">RbdDevice::set_angle_range</a></div><div class="ttdeci">virtual void set_angle_range(float start_angle, float stop_angle, int points, int axis_num)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00046">rbd_device.hpp:46</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a4ad22f51538a1e9083fb36068a543e66"><div class="ttname"><a href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">RbdDevice::stop</a></div><div class="ttdeci">virtual void stop()</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00043">rbd_device.hpp:43</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a522ec68bb18ad6db7bff2c1318f0d587"><div class="ttname"><a href="class_rbd_device.html#a522ec68bb18ad6db7bff2c1318f0d587">RbdDevice::move</a></div><div class="ttdeci">virtual void move(float pos, int axis_num)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00042">rbd_device.hpp:42</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a54fd10b47f6c13d1ff985792799763f0"><div class="ttname"><a href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0">RbdDevice::move_to_start_angle</a></div><div class="ttdeci">virtual void move_to_start_angle(int axis_num)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00051">rbd_device.hpp:51</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a5ae75a0b5418270decd335a47c853cad"><div class="ttname"><a href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">RbdDevice::get_pos</a></div><div class="ttdeci">virtual float get_pos(int axis_num)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00054">rbd_device.hpp:54</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a7d00819d3b7ea7b01f4e385806da97ac"><div class="ttname"><a href="class_rbd_device.html#a7d00819d3b7ea7b01f4e385806da97ac">RbdDevice::RbdDevice</a></div><div class="ttdeci">RbdDevice()=default</div></div>
+<div class="ttc" id="aclass_rbd_device_html_a7e123d47cf6d44e35f65bdd6961c17b9"><div class="ttname"><a href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">RbdDevice::move_to_stop_angle</a></div><div class="ttdeci">virtual void move_to_stop_angle(int axis_num)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00052">rbd_device.hpp:52</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a7f0fc01b4d9a94bae816f55828bd74e9"><div class="ttname"><a href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9">RbdDevice::is_connected</a></div><div class="ttdeci">virtual bool is_connected()</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00040">rbd_device.hpp:40</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a8355d76430cf9c742cdfb0d84a5b110e"><div class="ttname"><a href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">RbdDevice::points</a></div><div class="ttdeci">std::vector&lt; int &gt; points</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00021">rbd_device.hpp:21</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a8ae479426b12f8fcd2a08c84acdc7bb5"><div class="ttname"><a href="class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5">RbdDevice::init_params</a></div><div class="ttdeci">void init_params(int axis_count=0)</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00024">rbd_device.hpp:24</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_a8dba0eeb62e5a7dbc3b76ab3c8b83610"><div class="ttname"><a href="class_rbd_device.html#a8dba0eeb62e5a7dbc3b76ab3c8b83610">RbdDevice::current_point</a></div><div class="ttdeci">std::vector&lt; int &gt; current_point</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00022">rbd_device.hpp:22</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_ae5b34a03ceb0a14f39724a60fcd6ac3b"><div class="ttname"><a href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b">RbdDevice::get_axes_count</a></div><div class="ttdeci">virtual int get_axes_count()</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00056">rbd_device.hpp:56</a></div></div>
+<div class="ttc" id="aclass_rbd_device_html_afd7ae5ccfe5ce87671de1f42f189bdb4"><div class="ttname"><a href="class_rbd_device.html#afd7ae5ccfe5ce87671de1f42f189bdb4">RbdDevice::angle_step</a></div><div class="ttdeci">std::vector&lt; float &gt; angle_step</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00018">rbd_device.hpp:18</a></div></div>
+<div class="ttc" id="arbd__device_8hpp_html_a822eea0ea5aa0e7a7e966ee9ca1b04c5"><div class="ttname"><a href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a></div><div class="ttdeci">#define ANGLE_MOVE_BOUND</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00008">rbd_device.hpp:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6fac9273c1f4413d2ee63ba6cd0b0eb2.html">devices</a></li><li class="navelem"><a class="el" href="dir_094120fcb12e83d239f59734d21d23c5.html">rbd</a></li><li class="navelem"><a class="el" href="rbd__device_8hpp.html">rbd_device.hpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

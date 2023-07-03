@@ -1,0 +1,803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Файл src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;condition_variable&gt;</code><br />
+<code>#include &quot;<a class="el" href="socket__server_8hpp_source.html">socket/socket_server.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="main_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="main_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ad234df54142398a5bd41b226599a04fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad234df54142398a5bd41b226599a04fa">DEFAULT_TASK_PORT</a>&#160;&#160;&#160;5006</td></tr>
+<tr class="separator:ad234df54142398a5bd41b226599a04fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d8d345c53759de8ec7fc36e87334ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa7d8d345c53759de8ec7fc36e87334ec">DEFAULT_DATA_PORT</a>&#160;&#160;&#160;5007</td></tr>
+<tr class="separator:aa7d8d345c53759de8ec7fc36e87334ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad0d8cbf153984bb319bf489dce4640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a5ad0d8cbf153984bb319bf489dce4640">TASK_SERVER_TAG</a>&#160;&#160;&#160;&quot;TASK_S&quot;</td></tr>
+<tr class="separator:a5ad0d8cbf153984bb319bf489dce4640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a1c369d3254ba222ed2f18a9685f38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ab5a1c369d3254ba222ed2f18a9685f38">DATA_SERVER_TAG</a>&#160;&#160;&#160;&quot;DATA_S&quot;</td></tr>
+<tr class="separator:ab5a1c369d3254ba222ed2f18a9685f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b967516c063e92b8db89f12cf9d7b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad6b967516c063e92b8db89f12cf9d7b9">LOG_LEVEL_PARAM</a>&#160;&#160;&#160;&quot;-log&quot;</td></tr>
+<tr class="separator:ad6b967516c063e92b8db89f12cf9d7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bd9ef4cd0f0b71830f63b58bc8acb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a46bd9ef4cd0f0b71830f63b58bc8acb3">LOG_LEVEL_PARAM_SHORT</a>&#160;&#160;&#160;&quot;-l&quot;</td></tr>
+<tr class="separator:a46bd9ef4cd0f0b71830f63b58bc8acb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15856724811f59e6f351153e89380f5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a15856724811f59e6f351153e89380f5d">LOG_LEVEL_TRACE</a>&#160;&#160;&#160;&quot;trace&quot;</td></tr>
+<tr class="separator:a15856724811f59e6f351153e89380f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130224df8c6bf22a688e3cb74a45689a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a130224df8c6bf22a688e3cb74a45689a">LOG_LEVEL_DEBUG</a>&#160;&#160;&#160;&quot;debug&quot;</td></tr>
+<tr class="separator:a130224df8c6bf22a688e3cb74a45689a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e25fe130cf710da4ad800747fdd51f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2e25fe130cf710da4ad800747fdd51f3">LOG_LEVEL_INFO</a>&#160;&#160;&#160;&quot;info&quot;</td></tr>
+<tr class="separator:a2e25fe130cf710da4ad800747fdd51f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f43a1fab62b98fc88603cdb988de3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a14f43a1fab62b98fc88603cdb988de3d">LOG_LEVEL_WARN</a>&#160;&#160;&#160;&quot;warn&quot;</td></tr>
+<tr class="separator:a14f43a1fab62b98fc88603cdb988de3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742fc70e331d7e568bd893c514756a29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a742fc70e331d7e568bd893c514756a29">LOG_LEVEL_ERROR</a>&#160;&#160;&#160;&quot;error&quot;</td></tr>
+<tr class="separator:a742fc70e331d7e568bd893c514756a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c2755b82e2b596c35ef5a9937585d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a61c2755b82e2b596c35ef5a9937585d8">TASK_PORT_PARAM</a>&#160;&#160;&#160;&quot;-task&quot;</td></tr>
+<tr class="separator:a61c2755b82e2b596c35ef5a9937585d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb212666894bc00784b36d0a688e017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8cb212666894bc00784b36d0a688e017">TASK_PORT_PARAM_SHORT</a>&#160;&#160;&#160;&quot;-t&quot;</td></tr>
+<tr class="separator:a8cb212666894bc00784b36d0a688e017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada144dd47628c1e0a3397707fd85e943"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ada144dd47628c1e0a3397707fd85e943">DATA_PORT_PARAM</a>&#160;&#160;&#160;&quot;-data&quot;</td></tr>
+<tr class="separator:ada144dd47628c1e0a3397707fd85e943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4dc3e0e11fe972abab864592373909"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3b4dc3e0e11fe972abab864592373909">DATA_PORT_PARAM_SHORT</a>&#160;&#160;&#160;&quot;-d&quot;</td></tr>
+<tr class="separator:a3b4dc3e0e11fe972abab864592373909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aef72d10ff26fe620d5f0a0f8412d7a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b">task_server_thread_f</a> (std::stop_token s_token)</td></tr>
+<tr class="separator:aef72d10ff26fe620d5f0a0f8412d7a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205c0f32d26b6f27c711fa201d02c983"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983">data_server_thread_f</a> (std::stop_token s_token)</td></tr>
+<tr class="separator:a205c0f32d26b6f27c711fa201d02c983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d7de01106a848cf8a5b3d494b40062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062">exit_event_handler</a> (int signal_code)</td></tr>
+<tr class="separator:a35d7de01106a848cf8a5b3d494b40062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef30c42cbc289d899a8be5d2d8f77d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2ef30c42cbc289d899a8be5d2d8f77d0">usage</a> ()</td></tr>
+<tr class="separator:a2ef30c42cbc289d899a8be5d2d8f77d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ae0616aeefbf878ed575490f103af220d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_socket_server.html">SocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae0616aeefbf878ed575490f103af220d">task_server</a> (<a class="el" href="main_8cpp.html#ad234df54142398a5bd41b226599a04fa">DEFAULT_TASK_PORT</a>, <a class="el" href="main_8cpp.html#a5ad0d8cbf153984bb319bf489dce4640">TASK_SERVER_TAG</a>)</td></tr>
+<tr class="separator:ae0616aeefbf878ed575490f103af220d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db97645d63f7de72d62baf2be9c88c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_socket_server.html">SocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1db97645d63f7de72d62baf2be9c88c9">data_server</a> (<a class="el" href="main_8cpp.html#aa7d8d345c53759de8ec7fc36e87334ec">DEFAULT_DATA_PORT</a>, <a class="el" href="main_8cpp.html#ab5a1c369d3254ba222ed2f18a9685f38">DATA_SERVER_TAG</a>)</td></tr>
+<tr class="separator:a1db97645d63f7de72d62baf2be9c88c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeafa8ca169e406f398608a2e7522f14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_task_manager.html">TaskManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#abeafa8ca169e406f398608a2e7522f14">task_manager</a> {}</td></tr>
+<tr class="separator:abeafa8ca169e406f398608a2e7522f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40aba9d05cd1e535a7fe3a91c15a895"><td class="memItemLeft" align="right" valign="top">std::jthread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac40aba9d05cd1e535a7fe3a91c15a895">task_thread</a></td></tr>
+<tr class="separator:ac40aba9d05cd1e535a7fe3a91c15a895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeecd5329ebc87a26c7a09560bd993e6"><td class="memItemLeft" align="right" valign="top">std::jthread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adeecd5329ebc87a26c7a09560bd993e6">data_thread</a></td></tr>
+<tr class="separator:adeecd5329ebc87a26c7a09560bd993e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afa02d14fff34c480aabfbc41ad193c"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0afa02d14fff34c480aabfbc41ad193c">cv</a></td></tr>
+<tr class="separator:a0afa02d14fff34c480aabfbc41ad193c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5e0dbd36f0d71fce9b00b7f991b2f38"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad5e0dbd36f0d71fce9b00b7f991b2f38">mtx</a></td></tr>
+<tr class="separator:ad5e0dbd36f0d71fce9b00b7f991b2f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbe87354d47906dcbb42c7ba634b102"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6dbe87354d47906dcbb42c7ba634b102">received</a> = false</td></tr>
+<tr class="separator:a6dbe87354d47906dcbb42c7ba634b102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0115d3c31ef3657b197ace2c06496e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7a0115d3c31ef3657b197ace2c06496e">processed</a> = true</td></tr>
+<tr class="separator:a7a0115d3c31ef3657b197ace2c06496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f80ebe6ac4c59f6d6ab88303ae25f5"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a14f80ebe6ac4c59f6d6ab88303ae25f5">input_data</a> {}</td></tr>
+<tr class="separator:a14f80ebe6ac4c59f6d6ab88303ae25f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf676f2d6e5004d3a17584bf0e21b3f9"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf676f2d6e5004d3a17584bf0e21b3f9">data_buffer</a> {}</td></tr>
+<tr class="separator:adf676f2d6e5004d3a17584bf0e21b3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5180e02da27b2f3fe932a253aa48cb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac5180e02da27b2f3fe932a253aa48cb3">stop_process</a> = false</td></tr>
+<tr class="separator:ac5180e02da27b2f3fe932a253aa48cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="ad234df54142398a5bd41b226599a04fa" name="ad234df54142398a5bd41b226599a04fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad234df54142398a5bd41b226599a04fa">&#9670;&#160;</a></span>DEFAULT_TASK_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_TASK_PORT&#160;&#160;&#160;5006</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00006">6</a></p>
+
+</div>
+</div>
+<a id="aa7d8d345c53759de8ec7fc36e87334ec" name="aa7d8d345c53759de8ec7fc36e87334ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d8d345c53759de8ec7fc36e87334ec">&#9670;&#160;</a></span>DEFAULT_DATA_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_DATA_PORT&#160;&#160;&#160;5007</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00007">7</a></p>
+
+</div>
+</div>
+<a id="a5ad0d8cbf153984bb319bf489dce4640" name="a5ad0d8cbf153984bb319bf489dce4640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad0d8cbf153984bb319bf489dce4640">&#9670;&#160;</a></span>TASK_SERVER_TAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_SERVER_TAG&#160;&#160;&#160;&quot;TASK_S&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00009">9</a></p>
+
+</div>
+</div>
+<a id="ab5a1c369d3254ba222ed2f18a9685f38" name="ab5a1c369d3254ba222ed2f18a9685f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a1c369d3254ba222ed2f18a9685f38">&#9670;&#160;</a></span>DATA_SERVER_TAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_SERVER_TAG&#160;&#160;&#160;&quot;DATA_S&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00010">10</a></p>
+
+</div>
+</div>
+<a id="ad6b967516c063e92b8db89f12cf9d7b9" name="ad6b967516c063e92b8db89f12cf9d7b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b967516c063e92b8db89f12cf9d7b9">&#9670;&#160;</a></span>LOG_LEVEL_PARAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LEVEL_PARAM&#160;&#160;&#160;&quot;-log&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00012">12</a></p>
+
+</div>
+</div>
+<a id="a46bd9ef4cd0f0b71830f63b58bc8acb3" name="a46bd9ef4cd0f0b71830f63b58bc8acb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46bd9ef4cd0f0b71830f63b58bc8acb3">&#9670;&#160;</a></span>LOG_LEVEL_PARAM_SHORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LEVEL_PARAM_SHORT&#160;&#160;&#160;&quot;-l&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00013">13</a></p>
+
+</div>
+</div>
+<a id="a15856724811f59e6f351153e89380f5d" name="a15856724811f59e6f351153e89380f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15856724811f59e6f351153e89380f5d">&#9670;&#160;</a></span>LOG_LEVEL_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LEVEL_TRACE&#160;&#160;&#160;&quot;trace&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00015">15</a></p>
+
+</div>
+</div>
+<a id="a130224df8c6bf22a688e3cb74a45689a" name="a130224df8c6bf22a688e3cb74a45689a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130224df8c6bf22a688e3cb74a45689a">&#9670;&#160;</a></span>LOG_LEVEL_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LEVEL_DEBUG&#160;&#160;&#160;&quot;debug&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00016">16</a></p>
+
+</div>
+</div>
+<a id="a2e25fe130cf710da4ad800747fdd51f3" name="a2e25fe130cf710da4ad800747fdd51f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e25fe130cf710da4ad800747fdd51f3">&#9670;&#160;</a></span>LOG_LEVEL_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LEVEL_INFO&#160;&#160;&#160;&quot;info&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00017">17</a></p>
+
+</div>
+</div>
+<a id="a14f43a1fab62b98fc88603cdb988de3d" name="a14f43a1fab62b98fc88603cdb988de3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f43a1fab62b98fc88603cdb988de3d">&#9670;&#160;</a></span>LOG_LEVEL_WARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LEVEL_WARN&#160;&#160;&#160;&quot;warn&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00018">18</a></p>
+
+</div>
+</div>
+<a id="a742fc70e331d7e568bd893c514756a29" name="a742fc70e331d7e568bd893c514756a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a742fc70e331d7e568bd893c514756a29">&#9670;&#160;</a></span>LOG_LEVEL_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_LEVEL_ERROR&#160;&#160;&#160;&quot;error&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="a61c2755b82e2b596c35ef5a9937585d8" name="a61c2755b82e2b596c35ef5a9937585d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c2755b82e2b596c35ef5a9937585d8">&#9670;&#160;</a></span>TASK_PORT_PARAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_PORT_PARAM&#160;&#160;&#160;&quot;-task&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<a id="a8cb212666894bc00784b36d0a688e017" name="a8cb212666894bc00784b36d0a688e017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb212666894bc00784b36d0a688e017">&#9670;&#160;</a></span>TASK_PORT_PARAM_SHORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TASK_PORT_PARAM_SHORT&#160;&#160;&#160;&quot;-t&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<a id="ada144dd47628c1e0a3397707fd85e943" name="ada144dd47628c1e0a3397707fd85e943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada144dd47628c1e0a3397707fd85e943">&#9670;&#160;</a></span>DATA_PORT_PARAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PORT_PARAM&#160;&#160;&#160;&quot;-data&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="a3b4dc3e0e11fe972abab864592373909" name="a3b4dc3e0e11fe972abab864592373909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4dc3e0e11fe972abab864592373909">&#9670;&#160;</a></span>DATA_PORT_PARAM_SHORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PORT_PARAM_SHORT&#160;&#160;&#160;&quot;-d&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00025">25</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="aef72d10ff26fe620d5f0a0f8412d7a2b" name="aef72d10ff26fe620d5f0a0f8412d7a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef72d10ff26fe620d5f0a0f8412d7a2b">&#9670;&#160;</a></span>task_server_thread_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void task_server_thread_f </td>
+          <td>(</td>
+          <td class="paramtype">std::stop_token&#160;</td>
+          <td class="paramname"><em>s_token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00097">97</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="main_8cpp_aef72d10ff26fe620d5f0a0f8412d7a2b_cgraph.svg" width="100%" height="592"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_aef72d10ff26fe620d5f0a0f8412d7a2b_icgraph.svg" width="248" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a205c0f32d26b6f27c711fa201d02c983" name="a205c0f32d26b6f27c711fa201d02c983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205c0f32d26b6f27c711fa201d02c983">&#9670;&#160;</a></span>data_server_thread_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void data_server_thread_f </td>
+          <td>(</td>
+          <td class="paramtype">std::stop_token&#160;</td>
+          <td class="paramname"><em>s_token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00139">139</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="main_8cpp_a205c0f32d26b6f27c711fa201d02c983_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a205c0f32d26b6f27c711fa201d02c983_icgraph.svg" width="248" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a35d7de01106a848cf8a5b3d494b40062" name="a35d7de01106a848cf8a5b3d494b40062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d7de01106a848cf8a5b3d494b40062">&#9670;&#160;</a></span>exit_event_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exit_event_handler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal_code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00167">167</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="main_8cpp_a35d7de01106a848cf8a5b3d494b40062_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a35d7de01106a848cf8a5b3d494b40062_icgraph.svg" width="236" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2ef30c42cbc289d899a8be5d2d8f77d0" name="a2ef30c42cbc289d899a8be5d2d8f77d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef30c42cbc289d899a8be5d2d8f77d0">&#9670;&#160;</a></span>usage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void usage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00181">181</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a2ef30c42cbc289d899a8be5d2d8f77d0_icgraph.svg" width="164" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00053">53</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="ae0616aeefbf878ed575490f103af220d" name="ae0616aeefbf878ed575490f103af220d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0616aeefbf878ed575490f103af220d">&#9670;&#160;</a></span>task_server</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_socket_server.html">SocketServer</a> task_server(<a class="el" href="main_8cpp.html#ad234df54142398a5bd41b226599a04fa">DEFAULT_TASK_PORT</a>, <a class="el" href="main_8cpp.html#a5ad0d8cbf153984bb319bf489dce4640">TASK_SERVER_TAG</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8cpp.html#ad234df54142398a5bd41b226599a04fa">DEFAULT_TASK_PORT</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8cpp.html#a5ad0d8cbf153984bb319bf489dce4640">TASK_SERVER_TAG</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1db97645d63f7de72d62baf2be9c88c9" name="a1db97645d63f7de72d62baf2be9c88c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1db97645d63f7de72d62baf2be9c88c9">&#9670;&#160;</a></span>data_server</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_socket_server.html">SocketServer</a> data_server(<a class="el" href="main_8cpp.html#aa7d8d345c53759de8ec7fc36e87334ec">DEFAULT_DATA_PORT</a>, <a class="el" href="main_8cpp.html#ab5a1c369d3254ba222ed2f18a9685f38">DATA_SERVER_TAG</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8cpp.html#aa7d8d345c53759de8ec7fc36e87334ec">DEFAULT_DATA_PORT</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8cpp.html#ab5a1c369d3254ba222ed2f18a9685f38">DATA_SERVER_TAG</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abeafa8ca169e406f398608a2e7522f14" name="abeafa8ca169e406f398608a2e7522f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeafa8ca169e406f398608a2e7522f14">&#9670;&#160;</a></span>task_manager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_task_manager.html">TaskManager</a> task_manager {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="ac40aba9d05cd1e535a7fe3a91c15a895" name="ac40aba9d05cd1e535a7fe3a91c15a895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40aba9d05cd1e535a7fe3a91c15a895">&#9670;&#160;</a></span>task_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::jthread* task_thread</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00032">32</a></p>
+
+</div>
+</div>
+<a id="adeecd5329ebc87a26c7a09560bd993e6" name="adeecd5329ebc87a26c7a09560bd993e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeecd5329ebc87a26c7a09560bd993e6">&#9670;&#160;</a></span>data_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::jthread* data_thread</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00033">33</a></p>
+
+</div>
+</div>
+<a id="a0afa02d14fff34c480aabfbc41ad193c" name="a0afa02d14fff34c480aabfbc41ad193c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afa02d14fff34c480aabfbc41ad193c">&#9670;&#160;</a></span>cv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::condition_variable cv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00035">35</a></p>
+
+</div>
+</div>
+<a id="ad5e0dbd36f0d71fce9b00b7f991b2f38" name="ad5e0dbd36f0d71fce9b00b7f991b2f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5e0dbd36f0d71fce9b00b7f991b2f38">&#9670;&#160;</a></span>mtx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex mtx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00036">36</a></p>
+
+</div>
+</div>
+<a id="a6dbe87354d47906dcbb42c7ba634b102" name="a6dbe87354d47906dcbb42c7ba634b102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dbe87354d47906dcbb42c7ba634b102">&#9670;&#160;</a></span>received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool received = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="a7a0115d3c31ef3657b197ace2c06496e" name="a7a0115d3c31ef3657b197ace2c06496e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0115d3c31ef3657b197ace2c06496e">&#9670;&#160;</a></span>processed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool processed = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<a id="a14f80ebe6ac4c59f6d6ab88303ae25f5" name="a14f80ebe6ac4c59f6d6ab88303ae25f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f80ebe6ac4c59f6d6ab88303ae25f5">&#9670;&#160;</a></span>input_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json input_data {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a id="adf676f2d6e5004d3a17584bf0e21b3f9" name="adf676f2d6e5004d3a17584bf0e21b3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf676f2d6e5004d3a17584bf0e21b3f9">&#9670;&#160;</a></span>data_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json data_buffer {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00042">42</a></p>
+
+</div>
+</div>
+<a id="ac5180e02da27b2f3fe932a253aa48cb3" name="ac5180e02da27b2f3fe932a253aa48cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5180e02da27b2f3fe932a253aa48cb3">&#9670;&#160;</a></span>stop_process</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool stop_process = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00044">44</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

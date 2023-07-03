@@ -1,0 +1,22 @@
+<map id="TaskManager::connect_task" name="TaskManager::connect_task">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,191,159"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title=" " alt="" coords="239,107,372,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,131,223,127,224,133,191,137"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="463,157,548,184"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="191,148,448,165,448,170,191,154"/>
+<area shape="rect" id="Node000003" href="$class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" title=" " alt="" coords="422,5,589,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="322,104,365,73,419,42,435,35,437,40,421,46,368,78,325,108"/>
+<area shape="rect" id="Node000004" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title=" " alt="" coords="420,56,590,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="360,103,435,84,436,89,362,109"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="362,131,449,154,447,159,360,137"/>
+<area shape="rect" id="Node000010" href="$class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" title=" " alt="" coords="442,107,568,133"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="372,117,427,117,427,123,372,123"/>
+<area shape="rect" id="Node000006" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="661,81,779,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="548,157,589,143,637,118,655,111,657,116,639,122,591,148,549,162"/>
+<area shape="rect" id="Node000007" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="664,132,776,159"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="548,163,649,151,650,156,549,168"/>
+<area shape="rect" id="Node000008" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="638,183,802,209"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="549,173,624,182,623,187,548,178"/>
+<area shape="rect" id="Node000009" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="653,233,787,260"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="542,182,639,219,660,226,658,231,637,224,540,187"/>
+</map>

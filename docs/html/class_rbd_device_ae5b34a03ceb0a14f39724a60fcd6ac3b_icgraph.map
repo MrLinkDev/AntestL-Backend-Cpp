@@ -1,0 +1,9 @@
+<map id="RbdDevice::get_axes_count" name="RbdDevice::get_axes_count">
+<area shape="rect" id="Node000001" title=" " alt="" coords="628,5,772,48"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" title=" " alt="" coords="428,5,580,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="613,29,581,29,581,24,613,24"/>
+<area shape="rect" id="Node000003" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title=" " alt="" coords="243,13,380,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="413,29,380,29,380,24,413,24"/>
+<area shape="rect" id="Node000004" href="$class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" title=" " alt="" coords="5,13,195,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,29,195,29,195,24,228,24"/>
+</map>

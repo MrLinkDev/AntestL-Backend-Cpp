@@ -1,5 +1,18 @@
 #include "socket_server.hpp"
 
+/**
+ * \brief Стандартный конструктор.
+ *
+ * Создаётся объект со стандартными параметрами:
+ * - address = 127.0.0.1
+ * - port = 5025
+ * - tag = "SOCKET"
+ *
+ * **Пример**
+ * \code
+ * SocketServer socket_s();
+ * \endcode
+ */
 SocketServer::SocketServer() {
     this->address = DEFAULT_ADDRESS;
     this->port = DEFAULT_PORT;
@@ -7,6 +20,17 @@ SocketServer::SocketServer() {
     this->termination = DEFAULT_SOCKET_TERM;
 }
 
+/**
+ * \brief Конструктор, в который передаётся порт и тег
+ *
+ * \param [in] port Порт сокета
+ * \param [in] tag Тег сокета. Может быть пустым, тогда тег будет стандартным.
+ *
+ * **Пример**
+ * \code
+ * SocketServer socket_s(5555, "TEST SOCKET");
+ * \endcode
+ */
 SocketServer::SocketServer(port_t port, std::string tag) {
     this->address = DEFAULT_ADDRESS;
     this->port = port;
@@ -16,6 +40,17 @@ SocketServer::SocketServer(port_t port, std::string tag) {
     this->termination = DEFAULT_SOCKET_TERM;
 }
 
+/**
+ * \brief Конструктор, в который передаётся порт и тег
+ *
+ * \param [in] port Порт сокета
+ * \param [in] tag Тег сокета. Может быть пустым, тогда тег будет стандартным.
+ *
+ * **Пример***
+ * \code
+ * SocketServer socket_s(5555, "TEST SOCKET");
+ * \endcode
+ */
 SocketServer::SocketServer(address_t address, port_t port, std::string tag) {
     this->address = address;
     this->port = port;
@@ -25,14 +60,25 @@ SocketServer::SocketServer(address_t address, port_t port, std::string tag) {
     this->termination = DEFAULT_SOCKET_TERM;
 }
 
+/**
+ * \brief Меняет порт на требуемый
+ *
+ * \param [in] port Требуемый порт
+ */
 void SocketServer::set_port(port_t port) {
     this->port = port;
 }
 
-void SocketServer::set_termination(std::string termination) {
-    this->termination = std::move(termination);
-}
-
+/**
+ * \brief Функция, инициализирующая сокет
+ *
+ * \return В зависимости от результата, возвращает соответствующий код результата.
+ *
+ * **Пример**
+ * \code
+ *
+ * \endcode
+ */
 int SocketServer::create() {
     WSAStartup(MAKEWORD(2, 0), &WSAData);
 
@@ -56,6 +102,11 @@ int SocketServer::create() {
     return SOCKET_CREATED;
 }
 
+/**
+ * \brief Функция, ожидающая подключение клиента
+ *
+ * \return В зависимости от результата, возвращает соответствующий код результата.
+ */
 int SocketServer::wait_client() {
     if (listen(server, 0) == SOCKET_ERROR) {
         logger::log(LEVEL_ERROR, "{} ({}): Can't start listening", tag, port);

@@ -1,0 +1,7 @@
+<map id="GenDevice" name="GenDevice">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,603,193,1184"/>
+<area shape="rect" id="Node000003" href="$class_keysight_gen.html" title=" " alt="" coords="19,1232,179,1701"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,1198,102,1232,97,1232,97,1198"/>
+<area shape="rect" id="Node000002" href="$class_visa_device.html" title=" " alt="" coords="25,5,174,555"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,569,102,603,97,603,97,569"/>
+</map>

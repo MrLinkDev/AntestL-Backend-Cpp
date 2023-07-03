@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Исходный файл src/socket/socket_server.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('socket__server_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">socket_server.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="socket__server_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="socket__server_8hpp.html">socket_server.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_socket_server.html#a262ba93dc8ad71b260fb75124b3453ee">    3</a></span><a class="code hl_function" href="class_socket_server.html#a262ba93dc8ad71b260fb75124b3453ee">SocketServer::SocketServer</a>() {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    this-&gt;<a class="code hl_variable" href="class_socket_server.html#a426f9a0622e3c7d00cf1cd322409ed11">address</a> = <a class="code hl_define" href="socket__server_8hpp.html#a838ee749ec1dfd8d73187bb32e9ec427">DEFAULT_ADDRESS</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    this-&gt;<a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a> = <a class="code hl_define" href="socket__server_8hpp.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    this-&gt;<a class="code hl_variable" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a> = <a class="code hl_define" href="socket__server_8hpp.html#a0b600fece622111c0c218a722b18ab2f">DEFAULT_SOCKET_TERM</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_socket_server.html#a5bf519d83475f538d88d3ba9303e71a0">   10</a></span><a class="code hl_function" href="class_socket_server.html#a262ba93dc8ad71b260fb75124b3453ee">SocketServer::SocketServer</a>(<a class="code hl_typedef" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a> port, std::string tag) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    this-&gt;<a class="code hl_variable" href="class_socket_server.html#a426f9a0622e3c7d00cf1cd322409ed11">address</a> = <a class="code hl_define" href="socket__server_8hpp.html#a838ee749ec1dfd8d73187bb32e9ec427">DEFAULT_ADDRESS</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    this-&gt;port = <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    this-&gt;tag = std::move(<a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    this-&gt;<a class="code hl_variable" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a> = <a class="code hl_define" href="socket__server_8hpp.html#a0b600fece622111c0c218a722b18ab2f">DEFAULT_SOCKET_TERM</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_socket_server.html#a509c9e31bd06b7cc8e3ba4cfb107ccf8">   19</a></span><a class="code hl_function" href="class_socket_server.html#a262ba93dc8ad71b260fb75124b3453ee">SocketServer::SocketServer</a>(<a class="code hl_typedef" href="socket__server_8hpp.html#a9bef0f56c5c02f15f8ef8da4ad89ee71">address_t</a> address, <a class="code hl_typedef" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a> port, std::string tag) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    this-&gt;address = <a class="code hl_variable" href="class_socket_server.html#a426f9a0622e3c7d00cf1cd322409ed11">address</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    this-&gt;port = <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    this-&gt;tag = std::move(<a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    this-&gt;<a class="code hl_variable" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a> = <a class="code hl_define" href="socket__server_8hpp.html#a0b600fece622111c0c218a722b18ab2f">DEFAULT_SOCKET_TERM</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_socket_server.html#aab9b710128e52b731623b5b7fa2573ae">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_socket_server.html#aab9b710128e52b731623b5b7fa2573ae">SocketServer::set_port</a>(<a class="code hl_typedef" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a> port) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    this-&gt;port = <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_socket_server.html#a40bc48fe79ef0fa4059e3bfba4769153">   32</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_socket_server.html#a40bc48fe79ef0fa4059e3bfba4769153">SocketServer::set_termination</a>(std::string termination) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    this-&gt;termination = std::move(<a class="code hl_variable" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80">   36</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80">SocketServer::create</a>() {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    WSAStartup(MAKEWORD(2, 0), &amp;<a class="code hl_variable" href="class_socket_server.html#a78fe7ba24b9d07cd16f759ccef86ef5c">WSAData</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="class_socket_server.html#ad7a7ee05e51ea673b35ee531a0182be9">server</a> = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_socket_server.html#ad7a7ee05e51ea673b35ee531a0182be9">server</a> == INVALID_SOCKET) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a2019547e7f5bf5d56a09e5cfa98d0598">LEVEL_ERROR</a>, <span class="stringliteral">&quot;{} ({}): Can&#39;t create socket!&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="socket__server_8hpp.html#aa8350385faf779427da567bf86a3d1d9">SOCKET_NOT_CREATED</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_variable" href="class_socket_server.html#a5efb0d2f6d7c6e85130139a03966de5f">server_address</a>.sin_family = AF_INET;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_variable" href="class_socket_server.html#a5efb0d2f6d7c6e85130139a03966de5f">server_address</a>.sin_addr.s_addr = <a class="code hl_variable" href="class_socket_server.html#a426f9a0622e3c7d00cf1cd322409ed11">address</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_variable" href="class_socket_server.html#a5efb0d2f6d7c6e85130139a03966de5f">server_address</a>.sin_port = htons(<a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">int</span> result = bind(<a class="code hl_variable" href="class_socket_server.html#ad7a7ee05e51ea673b35ee531a0182be9">server</a>, (SOCKADDR *) &amp;<a class="code hl_variable" href="class_socket_server.html#a5efb0d2f6d7c6e85130139a03966de5f">server_address</a>, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="class_socket_server.html#a5efb0d2f6d7c6e85130139a03966de5f">server_address</a>));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">if</span> (result == SOCKET_ERROR) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a2019547e7f5bf5d56a09e5cfa98d0598">LEVEL_ERROR</a>, <span class="stringliteral">&quot;{} ({}): Can&#39;t bind socket&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="socket__server_8hpp.html#a3e1426e3d2949554b405c466cf347935">SOCKET_NOT_BOUND</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a70c3bf85b85e1eeac0b8aae6f557565e">LEVEL_DEBUG</a>, <span class="stringliteral">&quot;{} ({}): Created&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="socket__server_8hpp.html#aa8b294d7f264a0093d2e5a6828877f86">SOCKET_CREATED</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197">   59</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197">SocketServer::wait_client</a>() {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">if</span> (listen(<a class="code hl_variable" href="class_socket_server.html#ad7a7ee05e51ea673b35ee531a0182be9">server</a>, 0) == SOCKET_ERROR) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a2019547e7f5bf5d56a09e5cfa98d0598">LEVEL_ERROR</a>, <span class="stringliteral">&quot;{} ({}): Can&#39;t start listening&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="socket__server_8hpp.html#af30149679167a3be07af34aba35e767d">SOCKET_NOT_LISTENING</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a3d180faf3ef7ae097b000712909b0e7a">LEVEL_INFO</a>, <span class="stringliteral">&quot;{} ({}): Listening...&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">int</span> client_address_size = <span class="keyword">sizeof</span>(<a class="code hl_variable" href="class_socket_server.html#a1b7caef465d22febf5107fc439068c1f">client_address</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span> ((<a class="code hl_variable" href="class_socket_server.html#aa7b11d273aa91f5f6680ff73485df063">client</a> = accept(<a class="code hl_variable" href="class_socket_server.html#ad7a7ee05e51ea673b35ee531a0182be9">server</a>, (SOCKADDR*)&amp;<a class="code hl_variable" href="class_socket_server.html#a1b7caef465d22febf5107fc439068c1f">client_address</a>, &amp;client_address_size)) != INVALID_SOCKET) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a3d180faf3ef7ae097b000712909b0e7a">LEVEL_INFO</a>, <span class="stringliteral">&quot;{} ({}): Connected client with address {}&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>, inet_ntoa(<a class="code hl_variable" href="class_socket_server.html#a1b7caef465d22febf5107fc439068c1f">client_address</a>.sin_addr));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="socket__server_8hpp.html#ae028ff93c5743ef2de923b242eeab18d">CLIENT_CONNECTED</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a2019547e7f5bf5d56a09e5cfa98d0598">LEVEL_ERROR</a>, <span class="stringliteral">&quot;{} ({}): No clients...&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="socket__server_8hpp.html#a8203177398c02461e1ba1b65e3701a6f">CLIENT_NONE</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_socket_server.html#ac27110c965c4ba07f68ad3422506651c">   77</a></span>std::string <a class="code hl_function" href="class_socket_server.html#ac27110c965c4ba07f68ad3422506651c">SocketServer::read_data</a>() {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::string data{};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">char</span> buffer[<a class="code hl_define" href="socket__server_8hpp.html#a6e576a3c6530636d68b7a220480bcd32">DEFAULT_BUFFER_SIZE</a>] = { 0 };</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">bool</span> finish = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span> (recv(<a class="code hl_variable" href="class_socket_server.html#aa7b11d273aa91f5f6680ff73485df063">client</a>, buffer, <span class="keyword">sizeof</span>(buffer), 0) == SOCKET_ERROR) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">return</span> std::string{};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> pos = 0; pos &lt; <a class="code hl_define" href="socket__server_8hpp.html#a6e576a3c6530636d68b7a220480bcd32">DEFAULT_BUFFER_SIZE</a>; ++pos) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">if</span> (buffer[pos] == <a class="code hl_variable" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a>[0]) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                finish = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (buffer[pos] == <a class="code hl_variable" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a>[1] &amp;&amp; finish) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                memset(buffer, 0, <span class="keyword">sizeof</span>(buffer));</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#ab559f47bba41e05823554ddf69dc61c2">LEVEL_TRACE</a>, <span class="stringliteral">&quot;{} ({}): Got data from client = {}&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>, data);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">return</span> data;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (buffer[pos] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="keywordflow">if</span> (finish) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    finish = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                data.push_back(buffer[pos]);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        memset(buffer, 0, <span class="keyword">sizeof</span>(buffer));</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_socket_server.html#a73aa19f6f719abf3de62cff9406e46d0">  112</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_socket_server.html#a73aa19f6f719abf3de62cff9406e46d0">SocketServer::send_data</a>(std::string data) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#ab559f47bba41e05823554ddf69dc61c2">LEVEL_TRACE</a>, <span class="stringliteral">&quot;{} ({}): Sending data to client = {}&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>, data);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    data.append(<a class="code hl_variable" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">if</span> (send(<a class="code hl_variable" href="class_socket_server.html#aa7b11d273aa91f5f6680ff73485df063">client</a>, data.c_str(), data.length(), 0) == SOCKET_ERROR) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a2019547e7f5bf5d56a09e5cfa98d0598">LEVEL_ERROR</a>, <span class="stringliteral">&quot;{} ({}): Can&#39;t send data!&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="socket__server_8hpp.html#ab34438d0e01189ae5ca15192f0ce94c5">DATA_SEND_ERROR</a>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="socket__server_8hpp.html#a4d7d42051dfabebf241a92906aea363a">DATA_SEND_OK</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_socket_server.html#a1e673e526a459bdb3ca92e103ec212ae">  125</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_socket_server.html#a1e673e526a459bdb3ca92e103ec212ae">SocketServer::close</a>() {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    closesocket(<a class="code hl_variable" href="class_socket_server.html#aa7b11d273aa91f5f6680ff73485df063">client</a>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">if</span> (closesocket(<a class="code hl_variable" href="class_socket_server.html#ad7a7ee05e51ea673b35ee531a0182be9">server</a>) == SOCKET_ERROR) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <a class="code hl_function" href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">logger::log</a>(<a class="code hl_define" href="logger_8hpp.html#a2019547e7f5bf5d56a09e5cfa98d0598">LEVEL_ERROR</a>, <span class="stringliteral">&quot;{} ({}): Can&#39;t close socket&quot;</span>, <a class="code hl_variable" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>, <a class="code hl_variable" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
+<div class="ttc" id="aclass_logger_html_af7709105c2708359b7b082218f4cc3e1"><div class="ttname"><a href="class_logger.html#af7709105c2708359b7b082218f4cc3e1">Logger::log</a></div><div class="ttdeci">static void log(int level, const std::string &amp;message)</div><div class="ttdoc">Функция, осуществляющая логирование</div><div class="ttdef"><b>Definition</b> <a href="logger_8hpp_source.html#l00157">logger.hpp:157</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a1b7caef465d22febf5107fc439068c1f"><div class="ttname"><a href="class_socket_server.html#a1b7caef465d22febf5107fc439068c1f">SocketServer::client_address</a></div><div class="ttdeci">SOCKADDR_IN client_address</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00045">socket_server.hpp:45</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a1e673e526a459bdb3ca92e103ec212ae"><div class="ttname"><a href="class_socket_server.html#a1e673e526a459bdb3ca92e103ec212ae">SocketServer::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8cpp_source.html#l00125">socket_server.cpp:125</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a262ba93dc8ad71b260fb75124b3453ee"><div class="ttname"><a href="class_socket_server.html#a262ba93dc8ad71b260fb75124b3453ee">SocketServer::SocketServer</a></div><div class="ttdeci">SocketServer()</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8cpp_source.html#l00003">socket_server.cpp:3</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a3e277f8573ff4eecfd881d5eb0b1c2de"><div class="ttname"><a href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">SocketServer::port</a></div><div class="ttdeci">port_t port</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00048">socket_server.hpp:48</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a40bc48fe79ef0fa4059e3bfba4769153"><div class="ttname"><a href="class_socket_server.html#a40bc48fe79ef0fa4059e3bfba4769153">SocketServer::set_termination</a></div><div class="ttdeci">void set_termination(std::string termination)</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8cpp_source.html#l00032">socket_server.cpp:32</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a426f9a0622e3c7d00cf1cd322409ed11"><div class="ttname"><a href="class_socket_server.html#a426f9a0622e3c7d00cf1cd322409ed11">SocketServer::address</a></div><div class="ttdeci">address_t address</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00047">socket_server.hpp:47</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a44e1cd686d7580a28e3c840f726b4f80"><div class="ttname"><a href="class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80">SocketServer::create</a></div><div class="ttdeci">int create()</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8cpp_source.html#l00036">socket_server.cpp:36</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a47b8a318ef73faa660aa0f2b99225197"><div class="ttname"><a href="class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197">SocketServer::wait_client</a></div><div class="ttdeci">int wait_client()</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8cpp_source.html#l00059">socket_server.cpp:59</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a5efb0d2f6d7c6e85130139a03966de5f"><div class="ttname"><a href="class_socket_server.html#a5efb0d2f6d7c6e85130139a03966de5f">SocketServer::server_address</a></div><div class="ttdeci">SOCKADDR_IN server_address</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00045">socket_server.hpp:45</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a683dab093cbb2ce8c9c94757d94a30cd"><div class="ttname"><a href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">SocketServer::termination</a></div><div class="ttdeci">std::string termination</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00052">socket_server.hpp:52</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a73aa19f6f719abf3de62cff9406e46d0"><div class="ttname"><a href="class_socket_server.html#a73aa19f6f719abf3de62cff9406e46d0">SocketServer::send_data</a></div><div class="ttdeci">int send_data(std::string data)</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8cpp_source.html#l00112">socket_server.cpp:112</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a76c4be466ba870b6b8d9eb5c38ef7d8c"><div class="ttname"><a href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">SocketServer::tag</a></div><div class="ttdeci">std::string tag</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00050">socket_server.hpp:50</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_a78fe7ba24b9d07cd16f759ccef86ef5c"><div class="ttname"><a href="class_socket_server.html#a78fe7ba24b9d07cd16f759ccef86ef5c">SocketServer::WSAData</a></div><div class="ttdeci">WSADATA WSAData</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00054">socket_server.hpp:54</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_aa7b11d273aa91f5f6680ff73485df063"><div class="ttname"><a href="class_socket_server.html#aa7b11d273aa91f5f6680ff73485df063">SocketServer::client</a></div><div class="ttdeci">SOCKET client</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00044">socket_server.hpp:44</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_aab9b710128e52b731623b5b7fa2573ae"><div class="ttname"><a href="class_socket_server.html#aab9b710128e52b731623b5b7fa2573ae">SocketServer::set_port</a></div><div class="ttdeci">void set_port(port_t port)</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8cpp_source.html#l00028">socket_server.cpp:28</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_ac27110c965c4ba07f68ad3422506651c"><div class="ttname"><a href="class_socket_server.html#ac27110c965c4ba07f68ad3422506651c">SocketServer::read_data</a></div><div class="ttdeci">std::string read_data()</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8cpp_source.html#l00077">socket_server.cpp:77</a></div></div>
+<div class="ttc" id="aclass_socket_server_html_ad7a7ee05e51ea673b35ee531a0182be9"><div class="ttname"><a href="class_socket_server.html#ad7a7ee05e51ea673b35ee531a0182be9">SocketServer::server</a></div><div class="ttdeci">SOCKET server</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00044">socket_server.hpp:44</a></div></div>
+<div class="ttc" id="alogger_8hpp_html_a2019547e7f5bf5d56a09e5cfa98d0598"><div class="ttname"><a href="logger_8hpp.html#a2019547e7f5bf5d56a09e5cfa98d0598">LEVEL_ERROR</a></div><div class="ttdeci">#define LEVEL_ERROR</div><div class="ttdoc">Уровень логирования, при котором отображаются только ошибки</div><div class="ttdef"><b>Definition</b> <a href="logger_8hpp_source.html#l00020">logger.hpp:20</a></div></div>
+<div class="ttc" id="alogger_8hpp_html_a3d180faf3ef7ae097b000712909b0e7a"><div class="ttname"><a href="logger_8hpp.html#a3d180faf3ef7ae097b000712909b0e7a">LEVEL_INFO</a></div><div class="ttdeci">#define LEVEL_INFO</div><div class="ttdoc">Уровень логирования, при котором отображаются ошибки, предупреждения и информационные сообщения</div><div class="ttdef"><b>Definition</b> <a href="logger_8hpp_source.html#l00024">logger.hpp:24</a></div></div>
+<div class="ttc" id="alogger_8hpp_html_a70c3bf85b85e1eeac0b8aae6f557565e"><div class="ttname"><a href="logger_8hpp.html#a70c3bf85b85e1eeac0b8aae6f557565e">LEVEL_DEBUG</a></div><div class="ttdeci">#define LEVEL_DEBUG</div><div class="ttdoc">Уровень логирования, при котором отображаются ошибки, предупреждения, информационные сообщения и отла...</div><div class="ttdef"><b>Definition</b> <a href="logger_8hpp_source.html#l00026">logger.hpp:26</a></div></div>
+<div class="ttc" id="alogger_8hpp_html_ab559f47bba41e05823554ddf69dc61c2"><div class="ttname"><a href="logger_8hpp.html#ab559f47bba41e05823554ddf69dc61c2">LEVEL_TRACE</a></div><div class="ttdeci">#define LEVEL_TRACE</div><div class="ttdoc">Уровень логирования, при котором отображаеются все сообщения, включая сообщения трассировки</div><div class="ttdef"><b>Definition</b> <a href="logger_8hpp_source.html#l00028">logger.hpp:28</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html"><div class="ttname"><a href="socket__server_8hpp.html">socket_server.hpp</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a0b600fece622111c0c218a722b18ab2f"><div class="ttname"><a href="socket__server_8hpp.html#a0b600fece622111c0c218a722b18ab2f">DEFAULT_SOCKET_TERM</a></div><div class="ttdeci">#define DEFAULT_SOCKET_TERM</div><div class="ttdoc">Стандартная последовательность конца посылки</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00018">socket_server.hpp:18</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a16b710f592bf8f7900666392adc444dc"><div class="ttname"><a href="socket__server_8hpp.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a></div><div class="ttdeci">#define DEFAULT_PORT</div><div class="ttdoc">Стандартный порт</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00010">socket_server.hpp:10</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a3e1426e3d2949554b405c466cf347935"><div class="ttname"><a href="socket__server_8hpp.html#a3e1426e3d2949554b405c466cf347935">SOCKET_NOT_BOUND</a></div><div class="ttdeci">#define SOCKET_NOT_BOUND</div><div class="ttdoc">Возвращаемый статус, если сокет не был привязан</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00023">socket_server.hpp:23</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a4d7d42051dfabebf241a92906aea363a"><div class="ttname"><a href="socket__server_8hpp.html#a4d7d42051dfabebf241a92906aea363a">DATA_SEND_OK</a></div><div class="ttdeci">#define DATA_SEND_OK</div><div class="ttdoc">Возвращаемый статус, если данные были успешно отправлены</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00036">socket_server.hpp:36</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a6914baaa259354d9ce3944c62d44d477"><div class="ttname"><a href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a></div><div class="ttdeci">unsigned short port_t</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00041">socket_server.hpp:41</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a6e576a3c6530636d68b7a220480bcd32"><div class="ttname"><a href="socket__server_8hpp.html#a6e576a3c6530636d68b7a220480bcd32">DEFAULT_BUFFER_SIZE</a></div><div class="ttdeci">#define DEFAULT_BUFFER_SIZE</div><div class="ttdoc">Стандартный размер буфера</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00015">socket_server.hpp:15</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a8203177398c02461e1ba1b65e3701a6f"><div class="ttname"><a href="socket__server_8hpp.html#a8203177398c02461e1ba1b65e3701a6f">CLIENT_NONE</a></div><div class="ttdeci">#define CLIENT_NONE</div><div class="ttdoc">Возвращаемый статус, если клиент не был подключен</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00033">socket_server.hpp:33</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a838ee749ec1dfd8d73187bb32e9ec427"><div class="ttname"><a href="socket__server_8hpp.html#a838ee749ec1dfd8d73187bb32e9ec427">DEFAULT_ADDRESS</a></div><div class="ttdeci">#define DEFAULT_ADDRESS</div><div class="ttdoc">Стандартный IP адрес (127.0.0.1)</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00008">socket_server.hpp:8</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_a9bef0f56c5c02f15f8ef8da4ad89ee71"><div class="ttname"><a href="socket__server_8hpp.html#a9bef0f56c5c02f15f8ef8da4ad89ee71">address_t</a></div><div class="ttdeci">unsigned long address_t</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00040">socket_server.hpp:40</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_aa8350385faf779427da567bf86a3d1d9"><div class="ttname"><a href="socket__server_8hpp.html#aa8350385faf779427da567bf86a3d1d9">SOCKET_NOT_CREATED</a></div><div class="ttdeci">#define SOCKET_NOT_CREATED</div><div class="ttdoc">Возвращаемый статус, если сокет не был создан</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00021">socket_server.hpp:21</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_aa8b294d7f264a0093d2e5a6828877f86"><div class="ttname"><a href="socket__server_8hpp.html#aa8b294d7f264a0093d2e5a6828877f86">SOCKET_CREATED</a></div><div class="ttdeci">#define SOCKET_CREATED</div><div class="ttdoc">Возвращаемый статус, если сокет был успешно создан</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00028">socket_server.hpp:28</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_ab34438d0e01189ae5ca15192f0ce94c5"><div class="ttname"><a href="socket__server_8hpp.html#ab34438d0e01189ae5ca15192f0ce94c5">DATA_SEND_ERROR</a></div><div class="ttdeci">#define DATA_SEND_ERROR</div><div class="ttdoc">Возвращаемый статус, если данные не были отправлены</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00038">socket_server.hpp:38</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_ae028ff93c5743ef2de923b242eeab18d"><div class="ttname"><a href="socket__server_8hpp.html#ae028ff93c5743ef2de923b242eeab18d">CLIENT_CONNECTED</a></div><div class="ttdeci">#define CLIENT_CONNECTED</div><div class="ttdoc">Возвращаемый статус, если клиент был подключен к серверу</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00031">socket_server.hpp:31</a></div></div>
+<div class="ttc" id="asocket__server_8hpp_html_af30149679167a3be07af34aba35e767d"><div class="ttname"><a href="socket__server_8hpp.html#af30149679167a3be07af34aba35e767d">SOCKET_NOT_LISTENING</a></div><div class="ttdeci">#define SOCKET_NOT_LISTENING</div><div class="ttdoc">Возвращаемый статус, если не запущено прослушивание</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00025">socket_server.hpp:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9ad1227260954e346101f3844f0abb3d.html">socket</a></li><li class="navelem"><a class="el" href="socket__server_8cpp.html">socket_server.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

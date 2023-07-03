@@ -1,0 +1,7 @@
+<map id="DeviceSet::get_freq_list" name="DeviceSet::get_freq_list">
+<area shape="rect" id="Node000001" title=" " alt="" coords="428,5,585,32"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title=" " alt="" coords="243,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,21,380,21,380,16,413,16"/>
+<area shape="rect" id="Node000003" href="$class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" title=" " alt="" coords="5,5,195,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,21,195,21,195,16,228,16"/>
+</map>

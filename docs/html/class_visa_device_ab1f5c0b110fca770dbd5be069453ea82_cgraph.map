@@ -1,0 +1,24 @@
+<map id="VisaDevice::wait" name="VisaDevice::wait">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,122,57"/>
+<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="674,81,759,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,39,219,38,344,40,485,48,626,67,660,74,659,80,625,72,485,54,344,45,218,43,122,44"/>
+<area shape="rect" id="Node000007" href="$class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53" title=" " alt="" coords="170,56,284,83"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="122,50,155,56,154,61,122,56"/>
+<area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="830,5,948,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="738,79,806,42,823,35,825,40,808,46,740,83"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="833,56,944,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="759,86,818,77,819,82,760,91"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="807,107,970,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="760,98,792,103,792,108,759,104"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="822,157,956,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="740,106,808,143,825,150,823,155,806,148,738,111"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="285,70,659,89,659,94,284,75"/>
+<area shape="rect" id="Node000008" href="$class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e" title=" " alt="" coords="332,107,457,133"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="275,81,335,99,333,104,273,86"/>
+<area shape="rect" id="Node000009" href="$class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title=" " alt="" coords="506,107,625,133"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="458,117,491,117,491,123,458,123"/>
+<area shape="rect" id="Node000010" href="$class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title=" " alt="" coords="505,157,626,184"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="443,131,505,150,503,155,442,137"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="625,107,658,102,659,107,625,113"/>
+<area shape="poly" id="edge12_Node000010_Node000002" title=" " alt="" coords="600,154,624,143,679,113,681,118,627,148,602,159"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="GenDevice" name="GenDevice">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,743,193,1324"/>
+<area shape="rect" id="Node000002" href="$class_visa_device.html" title=" " alt="" coords="25,181,174,693"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,708,102,743,97,743,97,708"/>
+<area shape="rect" id="Node000003" href="$structvisa__config.html" title=" " alt="" coords="33,5,165,117"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,117,102,165,97,165,97,117"/>
+</map>

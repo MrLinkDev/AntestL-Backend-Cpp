@@ -1,0 +1,17 @@
+<map id="VisaDevice::VisaDevice" name="VisaDevice::VisaDevice">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,163,83"/>
+<area shape="rect" id="Node000002" href="$class_visa_device.html#a1589fdc52c47c4dce9558402d07419c9" title=" " alt="" coords="211,31,321,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,56,195,51,196,56,163,61"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title=" " alt="" coords="223,81,309,108"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="163,78,209,84,208,89,163,83"/>
+<area shape="rect" id="Node000003" href="$class_visa_device.html#aa7ceb9cb64afd719adb2bd47e8221f0c" title=" " alt="" coords="389,31,514,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="322,41,374,41,374,47,322,47"/>
+<area shape="rect" id="Node000004" href="$class_visa_device.html#a251b9413edd1d77e91a5a574a5abf64f" title=" " alt="" coords="583,5,702,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="514,33,569,26,569,31,515,38"/>
+<area shape="rect" id="Node000005" href="$class_visa_device.html#a289757d189fc697aa72d6934d5b1f86c" title=" " alt="" coords="582,56,703,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="515,50,568,57,567,62,514,55"/>
+<area shape="rect" id="Node000007" href="$class_logger.html#ad1ed4aec03676a821f148f7bcaf00ec3" title=" " alt="" coords="369,81,534,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="309,92,354,92,354,97,309,97"/>
+<area shape="rect" id="Node000008" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title=" " alt="" coords="370,132,533,159"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="309,104,387,125,385,130,308,109"/>
+</map>

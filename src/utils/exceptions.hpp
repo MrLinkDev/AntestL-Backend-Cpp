@@ -4,7 +4,7 @@
  * сообщения исключений и коды исключений
  *
  * \author Александр Горбунов
- * \date 3 июля 2023 года
+ * \date 3 июля 2023
  */
 
 #ifndef ANTESTL_BACKEND_EXCEPTIONS_HPP

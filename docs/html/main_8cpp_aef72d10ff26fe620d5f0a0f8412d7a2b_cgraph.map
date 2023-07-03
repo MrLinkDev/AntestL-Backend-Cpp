@@ -1,0 +1,30 @@
+<map id="task_server_thread_f" name="task_server_thread_f">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,165,146,192"/>
+<area shape="rect" id="Node000002" href="$class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80" title=" " alt="" coords="214,5,356,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,163,126,108,157,76,192,48,217,35,219,40,195,53,161,80,130,112,88,167"/>
+<area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="463,81,548,108"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="88,163,131,126,161,106,193,92,260,78,329,73,393,76,448,82,447,87,393,81,329,79,261,83,194,97,163,111,135,130,91,167"/>
+<area shape="rect" id="Node000008" href="$class_socket_server.html#ac27110c965c4ba07f68ad3422506651c" title=" " alt="" coords="203,107,367,133"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="125,162,193,143,220,135,221,140,194,148,126,167"/>
+<area shape="rect" id="Node000009" href="$class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50" title=" " alt="" coords="208,157,362,200"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="146,176,193,176,193,181,146,181"/>
+<area shape="rect" id="Node000010" href="$class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7" title=" " alt="" coords="208,224,362,267"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="121,190,202,216,201,221,119,195"/>
+<area shape="rect" id="Node000011" href="$class_task_manager.html#a601272b5c895a310aec3d430b19c6258" title=" " alt="" coords="194,357,376,384"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="85,191,100,223,124,264,156,307,195,343,203,348,201,353,192,347,152,310,119,267,95,225,80,193"/>
+<area shape="rect" id="Node000013" href="$class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197" title=" " alt="" coords="220,291,350,333"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="91,190,135,232,195,276,208,283,206,288,192,281,132,236,88,194"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="327,30,451,73,449,78,325,35"/>
+<area shape="rect" id="Node000004" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="657,5,775,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="539,78,633,41,654,34,656,39,635,47,541,83"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="660,56,772,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="548,87,645,75,646,80,548,92"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="634,107,798,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="548,97,620,106,619,111,548,102"/>
+<area shape="rect" id="Node000007" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="649,157,783,184"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="541,106,635,143,656,150,654,155,633,148,539,111"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="366,108,448,99,448,104,367,113"/>
+<area shape="rect" id="Node000012" href="$class_device_set.html#a9b806652a49bcc00d4fe635235c9596d" title=" " alt="" coords="424,357,586,384"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="377,368,409,368,409,373,377,373"/>
+<area shape="poly" id="edge15_Node000013_Node000003" title=" " alt="" coords="349,292,374,277,413,240,446,197,490,120,494,123,450,200,417,243,378,281,351,296"/>
+</map>

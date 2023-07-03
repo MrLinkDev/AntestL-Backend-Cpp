@@ -1,0 +1,27 @@
+<map id="RbdDevice::is_connected" name="RbdDevice::is_connected">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1566,65,1733,92"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title=" " alt="" coords="1375,36,1509,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1551,67,1508,61,1509,56,1552,62"/>
+<area shape="rect" id="Node000010" href="$class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" title=" " alt="" coords="1366,86,1518,129"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1551,95,1519,99,1518,94,1551,89"/>
+<area shape="rect" id="Node000003" href="$class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" title=" " alt="" coords="1132,36,1318,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1360,52,1318,52,1318,46,1360,46"/>
+<area shape="rect" id="Node000004" href="$class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" title=" " alt="" coords="897,36,1082,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1117,52,1083,52,1083,46,1117,46"/>
+<area shape="rect" id="Node000005" href="$class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce" title=" " alt="" coords="291,6,444,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="927,34,847,18,738,10,628,8,445,16,445,10,628,3,738,5,847,13,928,29"/>
+<area shape="rect" id="Node000008" href="$class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" title=" " alt="" coords="694,28,847,70"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="882,52,848,52,848,46,882,46"/>
+<area shape="rect" id="Node000009" href="$class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4" title=" " alt="" coords="492,28,646,70"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="928,69,847,85,770,91,693,85,638,73,639,68,694,80,770,86,847,80,927,64"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" title=" " alt="" coords="103,6,243,33"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="276,22,243,22,243,17,276,17"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,6,55,33"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="88,22,55,22,55,17,88,17"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="679,52,646,52,646,46,679,46"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="477,38,444,33,445,28,478,33"/>
+<area shape="rect" id="Node000011" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title=" " alt="" coords="1156,94,1294,121"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1351,110,1294,110,1294,105,1351,105"/>
+<area shape="rect" id="Node000012" href="$class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" title=" " alt="" coords="895,94,1084,121"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="1141,110,1085,110,1085,105,1141,105"/>
+</map>

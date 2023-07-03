@@ -3,7 +3,7 @@
  * \brief Файл, в котором определено пространство имён array_utils.
  *
  * \author Александр Горбунов
- * \date 3 июля 2023 года
+ * \date 3 июля 2023
  */
 
 #ifndef ANTESTL_BACKEND_ARRAY_UTILS_HPP

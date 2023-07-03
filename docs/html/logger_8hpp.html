@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Файл src/utils/logger.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('logger_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл logger.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Библиотека, осуществляющая логирование  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;format&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для logger.hpp:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="logger_8hpp__incl.svg" width="522" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="logger_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="logger_8hpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html">Logger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс <a class="el" href="class_logger.html" title="Класс Logger, в котором реализован набор методов для логирования">Logger</a>, в котором реализован набор методов для логирования  <a href="class_logger.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a2019547e7f5bf5d56a09e5cfa98d0598"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a2019547e7f5bf5d56a09e5cfa98d0598">LEVEL_ERROR</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a2019547e7f5bf5d56a09e5cfa98d0598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уровень логирования, при котором отображаются только ошибки  <br /></td></tr>
+<tr class="separator:a2019547e7f5bf5d56a09e5cfa98d0598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9684ed10647f8745295829b0b59b959"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ab9684ed10647f8745295829b0b59b959">LEVEL_WARN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ab9684ed10647f8745295829b0b59b959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уровень логирования, при котором отображаются ошибки и предупреждения  <br /></td></tr>
+<tr class="separator:ab9684ed10647f8745295829b0b59b959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d180faf3ef7ae097b000712909b0e7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a3d180faf3ef7ae097b000712909b0e7a">LEVEL_INFO</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a3d180faf3ef7ae097b000712909b0e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уровень логирования, при котором отображаются ошибки, предупреждения и информационные сообщения  <br /></td></tr>
+<tr class="separator:a3d180faf3ef7ae097b000712909b0e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c3bf85b85e1eeac0b8aae6f557565e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a70c3bf85b85e1eeac0b8aae6f557565e">LEVEL_DEBUG</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a70c3bf85b85e1eeac0b8aae6f557565e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уровень логирования, при котором отображаются ошибки, предупреждения, информационные сообщения и отладочные сообщения  <br /></td></tr>
+<tr class="separator:a70c3bf85b85e1eeac0b8aae6f557565e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab559f47bba41e05823554ddf69dc61c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ab559f47bba41e05823554ddf69dc61c2">LEVEL_TRACE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:ab559f47bba41e05823554ddf69dc61c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уровень логирования, при котором отображаеются все сообщения, включая сообщения трассировки  <br /></td></tr>
+<tr class="separator:ab559f47bba41e05823554ddf69dc61c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d859e537f858ca285d77a66755ded6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a69d859e537f858ca285d77a66755ded6">NO_COLOR</a>&#160;&#160;&#160;false</td></tr>
+<tr class="memdesc:a69d859e537f858ca285d77a66755ded6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим, при котором в консоль не выводятся цветные теги сообщений  <br /></td></tr>
+<tr class="separator:a69d859e537f858ca285d77a66755ded6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc8f5f6cd3fb1bdf454fe905019a666"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a6dc8f5f6cd3fb1bdf454fe905019a666">COLORED</a>&#160;&#160;&#160;true</td></tr>
+<tr class="memdesc:a6dc8f5f6cd3fb1bdf454fe905019a666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим, при котором в консоль выводятся цветные теги сообщений  <br /></td></tr>
+<tr class="separator:a6dc8f5f6cd3fb1bdf454fe905019a666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab234d1358562b66925fb7223c087556b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ab234d1358562b66925fb7223c087556b">MAX_MESSAGE_LENGTH</a>&#160;&#160;&#160;192</td></tr>
+<tr class="memdesc:ab234d1358562b66925fb7223c087556b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная длина сообщения в консоли  <br /></td></tr>
+<tr class="separator:ab234d1358562b66925fb7223c087556b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e576a3c6530636d68b7a220480bcd32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a6e576a3c6530636d68b7a220480bcd32">DEFAULT_BUFFER_SIZE</a>&#160;&#160;&#160;128</td></tr>
+<tr class="memdesc:a6e576a3c6530636d68b7a220480bcd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер буфера для строки времени  <br /></td></tr>
+<tr class="separator:a6e576a3c6530636d68b7a220480bcd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03176406c734e83d84e9ae809ba854fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a03176406c734e83d84e9ae809ba854fa">DEFAULT_TIME_FORMAT</a>&#160;&#160;&#160;&quot;%Y-%m-%d %H:%M:%S&quot;</td></tr>
+<tr class="memdesc:a03176406c734e83d84e9ae809ba854fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон строки времени  <br /></td></tr>
+<tr class="separator:a03176406c734e83d84e9ae809ba854fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a06150c2cc2e50bdd612e4c32950c35e5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a06150c2cc2e50bdd612e4c32950c35e5">logger</a></td></tr>
+<tr class="separator:a06150c2cc2e50bdd612e4c32950c35e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a49284b7befa8e31f81e01ee8f3735dd0"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0">get_current_time</a> ()</td></tr>
+<tr class="memdesc:a49284b7befa8e31f81e01ee8f3735dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном.  <br /></td></tr>
+<tr class="separator:a49284b7befa8e31f81e01ee8f3735dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Библиотека, осуществляющая логирование </p>
+<dl class="section author"><dt>Автор</dt><dd>Александр Горбунов </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>3 июля 2023 года </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a></p>
+</div><h2 class="groupheader">Макросы</h2>
+<a id="a2019547e7f5bf5d56a09e5cfa98d0598" name="a2019547e7f5bf5d56a09e5cfa98d0598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2019547e7f5bf5d56a09e5cfa98d0598">&#9670;&#160;</a></span>LEVEL_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEVEL_ERROR&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уровень логирования, при котором отображаются только ошибки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="ab9684ed10647f8745295829b0b59b959" name="ab9684ed10647f8745295829b0b59b959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9684ed10647f8745295829b0b59b959">&#9670;&#160;</a></span>LEVEL_WARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEVEL_WARN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уровень логирования, при котором отображаются ошибки и предупреждения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<a id="a3d180faf3ef7ae097b000712909b0e7a" name="a3d180faf3ef7ae097b000712909b0e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d180faf3ef7ae097b000712909b0e7a">&#9670;&#160;</a></span>LEVEL_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEVEL_INFO&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уровень логирования, при котором отображаются ошибки, предупреждения и информационные сообщения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="a70c3bf85b85e1eeac0b8aae6f557565e" name="a70c3bf85b85e1eeac0b8aae6f557565e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70c3bf85b85e1eeac0b8aae6f557565e">&#9670;&#160;</a></span>LEVEL_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEVEL_DEBUG&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уровень логирования, при котором отображаются ошибки, предупреждения, информационные сообщения и отладочные сообщения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<a id="ab559f47bba41e05823554ddf69dc61c2" name="ab559f47bba41e05823554ddf69dc61c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab559f47bba41e05823554ddf69dc61c2">&#9670;&#160;</a></span>LEVEL_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEVEL_TRACE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уровень логирования, при котором отображаеются все сообщения, включая сообщения трассировки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00028">28</a></p>
+
+</div>
+</div>
+<a id="a69d859e537f858ca285d77a66755ded6" name="a69d859e537f858ca285d77a66755ded6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d859e537f858ca285d77a66755ded6">&#9670;&#160;</a></span>NO_COLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_COLOR&#160;&#160;&#160;false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Режим, при котором в консоль не выводятся цветные теги сообщений </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00031">31</a></p>
+
+</div>
+</div>
+<a id="a6dc8f5f6cd3fb1bdf454fe905019a666" name="a6dc8f5f6cd3fb1bdf454fe905019a666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc8f5f6cd3fb1bdf454fe905019a666">&#9670;&#160;</a></span>COLORED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLORED&#160;&#160;&#160;true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Режим, при котором в консоль выводятся цветные теги сообщений </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00033">33</a></p>
+
+</div>
+</div>
+<a id="ab234d1358562b66925fb7223c087556b" name="ab234d1358562b66925fb7223c087556b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab234d1358562b66925fb7223c087556b">&#9670;&#160;</a></span>MAX_MESSAGE_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_MESSAGE_LENGTH&#160;&#160;&#160;192</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Максимальная длина сообщения в консоли </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00036">36</a></p>
+
+</div>
+</div>
+<a id="a6e576a3c6530636d68b7a220480bcd32" name="a6e576a3c6530636d68b7a220480bcd32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e576a3c6530636d68b7a220480bcd32">&#9670;&#160;</a></span>DEFAULT_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_BUFFER_SIZE&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Размер буфера для строки времени </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<a id="a03176406c734e83d84e9ae809ba854fa" name="a03176406c734e83d84e9ae809ba854fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03176406c734e83d84e9ae809ba854fa">&#9670;&#160;</a></span>DEFAULT_TIME_FORMAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_TIME_FORMAT&#160;&#160;&#160;&quot;%Y-%m-%d %H:%M:%S&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаблон строки времени </p>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a id="a06150c2cc2e50bdd612e4c32950c35e5" name="a06150c2cc2e50bdd612e4c32950c35e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06150c2cc2e50bdd612e4c32950c35e5">&#9670;&#160;</a></span>logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_logger.html">Logger</a> <a class="el" href="logger_8hpp.html#a06150c2cc2e50bdd612e4c32950c35e5">logger</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00220">220</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a49284b7befa8e31f81e01ee8f3735dd0" name="a49284b7befa8e31f81e01ee8f3735dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49284b7befa8e31f81e01ee8f3735dd0">&#9670;&#160;</a></span>get_current_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string get_current_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка, отформатированная по заданному шаблону </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="logger_8hpp_source.html">logger.hpp</a> строка <a class="el" href="logger_8hpp_source.html#l00048">48</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="logger_8hpp_a49284b7befa8e31f81e01ee8f3735dd0_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="logger_8hpp.html">logger.hpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

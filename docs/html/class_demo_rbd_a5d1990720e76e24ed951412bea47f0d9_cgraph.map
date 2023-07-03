@@ -1,0 +1,8 @@
+<map id="DemoRbd::DemoRbd" name="DemoRbd::DemoRbd">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,149,81"/>
+<area shape="rect" id="Node000002" href="$namespacestring__utils.html#a9b3d7b7f8178f32f598b1bc31d61445a" title=" " alt="" coords="213,29,338,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,56,198,50,198,55,149,61"/>
+<area shape="rect" id="Node000003" href="$class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5" title=" " alt="" coords="197,80,354,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="149,75,182,79,181,84,149,80"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="242,30,236,21,240,11,253,5,275,3,300,6,312,13,310,17,298,11,275,8,255,10,243,15,241,20,246,27"/>
+</map>

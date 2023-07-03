@@ -1,0 +1,22 @@
+<map id="src/devices/visa_device.hpp" name="src/devices/visa_device.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="51,5,231,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,155,63,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,35,87,54,60,82,46,111,39,141,34,140,41,109,56,78,83,50,114,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="71,80,131,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,34,117,68,112,66,131,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="155,80,209,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,31,170,66,165,68,146,34"/>
+<area shape="rect" id="Node000005" href="$logger_8hpp.html" title="Библиотека, осуществляющая логирование" alt="" coords="233,80,355,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="169,30,255,71,253,76,166,35"/>
+<area shape="poly" id="edge10_Node000005_Node000002" title=" " alt="" coords="248,110,77,157,76,152,247,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="87,155,141,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="264,110,155,153,154,148,262,105"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="165,155,236,181"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="279,109,230,148,227,143,276,105"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="260,155,328,181"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="297,107,297,140,291,140,291,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="353,155,435,181"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="313,105,366,143,363,148,310,109"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="459,155,516,181"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="329,105,446,148,444,153,327,110"/>
+</map>

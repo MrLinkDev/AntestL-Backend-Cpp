@@ -1,0 +1,7 @@
+<map id="VnaDevice::full_preset" name="VnaDevice::full_preset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="432,5,581,32"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a0d62de2e486d260f500a81c0e39ec22a" title=" " alt="" coords="245,5,384,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="417,21,384,21,384,16,417,16"/>
+<area shape="rect" id="Node000003" href="$class_task_manager.html#a19b51f5809b7aa9dbffbf6293191a06f" title=" " alt="" coords="5,5,197,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,21,197,21,197,16,230,16"/>
+</map>

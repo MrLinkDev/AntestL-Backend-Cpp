@@ -1,0 +1,7 @@
+<map id="VnaDevice::set_power" name="VnaDevice::set_power">
+<area shape="rect" id="Node000001" title=" " alt="" coords="446,5,595,32"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379" title=" " alt="" coords="252,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="431,21,398,21,398,16,431,16"/>
+<area shape="rect" id="Node000003" href="$class_task_manager.html#aba128d250f6cf145f0f8bfe8a9a6c6e6" title=" " alt="" coords="5,5,204,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,21,204,21,204,16,237,16"/>
+</map>

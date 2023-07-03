@@ -1,0 +1,16 @@
+<map id="TaskManager" name="TaskManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="224,2129,399,2897"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html" title=" " alt="" coords="227,1527,395,2065"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,2065,314,2112,309,2112,309,2065"/>
+<area shape="rect" id="Node000003" href="$class_vna_device.html" title=" " alt="" coords="5,807,193,1399"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="188,1397,207,1462,225,1519,220,1520,202,1463,183,1399"/>
+<area shape="rect" id="Node000004" href="$class_visa_device.html" title=" " alt="" coords="130,181,279,693"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="165,708,149,807,144,806,159,707"/>
+<area shape="rect" id="Node000006" href="$class_gen_device.html" title=" " alt="" coords="217,812,405,1393"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="251,707,267,812,262,813,245,708"/>
+<area shape="rect" id="Node000005" href="$structvisa__config.html" title=" " alt="" coords="139,5,271,117"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="207,117,207,165,202,165,202,117"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="314,1393,314,1510,309,1510,309,1393"/>
+<area shape="rect" id="Node000007" href="$class_rbd_device.html" title=" " alt="" coords="430,743,614,1463"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="433,1424,421,1463,403,1520,398,1519,415,1462,427,1422"/>
+</map>

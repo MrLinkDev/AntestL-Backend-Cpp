@@ -3,7 +3,7 @@
  * \brief Заголовочный файл, в котором определено пространство имён string_utils
  *
  * \author Александр Горбунов
- * \date 3 июля 2023 года
+ * \date 3 июля 2023
  */
 
 #ifndef ANTESTL_BACKEND_STRING_UTILS_HPP

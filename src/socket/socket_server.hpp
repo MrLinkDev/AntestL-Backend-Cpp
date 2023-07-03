@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief Заголовочный файл, в котором объявляются класс SocketServer и необходимые константы
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023
+ */
+
 #ifndef ANTESTL_BACKEND_SOCKET_SERVER_HPP
 #define ANTESTL_BACKEND_SOCKET_SERVER_HPP
 
@@ -9,6 +17,7 @@
 /// Стандартный порт
 #define DEFAULT_PORT            5025
 
+/// Стандартный тег
 #define DEFAULT_TAG             "SOCKET"
 
 /// Стандартный размер буфера
@@ -37,20 +46,32 @@
 /// Возвращаемый статус, если данные не были отправлены
 #define DATA_SEND_ERROR         0x07
 
+/// Определение типа данных для IP-адреса
 typedef unsigned long address_t;
+/// Определение типа данных для порта
 typedef unsigned short port_t;
 
+/**
+ * \brief Класс SocketServer, в котором имеется набор методов для установки соединения и обмена данными с клиентом
+ */
 class SocketServer {
+    /// Объекты сокета для сервера и клиента
     SOCKET server{}, client{};
+    /// Структуры адресов сервера и клиента
     SOCKADDR_IN server_address{}, client_address{};
 
+    /// Адрес сервера
     address_t address;
+    /// Порт сервера
     port_t port;
 
+    /// Тег сервера, необходимый для логирования действий
     std::string tag;
 
+    /// Последовательность символов, которой оканчивается каждая посылка
     std::string termination;
 
+    /// Структура, содержащая сведения о реализации сокета для ОС Windows
     WSADATA WSAData{};
 
 public:
@@ -59,8 +80,6 @@ public:
     SocketServer(address_t address, port_t port, std::string tag = DEFAULT_TAG);
 
     void set_port(port_t port);
-
-    void set_termination(std::string termination);
 
     int create();
     int wait_client();

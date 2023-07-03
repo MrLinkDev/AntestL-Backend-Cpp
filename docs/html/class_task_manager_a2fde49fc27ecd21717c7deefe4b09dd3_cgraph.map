@@ -1,0 +1,7 @@
+<map id="TaskManager::next_freq_task" name="TaskManager::next_freq_task">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,198,32"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a9ae5fb89aa8b4913a362c4ad12be1bf3" title=" " alt="" coords="246,5,386,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,16,231,16,231,21,198,21"/>
+<area shape="rect" id="Node000003" href="$class_gen_device.html#a57adce7e8826e6ae5e6b1612e5f8f750" title=" " alt="" coords="434,5,578,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,16,420,16,420,21,387,21"/>
+</map>

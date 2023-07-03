@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Класс SocketServer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_socket_server.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_socket_server-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс SocketServer</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса SocketServer:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server__coll__graph.svg" width="222" height="587"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a262ba93dc8ad71b260fb75124b3453ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a262ba93dc8ad71b260fb75124b3453ee">SocketServer</a> ()</td></tr>
+<tr class="separator:a262ba93dc8ad71b260fb75124b3453ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf519d83475f538d88d3ba9303e71a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a5bf519d83475f538d88d3ba9303e71a0">SocketServer</a> (<a class="el" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a> <a class="el" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>, std::string <a class="el" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>=<a class="el" href="socket__server_8hpp.html#af1df499f33adadc0e9386636e32ae7bc">DEFAULT_TAG</a>)</td></tr>
+<tr class="separator:a5bf519d83475f538d88d3ba9303e71a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509c9e31bd06b7cc8e3ba4cfb107ccf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a509c9e31bd06b7cc8e3ba4cfb107ccf8">SocketServer</a> (<a class="el" href="socket__server_8hpp.html#a9bef0f56c5c02f15f8ef8da4ad89ee71">address_t</a> <a class="el" href="class_socket_server.html#a426f9a0622e3c7d00cf1cd322409ed11">address</a>, <a class="el" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a> <a class="el" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>, std::string <a class="el" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a>=<a class="el" href="socket__server_8hpp.html#af1df499f33adadc0e9386636e32ae7bc">DEFAULT_TAG</a>)</td></tr>
+<tr class="separator:a509c9e31bd06b7cc8e3ba4cfb107ccf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9b710128e52b731623b5b7fa2573ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#aab9b710128e52b731623b5b7fa2573ae">set_port</a> (<a class="el" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a> <a class="el" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a>)</td></tr>
+<tr class="separator:aab9b710128e52b731623b5b7fa2573ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bc48fe79ef0fa4059e3bfba4769153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a40bc48fe79ef0fa4059e3bfba4769153">set_termination</a> (std::string <a class="el" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a>)</td></tr>
+<tr class="separator:a40bc48fe79ef0fa4059e3bfba4769153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e1cd686d7580a28e3c840f726b4f80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80">create</a> ()</td></tr>
+<tr class="separator:a44e1cd686d7580a28e3c840f726b4f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b8a318ef73faa660aa0f2b99225197"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197">wait_client</a> ()</td></tr>
+<tr class="separator:a47b8a318ef73faa660aa0f2b99225197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27110c965c4ba07f68ad3422506651c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#ac27110c965c4ba07f68ad3422506651c">read_data</a> ()</td></tr>
+<tr class="separator:ac27110c965c4ba07f68ad3422506651c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73aa19f6f719abf3de62cff9406e46d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a73aa19f6f719abf3de62cff9406e46d0">send_data</a> (std::string data)</td></tr>
+<tr class="separator:a73aa19f6f719abf3de62cff9406e46d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e673e526a459bdb3ca92e103ec212ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a1e673e526a459bdb3ca92e103ec212ae">close</a> ()</td></tr>
+<tr class="separator:a1e673e526a459bdb3ca92e103ec212ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ad7a7ee05e51ea673b35ee531a0182be9"><td class="memItemLeft" align="right" valign="top">SOCKET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#ad7a7ee05e51ea673b35ee531a0182be9">server</a> {}</td></tr>
+<tr class="separator:ad7a7ee05e51ea673b35ee531a0182be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b11d273aa91f5f6680ff73485df063"><td class="memItemLeft" align="right" valign="top">SOCKET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#aa7b11d273aa91f5f6680ff73485df063">client</a> {}</td></tr>
+<tr class="separator:aa7b11d273aa91f5f6680ff73485df063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efb0d2f6d7c6e85130139a03966de5f"><td class="memItemLeft" align="right" valign="top">SOCKADDR_IN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a5efb0d2f6d7c6e85130139a03966de5f">server_address</a> {}</td></tr>
+<tr class="separator:a5efb0d2f6d7c6e85130139a03966de5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b7caef465d22febf5107fc439068c1f"><td class="memItemLeft" align="right" valign="top">SOCKADDR_IN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a1b7caef465d22febf5107fc439068c1f">client_address</a> {}</td></tr>
+<tr class="separator:a1b7caef465d22febf5107fc439068c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426f9a0622e3c7d00cf1cd322409ed11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="socket__server_8hpp.html#a9bef0f56c5c02f15f8ef8da4ad89ee71">address_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a426f9a0622e3c7d00cf1cd322409ed11">address</a></td></tr>
+<tr class="separator:a426f9a0622e3c7d00cf1cd322409ed11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e277f8573ff4eecfd881d5eb0b1c2de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a3e277f8573ff4eecfd881d5eb0b1c2de">port</a></td></tr>
+<tr class="separator:a3e277f8573ff4eecfd881d5eb0b1c2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c4be466ba870b6b8d9eb5c38ef7d8c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a76c4be466ba870b6b8d9eb5c38ef7d8c">tag</a></td></tr>
+<tr class="separator:a76c4be466ba870b6b8d9eb5c38ef7d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683dab093cbb2ce8c9c94757d94a30cd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a683dab093cbb2ce8c9c94757d94a30cd">termination</a></td></tr>
+<tr class="separator:a683dab093cbb2ce8c9c94757d94a30cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fe7ba24b9d07cd16f759ccef86ef5c"><td class="memItemLeft" align="right" valign="top">WSADATA&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a78fe7ba24b9d07cd16f759ccef86ef5c">WSAData</a> {}</td></tr>
+<tr class="separator:a78fe7ba24b9d07cd16f759ccef86ef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00043">43</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a262ba93dc8ad71b260fb75124b3453ee" name="a262ba93dc8ad71b260fb75124b3453ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262ba93dc8ad71b260fb75124b3453ee">&#9670;&#160;</a></span>SocketServer() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SocketServer::SocketServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00003">3</a></p>
+
+</div>
+</div>
+<a id="a5bf519d83475f538d88d3ba9303e71a0" name="a5bf519d83475f538d88d3ba9303e71a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf519d83475f538d88d3ba9303e71a0">&#9670;&#160;</a></span>SocketServer() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SocketServer::SocketServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a>&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>tag</em> = <code><a class="el" href="socket__server_8hpp.html#af1df499f33adadc0e9386636e32ae7bc">DEFAULT_TAG</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00010">10</a></p>
+
+</div>
+</div>
+<a id="a509c9e31bd06b7cc8e3ba4cfb107ccf8" name="a509c9e31bd06b7cc8e3ba4cfb107ccf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a509c9e31bd06b7cc8e3ba4cfb107ccf8">&#9670;&#160;</a></span>SocketServer() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SocketServer::SocketServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="socket__server_8hpp.html#a9bef0f56c5c02f15f8ef8da4ad89ee71">address_t</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a>&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>tag</em> = <code><a class="el" href="socket__server_8hpp.html#af1df499f33adadc0e9386636e32ae7bc">DEFAULT_TAG</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="aab9b710128e52b731623b5b7fa2573ae" name="aab9b710128e52b731623b5b7fa2573ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9b710128e52b731623b5b7fa2573ae">&#9670;&#160;</a></span>set_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SocketServer::set_port </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a>&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00028">28</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_aab9b710128e52b731623b5b7fa2573ae_icgraph.svg" width="262" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a40bc48fe79ef0fa4059e3bfba4769153" name="a40bc48fe79ef0fa4059e3bfba4769153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bc48fe79ef0fa4059e3bfba4769153">&#9670;&#160;</a></span>set_termination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SocketServer::set_termination </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>termination</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00032">32</a></p>
+
+</div>
+</div>
+<a id="a44e1cd686d7580a28e3c840f726b4f80" name="a44e1cd686d7580a28e3c840f726b4f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e1cd686d7580a28e3c840f726b4f80">&#9670;&#160;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SocketServer::create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00036">36</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a44e1cd686d7580a28e3c840f726b4f80_cgraph.svg" width="498" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a44e1cd686d7580a28e3c840f726b4f80_icgraph.svg" width="439" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a47b8a318ef73faa660aa0f2b99225197" name="a47b8a318ef73faa660aa0f2b99225197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b8a318ef73faa660aa0f2b99225197">&#9670;&#160;</a></span>wait_client()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SocketServer::wait_client </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00059">59</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a47b8a318ef73faa660aa0f2b99225197_cgraph.svg" width="486" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a47b8a318ef73faa660aa0f2b99225197_icgraph.svg" width="426" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac27110c965c4ba07f68ad3422506651c" name="ac27110c965c4ba07f68ad3422506651c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac27110c965c4ba07f68ad3422506651c">&#9670;&#160;</a></span>read_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SocketServer::read_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00077">77</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_ac27110c965c4ba07f68ad3422506651c_cgraph.svg" width="519" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_ac27110c965c4ba07f68ad3422506651c_icgraph.svg" width="460" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a73aa19f6f719abf3de62cff9406e46d0" name="a73aa19f6f719abf3de62cff9406e46d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73aa19f6f719abf3de62cff9406e46d0">&#9670;&#160;</a></span>send_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SocketServer::send_data </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00112">112</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a73aa19f6f719abf3de62cff9406e46d0_cgraph.svg" width="522" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a73aa19f6f719abf3de62cff9406e46d0_icgraph.svg" width="463" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1e673e526a459bdb3ca92e103ec212ae" name="a1e673e526a459bdb3ca92e103ec212ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e673e526a459bdb3ca92e103ec212ae">&#9670;&#160;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SocketServer::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00125">125</a></p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a1e673e526a459bdb3ca92e103ec212ae_cgraph.svg" width="494" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a1e673e526a459bdb3ca92e103ec212ae_icgraph.svg" width="434" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ad7a7ee05e51ea673b35ee531a0182be9" name="ad7a7ee05e51ea673b35ee531a0182be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a7ee05e51ea673b35ee531a0182be9">&#9670;&#160;</a></span>server</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKET SocketServer::server {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00044">44</a></p>
+
+</div>
+</div>
+<a id="aa7b11d273aa91f5f6680ff73485df063" name="aa7b11d273aa91f5f6680ff73485df063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b11d273aa91f5f6680ff73485df063">&#9670;&#160;</a></span>client</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKET SocketServer::client {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00044">44</a></p>
+
+</div>
+</div>
+<a id="a5efb0d2f6d7c6e85130139a03966de5f" name="a5efb0d2f6d7c6e85130139a03966de5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efb0d2f6d7c6e85130139a03966de5f">&#9670;&#160;</a></span>server_address</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKADDR_IN SocketServer::server_address {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a id="a1b7caef465d22febf5107fc439068c1f" name="a1b7caef465d22febf5107fc439068c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b7caef465d22febf5107fc439068c1f">&#9670;&#160;</a></span>client_address</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKADDR_IN SocketServer::client_address {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a id="a426f9a0622e3c7d00cf1cd322409ed11" name="a426f9a0622e3c7d00cf1cd322409ed11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a426f9a0622e3c7d00cf1cd322409ed11">&#9670;&#160;</a></span>address</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="socket__server_8hpp.html#a9bef0f56c5c02f15f8ef8da4ad89ee71">address_t</a> SocketServer::address</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00047">47</a></p>
+
+</div>
+</div>
+<a id="a3e277f8573ff4eecfd881d5eb0b1c2de" name="a3e277f8573ff4eecfd881d5eb0b1c2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e277f8573ff4eecfd881d5eb0b1c2de">&#9670;&#160;</a></span>port</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="socket__server_8hpp.html#a6914baaa259354d9ce3944c62d44d477">port_t</a> SocketServer::port</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00048">48</a></p>
+
+</div>
+</div>
+<a id="a76c4be466ba870b6b8d9eb5c38ef7d8c" name="a76c4be466ba870b6b8d9eb5c38ef7d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c4be466ba870b6b8d9eb5c38ef7d8c">&#9670;&#160;</a></span>tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SocketServer::tag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a id="a683dab093cbb2ce8c9c94757d94a30cd" name="a683dab093cbb2ce8c9c94757d94a30cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683dab093cbb2ce8c9c94757d94a30cd">&#9670;&#160;</a></span>termination</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SocketServer::termination</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00052">52</a></p>
+
+</div>
+</div>
+<a id="a78fe7ba24b9d07cd16f759ccef86ef5c" name="a78fe7ba24b9d07cd16f759ccef86ef5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78fe7ba24b9d07cd16f759ccef86ef5c">&#9670;&#160;</a></span>WSAData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WSADATA SocketServer::WSAData {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00054">54</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/socket/<a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a></li>
+<li>src/socket/<a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_socket_server.html">SocketServer</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

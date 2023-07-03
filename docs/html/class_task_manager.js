@@ -1,0 +1,26 @@
+var class_task_manager =
+[
+    [ "TaskManager", "class_task_manager.html#ab1adaa0f5b87d8fb26c09e7883fdd9fe", null ],
+    [ "connect_task", "class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49", null ],
+    [ "disconnect_task", "class_task_manager.html#a87e7ab01c7c2920422402dda863da79c", null ],
+    [ "configure_task", "class_task_manager.html#a19b51f5809b7aa9dbffbf6293191a06f", null ],
+    [ "set_power_task", "class_task_manager.html#aba128d250f6cf145f0f8bfe8a9a6c6e6", null ],
+    [ "set_freq_task", "class_task_manager.html#a08b009e20bb0c5c16a07b2af6c66de72", null ],
+    [ "set_freq_range_task", "class_task_manager.html#ac63779261327a9f2b120a6c7dd648110", null ],
+    [ "next_freq_task", "class_task_manager.html#a2fde49fc27ecd21717c7deefe4b09dd3", null ],
+    [ "set_angle_task", "class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6", null ],
+    [ "set_angle_range_task", "class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1", null ],
+    [ "next_angle_task", "class_task_manager.html#a0ad340d364ac4e25a7abb94aea073cb1", null ],
+    [ "set_path_task", "class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5", null ],
+    [ "get_data_task", "class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9", null ],
+    [ "proceed_task", "class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be", null ],
+    [ "proceed_task_list", "class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4", null ],
+    [ "proceed_nested_task_list", "class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1", null ],
+    [ "proceed", "class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce", null ],
+    [ "received_stop_task", "class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7", null ],
+    [ "received_disconnect_task", "class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50", null ],
+    [ "request_stop", "class_task_manager.html#a601272b5c895a310aec3d430b19c6258", null ],
+    [ "reset_stop_request", "class_task_manager.html#ae49fdc0b6d9b5a18f35045bb4efde443", null ],
+    [ "device_set", "class_task_manager.html#a97a87a01b8705db4fb965be54b2d3301", null ],
+    [ "stop_requested", "class_task_manager.html#ab95aed84e5431769d1c9faaf9fcb6791", null ]
+];

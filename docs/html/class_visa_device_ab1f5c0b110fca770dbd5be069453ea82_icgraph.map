@@ -1,0 +1,47 @@
+<map id="VisaDevice::wait" name="VisaDevice::wait">
+<area shape="rect" id="Node000001" title=" " alt="" coords="654,265,771,292"/>
+<area shape="rect" id="Node000002" href="$class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" title=" " alt="" coords="455,265,606,292"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="640,281,607,281,607,276,640,276"/>
+<area shape="rect" id="Node000003" href="$class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" title=" " alt="" coords="244,81,397,124"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="511,254,467,197,438,165,405,138,386,127,389,122,409,134,442,162,471,193,515,251"/>
+<area shape="rect" id="Node000004" href="$class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" title=" " alt="" coords="244,148,397,191"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="497,259,406,205,381,194,383,189,408,200,499,255"/>
+<area shape="rect" id="Node000005" href="$class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" title=" " alt="" coords="242,215,399,241"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="457,264,378,245,379,239,459,259"/>
+<area shape="rect" id="Node000006" href="$class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" title=" " alt="" coords="243,265,398,292"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="440,281,399,281,399,276,440,276"/>
+<area shape="rect" id="Node000007" href="$class_visa_device.html#aff290be3fb61e9679a548aafc571985d" title=" " alt="" coords="245,316,396,343"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="459,299,379,318,378,313,457,293"/>
+<area shape="rect" id="Node000008" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title=" " alt="" coords="234,367,407,393"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="501,303,458,331,408,357,378,369,376,364,406,352,455,326,498,298"/>
+<area shape="rect" id="Node000023" href="$class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" title=" " alt="" coords="245,417,396,444"/>
+<area shape="poly" id="edge22_Node000002_Node000023" title=" " alt="" coords="514,305,470,357,441,384,408,408,384,419,381,414,406,403,437,380,466,353,509,302"/>
+<area shape="rect" id="Node000009" href="$class_keysight_m9807_a.html#a85c78a42ccfda3bb9b69cb60b79358f4" title=" " alt="" coords="5,5,186,32"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="234,359,232,356,217,336,207,316,198,277,200,237,207,199,215,160,217,122,208,84,198,65,184,46,170,35,173,30,188,42,203,62,213,82,222,122,220,161,212,200,205,238,203,276,212,314,221,334,236,353,238,355"/>
+<area shape="rect" id="Node000010" href="$class_keysight_m9807_a.html#ad492f043e51d3e760209af6d59fe7829" title=" " alt="" coords="13,56,178,99"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="235,359,232,356,211,325,202,294,202,264,206,233,210,203,210,173,203,143,184,112,171,101,175,97,188,109,208,141,216,173,215,204,211,234,207,264,207,294,216,323,236,353,238,356"/>
+<area shape="rect" id="Node000011" href="$class_keysight_m9807_a.html#ae9df428776abd1cc65fa24e57fb713e1" title=" " alt="" coords="23,123,168,149"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="235,360,232,356,214,332,206,307,205,282,207,258,209,234,208,210,200,186,184,163,167,151,170,147,188,159,205,184,213,209,214,234,212,258,210,282,212,306,219,329,236,353,239,356"/>
+<area shape="rect" id="Node000012" href="$class_keysight_m9807_a.html#ad48b95d00b8a2ecee1e95dc300d25203" title=" " alt="" coords="23,173,168,216"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="237,361,232,357,218,341,211,324,206,292,202,261,196,245,184,230,167,217,170,213,188,226,200,243,208,259,212,292,216,323,223,338,236,353,240,357"/>
+<area shape="rect" id="Node000013" href="$class_keysight_m9807_a.html#ad4dc40466fecabae451e88d763692076" title=" " alt="" coords="18,240,173,267"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="239,362,232,357,215,337,207,318,200,299,184,281,164,270,167,265,187,277,204,296,212,316,220,335,235,353,242,357"/>
+<area shape="rect" id="Node000014" href="$class_keysight_m9807_a.html#a861c82a08c49f54dd245db73d87181c8" title=" " alt="" coords="18,291,173,317"/>
+<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="251,364,233,357,185,332,152,320,153,315,187,327,235,352,253,359"/>
+<area shape="rect" id="Node000015" href="$class_keysight_m9807_a.html#adf9e166699c89ec3c7f53fae5ec81b0c" title=" " alt="" coords="17,341,174,368"/>
+<area shape="poly" id="edge14_Node000008_Node000015" title=" " alt="" coords="219,371,174,366,174,361,219,366"/>
+<area shape="rect" id="Node000016" href="$class_keysight_m9807_a.html#ac6105e309ba2f11a360797e19d34a592" title=" " alt="" coords="17,392,174,419"/>
+<area shape="poly" id="edge15_Node000008_Node000016" title=" " alt="" coords="219,394,174,399,174,394,219,389"/>
+<area shape="rect" id="Node000017" href="$class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" title=" " alt="" coords="9,443,182,469"/>
+<area shape="poly" id="edge16_Node000008_Node000017" title=" " alt="" coords="253,401,235,408,187,433,153,445,152,440,185,428,233,403,251,396"/>
+<area shape="rect" id="Node000018" href="$class_keysight_m9807_a.html#a752f62baec908e4e421a95b3c75422fc" title=" " alt="" coords="8,493,183,520"/>
+<area shape="poly" id="edge17_Node000008_Node000018" title=" " alt="" coords="242,403,235,407,220,425,212,444,204,464,187,483,167,495,164,490,184,479,200,461,207,442,215,423,232,403,239,398"/>
+<area shape="rect" id="Node000019" href="$class_keysight_m9807_a.html#a2b1761a2a4b4dc696a74590c2cb028de" title=" " alt="" coords="22,544,169,587"/>
+<area shape="poly" id="edge18_Node000008_Node000019" title=" " alt="" coords="240,403,236,407,223,422,216,437,212,468,208,501,200,517,188,534,171,547,167,543,184,530,196,515,202,499,206,468,211,436,218,419,232,403,237,399"/>
+<area shape="rect" id="Node000020" href="$class_keysight_m9807_a.html#a148ac915640756d3ef0c33d92c1b1205" title=" " alt="" coords="6,611,185,637"/>
+<area shape="poly" id="edge19_Node000008_Node000020" title=" " alt="" coords="239,404,236,407,219,431,212,454,210,478,212,502,214,526,213,551,205,576,188,601,172,612,169,608,184,597,200,574,208,550,209,526,207,502,205,478,206,453,214,428,232,404,235,400"/>
+<area shape="rect" id="Node000021" href="$class_keysight_m9807_a.html#ab3a0a48c7e439fab722d902479ff78eb" title=" " alt="" coords="22,661,169,704"/>
+<area shape="poly" id="edge20_Node000008_Node000021" title=" " alt="" coords="238,404,236,407,216,437,207,466,207,496,211,526,215,556,216,587,208,619,188,651,171,665,167,661,184,648,203,617,210,587,210,557,206,527,202,496,202,466,211,435,232,404,235,401"/>
+<area shape="rect" id="Node000022" href="$class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" title=" " alt="" coords="13,728,178,755"/>
+<area shape="poly" id="edge21_Node000008_Node000022" title=" " alt="" coords="238,405,236,407,221,426,212,446,203,484,205,522,212,560,220,599,222,638,213,678,203,698,188,718,173,730,170,725,184,714,198,695,208,676,217,638,215,600,207,561,200,523,198,483,207,444,217,424,232,404,234,401"/>
+</map>
