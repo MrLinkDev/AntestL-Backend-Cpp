@@ -76,7 +76,12 @@ void SocketServer::set_port(port_t port) {
  *
  * **Пример**
  * \code
+ * SocketServer socket_s();
  *
+ * int result = socket_s.create();
+ * if (result != SOCKET_CREATED) {
+ *     exit(1);
+ * }
  * \endcode
  */
 int SocketServer::create() {
@@ -106,6 +111,21 @@ int SocketServer::create() {
  * \brief Функция, ожидающая подключение клиента
  *
  * \return В зависимости от результата, возвращает соответствующий код результата.
+ *
+ * **Пример**
+ * \code
+ * SocketServer socket_s();
+ *
+ * int result = socket_s.create();
+ * if (result != SOCKET_CREATED) {
+ *     exit(1);
+ * }
+ *
+ * result = socket_s.wait_client();
+ * if (result != CLIENT_CONNECTED) {
+ *     exit(1);
+ * }
+ * \endcode
  */
 int SocketServer::wait_client() {
     if (listen(server, 0) == SOCKET_ERROR) {
@@ -125,6 +145,14 @@ int SocketServer::wait_client() {
     return CLIENT_NONE;
 }
 
+/**
+ * \brief Чтение данных от клиента
+ *
+ * Функция осуществляет чтение данных от клиента и записывает их в буфер, который возрващает при завершении.
+ * Выход из цикла чтения происходит в момент, когда была принята последовательность termination.
+ *
+ * \return Принятые данные
+ */
 std::string SocketServer::read_data() {
     std::string data{};
 
@@ -160,6 +188,16 @@ std::string SocketServer::read_data() {
     }
 }
 
+/**
+ * \brief Отправка данных клиенту
+ *
+ * Функция осуществляет отправку данных клиенту. Перед отправкой добавляется последовательность termination в
+ * конец посылки.
+ *
+ * \param [in] data Данные, которые требуется отправить
+ *
+ * \return Если данные были успешно отправлены, то возвращается DATA_SEND_OK. В противном случае - DATA_SEND_ERROR.
+ */
 int SocketServer::send_data(std::string data) {
     logger::log(LEVEL_TRACE, "{} ({}): Sending data to client = {}", tag, port, data);
 
@@ -173,6 +211,11 @@ int SocketServer::send_data(std::string data) {
     return DATA_SEND_OK;
 }
 
+/**
+ * \brief Закрытие сокета
+ *
+ * Функция разрывает соединение между сервером и клиентом закрывая оба сокета
+ */
 void SocketServer::close() {
     closesocket(client);
 
