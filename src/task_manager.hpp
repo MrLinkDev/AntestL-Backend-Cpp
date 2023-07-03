@@ -33,6 +33,8 @@
 
 #define TASK_TYPE_DISCONNECT        "disconnect"
 
+#define TASK_TYPE_STOP              "stop"
+
 #define DEVICE_EXT_GEN              "ext_gen"
 #define DEVICE_RBD_UPKB             "upkb_rbd"
 #define DEVICE_RBD_TESART           "tesart_rbd"
@@ -129,6 +131,8 @@ public:
     TaskManager() = default;
 
     std::string proceed(const json &data);
+
+    bool received_stop_task(const json &data);
 
     void request_stop();
 

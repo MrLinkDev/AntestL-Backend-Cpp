@@ -81,12 +81,10 @@ void VisaDevice::connect() {
             &device);
 
     if (status < VI_SUCCESS) {
-        logger::log(LEVEL_ERROR, "No connection to device...");
-
         connected = false;
         return;
     } else {
-        logger::log(LEVEL_INFO, "Connected to device with address {}", device_config.address);
+        logger::log(LEVEL_DEBUG, "Connected to device with address {}", device_config.address);
     }
 
     status = viSetAttribute(device, VI_ATTR_TMO_VALUE, DEFAULT_TIMEOUT);
@@ -126,7 +124,7 @@ std::string VisaDevice::idn() {
     if (device_info.empty()) {
         logger::log(LEVEL_WARN, "No IDN data from device");
     } else {
-        logger::log(LEVEL_INFO, "Device info: {}", device_info);
+        logger::log(LEVEL_DEBUG, "Device info: {}", device_info);
     }
 
     return device_info;

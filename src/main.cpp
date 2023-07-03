@@ -42,7 +42,7 @@ json input_data{};
 json data_buffer{};
 
 void task_server_thread_f(std::stop_token s_token);
-void data_server_thread_f();
+void data_server_thread_f(std::stop_token s_token);
 
 void usage();
 
@@ -93,13 +93,17 @@ void task_server_thread_f(std::stop_token s_token) {
     }
 
     while (!s_token.stop_requested()) {
-
         try {
             input_data = std::move(json::parse(task_server.read_data()));
         } catch (const json::parse_error &err) {
             logger::log(LEVEL_ERROR, "Seems like input data cannot be parsed into json. Check input data!");
 
             std::this_thread::sleep_for(50ms);
+            continue;
+        }
+
+        if (task_manager.received_stop_task(input_data)) {
+            task_manager.request_stop();
             continue;
         }
 
@@ -116,7 +120,7 @@ void task_server_thread_f(std::stop_token s_token) {
     }
 }
 
-void data_server_thread_f() {
+void data_server_thread_f(std::stop_token s_token) {
     if (data_server.create() != SOCKET_CREATED) {
         exit(1);
     }
@@ -127,7 +131,7 @@ void data_server_thread_f() {
 
     std::string result{};
 
-    while (true) {
+    while (!s_token.stop_requested()) {
         std::unique_lock u_lk(mtx);
         cv.wait(u_lk, []{return received;});
 

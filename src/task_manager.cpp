@@ -489,7 +489,7 @@ json TaskManager::proceed_nested_task_list(std::vector<json> nested_task_list) {
 std::string TaskManager::proceed(const json &data) {
     json answer;
 
-    // TODO: Добавить измерение времени выполнения задания
+    auto start_time = std::chrono::high_resolution_clock::now();
 
     if (data.contains(WORD_TASK)) {
         logger::log(LEVEL_INFO, "Received task");
@@ -506,7 +506,26 @@ std::string TaskManager::proceed(const json &data) {
         };
     }
 
+    auto stop_time = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop_time - start_time).count();
+
+    auto duration_ms = duration % 1000;
+    duration = (long long) ((duration - duration_ms) / 1000);
+
+    auto duration_s = duration % 1000;
+    duration = (long long) ((duration - duration_s) / 60);
+
+    logger::log(LEVEL_INFO, "Proceeding finished for {}:{:02}.{:03} m", duration, duration_s, duration_ms);
+
     return to_string(answer);
+}
+
+bool TaskManager::received_stop_task(const json &data) {
+    if (data.contains(WORD_TASK) && data[WORD_TASK][WORD_TASK_TYPE] == TASK_TYPE_STOP) {
+        return true;
+    }
+
+    return false;
 }
 
 void TaskManager::request_stop() {
