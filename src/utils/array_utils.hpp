@@ -2,7 +2,7 @@
  * \file
  * \brief Файл, в котором определено пространство имён array_utils.
  *
- * \author Alexander Gorbunov
+ * \author Александр Горбунов
  * \date 3 июля 2023 года
  */
 

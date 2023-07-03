@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief Библиотека, осуществляющая логирование
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023 года
+ */
+
 #ifndef ANTESTL_BACKEND_LOGGER_HPP
 #define ANTESTL_BACKEND_LOGGER_HPP
 
@@ -8,20 +16,35 @@
 #include <cmath>
 #include <format>
 
+/// Уровень логирования, при котором отображаются только ошибки
 #define LEVEL_ERROR 0
+/// Уровень логирования, при котором отображаются ошибки и предупреждения
 #define LEVEL_WARN  1
+/// Уровень логирования, при котором отображаются ошибки, предупреждения и информационные сообщения
 #define LEVEL_INFO  2
+/// Уровень логирования, при котором отображаются ошибки, предупреждения, информационные сообщения и отладочные сообщения
 #define LEVEL_DEBUG 3
+/// Уровень логирования, при котором отображаеются все сообщения, включая сообщения трассировки
 #define LEVEL_TRACE 4
 
+/// Режим, при котором в консоль не выводятся цветные теги сообщений
 #define NO_COLOR    false
+/// Режим, при котором в консоль выводятся цветные теги сообщений
 #define COLORED     true
 
-#define MAX_MESSAGE_LENGTH  192
+/// Максимальная длина сообщения в консоли
+#define MAX_MESSAGE_LENGTH      192
 
+/// Размер буфера для строки времени
 #define DEFAULT_BUFFER_SIZE     128
+/// Шаблон строки времени
 #define DEFAULT_TIME_FORMAT     "%Y-%m-%d %H:%M:%S"
 
+/**
+ * \brief Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном.
+ *
+ * @return Строка, отформатированная по заданному шаблону
+ */
 static std::string get_current_time() {
     struct timeval time_value{};
     struct tm *time_struct;
@@ -43,11 +66,23 @@ static std::string get_current_time() {
     return std::string(str_time) + std::format(".{:03}", milliseconds);
 }
 
+/**
+ * \brief Класс Logger, в котором реализован набор методов для логирования
+ */
 class Logger {
-
+    /// Уровень логирования. По-умолчанию задан максимальный уровень логирования.
     inline static int log_level = LEVEL_TRACE;
+    /// Режим отображения сообщений. По-умолчанию задан режим отображения цветных тегов.
     inline static bool colored  = COLORED;
 
+    /**
+     * \brief Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега.
+     *
+     * \param [in] level Уровень логирования
+     * \param [in] for_file Требуется ли тег для записи в файл
+     *
+     * \return Требуемый тег
+     */
     static std::string get_tag(int level, bool for_file) {
         switch (level) {
             case LEVEL_ERROR:
@@ -65,23 +100,60 @@ class Logger {
         }
     }
 
+    /**
+     * \brief Функция, которая выводит сообщение в консоль.
+     *
+     * \param [in] message Сообщение, которое требуется вывести
+     */
     static void print_to_console(const std::string &message) {
         std::cout << message << std::endl;
     }
 
+    /**
+     * \brief Функция, которая записывает сообщение в файл.
+     *
+     * \param [in] message Сообщение, которое требуется записать
+     */
     static void print_to_file(const std::string &message) {
         // TODO: Добавить сохранение логов в файл
     }
 
 public:
+    /**
+     * \brief Установка требуемого уровня логирования.
+     *
+     * \param [in] level Требуемый уровень логирования
+     */
     static void set_log_level(int level) {
         log_level = level;
     }
 
+    /**
+     * \brief Установка требуемого вида тегов в консоли.
+     *
+     * \param [in] color_state Требуемый вид
+     */
     static void set_color_state(bool color_state) {
         colored = color_state;
     }
 
+    /**
+     * \brief Функция, осуществляющая логирование
+     *
+     * Данная функция сравнивает текущий уровень логирования с уровнем входящего сообщения.
+     * Если уровень входящего сообщения больше, чем текущий уровень, то сообщение игнорируется.
+     *
+     * \param [in] level Уровень сообщения
+     * \param [in] message Сообщение
+     *
+     * **Пример**
+     * \code
+     * logger::set_log_level(LEVEL_INFO);
+     *
+     * logger::log(LEVEL_DEBUG, "debug message");   // Данное сообщение будет проигнорировано
+     * logger::log(LEVEL_INFO), "info message");    // Данное сообщение будет выведено
+     * \endcode
+     */
     static void log(int level, const std::string &message) {
         if (level > log_level) return;
 
@@ -101,6 +173,25 @@ public:
         print_to_file(log_message);
     }
 
+    /**
+     * \brief Функция, осуществляющая логирование
+     *
+     * Данная функция сравнивает текущий уровень логирования с уровнем входящего сообщения.
+     * Если уровень входящего сообщения больше, чем текущий уровень, то сообщение игнорируется.
+     * Позволяет передать строку формата и аргументы для этой строки.
+     *
+     * \param [in] level Уровень сообщения
+     * \param [in] fmt Формат сообщения
+     * \param [in] args Аргументы для сообщения
+     *
+     * **Пример**
+     * \code
+     * logger::set_log_level(LEVEL_WARN);
+     *
+     * logger::log(LEVEL_INFO, "{} ({}) created", socket_tag, socket_port);         // Сообщение будет проигнорировано
+     * logger::log(LEVEL_ERROR, "{} ({}) no clients", socket_tag, socket_port);     // Сообщение будет выведено
+     * \endcode
+     */
     template <typename... T>
     static void log(int level, const std::string &fmt, T&&... args) {
         if (level > log_level) return;
