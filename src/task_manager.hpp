@@ -134,6 +134,8 @@ public:
 
     bool received_stop_task(const json &data);
 
+    bool received_disconnect_task(const json &data);
+
     void request_stop();
 
     void reset_stop_request();

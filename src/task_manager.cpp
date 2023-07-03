@@ -512,16 +512,24 @@ std::string TaskManager::proceed(const json &data) {
     auto duration_ms = duration % 1000;
     duration = (long long) ((duration - duration_ms) / 1000);
 
-    auto duration_s = duration % 1000;
+    auto duration_s = duration % 60;
     duration = (long long) ((duration - duration_s) / 60);
 
-    logger::log(LEVEL_INFO, "Proceeding finished for {}:{:02}.{:03} m", duration, duration_s, duration_ms);
+    logger::log(LEVEL_INFO, "Proceeding finished for {}:{:02}.{:03}", duration, duration_s, duration_ms);
 
     return to_string(answer);
 }
 
 bool TaskManager::received_stop_task(const json &data) {
     if (data.contains(WORD_TASK) && data[WORD_TASK][WORD_TASK_TYPE] == TASK_TYPE_STOP) {
+        return true;
+    }
+
+    return false;
+}
+
+bool TaskManager::received_disconnect_task(const json &data) {
+    if (data.contains(WORD_TASK) && data[WORD_TASK][WORD_TASK_TYPE] == TASK_TYPE_DISCONNECT) {
         return true;
     }
 

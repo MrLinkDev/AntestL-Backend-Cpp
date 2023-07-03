@@ -121,3 +121,11 @@ int SocketServer::send_data(std::string data) {
 
     return DATA_SEND_OK;
 }
+
+void SocketServer::close() {
+    closesocket(client);
+
+    if (closesocket(server) == SOCKET_ERROR) {
+        logger::log(LEVEL_ERROR, "{} ({}): Can't close socket", tag, port);
+    }
+}

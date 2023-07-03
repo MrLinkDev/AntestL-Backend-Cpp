@@ -1,4 +1,4 @@
-#include <condition_variable>
+#include <condition_variable>\
 
 #include "socket/socket_server.hpp"
 #include "task_manager.hpp"
@@ -41,12 +41,18 @@ bool processed = true;
 json input_data{};
 json data_buffer{};
 
+bool stop_process = false;
+
 void task_server_thread_f(std::stop_token s_token);
 void data_server_thread_f(std::stop_token s_token);
+
+void exit_event_handler(int signal_code);
 
 void usage();
 
 int main(int argc, char* argv[]) {
+    signal(SIGINT, exit_event_handler);
+
     logger::log(LEVEL_INFO, "Starting AntestL backend...");
     logger::set_log_level(LEVEL_INFO);
 
@@ -73,26 +79,31 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    task_thread = new std::jthread{task_server_thread_f};
-    std::this_thread::sleep_for(50ms);
+    while (!stop_process) {
+        task_thread = new std::jthread{task_server_thread_f};
+        std::this_thread::sleep_for(50ms);
 
-    data_thread = new std::jthread{data_server_thread_f};
+        data_thread = new std::jthread{data_server_thread_f};
 
-    task_thread->join();
+        task_thread->join();
+
+        delete task_thread;
+        delete data_thread;
+    }
 
     return 0;
 }
 
 void task_server_thread_f(std::stop_token s_token) {
-    if (task_server.create() != SOCKET_CREATED) {
+    if (task_server.create() != SOCKET_CREATED && !stop_process) {
         exit(1);
     }
 
-    if (task_server.wait_client() != CLIENT_CONNECTED) {
+    if (task_server.wait_client() != CLIENT_CONNECTED && !stop_process) {
         exit(1);
     }
 
-    while (!s_token.stop_requested()) {
+    while (!s_token.stop_requested() || !stop_process) {
         try {
             input_data = std::move(json::parse(task_server.read_data()));
         } catch (const json::parse_error &err) {
@@ -105,6 +116,11 @@ void task_server_thread_f(std::stop_token s_token) {
         if (task_manager.received_stop_task(input_data)) {
             task_manager.request_stop();
             continue;
+        }
+
+        if (task_manager.received_disconnect_task(input_data)) {
+            task_thread->request_stop();
+            data_thread->request_stop();
         }
 
         std::unique_lock u_lk(mtx);
@@ -121,17 +137,17 @@ void task_server_thread_f(std::stop_token s_token) {
 }
 
 void data_server_thread_f(std::stop_token s_token) {
-    if (data_server.create() != SOCKET_CREATED) {
+    if (data_server.create() != SOCKET_CREATED && !stop_process) {
         exit(1);
     }
 
-    if (data_server.wait_client() != CLIENT_CONNECTED) {
+    if (data_server.wait_client() != CLIENT_CONNECTED && !stop_process) {
         exit(1);
     }
 
     std::string result{};
 
-    while (!s_token.stop_requested()) {
+    while (!s_token.stop_requested() || !stop_process) {
         std::unique_lock u_lk(mtx);
         cv.wait(u_lk, []{return received;});
 
@@ -144,6 +160,22 @@ void data_server_thread_f(std::stop_token s_token) {
         u_lk.unlock();
         cv.notify_one();
     }
+
+    data_server.close();
+}
+
+void exit_event_handler(int signal_code) {
+    logger::log(LEVEL_INFO, "Stopping work...");
+
+    stop_process = true;
+
+    task_manager.request_stop();
+
+    task_thread->request_stop();
+    data_thread->request_stop();
+
+    task_server.close();
+    data_server.close();
 }
 
 void usage() {

@@ -67,6 +67,8 @@ public:
 
     std::string read_data();
     int send_data(std::string data);
+
+    void close();
 };
 
 
