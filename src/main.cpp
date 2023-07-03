@@ -1,4 +1,4 @@
-#include <condition_variable>\
+#include <condition_variable>
 
 #include "socket/socket_server.hpp"
 #include "task_manager.hpp"
@@ -52,8 +52,6 @@ void usage();
 
 int main(int argc, char* argv[]) {
     signal(SIGINT, exit_event_handler);
-
-    logger::log(LEVEL_INFO, "Starting AntestL backend...");
     logger::set_log_level(LEVEL_INFO);
 
     for (int arg_pos = 1; arg_pos < argc; ++arg_pos) {
@@ -78,6 +76,8 @@ int main(int argc, char* argv[]) {
             exit(0);
         }
     }
+
+    logger::log(LEVEL_INFO, "Starting AntestL backend...");
 
     while (!stop_process) {
         task_thread = new std::jthread{task_server_thread_f};
@@ -179,5 +179,10 @@ void exit_event_handler(int signal_code) {
 }
 
 void usage() {
-    std::cout << "Usage was here" << std::endl;
+    std::cout << "\n===== AntestL Backend =====\n" << std::endl;
+
+    std::cout << "Usage:" << std::endl;
+    std::cout << "-log   (-l) -- sets log level: [error, warn, info (default), debug, trace]" << std::endl;
+    std::cout << "-task  (-t) -- sets task server port (default: 5006)" << std::endl;
+    std::cout << "-data  (-d) -- sets data server port (default: 5007)" << std::endl;
 }
