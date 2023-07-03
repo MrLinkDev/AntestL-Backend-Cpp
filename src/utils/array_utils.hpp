@@ -12,6 +12,7 @@
 #include <json.hpp>
 
 /**
+ * \namespace
  * \brief Пространство имён, в котором определены методы для работы с массивами
  */
 namespace array_utils {

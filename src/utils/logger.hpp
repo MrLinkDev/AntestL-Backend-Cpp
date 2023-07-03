@@ -67,6 +67,7 @@ static std::string get_current_time() {
 }
 
 /**
+ * \class
  * \brief Класс Logger, в котором реализован набор методов для логирования
  */
 class Logger {

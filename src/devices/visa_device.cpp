@@ -58,6 +58,8 @@ VisaDevice::~VisaDevice() {
     if (connected) {
         clear();
         viClose(device);
+
+        connected = false;
     }
 }
 

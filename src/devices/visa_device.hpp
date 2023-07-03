@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief Заголовочный файл, в котором определены константы и класс VisaDevice
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023
+ */
+
 #ifndef ANTESTL_BACKEND_VISA_DEVICE_HPP
 #define ANTESTL_BACKEND_VISA_DEVICE_HPP
 
@@ -7,45 +15,76 @@
 #include "visa.h"
 #include "../utils/logger.hpp"
 
+/// Размер буфера для данных, которые приходят от прибора
 #define BUFFER_SIZE             128
 
+/// Стандартный таймаут команды
 #define DEFAULT_TIMEOUT         1000000
+/// Стандартный символ окончания посылки
 #define DEFAULT_VISA_TERM       '\n'
 
-#define DEFAULT_OPC_SLEEP_TIME  250
-
+/// Код, возвращаемый при успешно выполненной операции
 #define SUCCESS                 0x00
+/// Код, возвращаемый при неудачном выполнении операции
 #define FAILURE                 0x01
 
+/// Код, возвращаемый, если на приборе не возникло ошибок
 #define NO_ERRORS               0x02
+/// Код, возвращаемый, если на приборе возникли ошибки
 #define ERRORS                  0x03
 
+/// Код, возвращаемый функцией opc(), если прибор завершил выполнение действий
 #define OPC_PASS                0x04
+/// Код, возвращаемый функцией opc(), если прибор не завершил выполнение действий
 #define OPC_WAIT                0x05
 
+/// Команда для запроса информации о приборе
 #define CMD_IDN                 "*IDN?"
+/// Команда для проверки статуса выполнения действий прибором
 #define CMD_OPC                 "*OPC?"
+/// Команда для запроса ошибок, возникших на приборе
 #define CMD_ERR                 "SYSTEM:ERROR?"
 
+/// Стандартный ответ прибора, если на нём не возникло ошибок
 #define NO_ERROR_STR            "+0,\"No error\""
 
+/// Стандартный ответ прибора компании Keysight на команду "*OPC?", если все действия завершены
 #define OPC_PASS_STR_KEYSIGHT   "+1"
+/// Стандартный ответ прибора компании Planar на команду "*OPC?", если все действия завершены
 #define OPC_PASS_STR_PLANAR     "1"
 
+/**
+ * \struct
+ * \brief Структура конфигурации прибора
+ *
+ * Структура содержит в себе минимальный набор параметров для создания подключения с прибором
+ */
 struct visa_config {
+    /// Адрес устройства
     std::string address{};
 
-    int timeout         = DEFAULT_TIMEOUT;
-    char termination    = DEFAULT_VISA_TERM;
+    /// Таймаут выполнения команды. По-умолчанию таймаут = DEFAULT_TIMEOUT.
+    int timeout = DEFAULT_TIMEOUT;
+    /// Символ, которым оканчивается посылка. По-умолчанию символ = DEFAULT_VISA_TERM.
+    char termination = DEFAULT_VISA_TERM;
 };
 
+/**
+ * \class
+ * \brief Класс, в котором реализованы методы для управления устройством с помощью API VISA.
+ */
 class VisaDevice {
+    /// Конфигурация устройства для подключения
     visa_config device_config{};
 
+    /// Идентификатор менеджера ресурсов
     ViSession resource_manager{};
+    /// Идентификатор устройства
     ViSession device{};
 
+    /// Статус выполнения операции
     ViStatus status{};
+
     ViPUInt32 ret_count{};
 
     int write(std::string command);
@@ -54,6 +93,7 @@ class VisaDevice {
     std::string query(std::string command);
 
 protected:
+    /// Переменная, которая показывает, подключен ли прибор или нет
     bool connected = false;
 
 public:
@@ -78,6 +118,34 @@ public:
     std::string send_err(std::string command);
     std::string send_wait_err(std::string command);
 
+    /**
+     * \brief Функция отправки данных на прибор и приёма ответа от прибора.
+     *
+     * Данная функция позволяет сформировать команду, которая будет отправлена на прибор, с помощью строки
+     * форматирования и набора аргументов для неё. Если строка заканчивается символом '?', то функция ожидает
+     * ответ от прибора, который и будет возвращён. В противном случае возвращается пустая строка.
+     *
+     * \param [in] fmt Строка форматирования
+     * \param [in] args Аргументы для строки форматирования
+     *
+     * \return Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает
+     * пустую строку
+     *
+     * **Пример**
+     * \code
+     * VisaDevice vna("TCPIP0::localhost::5025::SOCKET");
+     * vna.connect();
+     *
+     * int points = 201;
+     *
+     * if (vna.is_connected()) {
+     *     vna.send(":SENSe:SWEep:POINts {}", points);
+     *     std::string answer = vna.send(":SENSe:SWEep:POINts?");
+     *
+     *     std::cout << answer << std::endl;        // Будет выведено число 201
+     * }
+     * \endcode
+     */
     template <typename... T>
     std::string send(const std::string &fmt, T &&...args) {
         std::string command = std::vformat(fmt, std::make_format_args(args...));
@@ -88,6 +156,35 @@ public:
         return data;
     }
 
+    /**
+     * \brief Функция отправки данных на прибор и приёма ответа от прибора, которая ожидает завершения выполнения команды.
+     *
+     * Данная функция позволяет сформировать команду, которая будет отправлена на прибор, с помощью строки
+     * форматирования и набора аргументов для неё. Функция ожидает завершения выполнения команды. Если строка
+     * заканчивается символом '?', то функция ожидает ответ от прибора, который и будет возвращён. В противном случае
+     * возвращается пустая строка.
+     *
+     * \param [in] fmt Строка форматирования
+     * \param [in] args Аргументы для строки форматирования
+     *
+     * \return Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает
+     * пустую строку
+     *
+     * **Пример**
+     * \code
+     * VisaDevice vna("TCPIP0::localhost::5025::SOCKET");
+     * vna.connect();
+     *
+     * int points = 2001;
+     *
+     * if (vna.is_connected()) {
+     *     vna.send(":SENSe:SWEep:POINts {}", points);
+     *     vna.send_wait("INIT");
+     *
+     *     std::string data = vna.send(":CALCULATE:MEASURE:DATA:SDATA?");
+     * }
+     * \endcode
+     */
     template <typename... T>
     std::string send_wait(const std::string &fmt, T &&...args) {
         std::string command = std::vformat(fmt, std::make_format_args(args...));
@@ -98,6 +195,33 @@ public:
         return data;
     }
 
+    /**
+     * \brief Функция отправки данных на прибор и приёма ответа от прибора, которая проверяет наличие ошибок на приборе.
+     *
+     * Данная функция позволяет сформировать команду, которая будет отправлена на прибор, с помощью строки
+     * форматирования и набора аргументов для неё. Функция проверяет наличие ошибок на приборе после выполнения команды.
+     * Если строка заканчивается символом '?', то функция ожидает ответ от прибора, который и будет возвращён.
+     * В противном случае возвращается пустая строка.
+     *
+     * \param [in] fmt Строка форматирования
+     * \param [in] args Аргументы для строки форматирования
+     *
+     * \return Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает
+     * пустую строку
+     *
+     * **Пример**
+     * \code
+     * VisaDevice vna("TCPIP0::localhost::5025::SOCKET");
+     * vna.connect();
+     *
+     * int points = 2001;
+     *
+     * if (vna.is_connected()) {
+     *     // Функция бросит исключение antestl_exception с кодом DEVICE_ERROR_CODE
+     *     vna.send_err("IDN");
+     * }
+     * \endcode
+     */
     template <typename... T>
     std::string send_err(const std::string &fmt, T &&...args) {
         std::string command = std::vformat(fmt, std::make_format_args(args...));
@@ -108,6 +232,33 @@ public:
         return data;
     }
 
+    /**
+     * \brief Функция отправки данных на прибор и приёма ответа от прибора, которая ожидает завершение выполнения
+     * команды и после этого проверяет наличие ошибок на приборе.
+     *
+     * Данная функция позволяет сформировать команду, которая будет отправлена на прибор, с помощью строки
+     * форматирования и набора аргументов для неё. Функция ожидает завершение выполнения команды и проверяет наличие
+     * ошибок на приборе после выполнения команды. Если строка заканчивается символом '?', то функция ожидает ответ
+     * от прибора, который и будет возвращён. В противном случае возвращается пустая строка.
+     *
+     * \param [in] fmt Строка форматирования
+     * \param [in] args Аргументы для строки форматирования
+     *
+     * \return Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает
+     * пустую строку
+     *
+     * **Пример**
+     * \code
+     * VisaDevice vna("TCPIP0::localhost::5025::SOCKET");
+     * vna.connect();
+     *
+     * int points = 2001;
+     *
+     * if (vna.is_connected()) {
+     *     vna.send_wait_err("SYSTEM:FPRESET");
+     * }
+     * \endcode
+     */
     template <typename... T>
     std::string send_wait_err(const std::string &fmt, T &&...args) {
         std::string command = std::vformat(fmt, std::make_format_args(args...));

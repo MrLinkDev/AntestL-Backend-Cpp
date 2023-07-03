@@ -36,6 +36,7 @@
 #define NO_CONNECTION_CODE      0xEF00
 
 /**
+ * \class
  * \brief Класс исключения, содержащий в себе сообщение код исключения
  */
 class antestl_exception : public std::exception {

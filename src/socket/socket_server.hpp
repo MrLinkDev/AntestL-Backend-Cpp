@@ -52,6 +52,7 @@ typedef unsigned long address_t;
 typedef unsigned short port_t;
 
 /**
+ * \class
  * \brief Класс SocketServer, в котором имеется набор методов для установки соединения и обмена данными с клиентом
  */
 class SocketServer {
