@@ -74,7 +74,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="class_device_set.html#a0d62de2e486d260f500a81c0e39ec22a" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="class_device_set.html#a0d62de2e486d260f500a81c0e39ec22a" target="_top" xlink:title="Настраивает ВАЦ для требуемого измерения">
 <polygon fill="white" stroke="#666666" points="1162.62,-822.19 1058.12,-822.19 1058.12,-802.19 1162.62,-802.19 1162.62,-822.19"/>
 <text text-anchor="middle" x="1110.38" y="-808.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::configure</text>
 </a>
@@ -164,7 +164,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title="Метод, позволяющий осуществить подключение к устройству.">
 <polygon fill="white" stroke="#666666" points="1160.38,-1642.19 1060.38,-1642.19 1060.38,-1622.19 1160.38,-1622.19 1160.38,-1642.19"/>
 <text text-anchor="middle" x="1110.38" y="-1628.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::connect</text>
 </a>
@@ -382,7 +382,7 @@
 <!-- Node38 -->
 <g id="Node000038" class="node">
 <title>Node38</title>
-<g id="a_Node000038"><a xlink:href="class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" target="_top" xlink:title=" ">
+<g id="a_Node000038"><a xlink:href="class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" target="_top" xlink:title="Получает текущее значение частоты зондирующего сигнала на подключенном генераторе">
 <polygon fill="white" stroke="#666666" points="1178,-328.19 1042.75,-328.19 1042.75,-308.19 1178,-308.19 1178,-328.19"/>
 <text text-anchor="middle" x="1110.38" y="-314.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_current_freq</text>
 </a>
@@ -400,7 +400,7 @@
 <!-- Node39 -->
 <g id="Node000039" class="node">
 <title>Node39</title>
-<g id="a_Node000039"><a xlink:href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" target="_top" xlink:title=" ">
+<g id="a_Node000039"><a xlink:href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" target="_top" xlink:title="Метод, осуществляющий проведение измерения и получение результатов измерения">
 <polygon fill="white" stroke="#666666" points="982.38,-328.19 879.38,-328.19 879.38,-308.19 982.38,-308.19 982.38,-328.19"/>
 <text text-anchor="middle" x="930.88" y="-314.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_data</text>
 </a>
@@ -472,7 +472,7 @@
 <!-- Node48 -->
 <g id="Node000048" class="node">
 <title>Node48</title>
-<g id="a_Node000048"><a xlink:href="class_device_set.html#a42484914aabe91a0d030557db440fab0" target="_top" xlink:title=" ">
+<g id="a_Node000048"><a xlink:href="class_device_set.html#a42484914aabe91a0d030557db440fab0" target="_top" xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="1161.12,-1402.19 1059.62,-1402.19 1059.62,-1370.19 1161.12,-1370.19 1161.12,-1402.19"/>
 <text text-anchor="start" x="1067.62" y="-1388.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::move_to</text>
 <text text-anchor="middle" x="1110.38" y="-1376.69" font-family="Helvetica,sans-Serif" font-size="10.00">_start_angle</text>
@@ -510,7 +510,7 @@
 <!-- Node50 -->
 <g id="Node000050" class="node">
 <title>Node50</title>
-<g id="a_Node000050"><a xlink:href="class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" target="_top" xlink:title=" ">
+<g id="a_Node000050"><a xlink:href="class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="1161.12,-960.19 1059.62,-960.19 1059.62,-928.19 1161.12,-928.19 1161.12,-960.19"/>
 <text text-anchor="start" x="1067.62" y="-946.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::move_to</text>
 <text text-anchor="middle" x="1110.38" y="-934.69" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>
@@ -656,7 +656,7 @@
 <!-- Node77 -->
 <g id="Node000077" class="node">
 <title>Node77</title>
-<g id="a_Node000077"><a xlink:href="class_device_set.html#af831c582c73b80720d69b771c422a7eb" target="_top" xlink:title=" ">
+<g id="a_Node000077"><a xlink:href="class_device_set.html#af831c582c73b80720d69b771c422a7eb" target="_top" xlink:title="Устанавливает требуемое значение угла у определённой оси ОПУ">
 <polygon fill="white" stroke="#666666" points="1164.12,-1528.19 1056.62,-1528.19 1056.62,-1508.19 1164.12,-1508.19 1164.12,-1528.19"/>
 <text text-anchor="middle" x="1110.38" y="-1514.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_angle</text>
 </a>
@@ -692,7 +692,7 @@
 <!-- Node79 -->
 <g id="Node000079" class="node">
 <title>Node79</title>
-<g id="a_Node000079"><a xlink:href="class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" target="_top" xlink:title=" ">
+<g id="a_Node000079"><a xlink:href="class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" target="_top" xlink:title="Устанавливает диапазон изменения угла на определённой оси ОПУ">
 <polygon fill="white" stroke="#666666" points="1164.12,-1452.19 1056.62,-1452.19 1056.62,-1420.19 1164.12,-1420.19 1164.12,-1452.19"/>
 <text text-anchor="start" x="1064.62" y="-1438.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_angle</text>
 <text text-anchor="middle" x="1110.38" y="-1426.69" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>
@@ -711,7 +711,7 @@
 <!-- Node80 -->
 <g id="Node000080" class="node">
 <title>Node80</title>
-<g id="a_Node000080"><a xlink:href="class_device_set.html#a230a59d041a46d28e1cc4dfaa0d9ab3d" target="_top" xlink:title=" ">
+<g id="a_Node000080"><a xlink:href="class_device_set.html#a230a59d041a46d28e1cc4dfaa0d9ab3d" target="_top" xlink:title="Устанавливает требуемое значение частоты зондирующего сигнала">
 <polygon fill="white" stroke="#666666" points="1160.38,-138.19 1060.38,-138.19 1060.38,-118.19 1160.38,-118.19 1160.38,-138.19"/>
 <text text-anchor="middle" x="1110.38" y="-124.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_freq</text>
 </a>
@@ -747,7 +747,7 @@
 <!-- Node82 -->
 <g id="Node000082" class="node">
 <title>Node82</title>
-<g id="a_Node000082"><a xlink:href="class_device_set.html#a81333bd867a092fbc16af707c6b25198" target="_top" xlink:title=" ">
+<g id="a_Node000082"><a xlink:href="class_device_set.html#a81333bd867a092fbc16af707c6b25198" target="_top" xlink:title="Устанавливает диапазон изменения частоты зондирующего сигнала">
 <polygon fill="white" stroke="#666666" points="1160.38,-910.19 1060.38,-910.19 1060.38,-878.19 1160.38,-878.19 1160.38,-910.19"/>
 <text text-anchor="start" x="1068.38" y="-896.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_freq</text>
 <text text-anchor="middle" x="1110.38" y="-884.69" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>
@@ -766,7 +766,7 @@
 <!-- Node83 -->
 <g id="Node000083" class="node">
 <title>Node83</title>
-<g id="a_Node000083"><a xlink:href="class_device_set.html#a905900391da22efd2f866843c81572d4" target="_top" xlink:title=" ">
+<g id="a_Node000083"><a xlink:href="class_device_set.html#a905900391da22efd2f866843c81572d4" target="_top" xlink:title="Переводит переключатели в заданные положения">
 <polygon fill="white" stroke="#666666" points="1161.88,-1314.19 1058.88,-1314.19 1058.88,-1294.19 1161.88,-1294.19 1161.88,-1314.19"/>
 <text text-anchor="middle" x="1110.38" y="-1300.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_path</text>
 </a>
@@ -802,7 +802,7 @@
 <!-- Node85 -->
 <g id="Node000085" class="node">
 <title>Node85</title>
-<g id="a_Node000085"><a xlink:href="class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379" target="_top" xlink:title=" ">
+<g id="a_Node000085"><a xlink:href="class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379" target="_top" xlink:title="Устанавливает требуемую мощность зондирующего порта">
 <polygon fill="white" stroke="#666666" points="1165.25,-62.19 1055.5,-62.19 1055.5,-42.19 1165.25,-42.19 1165.25,-62.19"/>
 <text text-anchor="middle" x="1110.38" y="-48.69" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_power</text>
 </a>

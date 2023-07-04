@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 1286;
 var viewHeight = 71;
-var sectionId = 'dynsection-4';
+var sectionId = 'dynsection-3';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-4';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#af831c582c73b80720d69b771c422a7eb" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#af831c582c73b80720d69b771c422a7eb" target="_top" xlink:title="Устанавливает требуемое значение угла у определённой оси ОПУ">
 <polygon fill="white" stroke="#666666" points="1132.25,-39.86 1024.75,-39.86 1024.75,-19.86 1132.25,-19.86 1132.25,-39.86"/>
 <text text-anchor="middle" x="1078.5" y="-26.36" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_angle</text>
 </a>

@@ -1,5 +1,5 @@
 <map id="DeviceSet::set_angle" name="DeviceSet::set_angle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,149,133"/>
+<area shape="rect" id="Node000001" title="Устанавливает требуемое значение угла у определённой оси ОПУ" alt="" coords="5,107,149,133"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="227,81,313,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,108,213,99,213,105,149,113"/>
 <area shape="rect" id="Node000007" href="$class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" title=" " alt="" coords="197,132,343,159"/>

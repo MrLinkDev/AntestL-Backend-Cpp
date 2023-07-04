@@ -1,5 +1,5 @@
 <map id="DeviceSet::move_to_start_angle" name="DeviceSet::move_to_start_angle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,103,141,145"/>
+<area shape="rect" id="Node000001" title="Устанавливает угловую точку, соответствующую началу диапазона." alt="" coords="5,103,141,145"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="215,81,301,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,111,200,101,201,106,142,116"/>
 <area shape="rect" id="Node000007" href="$class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0" title=" " alt="" coords="189,132,327,175"/>

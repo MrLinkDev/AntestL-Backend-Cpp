@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a81333bd867a092fbc16af707c6b25198" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a81333bd867a092fbc16af707c6b25198" target="_top" xlink:title="Устанавливает диапазон изменения частоты зондирующего сигнала">
 <polygon fill="white" stroke="#666666" points="251,-32 151,-32 151,0 251,0 251,-32"/>
 <text text-anchor="start" x="159" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_freq</text>
 <text text-anchor="middle" x="201" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>

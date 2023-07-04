@@ -201,7 +201,7 @@ var sectionId = 'dynsection-5';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_device_set.html#a9b806652a49bcc00d4fe635235c9596d" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_device_set.html#a9b806652a49bcc00d4fe635235c9596d" target="_top" xlink:title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения">
 <polygon fill="white" stroke="#666666" points="426.75,-20 305,-20 305,0 426.75,0 426.75,-20"/>
 <text text-anchor="middle" x="365.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::request_stop</text>
 </a>

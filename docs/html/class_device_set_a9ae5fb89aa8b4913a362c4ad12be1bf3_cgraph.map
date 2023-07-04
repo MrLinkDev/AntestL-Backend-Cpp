@@ -1,5 +1,5 @@
 <map id="DeviceSet::next_freq" name="DeviceSet::next_freq">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,146,32"/>
+<area shape="rect" id="Node000001" title="Переход к следующей частотной точке" alt="" coords="5,5,146,32"/>
 <area shape="rect" id="Node000002" href="$class_gen_device.html#a57adce7e8826e6ae5e6b1612e5f8f750" title=" " alt="" coords="194,5,338,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,16,179,16,179,21,146,21"/>
 </map>

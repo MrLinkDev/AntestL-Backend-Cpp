@@ -1,5 +1,5 @@
 <map id="DeviceSet::configure" name="DeviceSet::configure">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,145,108"/>
+<area shape="rect" id="Node000001" title="Настраивает ВАЦ для требуемого измерения" alt="" coords="5,81,145,108"/>
 <area shape="rect" id="Node000002" href="$class_vna_device.html#a3260fe2b5052c977d9fefc9847dd8dc6" title=" " alt="" coords="201,5,344,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,78,192,42,210,35,212,40,194,46,107,83"/>
 <area shape="rect" id="Node000003" href="$class_vna_device.html#ac5d1a3a53f046c6839905400d6c3e0b7" title=" " alt="" coords="198,56,347,83"/>

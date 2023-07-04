@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title="Метод, позволяющий осуществить подключение к устройству.">
 <polygon fill="white" stroke="#666666" points="1117.25,-39.86 1017.25,-39.86 1017.25,-19.86 1117.25,-19.86 1117.25,-39.86"/>
 <text text-anchor="middle" x="1067.25" y="-26.36" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::connect</text>
 </a>

@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a6241d8b37639241e2a370c1f7d533995" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a6241d8b37639241e2a370c1f7d533995" target="_top" xlink:title="Отключает все устройства и уничтожает созданные объекты">
 <polygon fill="white" stroke="#666666" points="300.5,-115 187.75,-115 187.75,-95 300.5,-95 300.5,-115"/>
 <text text-anchor="middle" x="244.12" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::disconnect</text>
 </a>

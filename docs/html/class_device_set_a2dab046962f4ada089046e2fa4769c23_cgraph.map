@@ -1,5 +1,5 @@
 <map id="DeviceSet::connect" name="DeviceSet::connect">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,139,108"/>
+<area shape="rect" id="Node000001" title="Метод, позволяющий осуществить подключение к устройству." alt="" coords="5,81,139,108"/>
 <area shape="rect" id="Node000002" href="$class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" title=" " alt="" coords="188,5,356,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,78,186,42,206,35,208,40,188,46,103,83"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title="Метод, возвращающий значение флага connected." alt="" coords="187,56,357,83"/>

@@ -84,7 +84,7 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="device__set_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="device__set_8hpp.html" target="_top" xlink:title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса...">
 <polygon fill="white" stroke="#666666" points="363.75,-300 248,-300 248,-280 363.75,-280 363.75,-300"/>
 <text text-anchor="middle" x="305.88" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">devices/device_set.hpp</text>
 </a>

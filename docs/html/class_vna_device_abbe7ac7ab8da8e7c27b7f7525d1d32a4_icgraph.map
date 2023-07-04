@@ -1,6 +1,6 @@
 <map id="VnaDevice::get_switch_module_count" name="VnaDevice::get_switch_module_count">
 <area shape="rect" id="Node000001" title=" " alt="" coords="1567,28,1719,70"/>
-<area shape="rect" id="Node000002" href="$class_device_set.html#aeeb8d224788fe0663898a10aad363832" title=" " alt="" coords="1366,28,1519,70"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#aeeb8d224788fe0663898a10aad363832" title="Метод позволяет получить число переключателей, подключенных к ВАЦ." alt="" coords="1366,28,1519,70"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1552,52,1520,52,1520,46,1552,46"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5" title=" " alt="" coords="1128,36,1318,62"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1351,52,1318,52,1318,46,1351,46"/>

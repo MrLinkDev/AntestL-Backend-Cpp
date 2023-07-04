@@ -1,6 +1,6 @@
 <map id="DeviceSet::get_current_angles" name="DeviceSet::get_current_angles">
-<area shape="rect" id="Node000001" title=" " alt="" coords="428,5,580,48"/>
-<area shape="rect" id="Node000002" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title=" " alt="" coords="243,13,380,40"/>
+<area shape="rect" id="Node000001" title="Получает список углов, на которые развёрнуты оси ОПУ" alt="" coords="428,5,580,48"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title="Метод, осуществляющий проведение измерения и получение результатов измерения" alt="" coords="243,13,380,40"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,29,380,29,380,24,413,24"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" title=" " alt="" coords="5,13,195,40"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,29,195,29,195,24,228,24"/>

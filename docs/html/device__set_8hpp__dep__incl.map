@@ -1,5 +1,5 @@
 <map id="src/devices/device_set.hpp" name="src/devices/device_set.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="87,5,213,48"/>
+<area shape="rect" id="Node000001" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="87,5,213,48"/>
 <area shape="rect" id="Node000002" href="$device__set_8cpp.html" title=" " alt="" coords="5,96,132,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,61,89,98,85,94,119,57"/>
 <area shape="rect" id="Node000003" href="$task__manager_8hpp.html" title=" " alt="" coords="156,104,306,131"/>

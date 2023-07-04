@@ -1,16 +1,16 @@
 <map id="DeviceSet::get_data" name="DeviceSet::get_data">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,427,143,453"/>
+<area shape="rect" id="Node000001" title="Метод, осуществляющий проведение измерения и получение результатов измерения" alt="" coords="5,427,143,453"/>
 <area shape="rect" id="Node000002" href="$class_vna_device.html#a305e9719412a43677b2d660c507c20c0" title=" " alt="" coords="198,64,367,91"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,426,78,367,95,279,109,231,129,184,156,140,189,101,193,97,197,101,193,105,160,143,134,186,114,233,100,281,83,367,78,426"/>
-<area shape="rect" id="Node000003" href="$class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" title=" " alt="" coords="206,115,359,157"/>
+<area shape="rect" id="Node000003" href="$class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" title="Получает список углов, на которые развёрнуты оси ОПУ" alt="" coords="206,115,359,157"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="78,425,117,331,149,269,189,210,211,186,236,165,239,169,215,190,193,214,154,272,121,333,83,427"/>
-<area shape="rect" id="Node000007" href="$class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" title=" " alt="" coords="192,224,373,251"/>
+<area shape="rect" id="Node000007" href="$class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" title="Получает текущее значение частоты зондирующего сигнала на подключенном генераторе" alt="" coords="192,224,373,251"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="79,425,94,393,117,351,149,306,189,267,210,255,212,259,192,271,153,310,122,354,98,396,83,427"/>
 <area shape="rect" id="Node000010" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="472,275,557,301"/>
 <area shape="poly" id="edge21_Node000001_Node000010" title=" " alt="" coords="81,425,121,367,152,336,189,311,223,297,258,287,330,276,399,274,457,278,457,283,399,280,331,281,259,292,225,302,192,316,156,340,125,371,85,428"/>
 <area shape="rect" id="Node000015" href="$class_vna_device.html#a57dfdf98bf3ce296b5d71672d98e6c2d" title=" " alt="" coords="212,325,353,352"/>
 <area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="91,424,134,393,190,362,207,355,209,360,192,366,137,397,94,428"/>
-<area shape="rect" id="Node000016" href="$class_device_set.html#a1f38931a5bc51dd54a661412cca9959c" title=" " alt="" coords="204,376,361,403"/>
+<area shape="rect" id="Node000016" href="$class_device_set.html#a1f38931a5bc51dd54a661412cca9959c" title="Получает вектор частотных точек" alt="" coords="204,376,361,403"/>
 <area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="131,423,210,404,211,409,133,429"/>
 <area shape="rect" id="Node000020" href="$class_vna_device.html#ae729cfabb9f5e9fc856e63351090bf8b" title=" " alt="" coords="191,427,374,453"/>
 <area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="143,437,176,437,176,443,143,443"/>

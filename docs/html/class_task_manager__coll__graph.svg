@@ -131,7 +131,7 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html" target="_top" xlink:title="Класс набора устройств, в котором реализованы методы взаимодействия между устройствами">
 <polygon fill="white" stroke="none" points="292.5,-1028 166.5,-1028 166.5,-624 292.5,-624 292.5,-1028"/>
 <text text-anchor="start" x="207.75" y="-1014.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet</text>
 <text text-anchor="start" x="172" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

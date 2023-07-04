@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title="Метод, позволяющий осуществить подключение к устройству.">
 <polygon fill="white" stroke="#666666" points="1127.38,-70 1027.38,-70 1027.38,-50 1127.38,-50 1127.38,-70"/>
 <text text-anchor="middle" x="1077.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::connect</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" target="_top" xlink:title="Получает список углов, на которые развёрнуты оси ОПУ">
 <polygon fill="white" stroke="#666666" points="1134.5,-32 1020.25,-32 1020.25,0 1134.5,0 1134.5,-32"/>
 <text text-anchor="start" x="1028.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_current</text>
 <text text-anchor="middle" x="1077.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_angles</text>
@@ -203,7 +203,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" target="_top" xlink:title="Метод, осуществляющий проведение измерения и получение результатов измерения">
 <polygon fill="white" stroke="#666666" points="966.25,-26 863.25,-26 863.25,-6 966.25,-6 966.25,-26"/>
 <text text-anchor="middle" x="914.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_data</text>
 </a>

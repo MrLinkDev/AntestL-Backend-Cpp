@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#aeeb8d224788fe0663898a10aad363832" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#aeeb8d224788fe0663898a10aad363832" target="_top" xlink:title="Метод позволяет получить число переключателей, подключенных к ВАЦ.">
 <polygon fill="white" stroke="#666666" points="293,-127 178,-127 178,-95 293,-95 293,-127"/>
 <text text-anchor="start" x="186" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_vna</text>
 <text text-anchor="middle" x="235.5" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">_switch_module_count</text>
@@ -57,7 +57,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_device_set.html#a905900391da22efd2f866843c81572d4" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_device_set.html#a905900391da22efd2f866843c81572d4" target="_top" xlink:title="Переводит переключатели в заданные положения">
 <polygon fill="white" stroke="#666666" points="287,-39 184,-39 184,-19 287,-19 287,-39"/>
 <text text-anchor="middle" x="235.5" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_path</text>
 </a>

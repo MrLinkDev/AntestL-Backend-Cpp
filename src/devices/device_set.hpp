@@ -1,3 +1,12 @@
+/**
+ * \file
+ * \brief Заголовочный файл, содержащий в себе класс DeviceSet и набор
+ * констант, необходимых для данного класса.
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023
+ */
+
 #ifndef ANTESTL_BACKEND_DEVICE_SET_HPP
 #define ANTESTL_BACKEND_DEVICE_SET_HPP
 
@@ -9,26 +18,46 @@
 #include "gen/keysight_gen.hpp"
 #include "rbd/tesart_rbd.hpp"
 
+/// Тип устройства: ВАЦ
 #define DEVICE_VNA  0xD0
+/// Тип устройства: генератор
 #define DEVICE_GEN  0xD1
+/// Тип устройства: ОПУ
 #define DEVICE_RBD  0xD2
 
-#define DEFAULT_ANGLE       0.0
-
+/// Разделитель столбцов
 #define COLUMN_DELIMITER    ","
+/// Разделитель строк
 #define ROW_DELIMITER       ";"
 
+/**
+ * \brief Структура, которая является вектором iq с набором методов для работы с ней.
+ *
+ * Структура определена для хранения данных измерения, полученных от ВАЦ для порта.
+ */
 struct iq_port_list_t {
+    /// Вектор iq
     std::vector<iq> iq_port_list;
 
+    /// Конструктор, в котором на вход поступает объект iq, который добавляется в вектор iq
     iq_port_list_t(iq iq_item) {
         insert_item(std::move(iq_item));
     }
 
+    /**
+     * \brief Метод, добавляющий объект iq в вектор
+     *
+     * \param [in] iq_item Комплексная точка
+     */
     void insert_item(iq iq_item) {
         iq_port_list.push_back(std::move(iq_item));
     }
 
+    /**
+     * \brief Метод, который преобразует вектор iq в строку
+     *
+     * \return Строка, в которой содержатся данные измерения, для порта ВАЦ
+     */
     std::string to_string() {
         std::string result{};
 
@@ -40,24 +69,55 @@ struct iq_port_list_t {
     }
 };
 
+/**
+ * \brief Структура, которая содержит в себе данные, полученные при одиночном вызове
+ * метода get_data().
+ *
+ * Структура содержит в себе набор объектов для хранения данных, методы для добавления
+ * данных и их преобразования.
+ */
 struct data_t {
+    /// Вектор, который содержит в себе значение угла для полученных точек
     std::vector<std::string> angle_list{};
+    /// Вектор, который содержит в себе значение частоты для полученных данных
     std::vector<double> freq_list{};
 
+    /// Вектор, содержащий в себе полученные данные при измерении всех портов ВАЦ
     std::vector<iq_port_list_t> iq_data_list{};
 
+    /**
+     * \brief Добавляет значения углов в соответствующий вектор
+     *
+     * \param [in] angles Список углов, полученный при проведении измерения
+     */
     void insert_angles(std::string angles) {
         angle_list.push_back(std::move(angles));
     }
 
+    /**
+     * \brief Добавляет значение частоты в соответствующий вектор
+     *
+     * \param [in] freq Значение частоты, полученное при проведении измерения
+     */
     void insert_freq(double freq) {
         freq_list.push_back(freq);
     }
 
+    /**
+     * \brief Добавляет значения частот в соответствующий вектор
+     *
+     * \param [in] freq_list Значения частот, полученные при проведении измерения
+     */
     void insert_freq_list(std::vector<double> freq_list) {
         this->freq_list = std::move(freq_list);
     }
 
+    /**
+     * \brief Добавляет полученные после проведения измерения данные в
+     * соответстующий вектор
+     *
+     * \param [in] iq_port_data Полученные данные для одного порта ВАЦ
+     */
     void insert_iq_port_data(iq_port_data_t iq_port_data) {
         if (iq_data_list.empty()) {
             for (const iq &item : iq_port_data) {
@@ -70,6 +130,12 @@ struct data_t {
         }
     }
 
+    /**
+     * \brief Преобразует структуру в строку
+     *
+     * \return Строка, в которой содержатся данные, полученные при проведении измерения
+     * для всех портов ВАЦ.
+     */
     std::string to_string() {
         std::string result{};
 
@@ -92,16 +158,26 @@ struct data_t {
     }
 };
 
+/**
+ * \brief Класс набора устройств, в котором реализованы методы взаимодействия
+ * между устройствами
+ */
 class DeviceSet {
+    /// Указатель на объект ВАЦ
     VnaDevice *vna = nullptr;
+    /// Указатель на объект внешнего генератора
     GenDevice *ext_gen = nullptr;
+    /// Указатель на объект ОПУ
     RbdDevice *rbd = nullptr;
 
+    /// Тип измерения. По-умолчанию выбрано измерение коэффициента передачи
     int meas_type = MEAS_TRANSITION;
+    /// Флаг, показывающий, используется ли внешний генератор
     bool using_ext_gen = false;
 
+    /// Флаг, показывающий, сконфигурированы ли трассы заранее
     bool traces_configured = false;
-
+    /// Флаг, показывающий, был ли получен запрос на остановку измерений
     bool stop_requested = false;
 
 public:

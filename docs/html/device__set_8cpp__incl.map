@@ -1,6 +1,6 @@
 <map id="src/devices/device_set.cpp" name="src/devices/device_set.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="420,5,547,48"/>
-<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title=" " alt="" coords="385,96,492,123"/>
+<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="385,96,492,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="474,50,455,84,450,81,470,47"/>
 <area shape="rect" id="Node000023" href="$demo__rdb_8hpp.html" title=" " alt="" coords="773,171,898,197"/>
 <area shape="poly" id="edge30_Node000001_Node000023" title=" " alt="" coords="531,46,795,162,793,167,529,51"/>

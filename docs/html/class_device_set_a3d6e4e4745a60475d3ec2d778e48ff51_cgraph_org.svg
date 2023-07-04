@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Получает список углов, на которые развёрнуты оси ОПУ">
 <polygon fill="#999999" stroke="#666666" points="114.25,-64 0,-64 0,-32 114.25,-32 114.25,-64"/>
 <text text-anchor="start" x="8" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_current</text>
 <text text-anchor="middle" x="57.12" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">_angles</text>

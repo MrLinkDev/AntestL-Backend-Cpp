@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a6266fcc96c0db2fb38295b742216016b" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a6266fcc96c0db2fb38295b742216016b" target="_top" xlink:title="Переход к предыдущей частотной точке">
 <polygon fill="white" stroke="#666666" points="103.75,-20 0,-20 0,0 103.75,0 103.75,-20"/>
 <text text-anchor="middle" x="51.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::prev_freq</text>
 </a>

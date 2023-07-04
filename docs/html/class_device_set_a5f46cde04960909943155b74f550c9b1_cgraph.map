@@ -1,5 +1,5 @@
 <map id="DeviceSet::prev_angle" name="DeviceSet::prev_angle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,154,32"/>
+<area shape="rect" id="Node000001" title="Переход к предыдущей угловой точке" alt="" coords="5,5,154,32"/>
 <area shape="rect" id="Node000002" href="$class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d" title=" " alt="" coords="202,5,353,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,16,186,16,186,21,154,21"/>
 </map>

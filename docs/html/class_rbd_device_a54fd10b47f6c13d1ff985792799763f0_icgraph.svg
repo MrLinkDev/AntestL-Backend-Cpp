@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 1250;
 var viewHeight = 94;
-var sectionId = 'dynsection-8';
+var sectionId = 'dynsection-7';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -67,7 +67,7 @@ var sectionId = 'dynsection-8';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a42484914aabe91a0d030557db440fab0" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a42484914aabe91a0d030557db440fab0" target="_top" xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="1102.25,-64 1000.75,-64 1000.75,-32 1102.25,-32 1102.25,-64"/>
 <text text-anchor="start" x="1008.75" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::move_to</text>
 <text text-anchor="middle" x="1051.5" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_angle</text>

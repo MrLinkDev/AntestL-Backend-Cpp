@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 1294;
 var viewHeight = 71;
-var sectionId = 'dynsection-12';
+var sectionId = 'dynsection-11';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -67,7 +67,7 @@ var sectionId = 'dynsection-12';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#aeeb8d224788fe0663898a10aad363832" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#aeeb8d224788fe0663898a10aad363832" target="_top" xlink:title="Метод позволяет получить число переключателей, подключенных к ВАЦ.">
 <polygon fill="white" stroke="#666666" points="1135.25,-45.86 1020.25,-45.86 1020.25,-13.86 1135.25,-13.86 1135.25,-45.86"/>
 <text text-anchor="start" x="1028.25" y="-32.36" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_vna</text>
 <text text-anchor="middle" x="1077.75" y="-20.36" font-family="Helvetica,sans-Serif" font-size="10.00">_switch_module_count</text>

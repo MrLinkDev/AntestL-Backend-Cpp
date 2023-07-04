@@ -57,7 +57,7 @@ var sectionId = 'dynsection-40';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Сбрасывает флаг stop_request (присваивает значение false)">
 <polygon fill="#999999" stroke="#666666" points="778.5,-32 667.25,-32 667.25,0 778.5,0 778.5,-32"/>
 <text text-anchor="start" x="675.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::reset_stop</text>
 <text text-anchor="middle" x="722.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_request</text>

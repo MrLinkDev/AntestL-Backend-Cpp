@@ -302,7 +302,7 @@ var sectionId = 'dynsection-26';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title="Метод, позволяющий осуществить подключение к устройству.">
 <polygon fill="white" stroke="#666666" points="936,-695 836,-695 836,-675 936,-675 936,-695"/>
 <text text-anchor="middle" x="886" y="-681.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::connect</text>
 </a>
@@ -392,7 +392,7 @@ var sectionId = 'dynsection-26';
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="class_device_set.html#a6241d8b37639241e2a370c1f7d533995" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="class_device_set.html#a6241d8b37639241e2a370c1f7d533995" target="_top" xlink:title="Отключает все устройства и уничтожает созданные объекты">
 <polygon fill="white" stroke="#666666" points="942.38,-353 829.62,-353 829.62,-333 942.38,-333 942.38,-353"/>
 <text text-anchor="middle" x="886" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::disconnect</text>
 </a>
@@ -419,7 +419,7 @@ var sectionId = 'dynsection-26';
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="class_device_set.html#a42484914aabe91a0d030557db440fab0" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="class_device_set.html#a42484914aabe91a0d030557db440fab0" target="_top" xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="936.75,-108 835.25,-108 835.25,-76 936.75,-76 936.75,-108"/>
 <text text-anchor="start" x="843.25" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::move_to</text>
 <text text-anchor="middle" x="886" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_angle</text>
@@ -438,7 +438,7 @@ var sectionId = 'dynsection-26';
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" target="_top" xlink:title=" ">
+<g id="a_Node000018"><a xlink:href="class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" target="_top" xlink:title="Устанавливает диапазон изменения угла на определённой оси ОПУ">
 <polygon fill="white" stroke="#666666" points="939.75,-201 832.25,-201 832.25,-169 939.75,-169 939.75,-201"/>
 <text text-anchor="start" x="840.25" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_angle</text>
 <text text-anchor="middle" x="886" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>
@@ -522,7 +522,7 @@ var sectionId = 'dynsection-26';
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="class_device_set.html#af831c582c73b80720d69b771c422a7eb" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="class_device_set.html#af831c582c73b80720d69b771c422a7eb" target="_top" xlink:title="Устанавливает требуемое значение угла у определённой оси ОПУ">
 <polygon fill="white" stroke="#666666" points="939.75,-505 832.25,-505 832.25,-485 939.75,-485 939.75,-505"/>
 <text text-anchor="middle" x="886" y="-491.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_angle</text>
 </a>
@@ -576,7 +576,7 @@ var sectionId = 'dynsection-26';
 <!-- Node24 -->
 <g id="Node000024" class="node">
 <title>Node24</title>
-<g id="a_Node000024"><a xlink:href="class_device_set.html#aeeb8d224788fe0663898a10aad363832" target="_top" xlink:title=" ">
+<g id="a_Node000024"><a xlink:href="class_device_set.html#aeeb8d224788fe0663898a10aad363832" target="_top" xlink:title="Метод позволяет получить число переключателей, подключенных к ВАЦ.">
 <polygon fill="white" stroke="#666666" points="943.5,-745 828.5,-745 828.5,-713 943.5,-713 943.5,-745"/>
 <text text-anchor="start" x="836.5" y="-731.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_vna</text>
 <text text-anchor="middle" x="886" y="-719.5" font-family="Helvetica,sans-Serif" font-size="10.00">_switch_module_count</text>
@@ -595,7 +595,7 @@ var sectionId = 'dynsection-26';
 <!-- Node26 -->
 <g id="Node000026" class="node">
 <title>Node26</title>
-<g id="a_Node000026"><a xlink:href="class_device_set.html#a905900391da22efd2f866843c81572d4" target="_top" xlink:title=" ">
+<g id="a_Node000026"><a xlink:href="class_device_set.html#a905900391da22efd2f866843c81572d4" target="_top" xlink:title="Переводит переключатели в заданные положения">
 <polygon fill="white" stroke="#666666" points="937.5,-657 834.5,-657 834.5,-637 937.5,-637 937.5,-657"/>
 <text text-anchor="middle" x="886" y="-643.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_path</text>
 </a>
@@ -724,7 +724,7 @@ var sectionId = 'dynsection-26';
 <!-- Node40 -->
 <g id="Node000040" class="node">
 <title>Node40</title>
-<g id="a_Node000040"><a xlink:href="class_device_set.html#adee7ff2a8a80e6ddf44274d6c2828a2c" target="_top" xlink:title=" ">
+<g id="a_Node000040"><a xlink:href="class_device_set.html#adee7ff2a8a80e6ddf44274d6c2828a2c" target="_top" xlink:title="Сбрасывает флаг stop_request (присваивает значение false)">
 <polygon fill="white" stroke="#666666" points="584.5,-289 473.25,-289 473.25,-257 584.5,-257 584.5,-289"/>
 <text text-anchor="start" x="481.25" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::reset_stop</text>
 <text text-anchor="middle" x="528.88" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">_request</text>
@@ -770,7 +770,7 @@ var sectionId = 'dynsection-26';
 <!-- Node31 -->
 <g id="Node000031" class="node">
 <title>Node31</title>
-<g id="a_Node000031"><a xlink:href="class_device_set.html#a548166665d062dc3a5a468ca184d8e08" target="_top" xlink:title=" ">
+<g id="a_Node000031"><a xlink:href="class_device_set.html#a548166665d062dc3a5a468ca184d8e08" target="_top" xlink:title="Метод позволяет проверить, используется ли внешний генератор">
 <polygon fill="white" stroke="#666666" points="579.62,-239 478.12,-239 478.12,-207 579.62,-207 579.62,-239"/>
 <text text-anchor="start" x="486.12" y="-225.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::is_using</text>
 <text text-anchor="middle" x="528.88" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ext_gen</text>
@@ -789,7 +789,7 @@ var sectionId = 'dynsection-26';
 <!-- Node32 -->
 <g id="Node000032" class="node">
 <title>Node32</title>
-<g id="a_Node000032"><a xlink:href="class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" target="_top" xlink:title=" ">
+<g id="a_Node000032"><a xlink:href="class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="579.62,-189 478.12,-189 478.12,-157 579.62,-157 579.62,-189"/>
 <text text-anchor="start" x="486.12" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::move_to</text>
 <text text-anchor="middle" x="528.88" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>
@@ -881,7 +881,7 @@ var sectionId = 'dynsection-26';
 <!-- Node35 -->
 <g id="Node000035" class="node">
 <title>Node35</title>
-<g id="a_Node000035"><a xlink:href="class_device_set.html#a79dae996c60d5844ec3bf2da84f8c164" target="_top" xlink:title=" ">
+<g id="a_Node000035"><a xlink:href="class_device_set.html#a79dae996c60d5844ec3bf2da84f8c164" target="_top" xlink:title="Переход к следующей угловой точке">
 <polygon fill="white" stroke="#666666" points="773,-61 660.25,-61 660.25,-41 773,-41 773,-61"/>
 <text text-anchor="middle" x="716.62" y="-47.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::next_angle</text>
 </a>
@@ -917,7 +917,7 @@ var sectionId = 'dynsection-26';
 <!-- Node38 -->
 <g id="Node000038" class="node">
 <title>Node38</title>
-<g id="a_Node000038"><a xlink:href="class_device_set.html#a9ae5fb89aa8b4913a362c4ad12be1bf3" target="_top" xlink:title=" ">
+<g id="a_Node000038"><a xlink:href="class_device_set.html#a9ae5fb89aa8b4913a362c4ad12be1bf3" target="_top" xlink:title="Переход к следующей частотной точке">
 <polygon fill="white" stroke="#666666" points="769.25,-20 664,-20 664,0 769.25,0 769.25,-20"/>
 <text text-anchor="middle" x="716.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::next_freq</text>
 </a>

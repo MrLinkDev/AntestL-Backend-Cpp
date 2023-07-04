@@ -24,7 +24,7 @@
 <area shape="rect" id="Node000007" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="649,157,783,184"/>
 <area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="541,106,635,143,656,150,654,155,633,148,539,111"/>
 <area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="366,108,448,99,448,104,367,113"/>
-<area shape="rect" id="Node000012" href="$class_device_set.html#a9b806652a49bcc00d4fe635235c9596d" title=" " alt="" coords="424,357,586,384"/>
+<area shape="rect" id="Node000012" href="$class_device_set.html#a9b806652a49bcc00d4fe635235c9596d" title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения" alt="" coords="424,357,586,384"/>
 <area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="377,368,409,368,409,373,377,373"/>
 <area shape="poly" id="edge15_Node000013_Node000003" title=" " alt="" coords="349,292,374,277,413,240,446,197,490,120,494,123,450,200,417,243,378,281,351,296"/>
 </map>

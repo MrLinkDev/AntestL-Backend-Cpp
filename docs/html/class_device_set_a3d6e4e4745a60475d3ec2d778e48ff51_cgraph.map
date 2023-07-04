@@ -1,5 +1,5 @@
 <map id="DeviceSet::get_current_angles" name="DeviceSet::get_current_angles">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,158,107"/>
+<area shape="rect" id="Node000001" title="Получает список углов, на которые развёрнуты оси ОПУ" alt="" coords="5,64,158,107"/>
 <area shape="rect" id="Node000002" href="$class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" title=" " alt="" coords="218,5,361,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,61,203,48,204,53,159,66"/>
 <area shape="rect" id="Node000003" href="$class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad" title=" " alt="" coords="221,72,358,99"/>

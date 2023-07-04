@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" target="_top" xlink:title="Устанавливает диапазон изменения угла на определённой оси ОПУ">
 <polygon fill="white" stroke="#666666" points="1108.25,-45.86 1000.75,-45.86 1000.75,-13.86 1108.25,-13.86 1108.25,-45.86"/>
 <text text-anchor="start" x="1008.75" y="-32.36" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_angle</text>
 <text text-anchor="middle" x="1054.5" y="-20.36" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>

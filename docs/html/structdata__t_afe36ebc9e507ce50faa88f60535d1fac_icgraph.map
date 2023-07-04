@@ -1,5 +1,5 @@
 <map id="data_t::to_string" name="data_t::to_string">
-<area shape="rect" id="Node000001" title=" " alt="" coords="243,29,358,56"/>
+<area shape="rect" id="Node000001" title="Преобразует структуру в строку" alt="" coords="243,29,358,56"/>
 <area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="335,17,324,11,300,8,279,10,268,15,265,20,271,27,266,30,260,21,264,11,278,5,300,3,325,6,338,13"/>
 <area shape="rect" id="Node000002" href="$class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" title=" " alt="" coords="5,29,195,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,45,195,45,195,40,228,40"/>

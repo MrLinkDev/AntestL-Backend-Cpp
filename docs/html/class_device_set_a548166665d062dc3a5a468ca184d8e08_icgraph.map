@@ -1,5 +1,5 @@
 <map id="DeviceSet::is_using_ext_gen" name="DeviceSet::is_using_ext_gen">
-<area shape="rect" id="Node000001" title=" " alt="" coords="895,5,1030,48"/>
+<area shape="rect" id="Node000001" title="Метод позволяет проверить, используется ли внешний генератор" alt="" coords="895,5,1030,48"/>
 <area shape="rect" id="Node000002" href="$class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" title=" " alt="" coords="694,5,847,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="880,29,848,29,848,24,880,24"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4" title=" " alt="" coords="492,5,646,48"/>

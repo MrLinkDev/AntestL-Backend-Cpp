@@ -1,5 +1,5 @@
 <map id="DeviceSet::request_stop" name="DeviceSet::request_stop">
-<area shape="rect" id="Node000001" title=" " alt="" coords="521,31,684,57"/>
+<area shape="rect" id="Node000001" title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения" alt="" coords="521,31,684,57"/>
 <area shape="rect" id="Node000002" href="$class_task_manager.html#a601272b5c895a310aec3d430b19c6258" title=" " alt="" coords="291,31,473,57"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="506,47,474,47,474,41,506,41"/>
 <area shape="rect" id="Node000003" href="$main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" title=" " alt="" coords="109,5,237,32"/>

@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 1105;
 var viewHeight = 40;
-var sectionId = 'dynsection-8';
+var sectionId = 'dynsection-7';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-8';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a9ae5fb89aa8b4913a362c4ad12be1bf3" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a9ae5fb89aa8b4913a362c4ad12be1bf3" target="_top" xlink:title="Переход к следующей частотной точке">
 <polygon fill="white" stroke="#666666" points="952.75,-26 847.5,-26 847.5,-6 952.75,-6 952.75,-26"/>
 <text text-anchor="middle" x="900.12" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::next_freq</text>
 </a>

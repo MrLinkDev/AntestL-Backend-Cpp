@@ -99,6 +99,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
+<p>Класс набора устройств, в котором реализованы методы взаимодействия между устройствами  
+ <a href="class_device_set.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="device__set_8hpp_source.html">device_set.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф связей класса DeviceSet:</div>
@@ -111,72 +114,103 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 <tr class="memitem:af09412e17e4ab88a4fafa391e252c2fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#af09412e17e4ab88a4fafa391e252c2fa">DeviceSet</a> ()=default</td></tr>
 <tr class="separator:af09412e17e4ab88a4fafa391e252c2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dab046962f4ada089046e2fa4769c23"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23">connect</a> (int device_type, std::string device_model, const std::string &amp;device_address)</td></tr>
+<tr class="memdesc:a2dab046962f4ada089046e2fa4769c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, позволяющий осуществить подключение к устройству.  <br /></td></tr>
 <tr class="separator:a2dab046962f4ada089046e2fa4769c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6241d8b37639241e2a370c1f7d533995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a6241d8b37639241e2a370c1f7d533995">disconnect</a> ()</td></tr>
+<tr class="memdesc:a6241d8b37639241e2a370c1f7d533995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отключает все устройства и уничтожает созданные объекты  <br /></td></tr>
 <tr class="separator:a6241d8b37639241e2a370c1f7d533995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d62de2e486d260f500a81c0e39ec22a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a0d62de2e486d260f500a81c0e39ec22a">configure</a> (int <a class="el" href="class_device_set.html#a26ece9f59a3639d74b148c518abbd1aa">meas_type</a>, float rbw, int source_port, bool <a class="el" href="class_device_set.html#a284d3b982b2b61a79736ff3accd13a7b">using_ext_gen</a>)</td></tr>
+<tr class="memdesc:a0d62de2e486d260f500a81c0e39ec22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настраивает ВАЦ для требуемого измерения  <br /></td></tr>
 <tr class="separator:a0d62de2e486d260f500a81c0e39ec22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6bfe5b8dc269b2632221811a23a0379"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379">set_power</a> (float power)</td></tr>
+<tr class="memdesc:ad6bfe5b8dc269b2632221811a23a0379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает требуемую мощность зондирующего порта  <br /></td></tr>
 <tr class="separator:ad6bfe5b8dc269b2632221811a23a0379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230a59d041a46d28e1cc4dfaa0d9ab3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a230a59d041a46d28e1cc4dfaa0d9ab3d">set_freq</a> (double freq)</td></tr>
+<tr class="memdesc:a230a59d041a46d28e1cc4dfaa0d9ab3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает требуемое значение частоты зондирующего сигнала  <br /></td></tr>
 <tr class="separator:a230a59d041a46d28e1cc4dfaa0d9ab3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81333bd867a092fbc16af707c6b25198"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a81333bd867a092fbc16af707c6b25198">set_freq_range</a> (double start_freq, double stop_freq, int points)</td></tr>
+<tr class="memdesc:a81333bd867a092fbc16af707c6b25198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает диапазон изменения частоты зондирующего сигнала  <br /></td></tr>
 <tr class="separator:a81333bd867a092fbc16af707c6b25198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ae5fb89aa8b4913a362c4ad12be1bf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a9ae5fb89aa8b4913a362c4ad12be1bf3">next_freq</a> ()</td></tr>
+<tr class="memdesc:a9ae5fb89aa8b4913a362c4ad12be1bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к следующей частотной точке  <br /></td></tr>
 <tr class="separator:a9ae5fb89aa8b4913a362c4ad12be1bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6266fcc96c0db2fb38295b742216016b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a6266fcc96c0db2fb38295b742216016b">prev_freq</a> ()</td></tr>
+<tr class="memdesc:a6266fcc96c0db2fb38295b742216016b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к предыдущей частотной точке  <br /></td></tr>
 <tr class="separator:a6266fcc96c0db2fb38295b742216016b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b558cdb43f83e3948cd1154a15841ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad">move_to_start_freq</a> ()</td></tr>
+<tr class="memdesc:a6b558cdb43f83e3948cd1154a15841ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает частотную точку, соответствующую началу диапазона.  <br /></td></tr>
 <tr class="separator:a6b558cdb43f83e3948cd1154a15841ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3031b84c03d467918bb40cfcfb3a8c4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4">get_current_freq</a> ()</td></tr>
+<tr class="memdesc:ae3031b84c03d467918bb40cfcfb3a8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает текущее значение частоты зондирующего сигнала на подключенном генераторе  <br /></td></tr>
 <tr class="separator:ae3031b84c03d467918bb40cfcfb3a8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f38931a5bc51dd54a661412cca9959c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a1f38931a5bc51dd54a661412cca9959c">get_freq_list</a> ()</td></tr>
+<tr class="memdesc:a1f38931a5bc51dd54a661412cca9959c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает вектор частотных точек  <br /></td></tr>
 <tr class="separator:a1f38931a5bc51dd54a661412cca9959c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af831c582c73b80720d69b771c422a7eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#af831c582c73b80720d69b771c422a7eb">set_angle</a> (float angle, int axis_num)</td></tr>
+<tr class="memdesc:af831c582c73b80720d69b771c422a7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает требуемое значение угла у определённой оси ОПУ  <br /></td></tr>
 <tr class="separator:af831c582c73b80720d69b771c422a7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b37373d7b0a7c89cd57eca673df7fad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad">set_angle_range</a> (float start_angle, float stop_angle, int points, int axis_num)</td></tr>
+<tr class="memdesc:a9b37373d7b0a7c89cd57eca673df7fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает диапазон изменения угла на определённой оси ОПУ  <br /></td></tr>
 <tr class="separator:a9b37373d7b0a7c89cd57eca673df7fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79dae996c60d5844ec3bf2da84f8c164"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a79dae996c60d5844ec3bf2da84f8c164">next_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a79dae996c60d5844ec3bf2da84f8c164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к следующей угловой точке  <br /></td></tr>
 <tr class="separator:a79dae996c60d5844ec3bf2da84f8c164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f46cde04960909943155b74f550c9b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a5f46cde04960909943155b74f550c9b1">prev_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a5f46cde04960909943155b74f550c9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к предыдущей угловой точке  <br /></td></tr>
 <tr class="separator:a5f46cde04960909943155b74f550c9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42484914aabe91a0d030557db440fab0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a42484914aabe91a0d030557db440fab0">move_to_start_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a42484914aabe91a0d030557db440fab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает угловую точку, соответствующую началу диапазона.  <br /></td></tr>
 <tr class="separator:a42484914aabe91a0d030557db440fab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d6e4e4745a60475d3ec2d778e48ff51"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51">get_current_angles</a> ()</td></tr>
+<tr class="memdesc:a3d6e4e4745a60475d3ec2d778e48ff51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает список углов, на которые развёрнуты оси ОПУ  <br /></td></tr>
 <tr class="separator:a3d6e4e4745a60475d3ec2d778e48ff51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a905900391da22efd2f866843c81572d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a905900391da22efd2f866843c81572d4">set_path</a> (std::vector&lt; int &gt; path_list)</td></tr>
+<tr class="memdesc:a905900391da22efd2f866843c81572d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переводит переключатели в заданные положения  <br /></td></tr>
 <tr class="separator:a905900391da22efd2f866843c81572d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeb8d224788fe0663898a10aad363832"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#aeeb8d224788fe0663898a10aad363832">get_vna_switch_module_count</a> ()</td></tr>
+<tr class="memdesc:aeeb8d224788fe0663898a10aad363832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод позволяет получить число переключателей, подключенных к ВАЦ.  <br /></td></tr>
 <tr class="separator:aeeb8d224788fe0663898a10aad363832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548166665d062dc3a5a468ca184d8e08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a548166665d062dc3a5a468ca184d8e08">is_using_ext_gen</a> () const</td></tr>
+<tr class="memdesc:a548166665d062dc3a5a468ca184d8e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод позволяет проверить, используется ли внешний генератор  <br /></td></tr>
 <tr class="separator:a548166665d062dc3a5a468ca184d8e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9efc5319ee177c97aef57f98469d0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdata__t.html">data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d">get_data</a> (std::vector&lt; int &gt; port_list)</td></tr>
+<tr class="memdesc:acd9efc5319ee177c97aef57f98469d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, осуществляющий проведение измерения и получение результатов измерения  <br /></td></tr>
 <tr class="separator:acd9efc5319ee177c97aef57f98469d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b806652a49bcc00d4fe635235c9596d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a9b806652a49bcc00d4fe635235c9596d">request_stop</a> ()</td></tr>
+<tr class="memdesc:a9b806652a49bcc00d4fe635235c9596d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения  <br /></td></tr>
 <tr class="separator:a9b806652a49bcc00d4fe635235c9596d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adee7ff2a8a80e6ddf44274d6c2828a2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#adee7ff2a8a80e6ddf44274d6c2828a2c">reset_stop_request</a> ()</td></tr>
+<tr class="memdesc:adee7ff2a8a80e6ddf44274d6c2828a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбрасывает флаг stop_request (присваивает значение false)  <br /></td></tr>
 <tr class="separator:adee7ff2a8a80e6ddf44274d6c2828a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Закрытые данные</h2></td></tr>
 <tr class="memitem:ab8d3bf5800d90af2ee7a7019117b3d03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vna_device.html">VnaDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#ab8d3bf5800d90af2ee7a7019117b3d03">vna</a> = nullptr</td></tr>
+<tr class="memdesc:ab8d3bf5800d90af2ee7a7019117b3d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на объект ВАЦ  <br /></td></tr>
 <tr class="separator:ab8d3bf5800d90af2ee7a7019117b3d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac04a8cb055f0b3edde8bf199e4bb6437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gen_device.html">GenDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#ac04a8cb055f0b3edde8bf199e4bb6437">ext_gen</a> = nullptr</td></tr>
+<tr class="memdesc:ac04a8cb055f0b3edde8bf199e4bb6437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на объект внешнего генератора  <br /></td></tr>
 <tr class="separator:ac04a8cb055f0b3edde8bf199e4bb6437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9cefd1915f75f7908ac73c18ac764a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rbd_device.html">RbdDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#ad9cefd1915f75f7908ac73c18ac764a5">rbd</a> = nullptr</td></tr>
+<tr class="memdesc:ad9cefd1915f75f7908ac73c18ac764a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на объект ОПУ  <br /></td></tr>
 <tr class="separator:ad9cefd1915f75f7908ac73c18ac764a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ece9f59a3639d74b148c518abbd1aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a26ece9f59a3639d74b148c518abbd1aa">meas_type</a> = <a class="el" href="vna__device_8hpp.html#ae65e7254fa2af1ca920dcebd71c47195">MEAS_TRANSITION</a></td></tr>
+<tr class="memdesc:a26ece9f59a3639d74b148c518abbd1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип измерения. По-умолчанию выбрано измерение коэффициента передачи  <br /></td></tr>
 <tr class="separator:a26ece9f59a3639d74b148c518abbd1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a284d3b982b2b61a79736ff3accd13a7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a284d3b982b2b61a79736ff3accd13a7b">using_ext_gen</a> = false</td></tr>
+<tr class="memdesc:a284d3b982b2b61a79736ff3accd13a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, показывающий, используется ли внешний генератор  <br /></td></tr>
 <tr class="separator:a284d3b982b2b61a79736ff3accd13a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fcf48bfdbe73cb52ed7766d7bf323e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a0fcf48bfdbe73cb52ed7766d7bf323e5">traces_configured</a> = false</td></tr>
+<tr class="memdesc:a0fcf48bfdbe73cb52ed7766d7bf323e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, показывающий, сконфигурированы ли трассы заранее  <br /></td></tr>
 <tr class="separator:a0fcf48bfdbe73cb52ed7766d7bf323e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d2c58e74adf9b2d791c7c8895c235f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_set.html#a8d2c58e74adf9b2d791c7c8895c235f3">stop_requested</a> = false</td></tr>
+<tr class="memdesc:a8d2c58e74adf9b2d791c7c8895c235f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, показывающий, был ли получен запрос на остановку измерений  <br /></td></tr>
 <tr class="separator:a8d2c58e74adf9b2d791c7c8895c235f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00095">95</a></p>
+<div class="textblock"><p>Класс набора устройств, в котором реализованы методы взаимодействия между устройствами </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00165">165</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="af09412e17e4ab88a4fafa391e252c2fa" name="af09412e17e4ab88a4fafa391e252c2fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af09412e17e4ab88a4fafa391e252c2fa">&#9670;&#160;</a></span>DeviceSet()</h2>
@@ -236,7 +270,27 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00004">4</a></p>
+<p>Метод, позволяющий осуществить подключение к устройству. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_type</td><td>Тип устройства </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_model</td><td>Модель устройства </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_address</td><td>Адрес устройства</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если устройство было подключено, то возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"><span class="keywordflow">if</span> (device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>)) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Успешно&quot;</span> std::endl;</div>
+<div class="line">} <span class="keywordflow">else</span> {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Ошибка&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    exit(1);</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_device_set_html"><div class="ttname"><a href="class_device_set.html">DeviceSet</a></div><div class="ttdoc">Класс набора устройств, в котором реализованы методы взаимодействия между устройствами</div><div class="ttdef"><b>Definition</b> <a href="device__set_8hpp_source.html#l00165">device_set.hpp:165</a></div></div>
+<div class="ttc" id="adevice__set_8hpp_html_a40324d77d4726ac581cf86348a013518"><div class="ttname"><a href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a></div><div class="ttdeci">#define DEVICE_VNA</div><div class="ttdoc">Тип устройства: ВАЦ</div><div class="ttdef"><b>Definition</b> <a href="device__set_8hpp_source.html#l00022">device_set.hpp:22</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00024">24</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -265,7 +319,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00047">47</a></p>
+<p>Отключает все устройства и уничтожает созданные объекты </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00070">70</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -312,7 +368,24 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00053">53</a></p>
+<p>Настраивает ВАЦ для требуемого измерения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">meas_type</td><td>Тип измерения </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rbw</td><td>Полоса разрешающего фильтра </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source_port</td><td>Зондирующий порт </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">using_ext_gen</td><td>Флаг, показывающий, используется ли внешний генератор</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ВАЦ был сконфигурирован, то возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.configure(<a class="code hl_define" href="vna__device_8hpp.html#ae65e7254fa2af1ca920dcebd71c47195">MEAS_TRANSITION</a>, 1e3, 1, <span class="keyword">false</span>);</div>
+<div class="ttc" id="avna__device_8hpp_html_ae65e7254fa2af1ca920dcebd71c47195"><div class="ttname"><a href="vna__device_8hpp.html#ae65e7254fa2af1ca920dcebd71c47195">MEAS_TRANSITION</a></div><div class="ttdeci">#define MEAS_TRANSITION</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00020">vna_device.hpp:20</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00094">94</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -342,7 +415,20 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00076">76</a></p>
+<p>Устанавливает требуемую мощность зондирующего порта </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">power</td><td>Требуемое значение мощности</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если требуемое значение мощности было установлено, то возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_power(-20.0f);</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00133">133</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -372,7 +458,20 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00098">98</a></p>
+<p>Устанавливает требуемое значение частоты зондирующего сигнала </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>Требуемая частота зондирующего сигнала</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если требуемое значение частоты было установлено, то возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_freq(1e9);</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00171">171</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -418,7 +517,22 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00120">120</a></p>
+<p>Устанавливает диапазон изменения частоты зондирующего сигнала </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_freq</td><td>Начальное значение частоты </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop_freq</td><td>Конечное значение частоты </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>Количество частотных точек</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если диапазон был установлен успешно, то возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00211">211</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -447,7 +561,19 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00142">142</a></p>
+<p>Переход к следующей частотной точке </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Если следующая частотная точка находится в пределах границ изменения, то возвращает FREQ_MOVE_OK. Если точка находится на границе, то возвращает FREQ_MOVE_BOUND.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (device_set.next_freq() != <a class="code hl_define" href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая частотная точка&quot;</span> std::endl;</div>
+<div class="line">}</div>
+<div class="ttc" id="agen__device_8hpp_html_aca160815bbdaf96073a27237eb0328a4"><div class="ttname"><a href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a></div><div class="ttdeci">#define FREQ_MOVE_BOUND</div><div class="ttdef"><b>Definition</b> <a href="gen__device_8hpp_source.html#l00019">gen_device.hpp:19</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00252">252</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -476,7 +602,18 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00150">150</a></p>
+<p>Переход к предыдущей частотной точке </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Если предыдущая частотная точка находится в пределах границ изменения, то возвращает FREQ_MOVE_OK. Если точка находится на границе, то возвращает FREQ_MOVE_BOUND.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (device_set.prev_freq() != <a class="code hl_define" href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана предыдущая частотная точка&quot;</span> std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00279">279</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -500,7 +637,22 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00158">158</a></p>
+<p>Устанавливает частотную точку, соответствующую началу диапазона. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Если действие прошло успешно, возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (device_set.next_freq() != <a class="code hl_define" href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая частотная точка&quot;</span> std::endl;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (device_set.move_to_start_freq()) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана частотная точка в начале диапазона&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00310">310</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -529,7 +681,20 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00171">171</a></p>
+<p>Получает текущее значение частоты зондирующего сигнала на подключенном генераторе </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение частоты зондирующего сигнала генератора</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a0607827a9b1169bf2dee1e8e7ede6c04">DEVICE_GEN</a>, <span class="stringliteral">&quot;keysight_gen&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (device_set.next_freq() != <a class="code hl_define" href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая частотная точка. f = &quot;</span> &lt;&lt; device_set.get_current_freq()) &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="ttc" id="adevice__set_8hpp_html_a0607827a9b1169bf2dee1e8e7ede6c04"><div class="ttname"><a href="device__set_8hpp.html#a0607827a9b1169bf2dee1e8e7ede6c04">DEVICE_GEN</a></div><div class="ttdeci">#define DEVICE_GEN</div><div class="ttdoc">Тип устройства: генератор</div><div class="ttdef"><b>Definition</b> <a href="device__set_8hpp_source.html#l00024">device_set.hpp:24</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00341">341</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -558,7 +723,20 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00184">184</a></p>
+<p>Получает вектор частотных точек </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор частотных точек</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
+<div class="line"> </div>
+<div class="line">std::vector&lt;double&gt; freq_list = device_set.get_freq_list();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">double</span> item: freq_list) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;f = &quot;</span> &lt;&lt; item &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00373">373</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -598,7 +776,22 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00194">194</a></p>
+<p>Устанавливает требуемое значение угла у определённой оси ОПУ </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>Требуемое значение угла </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если установка угла прошла успешно, возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a6476c558737f0f68761a1b107bb749b6">DEVICE_RBD</a>, <span class="stringliteral">&quot;demo_rbd&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_angle(-30.0f, 0);</div>
+<div class="ttc" id="adevice__set_8hpp_html_a6476c558737f0f68761a1b107bb749b6"><div class="ttname"><a href="device__set_8hpp.html#a6476c558737f0f68761a1b107bb749b6">DEVICE_RBD</a></div><div class="ttdeci">#define DEVICE_RBD</div><div class="ttdoc">Тип устройства: ОПУ</div><div class="ttdef"><b>Definition</b> <a href="device__set_8hpp_source.html#l00026">device_set.hpp:26</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00400">400</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -650,7 +843,23 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00206">206</a></p>
+<p>Устанавливает диапазон изменения угла на определённой оси ОПУ </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_angle</td><td>Начальное значение диапазона </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop_angle</td><td>Конечное значение диапазона </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>Количество точек </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если установка диапазона прошла успешно, то возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a6476c558737f0f68761a1b107bb749b6">DEVICE_RBD</a>, <span class="stringliteral">&quot;demo_rbd&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_angle_range(-30.0f, 30.0f, 11, 0);</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00431">431</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -680,7 +889,25 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00218">218</a></p>
+<p>Переход к следующей угловой точке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если угловая точка находится в пределах диапазона изменения угла, то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе диапазона, то возвращает ANGLE_MOVE_BOUND.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a6476c558737f0f68761a1b107bb749b6">DEVICE_RBD</a>, <span class="stringliteral">&quot;demo_rbd&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_angle_range(-30.0f, 30.0f, 11, 0);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (device_set.next_angle(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая угловая точка&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="ttc" id="arbd__device_8hpp_html_a822eea0ea5aa0e7a7e966ee9ca1b04c5"><div class="ttname"><a href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a></div><div class="ttdeci">#define ANGLE_MOVE_BOUND</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00008">rbd_device.hpp:8</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00464">464</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -710,7 +937,24 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00226">226</a></p>
+<p>Переход к предыдущей угловой точке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если угловая точка находится в пределах диапазона изменения угла, то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе диапазона, то возвращает ANGLE_MOVE_BOUND.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a6476c558737f0f68761a1b107bb749b6">DEVICE_RBD</a>, <span class="stringliteral">&quot;demo_rbd&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_angle_range(-30.0f, 30.0f, 11, 0);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (device_set.prev_angle(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана предыдущая угловая точка&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00493">493</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -735,7 +979,28 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00234">234</a></p>
+<p>Устанавливает угловую точку, соответствующую началу диапазона. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если действие прошло успешно, возвращает true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a6476c558737f0f68761a1b107bb749b6">DEVICE_RBD</a>, <span class="stringliteral">&quot;demo_rbd&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_angle_range(-30.0f, 30.0f, 11, 0);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (device_set.next_angle(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая угловая точка&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (device_set.move_to_start_angle(0)) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана угловая точка в начале диапазона&quot;</span> &lt;&lt; endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00526">526</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -764,7 +1029,18 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00245">245</a></p>
+<p>Получает список углов, на которые развёрнуты оси ОПУ </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка, содержащая значения углов</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a6476c558737f0f68761a1b107bb749b6">DEVICE_RBD</a>, <span class="stringliteral">&quot;demo_rbd&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">device_set.set_angle_range(-30.0f, 30.0f, 11, 0);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (device_set.next_angle(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;angle = &quot;</span> &lt;&lt; device_set.get_current_angles() &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00554">554</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -794,7 +1070,16 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00261">261</a></p>
+<p>Переводит переключатели в заданные положения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path_list</td><td>Вектор положений переключателей</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если действие выполнено успешно, возвращает true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00580">580</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -823,7 +1108,17 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00273">273</a></p>
+<p>Метод позволяет получить число переключателей, подключенных к ВАЦ. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество модулей</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (device_set.get_vna_switch_module_count() &lt;= 0) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Переключатели не подключены к ВАЦ&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00609">609</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -852,7 +1147,17 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00281">281</a></p>
+<p>Метод позволяет проверить, используется ли внешний генератор </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Флаг, который показывает, используется ли внешний генератор</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (device_set.is_using_ext_gen()) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;f = &quot;</span> &lt;&lt; device_set.get_current_freq() std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00633">633</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -877,7 +1182,27 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00285">285</a></p>
+<p>Метод, осуществляющий проведение измерения и получение результатов измерения </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Перед использованием данного метода требуется осуществить подключение к нужным устройствам и произвести их настройку!</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_list</td><td>Список портов, для которых требуется провести измерение</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученные результаты измерений</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_device_set.html">DeviceSet</a> device_set();</div>
+<div class="line"> </div>
+<div class="line">device_set.connect(<a class="code hl_define" href="device__set_8hpp.html#a40324d77d4726ac581cf86348a013518">DEVICE_VNA</a>, <span class="stringliteral">&quot;m9807a&quot;</span>, <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">device_set.configure(<a class="code hl_define" href="vna__device_8hpp.html#ae65e7254fa2af1ca920dcebd71c47195">MEAS_TRANSITION</a>, 1e3, 1, <span class="keyword">false</span>);</div>
+<div class="line">device_set.set_power(0.0);</div>
+<div class="line">device_set.set_freq_range(1.2e9, 2.4e9, 101);</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_struct" href="structdata__t.html">data_t</a> acquired_data = device_set.get_data({2, 4, 5});   <span class="comment">// Сбор данных для второго, четвёртого и пятого портов</span></div>
+<div class="ttc" id="astructdata__t_html"><div class="ttname"><a href="structdata__t.html">data_t</a></div><div class="ttdoc">Структура, которая содержит в себе данные, полученные при одиночном вызове метода get_data().</div><div class="ttdef"><b>Definition</b> <a href="device__set_8hpp_source.html#l00079">device_set.hpp:79</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00661">661</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -906,7 +1231,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00409">409</a></p>
+<p>Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00788">788</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -930,7 +1257,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00413">413</a></p>
+<p>Сбрасывает флаг stop_request (присваивает значение false) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00795">795</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -960,7 +1289,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00096">96</a></p>
+<p>Указатель на объект ВАЦ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00167">167</a></p>
 
 </div>
 </div>
@@ -984,7 +1315,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00097">97</a></p>
+<p>Указатель на объект внешнего генератора </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00169">169</a></p>
 
 </div>
 </div>
@@ -1008,7 +1341,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00098">98</a></p>
+<p>Указатель на объект ОПУ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00171">171</a></p>
 
 </div>
 </div>
@@ -1032,7 +1367,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00100">100</a></p>
+<p>Тип измерения. По-умолчанию выбрано измерение коэффициента передачи </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00174">174</a></p>
 
 </div>
 </div>
@@ -1056,7 +1393,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00101">101</a></p>
+<p>Флаг, показывающий, используется ли внешний генератор </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00176">176</a></p>
 
 </div>
 </div>
@@ -1080,7 +1419,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00103">103</a></p>
+<p>Флаг, показывающий, сконфигурированы ли трассы заранее </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00179">179</a></p>
 
 </div>
 </div>
@@ -1104,7 +1445,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00105">105</a></p>
+<p>Флаг, показывающий, был ли получен запрос на остановку измерений </p>
+
+<p class="definition">См. определение в файле <a class="el" href="device__set_8hpp_source.html">device_set.hpp</a> строка <a class="el" href="device__set_8hpp_source.html#l00181">181</a></p>
 
 </div>
 </div>

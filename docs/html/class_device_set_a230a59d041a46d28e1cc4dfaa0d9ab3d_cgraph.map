@@ -1,5 +1,5 @@
 <map id="DeviceSet::set_freq" name="DeviceSet::set_freq">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,139,159"/>
+<area shape="rect" id="Node000001" title="Устанавливает требуемое значение частоты зондирующего сигнала" alt="" coords="5,132,139,159"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="213,81,298,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,129,198,108,199,113,124,134"/>
 <area shape="rect" id="Node000007" href="$class_gen_device.html#a96be6231d276486d30a77fb6f7235994" title=" " alt="" coords="187,132,324,159"/>

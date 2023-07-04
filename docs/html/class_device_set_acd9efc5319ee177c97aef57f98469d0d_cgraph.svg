@@ -57,7 +57,7 @@ var sectionId = 'dynsection-37';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Метод, осуществляющий проведение измерения и получение результатов измерения">
 <polygon fill="#999999" stroke="#666666" points="103,-248 0,-248 0,-228 103,-228 103,-248"/>
 <text text-anchor="middle" x="51.5" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_data</text>
 </a>
@@ -84,7 +84,7 @@ var sectionId = 'dynsection-37';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" target="_top" xlink:title="Получает список углов, на которые развёрнуты оси ОПУ">
 <polygon fill="white" stroke="#666666" points="264.88,-482 150.62,-482 150.62,-450 264.88,-450 264.88,-482"/>
 <text text-anchor="start" x="158.62" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_current</text>
 <text text-anchor="middle" x="207.75" y="-456.5" font-family="Helvetica,sans-Serif" font-size="10.00">_angles</text>
@@ -103,7 +103,7 @@ var sectionId = 'dynsection-37';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" target="_top" xlink:title="Получает текущее значение частоты зондирующего сигнала на подключенном генераторе">
 <polygon fill="white" stroke="#666666" points="275.38,-400 140.12,-400 140.12,-380 275.38,-380 275.38,-400"/>
 <text text-anchor="middle" x="207.75" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_current_freq</text>
 </a>
@@ -157,7 +157,7 @@ var sectionId = 'dynsection-37';
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="class_device_set.html#a1f38931a5bc51dd54a661412cca9959c" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="class_device_set.html#a1f38931a5bc51dd54a661412cca9959c" target="_top" xlink:title="Получает вектор частотных точек">
 <polygon fill="white" stroke="#666666" points="266.75,-286 148.75,-286 148.75,-266 266.75,-266 266.75,-286"/>
 <text text-anchor="middle" x="207.75" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_freq_list</text>
 </a>

@@ -1,10 +1,10 @@
 <map id="TaskManager::set_path_task" name="TaskManager::set_path_task">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,127,195,153"/>
-<area shape="rect" id="Node000002" href="$class_device_set.html#aeeb8d224788fe0663898a10aad363832" title=" " alt="" coords="243,60,396,103"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#aeeb8d224788fe0663898a10aad363832" title="Метод позволяет получить число переключателей, подключенных к ВАЦ." alt="" coords="243,60,396,103"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,124,228,103,229,108,153,129"/>
 <area shape="rect" id="Node000005" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="487,127,572,153"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="195,137,472,137,472,143,195,143"/>
-<area shape="rect" id="Node000010" href="$class_device_set.html#a905900391da22efd2f866843c81572d4" title=" " alt="" coords="251,177,388,204"/>
+<area shape="rect" id="Node000010" href="$class_device_set.html#a905900391da22efd2f866843c81572d4" title="Переводит переключатели в заданные положения" alt="" coords="251,177,388,204"/>
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="162,151,245,171,244,176,161,157"/>
 <area shape="rect" id="Node000003" href="$class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" title=" " alt="" coords="453,5,605,48"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,59,438,48,439,53,397,64"/>

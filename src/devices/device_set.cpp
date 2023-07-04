@@ -1,6 +1,26 @@
 #include "device_set.hpp"
 #include "rbd/demo_rdb.hpp"
 
+/**
+ * \brief Метод, позволяющий осуществить подключение к устройству.
+ *
+ * \param [in] device_type Тип устройства
+ * \param [in] device_model Модель устройства
+ * \param [in] device_address Адрес устройства
+ *
+ * \return Если устройство было подключено, то возвращает true. В противном случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ * if (device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET")) {
+ *     std::cout << "Успешно" std::endl;
+ * } else {
+ *     std::cout << "Ошибка" << std::endl;
+ *     exit(1);
+ * }
+ * \endcode
+ */
 bool DeviceSet::connect(int device_type, std::string device_model, const std::string &device_address) {
     std::transform(device_model.begin(), device_model.end(), device_model.begin(), ::toupper);
 
@@ -44,12 +64,33 @@ bool DeviceSet::connect(int device_type, std::string device_model, const std::st
     }
 }
 
+/**
+ * \brief Отключает все устройства и уничтожает созданные объекты
+ */
 void DeviceSet::disconnect() {
     delete vna;
     delete ext_gen;
     delete rbd;
 }
 
+/**
+ * \brief Настраивает ВАЦ для требуемого измерения
+ *
+ * \param [in] meas_type Тип измерения
+ * \param [in] rbw Полоса разрешающего фильтра
+ * \param [in] source_port Зондирующий порт
+ * \param [in] using_ext_gen Флаг, показывающий, используется ли внешний генератор
+ *
+ * \return Если ВАЦ был сконфигурирован, то возвращает true. В противном случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.configure(MEAS_TRANSITION, 1e3, 1, false);
+ * \endcode
+ */
 bool DeviceSet::configure(int meas_type, float rbw, int source_port, bool using_ext_gen) {
     try {
         vna->full_preset();
@@ -73,6 +114,22 @@ bool DeviceSet::configure(int meas_type, float rbw, int source_port, bool using_
     return true;
 }
 
+/**
+ * \brief Устанавливает требуемую мощность зондирующего порта
+ *
+ * \param [in] power Требуемое значение мощности
+ *
+ * \return Если требуемое значение мощности было установлено, то
+ * возвращает true. В противном случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_power(-20.0f);
+ * \endcode
+ */
 bool DeviceSet::set_power(float power) {
     try {
         if (using_ext_gen) {
@@ -95,6 +152,22 @@ bool DeviceSet::set_power(float power) {
     return true;
 }
 
+/**
+ * \brief Устанавливает требуемое значение частоты зондирующего сигнала
+ *
+ * \param [in] freq Требуемая частота зондирующего сигнала
+ *
+ * \return Если требуемое значение частоты было установлено, то
+ * возвращает true. В противном случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_freq(1e9);
+ * \endcode
+ */
 bool DeviceSet::set_freq(double freq) {
     try {
         if (using_ext_gen) {
@@ -117,6 +190,24 @@ bool DeviceSet::set_freq(double freq) {
     return true;
 }
 
+/**
+ * \brief Устанавливает диапазон изменения частоты зондирующего сигнала
+ *
+ * \param [in] start_freq Начальное значение частоты
+ * \param [in] stop_freq Конечное значение частоты
+ * \param [in] points Количество частотных точек
+ *
+ * \return Если диапазон был установлен успешно, то возвращает true.
+ * В противном случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_freq_range(1e9, 2e9, 11);
+ * \endcode
+ */
 bool DeviceSet::set_freq_range(double start_freq, double stop_freq, int points) {
     try {
         if (using_ext_gen) {
@@ -139,6 +230,25 @@ bool DeviceSet::set_freq_range(double start_freq, double stop_freq, int points) 
     return true;
 }
 
+/**
+ * \brief Переход к следующей частотной точке
+ *
+ * \return Если следующая частотная точка находится в пределах
+ * границ изменения, то возвращает FREQ_MOVE_OK. Если точка
+ * находится на границе, то возвращает FREQ_MOVE_BOUND.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_freq_range(1e9, 2e9, 11);
+ *
+ * while (device_set.next_freq() != FREQ_MOVE_BOUND) {
+ *     std::cout << "Выбрана следующая частотная точка" std::endl;
+ * }
+ * \endcode
+ */
 int DeviceSet::next_freq() {
     try {
         return ext_gen->next_freq();
@@ -147,6 +257,25 @@ int DeviceSet::next_freq() {
     }
 }
 
+/**
+ * \brief Переход к предыдущей частотной точке
+ *
+ * \return Если предыдущая частотная точка находится в пределах
+ * границ изменения, то возвращает FREQ_MOVE_OK. Если точка
+ * находится на границе, то возвращает FREQ_MOVE_BOUND.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_freq_range(1e9, 2e9, 11);
+ *
+ * while (device_set.prev_freq() != FREQ_MOVE_BOUND) {
+ *     std::cout << "Выбрана предыдущая частотная точка" std::endl;
+ * }
+ * \endcode
+ */
 int DeviceSet::prev_freq() {
     try {
         return ext_gen->prev_freq();
@@ -155,6 +284,29 @@ int DeviceSet::prev_freq() {
     }
 }
 
+/**
+ * \brief Устанавливает частотную точку, соответствующую началу
+ * диапазона.
+ *
+ * \return Если действие прошло успешно, возвращает true. В противном
+ * случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_freq_range(1e9, 2e9, 11);
+ *
+ * while (device_set.next_freq() != FREQ_MOVE_BOUND) {
+ *     std::cout << "Выбрана следующая частотная точка" std::endl;
+ * }
+ *
+ * if (device_set.move_to_start_freq()) {
+ *     std::cout << "Выбрана частотная точка в начале диапазона" << std::endl;
+ * }
+ * \endcode
+ */
 bool DeviceSet::move_to_start_freq() {
     if (using_ext_gen) {
         try {
@@ -168,6 +320,24 @@ bool DeviceSet::move_to_start_freq() {
     return true;
 }
 
+/**
+ * \brief Получает текущее значение частоты зондирующего сигнала на подключенном генераторе
+ *
+ * \return Значение частоты зондирующего сигнала генератора
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.connect(DEVICE_GEN, "keysight_gen", "TCPIP0::localhost::5026::SOCKET");
+ * device_set.set_freq_range(1e9, 2e9, 11);
+ *
+ * while (device_set.next_freq() != FREQ_MOVE_BOUND) {
+ *     std::cout << "Выбрана следующая частотная точка. f = " << device_set.get_current_freq()) << std::endl;
+ * }
+ * \endcode
+ */
 double DeviceSet::get_current_freq() {
     if (ext_gen != nullptr && ext_gen->is_connected()) {
         try {
@@ -181,6 +351,25 @@ double DeviceSet::get_current_freq() {
     }
 }
 
+/**
+ * \brief Получает вектор частотных точек
+ *
+ * \return Вектор частотных точек
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_freq_range(1e9, 2e9, 11);
+ *
+ * std::vector<double> freq_list = device_set.get_freq_list();
+ *
+ * for (double item: freq_list) {
+ *     std::cout << "f = " << item << std::endl;
+ * }
+ * \endcode
+ */
 std::vector<double> DeviceSet::get_freq_list() {
     std::vector<double> freq_list{};
 
@@ -191,6 +380,23 @@ std::vector<double> DeviceSet::get_freq_list() {
     return freq_list;
 }
 
+/**
+ * \brief Устанавливает требуемое значение угла у определённой оси ОПУ
+ *
+ * \param [in] angle Требуемое значение угла
+ * \param [in] axis_num Номер оси ОПУ
+ *
+ * \return Если установка угла прошла успешно, возвращает true. В противном
+ * случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_RBD, "demo_rbd", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_angle(-30.0f, 0);
+ * \endcode
+ */
 bool DeviceSet::set_angle(float angle, int axis_num) {
     try {
         rbd->set_angle(angle, axis_num);
@@ -203,6 +409,25 @@ bool DeviceSet::set_angle(float angle, int axis_num) {
     return true;
 }
 
+/**
+ * \brief Устанавливает диапазон изменения угла на определённой оси ОПУ
+ *
+ * \param [in] start_angle Начальное значение диапазона
+ * \param [in] stop_angle Конечное значение диапазона
+ * \param [in] points Количество точек
+ * \param [in] axis_num Номер оси ОПУ
+ *
+ * \return Если установка диапазона прошла успешно, то возвращает true.
+ * В противном случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_RBD, "demo_rbd", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_angle_range(-30.0f, 30.0f, 11, 0);
+ * \endcode
+ */
 bool DeviceSet::set_angle_range(float start_angle, float stop_angle, int points, int axis_num) {
     try {
         rbd->set_angle_range(start_angle, stop_angle, points, axis_num);
@@ -215,6 +440,27 @@ bool DeviceSet::set_angle_range(float start_angle, float stop_angle, int points,
     return true;
 }
 
+/**
+ * \brief Переход к следующей угловой точке
+ *
+ * \param [in] axis_num Номер оси ОПУ
+ *
+ * \return Если угловая точка находится в пределах диапазона изменения угла,
+ * то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе
+ * диапазона, то возвращает ANGLE_MOVE_BOUND.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_RBD, "demo_rbd", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_angle_range(-30.0f, 30.0f, 11, 0);
+ *
+ * while (device_set.next_angle(0) != ANGLE_MOVE_BOUND) {
+ *     std::cout << "Выбрана следующая угловая точка" << std::endl;
+ * }
+ * \endcode
+ */
 int DeviceSet::next_angle(int axis_num) {
     try {
         return rbd->next_angle(axis_num);
@@ -223,6 +469,27 @@ int DeviceSet::next_angle(int axis_num) {
     }
 }
 
+/**
+ * \brief Переход к предыдущей угловой точке
+ *
+ * \param [in] axis_num Номер оси ОПУ
+ *
+ * \return Если угловая точка находится в пределах диапазона изменения угла,
+ * то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе
+ * диапазона, то возвращает ANGLE_MOVE_BOUND.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_RBD, "demo_rbd", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_angle_range(-30.0f, 30.0f, 11, 0);
+ *
+ * while (device_set.prev_angle(0) != ANGLE_MOVE_BOUND) {
+ *     std::cout << "Выбрана предыдущая угловая точка" << std::endl;
+ * }
+ * \endcode
+ */
 int DeviceSet::prev_angle(int axis_num) {
     try {
         return rbd->prev_angle(axis_num);
@@ -231,6 +498,31 @@ int DeviceSet::prev_angle(int axis_num) {
     }
 }
 
+/**
+ * \brief Устанавливает угловую точку, соответствующую началу
+ * диапазона.
+ *
+ * \param [in] axis_num Номер оси ОПУ
+ *
+ * \return Если действие прошло успешно, возвращает true. В противном
+ * случае - false.
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_RBD, "demo_rbd", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_angle_range(-30.0f, 30.0f, 11, 0);
+ *
+ * while (device_set.next_angle(0) != ANGLE_MOVE_BOUND) {
+ *     std::cout << "Выбрана следующая угловая точка" << std::endl;
+ * }
+ *
+ * if (device_set.move_to_start_angle(0)) {
+ *     std::cout << "Выбрана угловая точка в начале диапазона" << endl;
+ * }
+ * \endcode
+ */
 bool DeviceSet::move_to_start_angle(int axis_num) {
     try {
         rbd->move_to_start_angle(axis_num);
@@ -242,6 +534,23 @@ bool DeviceSet::move_to_start_angle(int axis_num) {
     return true;
 }
 
+/**
+ * \brief Получает список углов, на которые развёрнуты оси ОПУ
+ *
+ * \return Строка, содержащая значения углов
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_RBD, "demo_rbd", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_angle_range(-30.0f, 30.0f, 11, 0);
+ *
+ * while (device_set.next_angle(0) != ANGLE_MOVE_BOUND) {
+ *     std::cout << "angle = " << device_set.get_current_angles() << std::endl;
+ * }
+ * \endcode
+ */
 std::string DeviceSet::get_current_angles() {
     std::string angle_list{};
 
@@ -258,6 +567,16 @@ std::string DeviceSet::get_current_angles() {
     return angle_list;
 }
 
+/**
+ * \brief Переводит переключатели в заданные положения
+ *
+ * \param path_list Вектор положений переключателей
+ *
+ * \return Если действие выполнено успешно, возвращает true. В противном
+ * случае - false.
+ *
+
+ */
 bool DeviceSet::set_path(std::vector<int> path_list) {
     try {
         vna->set_path(std::move(path_list));
@@ -270,6 +589,23 @@ bool DeviceSet::set_path(std::vector<int> path_list) {
     return true;
 }
 
+/**
+ * \brief Метод позволяет получить число переключателей, подключенных
+ * к ВАЦ.
+ *
+ * \return Количество модулей
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ *
+ * if (device_set.get_vna_switch_module_count() <= 0) {
+ *     std::cout << "Переключатели не подключены к ВАЦ" << std::endl;
+ * }
+ * \endcode
+ */
 int DeviceSet::get_vna_switch_module_count()  {
     if (vna != nullptr && vna->is_connected()) {
         return vna->get_switch_module_count();
@@ -278,10 +614,50 @@ int DeviceSet::get_vna_switch_module_count()  {
     }
 }
 
+/**
+ * \brief Метод позволяет проверить, используется ли внешний генератор
+ *
+ * \return Флаг, который показывает, используется ли внешний генератор
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ *
+ * if (device_set.is_using_ext_gen()) {
+ *     std::cout << "f = " << device_set.get_current_freq() std::endl;
+ * }
+ * \endcode
+ */
 bool DeviceSet::is_using_ext_gen() const {
     return using_ext_gen;
 }
 
+/**
+ * \brief Метод, осуществляющий проведение измерения и получение результатов
+ * измерения
+ *
+ * \warning Перед использованием данного метода требуется осуществить подключение
+ * к нужным устройствам и произвести их настройку!
+ *
+ * \param [in] port_list Список портов, для которых требуется провести измерение
+ *
+ * \return Полученные результаты измерений
+ *
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ *
+ * device_set.configure(MEAS_TRANSITION, 1e3, 1, false);
+ * device_set.set_power(0.0);
+ * device_set.set_freq_range(1.2e9, 2.4e9, 101);
+ *
+ * data_t acquired_data = device_set.get_data({2, 4, 5});   // Сбор данных для второго, четвёртого и пятого портов
+ * \endcode
+ */
 data_t DeviceSet::get_data(std::vector<int> port_list) {
     if (stop_requested) {
         logger::log(LEVEL_WARN, "Device set stops measuring");
@@ -406,10 +782,16 @@ data_t DeviceSet::get_data(std::vector<int> port_list) {
     return acquired_data;
 }
 
+/**
+ * \brief Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения
+ */
 void DeviceSet::request_stop() {
     stop_requested = true;
 }
 
+/**
+ * \brief Сбрасывает флаг stop_request (присваивает значение false)
+ */
 void DeviceSet::reset_stop_request() {
     stop_requested = false;
 }

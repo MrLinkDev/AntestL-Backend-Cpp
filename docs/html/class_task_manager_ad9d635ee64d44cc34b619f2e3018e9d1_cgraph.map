@@ -1,12 +1,12 @@
 <map id="TaskManager::proceed_nested_task_list" name="TaskManager::proceed_nested_task_list">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,472,159,515"/>
-<area shape="rect" id="Node000002" href="$class_device_set.html#a548166665d062dc3a5a468ca184d8e08" title=" " alt="" coords="240,56,376,99"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a548166665d062dc3a5a468ca184d8e08" title="Метод позволяет проверить, используется ли внешний генератор" alt="" coords="240,56,376,99"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,471,89,404,107,309,123,258,144,207,171,159,205,115,225,99,228,104,209,119,175,162,149,209,128,260,113,311,94,405,87,472"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="951,341,1037,368"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,470,165,424,249,368,348,314,402,292,456,276,525,265,594,262,664,267,732,276,854,304,945,333,943,338,852,309,731,281,664,272,594,268,525,270,458,281,404,297,351,319,251,373,168,429,110,474"/>
-<area shape="rect" id="Node000008" href="$class_device_set.html#a42484914aabe91a0d030557db440fab0" title=" " alt="" coords="716,5,852,48"/>
+<area shape="rect" id="Node000008" href="$class_device_set.html#a42484914aabe91a0d030557db440fab0" title="Устанавливает угловую точку, соответствующую началу диапазона." alt="" coords="716,5,852,48"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="85,471,98,422,121,359,156,292,179,260,205,233,263,187,326,149,393,117,462,91,593,54,701,34,702,39,594,59,463,96,395,122,329,154,266,192,208,237,183,264,161,294,126,361,103,424,90,472"/>
-<area shape="rect" id="Node000010" href="$class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" title=" " alt="" coords="240,501,376,544"/>
+<area shape="rect" id="Node000010" href="$class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" title="Устанавливает частотную точку, соответствующую началу диапазона." alt="" coords="240,501,376,544"/>
 <area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="159,501,226,509,225,515,159,506"/>
 <area shape="rect" id="Node000012" href="$class_task_manager.html#a0ad340d364ac4e25a7abb94aea073cb1" title=" " alt="" coords="207,568,409,595"/>
 <area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="122,513,163,534,208,554,230,561,228,566,206,558,160,539,119,517"/>
@@ -14,7 +14,7 @@
 <area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="103,513,148,560,176,584,208,604,222,611,219,616,205,609,173,588,144,564,99,517"/>
 <area shape="rect" id="Node000018" href="$class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" title=" " alt="" coords="215,417,401,444"/>
 <area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="158,470,242,446,244,451,160,475"/>
-<area shape="rect" id="Node000037" href="$class_device_set.html#adee7ff2a8a80e6ddf44274d6c2828a2c" title=" " alt="" coords="234,669,382,712"/>
+<area shape="rect" id="Node000037" href="$class_device_set.html#adee7ff2a8a80e6ddf44274d6c2828a2c" title="Сбрасывает флаг stop_request (присваивает значение false)" alt="" coords="234,669,382,712"/>
 <area shape="poly" id="edge50_Node000001_Node000037" title=" " alt="" coords="96,514,139,583,171,622,208,655,222,663,219,668,205,659,167,626,135,587,92,517"/>
 <area shape="rect" id="Node000004" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="1150,265,1268,292"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1029,338,1126,301,1147,294,1149,299,1128,307,1031,343"/>
@@ -30,11 +30,11 @@
 <area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="376,535,476,549,536,554,601,555,667,551,734,541,799,523,859,496,896,471,928,440,974,379,979,382,932,443,899,475,862,501,800,528,735,546,668,556,601,560,536,559,475,555,376,540"/>
 <area shape="rect" id="Node000011" href="$class_gen_device.html#ae8f3f5e85a477915c09854a73e730a3e" title=" " alt="" coords="489,645,628,688"/>
 <area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="377,535,411,554,428,574,435,594,443,613,459,631,476,642,473,647,455,635,438,616,431,596,423,577,407,558,375,540"/>
-<area shape="rect" id="Node000013" href="$class_device_set.html#a79dae996c60d5844ec3bf2da84f8c164" title=" " alt="" coords="483,737,633,764"/>
+<area shape="rect" id="Node000013" href="$class_device_set.html#a79dae996c60d5844ec3bf2da84f8c164" title="Переход к следующей угловой точке" alt="" coords="483,737,633,764"/>
 <area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="391,593,411,605,430,628,437,651,443,675,459,698,480,715,504,728,501,733,477,719,455,702,438,677,432,653,425,630,407,609,389,598"/>
 <area shape="rect" id="Node000014" href="$class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f" title=" " alt="" coords="707,813,861,840"/>
 <area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="600,762,708,799,728,806,727,811,706,804,599,767"/>
-<area shape="rect" id="Node000016" href="$class_device_set.html#a9ae5fb89aa8b4913a362c4ad12be1bf3" title=" " alt="" coords="488,813,628,840"/>
+<area shape="rect" id="Node000016" href="$class_device_set.html#a9ae5fb89aa8b4913a362c4ad12be1bf3" title="Переход к следующей частотной точке" alt="" coords="488,813,628,840"/>
 <area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="393,644,411,655,424,670,432,685,437,715,442,744,448,759,459,774,479,791,502,804,499,809,476,796,455,778,443,762,437,746,432,715,427,687,420,673,407,659,390,648"/>
 <area shape="rect" id="Node000017" href="$class_gen_device.html#a57adce7e8826e6ae5e6b1612e5f8f750" title=" " alt="" coords="712,864,856,891"/>
 <area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="622,838,708,858,706,863,620,843"/>
@@ -50,7 +50,7 @@
 <area shape="rect" id="Node000032" href="$class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5" title=" " alt="" coords="464,595,653,621"/>
 <area shape="poly" id="edge42_Node000018_Node000032" title=" " alt="" coords="337,442,411,487,435,508,459,530,528,584,525,588,455,534,432,512,407,491,335,447"/>
 <area shape="poly" id="edge26_Node000019_Node000003" title=" " alt="" coords="651,310,861,333,937,344,937,349,860,339,651,316"/>
-<area shape="rect" id="Node000020" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title=" " alt="" coords="717,139,851,165"/>
+<area shape="rect" id="Node000020" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title="Метод, позволяющий осуществить подключение к устройству." alt="" coords="717,139,851,165"/>
 <area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="578,288,749,172,752,176,581,292"/>
 <area shape="poly" id="edge24_Node000020_Node000003" title=" " alt="" coords="830,164,862,182,900,217,933,256,980,327,976,330,929,259,896,220,859,186,827,168"/>
 <area shape="rect" id="Node000021" href="$class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" title=" " alt="" coords="910,189,1078,216"/>
@@ -60,25 +60,25 @@
 <area shape="rect" id="Node000023" href="$class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" title=" " alt="" coords="931,139,1057,165"/>
 <area shape="poly" id="edge25_Node000020_Node000023" title=" " alt="" coords="851,149,916,149,916,155,851,155"/>
 <area shape="poly" id="edge29_Node000024_Node000003" title=" " alt="" coords="660,441,758,443,810,438,860,428,888,418,916,405,962,375,965,379,918,409,891,423,861,433,810,443,758,448,660,446"/>
-<area shape="rect" id="Node000025" href="$class_device_set.html#a6241d8b37639241e2a370c1f7d533995" title=" " alt="" coords="709,392,859,419"/>
+<area shape="rect" id="Node000025" href="$class_device_set.html#a6241d8b37639241e2a370c1f7d533995" title="Отключает все устройства и уничтожает созданные объекты" alt="" coords="709,392,859,419"/>
 <area shape="poly" id="edge28_Node000024_Node000025" title=" " alt="" coords="660,417,694,413,695,418,660,422"/>
 <area shape="poly" id="edge32_Node000026_Node000003" title=" " alt="" coords="641,190,692,192,748,199,806,212,862,232,896,253,928,278,975,328,971,332,924,282,893,257,860,237,805,217,748,205,691,198,640,195"/>
 <area shape="poly" id="edge33_Node000026_Node000008" title=" " alt="" coords="631,171,657,153,674,130,681,107,688,83,705,58,709,55,713,59,709,62,693,85,686,108,679,132,661,157,634,175"/>
-<area shape="rect" id="Node000027" href="$class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" title=" " alt="" coords="712,72,856,115"/>
+<area shape="rect" id="Node000027" href="$class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" title="Устанавливает диапазон изменения угла на определённой оси ОПУ" alt="" coords="712,72,856,115"/>
 <area shape="poly" id="edge34_Node000026_Node000027" title=" " alt="" coords="617,170,658,152,706,124,717,119,719,124,709,129,661,157,619,175"/>
 <area shape="poly" id="edge35_Node000027_Node000003" title=" " alt="" coords="847,113,863,125,882,150,891,173,898,198,911,227,976,328,972,331,906,229,893,200,886,175,877,152,859,129,844,117"/>
 <area shape="rect" id="Node000028" href="$class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" title=" " alt="" coords="921,72,1067,115"/>
 <area shape="poly" id="edge36_Node000027_Node000028" title=" " alt="" coords="856,91,906,91,906,96,856,96"/>
 <area shape="poly" id="edge38_Node000029_Node000003" title=" " alt="" coords="656,498,756,482,809,468,860,450,890,434,919,415,966,376,970,380,922,419,893,438,862,454,811,473,757,487,657,503"/>
-<area shape="rect" id="Node000030" href="$class_device_set.html#af831c582c73b80720d69b771c422a7eb" title=" " alt="" coords="712,645,856,672"/>
+<area shape="rect" id="Node000030" href="$class_device_set.html#af831c582c73b80720d69b771c422a7eb" title="Устанавливает требуемое значение угла у определённой оси ОПУ" alt="" coords="712,645,856,672"/>
 <area shape="poly" id="edge39_Node000029_Node000030" title=" " alt="" coords="581,518,752,635,749,639,578,523"/>
 <area shape="poly" id="edge40_Node000030_Node000003" title=" " alt="" coords="833,643,859,625,872,607,881,591,888,558,893,522,906,480,938,424,971,378,975,381,943,427,911,482,898,523,893,559,886,592,877,610,863,629,837,647"/>
 <area shape="rect" id="Node000031" href="$class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" title=" " alt="" coords="921,645,1067,672"/>
 <area shape="poly" id="edge41_Node000030_Node000031" title=" " alt="" coords="856,656,906,656,906,661,856,661"/>
 <area shape="poly" id="edge46_Node000032_Node000003" title=" " alt="" coords="653,617,704,618,758,612,811,598,859,574,879,554,888,533,894,509,906,480,972,379,977,382,911,483,899,510,893,535,883,557,862,578,813,603,759,617,704,623,653,623"/>
-<area shape="rect" id="Node000033" href="$class_device_set.html#aeeb8d224788fe0663898a10aad363832" title=" " alt="" coords="707,747,861,789"/>
+<area shape="rect" id="Node000033" href="$class_device_set.html#aeeb8d224788fe0663898a10aad363832" title="Метод позволяет получить число переключателей, подключенных к ВАЦ." alt="" coords="707,747,861,789"/>
 <area shape="poly" id="edge43_Node000032_Node000033" title=" " alt="" coords="642,620,661,631,673,644,681,657,687,682,693,708,699,720,709,733,713,736,709,740,705,737,694,723,688,710,682,683,676,659,669,647,658,635,640,624"/>
-<area shape="rect" id="Node000035" href="$class_device_set.html#a905900391da22efd2f866843c81572d4" title=" " alt="" coords="715,696,853,723"/>
+<area shape="rect" id="Node000035" href="$class_device_set.html#a905900391da22efd2f866843c81572d4" title="Переводит переключатели в заданные положения" alt="" coords="715,696,853,723"/>
 <area shape="poly" id="edge47_Node000032_Node000035" title=" " alt="" coords="635,619,661,631,676,644,686,657,695,669,709,682,718,687,716,692,706,686,691,673,681,660,673,647,658,636,633,624"/>
 <area shape="poly" id="edge45_Node000033_Node000022" title=" " alt="" coords="844,744,859,733,877,709,886,686,893,662,906,632,972,531,976,533,911,635,898,663,891,688,882,712,863,737,847,748"/>
 <area shape="rect" id="Node000034" href="$class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" title=" " alt="" coords="918,747,1070,789"/>

@@ -1,5 +1,5 @@
 <map id="DeviceSet::disconnect" name="DeviceSet::disconnect">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1379,36,1529,62"/>
+<area shape="rect" id="Node000001" title="Отключает все устройства и уничтожает созданные объекты" alt="" coords="1379,36,1529,62"/>
 <area shape="rect" id="Node000002" href="$class_task_manager.html#a87e7ab01c7c2920422402dda863da79c" title=" " alt="" coords="1128,36,1331,62"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1364,52,1331,52,1331,46,1364,46"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" title=" " alt="" coords="895,36,1080,62"/>

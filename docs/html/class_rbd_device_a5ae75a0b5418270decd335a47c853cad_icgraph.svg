@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 578;
 var viewHeight = 40;
-var sectionId = 'dynsection-9';
+var sectionId = 'dynsection-8';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-9';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" target="_top" xlink:title="Получает список углов, на которые развёрнуты оси ОПУ">
 <polygon fill="white" stroke="#666666" points="431.25,-32 317,-32 317,0 431.25,0 431.25,-32"/>
 <text text-anchor="start" x="325" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_current</text>
 <text text-anchor="middle" x="374.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_angles</text>
@@ -85,7 +85,7 @@ var sectionId = 'dynsection-9';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" target="_top" xlink:title="Метод, осуществляющий проведение измерения и получение результатов измерения">
 <polygon fill="white" stroke="#666666" points="281,-26 178,-26 178,-6 281,-6 281,-26"/>
 <text text-anchor="middle" x="229.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_data</text>
 </a>

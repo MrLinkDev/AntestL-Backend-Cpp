@@ -1,6 +1,6 @@
 <map id="TaskManager::connect_task" name="TaskManager::connect_task">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,132,191,159"/>
-<area shape="rect" id="Node000002" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title=" " alt="" coords="239,107,372,133"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title="Метод, позволяющий осуществить подключение к устройству." alt="" coords="239,107,372,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,131,223,127,224,133,191,137"/>
 <area shape="rect" id="Node000005" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="463,157,548,184"/>
 <area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="191,148,448,165,448,170,191,154"/>

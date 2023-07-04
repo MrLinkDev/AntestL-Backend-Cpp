@@ -1,21 +1,21 @@
 <map id="TaskManager::get_data_task" name="TaskManager::get_data_task">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,409,195,436"/>
-<area shape="rect" id="Node000002" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title=" " alt="" coords="243,409,380,436"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title="Метод, осуществляющий проведение измерения и получение результатов измерения" alt="" coords="243,409,380,436"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,420,228,420,228,425,195,425"/>
 <area shape="rect" id="Node000011" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="709,283,794,309"/>
 <area shape="poly" id="edge28_Node000001_Node000011" title=" " alt="" coords="111,407,156,358,228,289,273,253,321,219,373,190,427,167,478,151,520,146,562,151,612,167,650,187,684,214,734,269,730,273,681,218,648,192,610,172,561,156,520,151,479,157,429,172,375,195,324,224,276,257,232,293,159,362,115,411"/>
-<area shape="rect" id="Node000028" href="$structdata__t.html#afe36ebc9e507ce50faa88f60535d1fac" title=" " alt="" coords="254,484,369,511"/>
+<area shape="rect" id="Node000028" href="$structdata__t.html#afe36ebc9e507ce50faa88f60535d1fac" title="Преобразует структуру в строку" alt="" coords="254,484,369,511"/>
 <area shape="poly" id="edge29_Node000001_Node000028" title=" " alt="" coords="141,434,259,476,257,481,139,439"/>
 <area shape="rect" id="Node000003" href="$class_vna_device.html#a305e9719412a43677b2d660c507c20c0" title=" " alt="" coords="435,232,604,259"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,407,358,345,390,308,426,275,449,262,451,267,430,280,393,311,363,348,322,410"/>
-<area shape="rect" id="Node000004" href="$class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" title=" " alt="" coords="444,64,596,107"/>
+<area shape="rect" id="Node000004" href="$class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" title="Получает список углов, на которые развёрнуты оси ОПУ" alt="" coords="444,64,596,107"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="314,408,352,304,385,235,426,168,450,139,477,114,480,118,454,143,430,171,390,237,357,306,319,410"/>
-<area shape="rect" id="Node000008" href="$class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" title=" " alt="" coords="430,333,610,360"/>
+<area shape="rect" id="Node000008" href="$class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" title="Получает текущее значение частоты зондирующего сигнала на подключенном генераторе" alt="" coords="430,333,610,360"/>
 <area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="340,406,427,370,450,362,451,367,429,374,342,411"/>
 <area shape="poly" id="edge22_Node000002_Node000011" title=" " alt="" coords="321,407,364,362,393,338,427,319,497,298,569,287,637,285,694,287,694,293,637,290,569,293,498,303,429,324,396,342,367,366,325,411"/>
 <area shape="rect" id="Node000016" href="$class_vna_device.html#a57dfdf98bf3ce296b5d71672d98e6c2d" title=" " alt="" coords="450,384,590,411"/>
 <area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="380,412,435,405,435,410,381,417"/>
-<area shape="rect" id="Node000017" href="$class_device_set.html#a1f38931a5bc51dd54a661412cca9959c" title=" " alt="" coords="441,739,598,765"/>
+<area shape="rect" id="Node000017" href="$class_device_set.html#a1f38931a5bc51dd54a661412cca9959c" title="Получает вектор частотных точек" alt="" coords="441,739,598,765"/>
 <area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="368,434,382,446,404,483,412,519,411,554,405,589,400,623,399,657,407,691,430,725,433,728,429,731,426,728,403,693,394,658,394,623,400,588,406,554,407,520,399,485,378,450,365,439"/>
 <area shape="rect" id="Node000021" href="$class_vna_device.html#ae729cfabb9f5e9fc856e63351090bf8b" title=" " alt="" coords="428,435,611,461"/>
 <area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="381,428,413,432,413,438,380,434"/>

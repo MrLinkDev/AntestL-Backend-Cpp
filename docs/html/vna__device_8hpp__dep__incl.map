@@ -1,6 +1,6 @@
 <map id="src/devices/vna/vna_device.hpp" name="src/devices/vna/vna_device.hpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="142,5,275,48"/>
-<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title=" " alt="" coords="87,187,213,229"/>
+<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="87,187,213,229"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,62,178,97,164,145,156,187,150,186,159,144,173,95,188,60"/>
 <area shape="rect" id="Node000007" href="$keysight__m9807a_8hpp.html" title=" " alt="" coords="187,96,350,139"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="233,59,257,94,252,97,228,62"/>

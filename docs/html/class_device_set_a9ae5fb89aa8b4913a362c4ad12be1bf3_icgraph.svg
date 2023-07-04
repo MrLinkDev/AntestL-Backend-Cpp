@@ -57,7 +57,7 @@ var sectionId = 'dynsection-13';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Переход к следующей частотной точке">
 <polygon fill="#999999" stroke="#666666" points="952.75,-26 847.5,-26 847.5,-6 952.75,-6 952.75,-26"/>
 <text text-anchor="middle" x="900.12" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::next_freq</text>
 </a>

@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Структура, которая является вектором iq с набором методов для работы с ней.">
 <polygon fill="#999999" stroke="none" points="108,-120 0,-120 0,0 108,0 108,-120"/>
 <text text-anchor="start" x="26.25" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">iq_port_list_t</text>
 <text text-anchor="start" x="4" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

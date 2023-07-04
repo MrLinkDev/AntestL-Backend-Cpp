@@ -1,5 +1,5 @@
 <map id="DeviceSet::set_angle" name="DeviceSet::set_angle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1372,36,1515,62"/>
+<area shape="rect" id="Node000001" title="Устанавливает требуемое значение угла у определённой оси ОПУ" alt="" coords="1372,36,1515,62"/>
 <area shape="rect" id="Node000002" href="$class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6" title=" " alt="" coords="1128,36,1324,62"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1357,52,1324,52,1324,46,1357,46"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" title=" " alt="" coords="895,36,1080,62"/>

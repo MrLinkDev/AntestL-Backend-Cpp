@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,107,204,133"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="479,81,564,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,111,464,95,464,101,204,117"/>
-<area shape="rect" id="Node000007" href="$class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379" title=" " alt="" coords="252,132,398,159"/>
+<area shape="rect" id="Node000007" href="$class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379" title="Устанавливает требуемую мощность зондирующего порта" alt="" coords="252,132,398,159"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="204,129,238,133,237,138,204,134"/>
 <area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="667,5,785,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="553,78,643,42,663,35,665,40,645,46,555,83"/>

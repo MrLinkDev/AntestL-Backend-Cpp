@@ -57,7 +57,7 @@ var sectionId = 'dynsection-29';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="#999999" stroke="#666666" points="1102.25,-64 1000.75,-64 1000.75,-32 1102.25,-32 1102.25,-64"/>
 <text text-anchor="start" x="1008.75" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::move_to</text>
 <text text-anchor="middle" x="1051.5" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_angle</text>

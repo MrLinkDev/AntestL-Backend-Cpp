@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379" target="_top" xlink:title="Устанавливает требуемую мощность зондирующего порта">
 <polygon fill="white" stroke="#666666" points="294.5,-20 184.75,-20 184.75,0 294.5,0 294.5,-20"/>
 <text text-anchor="middle" x="239.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_power</text>
 </a>

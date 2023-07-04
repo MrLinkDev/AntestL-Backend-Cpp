@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="device__set_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="device__set_8hpp.html" target="_top" xlink:title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса...">
 <polygon fill="white" stroke="#666666" points="364.88,-312 284.38,-312 284.38,-292 364.88,-292 364.88,-312"/>
 <text text-anchor="middle" x="324.62" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">device_set.hpp</text>
 </a>

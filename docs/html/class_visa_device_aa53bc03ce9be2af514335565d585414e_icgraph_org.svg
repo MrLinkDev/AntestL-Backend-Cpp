@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_device_set.html#a2dab046962f4ada089046e2fa4769c23" target="_top" xlink:title="Метод, позволяющий осуществить подключение к устройству.">
 <polygon fill="white" stroke="#666666" points="1140.88,-96 1040.88,-96 1040.88,-76 1140.88,-76 1140.88,-96"/>
 <text text-anchor="middle" x="1090.88" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::connect</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_device_set.html#ae3031b84c03d467918bb40cfcfb3a8c4" target="_top" xlink:title="Получает текущее значение частоты зондирующего сигнала на подключенном генераторе">
 <polygon fill="white" stroke="#666666" points="1158.5,-58 1023.25,-58 1023.25,-38 1158.5,-38 1158.5,-58"/>
 <text text-anchor="middle" x="1090.88" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_current_freq</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="class_device_set.html#aeeb8d224788fe0663898a10aad363832" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="class_device_set.html#aeeb8d224788fe0663898a10aad363832" target="_top" xlink:title="Метод позволяет получить число переключателей, подключенных к ВАЦ.">
 <polygon fill="white" stroke="#666666" points="1148.38,-146 1033.38,-146 1033.38,-114 1148.38,-114 1148.38,-146"/>
 <text text-anchor="start" x="1041.38" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_vna</text>
 <text text-anchor="middle" x="1090.88" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">_switch_module_count</text>
@@ -239,7 +239,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" target="_top" xlink:title="Метод, осуществляющий проведение измерения и получение результатов измерения">
 <polygon fill="white" stroke="#666666" points="967.75,-58 864.75,-58 864.75,-38 967.75,-38 967.75,-58"/>
 <text text-anchor="middle" x="916.25" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::get_data</text>
 </a>

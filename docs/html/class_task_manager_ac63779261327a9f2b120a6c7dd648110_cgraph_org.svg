@@ -39,7 +39,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="252.5,-170 151,-170 151,-138 252.5,-138 252.5,-170"/>
 <text text-anchor="start" x="159" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::move_to</text>
 <text text-anchor="middle" x="201.75" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>
@@ -58,7 +58,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_device_set.html#a81333bd867a092fbc16af707c6b25198" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_device_set.html#a81333bd867a092fbc16af707c6b25198" target="_top" xlink:title="Устанавливает диапазон изменения частоты зондирующего сигнала">
 <polygon fill="white" stroke="#666666" points="251.75,-82 151.75,-82 151.75,-50 251.75,-50 251.75,-82"/>
 <text text-anchor="start" x="159.75" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeviceSet::set_freq</text>
 <text text-anchor="middle" x="201.75" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>

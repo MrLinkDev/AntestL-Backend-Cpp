@@ -1,6 +1,6 @@
 <map id="GenDevice::set_freq" name="GenDevice::set_freq">
 <area shape="rect" id="Node000001" title=" " alt="" coords="420,5,557,32"/>
-<area shape="rect" id="Node000002" href="$class_device_set.html#a230a59d041a46d28e1cc4dfaa0d9ab3d" title=" " alt="" coords="239,5,372,32"/>
+<area shape="rect" id="Node000002" href="$class_device_set.html#a230a59d041a46d28e1cc4dfaa0d9ab3d" title="Устанавливает требуемое значение частоты зондирующего сигнала" alt="" coords="239,5,372,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="405,21,372,21,372,16,405,16"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#a08b009e20bb0c5c16a07b2af6c66de72" title=" " alt="" coords="5,5,191,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="224,21,191,21,191,16,224,16"/>

@@ -24,7 +24,7 @@
 <area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="376,478,518,524,517,529,375,483"/>
 <area shape="rect" id="Node000013" title=" " alt="" coords="759,155,829,181"/>
 <area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="683,105,758,145,756,150,680,110"/>
-<area shape="rect" id="Node000014" href="$device__set_8hpp.html" title=" " alt="" coords="581,155,735,181"/>
+<area shape="rect" id="Node000014" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="581,155,735,181"/>
 <area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="660,107,660,140,655,140,655,107"/>
 <area shape="rect" id="Node000015" title=" " alt="" coords="694,229,768,256"/>
 <area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="672,180,710,217,706,221,669,184"/>
