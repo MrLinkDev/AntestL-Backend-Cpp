@@ -57,7 +57,7 @@
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="string__utils_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="string__utils_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определено пространство имён string_utils.">
 <polygon fill="white" stroke="#666666" points="429.12,-200 350.12,-200 350.12,-168 429.12,-168 429.12,-200"/>
 <text text-anchor="start" x="358.12" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../utils/string</text>
 <text text-anchor="middle" x="389.62" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">_utils.hpp</text>
@@ -112,7 +112,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определены константы и класс VisaDevice.">
 <polygon fill="white" stroke="#666666" points="177.88,-132 85.38,-132 85.38,-112 177.88,-112 177.88,-132"/>
 <text text-anchor="middle" x="131.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">../visa_device.hpp</text>
 </a>

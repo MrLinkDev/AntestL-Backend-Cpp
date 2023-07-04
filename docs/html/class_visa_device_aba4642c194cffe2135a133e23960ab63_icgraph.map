@@ -1,10 +1,10 @@
 <map id="VisaDevice::err" name="VisaDevice::err">
-<area shape="rect" id="Node000001" title=" " alt="" coords="455,367,563,393"/>
-<area shape="rect" id="Node000002" href="$class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" title=" " alt="" coords="249,173,392,200"/>
+<area shape="rect" id="Node000001" title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,..." alt="" coords="455,367,563,393"/>
+<area shape="rect" id="Node000002" href="$class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе." alt="" coords="249,173,392,200"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,358,333,202,337,199,486,354"/>
-<area shape="rect" id="Node000004" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title=" " alt="" coords="234,392,407,419"/>
+<area shape="rect" id="Node000004" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="234,392,407,419"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="441,392,408,396,407,391,440,387"/>
-<area shape="rect" id="Node000003" href="$class_visa_device.html#a743747ee232e8ff9723d25539852f94d" title=" " alt="" coords="24,5,167,32"/>
+<area shape="rect" id="Node000003" href="$class_visa_device.html#a743747ee232e8ff9723d25539852f94d" title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе." alt="" coords="24,5,167,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,163,252,104,220,73,184,46,161,35,163,30,187,42,223,69,256,100,304,159"/>
 <area shape="rect" id="Node000005" href="$class_keysight_m9807_a.html#a85c78a42ccfda3bb9b69cb60b79358f4" title=" " alt="" coords="5,56,186,83"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="305,380,231,213,220,178,215,149,205,123,184,97,167,85,170,81,187,93,210,120,220,147,225,176,236,211,309,378"/>
@@ -22,7 +22,7 @@
 <area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="219,408,174,408,174,403,219,403"/>
 <area shape="rect" id="Node000012" href="$class_keysight_m9807_a.html#ac6105e309ba2f11a360797e19d34a592" title=" " alt="" coords="17,443,174,469"/>
 <area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="244,425,159,445,157,439,243,420"/>
-<area shape="rect" id="Node000013" href="$class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" title=" " alt="" coords="9,493,182,520"/>
+<area shape="rect" id="Node000013" href="$class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="9,493,182,520"/>
 <area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="288,429,241,457,187,484,154,495,153,490,185,479,238,452,285,425"/>
 <area shape="rect" id="Node000014" href="$class_keysight_m9807_a.html#a752f62baec908e4e421a95b3c75422fc" title=" " alt="" coords="8,544,183,571"/>
 <area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="301,432,253,484,221,511,187,534,161,546,159,541,184,530,218,507,249,480,298,428"/>

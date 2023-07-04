@@ -39,7 +39,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="263.75,-77 150.25,-77 150.25,-57 263.75,-57 263.75,-77"/>
 <text text-anchor="middle" x="207" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait</text>
 </a>
@@ -57,7 +57,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_visa_device.html#ad659ba652605f5c983958400fde8c808" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_visa_device.html#ad659ba652605f5c983958400fde8c808" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора.">
 <polygon fill="white" stroke="#666666" points="514,-115 423,-115 423,-95 514,-95 514,-115"/>
 <text text-anchor="middle" x="468.5" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send</text>
 </a>
@@ -75,7 +75,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_logger.html#af7709105c2708359b7b082218f4cc3e1" target="_top" xlink:title="Функция, осуществляющая логирование">
+<g id="a_Node000004"><a xlink:href="class_logger.html#af7709105c2708359b7b082218f4cc3e1" target="_top" xlink:title="Метод, осуществляющий логирование">
 <polygon fill="white" stroke="#666666" points="870.25,-77 806.25,-77 806.25,-57 870.25,-57 870.25,-77"/>
 <text text-anchor="middle" x="838.25" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::log</text>
 </a>
@@ -93,7 +93,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e" target="_top" xlink:title="Метод, совмещающий в себе методы write() и read().">
 <polygon fill="white" stroke="#666666" points="644,-77 550,-77 550,-57 644,-57 644,-77"/>
 <text text-anchor="middle" x="597" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::query</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" target="_top" xlink:title="Метод, позволяющий считать данные с устройства">
 <polygon fill="white" stroke="#666666" points="769.5,-115 680.75,-115 680.75,-95 769.5,-95 769.5,-115"/>
 <text text-anchor="middle" x="725.12" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::read</text>
 </a>
@@ -129,7 +129,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_visa_device.html#a29202c3f5e47326386d1d27972e25267" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_visa_device.html#a29202c3f5e47326386d1d27972e25267" target="_top" xlink:title="Метод, позволяющий отправить команду на устройство">
 <polygon fill="white" stroke="#666666" points="770.25,-77 680,-77 680,-57 770.25,-57 770.25,-77"/>
 <text text-anchor="middle" x="725.12" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::write</text>
 </a>
@@ -165,7 +165,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="class_logger.html#a6edb7b263f080d417b82a537ed50fee4" target="_top" xlink:title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега.">
+<g id="a_Node000006"><a xlink:href="class_logger.html#a6edb7b263f080d417b82a537ed50fee4" target="_top" xlink:title="Возвращает тег в зависимости от уровня логирования и от назначения тега.">
 <polygon fill="white" stroke="#666666" points="1009.25,-96 925.75,-96 925.75,-76 1009.25,-76 1009.25,-96"/>
 <text text-anchor="middle" x="967.5" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::get_tag</text>
 </a>
@@ -183,7 +183,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" target="_top" xlink:title="Функция, которая выводит сообщение в консоль.">
+<g id="a_Node000007"><a xlink:href="class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" target="_top" xlink:title="Метод, который выводит сообщение в консоль.">
 <polygon fill="white" stroke="#666666" points="1028.75,-58 906.25,-58 906.25,-38 1028.75,-38 1028.75,-58"/>
 <text text-anchor="middle" x="967.5" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::print_to_console</text>
 </a>
@@ -201,7 +201,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" target="_top" xlink:title="Функция, которая записывает сообщение в файл.">
+<g id="a_Node000008"><a xlink:href="class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" target="_top" xlink:title="Метод, который записывает сообщение в файл.">
 <polygon fill="white" stroke="#666666" points="1017.88,-20 917.12,-20 917.12,0 1017.88,0 1017.88,-20"/>
 <text text-anchor="middle" x="967.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::print_to_file</text>
 </a>
@@ -264,7 +264,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82" target="_top" xlink:title="Ожидание завершения выполнения команды.">
 <polygon fill="white" stroke="#666666" points="387,-39 299.75,-39 299.75,-19 387,-19 387,-39"/>
 <text text-anchor="middle" x="343.38" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::wait</text>
 </a>
@@ -291,7 +291,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53" target="_top" xlink:title="Отправляет команду &quot;*OPC?&quot; на подключенное устройство, ожидает ответ и, в зависимости от полученного ...">
 <polygon fill="white" stroke="#666666" points="511.38,-39 425.62,-39 425.62,-19 511.38,-19 511.38,-39"/>
 <text text-anchor="middle" x="468.5" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::opc</text>
 </a>

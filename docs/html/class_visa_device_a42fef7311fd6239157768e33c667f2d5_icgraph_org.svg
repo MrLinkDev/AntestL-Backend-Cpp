@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Очищает входящий и исходящие буферы устройства">
 <polygon fill="#999999" stroke="#666666" points="251,-58 160,-58 160,-38 251,-38 251,-58"/>
 <text text-anchor="middle" x="205.5" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::clear</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_visa_device.html#ad6eefa87dd7817e61c833d344b5147ee" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_visa_device.html#ad6eefa87dd7817e61c833d344b5147ee" target="_top" xlink:title="Деструктор, который выполняет отключение от прибора">
 <polygon fill="white" stroke="#666666" points="124,-20 0,-20 0,0 124,0 124,-20"/>
 <text text-anchor="middle" x="62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::~VisaDevice</text>
 </a>

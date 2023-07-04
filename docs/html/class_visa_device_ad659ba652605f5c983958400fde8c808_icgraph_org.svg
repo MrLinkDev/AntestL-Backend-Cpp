@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Отправка данных на прибор и чтение ответа от прибора.">
 <polygon fill="#999999" stroke="#666666" points="612.25,-332 521.25,-332 521.25,-312 612.25,-312 612.25,-332"/>
 <text text-anchor="middle" x="566.75" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send</text>
 </a>
@@ -165,7 +165,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="class_visa_device.html#ae09de9a813b559eedad4587afbc64741" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="class_visa_device.html#ae09de9a813b559eedad4587afbc64741" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора.">
 <polygon fill="white" stroke="#666666" points="456.75,-237 365.75,-237 365.75,-217 456.75,-217 456.75,-237"/>
 <text text-anchor="middle" x="411.25" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send</text>
 </a>
@@ -183,7 +183,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.">
 <polygon fill="white" stroke="#666666" points="465,-199 357.5,-199 357.5,-179 465,-179 465,-199"/>
 <text text-anchor="middle" x="411.25" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_err</text>
 </a>
@@ -201,7 +201,7 @@
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="468,-389 354.5,-389 354.5,-369 468,-369 468,-389"/>
 <text text-anchor="middle" x="411.25" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait</text>
 </a>
@@ -338,7 +338,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="class_visa_device.html#a743747ee232e8ff9723d25539852f94d" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="class_visa_device.html#a743747ee232e8ff9723d25539852f94d" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.">
 <polygon fill="white" stroke="#666666" points="290,-199 182.5,-199 182.5,-179 290,-179 290,-199"/>
 <text text-anchor="middle" x="236.25" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_err</text>
 </a>
@@ -392,7 +392,7 @@
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="class_visa_device.html#aff290be3fb61e9679a548aafc571985d" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="class_visa_device.html#aff290be3fb61e9679a548aafc571985d" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="293,-329 179.5,-329 179.5,-309 293,-309 293,-329"/>
 <text text-anchor="middle" x="236.25" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait</text>
 </a>
@@ -410,7 +410,7 @@
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" target="_top" xlink:title=" ">
+<g id="a_Node000018"><a xlink:href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="301.25,-291 171.25,-291 171.25,-271 301.25,-271 301.25,-291"/>
 <text text-anchor="middle" x="236.25" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait_err</text>
 </a>
@@ -592,7 +592,7 @@
 <!-- Node27 -->
 <g id="Node000027" class="node">
 <title>Node27</title>
-<g id="a_Node000027"><a xlink:href="class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" target="_top" xlink:title=" ">
+<g id="a_Node000027"><a xlink:href="class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="132.62,-234 2.62,-234 2.62,-214 132.62,-214 132.62,-234"/>
 <text text-anchor="middle" x="67.62" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait_err</text>
 </a>

@@ -57,7 +57,7 @@ var sectionId = 'dynsection-6';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Функция, осуществляющая логирование">
+<g id="a_Node000001"><a xlink:title="Метод, осуществляющий логирование">
 <polygon fill="#999999" stroke="#666666" points="1278,-904.19 1214,-904.19 1214,-884.19 1278,-884.19 1278,-904.19"/>
 <text text-anchor="middle" x="1246" y="-890.69" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::log</text>
 </a>
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-6';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_socket_server.html#a1e673e526a459bdb3ca92e103ec212ae" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_socket_server.html#a1e673e526a459bdb3ca92e103ec212ae" target="_top" xlink:title="Закрытие сокета">
 <polygon fill="white" stroke="#666666" points="1161.88,-1756.19 1058.88,-1756.19 1058.88,-1736.19 1161.88,-1736.19 1161.88,-1756.19"/>
 <text text-anchor="middle" x="1110.38" y="-1742.69" font-family="Helvetica,sans-Serif" font-size="10.00">SocketServer::close</text>
 </a>
@@ -156,7 +156,7 @@ var sectionId = 'dynsection-6';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_visa_device.html#abdcf5ce2846fecd0908bf7419c73c595" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="class_visa_device.html#abdcf5ce2846fecd0908bf7419c73c595" target="_top" xlink:title="Метод, осуществляющий подключение к прибору.">
 <polygon fill="white" stroke="#666666" points="1162.62,-708.19 1058.12,-708.19 1058.12,-688.19 1162.62,-688.19 1162.62,-708.19"/>
 <text text-anchor="middle" x="1110.38" y="-694.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::connect</text>
 </a>
@@ -320,7 +320,7 @@ var sectionId = 'dynsection-6';
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80" target="_top" xlink:title="Метод, инициализирующий сокет">
 <polygon fill="white" stroke="#666666" points="1163.75,-1124.19 1057,-1124.19 1057,-1104.19 1163.75,-1104.19 1163.75,-1124.19"/>
 <text text-anchor="middle" x="1110.38" y="-1110.69" font-family="Helvetica,sans-Serif" font-size="10.00">SocketServer::create</text>
 </a>
@@ -374,7 +374,7 @@ var sectionId = 'dynsection-6';
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="class_visa_device.html#aba4642c194cffe2135a133e23960ab63" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="class_visa_device.html#aba4642c194cffe2135a133e23960ab63" target="_top" xlink:title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,...">
 <polygon fill="white" stroke="#666666" points="1151,-442.19 1069.75,-442.19 1069.75,-422.19 1151,-422.19 1151,-442.19"/>
 <text text-anchor="middle" x="1110.38" y="-428.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::err</text>
 </a>
@@ -392,7 +392,7 @@ var sectionId = 'dynsection-6';
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.">
 <polygon fill="#fff0f0" stroke="red" points="801.75,-480.19 694.25,-480.19 694.25,-460.19 801.75,-460.19 801.75,-480.19"/>
 <text text-anchor="middle" x="748" y="-466.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_err</text>
 </a>
@@ -410,7 +410,7 @@ var sectionId = 'dynsection-6';
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="#fff0f0" stroke="red" points="995.88,-404.19 865.88,-404.19 865.88,-384.19 995.88,-384.19 995.88,-404.19"/>
 <text text-anchor="middle" x="930.88" y="-390.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait_err</text>
 </a>
@@ -482,7 +482,7 @@ var sectionId = 'dynsection-6';
 <!-- Node41 -->
 <g id="Node000041" class="node">
 <title>Node41</title>
-<g id="a_Node000041"><a xlink:href="class_visa_device.html#a3f6602a4daf668fa4a06a1fe2821d0c7" target="_top" xlink:title=" ">
+<g id="a_Node000041"><a xlink:href="class_visa_device.html#a3f6602a4daf668fa4a06a1fe2821d0c7" target="_top" xlink:title="Отправляет команду &quot;*IDN?&quot; на подключенное устройство и ожидает ответа">
 <polygon fill="white" stroke="#666666" points="1151.75,-670.19 1069,-670.19 1069,-650.19 1151.75,-650.19 1151.75,-670.19"/>
 <text text-anchor="middle" x="1110.38" y="-656.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::idn</text>
 </a>
@@ -594,7 +594,7 @@ var sectionId = 'dynsection-6';
 <!-- Node52 -->
 <g id="Node000052" class="node">
 <title>Node52</title>
-<g id="a_Node000052"><a xlink:href="class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53" target="_top" xlink:title=" ">
+<g id="a_Node000052"><a xlink:href="class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53" target="_top" xlink:title="Отправляет команду &quot;*OPC?&quot; на подключенное устройство, ожидает ответ и, в зависимости от полученного ...">
 <polygon fill="white" stroke="#666666" points="1153.25,-214.19 1067.5,-214.19 1067.5,-194.19 1153.25,-194.19 1153.25,-214.19"/>
 <text text-anchor="middle" x="1110.38" y="-200.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::opc</text>
 </a>
@@ -612,7 +612,7 @@ var sectionId = 'dynsection-6';
 <!-- Node53 -->
 <g id="Node000053" class="node">
 <title>Node53</title>
-<g id="a_Node000053"><a xlink:href="class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82" target="_top" xlink:title=" ">
+<g id="a_Node000053"><a xlink:href="class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82" target="_top" xlink:title="Ожидание завершения выполнения команды.">
 <polygon fill="#fff0f0" stroke="red" points="974.5,-184.19 887.25,-184.19 887.25,-164.19 974.5,-164.19 974.5,-184.19"/>
 <text text-anchor="middle" x="930.88" y="-170.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::wait</text>
 </a>
@@ -630,7 +630,7 @@ var sectionId = 'dynsection-6';
 <!-- Node61 -->
 <g id="Node000061" class="node">
 <title>Node61</title>
-<g id="a_Node000061"><a xlink:href="class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" target="_top" xlink:title=" ">
+<g id="a_Node000061"><a xlink:href="class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" target="_top" xlink:title="Метод, позволяющий считать данные с устройства">
 <polygon fill="#fff0f0" stroke="red" points="1154.75,-594.19 1066,-594.19 1066,-574.19 1154.75,-574.19 1154.75,-594.19"/>
 <text text-anchor="middle" x="1110.38" y="-580.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::read</text>
 </a>
@@ -648,7 +648,7 @@ var sectionId = 'dynsection-6';
 <!-- Node63 -->
 <g id="Node000063" class="node">
 <title>Node63</title>
-<g id="a_Node000063"><a xlink:href="class_visa_device.html#ad659ba652605f5c983958400fde8c808" target="_top" xlink:title=" ">
+<g id="a_Node000063"><a xlink:href="class_visa_device.html#ad659ba652605f5c983958400fde8c808" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора.">
 <polygon fill="#fff0f0" stroke="red" points="976.38,-537.19 885.38,-537.19 885.38,-517.19 976.38,-517.19 976.38,-537.19"/>
 <text text-anchor="middle" x="930.88" y="-523.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send</text>
 </a>
@@ -666,7 +666,7 @@ var sectionId = 'dynsection-6';
 <!-- Node75 -->
 <g id="Node000075" class="node">
 <title>Node75</title>
-<g id="a_Node000075"><a xlink:href="class_socket_server.html#ac27110c965c4ba07f68ad3422506651c" target="_top" xlink:title=" ">
+<g id="a_Node000075"><a xlink:href="class_socket_server.html#ac27110c965c4ba07f68ad3422506651c" target="_top" xlink:title="Чтение данных от клиента">
 <polygon fill="white" stroke="#666666" points="1171.62,-998.19 1049.12,-998.19 1049.12,-978.19 1171.62,-978.19 1171.62,-998.19"/>
 <text text-anchor="middle" x="1110.38" y="-984.69" font-family="Helvetica,sans-Serif" font-size="10.00">SocketServer::read_data</text>
 </a>
@@ -684,7 +684,7 @@ var sectionId = 'dynsection-6';
 <!-- Node76 -->
 <g id="Node000076" class="node">
 <title>Node76</title>
-<g id="a_Node000076"><a xlink:href="class_socket_server.html#a73aa19f6f719abf3de62cff9406e46d0" target="_top" xlink:title=" ">
+<g id="a_Node000076"><a xlink:href="class_socket_server.html#a73aa19f6f719abf3de62cff9406e46d0" target="_top" xlink:title="Отправка данных клиенту">
 <polygon fill="white" stroke="#666666" points="641,-1657.19 516.25,-1657.19 516.25,-1637.19 641,-1637.19 641,-1657.19"/>
 <text text-anchor="middle" x="578.62" y="-1643.69" font-family="Helvetica,sans-Serif" font-size="10.00">SocketServer::send_data</text>
 </a>
@@ -884,7 +884,7 @@ var sectionId = 'dynsection-6';
 <!-- Node87 -->
 <g id="Node000087" class="node">
 <title>Node87</title>
-<g id="a_Node000087"><a xlink:href="class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197" target="_top" xlink:title=" ">
+<g id="a_Node000087"><a xlink:href="class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197" target="_top" xlink:title="Метод, ожидающий подключение клиента">
 <polygon fill="white" stroke="#666666" points="1158.88,-1086.19 1061.88,-1086.19 1061.88,-1054.19 1158.88,-1054.19 1158.88,-1086.19"/>
 <text text-anchor="start" x="1069.88" y="-1072.69" font-family="Helvetica,sans-Serif" font-size="10.00">SocketServer::wait</text>
 <text text-anchor="middle" x="1110.38" y="-1060.69" font-family="Helvetica,sans-Serif" font-size="10.00">_client</text>
@@ -903,7 +903,7 @@ var sectionId = 'dynsection-6';
 <!-- Node88 -->
 <g id="Node000088" class="node">
 <title>Node88</title>
-<g id="a_Node000088"><a xlink:href="class_visa_device.html#a29202c3f5e47326386d1d27972e25267" target="_top" xlink:title=" ">
+<g id="a_Node000088"><a xlink:href="class_visa_device.html#a29202c3f5e47326386d1d27972e25267" target="_top" xlink:title="Метод, позволяющий отправить команду на устройство">
 <polygon fill="#fff0f0" stroke="red" points="1155.5,-556.19 1065.25,-556.19 1065.25,-536.19 1155.5,-536.19 1155.5,-556.19"/>
 <text text-anchor="middle" x="1110.38" y="-542.69" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::write</text>
 </a>

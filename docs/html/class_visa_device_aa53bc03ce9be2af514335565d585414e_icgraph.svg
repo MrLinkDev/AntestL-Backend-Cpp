@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 1330;
 var viewHeight = 154;
-var sectionId = 'dynsection-11';
+var sectionId = 'dynsection-10';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -57,7 +57,7 @@ var sectionId = 'dynsection-11';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Метод, возвращающий значение флага connected.">
 <polygon fill="#999999" stroke="#666666" points="1322.25,-77 1194.5,-77 1194.5,-57 1322.25,-57 1322.25,-77"/>
 <text text-anchor="middle" x="1258.38" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::is_connected</text>
 </a>

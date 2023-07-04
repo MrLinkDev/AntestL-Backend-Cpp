@@ -1,10 +1,10 @@
 <map id="src/devices/visa_device.hpp" name="src/devices/visa_device.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="256,5,437,32"/>
+<area shape="rect" id="Node000001" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="256,5,437,32"/>
 <area shape="rect" id="Node000002" href="$gen__device_8hpp.html" title=" " alt="" coords="188,80,324,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,44,281,82,277,78,320,40"/>
 <area shape="rect" id="Node000010" href="$rbd__device_8hpp.html" title=" " alt="" coords="553,80,684,123"/>
 <area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="403,34,554,78,552,83,402,39"/>
-<area shape="rect" id="Node000014" href="$visa__device_8cpp.html" title=" " alt="" coords="348,88,529,115"/>
+<area shape="rect" id="Node000014" href="$visa__device_8cpp.html" title="Файл исходного кода, в котором реализованы конструкторы и методы для класа VisaDevice." alt="" coords="348,88,529,115"/>
 <area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="373,40,426,86,423,90,370,44"/>
 <area shape="rect" id="Node000015" href="$vna__device_8hpp.html" title=" " alt="" coords="31,80,163,123"/>
 <area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="295,39,162,82,161,77,293,34"/>

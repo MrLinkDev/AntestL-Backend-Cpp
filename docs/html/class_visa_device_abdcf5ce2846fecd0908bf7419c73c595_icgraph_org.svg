@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Метод, осуществляющий подключение к прибору.">
 <polygon fill="#999999" stroke="#666666" points="255.5,-39 151,-39 151,-19 255.5,-19 255.5,-39"/>
 <text text-anchor="middle" x="203.25" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::connect</text>
 </a>

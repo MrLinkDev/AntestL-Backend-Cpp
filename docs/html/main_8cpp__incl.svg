@@ -84,7 +84,7 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="socket__server_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="socket__server_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором объявляются класс SocketServer и необходимые константы">
 <polygon fill="white" stroke="#666666" points="237.75,-356 110.75,-356 110.75,-336 237.75,-336 237.75,-356"/>
 <text text-anchor="middle" x="174.25" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">socket/socket_server.hpp</text>
 </a>
@@ -426,7 +426,7 @@ var sectionId = 'dynsection-0';
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определены константы и класс VisaDevice.">
 <polygon fill="white" stroke="#666666" points="513.5,-132 421,-132 421,-112 513.5,-112 513.5,-132"/>
 <text text-anchor="middle" x="467.25" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">../visa_device.hpp</text>
 </a>

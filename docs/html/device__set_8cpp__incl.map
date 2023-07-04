@@ -18,7 +18,7 @@
 <area shape="poly" id="edge25_Node000002_Node000020" title=" " alt="" coords="385,124,157,170,156,165,384,119"/>
 <area shape="rect" id="Node000021" href="$tesart__rbd_8hpp.html" title=" " alt="" coords="623,171,749,197"/>
 <area shape="poly" id="edge27_Node000002_Node000021" title=" " alt="" coords="482,121,629,163,628,169,481,126"/>
-<area shape="rect" id="Node000005" href="$visa__device_8hpp.html" title=" " alt="" coords="223,336,347,363"/>
+<area shape="rect" id="Node000005" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="223,336,347,363"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="354,282,309,328,305,324,350,279"/>
 <area shape="rect" id="Node000015" href="$exceptions_8hpp.html" title="Заголовочный файл, содержащий класс antestl_exsceptions, сообщения исключений и коды исключений" alt="" coords="371,336,532,363"/>
 <area shape="poly" id="edge15_Node000004_Node000015" title=" " alt="" coords="380,279,430,324,426,328,377,282"/>
@@ -55,7 +55,7 @@
 <area shape="poly" id="edge33_Node000023_Node000015" title=" " alt="" coords="827,199,782,249,757,274,737,290,703,304,656,316,547,337,546,331,654,311,701,299,734,286,754,270,779,246,823,196"/>
 <area shape="poly" id="edge32_Node000023_Node000018" title=" " alt="" coords="796,200,632,251,630,246,794,195"/>
 <area shape="poly" id="edge31_Node000023_Node000022" title=" " alt="" coords="815,200,730,248,727,244,812,196"/>
-<area shape="rect" id="Node000024" href="$string__utils_8hpp.html" title=" " alt="" coords="799,245,904,288"/>
+<area shape="rect" id="Node000024" href="$string__utils_8hpp.html" title="Заголовочный файл, в котором определено пространство имён string_utils." alt="" coords="799,245,904,288"/>
 <area shape="poly" id="edge34_Node000023_Node000024" title=" " alt="" coords="841,197,847,230,842,231,835,198"/>
 <area shape="poly" id="edge35_Node000024_Node000010" title=" " alt="" coords="852,289,835,471,830,471,847,288"/>
 <area shape="poly" id="edge36_Node000024_Node000016" title=" " alt="" coords="799,286,626,338,624,333,798,281"/>

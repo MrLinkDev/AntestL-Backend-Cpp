@@ -1,15 +1,15 @@
 <map id="DeviceSet::set_path" name="DeviceSet::set_path">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,107,143,133"/>
-<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="218,81,304,108"/>
+<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="218,81,304,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,108,203,100,204,105,143,113"/>
 <area shape="rect" id="Node000007" href="$class_vna_device.html#a0b803a51b1c38828781291cdcae07495" title=" " alt="" coords="191,132,331,159"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="143,127,176,131,175,136,143,132"/>
 <area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="402,5,520,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="291,78,378,42,398,35,400,40,380,46,293,83"/>
-<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="405,56,516,83"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="405,56,516,83"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="304,87,390,76,391,81,304,92"/>
-<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="379,107,542,133"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="379,107,542,133"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="304,97,364,105,364,110,304,103"/>
-<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="394,157,528,184"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="394,157,528,184"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="304,106,332,118,380,143,398,150,396,155,378,148,330,122,302,111"/>
 </map>

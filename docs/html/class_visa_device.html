@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -101,12 +101,10 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
+<p>Класс, в котором реализованы методы для управления устройством с помощью API VISA.  
+ <a href="class_visa_device.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:VisaDevice:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_visa_device__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 <div class="dynheader">
 Граф связей класса VisaDevice:</div>
 <div class="dyncontent">
@@ -118,74 +116,100 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
 <tr class="memitem:a974bb8e47dec90c6d9c06c3f1537bff9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a974bb8e47dec90c6d9c06c3f1537bff9">VisaDevice</a> ()=default</td></tr>
 <tr class="separator:a974bb8e47dec90c6d9c06c3f1537bff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7677382a628ab30b59d93fb6a8ab653e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a7677382a628ab30b59d93fb6a8ab653e">VisaDevice</a> (std::string device_address)</td></tr>
+<tr class="memdesc:a7677382a628ab30b59d93fb6a8ab653e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор, который создаёт объект устройства с адресом, переданным в качестве аргумента  <br /></td></tr>
 <tr class="separator:a7677382a628ab30b59d93fb6a8ab653e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6eefa87dd7817e61c833d344b5147ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#ad6eefa87dd7817e61c833d344b5147ee">~VisaDevice</a> ()</td></tr>
+<tr class="memdesc:ad6eefa87dd7817e61c833d344b5147ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор, который выполняет отключение от прибора  <br /></td></tr>
 <tr class="separator:ad6eefa87dd7817e61c833d344b5147ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdcf5ce2846fecd0908bf7419c73c595"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#abdcf5ce2846fecd0908bf7419c73c595">connect</a> ()</td></tr>
+<tr class="memdesc:abdcf5ce2846fecd0908bf7419c73c595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, осуществляющий подключение к прибору.  <br /></td></tr>
 <tr class="separator:abdcf5ce2846fecd0908bf7419c73c595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa53bc03ce9be2af514335565d585414e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#aa53bc03ce9be2af514335565d585414e">is_connected</a> () const</td></tr>
+<tr class="memdesc:aa53bc03ce9be2af514335565d585414e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, возвращающий значение флага connected.  <br /></td></tr>
 <tr class="separator:aa53bc03ce9be2af514335565d585414e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42fef7311fd6239157768e33c667f2d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a42fef7311fd6239157768e33c667f2d5">clear</a> () const</td></tr>
+<tr class="memdesc:a42fef7311fd6239157768e33c667f2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищает входящий и исходящие буферы устройства  <br /></td></tr>
 <tr class="separator:a42fef7311fd6239157768e33c667f2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f6602a4daf668fa4a06a1fe2821d0c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a3f6602a4daf668fa4a06a1fe2821d0c7">idn</a> ()</td></tr>
+<tr class="memdesc:a3f6602a4daf668fa4a06a1fe2821d0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправляет команду "*IDN?" на подключенное устройство и ожидает ответа  <br /></td></tr>
 <tr class="separator:a3f6602a4daf668fa4a06a1fe2821d0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a6c6ace7c5841db420c1e112782a53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53">opc</a> ()</td></tr>
+<tr class="memdesc:a70a6c6ace7c5841db420c1e112782a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправляет команду "*OPC?" на подключенное устройство, ожидает ответ и, в зависимости от полученного ответа, возвращает OPC_PASS или OPC_WAIT.  <br /></td></tr>
 <tr class="separator:a70a6c6ace7c5841db420c1e112782a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba4642c194cffe2135a133e23960ab63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#aba4642c194cffe2135a133e23960ab63">err</a> ()</td></tr>
+<tr class="memdesc:aba4642c194cffe2135a133e23960ab63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправляет команду "SYSTEM:ERROR?" на подключенное устройство и считывает сведения об ошибках, возникших на устройстве.  <br /></td></tr>
 <tr class="separator:aba4642c194cffe2135a133e23960ab63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1f5c0b110fca770dbd5be069453ea82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82">wait</a> ()</td></tr>
+<tr class="memdesc:ab1f5c0b110fca770dbd5be069453ea82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ожидание завершения выполнения команды.  <br /></td></tr>
 <tr class="separator:ab1f5c0b110fca770dbd5be069453ea82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad659ba652605f5c983958400fde8c808"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#ad659ba652605f5c983958400fde8c808">send</a> (std::string command, bool read_data=false)</td></tr>
+<tr class="memdesc:ad659ba652605f5c983958400fde8c808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных на прибор и чтение ответа от прибора.  <br /></td></tr>
 <tr class="separator:ad659ba652605f5c983958400fde8c808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3744ee1e929d6c05b522693c344c76b3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3">send_wait</a> (std::string command)</td></tr>
+<tr class="memdesc:a3744ee1e929d6c05b522693c344c76b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий прибором.  <br /></td></tr>
 <tr class="separator:a3744ee1e929d6c05b522693c344c76b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ab94835c465376d5b775478b3b04bf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf">send_err</a> (std::string command)</td></tr>
+<tr class="memdesc:aa8ab94835c465376d5b775478b3b04bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.  <br /></td></tr>
 <tr class="separator:aa8ab94835c465376d5b775478b3b04bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069e154c5f48779dfd908146db9e66ed"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed">send_wait_err</a> (std::string command)</td></tr>
+<tr class="memdesc:a069e154c5f48779dfd908146db9e66ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий прибором и проверяется наличие ошибок на приборе.  <br /></td></tr>
 <tr class="separator:a069e154c5f48779dfd908146db9e66ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09de9a813b559eedad4587afbc64741"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:ae09de9a813b559eedad4587afbc64741"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_visa_device.html#ae09de9a813b559eedad4587afbc64741">send</a> (const std::string &amp;fmt, T &amp;&amp;...args)</td></tr>
+<tr class="memdesc:ae09de9a813b559eedad4587afbc64741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных на прибор и чтение ответа от прибора.  <br /></td></tr>
 <tr class="separator:ae09de9a813b559eedad4587afbc64741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff290be3fb61e9679a548aafc571985d"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:aff290be3fb61e9679a548aafc571985d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_visa_device.html#aff290be3fb61e9679a548aafc571985d">send_wait</a> (const std::string &amp;fmt, T &amp;&amp;...args)</td></tr>
+<tr class="memdesc:aff290be3fb61e9679a548aafc571985d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий прибором.  <br /></td></tr>
 <tr class="separator:aff290be3fb61e9679a548aafc571985d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a743747ee232e8ff9723d25539852f94d"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:a743747ee232e8ff9723d25539852f94d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a743747ee232e8ff9723d25539852f94d">send_err</a> (const std::string &amp;fmt, T &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a743747ee232e8ff9723d25539852f94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.  <br /></td></tr>
 <tr class="separator:a743747ee232e8ff9723d25539852f94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95d81d2e1ebab67621ac7aac769bc64"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:ab95d81d2e1ebab67621ac7aac769bc64"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64">send_wait_err</a> (const std::string &amp;fmt, T &amp;&amp;...args)</td></tr>
+<tr class="memdesc:ab95d81d2e1ebab67621ac7aac769bc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий прибором и проверяется наличие ошибок на приборе.  <br /></td></tr>
 <tr class="separator:ab95d81d2e1ebab67621ac7aac769bc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Защищенные данные</h2></td></tr>
 <tr class="memitem:a19c11336eececceeb30ec15c2dfc54bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a19c11336eececceeb30ec15c2dfc54bd">connected</a> = false</td></tr>
+<tr class="memdesc:a19c11336eececceeb30ec15c2dfc54bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переменная, которая показывает, подключен ли прибор или нет  <br /></td></tr>
 <tr class="separator:a19c11336eececceeb30ec15c2dfc54bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Закрытые члены</h2></td></tr>
 <tr class="memitem:a29202c3f5e47326386d1d27972e25267"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a29202c3f5e47326386d1d27972e25267">write</a> (std::string command)</td></tr>
+<tr class="memdesc:a29202c3f5e47326386d1d27972e25267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, позволяющий отправить команду на устройство  <br /></td></tr>
 <tr class="separator:a29202c3f5e47326386d1d27972e25267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca08d9dbb0469f1143668a485e4adfe2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2">read</a> ()</td></tr>
+<tr class="memdesc:aca08d9dbb0469f1143668a485e4adfe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, позволяющий считать данные с устройства  <br /></td></tr>
 <tr class="separator:aca08d9dbb0469f1143668a485e4adfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa807192fd9a8c3e6efc458f78de5e73e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e">query</a> (std::string command)</td></tr>
+<tr class="memdesc:aa807192fd9a8c3e6efc458f78de5e73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, совмещающий в себе методы <a class="el" href="class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title="Метод, позволяющий отправить команду на устройство">write()</a> и <a class="el" href="class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title="Метод, позволяющий считать данные с устройства">read()</a>.  <br /></td></tr>
 <tr class="separator:aa807192fd9a8c3e6efc458f78de5e73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Закрытые данные</h2></td></tr>
 <tr class="memitem:a2ff884c22d7955782553fc61d994b4d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvisa__config.html">visa_config</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a2ff884c22d7955782553fc61d994b4d7">device_config</a> {}</td></tr>
+<tr class="memdesc:a2ff884c22d7955782553fc61d994b4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конфигурация устройства для подключения  <br /></td></tr>
 <tr class="separator:a2ff884c22d7955782553fc61d994b4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295a8eb76bbb6f302d2fcf2a54288618"><td class="memItemLeft" align="right" valign="top">ViSession&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a295a8eb76bbb6f302d2fcf2a54288618">resource_manager</a> {}</td></tr>
+<tr class="memdesc:a295a8eb76bbb6f302d2fcf2a54288618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор менеджера ресурсов  <br /></td></tr>
 <tr class="separator:a295a8eb76bbb6f302d2fcf2a54288618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f65902a196859412f5dc1336eb72322"><td class="memItemLeft" align="right" valign="top">ViSession&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a7f65902a196859412f5dc1336eb72322">device</a> {}</td></tr>
+<tr class="memdesc:a7f65902a196859412f5dc1336eb72322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор устройства  <br /></td></tr>
 <tr class="separator:a7f65902a196859412f5dc1336eb72322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45a2a1f03cb441642c360ffbb6a68cd"><td class="memItemLeft" align="right" valign="top">ViStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#aa45a2a1f03cb441642c360ffbb6a68cd">status</a> {}</td></tr>
+<tr class="memdesc:aa45a2a1f03cb441642c360ffbb6a68cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статус выполнения операции  <br /></td></tr>
 <tr class="separator:aa45a2a1f03cb441642c360ffbb6a68cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a3d90289e60f062f1e14242cc90e889"><td class="memItemLeft" align="right" valign="top">ViPUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html#a4a3d90289e60f062f1e14242cc90e889">ret_count</a> {}</td></tr>
 <tr class="separator:a4a3d90289e60f062f1e14242cc90e889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00042">42</a></p>
+<div class="textblock"><p>Класс, в котором реализованы методы для управления устройством с помощью API VISA. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00074">74</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a974bb8e47dec90c6d9c06c3f1537bff9" name="a974bb8e47dec90c6d9c06c3f1537bff9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a974bb8e47dec90c6d9c06c3f1537bff9">&#9670;&#160;</a></span>VisaDevice() <span class="overload">[1/2]</span></h2>
@@ -236,7 +260,18 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00053">53</a></p>
+<p>Конструктор, который создаёт объект устройства с адресом, переданным в качестве аргумента </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_address</td><td>Адрес устройства</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> <a class="code hl_variable" href="class_visa_device.html#a7f65902a196859412f5dc1336eb72322">device</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="ttc" id="aclass_visa_device_html"><div class="ttname"><a href="class_visa_device.html">VisaDevice</a></div><div class="ttdoc">Класс, в котором реализованы методы для управления устройством с помощью API VISA.</div><div class="ttdef"><b>Definition</b> <a href="visa__device_8hpp_source.html#l00074">visa_device.hpp:74</a></div></div>
+<div class="ttc" id="aclass_visa_device_html_a7f65902a196859412f5dc1336eb72322"><div class="ttname"><a href="class_visa_device.html#a7f65902a196859412f5dc1336eb72322">VisaDevice::device</a></div><div class="ttdeci">ViSession device</div><div class="ttdoc">Идентификатор устройства</div><div class="ttdef"><b>Definition</b> <a href="visa__device_8hpp_source.html#l00081">visa_device.hpp:81</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00102">102</a></p>
 
 </div>
 </div>
@@ -255,7 +290,9 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00057">57</a></p>
+<p>Деструктор, который выполняет отключение от прибора </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00109">109</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -289,7 +326,17 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00004">4</a></p>
+<p>Метод, позволяющий отправить команду на устройство </p>
+<p>Перед отправкой, к команде добавляется символ окончания посылки, затем полученная строка передаётся на устройство.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>Команда, отправляемая на устройство </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если команда была отправлена успешно, то возвращается SUCCESS. В противном случае - FAILURE. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00024">24</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -326,7 +373,11 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00018">18</a></p>
+<p>Метод, позволяющий считать данные с устройства </p>
+<p>Чтение осуществляется до тех пор, пока не встретится символ, которым заканчивается посылка</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает считанные данные без символа конца посылки </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00046">46</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -364,7 +415,17 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00042">42</a></p>
+<p>Метод, совмещающий в себе методы <a class="el" href="class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title="Метод, позволяющий отправить команду на устройство">write()</a> и <a class="el" href="class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title="Метод, позволяющий считать данные с устройства">read()</a>. </p>
+<p>Данный метод отправляет команду, с помощью метода <a class="el" href="class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title="Метод, позволяющий отправить команду на устройство">write()</a>, а затем считывает данные с прибора, с помощью метода <a class="el" href="class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title="Метод, позволяющий считать данные с устройства">read()</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>Отправляемая команда</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает считанные данные </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00080">80</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -401,7 +462,16 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00064">64</a></p>
+<p>Метод, осуществляющий подключение к прибору. </p>
+<p>Инициализируется менеджер ресурсов, с помощью которого осуществляется подключение к прибору. Если подключение было установлено, то флаг connected становится true. В противном случае - false.</p>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> <a class="code hl_variable" href="class_visa_device.html#a7f65902a196859412f5dc1336eb72322">device</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line"><a class="code hl_variable" href="class_visa_device.html#a7f65902a196859412f5dc1336eb72322">device</a>.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_variable" href="class_visa_device.html#a7f65902a196859412f5dc1336eb72322">device</a>.is_connected()) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Устройство подключено&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00135">135</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -430,7 +500,10 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00111">111</a></p>
+<p>Метод, возвращающий значение флага connected. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение флага connected </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00187">187</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -454,7 +527,9 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00115">115</a></p>
+<p>Очищает входящий и исходящие буферы устройства </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00194">194</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -478,7 +553,10 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00119">119</a></p>
+<p>Отправляет команду "*IDN?" на подключенное устройство и ожидает ответа </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Информацию о подключенном приборе </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00203">203</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -507,7 +585,10 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00133">133</a></p>
+<p>Отправляет команду "*OPC?" на подключенное устройство, ожидает ответ и, в зависимости от полученного ответа, возвращает OPC_PASS или OPC_WAIT. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Если прибор выполняет действия, то возвращает OPC_WAIT. Если прибор завершил выполнение действий, то возвращает OPC_PASS. Если возникли ошибки, то возвращает FAILURE. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00225">225</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -536,7 +617,10 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00151">151</a></p>
+<p>Отправляет команду "SYSTEM:ERROR?" на подключенное устройство и считывает сведения об ошибках, возникших на устройстве. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Если на устройстве не возникло ошибок, то вернёт код NO_ERRORS. Если на устройстве возникли ошибки, то возвращает ERRORS. Если, в процессе запроса, возникли проблемы, то вернёт FAILURE. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00251">251</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -565,7 +649,10 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00168">168</a></p>
+<p>Ожидание завершения выполнения команды. </p>
+<p>Цикл внутри метода будет выполняться до тех пор, пока от функции <a class="el" href="class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53" title="Отправляет команду &quot;*OPC?&quot; на подключенное устройство, ожидает ответ и, в зависимости от полученного ...">opc()</a> не вернётся ответ OPC_PASS. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00274">274</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -605,7 +692,27 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00182">182</a></p>
+<p>Отправка данных на прибор и чтение ответа от прибора. </p>
+<p>Данный метод позволяет отправить требуемую команду. Если команда оканчивается символом '?' или передан аргумент read_data = true, то ожидается ответ от прибора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>Отправляемая команда </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">read_data</td><td>Флаг, показывающий, требуется ли ожидать данные от устройства</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает пустую строку</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> vna(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">vna.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (vna.is_connected()) {</div>
+<div class="line">    vna.send(<span class="stringliteral">&quot;:SENSe:SWEep:POINts 201&quot;</span>);</div>
+<div class="line">    std::string answer = vna.send(<span class="stringliteral">&quot;:SENSe:SWEep:POINts?&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    std::cout &lt;&lt; answer &lt;&lt; std::endl;        <span class="comment">// Будет выведено число 201</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00313">313</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -635,7 +742,27 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00211">211</a></p>
+<p>Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий прибором. </p>
+<p>Метод ожидает завершение выполнения команды. Если строка заканчивается символом '?' или передан флаг read_data = true, то метод ожидает ответ от прибора. В противном случае возвращается пустая строка.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>Отправляемая команда </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">read_data</td><td>Флаг, показывающий, требуется ли ожидать данные от устройства</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает пустую строку</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> vna(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">vna.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (vna.is_connected()) {</div>
+<div class="line">    vna.send(<span class="stringliteral">&quot;:SENSe:SWEep:POINts 201&quot;</span>);</div>
+<div class="line">    vna.send_wait(<span class="stringliteral">&quot;INIT&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    std::string data = vna.send(<span class="stringliteral">&quot;:CALCULATE:MEASURE:DATA:SDATA?&quot;</span>);</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00369">369</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -665,7 +792,25 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00220">220</a></p>
+<p>Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе. </p>
+<p>Метод проверяет наличие ошибок на приборе после выполнения команды. Если строка заканчивается символом '?' или передан флаг read_data = true, то функция ожидает ответ от прибора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>Отправляемая команда </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">read_data</td><td>Флаг, показывающий, требуется ли ожидать данные от устройства</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает пустую строку</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> vna(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">vna.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (vna.is_connected()) {</div>
+<div class="line">    <span class="comment">// Метод бросит исключение antestl_exception с кодом DEVICE_ERROR_CODE</span></div>
+<div class="line">    vna.send_err(<span class="stringliteral">&quot;IDN&quot;</span>);</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00403">403</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -695,7 +840,24 @@ $(document).ready(function(){initNavTree('class_visa_device.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00233">233</a></p>
+<p>Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий прибором и проверяется наличие ошибок на приборе. </p>
+<p>Метод ожидает завершение выполнения команды проверяет наличие ошибок на приборе после выполнения команды. Если строка заканчивается символом '?' или был передан флаг read_data = true, то метод ожидает ответ от прибора. В противном случае возвращается пустая строка.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>Отправляемая команда </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">read_data</td><td>Флаг, показывающий, требуется ли ожидать данные от устройства</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает пустую строку</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> vna(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">vna.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (vna.is_connected()) {</div>
+<div class="line">    vna.send_wait_err(<span class="stringliteral">&quot;SYSTEM:FPRESET&quot;</span>);</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8cpp_source.html">visa_device.cpp</a> строка <a class="el" href="visa__device_8cpp_source.html#l00442">442</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -737,7 +899,29 @@ template&lt;typename... T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00082">82</a></p>
+<p>Отправка данных на прибор и чтение ответа от прибора. </p>
+<p>Данный метод позволяет сформировать команду, которая будет отправлена на прибор, с помощью строки форматирования и набора аргументов для неё. Если строка заканчивается символом '?', то ожидается ответ от прибора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>Строка форматирования </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>Аргументы для строки форматирования</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает пустую строку</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> vna(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">vna.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> points = 201;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (vna.is_connected()) {</div>
+<div class="line">    vna.send(<span class="stringliteral">&quot;:SENSe:SWEep:POINts {}&quot;</span>, points);</div>
+<div class="line">    std::string answer = vna.send(<span class="stringliteral">&quot;:SENSe:SWEep:POINts?&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    std::cout &lt;&lt; answer &lt;&lt; std::endl;        <span class="comment">// Будет выведено число 201</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00148">148</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -774,7 +958,29 @@ template&lt;typename... T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00092">92</a></p>
+<p>Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий прибором. </p>
+<p>Данный метод позволяет сформировать команду, которая будет отправлена на прибор, с помощью строки форматирования и набора аргументов для неё. Метод ожидает завершение выполнения команды. Если строка заканчивается символом '?', то метод ожидает ответ от прибора. В противном случае возвращается пустая строка.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>Строка форматирования </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>Аргументы для строки форматирования</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает пустую строку</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> vna(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">vna.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> points = 2001;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (vna.is_connected()) {</div>
+<div class="line">    vna.send(<span class="stringliteral">&quot;:SENSe:SWEep:POINts {}&quot;</span>, points);</div>
+<div class="line">    vna.send_wait(<span class="stringliteral">&quot;INIT&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    std::string data = vna.send(<span class="stringliteral">&quot;:CALCULATE:MEASURE:DATA:SDATA?&quot;</span>);</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00189">189</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -811,7 +1017,25 @@ template&lt;typename... T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00102">102</a></p>
+<p>Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе. </p>
+<p>Данный метод позволяет сформировать команду, которая будет отправлена на прибор, с помощью строки форматирования и набора аргументов для неё. Метод проверяет наличие ошибок на приборе после выполнения команды. Если строка заканчивается символом '?', то функция ожидает ответ от прибора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>Строка форматирования </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>Аргументы для строки форматирования</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает пустую строку</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> vna(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">vna.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (vna.is_connected()) {</div>
+<div class="line">    <span class="comment">// Метод бросит исключение antestl_exception с кодом DEVICE_ERROR_CODE</span></div>
+<div class="line">    vna.send_err(<span class="stringliteral">&quot;IDN&quot;</span>);</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00226">226</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -848,7 +1072,24 @@ template&lt;typename... T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00112">112</a></p>
+<p>Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий прибором и проверяется наличие ошибок на приборе. </p>
+<p>Данный метод позволяет сформировать команду, которая будет отправлена на прибор, с помощью строки форматирования и набора аргументов для неё. Метод ожидает завершение выполнения команды проверяет наличие ошибок на приборе после выполнения команды. Если строка заканчивается символом '?', то метод ожидает ответ от прибора. В противном случае возвращается пустая строка.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>Строка форматирования </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>Аргументы для строки форматирования</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ожидался ответ от прибора, то возвращает полученные данные. В противном случае, возвращает пустую строку</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_visa_device.html">VisaDevice</a> vna(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>);</div>
+<div class="line">vna.connect();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (vna.is_connected()) {</div>
+<div class="line">    vna.send_wait_err(<span class="stringliteral">&quot;SYSTEM:FPRESET&quot;</span>);</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00264">264</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -878,7 +1119,9 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00043">43</a></p>
+<p>Конфигурация устройства для подключения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00076">76</a></p>
 
 </div>
 </div>
@@ -902,7 +1145,9 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00045">45</a></p>
+<p>Идентификатор менеджера ресурсов </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00079">79</a></p>
 
 </div>
 </div>
@@ -926,7 +1171,9 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00046">46</a></p>
+<p>Идентификатор устройства </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00081">81</a></p>
 
 </div>
 </div>
@@ -950,7 +1197,9 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00048">48</a></p>
+<p>Статус выполнения операции </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00084">84</a></p>
 
 </div>
 </div>
@@ -974,7 +1223,7 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00049">49</a></p>
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00086">86</a></p>
 
 </div>
 </div>
@@ -998,7 +1247,9 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00057">57</a></p>
+<p>Переменная, которая показывает, подключен ли прибор или нет </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00095">95</a></p>
 
 </div>
 </div>

@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="namespacestring__utils.html#a9fe07494ccc7914840b0d615974bc802" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="namespacestring__utils.html#a9fe07494ccc7914840b0d615974bc802" target="_top" xlink:title="Делит строку на две части по требуемому символу и возвращает содержимое правой части">
 <polygon fill="white" stroke="#666666" points="490,-20 399.75,-20 399.75,0 490,0 490,-20"/>
 <text text-anchor="middle" x="444.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">string_utils::lstrip</text>
 </a>

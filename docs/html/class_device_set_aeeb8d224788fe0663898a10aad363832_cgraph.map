@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,35,159,77"/>
 <area shape="rect" id="Node000002" href="$class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" title=" " alt="" coords="216,5,368,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,43,201,37,201,42,160,48"/>
-<area shape="rect" id="Node000003" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title=" " alt="" coords="207,72,377,99"/>
+<area shape="rect" id="Node000003" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title="Метод, возвращающий значение флага connected." alt="" coords="207,72,377,99"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,64,192,69,191,74,159,69"/>
 </map>

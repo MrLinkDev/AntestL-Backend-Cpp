@@ -77,7 +77,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="visa__device_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="visa__device_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы конструкторы и методы для класа VisaDevice.">
 <polygon fill="white" stroke="#666666" points="464.75,-286 329.5,-286 329.5,-266 464.75,-266 464.75,-286"/>
 <text text-anchor="middle" x="397.12" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/visa_device.cpp</text>
 </a>

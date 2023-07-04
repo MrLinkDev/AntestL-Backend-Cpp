@@ -1,5 +1,5 @@
 <map id="VisaDevice::idn" name="VisaDevice::idn">
-<area shape="rect" id="Node000001" title=" " alt="" coords="207,31,317,57"/>
+<area shape="rect" id="Node000001" title="Отправляет команду &quot;*IDN?&quot; на подключенное устройство и ожидает ответа" alt="" coords="207,31,317,57"/>
 <area shape="rect" id="Node000002" href="$class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" title=" " alt="" coords="5,5,159,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,37,159,32,160,27,192,32"/>
 <area shape="rect" id="Node000003" href="$class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" title=" " alt="" coords="6,56,158,83"/>

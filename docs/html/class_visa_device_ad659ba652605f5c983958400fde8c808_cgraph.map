@@ -1,20 +1,20 @@
 <map id="VisaDevice::send" name="VisaDevice::send">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,127,133"/>
-<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="516,81,602,108"/>
+<area shape="rect" id="Node000001" title="Отправка данных на прибор и чтение ответа от прибора." alt="" coords="5,107,127,133"/>
+<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="516,81,602,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,104,174,87,256,70,321,60,386,59,469,67,505,74,503,79,468,72,386,64,321,66,257,76,175,92,110,109"/>
-<area shape="rect" id="Node000007" href="$class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e" title=" " alt="" coords="175,132,300,159"/>
+<area shape="rect" id="Node000007" href="$class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e" title="Метод, совмещающий в себе методы write() и read()." alt="" coords="175,132,300,159"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="128,126,161,131,160,137,127,132"/>
-<area shape="rect" id="Node000008" href="$class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title=" " alt="" coords="349,81,467,108"/>
+<area shape="rect" id="Node000008" href="$class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title="Метод, позволяющий считать данные с устройства" alt="" coords="349,81,467,108"/>
 <area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="127,113,334,97,335,103,127,118"/>
-<area shape="rect" id="Node000009" href="$class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title=" " alt="" coords="348,132,468,159"/>
+<area shape="rect" id="Node000009" href="$class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title="Метод, позволяющий отправить команду на устройство" alt="" coords="348,132,468,159"/>
 <area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="91,132,129,152,175,168,219,174,264,173,346,160,347,165,265,178,219,179,174,173,127,157,88,136"/>
 <area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="672,5,791,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="580,79,649,42,666,35,668,40,651,46,583,83"/>
-<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="676,56,787,83"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="676,56,787,83"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="602,86,661,77,661,82,603,91"/>
-<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="650,107,813,133"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="650,107,813,133"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="603,98,635,103,634,108,602,104"/>
-<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="664,157,799,184"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="664,157,799,184"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="583,106,651,143,668,150,666,155,649,148,580,111"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="284,129,346,110,348,115,286,134"/>
 <area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="300,143,333,143,333,148,300,148"/>

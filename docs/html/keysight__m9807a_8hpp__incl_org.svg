@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определены константы и класс VisaDevice.">
 <polygon fill="white" stroke="#666666" points="147.75,-132 55.25,-132 55.25,-112 147.75,-112 147.75,-132"/>
 <text text-anchor="middle" x="101.5" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">../visa_device.hpp</text>
 </a>

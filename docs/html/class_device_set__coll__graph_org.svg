@@ -135,7 +135,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_visa_device.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_visa_device.html" target="_top" xlink:title="Класс, в котором реализованы методы для управления устройством с помощью API VISA.">
 <polygon fill="white" stroke="none" points="205.5,-1413 93.5,-1413 93.5,-1029 205.5,-1029 205.5,-1413"/>
 <text text-anchor="start" x="125.5" y="-1399.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice</text>
 <text text-anchor="start" x="97.88" y="-1383.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -269,7 +269,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="structvisa__config.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="structvisa__config.html" target="_top" xlink:title="Структура конфигурации прибора">
 <polygon fill="white" stroke="none" points="199,-1545 100,-1545 100,-1461 199,-1461 199,-1545"/>
 <text text-anchor="start" x="125.88" y="-1531.5" font-family="Helvetica,sans-Serif" font-size="10.00">visa_config</text>
 <text text-anchor="start" x="104" y="-1515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

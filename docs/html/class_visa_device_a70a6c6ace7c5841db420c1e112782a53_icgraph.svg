@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 704;
 var viewHeight = 570;
-var sectionId = 'dynsection-16';
+var sectionId = 'dynsection-15';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -57,7 +57,7 @@ var sectionId = 'dynsection-16';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Отправляет команду &quot;*OPC?&quot; на подключенное устройство, ожидает ответ и, в зависимости от полученного ...">
 <polygon fill="#999999" stroke="#666666" points="695.75,-367 610,-367 610,-347 695.75,-347 695.75,-367"/>
 <text text-anchor="middle" x="652.88" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::opc</text>
 </a>
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-16';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82" target="_top" xlink:title="Ожидание завершения выполнения команды.">
 <polygon fill="white" stroke="#666666" points="574,-367 486.75,-367 486.75,-347 574,-347 574,-367"/>
 <text text-anchor="middle" x="530.38" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::wait</text>
 </a>
@@ -84,7 +84,7 @@ var sectionId = 'dynsection-16';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="450.75,-367 337.25,-367 337.25,-347 450.75,-347 450.75,-367"/>
 <text text-anchor="middle" x="394" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait</text>
 </a>
@@ -176,7 +176,7 @@ var sectionId = 'dynsection-16';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_visa_device.html#aff290be3fb61e9679a548aafc571985d" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="class_visa_device.html#aff290be3fb61e9679a548aafc571985d" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="293,-329 179.5,-329 179.5,-309 293,-309 293,-329"/>
 <text text-anchor="middle" x="236.25" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait</text>
 </a>
@@ -194,7 +194,7 @@ var sectionId = 'dynsection-16';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="301.25,-291 171.25,-291 171.25,-271 301.25,-271 301.25,-291"/>
 <text text-anchor="middle" x="236.25" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait_err</text>
 </a>
@@ -376,7 +376,7 @@ var sectionId = 'dynsection-16';
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" target="_top" xlink:title=" ">
+<g id="a_Node000018"><a xlink:href="class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="132.62,-234 2.62,-234 2.62,-214 132.62,-214 132.62,-234"/>
 <text text-anchor="middle" x="67.62" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait_err</text>
 </a>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Деление строки на вектор строк по заданному делителю">
 <polygon fill="#999999" stroke="#666666" points="257,-39 169.75,-39 169.75,-19 257,-19 257,-39"/>
 <text text-anchor="middle" x="213.38" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">string_utils::split</text>
 </a>

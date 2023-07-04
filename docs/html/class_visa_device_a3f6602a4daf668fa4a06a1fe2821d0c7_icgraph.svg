@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Отправляет команду &quot;*IDN?&quot; на подключенное устройство и ожидает ответа">
 <polygon fill="#999999" stroke="#666666" points="233.75,-39 151,-39 151,-19 233.75,-19 233.75,-39"/>
 <text text-anchor="middle" x="192.38" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::idn</text>
 </a>

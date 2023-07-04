@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
   <div class="headertitle"><div class="title">Файл visa_device.hpp</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Заголовочный файл, в котором определены константы и класс <a class="el" href="class_visa_device.html" title="Класс, в котором реализованы методы для управления устройством с помощью API VISA.">VisaDevice</a>.  
+<a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &lt;format&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &quot;visa.h&quot;</code><br />
@@ -118,43 +121,58 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Классы</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvisa__config.html">visa_config</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура конфигурации прибора  <a href="structvisa__config.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visa_device.html">VisaDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс, в котором реализованы методы для управления устройством с помощью API VISA.  <a href="class_visa_device.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Макросы</h2></td></tr>
 <tr class="memitem:a6b20d41d6252e9871430c242cb1a56e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>&#160;&#160;&#160;128</td></tr>
+<tr class="memdesc:a6b20d41d6252e9871430c242cb1a56e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер буфера для данных, которые приходят от прибора  <br /></td></tr>
 <tr class="separator:a6b20d41d6252e9871430c242cb1a56e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2dd72565852b91c809cd4685833b17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#aad2dd72565852b91c809cd4685833b17">DEFAULT_TIMEOUT</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="memdesc:aad2dd72565852b91c809cd4685833b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный таймаут команды  <br /></td></tr>
 <tr class="separator:aad2dd72565852b91c809cd4685833b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2400d83aa11009362602ef3be9e7d701"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a2400d83aa11009362602ef3be9e7d701">DEFAULT_VISA_TERM</a>&#160;&#160;&#160;'\n'</td></tr>
+<tr class="memdesc:a2400d83aa11009362602ef3be9e7d701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный символ окончания посылки  <br /></td></tr>
 <tr class="separator:a2400d83aa11009362602ef3be9e7d701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073ff458927ec79c8f3b2316694b516f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a073ff458927ec79c8f3b2316694b516f">DEFAULT_OPC_SLEEP_TIME</a>&#160;&#160;&#160;250</td></tr>
-<tr class="separator:a073ff458927ec79c8f3b2316694b516f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa90cac659d18e8ef6294c7ae337f6b58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#aa90cac659d18e8ef6294c7ae337f6b58">SUCCESS</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memdesc:aa90cac659d18e8ef6294c7ae337f6b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код, возвращаемый при успешно выполненной операции  <br /></td></tr>
 <tr class="separator:aa90cac659d18e8ef6294c7ae337f6b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d58f9ac447476b4e084d7ca383f5183"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a6d58f9ac447476b4e084d7ca383f5183">FAILURE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:a6d58f9ac447476b4e084d7ca383f5183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код, возвращаемый при неудачном выполнении операции  <br /></td></tr>
 <tr class="separator:a6d58f9ac447476b4e084d7ca383f5183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15218844bd3bc87e3ff485780c675998"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a15218844bd3bc87e3ff485780c675998">NO_ERRORS</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memdesc:a15218844bd3bc87e3ff485780c675998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код, возвращаемый, если на приборе не возникло ошибок  <br /></td></tr>
 <tr class="separator:a15218844bd3bc87e3ff485780c675998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b80bb81818c2dad473f11457a79395"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a99b80bb81818c2dad473f11457a79395">ERRORS</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memdesc:a99b80bb81818c2dad473f11457a79395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код, возвращаемый, если на приборе возникли ошибки  <br /></td></tr>
 <tr class="separator:a99b80bb81818c2dad473f11457a79395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a944f79ba5db5d1f99460e988a3296"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#ac2a944f79ba5db5d1f99460e988a3296">OPC_PASS</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memdesc:ac2a944f79ba5db5d1f99460e988a3296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код, возвращаемый функцией opc(), если прибор завершил выполнение действий  <br /></td></tr>
 <tr class="separator:ac2a944f79ba5db5d1f99460e988a3296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f36c7059b2ef6d4b749732aafac0141"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a1f36c7059b2ef6d4b749732aafac0141">OPC_WAIT</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="memdesc:a1f36c7059b2ef6d4b749732aafac0141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код, возвращаемый функцией opc(), если прибор не завершил выполнение действий  <br /></td></tr>
 <tr class="separator:a1f36c7059b2ef6d4b749732aafac0141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ac6b27314b164c272458ed5db3f681"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a65ac6b27314b164c272458ed5db3f681">CMD_IDN</a>&#160;&#160;&#160;&quot;*IDN?&quot;</td></tr>
+<tr class="memdesc:a65ac6b27314b164c272458ed5db3f681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда для запроса информации о приборе  <br /></td></tr>
 <tr class="separator:a65ac6b27314b164c272458ed5db3f681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a2fd661e9d2a4cc9bbb8174cb10cc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a73a2fd661e9d2a4cc9bbb8174cb10cc8">CMD_OPC</a>&#160;&#160;&#160;&quot;*OPC?&quot;</td></tr>
+<tr class="memdesc:a73a2fd661e9d2a4cc9bbb8174cb10cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда для проверки статуса выполнения действий прибором  <br /></td></tr>
 <tr class="separator:a73a2fd661e9d2a4cc9bbb8174cb10cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afadcbe33225bd4df3b3f033a11408785"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#afadcbe33225bd4df3b3f033a11408785">CMD_ERR</a>&#160;&#160;&#160;&quot;SYSTEM:ERROR?&quot;</td></tr>
+<tr class="memdesc:afadcbe33225bd4df3b3f033a11408785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда для запроса ошибок, возникших на приборе  <br /></td></tr>
 <tr class="separator:afadcbe33225bd4df3b3f033a11408785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857b6af93e27b7e4fbcfdb6db8198cb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a857b6af93e27b7e4fbcfdb6db8198cb0">NO_ERROR_STR</a>&#160;&#160;&#160;&quot;+0,\&quot;No error\&quot;&quot;</td></tr>
+<tr class="memdesc:a857b6af93e27b7e4fbcfdb6db8198cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный ответ прибора, если на нём не возникло ошибок  <br /></td></tr>
 <tr class="separator:a857b6af93e27b7e4fbcfdb6db8198cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f15a6cd96854ce94babde7c05d44ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#ac2f15a6cd96854ce94babde7c05d44ff">OPC_PASS_STR_KEYSIGHT</a>&#160;&#160;&#160;&quot;+1&quot;</td></tr>
+<tr class="memdesc:ac2f15a6cd96854ce94babde7c05d44ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный ответ прибора компании Keysight на команду "*OPC?", если все действия завершены  <br /></td></tr>
 <tr class="separator:ac2f15a6cd96854ce94babde7c05d44ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a5fbccded8b7356fda6447ab936458a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a0a5fbccded8b7356fda6447ab936458a">OPC_PASS_STR_PLANAR</a>&#160;&#160;&#160;&quot;1&quot;</td></tr>
+<tr class="memdesc:a0a5fbccded8b7356fda6447ab936458a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный ответ прибора компании Planar на команду "*OPC?", если все действия завершены  <br /></td></tr>
 <tr class="separator:a0a5fbccded8b7356fda6447ab936458a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -162,7 +180,13 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
 <tr class="memitem:ad92b3b0e19e4dafc50d6f35bc21b1c81"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_visa_device.html">VisaDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#ad92b3b0e19e4dafc50d6f35bc21b1c81">visa_device_t</a></td></tr>
 <tr class="separator:ad92b3b0e19e4dafc50d6f35bc21b1c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Макросы</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл, в котором определены константы и класс <a class="el" href="class_visa_device.html" title="Класс, в котором реализованы методы для управления устройством с помощью API VISA.">VisaDevice</a>. </p>
+<dl class="section author"><dt>Автор</dt><dd>Александр Горбунов </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>3 июля 2023 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a></p>
+</div><h2 class="groupheader">Макросы</h2>
 <a id="a6b20d41d6252e9871430c242cb1a56e7" name="a6b20d41d6252e9871430c242cb1a56e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b20d41d6252e9871430c242cb1a56e7">&#9670;&#160;</a></span>BUFFER_SIZE</h2>
 
@@ -175,7 +199,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00010">10</a></p>
+<p>Размер буфера для данных, которые приходят от прибора </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00019">19</a></p>
 
 </div>
 </div>
@@ -191,7 +217,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00012">12</a></p>
+<p>Стандартный таймаут команды </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00022">22</a></p>
 
 </div>
 </div>
@@ -207,23 +235,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00013">13</a></p>
+<p>Стандартный символ окончания посылки </p>
 
-</div>
-</div>
-<a id="a073ff458927ec79c8f3b2316694b516f" name="a073ff458927ec79c8f3b2316694b516f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a073ff458927ec79c8f3b2316694b516f">&#9670;&#160;</a></span>DEFAULT_OPC_SLEEP_TIME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEFAULT_OPC_SLEEP_TIME&#160;&#160;&#160;250</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00015">15</a></p>
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00024">24</a></p>
 
 </div>
 </div>
@@ -239,7 +253,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00017">17</a></p>
+<p>Код, возвращаемый при успешно выполненной операции </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00027">27</a></p>
 
 </div>
 </div>
@@ -255,7 +271,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00018">18</a></p>
+<p>Код, возвращаемый при неудачном выполнении операции </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00029">29</a></p>
 
 </div>
 </div>
@@ -271,7 +289,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00020">20</a></p>
+<p>Код, возвращаемый, если на приборе не возникло ошибок </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00032">32</a></p>
 
 </div>
 </div>
@@ -287,7 +307,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00021">21</a></p>
+<p>Код, возвращаемый, если на приборе возникли ошибки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00034">34</a></p>
 
 </div>
 </div>
@@ -303,7 +325,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00023">23</a></p>
+<p>Код, возвращаемый функцией opc(), если прибор завершил выполнение действий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00037">37</a></p>
 
 </div>
 </div>
@@ -319,7 +343,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00024">24</a></p>
+<p>Код, возвращаемый функцией opc(), если прибор не завершил выполнение действий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00039">39</a></p>
 
 </div>
 </div>
@@ -335,7 +361,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00026">26</a></p>
+<p>Команда для запроса информации о приборе </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00042">42</a></p>
 
 </div>
 </div>
@@ -351,7 +379,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00027">27</a></p>
+<p>Команда для проверки статуса выполнения действий прибором </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00044">44</a></p>
 
 </div>
 </div>
@@ -367,7 +397,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00028">28</a></p>
+<p>Команда для запроса ошибок, возникших на приборе </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00046">46</a></p>
 
 </div>
 </div>
@@ -383,7 +415,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00030">30</a></p>
+<p>Стандартный ответ прибора, если на нём не возникло ошибок </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00049">49</a></p>
 
 </div>
 </div>
@@ -399,7 +433,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00032">32</a></p>
+<p>Стандартный ответ прибора компании Keysight на команду "*OPC?", если все действия завершены </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00052">52</a></p>
 
 </div>
 </div>
@@ -415,7 +451,9 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00033">33</a></p>
+<p>Стандартный ответ прибора компании Planar на команду "*OPC?", если все действия завершены </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00054">54</a></p>
 
 </div>
 </div>
@@ -432,7 +470,7 @@ $(document).ready(function(){initNavTree('visa__device_8hpp.html',''); initResiz
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00122">122</a></p>
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00274">274</a></p>
 
 </div>
 </div>

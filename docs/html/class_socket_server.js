@@ -4,7 +4,6 @@ var class_socket_server =
     [ "SocketServer", "class_socket_server.html#a5bf519d83475f538d88d3ba9303e71a0", null ],
     [ "SocketServer", "class_socket_server.html#a509c9e31bd06b7cc8e3ba4cfb107ccf8", null ],
     [ "set_port", "class_socket_server.html#aab9b710128e52b731623b5b7fa2573ae", null ],
-    [ "set_termination", "class_socket_server.html#a40bc48fe79ef0fa4059e3bfba4769153", null ],
     [ "create", "class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80", null ],
     [ "wait_client", "class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197", null ],
     [ "read_data", "class_socket_server.html#ac27110c965c4ba07f68ad3422506651c", null ],

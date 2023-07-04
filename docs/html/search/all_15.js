@@ -1,22 +1,4 @@
 var searchData=
 [
-  ['wait_0',['wait',['../class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82',1,'VisaDevice']]],
-  ['wait_5fclient_1',['wait_client',['../class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197',1,'SocketServer']]],
-  ['what_2',['what',['../classantestl__exception.html#a4cde4a5685c756c7219ec5c9740a6a8e',1,'antestl_exception']]],
-  ['word_5faxis_3',['WORD_AXIS',['../task__manager_8hpp.html#a9436c337775cae39cfeeeb740b4977bc',1,'task_manager.hpp']]],
-  ['word_5fnested_4',['WORD_NESTED',['../task__manager_8hpp.html#a15ae8770894192692817b1e9722b477f',1,'task_manager.hpp']]],
-  ['word_5fresult_5',['WORD_RESULT',['../task__manager_8hpp.html#a5013b3e59909ffa20cc0d6c3ad884cf5',1,'task_manager.hpp']]],
-  ['word_5fresult_5fdata_6',['WORD_RESULT_DATA',['../task__manager_8hpp.html#afd1a8e0577a3117d85c92351ee451abc',1,'task_manager.hpp']]],
-  ['word_5fresult_5fid_7',['WORD_RESULT_ID',['../task__manager_8hpp.html#a1473d1c4eaedde64b2437b36c0fb4901',1,'task_manager.hpp']]],
-  ['word_5fresult_5fmsg_8',['WORD_RESULT_MSG',['../task__manager_8hpp.html#a24194ce62d209754151fd685c89e1f3c',1,'task_manager.hpp']]],
-  ['word_5ftask_9',['WORD_TASK',['../task__manager_8hpp.html#aa87bed964ca1a400aa2b3e3d2e3817c4',1,'task_manager.hpp']]],
-  ['word_5ftask_5fargs_10',['WORD_TASK_ARGS',['../task__manager_8hpp.html#aa662aecb17495fcf9f6b407cd85d42a3',1,'task_manager.hpp']]],
-  ['word_5ftask_5flist_11',['WORD_TASK_LIST',['../task__manager_8hpp.html#a62847b445253574adb8a4490a1ad65cc',1,'task_manager.hpp']]],
-  ['word_5ftask_5ftype_12',['WORD_TASK_TYPE',['../task__manager_8hpp.html#abe7b73ceacd72383b27ded6f9a13f425',1,'task_manager.hpp']]],
-  ['write_13',['write',['../class_visa_device.html#a29202c3f5e47326386d1d27972e25267',1,'VisaDevice']]],
-  ['write_5ferror_5fcode_14',['WRITE_ERROR_CODE',['../exceptions_8hpp.html#add00d47696968ccb8ffc0d01ef12da66',1,'exceptions.hpp']]],
-  ['write_5ferror_5fmsg_15',['WRITE_ERROR_MSG',['../exceptions_8hpp.html#a55cc52f16a821730eaa5640b9990ff80',1,'exceptions.hpp']]],
-  ['wrong_5ftask_5ftype_5fid_16',['WRONG_TASK_TYPE_ID',['../task__manager_8hpp.html#a36ec21082d15145908a3d22d15adc956',1,'task_manager.hpp']]],
-  ['wrong_5ftask_5ftype_5fmsg_17',['WRONG_TASK_TYPE_MSG',['../task__manager_8hpp.html#a4b042fcfcd1dfb09a0a4373c1ca9ff3c',1,'task_manager.hpp']]],
-  ['wsadata_18',['WSAData',['../class_socket_server.html#a78fe7ba24b9d07cd16f759ccef86ef5c',1,'SocketServer']]]
+  ['_7evisadevice_0',['~VisaDevice',['../class_visa_device.html#ad6eefa87dd7817e61c833d344b5147ee',1,'VisaDevice']]]
 ];

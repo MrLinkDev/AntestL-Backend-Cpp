@@ -1,6 +1,6 @@
 <map id="src/devices/gen/gen_device.hpp" name="src/devices/gen/gen_device.hpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="155,5,292,48"/>
-<area shape="rect" id="Node000002" href="$visa__device_8hpp.html" title=" " alt="" coords="79,96,202,123"/>
+<area shape="rect" id="Node000002" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="79,96,202,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,51,166,87,162,83,200,47"/>
 <area shape="rect" id="Node000012" href="$exceptions_8hpp.html" title="Заголовочный файл, содержащий класс antestl_exsceptions, сообщения исключений и коды исключений" alt="" coords="227,96,388,123"/>
 <area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="247,47,286,84,282,88,243,51"/>

@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('structvisa__config.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
+<p>Структура конфигурации прибора  
+ <a href="structvisa__config.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф связей класса visa_config:</div>
@@ -108,15 +111,20 @@ $(document).ready(function(){initNavTree('structvisa__config.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Открытые атрибуты</h2></td></tr>
 <tr class="memitem:a5db6b75a3ad0b484ff42b30bf6ddd167"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvisa__config.html#a5db6b75a3ad0b484ff42b30bf6ddd167">address</a> {}</td></tr>
+<tr class="memdesc:a5db6b75a3ad0b484ff42b30bf6ddd167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Адрес устройства  <br /></td></tr>
 <tr class="separator:a5db6b75a3ad0b484ff42b30bf6ddd167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a125bad74f669de4672d1bda82a4c6ffc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvisa__config.html#a125bad74f669de4672d1bda82a4c6ffc">timeout</a> = <a class="el" href="visa__device_8hpp.html#aad2dd72565852b91c809cd4685833b17">DEFAULT_TIMEOUT</a></td></tr>
+<tr class="memdesc:a125bad74f669de4672d1bda82a4c6ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таймаут выполнения команды. По-умолчанию таймаут = DEFAULT_TIMEOUT.  <br /></td></tr>
 <tr class="separator:a125bad74f669de4672d1bda82a4c6ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a602d14163ee17db1a13d49d388866696"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvisa__config.html#a602d14163ee17db1a13d49d388866696">termination</a> = <a class="el" href="visa__device_8hpp.html#a2400d83aa11009362602ef3be9e7d701">DEFAULT_VISA_TERM</a></td></tr>
+<tr class="memdesc:a602d14163ee17db1a13d49d388866696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Символ, которым оканчивается посылка. По-умолчанию символ = DEFAULT_VISA_TERM.  <br /></td></tr>
 <tr class="separator:a602d14163ee17db1a13d49d388866696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00035">35</a></p>
+<div class="textblock"><p>Структура конфигурации прибора </p>
+<p>Структура содержит в себе минимальный набор параметров для создания подключения с прибором </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00061">61</a></p>
 </div><h2 class="groupheader">Данные класса</h2>
 <a id="a5db6b75a3ad0b484ff42b30bf6ddd167" name="a5db6b75a3ad0b484ff42b30bf6ddd167"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5db6b75a3ad0b484ff42b30bf6ddd167">&#9670;&#160;</a></span>address</h2>
@@ -130,7 +138,9 @@ $(document).ready(function(){initNavTree('structvisa__config.html',''); initResi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00036">36</a></p>
+<p>Адрес устройства </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00063">63</a></p>
 
 </div>
 </div>
@@ -146,7 +156,9 @@ $(document).ready(function(){initNavTree('structvisa__config.html',''); initResi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00038">38</a></p>
+<p>Таймаут выполнения команды. По-умолчанию таймаут = DEFAULT_TIMEOUT. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00066">66</a></p>
 
 </div>
 </div>
@@ -162,7 +174,9 @@ $(document).ready(function(){initNavTree('structvisa__config.html',''); initResi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00039">39</a></p>
+<p>Символ, которым оканчивается посылка. По-умолчанию символ = DEFAULT_VISA_TERM. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00068">68</a></p>
 
 </div>
 </div>

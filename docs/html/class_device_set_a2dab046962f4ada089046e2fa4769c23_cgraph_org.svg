@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_visa_device.html#aa53bc03ce9be2af514335565d585414e" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_visa_device.html#aa53bc03ce9be2af514335565d585414e" target="_top" xlink:title="Метод, возвращающий значение флага connected.">
 <polygon fill="white" stroke="#666666" points="263.75,-115 136,-115 136,-95 263.75,-95 263.75,-115"/>
 <text text-anchor="middle" x="199.88" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::is_connected</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_logger.html#af7709105c2708359b7b082218f4cc3e1" target="_top" xlink:title="Функция, осуществляющая логирование">
+<g id="a_Node000004"><a xlink:href="class_logger.html#af7709105c2708359b7b082218f4cc3e1" target="_top" xlink:title="Метод, осуществляющий логирование">
 <polygon fill="white" stroke="#666666" points="231.88,-77 167.88,-77 167.88,-57 231.88,-57 231.88,-77"/>
 <text text-anchor="middle" x="199.88" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::log</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="class_logger.html#a6edb7b263f080d417b82a537ed50fee4" target="_top" xlink:title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега.">
+<g id="a_Node000006"><a xlink:href="class_logger.html#a6edb7b263f080d417b82a537ed50fee4" target="_top" xlink:title="Возвращает тег в зависимости от уровня логирования и от назначения тега.">
 <polygon fill="white" stroke="#666666" points="402.75,-96 319.25,-96 319.25,-76 402.75,-76 402.75,-96"/>
 <text text-anchor="middle" x="361" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::get_tag</text>
 </a>
@@ -128,7 +128,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" target="_top" xlink:title="Функция, которая выводит сообщение в консоль.">
+<g id="a_Node000007"><a xlink:href="class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" target="_top" xlink:title="Метод, который выводит сообщение в консоль.">
 <polygon fill="white" stroke="#666666" points="422.25,-58 299.75,-58 299.75,-38 422.25,-38 422.25,-58"/>
 <text text-anchor="middle" x="361" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::print_to_console</text>
 </a>
@@ -146,7 +146,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" target="_top" xlink:title="Функция, которая записывает сообщение в файл.">
+<g id="a_Node000008"><a xlink:href="class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" target="_top" xlink:title="Метод, который записывает сообщение в файл.">
 <polygon fill="white" stroke="#666666" points="411.38,-20 310.62,-20 310.62,0 411.38,0 411.38,-20"/>
 <text text-anchor="middle" x="361" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger::print_to_file</text>
 </a>

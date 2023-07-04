@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;0.0.1</span>
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -102,26 +102,26 @@ $(document).ready(function(){initNavTree('array__utils_8hpp_source.html',''); in
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespacearray__utils.html">   17</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacearray__utils.html">array_utils</a> {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespacearray__utils.html#acc51bcd934d5180b0733c6335deaa8a7">   29</a></span>    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacearray__utils.html#acc51bcd934d5180b0733c6335deaa8a7">index</a>(T *target_array, <span class="keywordtype">int</span> array_length, T item) {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> pos = 0; pos &lt; array_length; ++pos) {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">if</span> (target_array[pos] == item) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keywordflow">return</span> pos;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacearray__utils.html#a1e33a0a2262dcc16869a564112ff43f3">   47</a></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacearray__utils.html#a1e33a0a2262dcc16869a564112ff43f3">compare_nested</a>(nlohmann::json j1, nlohmann::json j2) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span>(j1[<span class="stringliteral">&quot;nested&quot;</span>].get&lt;int&gt;() &lt; j2[<span class="stringliteral">&quot;nested&quot;</span>].get&lt;int&gt;());</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">//ANTESTL_BACKEND_ARRAY_UTILS_HPP</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespacearray__utils.html#acc51bcd934d5180b0733c6335deaa8a7">   30</a></span>    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacearray__utils.html#acc51bcd934d5180b0733c6335deaa8a7">index</a>(T *target_array, <span class="keywordtype">int</span> array_length, T item) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> pos = 0; pos &lt; array_length; ++pos) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">if</span> (target_array[pos] == item) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">return</span> pos;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespacearray__utils.html#a1e33a0a2262dcc16869a564112ff43f3">   48</a></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacearray__utils.html#a1e33a0a2262dcc16869a564112ff43f3">compare_nested</a>(nlohmann::json j1, nlohmann::json j2) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span>(j1[<span class="stringliteral">&quot;nested&quot;</span>].get&lt;int&gt;() &lt; j2[<span class="stringliteral">&quot;nested&quot;</span>].get&lt;int&gt;());</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">//ANTESTL_BACKEND_ARRAY_UTILS_HPP</span></div>
 <div class="ttc" id="anamespacearray__utils_html"><div class="ttname"><a href="namespacearray__utils.html">array_utils</a></div><div class="ttdoc">Пространство имён, в котором определены методы для работы с массивами</div><div class="ttdef"><b>Definition</b> <a href="array__utils_8hpp_source.html#l00017">array_utils.hpp:17</a></div></div>
-<div class="ttc" id="anamespacearray__utils_html_a1e33a0a2262dcc16869a564112ff43f3"><div class="ttname"><a href="namespacearray__utils.html#a1e33a0a2262dcc16869a564112ff43f3">array_utils::compare_nested</a></div><div class="ttdeci">bool compare_nested(nlohmann::json j1, nlohmann::json j2)</div><div class="ttdoc">Функция для сравнения величины вложенности двух заданий</div><div class="ttdef"><b>Definition</b> <a href="array__utils_8hpp_source.html#l00047">array_utils.hpp:47</a></div></div>
-<div class="ttc" id="anamespacearray__utils_html_acc51bcd934d5180b0733c6335deaa8a7"><div class="ttname"><a href="namespacearray__utils.html#acc51bcd934d5180b0733c6335deaa8a7">array_utils::index</a></div><div class="ttdeci">int index(T *target_array, int array_length, T item)</div><div class="ttdoc">Функция, которая позволяет найти индекс требуемого элемента</div><div class="ttdef"><b>Definition</b> <a href="array__utils_8hpp_source.html#l00029">array_utils.hpp:29</a></div></div>
+<div class="ttc" id="anamespacearray__utils_html_a1e33a0a2262dcc16869a564112ff43f3"><div class="ttname"><a href="namespacearray__utils.html#a1e33a0a2262dcc16869a564112ff43f3">array_utils::compare_nested</a></div><div class="ttdeci">bool compare_nested(nlohmann::json j1, nlohmann::json j2)</div><div class="ttdoc">Функция для сравнения величины вложенности двух заданий</div><div class="ttdef"><b>Definition</b> <a href="array__utils_8hpp_source.html#l00048">array_utils.hpp:48</a></div></div>
+<div class="ttc" id="anamespacearray__utils_html_acc51bcd934d5180b0733c6335deaa8a7"><div class="ttname"><a href="namespacearray__utils.html#acc51bcd934d5180b0733c6335deaa8a7">array_utils::index</a></div><div class="ttdeci">int index(T *target_array, int array_length, T item)</div><div class="ttdoc">Функция, которая позволяет найти индекс требуемого элемента</div><div class="ttdef"><b>Definition</b> <a href="array__utils_8hpp_source.html#l00030">array_utils.hpp:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

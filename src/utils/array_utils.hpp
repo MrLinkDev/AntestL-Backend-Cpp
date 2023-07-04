@@ -12,7 +12,6 @@
 #include <json.hpp>
 
 /**
- * \namespace
  * \brief Пространство имён, в котором определены методы для работы с массивами
  */
 namespace array_utils {
@@ -24,7 +23,8 @@ namespace array_utils {
      * \param [in] array_length Длина массива
      * \param [in] item Элемент массива, индекс которого требуется найти
      *
-     * \return Если элемент был найден в массиве, то возвращается его индекс. В противном случае, возвращается -1.
+     * \return Если элемент был найден в массиве, то возвращается его индекс.
+     * В противном случае, возвращается -1.
      */
     template <typename T>
     inline int index(T *target_array, int array_length, T item) {

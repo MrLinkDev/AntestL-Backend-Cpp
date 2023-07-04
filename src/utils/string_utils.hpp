@@ -16,7 +16,6 @@
 #define DEFAULT_DELIMITER       ' '
 
 /**
- * \namespace
  * \brief Пространство имён, в котором определены вспомогательные методы для работы со строками
  */
 namespace string_utils {

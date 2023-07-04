@@ -1,40 +1,40 @@
 <map id="VisaDevice::send_wait_err" name="VisaDevice::send_wait_err">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,68,179,95"/>
-<area shape="rect" id="Node000002" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title=" " alt="" coords="227,68,400,95"/>
+<area shape="rect" id="Node000001" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="5,68,179,95"/>
+<area shape="rect" id="Node000002" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="227,68,400,95"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,79,211,79,211,84,179,84"/>
-<area shape="rect" id="Node000003" href="$class_visa_device.html#aba4642c194cffe2135a133e23960ab63" title=" " alt="" coords="818,68,927,95"/>
+<area shape="rect" id="Node000003" href="$class_visa_device.html#aba4642c194cffe2135a133e23960ab63" title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,..." alt="" coords="818,68,927,95"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="400,79,803,79,803,84,400,84"/>
-<area shape="rect" id="Node000004" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="1323,195,1408,221"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="1323,195,1408,221"/>
 <area shape="poly" id="edge13_Node000002_Node000004" title=" " alt="" coords="357,65,423,46,509,26,606,9,704,3,1045,3,1115,8,1169,24,1218,52,1276,94,1299,114,1320,136,1351,180,1346,183,1315,140,1295,118,1273,98,1216,57,1167,29,1114,13,1045,8,704,8,606,15,510,31,424,51,358,70"/>
-<area shape="rect" id="Node000012" href="$class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" title=" " alt="" coords="448,169,599,196"/>
+<area shape="rect" id="Node000012" href="$class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="448,169,599,196"/>
 <area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="344,93,482,160,480,165,342,98"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="927,76,998,76,1087,83,1183,99,1230,112,1276,130,1314,153,1344,181,1341,185,1311,158,1273,134,1229,117,1182,104,1087,88,998,82,927,81"/>
-<area shape="rect" id="Node000009" href="$class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e" title=" " alt="" coords="981,144,1106,171"/>
+<area shape="rect" id="Node000009" href="$class_visa_device.html#aa807192fd9a8c3e6efc458f78de5e73e" title="Метод, совмещающий в себе методы write() и read()." alt="" coords="981,144,1106,171"/>
 <area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="906,93,999,135,997,140,904,98"/>
 <area shape="rect" id="Node000005" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="1479,119,1597,145"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1387,192,1455,155,1472,148,1474,153,1457,160,1389,197"/>
-<area shape="rect" id="Node000006" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="1482,169,1593,196"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="1482,169,1593,196"/>
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1408,199,1467,190,1468,196,1409,204"/>
-<area shape="rect" id="Node000007" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="1456,220,1619,247"/>
+<area shape="rect" id="Node000007" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="1456,220,1619,247"/>
 <area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="1409,212,1441,216,1441,222,1408,217"/>
-<area shape="rect" id="Node000008" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="1471,271,1605,297"/>
+<area shape="rect" id="Node000008" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="1471,271,1605,297"/>
 <area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="1389,219,1457,256,1474,263,1472,268,1455,261,1387,224"/>
-<area shape="rect" id="Node000010" href="$class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title=" " alt="" coords="1155,144,1274,171"/>
+<area shape="rect" id="Node000010" href="$class_visa_device.html#aca08d9dbb0469f1143668a485e4adfe2" title="Метод, позволяющий считать данные с устройства" alt="" coords="1155,144,1274,171"/>
 <area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1107,155,1140,155,1140,160,1107,160"/>
-<area shape="rect" id="Node000011" href="$class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title=" " alt="" coords="1154,195,1275,221"/>
+<area shape="rect" id="Node000011" href="$class_visa_device.html#a29202c3f5e47326386d1d27972e25267" title="Метод, позволяющий отправить команду на устройство" alt="" coords="1154,195,1275,221"/>
 <area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="1092,169,1154,187,1152,192,1091,174"/>
 <area shape="poly" id="edge10_Node000010_Node000004" title=" " alt="" coords="1258,169,1311,187,1309,192,1256,174"/>
 <area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="1275,205,1308,205,1308,211,1275,211"/>
-<area shape="rect" id="Node000013" href="$class_visa_device.html#ad659ba652605f5c983958400fde8c808" title=" " alt="" coords="812,169,933,196"/>
+<area shape="rect" id="Node000013" href="$class_visa_device.html#ad659ba652605f5c983958400fde8c808" title="Отправка данных на прибор и чтение ответа от прибора." alt="" coords="812,169,933,196"/>
 <area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="600,180,797,180,797,185,600,185"/>
-<area shape="rect" id="Node000014" href="$class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82" title=" " alt="" coords="647,271,764,297"/>
+<area shape="rect" id="Node000014" href="$class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82" title="Ожидание завершения выполнения команды." alt="" coords="647,271,764,297"/>
 <area shape="poly" id="edge20_Node000012_Node000014" title=" " alt="" coords="551,194,669,261,666,265,548,199"/>
 <area shape="poly" id="edge16_Node000013_Node000004" title=" " alt="" coords="921,194,990,211,1078,227,1176,235,1226,235,1274,231,1310,223,1311,228,1275,236,1226,240,1176,241,1077,232,989,216,920,199"/>
 <area shape="poly" id="edge17_Node000013_Node000009" title=" " alt="" coords="933,171,966,166,967,171,934,176"/>
 <area shape="poly" id="edge18_Node000013_Node000010" title=" " alt="" coords="894,166,933,146,980,129,1025,124,1071,124,1153,137,1152,143,1071,130,1026,129,982,135,935,151,897,171"/>
 <area shape="poly" id="edge19_Node000013_Node000011" title=" " alt="" coords="934,184,1140,200,1139,205,933,190"/>
 <area shape="poly" id="edge21_Node000014_Node000004" title=" " alt="" coords="754,295,812,307,944,322,1048,325,1097,320,1149,310,1207,293,1274,270,1308,251,1337,229,1341,233,1311,256,1276,274,1209,298,1150,315,1098,325,1048,330,943,327,811,312,753,301"/>
-<area shape="rect" id="Node000015" href="$class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53" title=" " alt="" coords="815,271,930,297"/>
+<area shape="rect" id="Node000015" href="$class_visa_device.html#a70a6c6ace7c5841db420c1e112782a53" title="Отправляет команду &quot;*OPC?&quot; на подключенное устройство, ожидает ответ и, в зависимости от полученного ..." alt="" coords="815,271,930,297"/>
 <area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="764,281,800,281,800,287,764,287"/>
 <area shape="poly" id="edge23_Node000015_Node000004" title=" " alt="" coords="929,281,1086,271,1180,260,1274,241,1321,225,1323,230,1275,247,1181,265,1087,277,930,286"/>
 <area shape="poly" id="edge24_Node000015_Node000009" title=" " alt="" coords="890,268,1011,178,1014,182,893,273"/>

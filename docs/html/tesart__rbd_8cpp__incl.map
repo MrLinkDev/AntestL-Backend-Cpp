@@ -4,13 +4,13 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,51,288,91,285,87,364,46"/>
 <area shape="rect" id="Node000016" href="$exceptions_8hpp.html" title="Заголовочный файл, содержащий класс antestl_exsceptions, сообщения исключений и коды исключений" alt="" coords="326,96,487,123"/>
 <area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="409,49,409,81,404,81,404,49"/>
-<area shape="rect" id="Node000017" href="$string__utils_8hpp.html" title=" " alt="" coords="472,171,578,213"/>
+<area shape="rect" id="Node000017" href="$string__utils_8hpp.html" title="Заголовочный файл, в котором определено пространство имён string_utils." alt="" coords="472,171,578,213"/>
 <area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="447,46,476,67,502,94,516,125,524,155,519,157,511,126,497,98,473,71,444,51"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="304,179,362,205"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,121,312,167,308,171,260,125"/>
 <area shape="rect" id="Node000004" href="$rbd__device_8hpp.html" title=" " alt="" coords="173,179,280,205"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="248,124,236,166,231,164,243,122"/>
-<area shape="rect" id="Node000005" href="$visa__device_8hpp.html" title=" " alt="" coords="119,261,243,288"/>
+<area shape="rect" id="Node000005" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="119,261,243,288"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,207,197,250,192,247,217,205"/>
 <area shape="rect" id="Node000015" title=" " alt="" coords="355,261,410,288"/>
 <area shape="poly" id="edge15_Node000004_Node000015" title=" " alt="" coords="252,203,346,252,344,257,249,208"/>

@@ -1,6 +1,6 @@
 <map id="src/devices/visa_device.cpp" name="src/devices/visa_device.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="128,5,308,32"/>
-<area shape="rect" id="Node000002" href="$visa__device_8hpp.html" title=" " alt="" coords="85,80,196,107"/>
+<area shape="rect" id="Node000001" title="Файл исходного кода, в котором реализованы конструкторы и методы для класа VisaDevice." alt="" coords="128,5,308,32"/>
+<area shape="rect" id="Node000002" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="85,80,196,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,34,166,72,163,68,203,31"/>
 <area shape="rect" id="Node000012" href="$exceptions_8hpp.html" title="Заголовочный файл, содержащий класс antestl_exsceptions, сообщения исключений и коды исключений" alt="" coords="221,80,370,107"/>
 <area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="233,31,273,68,270,72,230,34"/>

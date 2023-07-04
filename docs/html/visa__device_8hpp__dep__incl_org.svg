@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Заголовочный файл, в котором определены константы и класс VisaDevice.">
 <polygon fill="#999999" stroke="#666666" points="323.5,-348 188.25,-348 188.25,-328 323.5,-328 323.5,-348"/>
 <text text-anchor="middle" x="255.88" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/visa_device.hpp</text>
 </a>
@@ -58,7 +58,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="visa__device_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="visa__device_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы конструкторы и методы для класа VisaDevice.">
 <polygon fill="white" stroke="#666666" points="392.5,-286 257.25,-286 257.25,-266 392.5,-266 392.5,-286"/>
 <text text-anchor="middle" x="324.88" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/visa_device.cpp</text>
 </a>

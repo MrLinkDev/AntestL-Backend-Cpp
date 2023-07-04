@@ -1,5 +1,5 @@
 <map id="string_utils::lstrip" name="string_utils::lstrip">
-<area shape="rect" id="Node000001" title=" " alt="" coords="538,56,659,83"/>
+<area shape="rect" id="Node000001" title="Делит строку на две части по требуемому символу и возвращает содержимое правой части" alt="" coords="538,56,659,83"/>
 <area shape="rect" id="Node000002" href="$class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1" title=" " alt="" coords="366,31,490,57"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="523,61,491,56,491,51,524,56"/>
 <area shape="rect" id="Node000006" href="$class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" title=" " alt="" coords="366,81,490,108"/>

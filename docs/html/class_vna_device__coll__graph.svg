@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 149;
 var viewHeight = 1005;
-var sectionId = 'dynsection-1';
+var sectionId = 'dynsection-0';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -117,7 +117,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_visa_device.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_visa_device.html" target="_top" xlink:title="Класс, в котором реализованы методы для управления устройством с помощью API VISA.">
 <polygon fill="white" stroke="none" points="126.5,-865 14.5,-865 14.5,-481 126.5,-481 126.5,-865"/>
 <text text-anchor="start" x="46.5" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice</text>
 <text text-anchor="start" x="18.88" y="-835.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -181,7 +181,7 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="structvisa__config.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="structvisa__config.html" target="_top" xlink:title="Структура конфигурации прибора">
 <polygon fill="white" stroke="none" points="120,-997 21,-997 21,-913 120,-913 120,-997"/>
 <text text-anchor="start" x="46.88" y="-983.5" font-family="Helvetica,sans-Serif" font-size="10.00">visa_config</text>
 <text text-anchor="start" x="25" y="-967.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

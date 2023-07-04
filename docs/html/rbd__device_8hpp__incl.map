@@ -1,6 +1,6 @@
 <map id="src/devices/rbd/rbd_device.hpp" name="src/devices/rbd/rbd_device.hpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="132,5,262,48"/>
-<area shape="rect" id="Node000002" href="$visa__device_8hpp.html" title=" " alt="" coords="79,96,202,123"/>
+<area shape="rect" id="Node000002" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="79,96,202,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,50,160,85,156,82,180,47"/>
 <area shape="rect" id="Node000012" title=" " alt="" coords="226,96,282,123"/>
 <area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="214,47,239,82,235,85,209,50"/>

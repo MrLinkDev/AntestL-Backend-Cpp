@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.">
 <polygon fill="#999999" stroke="#666666" points="251,-20 143.5,-20 143.5,0 251,0 251,-20"/>
 <text text-anchor="middle" x="197.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_err</text>
 </a>
@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_visa_device.html#a743747ee232e8ff9723d25539852f94d" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_visa_device.html#a743747ee232e8ff9723d25539852f94d" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.">
 <polygon fill="white" stroke="#666666" points="107.5,-20 0,-20 0,0 107.5,0 107.5,-20"/>
 <text text-anchor="middle" x="53.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_err</text>
 </a>

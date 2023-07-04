@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определены константы и класс VisaDevice.">
 <polygon fill="white" stroke="#666666" points="515.75,-348 380.5,-348 380.5,-328 515.75,-328 515.75,-348"/>
 <text text-anchor="middle" x="448.12" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/visa_device.hpp</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="socket__server_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000019"><a xlink:href="socket__server_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором объявляются класс SocketServer и необходимые константы">
 <polygon fill="white" stroke="#666666" points="731.88,-348 588.38,-348 588.38,-328 731.88,-328 731.88,-348"/>
 <text text-anchor="middle" x="660.12" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/socket/socket_server.hpp</text>
 </a>
@@ -94,7 +94,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="visa__device_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="visa__device_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы конструкторы и методы для класа VisaDevice.">
 <polygon fill="white" stroke="#666666" points="378.75,-286 243.5,-286 243.5,-266 378.75,-266 378.75,-286"/>
 <text text-anchor="middle" x="311.12" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/visa_device.cpp</text>
 </a>
@@ -419,7 +419,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="socket__server_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="socket__server_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы конструкторы и методы для класа SocketServer.">
 <polygon fill="white" stroke="#666666" points="831.88,-286 688.38,-286 688.38,-266 831.88,-266 831.88,-286"/>
 <text text-anchor="middle" x="760.12" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/socket/socket_server.cpp</text>
 </a>

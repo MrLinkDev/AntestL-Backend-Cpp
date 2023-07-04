@@ -85,7 +85,7 @@ var sectionId = 'dynsection-0';
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="string__utils_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="string__utils_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определено пространство имён string_utils.">
 <polygon fill="white" stroke="#666666" points="396.12,-200 317.12,-200 317.12,-168 396.12,-168 396.12,-200"/>
 <text text-anchor="start" x="325.12" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../utils/string</text>
 <text text-anchor="middle" x="356.62" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">_utils.hpp</text>
@@ -140,7 +140,7 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="visa__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определены константы и класс VisaDevice.">
 <polygon fill="white" stroke="#666666" points="177.88,-132 85.38,-132 85.38,-112 177.88,-112 177.88,-132"/>
 <text text-anchor="middle" x="131.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">../visa_device.hpp</text>
 </a>

@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_visa_device.html#aa53bc03ce9be2af514335565d585414e" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_visa_device.html#aa53bc03ce9be2af514335565d585414e" target="_top" xlink:title="Метод, возвращающий значение флага connected.">
 <polygon fill="white" stroke="#666666" points="278.75,-20 151,-20 151,0 278.75,0 278.75,-20"/>
 <text text-anchor="middle" x="214.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::is_connected</text>
 </a>

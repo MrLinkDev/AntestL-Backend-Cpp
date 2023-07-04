@@ -5,7 +5,6 @@ var visa__device_8hpp =
     [ "BUFFER_SIZE", "visa__device_8hpp.html#a6b20d41d6252e9871430c242cb1a56e7", null ],
     [ "DEFAULT_TIMEOUT", "visa__device_8hpp.html#aad2dd72565852b91c809cd4685833b17", null ],
     [ "DEFAULT_VISA_TERM", "visa__device_8hpp.html#a2400d83aa11009362602ef3be9e7d701", null ],
-    [ "DEFAULT_OPC_SLEEP_TIME", "visa__device_8hpp.html#a073ff458927ec79c8f3b2316694b516f", null ],
     [ "SUCCESS", "visa__device_8hpp.html#aa90cac659d18e8ef6294c7ae337f6b58", null ],
     [ "FAILURE", "visa__device_8hpp.html#a6d58f9ac447476b4e084d7ca383f5183", null ],
     [ "NO_ERRORS", "visa__device_8hpp.html#a15218844bd3bc87e3ff485780c675998", null ],

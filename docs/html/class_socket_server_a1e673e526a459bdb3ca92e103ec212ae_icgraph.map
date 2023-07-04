@@ -1,5 +1,5 @@
 <map id="SocketServer::close" name="SocketServer::close">
-<area shape="rect" id="Node000001" title=" " alt="" coords="291,31,428,57"/>
+<area shape="rect" id="Node000001" title="Закрытие сокета" alt="" coords="291,31,428,57"/>
 <area shape="rect" id="Node000002" href="$main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" title=" " alt="" coords="103,5,243,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,35,243,31,244,26,277,30"/>
 <area shape="rect" id="Node000004" href="$main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" title=" " alt="" coords="109,56,237,83"/>

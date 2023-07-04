@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Файл исходного кода, в котором реализованы конструкторы и методы для класа SocketServer.">
 <polygon fill="#999999" stroke="#666666" points="215.75,-188 72.25,-188 72.25,-168 215.75,-168 215.75,-188"/>
 <text text-anchor="middle" x="144" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/socket/socket_server.cpp</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="socket__server_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="socket__server_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором объявляются класс SocketServer и необходимые константы">
 <polygon fill="white" stroke="#666666" points="191.38,-132 96.62,-132 96.62,-112 191.38,-112 191.38,-132"/>
 <text text-anchor="middle" x="144" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">socket_server.hpp</text>
 </a>

@@ -1,5 +1,5 @@
 <map id="VisaDevice::send_wait_err" name="VisaDevice::send_wait_err">
-<area shape="rect" id="Node000001" title=" " alt="" coords="234,367,407,393"/>
+<area shape="rect" id="Node000001" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="234,367,407,393"/>
 <area shape="rect" id="Node000002" href="$class_keysight_m9807_a.html#a85c78a42ccfda3bb9b69cb60b79358f4" title=" " alt="" coords="5,5,186,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,352,303,289,280,206,263,163,242,120,216,81,184,46,167,35,170,30,187,42,220,77,247,117,268,161,285,205,308,288,319,351"/>
 <area shape="rect" id="Node000003" href="$class_keysight_m9807_a.html#ad492f043e51d3e760209af6d59fe7829" title=" " alt="" coords="13,56,178,99"/>
@@ -16,7 +16,7 @@
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="219,371,174,366,174,361,219,366"/>
 <area shape="rect" id="Node000009" href="$class_keysight_m9807_a.html#ac6105e309ba2f11a360797e19d34a592" title=" " alt="" coords="17,392,174,419"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="219,394,174,399,174,394,219,389"/>
-<area shape="rect" id="Node000010" href="$class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" title=" " alt="" coords="9,443,182,469"/>
+<area shape="rect" id="Node000010" href="$class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="9,443,182,469"/>
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="272,402,187,433,150,445,148,439,185,428,271,397"/>
 <area shape="rect" id="Node000011" href="$class_keysight_m9807_a.html#a752f62baec908e4e421a95b3c75422fc" title=" " alt="" coords="8,493,183,520"/>
 <area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="296,406,247,445,187,484,158,495,156,490,184,479,244,441,292,401"/>

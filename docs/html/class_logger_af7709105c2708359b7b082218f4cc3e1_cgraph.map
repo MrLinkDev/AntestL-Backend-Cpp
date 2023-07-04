@@ -1,11 +1,11 @@
 <map id="Logger::log" name="Logger::log">
-<area shape="rect" id="Node000001" title="Функция, осуществляющая логирование" alt="" coords="5,81,91,108"/>
+<area shape="rect" id="Node000001" title="Метод, осуществляющий логирование" alt="" coords="5,81,91,108"/>
 <area shape="rect" id="Node000002" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="161,5,280,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,79,138,42,155,35,157,40,140,46,72,83"/>
-<area shape="rect" id="Node000003" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="165,56,276,83"/>
+<area shape="rect" id="Node000003" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="165,56,276,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,86,150,77,150,82,92,91"/>
-<area shape="rect" id="Node000004" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="139,107,302,133"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="139,107,302,133"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,98,124,103,123,108,91,104"/>
-<area shape="rect" id="Node000005" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="153,157,288,184"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="153,157,288,184"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="72,106,140,143,157,150,155,155,138,148,69,111"/>
 </map>

@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structvisa__config.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structvisa__config.html" target="_top" xlink:title="Структура конфигурации прибора">
 <polygon fill="white" stroke="#666666" points="63.25,-20 0,-20 0,0 63.25,0 63.25,-20"/>
 <text text-anchor="middle" x="31.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">visa_config</text>
 </a>

@@ -1,16 +1,16 @@
 <map id="TaskManager::set_angle_task" name="TaskManager::set_angle_task">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,107,201,133"/>
-<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="471,81,556,108"/>
+<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="471,81,556,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,111,455,96,456,101,201,117"/>
 <area shape="rect" id="Node000007" href="$class_device_set.html#af831c582c73b80720d69b771c422a7eb" title=" " alt="" coords="249,132,392,159"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="201,129,234,133,234,138,201,134"/>
 <area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="657,5,775,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="544,78,633,42,653,35,655,40,635,46,546,83"/>
-<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="660,56,772,83"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="660,56,772,83"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="556,87,645,75,646,81,557,92"/>
-<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="634,107,798,133"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="634,107,798,133"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="557,97,620,105,619,111,556,103"/>
-<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="649,157,783,184"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="649,157,783,184"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="557,106,587,118,635,143,653,150,651,155,633,148,585,122,555,111"/>
 <area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="373,129,456,107,457,112,375,134"/>
 <area shape="rect" id="Node000008" href="$class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" title=" " alt="" coords="440,132,586,159"/>

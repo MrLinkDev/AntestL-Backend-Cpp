@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 427;
 var viewHeight = 608;
-var sectionId = 'dynsection-18';
+var sectionId = 'dynsection-17';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -57,7 +57,7 @@ var sectionId = 'dynsection-18';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,...">
 <polygon fill="#999999" stroke="#666666" points="418.5,-329 337.25,-329 337.25,-309 418.5,-309 418.5,-329"/>
 <text text-anchor="middle" x="377.88" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::err</text>
 </a>
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-18';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.">
 <polygon fill="white" stroke="#666666" points="290,-474 182.5,-474 182.5,-454 290,-454 290,-474"/>
 <text text-anchor="middle" x="236.25" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_err</text>
 </a>
@@ -84,7 +84,7 @@ var sectionId = 'dynsection-18';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="301.25,-310 171.25,-310 171.25,-290 301.25,-290 301.25,-310"/>
 <text text-anchor="middle" x="236.25" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait_err</text>
 </a>
@@ -102,7 +102,7 @@ var sectionId = 'dynsection-18';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_visa_device.html#a743747ee232e8ff9723d25539852f94d" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_visa_device.html#a743747ee232e8ff9723d25539852f94d" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе.">
 <polygon fill="white" stroke="#666666" points="121.38,-600 13.88,-600 13.88,-580 121.38,-580 121.38,-600"/>
 <text text-anchor="middle" x="67.62" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_err</text>
 </a>
@@ -266,7 +266,7 @@ var sectionId = 'dynsection-18';
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" target="_top" xlink:title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий...">
 <polygon fill="white" stroke="#666666" points="132.62,-234 2.62,-234 2.62,-214 132.62,-214 132.62,-234"/>
 <text text-anchor="middle" x="67.62" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">VisaDevice::send_wait_err</text>
 </a>

@@ -1,5 +1,5 @@
 <map id="src/socket/socket_server.hpp" name="src/socket/socket_server.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="102,5,293,32"/>
+<area shape="rect" id="Node000001" title="Заголовочный файл, в котором объявляются класс SocketServer и необходимые константы" alt="" coords="102,5,293,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="90,80,177,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,34,156,71,152,67,184,31"/>
 <area shape="rect" id="Node000003" href="$logger_8hpp.html" title="Библиотека, осуществляющая логирование" alt="" coords="201,80,322,107"/>

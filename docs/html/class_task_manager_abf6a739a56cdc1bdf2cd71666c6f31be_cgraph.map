@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,351,191,377"/>
 <area shape="rect" id="Node000002" href="$class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" title=" " alt="" coords="247,173,433,200"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,348,163,296,237,235,292,204,294,209,240,240,167,300,114,352"/>
-<area shape="rect" id="Node000006" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Функция, осуществляющая логирование" alt="" coords="733,427,818,453"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="733,427,818,453"/>
 <area shape="poly" id="edge15_Node000001_Node000006" title=" " alt="" coords="189,347,284,338,399,334,522,340,583,348,643,361,672,372,700,385,747,415,744,420,698,390,670,377,642,367,582,354,521,345,399,339,284,343,189,353"/>
 <area shape="rect" id="Node000012" href="$class_task_manager.html#a87e7ab01c7c2920422402dda863da79c" title=" " alt="" coords="239,376,441,403"/>
 <area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="191,371,224,375,224,380,191,376"/>
@@ -17,18 +17,18 @@
 <area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="433,171,484,169,539,174,593,186,644,210,659,223,676,244,710,300,765,412,760,414,705,302,672,247,655,227,641,214,592,191,538,179,484,175,433,176"/>
 <area shape="rect" id="Node000004" href="$class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" title=" " alt="" coords="692,56,859,83"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="633,67,677,67,677,72,633,72"/>
-<area shape="rect" id="Node000005" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title=" " alt="" coords="690,107,861,133"/>
+<area shape="rect" id="Node000005" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title="Метод, возвращающий значение флага connected." alt="" coords="690,107,861,133"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="625,81,704,100,703,105,624,86"/>
 <area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="629,81,644,93,661,114,671,134,679,172,681,213,693,262,729,345,762,412,757,414,724,347,688,264,676,214,674,173,666,135,656,116,640,97,625,85"/>
 <area shape="rect" id="Node000011" href="$class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" title=" " alt="" coords="712,5,839,32"/>
 <area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="624,53,703,33,704,39,625,58"/>
 <area shape="rect" id="Node000007" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="931,351,1050,377"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="810,424,908,387,929,380,930,385,910,392,812,429"/>
-<area shape="rect" id="Node000008" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Функция, возвращающая тег в зависимости от уровня логирования и от назначения тега." alt="" coords="935,401,1046,428"/>
+<area shape="rect" id="Node000008" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="935,401,1046,428"/>
 <area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="818,432,920,420,920,426,819,438"/>
-<area shape="rect" id="Node000009" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Функция, которая выводит сообщение в консоль." alt="" coords="909,452,1072,479"/>
+<area shape="rect" id="Node000009" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="909,452,1072,479"/>
 <area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="819,442,894,451,893,457,818,448"/>
-<area shape="rect" id="Node000010" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Функция, которая записывает сообщение в файл." alt="" coords="923,503,1058,529"/>
+<area shape="rect" id="Node000010" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="923,503,1058,529"/>
 <area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="812,451,910,488,930,495,929,500,908,493,810,456"/>
 <area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="416,401,489,412,612,425,718,434,718,439,611,431,489,417,415,406"/>
 <area shape="rect" id="Node000013" href="$class_device_set.html#a6241d8b37639241e2a370c1f7d533995" title=" " alt="" coords="491,376,641,403"/>

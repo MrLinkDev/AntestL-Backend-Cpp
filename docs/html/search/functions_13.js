@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['visadevice_0',['VisaDevice',['../class_visa_device.html#a974bb8e47dec90c6d9c06c3f1537bff9',1,'VisaDevice::VisaDevice()=default'],['../class_visa_device.html#a7677382a628ab30b59d93fb6a8ab653e',1,'VisaDevice::VisaDevice(std::string device_address)']]],
-  ['vnadevice_1',['VnaDevice',['../class_vna_device.html#ac31500de66b22e12fb866c0532dbb21b',1,'VnaDevice::VnaDevice()=default'],['../class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b',1,'VnaDevice::VnaDevice(std::string device_address)']]]
+  ['wait_0',['wait',['../class_visa_device.html#ab1f5c0b110fca770dbd5be069453ea82',1,'VisaDevice']]],
+  ['wait_5fclient_1',['wait_client',['../class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197',1,'SocketServer']]],
+  ['what_2',['what',['../classantestl__exception.html#a4cde4a5685c756c7219ec5c9740a6a8e',1,'antestl_exception']]],
+  ['write_3',['write',['../class_visa_device.html#a29202c3f5e47326386d1d27972e25267',1,'VisaDevice']]]
 ];
