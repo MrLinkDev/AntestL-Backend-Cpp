@@ -1,5 +1,5 @@
 <map id="KeysightM9807A::set_path" name="KeysightM9807A::set_path">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,68,184,95"/>
+<area shape="rect" id="Node000001" title="Установка положений переключателей в определённые позиции" alt="" coords="5,68,184,95"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="232,68,405,95"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,79,217,79,217,84,184,84"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#aba4642c194cffe2135a133e23960ab63" title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,..." alt="" coords="823,68,932,95"/>

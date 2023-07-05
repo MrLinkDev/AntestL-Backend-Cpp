@@ -74,7 +74,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_vna_device.html#a305e9719412a43677b2d660c507c20c0" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_vna_device.html#a305e9719412a43677b2d660c507c20c0" target="_top" xlink:title="Создание необходимых трасс, в зависимости от того, используется ли внешний генератор">
 <polygon fill="white" stroke="#666666" points="449.25,-438 322.25,-438 322.25,-418 449.25,-418 449.25,-438"/>
 <text text-anchor="middle" x="385.75" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::create_traces</text>
 </a>
@@ -138,7 +138,7 @@
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="class_vna_device.html#a57dfdf98bf3ce296b5d71672d98e6c2d" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="class_vna_device.html#a57dfdf98bf3ce296b5d71672d98e6c2d" target="_top" xlink:title="Сбор данных, полученных в результате измерения, для одного порта">
 <polygon fill="white" stroke="#666666" points="438.38,-324 333.12,-324 333.12,-304 438.38,-304 438.38,-324"/>
 <text text-anchor="middle" x="385.75" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::get_data</text>
 </a>
@@ -174,7 +174,7 @@
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="class_vna_device.html#ae729cfabb9f5e9fc856e63351090bf8b" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="class_vna_device.html#ae729cfabb9f5e9fc856e63351090bf8b" target="_top" xlink:title="Запрос номера зондирующего порта">
 <polygon fill="white" stroke="#666666" points="454.5,-286 317,-286 317,-266 454.5,-266 454.5,-286"/>
 <text text-anchor="middle" x="385.75" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::get_source_port</text>
 </a>
@@ -192,7 +192,7 @@
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="class_vna_device.html#ac77ad0af5fcffde75ad9e53d5b2b8189" target="_top" xlink:title=" ">
+<g id="a_Node000022"><a xlink:href="class_vna_device.html#ac77ad0af5fcffde75ad9e53d5b2b8189" target="_top" xlink:title="Запуск измерения">
 <polygon fill="white" stroke="#666666" points="426,-248 345.5,-248 345.5,-228 426,-228 426,-248"/>
 <text text-anchor="middle" x="385.75" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::init</text>
 </a>
@@ -228,7 +228,7 @@
 <!-- Node24 -->
 <g id="Node000024" class="node">
 <title>Node24</title>
-<g id="a_Node000024"><a xlink:href="class_vna_device.html#a925f4c70172ee7f9d24e19465c03b33b" target="_top" xlink:title=" ">
+<g id="a_Node000024"><a xlink:href="class_vna_device.html#a925f4c70172ee7f9d24e19465c03b33b" target="_top" xlink:title="Отключает все порты">
 <polygon fill="white" stroke="#666666" points="429.75,-172 341.75,-172 341.75,-152 429.75,-152 429.75,-172"/>
 <text text-anchor="middle" x="385.75" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::rf_off</text>
 </a>
@@ -264,7 +264,7 @@
 <!-- Node26 -->
 <g id="Node000026" class="node">
 <title>Node26</title>
-<g id="a_Node000026"><a xlink:href="class_vna_device.html#a54c899426e88e979532978d36fcfa582" target="_top" xlink:title=" ">
+<g id="a_Node000026"><a xlink:href="class_vna_device.html#a54c899426e88e979532978d36fcfa582" target="_top" xlink:title="Включает все порты">
 <polygon fill="white" stroke="#666666" points="430.12,-96 341.38,-96 341.38,-76 430.12,-76 430.12,-96"/>
 <text text-anchor="middle" x="385.75" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::rf_on</text>
 </a>
@@ -282,7 +282,7 @@
 <!-- Node27 -->
 <g id="Node000027" class="node">
 <title>Node27</title>
-<g id="a_Node000027"><a xlink:href="class_vna_device.html#a2141273efb5e7aa19f67bf06dc323546" target="_top" xlink:title=" ">
+<g id="a_Node000027"><a xlink:href="class_vna_device.html#a2141273efb5e7aa19f67bf06dc323546" target="_top" xlink:title="Перевод триггера в режим single.">
 <polygon fill="white" stroke="#666666" points="433.12,-476 338.38,-476 338.38,-456 433.12,-456 433.12,-476"/>
 <text text-anchor="middle" x="385.75" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::trigger</text>
 </a>
@@ -472,7 +472,7 @@
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="class_vna_device.html#a596313270ef036ba566dd7975008b1d5" target="_top" xlink:title=" ">
+<g id="a_Node000018"><a xlink:href="class_vna_device.html#a596313270ef036ba566dd7975008b1d5" target="_top" xlink:title="Запрос ширины шага по частоте">
 <polygon fill="white" stroke="#666666" points="622.75,-96 496.5,-96 496.5,-76 622.75,-76 622.75,-96"/>
 <text text-anchor="middle" x="559.62" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::get_freq_step</text>
 </a>
@@ -490,7 +490,7 @@
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="class_vna_device.html#afdeaa8974791094f16a034695d9f7035" target="_top" xlink:title=" ">
+<g id="a_Node000019"><a xlink:href="class_vna_device.html#afdeaa8974791094f16a034695d9f7035" target="_top" xlink:title="Запрос количества точек трассы">
 <polygon fill="white" stroke="#666666" points="616,-58 503.25,-58 503.25,-38 616,-38 616,-58"/>
 <text text-anchor="middle" x="559.62" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::get_points</text>
 </a>
@@ -508,7 +508,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="class_vna_device.html#a8fe6434c79a0188c98fce52d152aef76" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="class_vna_device.html#a8fe6434c79a0188c98fce52d152aef76" target="_top" xlink:title="Запрос начальной частоты диапазона">
 <polygon fill="white" stroke="#666666" points="623.12,-20 496.12,-20 496.12,0 623.12,0 623.12,-20"/>
 <text text-anchor="middle" x="559.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::get_start_freq</text>
 </a>

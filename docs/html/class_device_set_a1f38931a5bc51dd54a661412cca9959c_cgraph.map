@@ -1,9 +1,9 @@
 <map id="DeviceSet::get_freq_list" name="DeviceSet::get_freq_list">
 <area shape="rect" id="Node000001" title="Получает вектор частотных точек" alt="" coords="5,56,163,83"/>
-<area shape="rect" id="Node000002" href="$class_vna_device.html#a596313270ef036ba566dd7975008b1d5" title=" " alt="" coords="211,5,380,32"/>
+<area shape="rect" id="Node000002" href="$class_vna_device.html#a596313270ef036ba566dd7975008b1d5" title="Запрос ширины шага по частоте" alt="" coords="211,5,380,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,53,222,33,223,39,144,58"/>
-<area shape="rect" id="Node000003" href="$class_vna_device.html#afdeaa8974791094f16a034695d9f7035" title=" " alt="" coords="220,56,371,83"/>
+<area shape="rect" id="Node000003" href="$class_vna_device.html#afdeaa8974791094f16a034695d9f7035" title="Запрос количества точек трассы" alt="" coords="220,56,371,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,67,205,67,205,72,163,72"/>
-<area shape="rect" id="Node000004" href="$class_vna_device.html#a8fe6434c79a0188c98fce52d152aef76" title=" " alt="" coords="211,107,380,133"/>
+<area shape="rect" id="Node000004" href="$class_vna_device.html#a8fe6434c79a0188c98fce52d152aef76" title="Запрос начальной частоты диапазона" alt="" coords="211,107,380,133"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,81,223,100,222,105,142,86"/>
 </map>

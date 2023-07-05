@@ -1,15 +1,31 @@
+/**
+ * \file
+ * \brief Файл, в котором реализован класс KeysightM9807A
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023
+ */
+
 #ifndef ANTESTL_BACKEND_KEYSIGHT_M_9807_A_HPP
 #define ANTESTL_BACKEND_KEYSIGHT_M_9807_A_HPP
 
 #include "vna_device.hpp"
 
+/// Количество портов у ВАЦ Keysight M9807A
 #define M9807A_PORT_COUNT   8
+/// Количество модулей переключателей, подключенных к M9807A
 #define M9807A_MODULE_COUNT 4
 
+/**
+ * \brief Класс, в котором реализованы методы для работы с ВАЦ Keysight M9807A
+ */
 class KeysightM9807A : public VnaDevice {
+    /// Массив буквенных обозначений портов
     char port_names[M9807A_PORT_COUNT]  = {'D', 'B', 'H', 'F', 'C', 'E', 'G', 'A'};
+    /// Массив номеров портов
     int port_numbers[M9807A_PORT_COUNT] = {4, 2, 8, 6, 3, 5, 7, 1};
 
+    /// Массив, в котором хранится набор состояний переключателей
     std::array<int, M9807A_MODULE_COUNT> path_list = {1, 1, 1, 1};
 public:
     KeysightM9807A() = default;

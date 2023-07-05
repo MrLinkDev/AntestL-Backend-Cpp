@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structiq.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structiq.html" target="_top" xlink:title="Структура, содержащая в себе значения квадратур в определённой точке">
 <polygon fill="white" stroke="#666666" points="28.8,-20 0,-20 0,0 28.8,0 28.8,-20"/>
 <text text-anchor="middle" x="14.4" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">iq</text>
 </a>

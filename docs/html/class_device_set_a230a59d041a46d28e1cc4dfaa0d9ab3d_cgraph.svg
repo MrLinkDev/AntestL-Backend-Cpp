@@ -66,7 +66,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_vna_device.html#a97c03089e22546ff4c832c13a4e2c3a0" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="class_vna_device.html#a97c03089e22546ff4c832c13a4e2c3a0" target="_top" xlink:title="Установка определённого значения частоты">
 <polygon fill="white" stroke="#666666" points="238.62,-20 136.38,-20 136.38,0 238.62,0 238.62,-20"/>
 <text text-anchor="middle" x="187.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::set_freq</text>
 </a>

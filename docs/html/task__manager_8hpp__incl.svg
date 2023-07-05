@@ -120,7 +120,7 @@ var sectionId = 'dynsection-0';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="vna__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="vna__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс VnaDevice.">
 <polygon fill="white" stroke="#666666" points="369.12,-188 270.62,-188 270.62,-168 369.12,-168 369.12,-188"/>
 <text text-anchor="middle" x="319.88" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">vna/vna_device.hpp</text>
 </a>

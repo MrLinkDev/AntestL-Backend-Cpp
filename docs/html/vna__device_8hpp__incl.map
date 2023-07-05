@@ -1,5 +1,5 @@
 <map id="src/devices/vna/vna_device.hpp" name="src/devices/vna/vna_device.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="241,5,374,48"/>
+<area shape="rect" id="Node000001" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="241,5,374,48"/>
 <area shape="rect" id="Node000002" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="79,96,202,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,51,181,92,179,87,263,46"/>
 <area shape="rect" id="Node000012" href="$exceptions_8hpp.html" title="Заголовочный файл, содержащий класс antestl_exsceptions, сообщения исключений и коды исключений" alt="" coords="227,96,388,123"/>

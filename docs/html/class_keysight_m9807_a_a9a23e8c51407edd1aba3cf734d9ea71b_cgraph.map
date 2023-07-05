@@ -1,5 +1,5 @@
 <map id="KeysightM9807A::get_data" name="KeysightM9807A::get_data">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,184,159"/>
+<area shape="rect" id="Node000001" title="Сбор данных, полученных в результате измерения, для одного порта" alt="" coords="5,132,184,159"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#ad659ba652605f5c983958400fde8c808" title="Отправка данных на прибор и чтение ответа от прибора." alt="" coords="232,107,353,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,131,217,127,217,132,185,136"/>
 <area shape="rect" id="Node000011" href="$namespacestring__utils.html#a95dbb7f33d4ea2396617ddd7953302d0" title="Деление строки на вектор строк по заданному делителю" alt="" coords="234,157,351,184"/>

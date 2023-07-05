@@ -6,7 +6,7 @@
 <area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="481,49,483,156,478,156,476,49"/>
 <area shape="rect" id="Node000017" href="$array__utils_8hpp.html" title="Файл, в котором определено пространство имён array_utils." alt="" coords="515,96,673,123"/>
 <area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="510,46,566,85,563,90,507,51"/>
-<area shape="rect" id="Node000003" href="$vna__device_8hpp.html" title=" " alt="" coords="296,179,404,205"/>
+<area shape="rect" id="Node000003" href="$vna__device_8hpp.html" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="296,179,404,205"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,123,356,165,351,164,355,123"/>
 <area shape="rect" id="Node000004" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="119,261,243,288"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="325,208,221,257,219,252,323,203"/>

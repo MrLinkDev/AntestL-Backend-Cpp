@@ -189,7 +189,7 @@ public:
     virtual void rf_on(int port) {};
 
     /**
-     * \brief Перевод триггера в режим single
+     * \brief Перевод триггера в режим manual
      */
     virtual void trigger() {};
 

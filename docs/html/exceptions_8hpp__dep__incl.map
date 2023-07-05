@@ -8,13 +8,13 @@
 <area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="351,47,351,80,346,80,346,47"/>
 <area shape="rect" id="Node000012" href="$visa__device_8cpp.html" title="Файл исходного кода, в котором реализованы конструкторы и методы для класа VisaDevice." alt="" coords="445,88,625,115"/>
 <area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="392,36,507,85,505,90,390,41"/>
-<area shape="rect" id="Node000013" href="$vna__device_8hpp.html" title=" " alt="" coords="649,80,781,123"/>
+<area shape="rect" id="Node000013" href="$vna__device_8hpp.html" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="649,80,781,123"/>
 <area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="428,33,638,77,649,80,648,85,637,83,427,38"/>
 <area shape="rect" id="Node000003" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="349,261,475,304"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,121,311,141,353,169,372,190,388,215,408,260,403,262,383,217,368,193,349,173,309,145,264,126"/>
 <area shape="rect" id="Node000008" href="$keysight__gen_8hpp.html" title=" " alt="" coords="174,171,338,213"/>
 <area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="211,132,241,169,237,172,207,136"/>
-<area shape="rect" id="Node000004" href="$device__set_8cpp.html" title=" " alt="" coords="124,352,250,395"/>
+<area shape="rect" id="Node000004" href="$device__set_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа DeviceSet." alt="" coords="124,352,250,395"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="347,312,241,354,239,349,345,307"/>
 <area shape="rect" id="Node000005" href="$task__manager_8hpp.html" title=" " alt="" coords="337,360,487,387"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="415,319,415,360,410,360,410,319"/>

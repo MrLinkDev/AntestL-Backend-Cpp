@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="350,5,476,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,96,80,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,43,95,98,94,93,349,38"/>
-<area shape="rect" id="Node000003" href="$vna__device_8hpp.html" title=" " alt="" coords="366,171,498,197"/>
+<area shape="rect" id="Node000003" href="$vna__device_8hpp.html" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="366,171,498,197"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="462,46,490,67,513,95,516,116,508,135,491,151,472,165,469,161,488,147,503,132,511,115,508,97,487,71,459,51"/>
 <area shape="rect" id="Node000016" href="$gen__device_8hpp.html" title=" " alt="" coords="207,171,342,197"/>
 <area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="376,51,346,72,318,98,299,127,285,158,280,156,294,125,314,94,342,67,373,46"/>

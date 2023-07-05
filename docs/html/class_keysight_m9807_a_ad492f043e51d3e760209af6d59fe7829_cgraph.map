@@ -1,5 +1,5 @@
 <map id="KeysightM9807A::create_traces" name="KeysightM9807A::create_traces">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,170,77"/>
+<area shape="rect" id="Node000001" title="Создание необходимых трасс, в зависимости от того, используется ли внешний генератор" alt="" coords="5,35,170,77"/>
 <area shape="rect" id="Node000002" href="$namespacearray__utils.html#acc51bcd934d5180b0733c6335deaa8a7" title="Функция, которая позволяет найти индекс требуемого элемента" alt="" coords="244,17,365,44"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,44,229,37,230,42,170,49"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="218,68,391,95"/>

@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
   <div class="headertitle"><div class="title">Файл vna_device.hpp</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Заголовочный файл, в котором реализован класс <a class="el" href="class_vna_device.html" title="Класс, в котором реализованы методы для работы с ВАЦ">VnaDevice</a>.  
+<a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="visa__device_8hpp_source.html">../visa_device.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="exceptions_8hpp_source.html">../../utils/exceptions.hpp</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -117,29 +120,40 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Классы</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiq.html">iq</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, содержащая в себе значения квадратур в определённой точке  <a href="structiq.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vna_device.html">VnaDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс, в котором реализованы методы для работы с ВАЦ  <a href="class_vna_device.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Макросы</h2></td></tr>
 <tr class="memitem:aab7059e8bbe1f5c42599ce8c2ff6682f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#aab7059e8bbe1f5c42599ce8c2ff6682f">DEFAULT_VNA_START_FREQ</a>&#160;&#160;&#160;1000000000</td></tr>
+<tr class="memdesc:aab7059e8bbe1f5c42599ce8c2ff6682f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартная начальная частота для ВАЦ  <br /></td></tr>
 <tr class="separator:aab7059e8bbe1f5c42599ce8c2ff6682f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c48ee144a2c818e5b2452c271a9e6bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#a4c48ee144a2c818e5b2452c271a9e6bb">DEFAULT_VNA_STOP_FREQ</a>&#160;&#160;&#160;9000000000</td></tr>
+<tr class="memdesc:a4c48ee144a2c818e5b2452c271a9e6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартная конечная частота для ВАЦ  <br /></td></tr>
 <tr class="separator:a4c48ee144a2c818e5b2452c271a9e6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a510acf499c372e9954b6bb6edd17cb4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#a510acf499c372e9954b6bb6edd17cb4f">DEFAULT_VNA_RBW</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:a510acf499c372e9954b6bb6edd17cb4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартная полоса разрешающего фильтра  <br /></td></tr>
 <tr class="separator:a510acf499c372e9954b6bb6edd17cb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36e12e78eb0e3387a63f2eb1020bd26e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#a36e12e78eb0e3387a63f2eb1020bd26e">DEFAULT_VNA_POINTS</a>&#160;&#160;&#160;201</td></tr>
+<tr class="memdesc:a36e12e78eb0e3387a63f2eb1020bd26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартное количество точек трассы  <br /></td></tr>
 <tr class="separator:a36e12e78eb0e3387a63f2eb1020bd26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6ba0405cf120a92fd97bd4801e54e16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#ab6ba0405cf120a92fd97bd4801e54e16">DEFAULT_VNA_POWER</a>&#160;&#160;&#160;-20;</td></tr>
+<tr class="memdesc:ab6ba0405cf120a92fd97bd4801e54e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартная мощность зондирующего порта  <br /></td></tr>
 <tr class="separator:ab6ba0405cf120a92fd97bd4801e54e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad598a0dd2aa1cc5cd2006b414914f903"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#ad598a0dd2aa1cc5cd2006b414914f903">DEFAULT_VNA_SOURCE_PORT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ad598a0dd2aa1cc5cd2006b414914f903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный номер зондирующего порта  <br /></td></tr>
 <tr class="separator:ad598a0dd2aa1cc5cd2006b414914f903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae65e7254fa2af1ca920dcebd71c47195"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#ae65e7254fa2af1ca920dcebd71c47195">MEAS_TRANSITION</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memdesc:ae65e7254fa2af1ca920dcebd71c47195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип измерения: коэффициент передачи  <br /></td></tr>
 <tr class="separator:ae65e7254fa2af1ca920dcebd71c47195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3bc7ecf0e603a29dc82afc2d0ebbe22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#ae3bc7ecf0e603a29dc82afc2d0ebbe22">MEAS_REFLECTION</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:ae3bc7ecf0e603a29dc82afc2d0ebbe22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип измерения: коэффициент отражения  <br /></td></tr>
 <tr class="separator:ae3bc7ecf0e603a29dc82afc2d0ebbe22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7285d33002994b8ef7338bf2686cb3b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#a7285d33002994b8ef7338bf2686cb3b3">DATA_DELIMITER</a>&#160;&#160;&#160;','</td></tr>
+<tr class="memdesc:a7285d33002994b8ef7338bf2686cb3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделитель данных, принимаемых от ВАЦ  <br /></td></tr>
 <tr class="separator:a7285d33002994b8ef7338bf2686cb3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -147,7 +161,13 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
 <tr class="memitem:a651027f1d078d42fca12f590fb702b41"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="structiq.html">iq</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vna__device_8hpp.html#a651027f1d078d42fca12f590fb702b41">iq_port_data_t</a></td></tr>
 <tr class="separator:a651027f1d078d42fca12f590fb702b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Макросы</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл, в котором реализован класс <a class="el" href="class_vna_device.html" title="Класс, в котором реализованы методы для работы с ВАЦ">VnaDevice</a>. </p>
+<dl class="section author"><dt>Автор</dt><dd>Александр Горбунов </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>3 июля 2023 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a></p>
+</div><h2 class="groupheader">Макросы</h2>
 <a id="aab7059e8bbe1f5c42599ce8c2ff6682f" name="aab7059e8bbe1f5c42599ce8c2ff6682f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab7059e8bbe1f5c42599ce8c2ff6682f">&#9670;&#160;</a></span>DEFAULT_VNA_START_FREQ</h2>
 
@@ -160,7 +180,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00009">9</a></p>
+<p>Стандартная начальная частота для ВАЦ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00018">18</a></p>
 
 </div>
 </div>
@@ -176,7 +198,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00010">10</a></p>
+<p>Стандартная конечная частота для ВАЦ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00020">20</a></p>
 
 </div>
 </div>
@@ -192,7 +216,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00012">12</a></p>
+<p>Стандартная полоса разрешающего фильтра </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00023">23</a></p>
 
 </div>
 </div>
@@ -208,7 +234,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00014">14</a></p>
+<p>Стандартное количество точек трассы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00026">26</a></p>
 
 </div>
 </div>
@@ -224,7 +252,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00016">16</a></p>
+<p>Стандартная мощность зондирующего порта </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00029">29</a></p>
 
 </div>
 </div>
@@ -240,7 +270,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00018">18</a></p>
+<p>Стандартный номер зондирующего порта </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00032">32</a></p>
 
 </div>
 </div>
@@ -256,7 +288,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00020">20</a></p>
+<p>Тип измерения: коэффициент передачи </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00035">35</a></p>
 
 </div>
 </div>
@@ -272,7 +306,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00021">21</a></p>
+<p>Тип измерения: коэффициент отражения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00037">37</a></p>
 
 </div>
 </div>
@@ -288,7 +324,9 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00023">23</a></p>
+<p>Разделитель данных, принимаемых от ВАЦ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00040">40</a></p>
 
 </div>
 </div>
@@ -305,7 +343,7 @@ $(document).ready(function(){initNavTree('vna__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00030">30</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vna__device_8hpp_source.html">vna_device.hpp</a> строка <a class="el" href="vna__device_8hpp_source.html#l00048">48</a></p>
 
 </div>
 </div>

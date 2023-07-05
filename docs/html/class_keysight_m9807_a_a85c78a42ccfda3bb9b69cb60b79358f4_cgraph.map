@@ -1,5 +1,5 @@
 <map id="KeysightM9807A::configure" name="KeysightM9807A::configure">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,68,186,95"/>
+<area shape="rect" id="Node000001" title="Настройка ВАЦ для измерения" alt="" coords="5,68,186,95"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="234,68,407,95"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,79,219,79,219,84,186,84"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#aba4642c194cffe2135a133e23960ab63" title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,..." alt="" coords="825,68,934,95"/>

@@ -1,5 +1,5 @@
 <map id="KeysightM9807A::init" name="KeysightM9807A::init">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,68,151,95"/>
+<area shape="rect" id="Node000001" title="Запуск измерения" alt="" coords="5,68,151,95"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="199,68,372,95"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,79,184,79,184,84,151,84"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#aba4642c194cffe2135a133e23960ab63" title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,..." alt="" coords="790,68,899,95"/>

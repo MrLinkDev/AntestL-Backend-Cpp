@@ -1,5 +1,5 @@
 <map id="VnaDevice::VnaDevice" name="VnaDevice::VnaDevice">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,157,108"/>
+<area shape="rect" id="Node000001" title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по..." alt="" coords="5,81,157,108"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#abdcf5ce2846fecd0908bf7419c73c595" title="Метод, осуществляющий подключение к прибору." alt="" coords="423,5,562,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,78,156,62,204,48,310,30,408,20,408,25,310,35,205,53,158,67,115,83"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="779,107,864,133"/>

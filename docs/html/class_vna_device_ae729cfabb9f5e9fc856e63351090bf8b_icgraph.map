@@ -1,5 +1,5 @@
 <map id="VnaDevice::get_source_port" name="VnaDevice::get_source_port">
-<area shape="rect" id="Node000001" title=" " alt="" coords="428,5,611,32"/>
+<area shape="rect" id="Node000001" title="Запрос номера зондирующего порта" alt="" coords="428,5,611,32"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title="Метод, осуществляющий проведение измерения и получение результатов измерения" alt="" coords="243,5,380,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,21,380,21,380,16,413,16"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" title=" " alt="" coords="5,5,195,32"/>

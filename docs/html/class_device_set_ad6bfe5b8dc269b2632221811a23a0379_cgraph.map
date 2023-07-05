@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,129,217,107,218,112,134,134"/>
 <area shape="rect" id="Node000007" href="$class_gen_device.html#a7ffc7d45d181a233832ba42c76f09c9d" title=" " alt="" coords="200,132,350,159"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="152,143,185,143,185,148,152,148"/>
-<area shape="rect" id="Node000008" href="$class_vna_device.html#a06da46754f53a7067560523dea6e5129" title=" " alt="" coords="200,183,350,209"/>
+<area shape="rect" id="Node000008" href="$class_vna_device.html#a06da46754f53a7067560523dea6e5129" title="Установка требуемой мощности зондирующего порта" alt="" coords="200,183,350,209"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="134,157,207,176,205,181,133,162"/>
 <area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="421,5,539,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,78,397,42,417,35,419,40,399,46,308,83"/>

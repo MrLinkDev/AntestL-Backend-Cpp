@@ -102,7 +102,7 @@ var sectionId = 'dynsection-5';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_vna_device.html#a3260fe2b5052c977d9fefc9847dd8dc6" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_vna_device.html#a3260fe2b5052c977d9fefc9847dd8dc6" target="_top" xlink:title="Настройка ВАЦ для измерения">
 <polygon fill="white" stroke="#666666" points="433.12,-191 326.38,-191 326.38,-171 433.12,-171 433.12,-191"/>
 <text text-anchor="middle" x="379.75" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::configure</text>
 </a>
@@ -120,7 +120,7 @@ var sectionId = 'dynsection-5';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_vna_device.html#ac5d1a3a53f046c6839905400d6c3e0b7" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_vna_device.html#ac5d1a3a53f046c6839905400d6c3e0b7" target="_top" xlink:title="Полный сброс настроек">
 <polygon fill="white" stroke="#666666" points="435.75,-153 323.75,-153 323.75,-133 435.75,-133 435.75,-153"/>
 <text text-anchor="middle" x="379.75" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::full_preset</text>
 </a>
@@ -138,7 +138,7 @@ var sectionId = 'dynsection-5';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="class_vna_device.html#a4975b9caaac2bb8889a011aab9f192e2" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_vna_device.html#a4975b9caaac2bb8889a011aab9f192e2" target="_top" xlink:title="Инициализация канала для измерений">
 <polygon fill="white" stroke="#666666" points="439.5,-115 320,-115 320,-95 439.5,-95 439.5,-115"/>
 <text text-anchor="middle" x="379.75" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::init_channel</text>
 </a>

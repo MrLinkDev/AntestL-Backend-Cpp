@@ -228,7 +228,7 @@ var sectionId = 'dynsection-3';
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" target="_top" xlink:title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по...">
 <polygon fill="white" stroke="#666666" points="763.62,-1402.25 650.12,-1402.25 650.12,-1382.25 763.62,-1382.25 763.62,-1402.25"/>
 <text text-anchor="middle" x="706.88" y="-1388.75" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::VnaDevice</text>
 </a>

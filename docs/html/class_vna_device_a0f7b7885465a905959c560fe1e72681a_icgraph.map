@@ -1,5 +1,5 @@
 <map id="VnaDevice::preset" name="VnaDevice::preset">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1543,36,1669,62"/>
+<area shape="rect" id="Node000001" title="Сброс настроек" alt="" coords="1543,36,1669,62"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title="Метод, позволяющий осуществить подключение к устройству." alt="" coords="1362,36,1495,62"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1528,52,1495,52,1495,46,1528,46"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" title=" " alt="" coords="1128,36,1314,62"/>

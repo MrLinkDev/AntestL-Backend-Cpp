@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Полный сброс настроек">
 <polygon fill="#999999" stroke="#666666" points="108.25,-64 0,-64 0,-32 108.25,-32 108.25,-64"/>
 <text text-anchor="start" x="8" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::full</text>
 <text text-anchor="middle" x="54.12" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">_preset</text>

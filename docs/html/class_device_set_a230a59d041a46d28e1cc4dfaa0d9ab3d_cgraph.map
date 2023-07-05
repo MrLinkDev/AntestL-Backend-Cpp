@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,129,198,108,199,113,124,134"/>
 <area shape="rect" id="Node000007" href="$class_gen_device.html#a96be6231d276486d30a77fb6f7235994" title=" " alt="" coords="187,132,324,159"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="139,143,172,143,172,148,139,148"/>
-<area shape="rect" id="Node000008" href="$class_vna_device.html#a97c03089e22546ff4c832c13a4e2c3a0" title=" " alt="" coords="187,183,324,209"/>
+<area shape="rect" id="Node000008" href="$class_vna_device.html#a97c03089e22546ff4c832c13a4e2c3a0" title="Установка определённого значения частоты" alt="" coords="187,183,324,209"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="124,157,191,176,190,181,122,162"/>
 <area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="395,5,513,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,78,371,42,391,35,393,40,373,46,287,83"/>

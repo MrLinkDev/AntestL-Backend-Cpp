@@ -1,10 +1,10 @@
 <map id="DeviceSet::configure" name="DeviceSet::configure">
 <area shape="rect" id="Node000001" title="Настраивает ВАЦ для требуемого измерения" alt="" coords="5,81,145,108"/>
-<area shape="rect" id="Node000002" href="$class_vna_device.html#a3260fe2b5052c977d9fefc9847dd8dc6" title=" " alt="" coords="201,5,344,32"/>
+<area shape="rect" id="Node000002" href="$class_vna_device.html#a3260fe2b5052c977d9fefc9847dd8dc6" title="Настройка ВАЦ для измерения" alt="" coords="201,5,344,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,78,192,42,210,35,212,40,194,46,107,83"/>
-<area shape="rect" id="Node000003" href="$class_vna_device.html#ac5d1a3a53f046c6839905400d6c3e0b7" title=" " alt="" coords="198,56,347,83"/>
+<area shape="rect" id="Node000003" href="$class_vna_device.html#ac5d1a3a53f046c6839905400d6c3e0b7" title="Полный сброс настроек" alt="" coords="198,56,347,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,83,182,78,183,83,145,88"/>
-<area shape="rect" id="Node000004" href="$class_vna_device.html#a4975b9caaac2bb8889a011aab9f192e2" title=" " alt="" coords="193,107,352,133"/>
+<area shape="rect" id="Node000004" href="$class_vna_device.html#a4975b9caaac2bb8889a011aab9f192e2" title="Инициализация канала для измерений" alt="" coords="193,107,352,133"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,101,178,105,177,110,145,106"/>
 <area shape="rect" id="Node000005" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="230,157,315,184"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="107,106,194,143,216,151,215,156,192,148,105,111"/>

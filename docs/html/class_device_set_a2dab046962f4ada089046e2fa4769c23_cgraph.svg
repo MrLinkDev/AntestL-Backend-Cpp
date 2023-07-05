@@ -84,7 +84,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" target="_top" xlink:title="Сброс настроек">
 <polygon fill="white" stroke="#666666" points="247.25,-39 152.5,-39 152.5,-19 247.25,-19 247.25,-39"/>
 <text text-anchor="middle" x="199.88" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::preset</text>
 </a>

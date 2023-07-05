@@ -75,7 +75,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" target="_top" xlink:title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по...">
 <polygon fill="white" stroke="#666666" points="1147.62,-20 1034.12,-20 1034.12,0 1147.62,0 1147.62,-20"/>
 <text text-anchor="middle" x="1090.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::VnaDevice</text>
 </a>

@@ -48,7 +48,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_vna_device.html#a0b803a51b1c38828781291cdcae07495" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_vna_device.html#a0b803a51b1c38828781291cdcae07495" target="_top" xlink:title="Установка положений переключателей в определённые позиции">
 <polygon fill="white" stroke="#666666" points="244.25,-39 139,-39 139,-19 244.25,-19 244.25,-39"/>
 <text text-anchor="middle" x="191.62" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::set_path</text>
 </a>

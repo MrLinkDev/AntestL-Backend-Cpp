@@ -95,7 +95,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="vna__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="vna__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс VnaDevice.">
 <polygon fill="white" stroke="#666666" points="581.75,-292 482.5,-292 482.5,-260 581.75,-260 581.75,-292"/>
 <text text-anchor="start" x="490.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/vna</text>
 <text text-anchor="middle" x="532.12" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">_device.hpp</text>
@@ -152,7 +152,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="device__set_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="device__set_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа DeviceSet.">
 <polygon fill="white" stroke="#666666" points="183.5,-88 88.75,-88 88.75,-56 183.5,-56 183.5,-88"/>
 <text text-anchor="start" x="96.75" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/device</text>
 <text text-anchor="middle" x="136.12" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">_set.cpp</text>

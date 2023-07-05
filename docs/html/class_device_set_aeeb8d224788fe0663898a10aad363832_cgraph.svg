@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" target="_top" xlink:title="Запрос количества переключателей, подключенных к ВАЦ">
 <polygon fill="white" stroke="#666666" points="272,-70 157.75,-70 157.75,-38 272,-38 272,-70"/>
 <text text-anchor="start" x="165.75" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::get_switch</text>
 <text text-anchor="middle" x="214.88" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">_module_count</text>

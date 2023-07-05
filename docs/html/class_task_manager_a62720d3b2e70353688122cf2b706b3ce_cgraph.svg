@@ -365,7 +365,7 @@ var sectionId = 'dynsection-26';
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" target="_top" xlink:title="Сброс настроек">
 <polygon fill="white" stroke="#666666" points="1090.75,-698 996,-698 996,-678 1090.75,-678 1090.75,-698"/>
 <text text-anchor="middle" x="1043.38" y="-684.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::preset</text>
 </a>
@@ -622,7 +622,7 @@ var sectionId = 'dynsection-26';
 <!-- Node25 -->
 <g id="Node000025" class="node">
 <title>Node25</title>
-<g id="a_Node000025"><a xlink:href="class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" target="_top" xlink:title=" ">
+<g id="a_Node000025"><a xlink:href="class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" target="_top" xlink:title="Запрос количества переключателей, подключенных к ВАЦ">
 <polygon fill="white" stroke="#666666" points="1100.5,-786 986.25,-786 986.25,-754 1100.5,-754 1100.5,-786"/>
 <text text-anchor="start" x="994.25" y="-772.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::get_switch</text>
 <text text-anchor="middle" x="1043.38" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00">_module_count</text>
@@ -650,7 +650,7 @@ var sectionId = 'dynsection-26';
 <!-- Node27 -->
 <g id="Node000027" class="node">
 <title>Node27</title>
-<g id="a_Node000027"><a xlink:href="class_vna_device.html#a0b803a51b1c38828781291cdcae07495" target="_top" xlink:title=" ">
+<g id="a_Node000027"><a xlink:href="class_vna_device.html#a0b803a51b1c38828781291cdcae07495" target="_top" xlink:title="Установка положений переключателей в определённые позиции">
 <polygon fill="white" stroke="#666666" points="1096,-622 990.75,-622 990.75,-602 1096,-602 1096,-622"/>
 <text text-anchor="middle" x="1043.38" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::set_path</text>
 </a>

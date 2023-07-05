@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="vna__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="vna__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс VnaDevice.">
 <polygon fill="white" stroke="#666666" points="267.12,-188 185.88,-188 185.88,-168 267.12,-168 267.12,-188"/>
 <text text-anchor="middle" x="226.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">vna_device.hpp</text>
 </a>

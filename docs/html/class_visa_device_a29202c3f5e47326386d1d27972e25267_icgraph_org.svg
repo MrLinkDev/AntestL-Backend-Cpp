@@ -173,7 +173,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_keysight_m9807_a.html#a85c78a42ccfda3bb9b69cb60b79358f4" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_keysight_m9807_a.html#a85c78a42ccfda3bb9b69cb60b79358f4" target="_top" xlink:title="Настройка ВАЦ для измерения">
 <polygon fill="white" stroke="#666666" points="135.25,-833.92 0,-833.92 0,-813.92 135.25,-813.92 135.25,-833.92"/>
 <text text-anchor="middle" x="67.62" y="-820.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::configure</text>
 </a>
@@ -191,7 +191,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_keysight_m9807_a.html#ad492f043e51d3e760209af6d59fe7829" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="class_keysight_m9807_a.html#ad492f043e51d3e760209af6d59fe7829" target="_top" xlink:title="Создание необходимых трасс, в зависимости от того, используется ли внешний генератор">
 <polygon fill="white" stroke="#666666" points="129.25,-795.92 6,-795.92 6,-763.92 129.25,-763.92 129.25,-795.92"/>
 <text text-anchor="start" x="14" y="-782.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::create</text>
 <text text-anchor="middle" x="67.62" y="-770.42" font-family="Helvetica,sans-Serif" font-size="10.00">_traces</text>
@@ -210,7 +210,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_keysight_m9807_a.html#ae9df428776abd1cc65fa24e57fb713e1" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_keysight_m9807_a.html#ae9df428776abd1cc65fa24e57fb713e1" target="_top" xlink:title="Запуск измерения">
 <polygon fill="white" stroke="#666666" points="122.12,-745.92 13.12,-745.92 13.12,-725.92 122.12,-725.92 122.12,-745.92"/>
 <text text-anchor="middle" x="67.62" y="-732.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::init</text>
 </a>
@@ -228,7 +228,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_keysight_m9807_a.html#ad48b95d00b8a2ecee1e95dc300d25203" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_keysight_m9807_a.html#ad48b95d00b8a2ecee1e95dc300d25203" target="_top" xlink:title="Инициализация канала для измерений">
 <polygon fill="white" stroke="#666666" points="122.12,-707.92 13.12,-707.92 13.12,-675.92 122.12,-675.92 122.12,-707.92"/>
 <text text-anchor="start" x="21.12" y="-694.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::init</text>
 <text text-anchor="middle" x="67.62" y="-682.42" font-family="Helvetica,sans-Serif" font-size="10.00">_channel</text>
@@ -247,7 +247,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_keysight_m9807_a.html#ad4dc40466fecabae451e88d763692076" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_keysight_m9807_a.html#ad4dc40466fecabae451e88d763692076" target="_top" xlink:title="Отключает все порты">
 <polygon fill="white" stroke="#666666" points="125.88,-657.92 9.38,-657.92 9.38,-637.92 125.88,-637.92 125.88,-657.92"/>
 <text text-anchor="middle" x="67.62" y="-644.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::rf_off</text>
 </a>
@@ -265,7 +265,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="class_keysight_m9807_a.html#a861c82a08c49f54dd245db73d87181c8" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="class_keysight_m9807_a.html#a861c82a08c49f54dd245db73d87181c8" target="_top" xlink:title="Отключает выбранный порт">
 <polygon fill="white" stroke="#666666" points="125.88,-619.92 9.38,-619.92 9.38,-599.92 125.88,-599.92 125.88,-619.92"/>
 <text text-anchor="middle" x="67.62" y="-606.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::rf_off</text>
 </a>
@@ -283,7 +283,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="class_keysight_m9807_a.html#adf9e166699c89ec3c7f53fae5ec81b0c" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="class_keysight_m9807_a.html#adf9e166699c89ec3c7f53fae5ec81b0c" target="_top" xlink:title="Включает все порты">
 <polygon fill="white" stroke="#666666" points="126.25,-581.92 9,-581.92 9,-561.92 126.25,-561.92 126.25,-581.92"/>
 <text text-anchor="middle" x="67.62" y="-568.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::rf_on</text>
 </a>
@@ -301,7 +301,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="class_keysight_m9807_a.html#ac6105e309ba2f11a360797e19d34a592" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="class_keysight_m9807_a.html#ac6105e309ba2f11a360797e19d34a592" target="_top" xlink:title="Включает выбранный порт">
 <polygon fill="white" stroke="#666666" points="126.25,-543.92 9,-543.92 9,-523.92 126.25,-523.92 126.25,-543.92"/>
 <text text-anchor="middle" x="67.62" y="-530.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::rf_on</text>
 </a>
@@ -337,7 +337,7 @@
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="class_keysight_m9807_a.html#a752f62baec908e4e421a95b3c75422fc" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="class_keysight_m9807_a.html#a752f62baec908e4e421a95b3c75422fc" target="_top" xlink:title="Установка определённого значения частоты">
 <polygon fill="white" stroke="#666666" points="133,-467.92 2.25,-467.92 2.25,-447.92 133,-447.92 133,-467.92"/>
 <text text-anchor="middle" x="67.62" y="-454.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::set_freq</text>
 </a>
@@ -355,7 +355,7 @@
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="class_keysight_m9807_a.html#a2b1761a2a4b4dc696a74590c2cb028de" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="class_keysight_m9807_a.html#a2b1761a2a4b4dc696a74590c2cb028de" target="_top" xlink:title="Установка частотного диапазона">
 <polygon fill="white" stroke="#666666" points="122.5,-429.92 12.75,-429.92 12.75,-397.92 122.5,-397.92 122.5,-429.92"/>
 <text text-anchor="start" x="20.75" y="-416.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::set</text>
 <text text-anchor="middle" x="67.62" y="-404.42" font-family="Helvetica,sans-Serif" font-size="10.00">_freq_range</text>
@@ -374,7 +374,7 @@
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="class_keysight_m9807_a.html#a148ac915640756d3ef0c33d92c1b1205" target="_top" xlink:title=" ">
+<g id="a_Node000018"><a xlink:href="class_keysight_m9807_a.html#a148ac915640756d3ef0c33d92c1b1205" target="_top" xlink:title="Установка положений переключателей в определённые позиции">
 <polygon fill="white" stroke="#666666" points="134.5,-379.92 0.75,-379.92 0.75,-359.92 134.5,-359.92 134.5,-379.92"/>
 <text text-anchor="middle" x="67.62" y="-366.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::set_path</text>
 </a>
@@ -392,7 +392,7 @@
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="class_keysight_m9807_a.html#ab3a0a48c7e439fab722d902479ff78eb" target="_top" xlink:title=" ">
+<g id="a_Node000019"><a xlink:href="class_keysight_m9807_a.html#ab3a0a48c7e439fab722d902479ff78eb" target="_top" xlink:title="Установка требуемой мощности зондирующего порта">
 <polygon fill="white" stroke="#666666" points="122.5,-341.92 12.75,-341.92 12.75,-309.92 122.5,-309.92 122.5,-341.92"/>
 <text text-anchor="start" x="20.75" y="-328.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::set</text>
 <text text-anchor="middle" x="67.62" y="-316.42" font-family="Helvetica,sans-Serif" font-size="10.00">_power</text>
@@ -411,7 +411,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" target="_top" xlink:title="Перевод триггера в режим single.">
 <polygon fill="white" stroke="#666666" points="129.25,-291.92 6,-291.92 6,-271.92 129.25,-271.92 129.25,-291.92"/>
 <text text-anchor="middle" x="67.62" y="-278.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::trigger</text>
 </a>
@@ -447,7 +447,7 @@
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" target="_top" xlink:title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по...">
 <polygon fill="white" stroke="#666666" points="635.5,-433.92 522,-433.92 522,-413.92 635.5,-413.92 635.5,-433.92"/>
 <text text-anchor="middle" x="578.75" y="-420.42" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice::VnaDevice</text>
 </a>
@@ -647,7 +647,7 @@
 <!-- Node34 -->
 <g id="Node000034" class="node">
 <title>Node34</title>
-<g id="a_Node000034"><a xlink:href="class_keysight_m9807_a.html#a0f54d9bad1ad1923606ff767f70de3e1" target="_top" xlink:title=" ">
+<g id="a_Node000034"><a xlink:href="class_keysight_m9807_a.html#a0f54d9bad1ad1923606ff767f70de3e1" target="_top" xlink:title="Полный сброс настроек">
 <polygon fill="white" stroke="#666666" points="465.38,-220.92 357.12,-220.92 357.12,-188.92 465.38,-188.92 465.38,-220.92"/>
 <text text-anchor="start" x="365.12" y="-207.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::full</text>
 <text text-anchor="middle" x="411.25" y="-195.42" font-family="Helvetica,sans-Serif" font-size="10.00">_preset</text>
@@ -684,7 +684,7 @@
 <!-- Node36 -->
 <g id="Node000036" class="node">
 <title>Node36</title>
-<g id="a_Node000036"><a xlink:href="class_keysight_m9807_a.html#a9a23e8c51407edd1aba3cf734d9ea71b" target="_top" xlink:title=" ">
+<g id="a_Node000036"><a xlink:href="class_keysight_m9807_a.html#a9a23e8c51407edd1aba3cf734d9ea71b" target="_top" xlink:title="Сбор данных, полученных в результате измерения, для одного порта">
 <polygon fill="white" stroke="#666666" points="478.12,-132.92 344.38,-132.92 344.38,-112.92 478.12,-112.92 478.12,-132.92"/>
 <text text-anchor="middle" x="411.25" y="-119.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::get_data</text>
 </a>
@@ -720,7 +720,7 @@
 <!-- Node38 -->
 <g id="Node000038" class="node">
 <title>Node38</title>
-<g id="a_Node000038"><a xlink:href="class_keysight_m9807_a.html#a6048408088bc8fc73c986dd812c86328" target="_top" xlink:title=" ">
+<g id="a_Node000038"><a xlink:href="class_keysight_m9807_a.html#a6048408088bc8fc73c986dd812c86328" target="_top" xlink:title="Сброс настроек">
 <polygon fill="white" stroke="#666666" points="472.88,-56.92 349.62,-56.92 349.62,-36.92 472.88,-36.92 472.88,-56.92"/>
 <text text-anchor="middle" x="411.25" y="-43.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::preset</text>
 </a>

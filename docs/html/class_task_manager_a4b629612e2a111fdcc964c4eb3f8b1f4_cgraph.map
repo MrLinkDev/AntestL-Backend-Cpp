@@ -64,7 +64,7 @@
 <area shape="poly" id="edge25_Node000022_Node000023" title=" " alt="" coords="1052,571,1097,571,1097,576,1052,576"/>
 <area shape="rect" id="Node000024" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title="Метод, возвращающий значение флага connected." alt="" coords="1110,661,1280,688"/>
 <area shape="poly" id="edge26_Node000022_Node000024" title=" " alt="" coords="1040,585,1063,596,1079,610,1088,623,1097,635,1111,647,1122,653,1119,657,1109,652,1093,639,1084,626,1075,613,1061,601,1038,590"/>
-<area shape="rect" id="Node000025" href="$class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" title=" " alt="" coords="1132,611,1258,637"/>
+<area shape="rect" id="Node000025" href="$class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" title="Сброс настроек" alt="" coords="1132,611,1258,637"/>
 <area shape="poly" id="edge28_Node000022_Node000025" title=" " alt="" coords="1044,585,1124,604,1122,609,1043,590"/>
 <area shape="poly" id="edge32_Node000026_Node000003" title=" " alt="" coords="861,447,1137,431,1138,437,861,453"/>
 <area shape="rect" id="Node000027" href="$class_device_set.html#a6241d8b37639241e2a370c1f7d533995" title="Отключает все устройства и уничтожает созданные объекты" alt="" coords="910,611,1061,637"/>
@@ -88,9 +88,9 @@
 <area shape="rect" id="Node000037" href="$class_device_set.html#a905900391da22efd2f866843c81572d4" title="Переводит переключатели в заданные положения" alt="" coords="917,813,1054,840"/>
 <area shape="poly" id="edge50_Node000034_Node000037" title=" " alt="" coords="823,787,909,807,908,812,822,793"/>
 <area shape="poly" id="edge48_Node000035_Node000024" title=" " alt="" coords="1047,862,1060,850,1073,831,1080,812,1082,775,1085,737,1093,717,1108,698,1112,694,1116,698,1112,702,1098,720,1090,738,1087,775,1085,814,1078,834,1064,854,1050,866"/>
-<area shape="rect" id="Node000036" href="$class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" title=" " alt="" coords="1119,864,1271,907"/>
+<area shape="rect" id="Node000036" href="$class_vna_device.html#abbe7ac7ab8da8e7c27b7f7525d1d32a4" title="Запрос количества переключателей, подключенных к ВАЦ" alt="" coords="1119,864,1271,907"/>
 <area shape="poly" id="edge47_Node000035_Node000036" title=" " alt="" coords="1063,883,1104,883,1104,888,1063,888"/>
 <area shape="poly" id="edge51_Node000037_Node000003" title=" " alt="" coords="1037,811,1060,793,1083,753,1092,715,1092,678,1086,641,1081,603,1079,564,1086,523,1108,480,1123,463,1142,449,1145,454,1127,467,1112,483,1092,525,1084,564,1086,602,1092,640,1097,677,1098,716,1088,755,1064,796,1041,815"/>
-<area shape="rect" id="Node000038" href="$class_vna_device.html#a0b803a51b1c38828781291cdcae07495" title=" " alt="" coords="1125,813,1265,840"/>
+<area shape="rect" id="Node000038" href="$class_vna_device.html#a0b803a51b1c38828781291cdcae07495" title="Установка положений переключателей в определённые позиции" alt="" coords="1125,813,1265,840"/>
 <area shape="poly" id="edge52_Node000037_Node000038" title=" " alt="" coords="1055,824,1110,824,1110,829,1055,829"/>
 </map>

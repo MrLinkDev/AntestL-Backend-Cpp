@@ -111,7 +111,7 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_vna_device.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_vna_device.html" target="_top" xlink:title="Класс, в котором реализованы методы для работы с ВАЦ">
 <polygon fill="white" stroke="none" points="146,-893 5,-893 5,-449 146,-449 146,-893"/>
 <text text-anchor="start" x="52.62" y="-879.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice</text>
 <text text-anchor="start" x="9.38" y="-863.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

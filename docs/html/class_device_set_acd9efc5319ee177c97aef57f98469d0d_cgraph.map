@@ -1,6 +1,6 @@
 <map id="DeviceSet::get_data" name="DeviceSet::get_data">
 <area shape="rect" id="Node000001" title="Метод, осуществляющий проведение измерения и получение результатов измерения" alt="" coords="5,427,143,453"/>
-<area shape="rect" id="Node000002" href="$class_vna_device.html#a305e9719412a43677b2d660c507c20c0" title=" " alt="" coords="198,64,367,91"/>
+<area shape="rect" id="Node000002" href="$class_vna_device.html#a305e9719412a43677b2d660c507c20c0" title="Создание необходимых трасс, в зависимости от того, используется ли внешний генератор" alt="" coords="198,64,367,91"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,426,78,367,95,279,109,231,129,184,156,140,189,101,193,97,197,101,193,105,160,143,134,186,114,233,100,281,83,367,78,426"/>
 <area shape="rect" id="Node000003" href="$class_device_set.html#a3d6e4e4745a60475d3ec2d778e48ff51" title="Получает список углов, на которые развёрнуты оси ОПУ" alt="" coords="206,115,359,157"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="78,425,117,331,149,269,189,210,211,186,236,165,239,169,215,190,193,214,154,272,121,333,83,427"/>
@@ -8,23 +8,23 @@
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="79,425,94,393,117,351,149,306,189,267,210,255,212,259,192,271,153,310,122,354,98,396,83,427"/>
 <area shape="rect" id="Node000010" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="472,275,557,301"/>
 <area shape="poly" id="edge21_Node000001_Node000010" title=" " alt="" coords="81,425,121,367,152,336,189,311,223,297,258,287,330,276,399,274,457,278,457,283,399,280,331,281,259,292,225,302,192,316,156,340,125,371,85,428"/>
-<area shape="rect" id="Node000015" href="$class_vna_device.html#a57dfdf98bf3ce296b5d71672d98e6c2d" title=" " alt="" coords="212,325,353,352"/>
+<area shape="rect" id="Node000015" href="$class_vna_device.html#a57dfdf98bf3ce296b5d71672d98e6c2d" title="Сбор данных, полученных в результате измерения, для одного порта" alt="" coords="212,325,353,352"/>
 <area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="91,424,134,393,190,362,207,355,209,360,192,366,137,397,94,428"/>
 <area shape="rect" id="Node000016" href="$class_device_set.html#a1f38931a5bc51dd54a661412cca9959c" title="Получает вектор частотных точек" alt="" coords="204,376,361,403"/>
 <area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="131,423,210,404,211,409,133,429"/>
-<area shape="rect" id="Node000020" href="$class_vna_device.html#ae729cfabb9f5e9fc856e63351090bf8b" title=" " alt="" coords="191,427,374,453"/>
+<area shape="rect" id="Node000020" href="$class_vna_device.html#ae729cfabb9f5e9fc856e63351090bf8b" title="Запрос номера зондирующего порта" alt="" coords="191,427,374,453"/>
 <area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="143,437,176,437,176,443,143,443"/>
-<area shape="rect" id="Node000021" href="$class_vna_device.html#ac77ad0af5fcffde75ad9e53d5b2b8189" title=" " alt="" coords="229,477,336,504"/>
+<area shape="rect" id="Node000021" href="$class_vna_device.html#ac77ad0af5fcffde75ad9e53d5b2b8189" title="Запуск измерения" alt="" coords="229,477,336,504"/>
 <area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="133,451,215,472,214,477,131,457"/>
 <area shape="rect" id="Node000022" href="$class_gen_device.html#a3556133ef6b21e99831af31010de2492" title=" " alt="" coords="223,528,342,555"/>
 <area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="94,452,137,483,192,514,210,521,208,526,190,518,134,487,91,456"/>
-<area shape="rect" id="Node000023" href="$class_vna_device.html#a925f4c70172ee7f9d24e19465c03b33b" title=" " alt="" coords="224,579,341,605"/>
+<area shape="rect" id="Node000023" href="$class_vna_device.html#a925f4c70172ee7f9d24e19465c03b33b" title="Отключает все порты" alt="" coords="224,579,341,605"/>
 <area shape="poly" id="edge23_Node000001_Node000023" title=" " alt="" coords="86,452,127,507,158,538,192,564,211,574,208,578,189,569,154,542,123,510,82,455"/>
 <area shape="rect" id="Node000024" href="$class_gen_device.html#a4f7c81bd6bb61ce8c639dfd9fdc16766" title=" " alt="" coords="223,629,342,656"/>
 <area shape="poly" id="edge24_Node000001_Node000024" title=" " alt="" coords="83,453,97,486,120,530,152,576,192,615,210,625,207,630,189,619,148,580,116,533,92,489,78,455"/>
-<area shape="rect" id="Node000025" href="$class_vna_device.html#a54c899426e88e979532978d36fcfa582" title=" " alt="" coords="223,680,342,707"/>
+<area shape="rect" id="Node000025" href="$class_vna_device.html#a54c899426e88e979532978d36fcfa582" title="Включает все порты" alt="" coords="223,680,342,707"/>
 <area shape="poly" id="edge25_Node000001_Node000025" title=" " alt="" coords="81,453,92,495,113,552,146,614,168,642,192,666,211,677,208,682,189,670,164,645,142,617,108,555,87,496,76,454"/>
-<area shape="rect" id="Node000026" href="$class_vna_device.html#a2141273efb5e7aa19f67bf06dc323546" title=" " alt="" coords="219,731,346,757"/>
+<area shape="rect" id="Node000026" href="$class_vna_device.html#a2141273efb5e7aa19f67bf06dc323546" title="Перевод триггера в режим single." alt="" coords="219,731,346,757"/>
 <area shape="poly" id="edge26_Node000001_Node000026" title=" " alt="" coords="79,453,88,503,107,574,122,613,140,651,164,686,192,717,207,727,204,731,189,721,160,689,136,653,117,615,102,576,82,504,74,454"/>
 <area shape="rect" id="Node000004" href="$class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" title=" " alt="" coords="443,5,586,48"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="350,112,372,100,396,79,420,58,430,52,433,57,424,62,400,83,376,105,353,116"/>
@@ -45,10 +45,10 @@
 <area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="558,290,640,300,639,305,557,295"/>
 <area shape="rect" id="Node000014" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="669,351,803,377"/>
 <area shape="poly" id="edge13_Node000010_Node000014" title=" " alt="" coords="558,295,607,311,655,336,673,343,671,348,653,341,605,316,556,300"/>
-<area shape="rect" id="Node000017" href="$class_vna_device.html#a596313270ef036ba566dd7975008b1d5" title=" " alt="" coords="430,325,598,352"/>
+<area shape="rect" id="Node000017" href="$class_vna_device.html#a596313270ef036ba566dd7975008b1d5" title="Запрос ширины шага по частоте" alt="" coords="430,325,598,352"/>
 <area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="346,373,435,353,436,358,347,378"/>
-<area shape="rect" id="Node000018" href="$class_vna_device.html#afdeaa8974791094f16a034695d9f7035" title=" " alt="" coords="439,376,589,403"/>
+<area shape="rect" id="Node000018" href="$class_vna_device.html#afdeaa8974791094f16a034695d9f7035" title="Запрос количества точек трассы" alt="" coords="439,376,589,403"/>
 <area shape="poly" id="edge17_Node000016_Node000018" title=" " alt="" coords="361,387,424,387,424,392,361,392"/>
-<area shape="rect" id="Node000019" href="$class_vna_device.html#a8fe6434c79a0188c98fce52d152aef76" title=" " alt="" coords="430,427,599,453"/>
+<area shape="rect" id="Node000019" href="$class_vna_device.html#a8fe6434c79a0188c98fce52d152aef76" title="Запрос начальной частоты диапазона" alt="" coords="430,427,599,453"/>
 <area shape="poly" id="edge18_Node000016_Node000019" title=" " alt="" coords="347,401,436,420,435,426,346,406"/>
 </map>

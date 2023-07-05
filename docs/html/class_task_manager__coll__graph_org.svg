@@ -149,7 +149,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_vna_device.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_vna_device.html" target="_top" xlink:title="Класс, в котором реализованы методы для работы с ВАЦ">
 <polygon fill="white" stroke="none" points="141,-1568 0,-1568 0,-1124 141,-1124 141,-1568"/>
 <text text-anchor="start" x="47.62" y="-1554.5" font-family="Helvetica,sans-Serif" font-size="10.00">VnaDevice</text>
 <text text-anchor="start" x="4.38" y="-1538.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

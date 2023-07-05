@@ -9,7 +9,7 @@
 <area shape="rect" id="Node000004" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title="Метод, возвращающий значение флага connected." alt="" coords="420,56,590,83"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="360,103,435,84,436,89,362,109"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="362,131,449,154,447,159,360,137"/>
-<area shape="rect" id="Node000010" href="$class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" title=" " alt="" coords="442,107,568,133"/>
+<area shape="rect" id="Node000010" href="$class_vna_device.html#a0f7b7885465a905959c560fe1e72681a" title="Сброс настроек" alt="" coords="442,107,568,133"/>
 <area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="372,117,427,117,427,123,372,123"/>
 <area shape="rect" id="Node000006" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="661,81,779,108"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="548,157,589,143,637,118,655,111,657,116,639,122,591,148,549,162"/>

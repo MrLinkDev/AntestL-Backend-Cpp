@@ -57,7 +57,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Файл исходного кода, в котором реализованы методы для класа DeviceSet.">
 <polygon fill="#999999" stroke="#666666" points="406,-380 311.25,-380 311.25,-348 406,-348 406,-380"/>
 <text text-anchor="start" x="319.25" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/device</text>
 <text text-anchor="middle" x="358.62" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">_set.cpp</text>
@@ -121,7 +121,7 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="vna__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="vna__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс VnaDevice.">
 <polygon fill="white" stroke="#666666" points="318.88,-194 220.38,-194 220.38,-174 318.88,-174 318.88,-194"/>
 <text text-anchor="middle" x="269.62" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">vna/vna_device.hpp</text>
 </a>

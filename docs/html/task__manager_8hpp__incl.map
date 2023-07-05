@@ -6,7 +6,7 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="359,31,394,67,390,71,355,34"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,155,80,181"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="340,110,95,157,94,152,339,105"/>
-<area shape="rect" id="Node000005" href="$vna__device_8hpp.html" title=" " alt="" coords="366,229,498,256"/>
+<area shape="rect" id="Node000005" href="$vna__device_8hpp.html" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="366,229,498,256"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="452,105,485,124,501,137,513,154,517,174,508,193,492,210,472,224,469,219,489,206,504,190,511,173,508,156,497,141,482,128,449,109"/>
 <area shape="rect" id="Node000018" href="$gen__device_8hpp.html" title=" " alt="" coords="207,229,342,256"/>
 <area shape="poly" id="edge18_Node000003_Node000018" title=" " alt="" coords="385,110,350,129,318,156,298,186,285,216,280,214,293,183,314,153,347,125,382,105"/>
