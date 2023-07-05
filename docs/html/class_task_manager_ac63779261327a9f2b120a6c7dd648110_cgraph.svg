@@ -57,7 +57,7 @@ var sectionId = 'dynsection-8';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Метод, обрабатывающий задание на изменение частотного диапазона">
 <polygon fill="#999999" stroke="#666666" points="115,-126 0,-126 0,-94 115,-94 115,-126"/>
 <text text-anchor="start" x="8" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_freq</text>
 <text text-anchor="middle" x="57.5" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range_task</text>
@@ -204,7 +204,7 @@ var sectionId = 'dynsection-8';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_gen_device.html#ae8f3f5e85a477915c09854a73e730a3e" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="class_gen_device.html#ae8f3f5e85a477915c09854a73e730a3e" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="393,-170 288.5,-170 288.5,-138 393,-138 393,-170"/>
 <text text-anchor="start" x="296.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::move_to</text>
 <text text-anchor="middle" x="340.75" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>
@@ -232,7 +232,7 @@ var sectionId = 'dynsection-8';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_gen_device.html#a05df7e221e3b5d04d5bd23a21eecdab1" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_gen_device.html#a05df7e221e3b5d04d5bd23a21eecdab1" target="_top" xlink:title="Установка частотного диапазона">
 <polygon fill="white" stroke="#666666" points="392.25,-82 289.25,-82 289.25,-50 392.25,-50 392.25,-82"/>
 <text text-anchor="start" x="297.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::set_freq</text>
 <text text-anchor="middle" x="340.75" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>

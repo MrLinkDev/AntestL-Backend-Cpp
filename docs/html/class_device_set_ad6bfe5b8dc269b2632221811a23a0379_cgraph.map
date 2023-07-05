@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Устанавливает требуемую мощность зондирующего порта" alt="" coords="5,132,152,159"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="232,81,318,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,129,217,107,218,112,134,134"/>
-<area shape="rect" id="Node000007" href="$class_gen_device.html#a7ffc7d45d181a233832ba42c76f09c9d" title=" " alt="" coords="200,132,350,159"/>
+<area shape="rect" id="Node000007" href="$class_gen_device.html#a7ffc7d45d181a233832ba42c76f09c9d" title="Установка требуемой мощности сигнала" alt="" coords="200,132,350,159"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="152,143,185,143,185,148,152,148"/>
 <area shape="rect" id="Node000008" href="$class_vna_device.html#a06da46754f53a7067560523dea6e5129" title="Установка требуемой мощности зондирующего порта" alt="" coords="200,183,350,209"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="134,157,207,176,205,181,133,162"/>

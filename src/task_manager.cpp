@@ -1,6 +1,22 @@
+/**
+ * \file
+ * \brief Файл исходного кода, в котором реализованы методы для класа TaskManager
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023
+ */
+
 #include "task_manager.hpp"
 #include "utils/array_utils.hpp"
 
+/**
+ * \brief Метод, обрабатывающий задание на подключение
+ *
+ * \param [in] device_list JSON объект, содержащий в себе список устройств и адресов
+ * этих устройств
+ *
+ * \return Результат выполнения задания
+ */
 json TaskManager::connect_task(nlohmann::json device_list) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_CONNECT);
 
@@ -44,6 +60,9 @@ json TaskManager::connect_task(nlohmann::json device_list) {
     return output;
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на отключение
+ */
 void TaskManager::disconnect_task() {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_DISCONNECT);
 
@@ -51,6 +70,14 @@ void TaskManager::disconnect_task() {
     logger::log(LEVEL_DEBUG, "Disconnected from devices");
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на настройку ВАЦ
+ *
+ * \param [in] config_params JSON объект, в котором хранится список параметров
+ * для настройки ВАЦ
+ *
+ * \return Если задание обработано успешно - true. В противном случае - false.
+ */
 bool TaskManager::configure_task(json config_params) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_CONFIGURE);
 
@@ -68,6 +95,13 @@ bool TaskManager::configure_task(json config_params) {
     return result;
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на изменение мощности
+ *
+ * \param [in] power_value JSON объект, в котором хранится значение мощности
+ *
+ * \return Если задание обработано успешно - true. В противном случае - false.
+ */
 bool TaskManager::set_power_task(json power_value) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_POWER);
 
@@ -77,6 +111,13 @@ bool TaskManager::set_power_task(json power_value) {
     return result;
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на изменение частоты
+ *
+ * \param freq_value JSON объект, в котором хранится значение частоты
+ *
+ * \return Если задание обработано успешно - true. В противном случае - false.
+ */
 bool TaskManager::set_freq_task(json freq_value) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_FREQ);
 
@@ -86,6 +127,13 @@ bool TaskManager::set_freq_task(json freq_value) {
     return result;
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на изменение частотного диапазона
+ *
+ * \param freq_range JSON объект, в котором хранятся данные о частотном диапазоне
+ *
+ * \return Если задание обработано успешно - true. В противном случае - false.
+ */
 bool TaskManager::set_freq_range_task(json freq_range) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_FREQ_RANGE);
 
@@ -104,10 +152,24 @@ bool TaskManager::set_freq_range_task(json freq_range) {
     return result;
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на сдвиг частотной точки
+ *
+ * \return Если следующая частотная точка находится в пределах
+ * границ изменения, то возвращает FREQ_MOVE_OK. Если точка
+ * находится на границе, то возвращает FREQ_MOVE_BOUND.
+ */
 int TaskManager::next_freq_task() {
     return device_set.next_freq();
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на изменение угла
+ *
+ * \param angle_value JSON объект, в котором хранится значение угла
+ *
+ * \return Если задание обработано успешно - true. В противном случае - false.
+ */
 bool TaskManager::set_angle_task(json angle_value) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_ANGLE);
 
@@ -120,6 +182,13 @@ bool TaskManager::set_angle_task(json angle_value) {
     return result;
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на изменение углового диапазона
+ *
+ * \param angle_range JSON объект, в котором хранятся данные об угловом диапазоне
+ *
+ * \return Если задание обработано успешно - true. В противном случае - false.
+ */
 bool TaskManager::set_angle_range_task(json angle_range) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_ANGLE_RANGE);
 
@@ -139,10 +208,28 @@ bool TaskManager::set_angle_range_task(json angle_range) {
     return result;
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на сдвиг угловой точки
+ *
+ * \param [in] axis_num Номер оси ОПУ
+ *
+ * \return Если угловая точка находится в пределах диапазона изменения угла,
+ * то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе
+ * диапазона, то возвращает ANGLE_MOVE_BOUND.
+ */
 int TaskManager::next_angle_task(int axis_num) {
     return device_set.next_angle(axis_num);
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на изменение положений переключателей
+ *
+ * \param [in] path_values JSON объект, который содержит список требуемых положений
+ * переключателей
+ *
+ * \return Если действие выполнено успешно, возвращает true. В противном
+ * случае - false.
+ */
 bool TaskManager::set_path_task(json path_values) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_CHANGE_PATH);
 
@@ -168,6 +255,15 @@ bool TaskManager::set_path_task(json path_values) {
     return result;
 }
 
+/**
+ * \brief Метод, обрабатывающий задание на проведение измерения и сбор данных
+ *
+ * \param [in] port_list JSON объект, который содержит список портов ВАЦ, для которых
+ * требуется провести измерение
+ *
+ * \return Если действие выполнено успешно, возвращает полученные данные. В противном
+ * случае, возвращает пустую строку.
+ */
 std::string TaskManager::get_data_task(json port_list) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_GET_DATA);
 
@@ -177,6 +273,16 @@ std::string TaskManager::get_data_task(json port_list) {
     return acquired_data.to_string();
 }
 
+/**
+ * \brief Метод, обрабатывающий пришедшее задание.
+ *
+ * Определяется тип задания, после чего вызывается соответствующий метод для обработки
+ * задания. После обработки - формируется JSON объект с результатами выполнения.
+ *
+ * \param [in] task Задание, которое требуется обработать
+ *
+ * \return Результат обработки задания
+ */
 json TaskManager::proceed_task(const json &task) {
     json result;
 
@@ -270,6 +376,21 @@ json TaskManager::proceed_task(const json &task) {
     return result;
 }
 
+/**
+ * \brief Метод, обрабатывающий список заданий.
+ *
+ * Выделяются задания, для которых требуется обработка вложенности. Полученный
+ * список заданий сортируется по уровню вложенности и передаётся в метод
+ * proceed_nested_task_list() для дальнейшей обработки. Затем, формируется
+ * результат обработки всех заданий.
+ *
+ * \warning Задания, у которых не требуется обработка вложенности, выполняются
+ * в первую очередь! Они не передаются в метод proceed_nested_task_list()!
+ *
+ * \param [in] task_list Список заданий, который требуется обработать
+ *
+ * \return Результат обработки списка заданий
+ */
 json TaskManager::proceed_task_list(const json &task_list) {
     json result;
     json nested_result;
@@ -333,6 +454,13 @@ json TaskManager::proceed_task_list(const json &task_list) {
     return result;
 }
 
+/**
+ * \brief Метод, позволяющий произвести обработку списка заданий, с учётом вложенности
+ *
+ * \param [in] nested_task_list Список заданий, имеющих вложенность
+ *
+ * \return Результат обработки данных
+ */
 json TaskManager::proceed_nested_task_list(std::vector<json> nested_task_list) {
     json result;
     std::string data{};
@@ -486,6 +614,17 @@ json TaskManager::proceed_nested_task_list(std::vector<json> nested_task_list) {
     return result;
 }
 
+/**
+ * \brief Метод, производящий обработку принятого JSON-объекта
+ *
+ * Проверяется, какой тип данных был получен - задание или список заданий, а затем,
+ * передаёт JSON-объект в соответствующий метод для дальнейшей обработки. Также, в
+ * методе производится замер времени выполнения задания/списка заданий.
+ *
+ * \param [in] data Принятый JSON-объект
+ *
+ * \return Результат обработки принятого объекта
+ */
 std::string TaskManager::proceed(const json &data) {
     json answer;
 
@@ -520,6 +659,14 @@ std::string TaskManager::proceed(const json &data) {
     return to_string(answer);
 }
 
+/**
+ * \brief Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_STOP
+ *
+ * \param [in] data Принятое задание
+ *
+ * \return Если тип принятого задания равен TASK_TYPE_STOP, возвращается true.
+ * В противном случае - false.
+ */
 bool TaskManager::received_stop_task(const json &data) {
     if (data.contains(WORD_TASK) && data[WORD_TASK][WORD_TASK_TYPE] == TASK_TYPE_STOP) {
         return true;
@@ -528,6 +675,14 @@ bool TaskManager::received_stop_task(const json &data) {
     return false;
 }
 
+/**
+ * \brief Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_DISCONNECT
+ *
+ * \param [in] data Принятое задание
+ *
+ * \return Если тип принятого задания равен TASK_TYPE_DISCONNECT, возвращается true.
+ * В противном случае - false.
+ */
 bool TaskManager::received_disconnect_task(const json &data) {
     if (data.contains(WORD_TASK) && data[WORD_TASK][WORD_TASK_TYPE] == TASK_TYPE_DISCONNECT) {
         return true;
@@ -536,11 +691,11 @@ bool TaskManager::received_disconnect_task(const json &data) {
     return false;
 }
 
+/**
+ * \brief Присваивает флагу stop_request значение true, тем самым, останавливая
+ * процес измерения
+ */
 void TaskManager::request_stop() {
     device_set.request_stop();
     stop_requested = true;
-}
-
-void TaskManager::reset_stop_request() {
-    stop_requested = false;
 }

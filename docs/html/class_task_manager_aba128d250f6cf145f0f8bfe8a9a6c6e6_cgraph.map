@@ -1,5 +1,5 @@
 <map id="TaskManager::set_power_task" name="TaskManager::set_power_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,204,133"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий задание на изменение мощности" alt="" coords="5,107,204,133"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="479,81,564,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,111,464,95,464,101,204,117"/>
 <area shape="rect" id="Node000007" href="$class_device_set.html#ad6bfe5b8dc269b2632221811a23a0379" title="Устанавливает требуемую мощность зондирующего порта" alt="" coords="252,132,398,159"/>
@@ -13,7 +13,7 @@
 <area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="659,157,793,184"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="565,105,597,118,645,143,663,150,661,155,643,148,595,122,563,110"/>
 <area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="379,129,463,107,465,112,380,134"/>
-<area shape="rect" id="Node000008" href="$class_gen_device.html#a7ffc7d45d181a233832ba42c76f09c9d" title=" " alt="" coords="446,132,596,159"/>
+<area shape="rect" id="Node000008" href="$class_gen_device.html#a7ffc7d45d181a233832ba42c76f09c9d" title="Установка требуемой мощности сигнала" alt="" coords="446,132,596,159"/>
 <area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="398,143,431,143,431,148,398,148"/>
 <area shape="rect" id="Node000009" href="$class_vna_device.html#a06da46754f53a7067560523dea6e5129" title="Установка требуемой мощности зондирующего порта" alt="" coords="447,183,596,209"/>
 <area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="380,157,453,176,452,181,379,162"/>

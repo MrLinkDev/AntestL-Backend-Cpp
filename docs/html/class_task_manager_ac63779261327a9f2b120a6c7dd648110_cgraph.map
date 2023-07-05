@@ -1,5 +1,5 @@
 <map id="TaskManager::set_freq_range_task" name="TaskManager::set_freq_range_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,159,116"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий задание на изменение частотного диапазона" alt="" coords="5,73,159,116"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="417,81,502,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,92,403,92,403,97,159,97"/>
 <area shape="rect" id="Node000007" href="$class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" title="Устанавливает частотную точку, соответствующую началу диапазона." alt="" coords="207,15,342,57"/>
@@ -15,10 +15,10 @@
 <area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="592,157,726,184"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="502,106,530,118,578,143,596,150,594,155,576,148,528,122,500,111"/>
 <area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="343,55,404,74,403,80,342,60"/>
-<area shape="rect" id="Node000008" href="$class_gen_device.html#ae8f3f5e85a477915c09854a73e730a3e" title=" " alt="" coords="390,15,529,57"/>
+<area shape="rect" id="Node000008" href="$class_gen_device.html#ae8f3f5e85a477915c09854a73e730a3e" title="Устанавливает частотную точку, соответствующую началу диапазона." alt="" coords="390,15,529,57"/>
 <area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="343,33,375,33,375,39,343,39"/>
 <area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="341,130,402,110,404,115,342,135"/>
-<area shape="rect" id="Node000010" href="$class_gen_device.html#a05df7e221e3b5d04d5bd23a21eecdab1" title=" " alt="" coords="391,132,528,175"/>
+<area shape="rect" id="Node000010" href="$class_gen_device.html#a05df7e221e3b5d04d5bd23a21eecdab1" title="Установка частотного диапазона" alt="" coords="391,132,528,175"/>
 <area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="342,151,376,151,376,156,342,156"/>
 <area shape="rect" id="Node000011" href="$class_vna_device.html#a52deab981a9100b5ac1ca46cc10a9aac" title="Установка частотного диапазона" alt="" coords="392,199,528,241"/>
 <area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="336,173,386,191,384,196,335,178"/>

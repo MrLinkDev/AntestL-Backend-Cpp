@@ -1,6 +1,6 @@
 <map id="DeviceSet::get_current_freq" name="DeviceSet::get_current_freq">
 <area shape="rect" id="Node000001" title="Получает текущее значение частоты зондирующего сигнала на подключенном генераторе" alt="" coords="5,56,186,83"/>
-<area shape="rect" id="Node000002" href="$class_gen_device.html#a497e5597ec277ac910051ee066920a8f" title=" " alt="" coords="234,5,418,32"/>
+<area shape="rect" id="Node000002" href="$class_gen_device.html#a497e5597ec277ac910051ee066920a8f" title="Получает текущее значение частоты сигнала" alt="" coords="234,5,418,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,53,247,33,248,38,160,58"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title="Метод, возвращающий значение флага connected." alt="" coords="241,56,411,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,67,226,67,226,72,186,72"/>

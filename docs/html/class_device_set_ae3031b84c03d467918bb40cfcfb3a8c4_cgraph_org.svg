@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_gen_device.html#a497e5597ec277ac910051ee066920a8f" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_gen_device.html#a497e5597ec277ac910051ee066920a8f" target="_top" xlink:title="Получает текущее значение частоты сигнала">
 <polygon fill="white" stroke="#666666" points="309.5,-153 171.25,-153 171.25,-133 309.5,-133 309.5,-153"/>
 <text text-anchor="middle" x="240.38" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::get_current_freq</text>
 </a>

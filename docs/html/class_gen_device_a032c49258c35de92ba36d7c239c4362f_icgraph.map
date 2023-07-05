@@ -1,5 +1,5 @@
 <map id="GenDevice::prev_freq" name="GenDevice::prev_freq">
-<area shape="rect" id="Node000001" title=" " alt="" coords="192,5,334,32"/>
+<area shape="rect" id="Node000001" title="Переход к предыдущей частотной точке" alt="" coords="192,5,334,32"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#a6266fcc96c0db2fb38295b742216016b" title="Переход к предыдущей частотной точке" alt="" coords="5,5,144,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,21,144,21,144,16,177,16"/>
 </map>

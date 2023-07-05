@@ -578,12 +578,18 @@ std::string DeviceSet::get_current_angles() {
 /**
  * \brief Переводит переключатели в заданные положения
  *
- * \param path_list Вектор положений переключателей
+ * \param [in] path_list Вектор положений переключателей
  *
  * \return Если действие выполнено успешно, возвращает true. В противном
  * случае - false.
  *
-
+ * **Пример**
+ * \code
+ * DeviceSet device_set();
+ *
+ * device_set.connect(DEVICE_VNA, "m9807a", "TCPIP0::localhost::5025::SOCKET");
+ * device_set.set_path({1, 4, 2, 5});
+ * \endcode
  */
 bool DeviceSet::set_path(std::vector<int> path_list) {
     try {
@@ -791,7 +797,8 @@ data_t DeviceSet::get_data(std::vector<int> port_list) {
 }
 
 /**
- * \brief Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения
+ * \brief Присваивает флагу stop_request значение true, тем самым, останавливая
+ * процес измерения
  */
 void DeviceSet::request_stop() {
     stop_requested = true;

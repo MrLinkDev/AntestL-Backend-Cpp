@@ -39,7 +39,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_gen_device.html#ae8f3f5e85a477915c09854a73e730a3e" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_gen_device.html#ae8f3f5e85a477915c09854a73e730a3e" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="242,-39 137.5,-39 137.5,-7 242,-7 242,-39"/>
 <text text-anchor="start" x="145.5" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::move_to</text>
 <text text-anchor="middle" x="189.75" y="-13.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>

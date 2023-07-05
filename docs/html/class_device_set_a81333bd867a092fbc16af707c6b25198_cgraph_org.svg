@@ -39,7 +39,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_gen_device.html#a05df7e221e3b5d04d5bd23a21eecdab1" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_gen_device.html#a05df7e221e3b5d04d5bd23a21eecdab1" target="_top" xlink:title="Установка частотного диапазона">
 <polygon fill="white" stroke="#666666" points="239,-82 136,-82 136,-50 239,-50 239,-82"/>
 <text text-anchor="start" x="144" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::set_freq</text>
 <text text-anchor="middle" x="187.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>

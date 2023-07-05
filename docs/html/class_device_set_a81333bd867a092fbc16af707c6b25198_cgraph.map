@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Устанавливает диапазон изменения частоты зондирующего сигнала" alt="" coords="5,132,139,175"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="213,81,298,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,129,198,110,199,115,140,135"/>
-<area shape="rect" id="Node000007" href="$class_gen_device.html#a05df7e221e3b5d04d5bd23a21eecdab1" title=" " alt="" coords="187,132,324,175"/>
+<area shape="rect" id="Node000007" href="$class_gen_device.html#a05df7e221e3b5d04d5bd23a21eecdab1" title="Установка частотного диапазона" alt="" coords="187,132,324,175"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="139,151,172,151,172,156,139,156"/>
 <area shape="rect" id="Node000008" href="$class_vna_device.html#a52deab981a9100b5ac1ca46cc10a9aac" title="Установка частотного диапазона" alt="" coords="187,199,324,241"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="133,173,182,191,180,196,132,178"/>
