@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief Файл исходного кода, в котором реализованы методы для класа DeviceSet
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023
+ */
+
 #include "device_set.hpp"
 #include "rbd/demo_rdb.hpp"
 
