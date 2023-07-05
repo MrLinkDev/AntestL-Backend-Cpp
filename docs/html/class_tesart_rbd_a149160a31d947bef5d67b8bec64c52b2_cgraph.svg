@@ -57,7 +57,7 @@ var sectionId = 'dynsection-4';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось">
 <polygon fill="#999999" stroke="#666666" points="93.25,-96 0,-96 0,-76 93.25,-76 93.25,-96"/>
 <text text-anchor="middle" x="46.62" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::status</text>
 </a>

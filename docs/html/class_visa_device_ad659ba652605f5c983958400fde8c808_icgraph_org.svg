@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_keysight_gen.html#a22afec59890f93fe8ce3800a6ec9a453" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_keysight_gen.html#a22afec59890f93fe8ce3800a6ec9a453" target="_top" xlink:title="Получает текущее значение частоты сигнала">
 <polygon fill="white" stroke="#666666" points="485.25,-541 337.25,-541 337.25,-521 485.25,-521 485.25,-541"/>
 <text text-anchor="middle" x="411.25" y="-527.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::get_current_freq</text>
 </a>
@@ -75,7 +75,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" target="_top" xlink:title="Переход к следующей частотной точке">
 <polygon fill="white" stroke="#666666" points="295.25,-505 177.25,-505 177.25,-485 295.25,-485 295.25,-505"/>
 <text text-anchor="middle" x="236.25" y="-491.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::next_freq</text>
 </a>
@@ -93,7 +93,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="class_keysight_gen.html#ab60f56567bec59f39cceb9c0b7d7d892" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="class_keysight_gen.html#ab60f56567bec59f39cceb9c0b7d7d892" target="_top" xlink:title="Сброс настроек">
 <polygon fill="white" stroke="#666666" points="463.88,-351 358.62,-351 358.62,-331 463.88,-331 463.88,-351"/>
 <text text-anchor="middle" x="411.25" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::preset</text>
 </a>
@@ -129,7 +129,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" target="_top" xlink:title="Отключает порт">
 <polygon fill="white" stroke="#666666" points="460.5,-427 362,-427 362,-407 460.5,-407 460.5,-427"/>
 <text text-anchor="middle" x="411.25" y="-413.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::rf_off</text>
 </a>
@@ -147,7 +147,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="class_keysight_gen.html#a27f8ef0b4486e9402d4a2491cef702e7" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="class_keysight_gen.html#a27f8ef0b4486e9402d4a2491cef702e7" target="_top" xlink:title="Включает порт">
 <polygon fill="white" stroke="#666666" points="460.88,-275 361.62,-275 361.62,-255 460.88,-255 460.88,-275"/>
 <text text-anchor="middle" x="411.25" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::rf_on</text>
 </a>
@@ -219,7 +219,7 @@
 <!-- Node34 -->
 <g id="Node000034" class="node">
 <title>Node34</title>
-<g id="a_Node000034"><a xlink:href="class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" target="_top" xlink:title=" ">
+<g id="a_Node000034"><a xlink:href="class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" target="_top" xlink:title="Установка требуемой мощности сигнала">
 <polygon fill="white" stroke="#666666" points="472.5,-161 350,-161 350,-141 472.5,-141 472.5,-161"/>
 <text text-anchor="middle" x="411.25" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::set_power</text>
 </a>
@@ -237,7 +237,7 @@
 <!-- Node35 -->
 <g id="Node000035" class="node">
 <title>Node35</title>
-<g id="a_Node000035"><a xlink:href="class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" target="_top" xlink:title=" ">
+<g id="a_Node000035"><a xlink:href="class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" target="_top" xlink:title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось">
 <polygon fill="white" stroke="#666666" points="457.88,-123 364.62,-123 364.62,-103 457.88,-103 457.88,-123"/>
 <text text-anchor="middle" x="411.25" y="-109.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::status</text>
 </a>
@@ -255,7 +255,7 @@
 <!-- Node36 -->
 <g id="Node000036" class="node">
 <title>Node36</title>
-<g id="a_Node000036"><a xlink:href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" target="_top" xlink:title=" ">
+<g id="a_Node000036"><a xlink:href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" target="_top" xlink:title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)">
 <polygon fill="white" stroke="#666666" points="466.5,-85 356,-85 356,-65 466.5,-65 466.5,-85"/>
 <text text-anchor="middle" x="411.25" y="-71.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::TesartRbd</text>
 </a>
@@ -282,7 +282,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="293.38,-467 179.12,-467 179.12,-435 293.38,-435 293.38,-467"/>
 <text text-anchor="start" x="187.12" y="-453.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::move_to</text>
 <text text-anchor="middle" x="236.25" y="-441.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>
@@ -301,7 +301,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="293.38,-417 179.12,-417 179.12,-385 293.38,-385 293.38,-417"/>
 <text text-anchor="start" x="187.12" y="-403.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::move_to</text>
 <text text-anchor="middle" x="236.25" y="-391.5" font-family="Helvetica,sans-Serif" font-size="10.00">_stop_freq</text>
@@ -320,7 +320,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" target="_top" xlink:title="Переход к предыдущей частотной точке">
 <polygon fill="white" stroke="#666666" points="294.5,-367 178,-367 178,-347 294.5,-347 294.5,-367"/>
 <text text-anchor="middle" x="236.25" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::prev_freq</text>
 </a>
@@ -428,7 +428,7 @@
 <!-- Node33 -->
 <g id="Node000033" class="node">
 <title>Node33</title>
-<g id="a_Node000033"><a xlink:href="class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" target="_top" xlink:title=" ">
+<g id="a_Node000033"><a xlink:href="class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" target="_top" xlink:title="Установка определённого значения частоты">
 <polygon fill="white" stroke="#666666" points="292.62,-253 179.88,-253 179.88,-233 292.62,-233 292.62,-253"/>
 <text text-anchor="middle" x="236.25" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::set_freq</text>
 </a>

@@ -100,6 +100,9 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
+<p>Класс, в котором представлены методы для работы с ОПУ  
+ <a href="class_rbd_device.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф связей класса RbdDevice:</div>
@@ -112,51 +115,70 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 <tr class="memitem:a7d00819d3b7ea7b01f4e385806da97ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a7d00819d3b7ea7b01f4e385806da97ac">RbdDevice</a> ()=default</td></tr>
 <tr class="separator:a7d00819d3b7ea7b01f4e385806da97ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f0fc01b4d9a94bae816f55828bd74e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9">is_connected</a> ()</td></tr>
+<tr class="memdesc:a7f0fc01b4d9a94bae816f55828bd74e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, возвращающий значение флага connected.  <br /></td></tr>
 <tr class="separator:a7f0fc01b4d9a94bae816f55828bd74e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522ec68bb18ad6db7bff2c1318f0d587"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a522ec68bb18ad6db7bff2c1318f0d587">move</a> (float pos, int axis_num)</td></tr>
+<tr class="memdesc:a522ec68bb18ad6db7bff2c1318f0d587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворачивает ось до тех пор, пока она не достигнет требуемого угла  <br /></td></tr>
 <tr class="separator:a522ec68bb18ad6db7bff2c1318f0d587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad22f51538a1e9083fb36068a543e66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">stop</a> ()</td></tr>
+<tr class="memdesc:a4ad22f51538a1e9083fb36068a543e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Остановка всех осей  <br /></td></tr>
 <tr class="separator:a4ad22f51538a1e9083fb36068a543e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38ac9ca45cdf5ee9526ac2488baa1285"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285">set_angle</a> (float angle, int axis_num)</td></tr>
+<tr class="memdesc:a38ac9ca45cdf5ee9526ac2488baa1285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворачивает ось ОПУ на требуемый угол  <br /></td></tr>
 <tr class="separator:a38ac9ca45cdf5ee9526ac2488baa1285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce90b05c72560d35522397fa1295c8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a> (float <a class="el" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">start_angle</a>, float <a class="el" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">stop_angle</a>, int <a class="el" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">points</a>, int axis_num)</td></tr>
+<tr class="memdesc:a3ce90b05c72560d35522397fa1295c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задаёт диапазон изменения угла для определённой оси  <br /></td></tr>
 <tr class="separator:a3ce90b05c72560d35522397fa1295c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f3dad1a0133405e7aec1e9dd2236f0f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">next_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a0f3dad1a0133405e7aec1e9dd2236f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к следующей угловой точке  <br /></td></tr>
 <tr class="separator:a0f3dad1a0133405e7aec1e9dd2236f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a167e5b35a407ebda8203b7474d380d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">prev_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a3a167e5b35a407ebda8203b7474d380d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к предыдущей угловой точке  <br /></td></tr>
 <tr class="separator:a3a167e5b35a407ebda8203b7474d380d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54fd10b47f6c13d1ff985792799763f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0">move_to_start_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a54fd10b47f6c13d1ff985792799763f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает угловую точку, соответствующую началу диапазона.  <br /></td></tr>
 <tr class="separator:a54fd10b47f6c13d1ff985792799763f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e123d47cf6d44e35f65bdd6961c17b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">move_to_stop_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a7e123d47cf6d44e35f65bdd6961c17b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает угловую точку, соответствующую концу диапазона.  <br /></td></tr>
 <tr class="separator:a7e123d47cf6d44e35f65bdd6961c17b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae75a0b5418270decd335a47c853cad"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">get_pos</a> (int axis_num)</td></tr>
+<tr class="memdesc:a5ae75a0b5418270decd335a47c853cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает позицию требуемой оси  <br /></td></tr>
 <tr class="separator:a5ae75a0b5418270decd335a47c853cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b34a03ceb0a14f39724a60fcd6ac3b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b">get_axes_count</a> ()</td></tr>
+<tr class="memdesc:ae5b34a03ceb0a14f39724a60fcd6ac3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает количество осей  <br /></td></tr>
 <tr class="separator:ae5b34a03ceb0a14f39724a60fcd6ac3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Защищенные члены</h2></td></tr>
 <tr class="memitem:a8ae479426b12f8fcd2a08c84acdc7bb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5">init_params</a> (int axis_count=0)</td></tr>
+<tr class="memdesc:a8ae479426b12f8fcd2a08c84acdc7bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод инициализирующий параметры для требуемого количества осей  <br /></td></tr>
 <tr class="separator:a8ae479426b12f8fcd2a08c84acdc7bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Защищенные данные</h2></td></tr>
 <tr class="memitem:a18b96b3ec533ebb30651702b58a72ab5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">start_angle</a> {}</td></tr>
+<tr class="memdesc:a18b96b3ec533ebb30651702b58a72ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор начальных углов  <br /></td></tr>
 <tr class="separator:a18b96b3ec533ebb30651702b58a72ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e6ead71a94fa3f7c0963f15d8c32f4d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">stop_angle</a> {}</td></tr>
+<tr class="memdesc:a1e6ead71a94fa3f7c0963f15d8c32f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор конечных углов  <br /></td></tr>
 <tr class="separator:a1e6ead71a94fa3f7c0963f15d8c32f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7ae5ccfe5ce87671de1f42f189bdb4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#afd7ae5ccfe5ce87671de1f42f189bdb4">angle_step</a> {}</td></tr>
+<tr class="memdesc:afd7ae5ccfe5ce87671de1f42f189bdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор угловых шагов  <br /></td></tr>
 <tr class="separator:afd7ae5ccfe5ce87671de1f42f189bdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aa091e8248fc68abc406f2826794509"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a0aa091e8248fc68abc406f2826794509">current_angle</a> {}</td></tr>
+<tr class="memdesc:a0aa091e8248fc68abc406f2826794509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор текущих позиций  <br /></td></tr>
 <tr class="separator:a0aa091e8248fc68abc406f2826794509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8355d76430cf9c742cdfb0d84a5b110e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">points</a> {}</td></tr>
+<tr class="memdesc:a8355d76430cf9c742cdfb0d84a5b110e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор количества точек  <br /></td></tr>
 <tr class="separator:a8355d76430cf9c742cdfb0d84a5b110e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dba0eeb62e5a7dbc3b76ab3c8b83610"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a8dba0eeb62e5a7dbc3b76ab3c8b83610">current_point</a> {}</td></tr>
+<tr class="memdesc:a8dba0eeb62e5a7dbc3b76ab3c8b83610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор текущих точек  <br /></td></tr>
 <tr class="separator:a8dba0eeb62e5a7dbc3b76ab3c8b83610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00012">12</a></p>
+<div class="textblock"><p>Класс, в котором представлены методы для работы с ОПУ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00027">27</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a7d00819d3b7ea7b01f4e385806da97ac" name="a7d00819d3b7ea7b01f4e385806da97ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d00819d3b7ea7b01f4e385806da97ac">&#9670;&#160;</a></span>RbdDevice()</h2>
@@ -208,7 +230,15 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00024">24</a></p>
+<p>Метод инициализирующий параметры для требуемого количества осей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">axis_count</td><td>Количество осей </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00050">50</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -240,9 +270,13 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Метод, возвращающий значение флага connected. </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Если был передан список адресов осей и с одной из осей не удалось установить соединение, то будет возвращён false.</dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если все оси подключены - true. Если хотя бы одна из них не подключена - false. </dd></dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#a100bff0b0307475e71de7c1228f3146c">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a1b9e3d777aac6f972eb4dd56598936ec">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00040">40</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00075">75</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -285,9 +319,18 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Поворачивает ось до тех пор, пока она не достигнет требуемого угла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Требуемый угол </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#accf6b626115bb679c240cb3ebee1f71a">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00042">42</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00083">83</a></p>
 
 </div>
 </div>
@@ -314,9 +357,11 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Остановка всех осей </p>
+
 <p>Переопределяется в <a class="el" href="class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00043">43</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00088">88</a></p>
 
 </div>
 </div>
@@ -354,9 +399,18 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Поворачивает ось ОПУ на требуемый угол </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>Требуемый угол </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер ОСИ </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#a53c1fb6562ee74614651db5e59966640">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a0d830bf286416fb259ca84edd583bce3">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00045">45</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00096">96</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -411,9 +465,20 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Задаёт диапазон изменения угла для определённой оси </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_angle</td><td>Начальное значение угла </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop_angle</td><td>Конечное значение угла </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>Количество точек </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#a0019b1d44423824e9c8c0534869e271b">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a3dbe286f35cd24e00aeadf62797c77ac">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00046">46</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00106">106</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -446,9 +511,18 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Переход к следующей угловой точке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если угловая точка находится в пределах диапазона изменения угла, то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе диапазона, то возвращает ANGLE_MOVE_BOUND. </dd></dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#a8d23ad841ef52cad5f615c2763711c77">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#aa064f5779459c676b41d3c22f8202bc8">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00048">48</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00117">117</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -481,9 +555,18 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Переход к предыдущей угловой точке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если угловая точка находится в пределах диапазона изменения угла, то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе диапазона, то возвращает ANGLE_MOVE_BOUND. </dd></dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#aabce6d1da2c8b336a55453ab760a02e6">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a33a877f951cb3096020d9cb8ab406c63">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00049">49</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00128">128</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -516,9 +599,17 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Устанавливает угловую точку, соответствующую началу диапазона. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#a2c2176de45b1497b493d584efd9e54b6">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a3d5ce486456ebdac4128023e4c307903">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00051">51</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00136">136</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -551,9 +642,17 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Устанавливает угловую точку, соответствующую концу диапазона. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#aa9309c7ac6c5c1fc062759688bc74dbf">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a55d5b271d03db8d05abea14ea52be540">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00052">52</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00144">144</a></p>
 
 </div>
 </div>
@@ -581,9 +680,18 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Получает позицию требуемой оси </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Ось, позицию которой требется узнать</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Позиция, в которой находится ось </dd></dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#a891a7165e40b8b9295e1230bffae711b">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a57e0809dcaed2ad8275f97fccb2833b8">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00054">54</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00153">153</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -615,9 +723,12 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Получает количество осей </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество осей </dd></dl>
+
 <p>Переопределяется в <a class="el" href="class_demo_rbd.html#a82a003e57aee84771a36ed55f4285655">DemoRbd</a> и <a class="el" href="class_tesart_rbd.html#a23b88a6d6c31dedc5384c938ee8bf05a">TesartRbd</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00056">56</a></p>
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00160">160</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -647,7 +758,9 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00015">15</a></p>
+<p>Вектор начальных углов </p>
+
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00031">31</a></p>
 
 </div>
 </div>
@@ -671,7 +784,9 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00016">16</a></p>
+<p>Вектор конечных углов </p>
+
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00033">33</a></p>
 
 </div>
 </div>
@@ -695,7 +810,9 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00018">18</a></p>
+<p>Вектор угловых шагов </p>
+
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00036">36</a></p>
 
 </div>
 </div>
@@ -719,7 +836,9 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00019">19</a></p>
+<p>Вектор текущих позиций </p>
+
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00038">38</a></p>
 
 </div>
 </div>
@@ -743,7 +862,9 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00021">21</a></p>
+<p>Вектор количества точек </p>
+
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00041">41</a></p>
 
 </div>
 </div>
@@ -767,7 +888,9 @@ $(document).ready(function(){initNavTree('class_rbd_device.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00022">22</a></p>
+<p>Вектор текущих точек </p>
+
+<p class="definition">См. определение в файле <a class="el" href="rbd__device_8hpp_source.html">rbd_device.hpp</a> строка <a class="el" href="rbd__device_8hpp_source.html#l00043">43</a></p>
 
 </div>
 </div>

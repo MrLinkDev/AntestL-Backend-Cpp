@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла">
 <polygon fill="#999999" stroke="#666666" points="248.75,-80 161.5,-80 161.5,-60 248.75,-60 248.75,-80"/>
 <text text-anchor="middle" x="205.12" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd::move</text>
 </a>
@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_demo_rbd.html#a2c2176de45b1497b493d584efd9e54b6" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_demo_rbd.html#a2c2176de45b1497b493d584efd9e54b6" target="_top" xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="125.5,-158 0,-158 0,-126 125.5,-126 125.5,-158"/>
 <text text-anchor="start" x="8" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd::move_to_start</text>
 <text text-anchor="middle" x="62.75" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">_angle</text>
@@ -49,7 +49,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_demo_rbd.html#aa9309c7ac6c5c1fc062759688bc74dbf" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_demo_rbd.html#aa9309c7ac6c5c1fc062759688bc74dbf" target="_top" xlink:title="Устанавливает угловую точку, соответствующую концу диапазона.">
 <polygon fill="white" stroke="#666666" points="125.12,-108 0.38,-108 0.38,-76 125.12,-76 125.12,-108"/>
 <text text-anchor="start" x="8.38" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd::move_to_stop</text>
 <text text-anchor="middle" x="62.75" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">_angle</text>
@@ -68,7 +68,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_demo_rbd.html#a8d23ad841ef52cad5f615c2763711c77" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_demo_rbd.html#a8d23ad841ef52cad5f615c2763711c77" target="_top" xlink:title="Переход к следующей угловой точке">
 <polygon fill="white" stroke="#666666" points="118.75,-58 6.75,-58 6.75,-38 118.75,-38 118.75,-58"/>
 <text text-anchor="middle" x="62.75" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd::next_angle</text>
 </a>
@@ -86,7 +86,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="class_demo_rbd.html#a53c1fb6562ee74614651db5e59966640" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_demo_rbd.html#a53c1fb6562ee74614651db5e59966640" target="_top" xlink:title="Поворачивает ось ОПУ на требуемый угол">
 <polygon fill="white" stroke="#666666" points="116.12,-20 9.38,-20 9.38,0 116.12,0 116.12,-20"/>
 <text text-anchor="middle" x="62.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd::set_angle</text>
 </a>

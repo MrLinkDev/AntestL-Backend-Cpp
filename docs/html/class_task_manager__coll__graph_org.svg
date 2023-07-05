@@ -283,7 +283,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="class_gen_device.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="class_gen_device.html" target="_top" xlink:title="Класс, в котором представлены методы для управления генератором">
 <polygon fill="white" stroke="none" points="300,-1564 159,-1564 159,-1128 300,-1128 300,-1564"/>
 <text text-anchor="start" x="206.25" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice</text>
 <text text-anchor="start" x="163.38" y="-1534.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -393,7 +393,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_rbd_device.html" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_rbd_device.html" target="_top" xlink:title="Класс, в котором представлены методы для работы с ОПУ">
 <polygon fill="white" stroke="none" points="456.5,-1616 318.5,-1616 318.5,-1076 456.5,-1076 456.5,-1616"/>
 <text text-anchor="start" x="364.62" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice</text>
 <text text-anchor="start" x="322.88" y="-1586.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Заголовочный файл, в котором реализован класс DemoRbd.">
 <polygon fill="#999999" stroke="#666666" points="263.75,-268 155.5,-268 155.5,-236 263.75,-236 263.75,-268"/>
 <text text-anchor="start" x="163.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/demo</text>
 <text text-anchor="middle" x="209.62" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rdb.hpp</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="rbd__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="rbd__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс RbdDevice.">
 <polygon fill="white" stroke="#666666" points="190.88,-194 110.38,-194 110.38,-174 190.88,-174 190.88,-194"/>
 <text text-anchor="middle" x="150.62" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">rbd_device.hpp</text>
 </a>

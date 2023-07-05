@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" target="_top" xlink:title="Метод, возвращающий значение флага connected.">
 <polygon fill="white" stroke="#666666" points="262.62,-153 137.12,-153 137.12,-133 262.62,-133 262.62,-153"/>
 <text text-anchor="middle" x="199.88" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::is_connected</text>
 </a>

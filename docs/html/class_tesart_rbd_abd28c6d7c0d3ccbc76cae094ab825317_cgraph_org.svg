@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Остановка всех осей">
 <polygon fill="#999999" stroke="#666666" points="85,-20 0,-20 0,0 85,0 85,-20"/>
 <text text-anchor="middle" x="42.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::stop</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e" target="_top" xlink:title="Метод позволяет проверить, остановлена ли ось">
 <polygon fill="white" stroke="#666666" points="234.5,-20 121,-20 121,0 234.5,0 234.5,-20"/>
 <text text-anchor="middle" x="177.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::is_stopped</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1" target="_top" xlink:title="Запрос статуса оси ОПУ по номеру оси">
 <polygon fill="white" stroke="#666666" points="363.75,-20 270.5,-20 270.5,0 363.75,0 363.75,-20"/>
 <text text-anchor="middle" x="317.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::status</text>
 </a>

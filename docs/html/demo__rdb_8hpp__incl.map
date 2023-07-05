@@ -1,8 +1,8 @@
 <map id="src/devices/rbd/demo_rdb.hpp" name="src/devices/rbd/demo_rdb.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="213,5,357,48"/>
+<area shape="rect" id="Node000001" title="Заголовочный файл, в котором реализован класс DemoRbd." alt="" coords="213,5,357,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="71,104,128,131"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,51,142,98,140,100,137,95,140,94,240,46"/>
-<area shape="rect" id="Node000003" href="$rbd__device_8hpp.html" title=" " alt="" coords="153,104,260,131"/>
+<area shape="rect" id="Node000003" href="$rbd__device_8hpp.html" title="Заголовочный файл, в котором реализован класс RbdDevice." alt="" coords="153,104,260,131"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,50,229,95,225,91,265,47"/>
 <area shape="rect" id="Node000015" href="$exceptions_8hpp.html" title="Заголовочный файл, содержащий класс antestl_exsceptions, сообщения исключений и коды исключений" alt="" coords="284,104,446,131"/>
 <area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="305,47,346,91,342,95,301,50"/>

@@ -39,7 +39,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" target="_top" xlink:title="Задаёт диапазон изменения угла для определённой оси">
 <polygon fill="white" stroke="#666666" points="253.25,-39 143.5,-39 143.5,-7 253.25,-7 253.25,-39"/>
 <text text-anchor="start" x="151.5" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::set_angle</text>
 <text text-anchor="middle" x="198.38" y="-13.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>

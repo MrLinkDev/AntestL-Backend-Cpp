@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Запрос статуса оси ОПУ по номеру оси">
 <polygon fill="#999999" stroke="#666666" points="363.75,-39 270.5,-39 270.5,-19 363.75,-19 363.75,-39"/>
 <text text-anchor="middle" x="317.12" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::status</text>
 </a>
@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e" target="_top" xlink:title="Метод позволяет проверить, остановлена ли ось">
 <polygon fill="white" stroke="#666666" points="234.5,-58 121,-58 121,-38 234.5,-38 234.5,-58"/>
 <text text-anchor="middle" x="177.75" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::is_stopped</text>
 </a>
@@ -48,7 +48,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" target="_top" xlink:title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)">
 <polygon fill="white" stroke="#666666" points="233,-20 122.5,-20 122.5,0 233,0 233,-20"/>
 <text text-anchor="middle" x="177.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::TesartRbd</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317" target="_top" xlink:title="Остановка всех осей">
 <polygon fill="white" stroke="#666666" points="85,-58 0,-58 0,-38 85,-38 85,-58"/>
 <text text-anchor="middle" x="42.5" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::stop</text>
 </a>

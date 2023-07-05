@@ -1,5 +1,5 @@
 <map id="DemoRbd::set_angle" name="DemoRbd::set_angle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,148,32"/>
-<area shape="rect" id="Node000002" href="$class_demo_rbd.html#accf6b626115bb679c240cb3ebee1f71a" title=" " alt="" coords="196,5,312,32"/>
+<area shape="rect" id="Node000001" title="Поворачивает ось ОПУ на требуемый угол" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="Node000002" href="$class_demo_rbd.html#accf6b626115bb679c240cb3ebee1f71a" title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла" alt="" coords="196,5,312,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,16,181,16,181,21,148,21"/>
 </map>

@@ -174,7 +174,7 @@ var sectionId = 'dynsection-6';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" target="_top" xlink:title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по...">
 <polygon fill="white" stroke="#666666" points="988.38,-708.19 873.38,-708.19 873.38,-688.19 988.38,-688.19 988.38,-708.19"/>
 <text text-anchor="middle" x="930.88" y="-694.69" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::GenDevice</text>
 </a>
@@ -500,7 +500,7 @@ var sectionId = 'dynsection-6';
 <!-- Node42 -->
 <g id="Node000042" class="node">
 <title>Node42</title>
-<g id="a_Node000042"><a xlink:href="class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" target="_top" xlink:title=" ">
+<g id="a_Node000042"><a xlink:href="class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" target="_top" xlink:title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла">
 <polygon fill="#fff0f0" stroke="red" points="1154.75,-252.19 1066,-252.19 1066,-232.19 1154.75,-232.19 1154.75,-252.19"/>
 <text text-anchor="middle" x="1110.38" y="-238.69" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::move</text>
 </a>
@@ -1155,7 +1155,7 @@ var sectionId = 'dynsection-6';
 <!-- Node43 -->
 <g id="Node000043" class="node">
 <title>Node43</title>
-<g id="a_Node000043"><a xlink:href="class_tesart_rbd.html#a3d5ce486456ebdac4128023e4c307903" target="_top" xlink:title=" ">
+<g id="a_Node000043"><a xlink:href="class_tesart_rbd.html#a3d5ce486456ebdac4128023e4c307903" target="_top" xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="982,-258.19 879.75,-258.19 879.75,-226.19 982,-226.19 982,-258.19"/>
 <text text-anchor="start" x="887.75" y="-244.69" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::move_to</text>
 <text text-anchor="middle" x="930.88" y="-232.69" font-family="Helvetica,sans-Serif" font-size="10.00">_start_angle</text>

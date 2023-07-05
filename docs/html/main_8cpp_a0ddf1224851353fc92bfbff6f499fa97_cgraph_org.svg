@@ -509,7 +509,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" target="_top" xlink:title="Метод, возвращающий значение флага connected.">
 <polygon fill="white" stroke="#666666" points="1361.62,-1025 1236.12,-1025 1236.12,-1005 1361.62,-1005 1361.62,-1025"/>
 <text text-anchor="middle" x="1298.88" y="-1011.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::is_connected</text>
 </a>
@@ -646,7 +646,7 @@
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0" target="_top" xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="1350.75,-298 1247,-298 1247,-266 1350.75,-266 1350.75,-298"/>
 <text text-anchor="start" x="1255" y="-284.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::move_to</text>
 <text text-anchor="middle" x="1298.88" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_angle</text>
@@ -674,7 +674,7 @@
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" target="_top" xlink:title="Задаёт диапазон изменения угла для определённой оси">
 <polygon fill="white" stroke="#666666" points="1353.75,-348 1244,-348 1244,-316 1353.75,-316 1353.75,-348"/>
 <text text-anchor="start" x="1252" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::set_angle</text>
 <text text-anchor="middle" x="1298.88" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range</text>
@@ -729,7 +729,7 @@
 <!-- Node26 -->
 <g id="Node000026" class="node">
 <title>Node26</title>
-<g id="a_Node000026"><a xlink:href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" target="_top" xlink:title=" ">
+<g id="a_Node000026"><a xlink:href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" target="_top" xlink:title="Поворачивает ось ОПУ на требуемый угол">
 <polygon fill="white" stroke="#666666" points="1353.75,-766 1244,-766 1244,-746 1353.75,-746 1353.75,-766"/>
 <text text-anchor="middle" x="1298.88" y="-752.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::set_angle</text>
 </a>

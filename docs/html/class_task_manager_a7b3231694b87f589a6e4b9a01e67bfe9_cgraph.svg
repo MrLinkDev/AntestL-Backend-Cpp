@@ -256,7 +256,7 @@ var sectionId = 'dynsection-19';
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="class_gen_device.html#a3556133ef6b21e99831af31010de2492" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="class_gen_device.html#a3556133ef6b21e99831af31010de2492" target="_top" xlink:title="Отключает порт">
 <polygon fill="white" stroke="#666666" points="430.12,-210 341.38,-210 341.38,-190 430.12,-190 430.12,-210"/>
 <text text-anchor="middle" x="385.75" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::rf_off</text>
 </a>
@@ -292,7 +292,7 @@ var sectionId = 'dynsection-19';
 <!-- Node25 -->
 <g id="Node000025" class="node">
 <title>Node25</title>
-<g id="a_Node000025"><a xlink:href="class_gen_device.html#a4f7c81bd6bb61ce8c639dfd9fdc16766" target="_top" xlink:title=" ">
+<g id="a_Node000025"><a xlink:href="class_gen_device.html#a4f7c81bd6bb61ce8c639dfd9fdc16766" target="_top" xlink:title="Включает порт">
 <polygon fill="white" stroke="#666666" points="430.5,-134 341,-134 341,-114 430.5,-114 430.5,-134"/>
 <text text-anchor="middle" x="385.75" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::rf_on</text>
 </a>
@@ -346,7 +346,7 @@ var sectionId = 'dynsection-19';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" target="_top" xlink:title="Получает количество осей">
 <polygon fill="white" stroke="#666666" points="613.38,-608 505.88,-608 505.88,-576 613.38,-576 613.38,-608"/>
 <text text-anchor="start" x="513.88" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::get_axes</text>
 <text text-anchor="middle" x="559.62" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">_count</text>
@@ -365,7 +365,7 @@ var sectionId = 'dynsection-19';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad" target="_top" xlink:title="Получает позицию требуемой оси">
 <polygon fill="white" stroke="#666666" points="610.75,-558 508.5,-558 508.5,-538 610.75,-538 610.75,-558"/>
 <text text-anchor="middle" x="559.62" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::get_pos</text>
 </a>
@@ -383,7 +383,7 @@ var sectionId = 'dynsection-19';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" target="_top" xlink:title="Метод, возвращающий значение флага connected.">
 <polygon fill="white" stroke="#666666" points="622.38,-520 496.88,-520 496.88,-500 622.38,-500 622.38,-520"/>
 <text text-anchor="middle" x="559.62" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::is_connected</text>
 </a>
@@ -401,7 +401,7 @@ var sectionId = 'dynsection-19';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_gen_device.html#a497e5597ec277ac910051ee066920a8f" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_gen_device.html#a497e5597ec277ac910051ee066920a8f" target="_top" xlink:title="Получает текущее значение частоты сигнала">
 <polygon fill="white" stroke="#666666" points="628.75,-324 490.5,-324 490.5,-304 628.75,-304 628.75,-324"/>
 <text text-anchor="middle" x="559.62" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::get_current_freq</text>
 </a>

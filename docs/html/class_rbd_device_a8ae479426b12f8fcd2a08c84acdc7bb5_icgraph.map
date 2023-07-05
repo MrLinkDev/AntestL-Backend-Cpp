@@ -1,7 +1,7 @@
 <map id="RbdDevice::init_params" name="RbdDevice::init_params">
-<area shape="rect" id="Node000001" title=" " alt="" coords="201,31,358,57"/>
-<area shape="rect" id="Node000002" href="$class_demo_rbd.html#a5d1990720e76e24ed951412bea47f0d9" title=" " alt="" coords="7,5,151,32"/>
+<area shape="rect" id="Node000001" title="Метод инициализирующий параметры для требуемого количества осей" alt="" coords="201,31,358,57"/>
+<area shape="rect" id="Node000002" href="$class_demo_rbd.html#a5d1990720e76e24ed951412bea47f0d9" title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)" alt="" coords="7,5,151,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,35,151,30,152,25,187,30"/>
-<area shape="rect" id="Node000003" href="$class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" title=" " alt="" coords="5,56,153,83"/>
+<area shape="rect" id="Node000003" href="$class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)" alt="" coords="5,56,153,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,58,153,63,153,57,186,53"/>
 </map>

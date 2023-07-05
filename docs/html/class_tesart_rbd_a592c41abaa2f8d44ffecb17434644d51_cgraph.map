@@ -1,14 +1,14 @@
 <map id="TesartRbd::TesartRbd" name="TesartRbd::TesartRbd">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,153,159"/>
+<area shape="rect" id="Node000001" title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)" alt="" coords="5,132,153,159"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#a42fef7311fd6239157768e33c667f2d5" title="Очищает входящий и исходящие буферы устройства" alt="" coords="219,31,340,57"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,129,143,99,199,67,215,60,217,65,202,72,146,103,101,134"/>
-<area shape="rect" id="Node000003" href="$class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5" title=" " alt="" coords="201,81,358,108"/>
+<area shape="rect" id="Node000003" href="$class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5" title="Метод инициализирующий параметры для требуемого количества осей" alt="" coords="201,81,358,108"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,129,209,110,210,115,136,134"/>
 <area shape="rect" id="Node000004" href="$class_visa_device.html#ad659ba652605f5c983958400fde8c808" title="Отправка данных на прибор и чтение ответа от прибора." alt="" coords="219,132,340,159"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,143,204,143,204,148,153,148"/>
 <area shape="rect" id="Node000013" href="$namespacestring__utils.html#a95dbb7f33d4ea2396617ddd7953302d0" title="Деление строки на вектор строк по заданному делителю" alt="" coords="221,183,338,209"/>
 <area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="136,157,210,176,209,181,134,162"/>
-<area shape="rect" id="Node000014" href="$class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1" title=" " alt="" coords="217,233,342,260"/>
+<area shape="rect" id="Node000014" href="$class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1" title="Запрос статуса оси ОПУ по номеру оси" alt="" coords="217,233,342,260"/>
 <area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="101,157,146,188,202,219,217,225,215,230,199,224,143,192,98,161"/>
 <area shape="rect" id="Node000005" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="748,81,833,108"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="326,129,357,118,380,104,405,92,486,68,551,57,617,57,700,67,736,74,735,79,699,72,616,63,551,63,487,74,407,97,383,109,359,122,328,134"/>

@@ -1,5 +1,5 @@
 <map id="KeysightGen::set_power" name="KeysightGen::set_power">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,169,133"/>
+<area shape="rect" id="Node000001" title="Установка требуемой мощности сигнала" alt="" coords="5,107,169,133"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#ad659ba652605f5c983958400fde8c808" title="Отправка данных на прибор и чтение ответа от прибора." alt="" coords="217,107,338,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,117,202,117,202,123,169,123"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="728,81,813,108"/>

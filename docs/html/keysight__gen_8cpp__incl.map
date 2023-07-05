@@ -1,8 +1,8 @@
 <map id="src/devices/gen/keysight_gen.cpp" name="src/devices/gen/keysight_gen.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="141,5,306,48"/>
-<area shape="rect" id="Node000002" href="$keysight__gen_8hpp.html" title=" " alt="" coords="162,96,285,123"/>
+<area shape="rect" id="Node000001" title="Файл исходного кода, в котором реализованы методы для класа KeysightGen." alt="" coords="141,5,306,48"/>
+<area shape="rect" id="Node000002" href="$keysight__gen_8hpp.html" title="Заголовочный файл, в котором определён класс KeysightGen." alt="" coords="162,96,285,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,49,226,81,221,81,221,49"/>
-<area shape="rect" id="Node000003" href="$gen__device_8hpp.html" title=" " alt="" coords="168,171,279,197"/>
+<area shape="rect" id="Node000003" href="$gen__device_8hpp.html" title="Заголовочный файл, в котором представлен класс GenDevice и определён набор констант" alt="" coords="168,171,279,197"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,123,226,156,221,156,221,123"/>
 <area shape="rect" id="Node000004" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="79,245,202,272"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="211,200,168,237,164,233,207,196"/>

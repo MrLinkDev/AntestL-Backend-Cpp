@@ -1,6 +1,6 @@
 <map id="VisaDevice::connect" name="VisaDevice::connect">
 <area shape="rect" id="Node000001" title="Метод, осуществляющий подключение к прибору." alt="" coords="207,31,346,57"/>
-<area shape="rect" id="Node000002" href="$class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" title=" " alt="" coords="5,5,159,32"/>
+<area shape="rect" id="Node000002" href="$class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по..." alt="" coords="5,5,159,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,36,159,31,160,26,193,30"/>
 <area shape="rect" id="Node000003" href="$class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по..." alt="" coords="6,56,158,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,58,158,62,158,57,192,52"/>

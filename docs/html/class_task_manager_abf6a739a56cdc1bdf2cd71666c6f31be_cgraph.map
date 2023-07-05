@@ -15,7 +15,7 @@
 <area shape="rect" id="Node000003" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title="Метод, позволяющий осуществить подключение к устройству." alt="" coords="499,56,632,83"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="358,171,415,133,488,92,503,86,505,91,490,97,418,137,361,175"/>
 <area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="433,171,484,169,539,174,593,186,644,210,659,223,676,244,710,300,765,412,760,414,705,302,672,247,655,227,641,214,592,191,538,179,484,175,433,176"/>
-<area shape="rect" id="Node000004" href="$class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" title=" " alt="" coords="692,56,859,83"/>
+<area shape="rect" id="Node000004" href="$class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" title="Метод, возвращающий значение флага connected." alt="" coords="692,56,859,83"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="633,67,677,67,677,72,633,72"/>
 <area shape="rect" id="Node000005" href="$class_visa_device.html#aa53bc03ce9be2af514335565d585414e" title="Метод, возвращающий значение флага connected." alt="" coords="690,107,861,133"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="625,81,704,100,703,105,624,86"/>
@@ -39,16 +39,16 @@
 <area shape="rect" id="Node000017" href="$class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" title="Устанавливает диапазон изменения угла на определённой оси ОПУ" alt="" coords="494,696,637,739"/>
 <area shape="poly" id="edge21_Node000014_Node000017" title=" " alt="" coords="393,641,501,687,499,692,391,646"/>
 <area shape="poly" id="edge19_Node000015_Node000006" title=" " alt="" coords="617,627,640,609,657,586,665,564,673,541,688,514,715,485,742,461,746,465,718,489,692,518,678,543,671,566,662,588,644,613,620,631"/>
-<area shape="rect" id="Node000016" href="$class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0" title=" " alt="" coords="706,629,845,672"/>
+<area shape="rect" id="Node000016" href="$class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0" title="Устанавливает угловую точку, соответствующую началу диапазона." alt="" coords="706,629,845,672"/>
 <area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="634,648,691,648,691,653,634,653"/>
 <area shape="poly" id="edge22_Node000017_Node000006" title=" " alt="" coords="628,693,640,682,655,661,663,642,667,603,670,561,676,539,688,515,712,485,740,460,743,464,716,488,693,517,681,541,675,562,673,603,668,643,660,664,644,686,631,697"/>
-<area shape="rect" id="Node000018" href="$class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" title=" " alt="" coords="702,696,849,739"/>
+<area shape="rect" id="Node000018" href="$class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" title="Задаёт диапазон изменения угла для определённой оси" alt="" coords="702,696,849,739"/>
 <area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="638,715,688,715,688,720,638,720"/>
 <area shape="poly" id="edge25_Node000019_Node000006" title=" " alt="" coords="437,477,718,444,718,449,438,482"/>
 <area shape="rect" id="Node000020" href="$class_device_set.html#af831c582c73b80720d69b771c422a7eb" title="Устанавливает требуемое значение угла у определённой оси ОПУ" alt="" coords="494,528,637,555"/>
 <area shape="poly" id="edge26_Node000019_Node000020" title=" " alt="" coords="403,502,489,522,488,527,402,507"/>
 <area shape="poly" id="edge27_Node000020_Node000006" title=" " alt="" coords="600,525,641,507,735,459,738,463,643,512,602,530"/>
-<area shape="rect" id="Node000021" href="$class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" title=" " alt="" coords="702,528,849,555"/>
+<area shape="rect" id="Node000021" href="$class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" title="Поворачивает ось ОПУ на требуемый угол" alt="" coords="702,528,849,555"/>
 <area shape="poly" id="edge28_Node000020_Node000021" title=" " alt="" coords="638,539,688,539,688,544,638,544"/>
 <area shape="poly" id="edge33_Node000022_Node000006" title=" " alt="" coords="435,265,538,281,592,296,644,318,678,339,709,364,756,413,752,417,705,368,675,343,641,322,590,302,537,286,435,270"/>
 <area shape="rect" id="Node000023" href="$class_device_set.html#aeeb8d224788fe0663898a10aad363832" title="Метод позволяет получить число переключателей, подключенных к ВАЦ." alt="" coords="489,107,642,149"/>

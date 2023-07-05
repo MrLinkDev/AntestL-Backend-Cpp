@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="class_rbd_device.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="class_rbd_device.html" target="_top" xlink:title="Класс, в котором представлены методы для работы с ОПУ">
 <polygon fill="white" stroke="#666666" points="61.75,-39 0,-39 0,-19 61.75,-19 61.75,-39"/>
 <text text-anchor="middle" x="30.88" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:href="class_demo_rbd.html" target="_top" xlink:title=" ">
+<g id="a_Node000001"><a xlink:href="class_demo_rbd.html" target="_top" xlink:title="Класс DemoRbd, который является эмулятором ОПУ">
 <polygon fill="white" stroke="#666666" points="157.25,-58 98.5,-58 98.5,-38 157.25,-38 157.25,-58"/>
 <text text-anchor="middle" x="127.88" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html" target="_top" xlink:title="Класс, в котором реализованы методы для управления ОПУ, находящейся в ТЕСАРТе">
 <polygon fill="white" stroke="#666666" points="158,-20 97.75,-20 97.75,0 158,0 158,-20"/>
 <text text-anchor="middle" x="127.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd</text>
 </a>

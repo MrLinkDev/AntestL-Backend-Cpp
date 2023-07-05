@@ -1,5 +1,5 @@
 <map id="GenDevice" name="GenDevice">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,743,193,1324"/>
+<area shape="rect" id="Node000001" title="Класс, в котором представлены методы для управления генератором" alt="" coords="5,743,193,1324"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html" title="Класс, в котором реализованы методы для управления устройством с помощью API VISA." alt="" coords="25,181,174,693"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,708,102,743,97,743,97,708"/>
 <area shape="rect" id="Node000003" href="$structvisa__config.html" title="Структура конфигурации прибора" alt="" coords="33,5,165,117"/>

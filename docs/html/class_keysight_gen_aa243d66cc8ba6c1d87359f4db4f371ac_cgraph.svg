@@ -57,7 +57,7 @@ var sectionId = 'dynsection-8';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Переход к предыдущей частотной точке">
 <polygon fill="#999999" stroke="#666666" points="116.5,-96 0,-96 0,-76 116.5,-76 116.5,-96"/>
 <text text-anchor="middle" x="58.25" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::prev_freq</text>
 </a>
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-8';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" target="_top" xlink:title="Отключает порт">
 <polygon fill="white" stroke="#666666" points="258.5,-115 160,-115 160,-95 258.5,-95 258.5,-115"/>
 <text text-anchor="middle" x="209.25" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::rf_off</text>
 </a>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Переход к следующей угловой точке">
 <polygon fill="#999999" stroke="#666666" points="113.5,-77 0,-77 0,-57 113.5,-57 113.5,-77"/>
 <text text-anchor="middle" x="56.75" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::next_angle</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" target="_top" xlink:title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла">
 <polygon fill="white" stroke="#666666" points="238.25,-77 149.5,-77 149.5,-57 238.25,-57 238.25,-77"/>
 <text text-anchor="middle" x="193.88" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::move</text>
 </a>

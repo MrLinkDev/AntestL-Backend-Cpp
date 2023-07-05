@@ -1,5 +1,5 @@
 <map id="GenDevice::GenDevice" name="GenDevice::GenDevice">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,159,83"/>
+<area shape="rect" id="Node000001" title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по..." alt="" coords="5,56,159,83"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#abdcf5ce2846fecd0908bf7419c73c595" title="Метод, осуществляющий подключение к прибору." alt="" coords="365,5,504,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,55,206,48,350,28,351,33,207,53,159,60"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="721,107,806,133"/>

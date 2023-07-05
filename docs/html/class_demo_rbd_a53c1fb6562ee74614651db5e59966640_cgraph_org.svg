@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Поворачивает ось ОПУ на требуемый угол">
 <polygon fill="#999999" stroke="#666666" points="106.75,-20 0,-20 0,0 106.75,0 106.75,-20"/>
 <text text-anchor="middle" x="53.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd::set_angle</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_demo_rbd.html#accf6b626115bb679c240cb3ebee1f71a" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_demo_rbd.html#accf6b626115bb679c240cb3ebee1f71a" target="_top" xlink:title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла">
 <polygon fill="white" stroke="#666666" points="230,-20 142.75,-20 142.75,0 230,0 230,-20"/>
 <text text-anchor="middle" x="186.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd::move</text>
 </a>

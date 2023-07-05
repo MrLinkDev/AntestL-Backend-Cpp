@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="293.38,-505 179.12,-505 179.12,-473 293.38,-473 293.38,-505"/>
 <text text-anchor="start" x="187.12" y="-491.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::move_to</text>
 <text text-anchor="middle" x="236.25" y="-479.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="293.38,-455 179.12,-455 179.12,-423 293.38,-423 293.38,-455"/>
 <text text-anchor="start" x="187.12" y="-441.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::move_to</text>
 <text text-anchor="middle" x="236.25" y="-429.5" font-family="Helvetica,sans-Serif" font-size="10.00">_stop_freq</text>
@@ -58,7 +58,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" target="_top" xlink:title="Переход к следующей частотной точке">
 <polygon fill="white" stroke="#666666" points="295.25,-405 177.25,-405 177.25,-385 295.25,-385 295.25,-405"/>
 <text text-anchor="middle" x="236.25" y="-391.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::next_freq</text>
 </a>
@@ -76,7 +76,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" target="_top" xlink:title="Переход к предыдущей частотной точке">
 <polygon fill="white" stroke="#666666" points="294.5,-367 178,-367 178,-347 294.5,-347 294.5,-367"/>
 <text text-anchor="middle" x="236.25" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::prev_freq</text>
 </a>
@@ -130,7 +130,7 @@
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" target="_top" xlink:title=" ">
+<g id="a_Node000022"><a xlink:href="class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" target="_top" xlink:title="Установка определённого значения частоты">
 <polygon fill="white" stroke="#666666" points="292.62,-253 179.88,-253 179.88,-233 292.62,-233 292.62,-253"/>
 <text text-anchor="middle" x="236.25" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::set_freq</text>
 </a>

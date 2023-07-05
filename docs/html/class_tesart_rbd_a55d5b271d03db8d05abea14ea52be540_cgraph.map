@@ -1,6 +1,6 @@
 <map id="TesartRbd::move_to_stop_angle" name="TesartRbd::move_to_stop_angle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,142,116"/>
-<area shape="rect" id="Node000002" href="$class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" title=" " alt="" coords="190,81,308,108"/>
+<area shape="rect" id="Node000001" title="Устанавливает угловую точку, соответствующую концу диапазона." alt="" coords="5,73,142,116"/>
+<area shape="rect" id="Node000002" href="$class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла" alt="" coords="190,81,308,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,92,175,92,175,97,142,97"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="356,81,441,108"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,92,341,92,341,97,308,97"/>

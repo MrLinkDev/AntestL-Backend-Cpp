@@ -100,6 +100,9 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
+<p>Класс, в котором реализованы методы для управления ОПУ, находящейся в ТЕСАРТе  
+ <a href="class_tesart_rbd.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф связей класса TesartRbd:</div>
@@ -112,95 +115,132 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 <tr class="memitem:a17a78878dece71ca898128b25dc426e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a> ()=default</td></tr>
 <tr class="separator:a17a78878dece71ca898128b25dc426e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592c41abaa2f8d44ffecb17434644d51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51">TesartRbd</a> (const std::string &amp;device_addresses)</td></tr>
+<tr class="memdesc:a592c41abaa2f8d44ffecb17434644d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор, в который передаётся адрес (или список одресов, разделённых символом ';')  <br /></td></tr>
 <tr class="separator:a592c41abaa2f8d44ffecb17434644d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b9e3d777aac6f972eb4dd56598936ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a1b9e3d777aac6f972eb4dd56598936ec">is_connected</a> () override</td></tr>
+<tr class="memdesc:a1b9e3d777aac6f972eb4dd56598936ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, возвращающий значение флага connected.  <br /></td></tr>
 <tr class="separator:a1b9e3d777aac6f972eb4dd56598936ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a7da6f896259d62e9f1b1850371fa5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e">is_stopped</a> (int axis_num)</td></tr>
+<tr class="memdesc:a9a7da6f896259d62e9f1b1850371fa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод позволяет проверить, остановлена ли ось  <br /></td></tr>
 <tr class="separator:a9a7da6f896259d62e9f1b1850371fa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1317670f51c7e529ca5960e69b7563a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7">move</a> (float pos, int axis_num) override</td></tr>
+<tr class="memdesc:a1317670f51c7e529ca5960e69b7563a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворачивает ось до тех пор, пока она не достигнет требуемого угла  <br /></td></tr>
 <tr class="separator:a1317670f51c7e529ca5960e69b7563a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd28c6d7c0d3ccbc76cae094ab825317"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317">stop</a> () override</td></tr>
+<tr class="memdesc:abd28c6d7c0d3ccbc76cae094ab825317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Остановка всех осей  <br /></td></tr>
 <tr class="separator:abd28c6d7c0d3ccbc76cae094ab825317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d830bf286416fb259ca84edd583bce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a0d830bf286416fb259ca84edd583bce3">set_angle</a> (float angle, int axis_num) override</td></tr>
+<tr class="memdesc:a0d830bf286416fb259ca84edd583bce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворачивает ось ОПУ на требуемый угол  <br /></td></tr>
 <tr class="separator:a0d830bf286416fb259ca84edd583bce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dbe286f35cd24e00aeadf62797c77ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a3dbe286f35cd24e00aeadf62797c77ac">set_angle_range</a> (float <a class="el" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">start_angle</a>, float <a class="el" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">stop_angle</a>, int <a class="el" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">points</a>, int axis_num) override</td></tr>
+<tr class="memdesc:a3dbe286f35cd24e00aeadf62797c77ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задаёт диапазон изменения угла для определённой оси  <br /></td></tr>
 <tr class="separator:a3dbe286f35cd24e00aeadf62797c77ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa064f5779459c676b41d3c22f8202bc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#aa064f5779459c676b41d3c22f8202bc8">next_angle</a> (int axis_num) override</td></tr>
+<tr class="memdesc:aa064f5779459c676b41d3c22f8202bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к следующей угловой точке  <br /></td></tr>
 <tr class="separator:aa064f5779459c676b41d3c22f8202bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a877f951cb3096020d9cb8ab406c63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a33a877f951cb3096020d9cb8ab406c63">prev_angle</a> (int axis_num) override</td></tr>
+<tr class="memdesc:a33a877f951cb3096020d9cb8ab406c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к предыдущей угловой точке  <br /></td></tr>
 <tr class="separator:a33a877f951cb3096020d9cb8ab406c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5ce486456ebdac4128023e4c307903"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a3d5ce486456ebdac4128023e4c307903">move_to_start_angle</a> (int axis_num) override</td></tr>
+<tr class="memdesc:a3d5ce486456ebdac4128023e4c307903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает угловую точку, соответствующую началу диапазона.  <br /></td></tr>
 <tr class="separator:a3d5ce486456ebdac4128023e4c307903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d5b271d03db8d05abea14ea52be540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a55d5b271d03db8d05abea14ea52be540">move_to_stop_angle</a> (int axis_num) override</td></tr>
+<tr class="memdesc:a55d5b271d03db8d05abea14ea52be540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает угловую точку, соответствующую концу диапазона.  <br /></td></tr>
 <tr class="separator:a55d5b271d03db8d05abea14ea52be540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e0809dcaed2ad8275f97fccb2833b8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a57e0809dcaed2ad8275f97fccb2833b8">get_pos</a> (int axis_num) override</td></tr>
+<tr class="memdesc:a57e0809dcaed2ad8275f97fccb2833b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает позицию требуемой оси  <br /></td></tr>
 <tr class="separator:a57e0809dcaed2ad8275f97fccb2833b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23b88a6d6c31dedc5384c938ee8bf05a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a23b88a6d6c31dedc5384c938ee8bf05a">get_axes_count</a> () override</td></tr>
+<tr class="memdesc:a23b88a6d6c31dedc5384c938ee8bf05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает количество осей  <br /></td></tr>
 <tr class="separator:a23b88a6d6c31dedc5384c938ee8bf05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_rbd_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_rbd_device')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_rbd_device.html">RbdDevice</a></td></tr>
 <tr class="memitem:a7d00819d3b7ea7b01f4e385806da97ac inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a7d00819d3b7ea7b01f4e385806da97ac">RbdDevice</a> ()=default</td></tr>
 <tr class="separator:a7d00819d3b7ea7b01f4e385806da97ac inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f0fc01b4d9a94bae816f55828bd74e9 inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9">is_connected</a> ()</td></tr>
+<tr class="memdesc:a7f0fc01b4d9a94bae816f55828bd74e9 inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, возвращающий значение флага connected.  <br /></td></tr>
 <tr class="separator:a7f0fc01b4d9a94bae816f55828bd74e9 inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522ec68bb18ad6db7bff2c1318f0d587 inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a522ec68bb18ad6db7bff2c1318f0d587">move</a> (float pos, int axis_num)</td></tr>
+<tr class="memdesc:a522ec68bb18ad6db7bff2c1318f0d587 inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворачивает ось до тех пор, пока она не достигнет требуемого угла  <br /></td></tr>
 <tr class="separator:a522ec68bb18ad6db7bff2c1318f0d587 inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad22f51538a1e9083fb36068a543e66 inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">stop</a> ()</td></tr>
+<tr class="memdesc:a4ad22f51538a1e9083fb36068a543e66 inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Остановка всех осей  <br /></td></tr>
 <tr class="separator:a4ad22f51538a1e9083fb36068a543e66 inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38ac9ca45cdf5ee9526ac2488baa1285 inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285">set_angle</a> (float angle, int axis_num)</td></tr>
+<tr class="memdesc:a38ac9ca45cdf5ee9526ac2488baa1285 inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворачивает ось ОПУ на требуемый угол  <br /></td></tr>
 <tr class="separator:a38ac9ca45cdf5ee9526ac2488baa1285 inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce90b05c72560d35522397fa1295c8c inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a> (float <a class="el" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">start_angle</a>, float <a class="el" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">stop_angle</a>, int <a class="el" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">points</a>, int axis_num)</td></tr>
+<tr class="memdesc:a3ce90b05c72560d35522397fa1295c8c inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задаёт диапазон изменения угла для определённой оси  <br /></td></tr>
 <tr class="separator:a3ce90b05c72560d35522397fa1295c8c inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f3dad1a0133405e7aec1e9dd2236f0f inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">next_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a0f3dad1a0133405e7aec1e9dd2236f0f inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к следующей угловой точке  <br /></td></tr>
 <tr class="separator:a0f3dad1a0133405e7aec1e9dd2236f0f inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a167e5b35a407ebda8203b7474d380d inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">prev_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a3a167e5b35a407ebda8203b7474d380d inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к предыдущей угловой точке  <br /></td></tr>
 <tr class="separator:a3a167e5b35a407ebda8203b7474d380d inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54fd10b47f6c13d1ff985792799763f0 inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0">move_to_start_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a54fd10b47f6c13d1ff985792799763f0 inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает угловую точку, соответствующую началу диапазона.  <br /></td></tr>
 <tr class="separator:a54fd10b47f6c13d1ff985792799763f0 inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e123d47cf6d44e35f65bdd6961c17b9 inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">move_to_stop_angle</a> (int axis_num)</td></tr>
+<tr class="memdesc:a7e123d47cf6d44e35f65bdd6961c17b9 inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает угловую точку, соответствующую концу диапазона.  <br /></td></tr>
 <tr class="separator:a7e123d47cf6d44e35f65bdd6961c17b9 inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae75a0b5418270decd335a47c853cad inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">get_pos</a> (int axis_num)</td></tr>
+<tr class="memdesc:a5ae75a0b5418270decd335a47c853cad inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает позицию требуемой оси  <br /></td></tr>
 <tr class="separator:a5ae75a0b5418270decd335a47c853cad inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b34a03ceb0a14f39724a60fcd6ac3b inherit pub_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b">get_axes_count</a> ()</td></tr>
+<tr class="memdesc:ae5b34a03ceb0a14f39724a60fcd6ac3b inherit pub_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает количество осей  <br /></td></tr>
 <tr class="separator:ae5b34a03ceb0a14f39724a60fcd6ac3b inherit pub_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Закрытые члены</h2></td></tr>
 <tr class="memitem:a650fde87d6af5531ac225689e1f912f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1">status</a> (int axis_num)</td></tr>
+<tr class="memdesc:a650fde87d6af5531ac225689e1f912f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос статуса оси ОПУ по номеру оси  <br /></td></tr>
 <tr class="separator:a650fde87d6af5531ac225689e1f912f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a149160a31d947bef5d67b8bec64c52b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2">status</a> (<a class="el" href="class_visa_device.html">VisaDevice</a> *axis)</td></tr>
+<tr class="memdesc:a149160a31d947bef5d67b8bec64c52b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось  <br /></td></tr>
 <tr class="separator:a149160a31d947bef5d67b8bec64c52b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Закрытые данные</h2></td></tr>
 <tr class="memitem:ac8057360e0817490c8d47c5135b91162"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_visa_device.html">VisaDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#ac8057360e0817490c8d47c5135b91162">axes</a></td></tr>
+<tr class="memdesc:ac8057360e0817490c8d47c5135b91162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оси ОПУ  <br /></td></tr>
 <tr class="separator:ac8057360e0817490c8d47c5135b91162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae813c7d77bff83a42a6a5264288aeae0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#ae813c7d77bff83a42a6a5264288aeae0">velocity</a> = 50</td></tr>
+<tr class="memdesc:ae813c7d77bff83a42a6a5264288aeae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скорость вращения  <br /></td></tr>
 <tr class="separator:ae813c7d77bff83a42a6a5264288aeae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a12270a52b49c4ef781e4591884055"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tesart_rbd.html#a99a12270a52b49c4ef781e4591884055">acceleration</a> = 3</td></tr>
+<tr class="memdesc:a99a12270a52b49c4ef781e4591884055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ускорение  <br /></td></tr>
 <tr class="separator:a99a12270a52b49c4ef781e4591884055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
 <tr class="inherit_header pro_methods_class_rbd_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_rbd_device')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_rbd_device.html">RbdDevice</a></td></tr>
 <tr class="memitem:a8ae479426b12f8fcd2a08c84acdc7bb5 inherit pro_methods_class_rbd_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5">init_params</a> (int axis_count=0)</td></tr>
+<tr class="memdesc:a8ae479426b12f8fcd2a08c84acdc7bb5 inherit pro_methods_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод инициализирующий параметры для требуемого количества осей  <br /></td></tr>
 <tr class="separator:a8ae479426b12f8fcd2a08c84acdc7bb5 inherit pro_methods_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_rbd_device"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_rbd_device')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_rbd_device.html">RbdDevice</a></td></tr>
 <tr class="memitem:a18b96b3ec533ebb30651702b58a72ab5 inherit pro_attribs_class_rbd_device"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5">start_angle</a> {}</td></tr>
+<tr class="memdesc:a18b96b3ec533ebb30651702b58a72ab5 inherit pro_attribs_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор начальных углов  <br /></td></tr>
 <tr class="separator:a18b96b3ec533ebb30651702b58a72ab5 inherit pro_attribs_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e6ead71a94fa3f7c0963f15d8c32f4d inherit pro_attribs_class_rbd_device"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d">stop_angle</a> {}</td></tr>
+<tr class="memdesc:a1e6ead71a94fa3f7c0963f15d8c32f4d inherit pro_attribs_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор конечных углов  <br /></td></tr>
 <tr class="separator:a1e6ead71a94fa3f7c0963f15d8c32f4d inherit pro_attribs_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7ae5ccfe5ce87671de1f42f189bdb4 inherit pro_attribs_class_rbd_device"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#afd7ae5ccfe5ce87671de1f42f189bdb4">angle_step</a> {}</td></tr>
+<tr class="memdesc:afd7ae5ccfe5ce87671de1f42f189bdb4 inherit pro_attribs_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор угловых шагов  <br /></td></tr>
 <tr class="separator:afd7ae5ccfe5ce87671de1f42f189bdb4 inherit pro_attribs_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aa091e8248fc68abc406f2826794509 inherit pro_attribs_class_rbd_device"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a0aa091e8248fc68abc406f2826794509">current_angle</a> {}</td></tr>
+<tr class="memdesc:a0aa091e8248fc68abc406f2826794509 inherit pro_attribs_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор текущих позиций  <br /></td></tr>
 <tr class="separator:a0aa091e8248fc68abc406f2826794509 inherit pro_attribs_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8355d76430cf9c742cdfb0d84a5b110e inherit pro_attribs_class_rbd_device"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a8355d76430cf9c742cdfb0d84a5b110e">points</a> {}</td></tr>
+<tr class="memdesc:a8355d76430cf9c742cdfb0d84a5b110e inherit pro_attribs_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор количества точек  <br /></td></tr>
 <tr class="separator:a8355d76430cf9c742cdfb0d84a5b110e inherit pro_attribs_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dba0eeb62e5a7dbc3b76ab3c8b83610 inherit pro_attribs_class_rbd_device"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rbd_device.html#a8dba0eeb62e5a7dbc3b76ab3c8b83610">current_point</a> {}</td></tr>
+<tr class="memdesc:a8dba0eeb62e5a7dbc3b76ab3c8b83610 inherit pro_attribs_class_rbd_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор текущих точек  <br /></td></tr>
 <tr class="separator:a8dba0eeb62e5a7dbc3b76ab3c8b83610 inherit pro_attribs_class_rbd_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a> строка <a class="el" href="tesart__rbd_8hpp_source.html#l00018">18</a></p>
+<div class="textblock"><p>Класс, в котором реализованы методы для управления ОПУ, находящейся в ТЕСАРТе </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a> строка <a class="el" href="tesart__rbd_8hpp_source.html#l00030">30</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a17a78878dece71ca898128b25dc426e0" name="a17a78878dece71ca898128b25dc426e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17a78878dece71ca898128b25dc426e0">&#9670;&#160;</a></span>TesartRbd() <span class="overload">[1/2]</span></h2>
@@ -251,7 +291,18 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00047">47</a></p>
+<p>Конструктор, в который передаётся адрес (или список одресов, разделённых символом ';') </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_addresses</td><td>адрес оси (список адресов осей)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="ttc" id="aclass_rbd_device_html"><div class="ttname"><a href="class_rbd_device.html">RbdDevice</a></div><div class="ttdoc">Класс, в котором представлены методы для работы с ОПУ</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00027">rbd_device.hpp:27</a></div></div>
+<div class="ttc" id="aclass_tesart_rbd_html_a17a78878dece71ca898128b25dc426e0"><div class="ttname"><a href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd::TesartRbd</a></div><div class="ttdeci">TesartRbd()=default</div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00080">80</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -285,7 +336,23 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00005">5</a></p>
+<p>Запрос статуса оси ОПУ по номеру оси </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученный статус</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученный статус </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00020">20</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -323,7 +390,23 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00026">26</a></p>
+<p>Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>Указатель на ось</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученный статус</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>Указатель на ось</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Полученный статус </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00048">48</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -355,9 +438,18 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Метод, возвращающий значение флага connected. </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Если был передан список адресов осей и с одной из осей не удалось установить соединение, то будет возвращён false.</dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если все оси подключены - true. Если хотя бы одна из них не подключена - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (!rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9">is_connected</a>()) {</div>
+<div class="line">    exit(1);</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_rbd_device_html_a7f0fc01b4d9a94bae816f55828bd74e9"><div class="ttname"><a href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9">RbdDevice::is_connected</a></div><div class="ttdeci">virtual bool is_connected()</div><div class="ttdoc">Метод, возвращающий значение флага connected.</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00075">rbd_device.hpp:75</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00070">70</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00120">120</a></p>
 
 </div>
 </div>
@@ -377,7 +469,21 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00080">80</a></p>
+<p>Метод позволяет проверить, остановлена ли ось </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси, для которой осуществляется проверка</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если ось остановлена - true. В противном случае - false.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (!rbd-&gt;is_stoppde(0)) {</div>
+<div class="line">    rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">stop</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_rbd_device_html_a4ad22f51538a1e9083fb36068a543e66"><div class="ttname"><a href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">RbdDevice::stop</a></div><div class="ttdeci">virtual void stop()</div><div class="ttdoc">Остановка всех осей</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00088">rbd_device.hpp:88</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00145">145</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -425,9 +531,21 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Поворачивает ось до тех пор, пока она не достигнет требуемого угла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Требуемый угол </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line">rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a522ec68bb18ad6db7bff2c1318f0d587">move</a>(12.7f, 0);</div>
+<div class="ttc" id="aclass_rbd_device_html_a522ec68bb18ad6db7bff2c1318f0d587"><div class="ttname"><a href="class_rbd_device.html#a522ec68bb18ad6db7bff2c1318f0d587">RbdDevice::move</a></div><div class="ttdeci">virtual void move(float pos, int axis_num)</div><div class="ttdoc">Поворачивает ось до тех пор, пока она не достигнет требуемого угла</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00083">rbd_device.hpp:83</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a522ec68bb18ad6db7bff2c1318f0d587">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00086">86</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00163">163</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -464,9 +582,15 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Остановка всех осей </p>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (!rbd-&gt;is_stoppde(0)) {</div>
+<div class="line">    rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">stop</a>();</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00095">95</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00183">183</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -509,9 +633,21 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Поворачивает ось ОПУ на требуемый угол </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>Требуемый угол </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер ОСИ</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line">rbd.<a class="code hl_function" href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285">set_angle</a>(5.0f, 1);</div>
+<div class="ttc" id="aclass_rbd_device_html_a38ac9ca45cdf5ee9526ac2488baa1285"><div class="ttname"><a href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285">RbdDevice::set_angle</a></div><div class="ttdeci">virtual void set_angle(float angle, int axis_num)</div><div class="ttdoc">Поворачивает ось ОПУ на требуемый угол</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00096">rbd_device.hpp:96</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00105">105</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00205">205</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -566,9 +702,23 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Задаёт диапазон изменения угла для определённой оси </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_angle</td><td>Начальное значение угла </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop_angle</td><td>Конечное значение угла </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>Количество точек </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line">rbd.<a class="code hl_function" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a>(-30, 30, 11, 0);</div>
+<div class="ttc" id="aclass_rbd_device_html_a3ce90b05c72560d35522397fa1295c8c"><div class="ttname"><a href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">RbdDevice::set_angle_range</a></div><div class="ttdeci">virtual void set_angle_range(float start_angle, float stop_angle, int points, int axis_num)</div><div class="ttdoc">Задаёт диапазон изменения угла для определённой оси</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00106">rbd_device.hpp:106</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00117">117</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00231">231</a></p>
 
 </div>
 </div>
@@ -596,9 +746,26 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Переход к следующей угловой точке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если угловая точка находится в пределах диапазона изменения угла, то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе диапазона, то возвращает ANGLE_MOVE_BOUND.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">rbd.<a class="code hl_function" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a>(-30, 30, 11, 0);</div>
+<div class="line"><span class="keywordflow">while</span> (rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">next_angle</a>(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;ОПУ повёрнута на следующую угловую точку&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_rbd_device_html_a0f3dad1a0133405e7aec1e9dd2236f0f"><div class="ttname"><a href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">RbdDevice::next_angle</a></div><div class="ttdeci">virtual int next_angle(int axis_num)</div><div class="ttdoc">Переход к следующей угловой точке</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00117">rbd_device.hpp:117</a></div></div>
+<div class="ttc" id="arbd__device_8hpp_html_a822eea0ea5aa0e7a7e966ee9ca1b04c5"><div class="ttname"><a href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a></div><div class="ttdeci">#define ANGLE_MOVE_BOUND</div><div class="ttdoc">Статус вращения ОПУ: находится на границе допустимых значений</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00018">rbd_device.hpp:18</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00132">132</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00264">264</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -631,9 +798,25 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Переход к предыдущей угловой точке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если угловая точка находится в пределах диапазона изменения угла, то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе диапазона, то возвращает ANGLE_MOVE_BOUND.</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">rbd.<a class="code hl_function" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a>(-30, 30, 11, 0);</div>
+<div class="line"><span class="keywordflow">while</span> (rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">prev_angle</a>(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;ОПУ повёрнута на предыдущую угловую точку&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_rbd_device_html_a3a167e5b35a407ebda8203b7474d380d"><div class="ttname"><a href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">RbdDevice::prev_angle</a></div><div class="ttdeci">virtual int prev_angle(int axis_num)</div><div class="ttdoc">Переход к предыдущей угловой точке</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00128">rbd_device.hpp:128</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00145">145</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00296">296</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -666,9 +849,26 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Устанавливает угловую точку, соответствующую началу диапазона. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">rbd.<a class="code hl_function" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a>(-30, 30, 11, 0);</div>
+<div class="line"><span class="keywordflow">while</span> (rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f">next_angle</a>(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;ОПУ повёрнута на следующую угловую точку&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0">move_to_start_angle</a>(0);</div>
+<div class="ttc" id="aclass_rbd_device_html_a54fd10b47f6c13d1ff985792799763f0"><div class="ttname"><a href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0">RbdDevice::move_to_start_angle</a></div><div class="ttdeci">virtual void move_to_start_angle(int axis_num)</div><div class="ttdoc">Устанавливает угловую точку, соответствующую началу диапазона.</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00136">rbd_device.hpp:136</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00158">158</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00327">327</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -701,9 +901,26 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Устанавливает угловую точку, соответствующую концу диапазона. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">rbd.<a class="code hl_function" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a>(-30, 30, 11, 0);</div>
+<div class="line"><span class="keywordflow">while</span> (rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">prev_angle</a>(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;ОПУ повёрнута на предыдущую угловую точку&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">move_to_stop_angle</a>(0);</div>
+<div class="ttc" id="aclass_rbd_device_html_a7e123d47cf6d44e35f65bdd6961c17b9"><div class="ttname"><a href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">RbdDevice::move_to_stop_angle</a></div><div class="ttdeci">virtual void move_to_stop_angle(int axis_num)</div><div class="ttdoc">Устанавливает угловую точку, соответствующую концу диапазона.</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00144">rbd_device.hpp:144</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00165">165</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00352">352</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -736,9 +953,27 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Получает позицию требуемой оси </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Ось, позицию которой требется узнать</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Позиция, в которой находится ось</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">rbd.<a class="code hl_function" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a>(-30, 30, 11, 0);</div>
+<div class="line"><span class="keywordflow">while</span> (rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">prev_angle</a>(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Pos = &quot;</span> &lt;&lt; rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">get_pos</a>(0) &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">move_to_stop_angle</a>(0);</div>
+<div class="ttc" id="aclass_rbd_device_html_a5ae75a0b5418270decd335a47c853cad"><div class="ttname"><a href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">RbdDevice::get_pos</a></div><div class="ttdeci">virtual float get_pos(int axis_num)</div><div class="ttdoc">Получает позицию требуемой оси</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00153">rbd_device.hpp:153</a></div></div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00172">172</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00378">378</a></p>
 
 </div>
 </div>
@@ -765,9 +1000,23 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
+<p>Получает количество осей </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество осей</dd></dl>
+<p><b>Пример</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_rbd_device.html">RbdDevice</a> *rbd = <span class="keyword">new</span> <a class="code hl_function" href="class_tesart_rbd.html#a17a78878dece71ca898128b25dc426e0">TesartRbd</a>(<span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET;TCPIP0::localhost::5026::SOCKET&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; rbd-&gt;get_axis_count(); ++i) {</div>
+<div class="line">    rbd.<a class="code hl_function" href="class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c">set_angle_range</a>(-30, 30, 11, i);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">while</span> (rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a3a167e5b35a407ebda8203b7474d380d">prev_angle</a>(i) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Pos = &quot;</span> &lt;&lt; rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad">get_pos</a>(i) &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    rbd-&gt;<a class="code hl_function" href="class_rbd_device.html#a7e123d47cf6d44e35f65bdd6961c17b9">move_to_stop_angle</a>(i);</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
 <p>Переопределяет метод предка <a class="el" href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b">RbdDevice</a>.</p>
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00184">184</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8cpp_source.html">tesart_rbd.cpp</a> строка <a class="el" href="tesart__rbd_8cpp_source.html#l00410">410</a></p>
 
 </div>
 </div>
@@ -792,7 +1041,9 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a> строка <a class="el" href="tesart__rbd_8hpp_source.html#l00019">19</a></p>
+<p>Оси ОПУ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a> строка <a class="el" href="tesart__rbd_8hpp_source.html#l00032">32</a></p>
 
 </div>
 </div>
@@ -816,7 +1067,9 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a> строка <a class="el" href="tesart__rbd_8hpp_source.html#l00021">21</a></p>
+<p>Скорость вращения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a> строка <a class="el" href="tesart__rbd_8hpp_source.html#l00035">35</a></p>
 
 </div>
 </div>
@@ -840,7 +1093,9 @@ $(document).ready(function(){initNavTree('class_tesart_rbd.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a> строка <a class="el" href="tesart__rbd_8hpp_source.html#l00022">22</a></p>
+<p>Ускорение </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tesart__rbd_8hpp_source.html">tesart_rbd.hpp</a> строка <a class="el" href="tesart__rbd_8hpp_source.html#l00037">37</a></p>
 
 </div>
 </div>

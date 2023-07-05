@@ -1,6 +1,6 @@
 <map id="KeysightGen::prev_freq" name="KeysightGen::prev_freq">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,161,103"/>
-<area shape="rect" id="Node000002" href="$class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" title=" " alt="" coords="219,51,350,78"/>
+<area shape="rect" id="Node000001" title="Переход к предыдущей частотной точке" alt="" coords="5,77,161,103"/>
+<area shape="rect" id="Node000002" href="$class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" title="Отключает порт" alt="" coords="219,51,350,78"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,77,203,72,204,77,161,83"/>
 <area shape="rect" id="Node000012" href="$class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="209,102,360,129"/>
 <area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="161,97,194,101,194,106,161,102"/>

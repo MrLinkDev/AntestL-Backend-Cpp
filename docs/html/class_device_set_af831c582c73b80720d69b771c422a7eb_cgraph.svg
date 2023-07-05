@@ -48,7 +48,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_rbd_device.html#a38ac9ca45cdf5ee9526ac2488baa1285" target="_top" xlink:title="Поворачивает ось ОПУ на требуемый угол">
 <polygon fill="white" stroke="#666666" points="253.25,-39 143.5,-39 143.5,-19 253.25,-19 253.25,-39"/>
 <text text-anchor="middle" x="198.38" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::set_angle</text>
 </a>

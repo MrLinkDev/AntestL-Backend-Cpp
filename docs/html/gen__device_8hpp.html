@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
   <div class="headertitle"><div class="title">Файл gen_device.hpp</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Заголовочный файл, в котором представлен класс <a class="el" href="class_gen_device.html" title="Класс, в котором представлены методы для управления генератором">GenDevice</a> и определён набор констант  
+<a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="visa__device_8hpp_source.html">../visa_device.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="exceptions_8hpp_source.html">../../utils/exceptions.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -115,30 +118,46 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Классы</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_device.html">GenDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс, в котором представлены методы для управления генератором  <a href="class_gen_device.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Макросы</h2></td></tr>
 <tr class="memitem:a3e9cf6646324159728ee0ccaf783944d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#a3e9cf6646324159728ee0ccaf783944d">DEFAULT_GEN_POWER</a>&#160;&#160;&#160;-20</td></tr>
+<tr class="memdesc:a3e9cf6646324159728ee0ccaf783944d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартное значение мощности сигнала  <br /></td></tr>
 <tr class="separator:a3e9cf6646324159728ee0ccaf783944d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83aba8e1dc8b71246f6e02d0a969bb88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#a83aba8e1dc8b71246f6e02d0a969bb88">DEFAULT_GEN_START_FREQ</a>&#160;&#160;&#160;1000000000</td></tr>
+<tr class="memdesc:a83aba8e1dc8b71246f6e02d0a969bb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартная начальная частота  <br /></td></tr>
 <tr class="separator:a83aba8e1dc8b71246f6e02d0a969bb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7baf7e01bb82145ea373b3c8355a062e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#a7baf7e01bb82145ea373b3c8355a062e">DEFAULT_GEN_STOP_FREQ</a>&#160;&#160;&#160;9000000000</td></tr>
+<tr class="memdesc:a7baf7e01bb82145ea373b3c8355a062e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартная конечная частота  <br /></td></tr>
 <tr class="separator:a7baf7e01bb82145ea373b3c8355a062e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd38cf257f8020e237a8d9d44e264025"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#abd38cf257f8020e237a8d9d44e264025">DEFAULT_GEN_POINTS</a>&#160;&#160;&#160;201</td></tr>
+<tr class="memdesc:abd38cf257f8020e237a8d9d44e264025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартное число точек  <br /></td></tr>
 <tr class="separator:abd38cf257f8020e237a8d9d44e264025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac057f9c086eb845f8a5ac42c8002b076"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#ac057f9c086eb845f8a5ac42c8002b076">DEFAULT_CURRENT_FREQ</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ac057f9c086eb845f8a5ac42c8002b076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартная текущая частота  <br /></td></tr>
 <tr class="separator:ac057f9c086eb845f8a5ac42c8002b076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac697f20ad151b192f8245e2ce09b163e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#ac697f20ad151b192f8245e2ce09b163e">DEFAULT_FREQ_STEP</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ac697f20ad151b192f8245e2ce09b163e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный частотный шаг  <br /></td></tr>
 <tr class="separator:ac697f20ad151b192f8245e2ce09b163e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14a9c7a4b02ed97f427cafe815bf1101"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#a14a9c7a4b02ed97f427cafe815bf1101">DEFAULT_CURRENT_POINT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a14a9c7a4b02ed97f427cafe815bf1101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартная текущая точка  <br /></td></tr>
 <tr class="separator:a14a9c7a4b02ed97f427cafe815bf1101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4423f56d7d58cfe53fbeec581c7b76e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#a4423f56d7d58cfe53fbeec581c7b76e7">FREQ_MOVE_OK</a>&#160;&#160;&#160;0xF0</td></tr>
+<tr class="memdesc:a4423f56d7d58cfe53fbeec581c7b76e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статус изменения частотной точки: находится в пределах допустимых границ  <br /></td></tr>
 <tr class="separator:a4423f56d7d58cfe53fbeec581c7b76e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca160815bbdaf96073a27237eb0328a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a>&#160;&#160;&#160;0xF1</td></tr>
+<tr class="memdesc:aca160815bbdaf96073a27237eb0328a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статус изменения частотной точки: находится на границе допустимых значений  <br /></td></tr>
 <tr class="separator:aca160815bbdaf96073a27237eb0328a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Макросы</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл, в котором представлен класс <a class="el" href="class_gen_device.html" title="Класс, в котором представлены методы для управления генератором">GenDevice</a> и определён набор констант </p>
+<dl class="section author"><dt>Автор</dt><dd>Александр Горбунов </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>3 июля 2023 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a></p>
+</div><h2 class="groupheader">Макросы</h2>
 <a id="a3e9cf6646324159728ee0ccaf783944d" name="a3e9cf6646324159728ee0ccaf783944d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e9cf6646324159728ee0ccaf783944d">&#9670;&#160;</a></span>DEFAULT_GEN_POWER</h2>
 
@@ -151,7 +170,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00007">7</a></p>
+<p>Стандартное значение мощности сигнала </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00017">17</a></p>
 
 </div>
 </div>
@@ -167,7 +188,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00009">9</a></p>
+<p>Стандартная начальная частота </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00020">20</a></p>
 
 </div>
 </div>
@@ -183,7 +206,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00010">10</a></p>
+<p>Стандартная конечная частота </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00022">22</a></p>
 
 </div>
 </div>
@@ -199,7 +224,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00011">11</a></p>
+<p>Стандартное число точек </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00024">24</a></p>
 
 </div>
 </div>
@@ -215,7 +242,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00013">13</a></p>
+<p>Стандартная текущая частота </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00027">27</a></p>
 
 </div>
 </div>
@@ -231,7 +260,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00014">14</a></p>
+<p>Стандартный частотный шаг </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00029">29</a></p>
 
 </div>
 </div>
@@ -247,7 +278,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00016">16</a></p>
+<p>Стандартная текущая точка </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00032">32</a></p>
 
 </div>
 </div>
@@ -263,7 +296,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00018">18</a></p>
+<p>Статус изменения частотной точки: находится в пределах допустимых границ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00035">35</a></p>
 
 </div>
 </div>
@@ -279,7 +314,9 @@ $(document).ready(function(){initNavTree('gen__device_8hpp.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00019">19</a></p>
+<p>Статус изменения частотной точки: находится на границе допустимых значений </p>
+
+<p class="definition">См. определение в файле <a class="el" href="gen__device_8hpp_source.html">gen_device.hpp</a> строка <a class="el" href="gen__device_8hpp_source.html#l00037">37</a></p>
 
 </div>
 </div>

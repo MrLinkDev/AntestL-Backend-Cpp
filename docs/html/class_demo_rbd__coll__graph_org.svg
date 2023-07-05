@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Класс DemoRbd, который является эмулятором ОПУ">
 <polygon fill="#999999" stroke="none" points="138,-420 0,-420 0,0 138,0 138,-420"/>
 <text text-anchor="start" x="47.62" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd</text>
 <text text-anchor="start" x="4.38" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -66,7 +66,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_rbd_device.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_rbd_device.html" target="_top" xlink:title="Класс, в котором представлены методы для работы с ОПУ">
 <polygon fill="white" stroke="none" points="138,-996 0,-996 0,-456 138,-456 138,-996"/>
 <text text-anchor="start" x="46.12" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice</text>
 <text text-anchor="start" x="4.38" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

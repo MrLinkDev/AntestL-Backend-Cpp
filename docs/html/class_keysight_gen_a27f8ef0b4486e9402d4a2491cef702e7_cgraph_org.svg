@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Включает порт">
 <polygon fill="#999999" stroke="#666666" points="99.25,-58 0,-58 0,-38 99.25,-38 99.25,-58"/>
 <text text-anchor="middle" x="49.62" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::rf_on</text>
 </a>

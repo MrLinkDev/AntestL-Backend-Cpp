@@ -57,7 +57,7 @@ var sectionId = 'dynsection-8';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Получает позицию требуемой оси">
 <polygon fill="#999999" stroke="#666666" points="569.5,-26 467.25,-26 467.25,-6 569.5,-6 569.5,-26"/>
 <text text-anchor="middle" x="518.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::get_pos</text>
 </a>

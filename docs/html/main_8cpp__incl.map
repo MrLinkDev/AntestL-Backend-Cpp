@@ -30,15 +30,15 @@
 <area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="672,180,710,217,706,221,669,184"/>
 <area shape="rect" id="Node000016" href="$vna__device_8hpp.html" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="563,304,694,331"/>
 <area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="707,179,740,192,770,209,781,219,787,231,788,244,783,257,768,274,750,288,709,306,707,301,747,283,764,270,778,255,783,243,782,233,777,223,767,213,738,197,705,184"/>
-<area shape="rect" id="Node000022" href="$gen__device_8hpp.html" title=" " alt="" coords="394,304,529,331"/>
+<area shape="rect" id="Node000022" href="$gen__device_8hpp.html" title="Заголовочный файл, в котором представлен класс GenDevice и определён набор констант" alt="" coords="394,304,529,331"/>
 <area shape="poly" id="edge23_Node000014_Node000022" title=" " alt="" coords="581,183,532,201,509,214,489,231,473,259,466,290,461,289,468,257,485,228,506,210,529,196,579,178"/>
-<area shape="rect" id="Node000023" href="$rbd__device_8hpp.html" title=" " alt="" coords="746,304,876,331"/>
+<area shape="rect" id="Node000023" href="$rbd__device_8hpp.html" title="Заголовочный файл, в котором реализован класс RbdDevice." alt="" coords="746,304,876,331"/>
 <area shape="poly" id="edge26_Node000014_Node000023" title=" " alt="" coords="727,180,769,198,788,211,804,228,812,242,816,258,817,289,812,289,811,259,807,244,800,231,784,215,766,202,725,184"/>
-<area shape="rect" id="Node000024" href="$keysight__m9807a_8hpp.html" title="Файл, в котором реализован класс KeysightM9807A." alt="" coords="499,229,670,256"/>
+<area shape="rect" id="Node000024" href="$keysight__m9807a_8hpp.html" title="Файл, в котором определён класс KeysightM9807A." alt="" coords="499,229,670,256"/>
 <area shape="poly" id="edge29_Node000014_Node000024" title=" " alt="" coords="647,184,609,221,605,217,643,180"/>
-<area shape="rect" id="Node000025" href="$keysight__gen_8hpp.html" title=" " alt="" coords="276,229,424,256"/>
+<area shape="rect" id="Node000025" href="$keysight__gen_8hpp.html" title="Заголовочный файл, в котором определён класс KeysightGen." alt="" coords="276,229,424,256"/>
 <area shape="poly" id="edge31_Node000014_Node000025" title=" " alt="" coords="604,185,418,228,417,223,603,179"/>
-<area shape="rect" id="Node000026" href="$tesart__rbd_8hpp.html" title=" " alt="" coords="893,229,1020,256"/>
+<area shape="rect" id="Node000026" href="$tesart__rbd_8hpp.html" title="Заголовочный файл, в котором определяется класс TesartRbd." alt="" coords="893,229,1020,256"/>
 <area shape="poly" id="edge33_Node000014_Node000026" title=" " alt="" coords="711,179,891,223,889,228,709,185"/>
 <area shape="rect" id="Node000017" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="567,379,690,405"/>
 <area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="631,331,631,364,626,364,626,331"/>

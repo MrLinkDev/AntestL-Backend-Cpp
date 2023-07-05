@@ -4,19 +4,19 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="804,281,771,281,771,276,804,276"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="455,265,606,292"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="640,281,607,281,607,276,640,276"/>
-<area shape="rect" id="Node000004" href="$class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" title=" " alt="" coords="244,81,397,124"/>
+<area shape="rect" id="Node000004" href="$class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" title="Устанавливает частотную точку, соответствующую началу диапазона." alt="" coords="244,81,397,124"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="511,254,467,197,438,165,405,138,386,127,389,122,409,134,442,162,471,193,515,251"/>
-<area shape="rect" id="Node000005" href="$class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" title=" " alt="" coords="244,148,397,191"/>
+<area shape="rect" id="Node000005" href="$class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" title="Устанавливает частотную точку, соответствующую началу диапазона." alt="" coords="244,148,397,191"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="497,259,406,205,381,194,383,189,408,200,499,255"/>
-<area shape="rect" id="Node000006" href="$class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" title=" " alt="" coords="242,215,399,241"/>
+<area shape="rect" id="Node000006" href="$class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" title="Переход к следующей частотной точке" alt="" coords="242,215,399,241"/>
 <area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="457,264,378,245,379,239,459,259"/>
-<area shape="rect" id="Node000007" href="$class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" title=" " alt="" coords="243,265,398,292"/>
+<area shape="rect" id="Node000007" href="$class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" title="Переход к предыдущей частотной точке" alt="" coords="243,265,398,292"/>
 <area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="440,281,399,281,399,276,440,276"/>
 <area shape="rect" id="Node000008" href="$class_visa_device.html#aff290be3fb61e9679a548aafc571985d" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="245,316,396,343"/>
 <area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="459,299,379,318,378,313,457,293"/>
 <area shape="rect" id="Node000009" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="234,367,407,393"/>
 <area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="501,303,458,331,408,357,378,369,376,364,406,352,455,326,498,298"/>
-<area shape="rect" id="Node000024" href="$class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" title=" " alt="" coords="245,417,396,444"/>
+<area shape="rect" id="Node000024" href="$class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" title="Установка определённого значения частоты" alt="" coords="245,417,396,444"/>
 <area shape="poly" id="edge23_Node000003_Node000024" title=" " alt="" coords="514,305,470,357,441,384,408,408,384,419,381,414,406,403,437,380,466,353,509,302"/>
 <area shape="rect" id="Node000010" href="$class_keysight_m9807_a.html#a85c78a42ccfda3bb9b69cb60b79358f4" title="Настройка ВАЦ для измерения" alt="" coords="5,5,186,32"/>
 <area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="234,359,232,356,217,336,207,316,198,277,200,237,207,199,215,160,217,122,208,84,198,65,184,46,170,35,173,30,188,42,203,62,213,82,222,122,220,161,212,200,205,238,203,276,212,314,221,334,236,353,238,355"/>

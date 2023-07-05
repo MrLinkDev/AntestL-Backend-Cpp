@@ -57,7 +57,7 @@ var sectionId = 'dynsection-9';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="#999999" stroke="#666666" points="114.25,-102 0,-102 0,-70 114.25,-70 114.25,-102"/>
 <text text-anchor="start" x="8" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::move_to</text>
 <text text-anchor="middle" x="57.12" y="-76.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>
@@ -67,7 +67,7 @@ var sectionId = 'dynsection-9';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" target="_top" xlink:title="Отключает порт">
 <polygon fill="white" stroke="#666666" points="256.25,-115 157.75,-115 157.75,-95 256.25,-95 256.25,-115"/>
 <text text-anchor="middle" x="207" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::rf_off</text>
 </a>

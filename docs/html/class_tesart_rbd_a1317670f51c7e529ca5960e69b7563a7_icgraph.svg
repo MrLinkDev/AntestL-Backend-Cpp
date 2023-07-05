@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла">
 <polygon fill="#999999" stroke="#666666" points="238.25,-96 149.5,-96 149.5,-76 238.25,-76 238.25,-96"/>
 <text text-anchor="middle" x="193.88" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::move</text>
 </a>
@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a3d5ce486456ebdac4128023e4c307903" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a3d5ce486456ebdac4128023e4c307903" target="_top" xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="107.88,-196 5.62,-196 5.62,-164 107.88,-164 107.88,-196"/>
 <text text-anchor="start" x="13.62" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::move_to</text>
 <text text-anchor="middle" x="56.75" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_angle</text>
@@ -49,7 +49,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_tesart_rbd.html#a55d5b271d03db8d05abea14ea52be540" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_tesart_rbd.html#a55d5b271d03db8d05abea14ea52be540" target="_top" xlink:title="Устанавливает угловую точку, соответствующую концу диапазона.">
 <polygon fill="white" stroke="#666666" points="107.88,-146 5.62,-146 5.62,-114 107.88,-114 107.88,-146"/>
 <text text-anchor="start" x="13.62" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::move_to</text>
 <text text-anchor="middle" x="56.75" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">_stop_angle</text>
@@ -68,7 +68,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_tesart_rbd.html#aa064f5779459c676b41d3c22f8202bc8" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_tesart_rbd.html#aa064f5779459c676b41d3c22f8202bc8" target="_top" xlink:title="Переход к следующей угловой точке">
 <polygon fill="white" stroke="#666666" points="113.5,-96 0,-96 0,-76 113.5,-76 113.5,-96"/>
 <text text-anchor="middle" x="56.75" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::next_angle</text>
 </a>
@@ -86,7 +86,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="class_tesart_rbd.html#a33a877f951cb3096020d9cb8ab406c63" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_tesart_rbd.html#a33a877f951cb3096020d9cb8ab406c63" target="_top" xlink:title="Переход к предыдущей угловой точке">
 <polygon fill="white" stroke="#666666" points="112.75,-58 0.75,-58 0.75,-38 112.75,-38 112.75,-58"/>
 <text text-anchor="middle" x="56.75" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::prev_angle</text>
 </a>
@@ -104,7 +104,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="class_tesart_rbd.html#a0d830bf286416fb259ca84edd583bce3" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="class_tesart_rbd.html#a0d830bf286416fb259ca84edd583bce3" target="_top" xlink:title="Поворачивает ось ОПУ на требуемый угол">
 <polygon fill="white" stroke="#666666" points="110.88,-20 2.62,-20 2.62,0 110.88,0 110.88,-20"/>
 <text text-anchor="middle" x="56.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::set_angle</text>
 </a>

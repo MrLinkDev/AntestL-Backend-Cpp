@@ -1,5 +1,5 @@
 <map id="src/devices/vna/keysight_m9807a.hpp" name="src/devices/vna/keysight_m9807a.hpp">
-<area shape="rect" id="Node000001" title="Файл, в котором реализован класс KeysightM9807A." alt="" coords="226,5,389,48"/>
+<area shape="rect" id="Node000001" title="Файл, в котором определён класс KeysightM9807A." alt="" coords="226,5,389,48"/>
 <area shape="rect" id="Node000002" href="$vna__device_8hpp.html" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="253,96,362,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,49,310,81,305,81,305,49"/>
 <area shape="rect" id="Node000003" href="$visa__device_8hpp.html" title="Заголовочный файл, в котором определены константы и класс VisaDevice." alt="" coords="79,171,202,197"/>

@@ -210,7 +210,7 @@ var sectionId = 'dynsection-1';
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" target="_top" xlink:title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по...">
 <polygon fill="white" stroke="#666666" points="764.38,-1440.25 649.38,-1440.25 649.38,-1420.25 764.38,-1420.25 764.38,-1440.25"/>
 <text text-anchor="middle" x="706.88" y="-1426.75" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::GenDevice</text>
 </a>
@@ -536,7 +536,7 @@ var sectionId = 'dynsection-1';
 <!-- Node44 -->
 <g id="Node000044" class="node">
 <title>Node44</title>
-<g id="a_Node000044"><a xlink:href="class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" target="_top" xlink:title=" ">
+<g id="a_Node000044"><a xlink:href="class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" target="_top" xlink:title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла">
 <polygon fill="#fff0f0" stroke="red" points="930.75,-290.25 842,-290.25 842,-270.25 930.75,-270.25 930.75,-290.25"/>
 <text text-anchor="middle" x="886.38" y="-276.75" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::move</text>
 </a>

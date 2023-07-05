@@ -1,5 +1,5 @@
 <map id="DemoRbd::move_to_stop_angle" name="DemoRbd::move_to_stop_angle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,48"/>
-<area shape="rect" id="Node000002" href="$class_demo_rbd.html#accf6b626115bb679c240cb3ebee1f71a" title=" " alt="" coords="220,13,336,40"/>
+<area shape="rect" id="Node000001" title="Устанавливает угловую точку, соответствующую концу диапазона." alt="" coords="5,5,172,48"/>
+<area shape="rect" id="Node000002" href="$class_demo_rbd.html#accf6b626115bb679c240cb3ebee1f71a" title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла" alt="" coords="220,13,336,40"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,24,205,24,205,29,172,29"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="TesartRbd" name="TesartRbd">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,773,189,1493"/>
-<area shape="rect" id="Node000002" href="$class_rbd_device.html" title=" " alt="" coords="5,5,189,725"/>
+<area shape="rect" id="Node000001" title="Класс, в котором реализованы методы для управления ОПУ, находящейся в ТЕСАРТе" alt="" coords="5,773,189,1493"/>
+<area shape="rect" id="Node000002" href="$class_rbd_device.html" title="Класс, в котором представлены методы для работы с ОПУ" alt="" coords="5,5,189,725"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,740,100,774,95,774,95,740"/>
 </map>

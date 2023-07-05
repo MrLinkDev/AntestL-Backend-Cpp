@@ -57,7 +57,7 @@ var sectionId = 'dynsection-1';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по...">
 <polygon fill="#999999" stroke="#666666" points="115,-134 0,-134 0,-114 115,-114 115,-134"/>
 <text text-anchor="middle" x="57.5" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::GenDevice</text>
 </a>

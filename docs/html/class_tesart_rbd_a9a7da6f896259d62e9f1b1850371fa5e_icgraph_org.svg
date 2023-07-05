@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Метод позволяет проверить, остановлена ли ось">
 <polygon fill="#999999" stroke="#666666" points="234.5,-20 121,-20 121,0 234.5,0 234.5,-20"/>
 <text text-anchor="middle" x="177.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::is_stopped</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317" target="_top" xlink:title="Остановка всех осей">
 <polygon fill="white" stroke="#666666" points="85,-20 0,-20 0,0 85,0 85,-20"/>
 <text text-anchor="middle" x="42.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::stop</text>
 </a>

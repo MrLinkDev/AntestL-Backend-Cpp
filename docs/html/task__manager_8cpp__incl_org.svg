@@ -128,7 +128,7 @@
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="gen__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000019"><a xlink:href="gen__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором представлен класс GenDevice и определён набор констант">
 <polygon fill="white" stroke="#666666" points="252.62,-188 151.12,-188 151.12,-168 252.62,-168 252.62,-188"/>
 <text text-anchor="middle" x="201.88" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">gen/gen_device.hpp</text>
 </a>
@@ -146,7 +146,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="rbd__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="rbd__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс RbdDevice.">
 <polygon fill="white" stroke="#666666" points="484.38,-188 387.38,-188 387.38,-168 484.38,-168 484.38,-188"/>
 <text text-anchor="middle" x="435.88" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">rbd/rbd_device.hpp</text>
 </a>
@@ -164,7 +164,7 @@
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title="Файл, в котором реализован класс KeysightM9807A.">
+<g id="a_Node000021"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title="Файл, в котором определён класс KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="370.12,-244 241.62,-244 241.62,-224 370.12,-224 370.12,-244"/>
 <text text-anchor="middle" x="305.88" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">vna/keysight_m9807a.hpp</text>
 </a>
@@ -182,7 +182,7 @@
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="keysight__gen_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000022"><a xlink:href="keysight__gen_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определён класс KeysightGen.">
 <polygon fill="white" stroke="#666666" points="185.5,-244 74.25,-244 74.25,-224 185.5,-224 185.5,-244"/>
 <text text-anchor="middle" x="129.88" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">gen/keysight_gen.hpp</text>
 </a>
@@ -200,7 +200,7 @@
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="tesart__rbd_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="tesart__rbd_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определяется класс TesartRbd.">
 <polygon fill="white" stroke="#666666" points="558.25,-244 463.5,-244 463.5,-224 558.25,-224 558.25,-244"/>
 <text text-anchor="middle" x="510.88" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">rbd/tesart_rbd.hpp</text>
 </a>

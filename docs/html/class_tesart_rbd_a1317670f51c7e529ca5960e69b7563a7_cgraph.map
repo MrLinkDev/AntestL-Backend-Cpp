@@ -1,5 +1,5 @@
 <map id="TesartRbd::move" name="TesartRbd::move">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,124,108"/>
+<area shape="rect" id="Node000001" title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла" alt="" coords="5,81,124,108"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="172,81,257,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,92,157,92,157,97,124,97"/>
 <area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="328,5,446,32"/>

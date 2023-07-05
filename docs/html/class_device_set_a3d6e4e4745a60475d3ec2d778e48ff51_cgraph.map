@@ -1,9 +1,9 @@
 <map id="DeviceSet::get_current_angles" name="DeviceSet::get_current_angles">
 <area shape="rect" id="Node000001" title="Получает список углов, на которые развёрнуты оси ОПУ" alt="" coords="5,64,158,107"/>
-<area shape="rect" id="Node000002" href="$class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" title=" " alt="" coords="218,5,361,48"/>
+<area shape="rect" id="Node000002" href="$class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" title="Получает количество осей" alt="" coords="218,5,361,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,61,203,48,204,53,159,66"/>
-<area shape="rect" id="Node000003" href="$class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad" title=" " alt="" coords="221,72,358,99"/>
+<area shape="rect" id="Node000003" href="$class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad" title="Получает позицию требуемой оси" alt="" coords="221,72,358,99"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,83,206,83,206,88,158,88"/>
-<area shape="rect" id="Node000004" href="$class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" title=" " alt="" coords="206,123,373,149"/>
+<area shape="rect" id="Node000004" href="$class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" title="Метод, возвращающий значение флага connected." alt="" coords="206,123,373,149"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,101,218,116,217,121,157,107"/>
 </map>

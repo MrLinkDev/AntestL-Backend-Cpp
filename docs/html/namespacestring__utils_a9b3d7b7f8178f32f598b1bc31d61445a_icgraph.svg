@@ -39,7 +39,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_demo_rbd.html#a5d1990720e76e24ed951412bea47f0d9" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_demo_rbd.html#a5d1990720e76e24ed951412bea47f0d9" target="_top" xlink:title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)">
 <polygon fill="white" stroke="#666666" points="107.5,-20 0,-20 0,0 107.5,0 107.5,-20"/>
 <text text-anchor="middle" x="53.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DemoRbd::DemoRbd</text>
 </a>

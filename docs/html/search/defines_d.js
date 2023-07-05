@@ -16,6 +16,5 @@ var searchData=
   ['task_5ftype_5fset_5ffreq_5frange_13',['TASK_TYPE_SET_FREQ_RANGE',['../task__manager_8hpp.html#a4e9c739de28f68a1d4c3d3ede5a6b3bd',1,'task_manager.hpp']]],
   ['task_5ftype_5fset_5fpower_14',['TASK_TYPE_SET_POWER',['../task__manager_8hpp.html#a2110f305d9d5b6f55919d757aece20e4',1,'task_manager.hpp']]],
   ['task_5ftype_5fstop_15',['TASK_TYPE_STOP',['../task__manager_8hpp.html#a1a9d18fbc855fe972c066be45842ddf0',1,'task_manager.hpp']]],
-  ['tesart_5frbd_5fsleep_5ftime_5finit_16',['TESART_RBD_SLEEP_TIME_INIT',['../tesart__rbd_8hpp.html#a5ff6dd4c901c0dc09ee27823231558d2',1,'tesart_rbd.hpp']]],
-  ['tesart_5frbd_5fsleep_5ftime_5fwait_17',['TESART_RBD_SLEEP_TIME_WAIT',['../tesart__rbd_8hpp.html#a931d506c7da53d9adfaadf7d8a00932a',1,'tesart_rbd.hpp']]]
+  ['tesart_5frbd_5fsleep_5ftime_5finit_16',['TESART_RBD_SLEEP_TIME_INIT',['../tesart__rbd_8hpp.html#a5ff6dd4c901c0dc09ee27823231558d2',1,'tesart_rbd.hpp']]]
 ];

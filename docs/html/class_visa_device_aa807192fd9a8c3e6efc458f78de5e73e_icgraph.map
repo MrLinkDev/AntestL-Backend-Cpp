@@ -42,7 +42,7 @@
 <area shape="poly" id="edge17_Node000005_Node000018" title=" " alt="" coords="238,404,236,407,216,437,207,466,207,496,211,526,215,556,216,587,208,619,188,651,171,665,167,661,184,648,203,617,210,587,210,557,206,527,202,496,202,466,211,435,232,404,235,401"/>
 <area shape="rect" id="Node000019" href="$class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" title="Перевод триггера в режим manual." alt="" coords="13,728,178,755"/>
 <area shape="poly" id="edge18_Node000005_Node000019" title=" " alt="" coords="238,405,236,407,221,426,212,446,203,484,205,522,212,560,220,599,222,638,213,678,203,698,188,718,173,730,170,725,184,714,198,695,208,676,217,638,215,600,207,561,200,523,198,483,207,444,217,424,232,404,234,401"/>
-<area shape="rect" id="Node000021" href="$class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" title=" " alt="" coords="700,797,854,824"/>
+<area shape="rect" id="Node000021" href="$class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по..." alt="" coords="700,797,854,824"/>
 <area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="895,780,828,799,827,794,893,775"/>
 <area shape="rect" id="Node000022" href="$class_vna_device.html#ace1217e26e6e8d1b0e5127227730989b" title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по..." alt="" coords="701,747,853,773"/>
 <area shape="poly" id="edge21_Node000020_Node000022" title=" " alt="" coords="889,763,853,763,853,757,889,757"/>
@@ -51,42 +51,42 @@
 <area shape="rect" id="Node000025" href="$class_visa_device.html#a3744ee1e929d6c05b522693c344c76b3" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="478,468,629,495"/>
 <area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="738,551,697,529,651,509,616,498,618,493,653,504,699,524,741,546"/>
 <area shape="poly" id="edge30_Node000025_Node000005" title=" " alt="" coords="466,465,454,458,438,446,429,432,420,420,406,408,382,396,384,392,408,403,424,416,433,429,442,442,456,454,468,460"/>
-<area shape="rect" id="Node000026" href="$class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" title=" " alt="" coords="244,684,397,727"/>
+<area shape="rect" id="Node000026" href="$class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" title="Устанавливает частотную точку, соответствующую началу диапазона." alt="" coords="244,684,397,727"/>
 <area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="466,502,457,509,444,523,436,536,430,565,425,596,409,631,383,661,354,686,351,682,379,657,405,628,420,595,425,564,431,535,440,520,453,505,463,497"/>
-<area shape="rect" id="Node000027" href="$class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" title=" " alt="" coords="244,836,397,879"/>
+<area shape="rect" id="Node000027" href="$class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" title="Устанавливает частотную точку, соответствующую началу диапазона." alt="" coords="244,836,397,879"/>
 <area shape="poly" id="edge26_Node000025_Node000027" title=" " alt="" coords="466,500,457,508,436,536,425,562,422,588,422,615,425,673,421,705,409,740,378,794,344,837,340,834,373,791,405,738,416,704,419,672,417,615,416,588,420,561,432,533,453,505,463,496"/>
-<area shape="rect" id="Node000028" href="$class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" title=" " alt="" coords="242,924,399,951"/>
+<area shape="rect" id="Node000028" href="$class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" title="Переход к следующей частотной точке" alt="" coords="242,924,399,951"/>
 <area shape="poly" id="edge27_Node000025_Node000028" title=" " alt="" coords="467,500,457,508,439,532,427,555,419,579,416,601,418,647,427,693,437,740,442,789,435,839,425,865,409,892,389,912,366,926,363,921,386,908,405,889,420,863,430,838,437,789,432,741,422,694,413,648,411,601,414,577,422,553,435,529,453,505,463,496"/>
-<area shape="rect" id="Node000029" href="$class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" title=" " alt="" coords="243,591,398,617"/>
+<area shape="rect" id="Node000029" href="$class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" title="Переход к предыдущей частотной точке" alt="" coords="243,591,398,617"/>
 <area shape="poly" id="edge28_Node000025_Node000029" title=" " alt="" coords="468,503,456,509,442,520,432,532,423,545,409,559,354,592,351,588,405,555,419,542,428,529,438,517,454,504,466,498"/>
 <area shape="rect" id="Node000030" href="$class_visa_device.html#aff290be3fb61e9679a548aafc571985d" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="245,468,396,495"/>
 <area shape="poly" id="edge29_Node000025_Node000030" title=" " alt="" coords="463,484,397,484,397,479,463,479"/>
-<area shape="rect" id="Node000031" href="$class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" title=" " alt="" coords="245,519,396,545"/>
+<area shape="rect" id="Node000031" href="$class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" title="Установка определённого значения частоты" alt="" coords="245,519,396,545"/>
 <area shape="poly" id="edge31_Node000025_Node000031" title=" " alt="" coords="475,501,386,521,385,515,474,496"/>
 <area shape="poly" id="edge46_Node000032_Node000003" title=" " alt="" coords="754,686,726,645,698,596,685,555,681,520,674,489,665,474,651,458,624,442,627,438,654,454,669,471,678,487,686,520,690,554,703,594,731,642,759,683"/>
 <area shape="poly" id="edge47_Node000032_Node000025" title=" " alt="" coords="755,685,698,596,686,570,678,548,669,528,651,509,628,496,631,492,654,505,674,525,683,546,691,568,703,593,760,682"/>
 <area shape="poly" id="edge36_Node000032_Node000028" title=" " alt="" coords="706,733,702,736,681,772,675,807,677,843,684,879,691,914,692,949,681,983,670,1000,654,1015,635,1029,615,1038,571,1045,526,1042,480,1029,437,1012,397,991,339,953,342,949,400,986,439,1007,482,1024,527,1036,571,1040,613,1033,632,1024,651,1011,666,996,676,981,686,949,686,915,679,880,672,844,669,807,676,770,698,733,702,729"/>
 <area shape="rect" id="Node000033" href="$class_keysight_m9807_a.html#a0f54d9bad1ad1923606ff767f70de3e1" title="Полный сброс настроек" alt="" coords="482,1076,626,1119"/>
 <area shape="poly" id="edge33_Node000032_Node000033" title=" " alt="" coords="706,732,702,736,688,757,678,777,669,816,670,855,678,894,685,934,687,975,679,1016,654,1059,628,1080,625,1076,650,1056,674,1014,682,974,680,935,672,895,665,856,663,816,673,775,683,754,698,733,702,729"/>
-<area shape="rect" id="Node000034" href="$class_keysight_gen.html#a22afec59890f93fe8ce3800a6ec9a453" title=" " alt="" coords="455,519,652,545"/>
+<area shape="rect" id="Node000034" href="$class_keysight_gen.html#a22afec59890f93fe8ce3800a6ec9a453" title="Получает текущее значение частоты сигнала" alt="" coords="455,519,652,545"/>
 <area shape="poly" id="edge34_Node000032_Node000034" title=" " alt="" coords="759,684,716,621,686,588,651,560,628,548,630,543,654,555,689,584,720,618,764,681"/>
 <area shape="rect" id="Node000035" href="$class_keysight_m9807_a.html#a9a23e8c51407edd1aba3cf734d9ea71b" title="Сбор данных, полученных в результате измерения, для одного порта" alt="" coords="465,569,643,596"/>
 <area shape="poly" id="edge35_Node000032_Node000035" title=" " alt="" coords="751,687,707,648,651,610,623,599,625,594,654,606,710,643,755,683"/>
-<area shape="rect" id="Node000036" href="$class_keysight_gen.html#ab60f56567bec59f39cceb9c0b7d7d892" title=" " alt="" coords="484,620,624,647"/>
+<area shape="rect" id="Node000036" href="$class_keysight_gen.html#ab60f56567bec59f39cceb9c0b7d7d892" title="Сброс настроек" alt="" coords="484,620,624,647"/>
 <area shape="poly" id="edge37_Node000032_Node000036" title=" " alt="" coords="731,692,651,661,613,650,614,645,653,656,733,687"/>
 <area shape="rect" id="Node000037" href="$class_keysight_m9807_a.html#a6048408088bc8fc73c986dd812c86328" title="Сброс настроек" alt="" coords="472,671,636,697"/>
 <area shape="poly" id="edge38_Node000032_Node000037" title=" " alt="" coords="701,703,636,696,637,691,702,698"/>
-<area shape="rect" id="Node000038" href="$class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" title=" " alt="" coords="488,924,619,951"/>
+<area shape="rect" id="Node000038" href="$class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" title="Отключает порт" alt="" coords="488,924,619,951"/>
 <area shape="poly" id="edge39_Node000032_Node000038" title=" " alt="" coords="706,733,702,736,687,758,680,780,680,824,679,869,671,892,654,914,639,925,621,933,619,928,636,921,650,910,666,889,674,868,674,824,675,779,682,756,698,733,702,729"/>
-<area shape="rect" id="Node000039" href="$class_keysight_gen.html#a27f8ef0b4486e9402d4a2491cef702e7" title=" " alt="" coords="488,721,620,748"/>
+<area shape="rect" id="Node000039" href="$class_keysight_gen.html#a27f8ef0b4486e9402d4a2491cef702e7" title="Включает порт" alt="" coords="488,721,620,748"/>
 <area shape="poly" id="edge44_Node000032_Node000039" title=" " alt="" coords="702,720,620,730,620,725,701,715"/>
 <area shape="rect" id="Node000040" href="$class_visa_device.html#ae09de9a813b559eedad4587afbc64741" title="Отправка данных на прибор и чтение ответа от прибора." alt="" coords="493,772,614,799"/>
 <area shape="poly" id="edge45_Node000032_Node000040" title=" " alt="" coords="718,731,701,737,678,750,653,762,616,775,614,770,651,758,675,745,699,732,716,726"/>
-<area shape="rect" id="Node000041" href="$class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" title=" " alt="" coords="472,823,635,849"/>
+<area shape="rect" id="Node000041" href="$class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" title="Установка требуемой мощности сигнала" alt="" coords="472,823,635,849"/>
 <area shape="poly" id="edge48_Node000032_Node000041" title=" " alt="" coords="709,732,702,737,686,755,679,774,671,794,654,813,633,825,630,820,651,809,667,791,674,772,682,752,699,733,706,728"/>
-<area shape="rect" id="Node000042" href="$class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" title=" " alt="" coords="492,873,616,900"/>
+<area shape="rect" id="Node000042" href="$class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="492,873,616,900"/>
 <area shape="poly" id="edge49_Node000032_Node000042" title=" " alt="" coords="706,733,702,737,690,752,683,767,680,799,675,831,668,847,654,863,637,875,617,883,615,878,634,870,651,859,663,845,670,830,674,798,678,766,685,749,698,733,703,729"/>
-<area shape="rect" id="Node000043" href="$class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" title=" " alt="" coords="480,975,627,1001"/>
+<area shape="rect" id="Node000043" href="$class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)" alt="" coords="480,975,627,1001"/>
 <area shape="poly" id="edge50_Node000032_Node000043" title=" " alt="" coords="706,733,702,736,684,765,676,793,676,821,680,849,683,878,683,907,674,936,654,965,629,981,626,977,650,961,670,933,678,906,678,878,675,850,671,821,671,792,679,763,698,733,702,729"/>
 <area shape="poly" id="edge40_Node000038_Node000026" title=" " alt="" coords="473,926,453,914,434,893,424,873,417,851,405,825,336,729,341,726,409,823,422,849,429,871,438,890,457,910,475,921"/>
 <area shape="poly" id="edge41_Node000038_Node000027" title=" " alt="" coords="479,922,454,915,369,882,371,877,456,909,481,917"/>

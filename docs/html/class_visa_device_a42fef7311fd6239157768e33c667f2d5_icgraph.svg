@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" target="_top" xlink:title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось">
 <polygon fill="white" stroke="#666666" points="108.62,-96 15.38,-96 15.38,-76 108.62,-76 108.62,-96"/>
 <text text-anchor="middle" x="62" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::status</text>
 </a>
@@ -48,7 +48,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" target="_top" xlink:title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)">
 <polygon fill="white" stroke="#666666" points="117.25,-58 6.75,-58 6.75,-38 117.25,-38 117.25,-58"/>
 <text text-anchor="middle" x="62" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::TesartRbd</text>
 </a>

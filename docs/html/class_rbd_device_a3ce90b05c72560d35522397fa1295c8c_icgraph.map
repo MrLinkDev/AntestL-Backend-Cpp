@@ -1,5 +1,5 @@
 <map id="RbdDevice::set_angle_range" name="RbdDevice::set_angle_range">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1531,28,1677,70"/>
+<area shape="rect" id="Node000001" title="Задаёт диапазон изменения угла для определённой оси" alt="" coords="1531,28,1677,70"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#a9b37373d7b0a7c89cd57eca673df7fad" title="Устанавливает диапазон изменения угла на определённой оси ОПУ" alt="" coords="1340,28,1483,70"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1516,52,1484,52,1484,46,1516,46"/>
 <area shape="rect" id="Node000003" href="$class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1" title=" " alt="" coords="1128,28,1292,70"/>

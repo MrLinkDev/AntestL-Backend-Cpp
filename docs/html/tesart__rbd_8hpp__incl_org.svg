@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Заголовочный файл, в котором определяется класс TesartRbd.">
 <polygon fill="#999999" stroke="#666666" points="158,-256 49,-256 49,-224 158,-224 158,-256"/>
 <text text-anchor="start" x="57" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/tesart</text>
 <text text-anchor="middle" x="103.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rbd.hpp</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="rbd__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="rbd__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс RbdDevice.">
 <polygon fill="white" stroke="#666666" points="183.75,-188 103.25,-188 103.25,-168 183.75,-168 183.75,-188"/>
 <text text-anchor="middle" x="143.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">rbd_device.hpp</text>
 </a>

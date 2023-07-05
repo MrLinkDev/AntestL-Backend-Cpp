@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Заголовочный файл, в котором определён класс KeysightGen.">
 <polygon fill="#999999" stroke="#666666" points="225.12,-256 101.88,-256 101.88,-224 225.12,-224 225.12,-256"/>
 <text text-anchor="start" x="109.88" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/gen/keysight</text>
 <text text-anchor="middle" x="163.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">_gen.hpp</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="gen__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="gen__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором представлен класс GenDevice и определён набор констант">
 <polygon fill="white" stroke="#666666" points="204.88,-188 122.12,-188 122.12,-168 204.88,-168 204.88,-188"/>
 <text text-anchor="middle" x="163.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">gen_device.hpp</text>
 </a>

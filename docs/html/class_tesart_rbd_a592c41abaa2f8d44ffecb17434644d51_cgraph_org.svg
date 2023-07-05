@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)">
 <polygon fill="#999999" stroke="#666666" points="110.5,-96 0,-96 0,-76 110.5,-76 110.5,-96"/>
 <text text-anchor="middle" x="55.25" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::TesartRbd</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5" target="_top" xlink:title="Метод инициализирующий параметры для требуемого количества осей">
 <polygon fill="white" stroke="#666666" points="264.5,-134 146.5,-134 146.5,-114 264.5,-114 264.5,-134"/>
 <text text-anchor="middle" x="205.5" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::init_params</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1" target="_top" xlink:title="Запрос статуса оси ОПУ по номеру оси">
 <polygon fill="white" stroke="#666666" points="252.12,-20 158.88,-20 158.88,0 252.12,0 252.12,-20"/>
 <text text-anchor="middle" x="205.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::status</text>
 </a>

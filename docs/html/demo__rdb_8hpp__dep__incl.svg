@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Заголовочный файл, в котором реализован класс DemoRbd.">
 <polygon fill="#999999" stroke="#666666" points="108.25,-100 0,-100 0,-68 108.25,-68 108.25,-100"/>
 <text text-anchor="start" x="8" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/demo</text>
 <text text-anchor="middle" x="54.12" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rdb.hpp</text>

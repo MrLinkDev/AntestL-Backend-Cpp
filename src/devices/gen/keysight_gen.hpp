@@ -1,5 +1,9 @@
 /**
+ * \file
  * \brief Заголовочный файл, в котором определён класс KeysightGen
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023
  */
 
 #ifndef ANTESTL_BACKEND_KEYSIGHT_GEN_HPP

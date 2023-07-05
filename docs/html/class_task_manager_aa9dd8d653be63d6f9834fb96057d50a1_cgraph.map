@@ -15,9 +15,9 @@
 <area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="617,157,751,184"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="525,106,555,118,603,143,621,150,619,155,601,148,553,122,523,111"/>
 <area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="357,54,425,75,424,80,355,59"/>
-<area shape="rect" id="Node000008" href="$class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0" title=" " alt="" coords="412,15,550,57"/>
+<area shape="rect" id="Node000008" href="$class_rbd_device.html#a54fd10b47f6c13d1ff985792799763f0" title="Устанавливает угловую точку, соответствующую началу диапазона." alt="" coords="412,15,550,57"/>
 <area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="356,33,397,33,397,39,356,39"/>
 <area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="360,129,423,109,425,114,361,134"/>
-<area shape="rect" id="Node000010" href="$class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" title=" " alt="" coords="408,132,554,175"/>
+<area shape="rect" id="Node000010" href="$class_rbd_device.html#a3ce90b05c72560d35522397fa1295c8c" title="Задаёт диапазон изменения угла для определённой оси" alt="" coords="408,132,554,175"/>
 <area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="360,151,393,151,393,156,360,156"/>
 </map>

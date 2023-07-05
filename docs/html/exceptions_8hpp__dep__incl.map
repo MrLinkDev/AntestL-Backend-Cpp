@@ -12,7 +12,7 @@
 <area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="428,33,638,77,649,80,648,85,637,83,427,38"/>
 <area shape="rect" id="Node000003" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="349,261,475,304"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,121,311,141,353,169,372,190,388,215,408,260,403,262,383,217,368,193,349,173,309,145,264,126"/>
-<area shape="rect" id="Node000008" href="$keysight__gen_8hpp.html" title=" " alt="" coords="174,171,338,213"/>
+<area shape="rect" id="Node000008" href="$keysight__gen_8hpp.html" title="Заголовочный файл, в котором определён класс KeysightGen." alt="" coords="174,171,338,213"/>
 <area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="211,132,241,169,237,172,207,136"/>
 <area shape="rect" id="Node000004" href="$device__set_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа DeviceSet." alt="" coords="124,352,250,395"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="347,312,241,354,239,349,345,307"/>

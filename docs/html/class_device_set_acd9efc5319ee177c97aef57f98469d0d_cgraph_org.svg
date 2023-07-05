@@ -165,7 +165,7 @@
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="class_gen_device.html#a3556133ef6b21e99831af31010de2492" target="_top" xlink:title=" ">
+<g id="a_Node000022"><a xlink:href="class_gen_device.html#a3556133ef6b21e99831af31010de2492" target="_top" xlink:title="Отключает порт">
 <polygon fill="white" stroke="#666666" points="252.12,-172 163.38,-172 163.38,-152 252.12,-152 252.12,-172"/>
 <text text-anchor="middle" x="207.75" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::rf_off</text>
 </a>
@@ -201,7 +201,7 @@
 <!-- Node24 -->
 <g id="Node000024" class="node">
 <title>Node24</title>
-<g id="a_Node000024"><a xlink:href="class_gen_device.html#a4f7c81bd6bb61ce8c639dfd9fdc16766" target="_top" xlink:title=" ">
+<g id="a_Node000024"><a xlink:href="class_gen_device.html#a4f7c81bd6bb61ce8c639dfd9fdc16766" target="_top" xlink:title="Включает порт">
 <polygon fill="white" stroke="#666666" points="252.5,-96 163,-96 163,-76 252.5,-76 252.5,-96"/>
 <text text-anchor="middle" x="207.75" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::rf_on</text>
 </a>
@@ -255,7 +255,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" target="_top" xlink:title="Получает количество осей">
 <polygon fill="white" stroke="#666666" points="435.38,-564 327.88,-564 327.88,-532 435.38,-532 435.38,-564"/>
 <text text-anchor="start" x="335.88" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::get_axes</text>
 <text text-anchor="middle" x="381.62" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">_count</text>
@@ -274,7 +274,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_rbd_device.html#a5ae75a0b5418270decd335a47c853cad" target="_top" xlink:title="Получает позицию требуемой оси">
 <polygon fill="white" stroke="#666666" points="432.75,-514 330.5,-514 330.5,-494 432.75,-494 432.75,-514"/>
 <text text-anchor="middle" x="381.62" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::get_pos</text>
 </a>
@@ -292,7 +292,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9" target="_top" xlink:title="Метод, возвращающий значение флага connected.">
 <polygon fill="white" stroke="#666666" points="444.38,-476 318.88,-476 318.88,-456 444.38,-456 444.38,-476"/>
 <text text-anchor="middle" x="381.62" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::is_connected</text>
 </a>
@@ -310,7 +310,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_gen_device.html#a497e5597ec277ac910051ee066920a8f" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="class_gen_device.html#a497e5597ec277ac910051ee066920a8f" target="_top" xlink:title="Получает текущее значение частоты сигнала">
 <polygon fill="white" stroke="#666666" points="450.75,-438 312.5,-438 312.5,-418 450.75,-418 450.75,-438"/>
 <text text-anchor="middle" x="381.62" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::get_current_freq</text>
 </a>

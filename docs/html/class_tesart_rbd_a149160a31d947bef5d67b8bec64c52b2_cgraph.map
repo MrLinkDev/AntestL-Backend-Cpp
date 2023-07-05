@@ -1,5 +1,5 @@
 <map id="TesartRbd::status" name="TesartRbd::status">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,130,83"/>
+<area shape="rect" id="Node000001" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="5,56,130,83"/>
 <area shape="rect" id="Node000002" href="$class_visa_device.html#a42fef7311fd6239157768e33c667f2d5" title="Очищает входящий и исходящие буферы устройства" alt="" coords="178,5,299,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,53,176,34,178,39,116,58"/>
 <area shape="rect" id="Node000003" href="$namespacestring__utils.html#a9fe07494ccc7914840b0d615974bc802" title="Делит строку на две части по требуемому символу и возвращает содержимое правой части" alt="" coords="178,56,299,83"/>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Устанавливает угловую точку, соответствующую началу диапазона.">
 <polygon fill="#999999" stroke="#666666" points="1242,-64 1138.25,-64 1138.25,-32 1242,-32 1242,-64"/>
 <text text-anchor="start" x="1146.25" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::move_to</text>
 <text text-anchor="middle" x="1190.12" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_angle</text>

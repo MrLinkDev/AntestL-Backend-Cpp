@@ -1,6 +1,6 @@
 <map id="TesartRbd::next_angle" name="TesartRbd::next_angle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,157,108"/>
-<area shape="rect" id="Node000002" href="$class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" title=" " alt="" coords="205,81,323,108"/>
+<area shape="rect" id="Node000001" title="Переход к следующей угловой точке" alt="" coords="5,81,157,108"/>
+<area shape="rect" id="Node000002" href="$class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла" alt="" coords="205,81,323,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,92,190,92,190,97,157,97"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="371,81,456,108"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,92,356,92,356,97,323,97"/>

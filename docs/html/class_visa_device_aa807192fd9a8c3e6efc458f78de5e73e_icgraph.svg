@@ -448,7 +448,7 @@ var sectionId = 'dynsection-7';
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="class_gen_device.html#ae42dc0c930a6d23322ffbe223d81ab36" target="_top" xlink:title="Конструктор, в котором реализовано создание объекта с определённым адресом, а после &#45; осуществляет по...">
 <polygon fill="white" stroke="#666666" points="636.25,-241 521.25,-241 521.25,-221 636.25,-221 636.25,-241"/>
 <text text-anchor="middle" x="578.75" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenDevice::GenDevice</text>
 </a>
@@ -529,7 +529,7 @@ var sectionId = 'dynsection-7';
 <!-- Node26 -->
 <g id="Node000026" class="node">
 <title>Node26</title>
-<g id="a_Node000026"><a xlink:href="class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" target="_top" xlink:title=" ">
+<g id="a_Node000026"><a xlink:href="class_keysight_gen.html#a8bbdbb1eba9f85c5e9efa9bd5df0313f" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="293.38,-326 179.12,-326 179.12,-294 293.38,-294 293.38,-326"/>
 <text text-anchor="start" x="187.12" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::move_to</text>
 <text text-anchor="middle" x="236.25" y="-300.5" font-family="Helvetica,sans-Serif" font-size="10.00">_start_freq</text>
@@ -548,7 +548,7 @@ var sectionId = 'dynsection-7';
 <!-- Node27 -->
 <g id="Node000027" class="node">
 <title>Node27</title>
-<g id="a_Node000027"><a xlink:href="class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" target="_top" xlink:title=" ">
+<g id="a_Node000027"><a xlink:href="class_keysight_gen.html#a7e1a018b3518d03e94504b48ea444b6f" target="_top" xlink:title="Устанавливает частотную точку, соответствующую началу диапазона.">
 <polygon fill="white" stroke="#666666" points="293.38,-212 179.12,-212 179.12,-180 293.38,-180 293.38,-212"/>
 <text text-anchor="start" x="187.12" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::move_to</text>
 <text text-anchor="middle" x="236.25" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">_stop_freq</text>
@@ -567,7 +567,7 @@ var sectionId = 'dynsection-7';
 <!-- Node28 -->
 <g id="Node000028" class="node">
 <title>Node28</title>
-<g id="a_Node000028"><a xlink:href="class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" target="_top" xlink:title=" ">
+<g id="a_Node000028"><a xlink:href="class_keysight_gen.html#a218a478d0600e3fc2985adf86a049435" target="_top" xlink:title="Переход к следующей частотной точке">
 <polygon fill="white" stroke="#666666" points="295.25,-146 177.25,-146 177.25,-126 295.25,-126 295.25,-146"/>
 <text text-anchor="middle" x="236.25" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::next_freq</text>
 </a>
@@ -585,7 +585,7 @@ var sectionId = 'dynsection-7';
 <!-- Node29 -->
 <g id="Node000029" class="node">
 <title>Node29</title>
-<g id="a_Node000029"><a xlink:href="class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" target="_top" xlink:title=" ">
+<g id="a_Node000029"><a xlink:href="class_keysight_gen.html#aa243d66cc8ba6c1d87359f4db4f371ac" target="_top" xlink:title="Переход к предыдущей частотной точке">
 <polygon fill="white" stroke="#666666" points="294.5,-396 178,-396 178,-376 294.5,-376 294.5,-396"/>
 <text text-anchor="middle" x="236.25" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::prev_freq</text>
 </a>
@@ -621,7 +621,7 @@ var sectionId = 'dynsection-7';
 <!-- Node31 -->
 <g id="Node000031" class="node">
 <title>Node31</title>
-<g id="a_Node000031"><a xlink:href="class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" target="_top" xlink:title=" ">
+<g id="a_Node000031"><a xlink:href="class_keysight_gen.html#aada9855525b00c8b30b9f27baa216464" target="_top" xlink:title="Установка определённого значения частоты">
 <polygon fill="white" stroke="#666666" points="292.62,-450 179.88,-450 179.88,-430 292.62,-430 292.62,-450"/>
 <text text-anchor="middle" x="236.25" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::set_freq</text>
 </a>
@@ -685,7 +685,7 @@ var sectionId = 'dynsection-7';
 <!-- Node34 -->
 <g id="Node000034" class="node">
 <title>Node34</title>
-<g id="a_Node000034"><a xlink:href="class_keysight_gen.html#a22afec59890f93fe8ce3800a6ec9a453" target="_top" xlink:title=" ">
+<g id="a_Node000034"><a xlink:href="class_keysight_gen.html#a22afec59890f93fe8ce3800a6ec9a453" target="_top" xlink:title="Получает текущее значение частоты сигнала">
 <polygon fill="white" stroke="#666666" points="485.25,-450 337.25,-450 337.25,-430 485.25,-430 485.25,-450"/>
 <text text-anchor="middle" x="411.25" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::get_current_freq</text>
 </a>
@@ -721,7 +721,7 @@ var sectionId = 'dynsection-7';
 <!-- Node36 -->
 <g id="Node000036" class="node">
 <title>Node36</title>
-<g id="a_Node000036"><a xlink:href="class_keysight_gen.html#ab60f56567bec59f39cceb9c0b7d7d892" target="_top" xlink:title=" ">
+<g id="a_Node000036"><a xlink:href="class_keysight_gen.html#ab60f56567bec59f39cceb9c0b7d7d892" target="_top" xlink:title="Сброс настроек">
 <polygon fill="white" stroke="#666666" points="463.88,-374 358.62,-374 358.62,-354 463.88,-354 463.88,-374"/>
 <text text-anchor="middle" x="411.25" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::preset</text>
 </a>
@@ -757,7 +757,7 @@ var sectionId = 'dynsection-7';
 <!-- Node38 -->
 <g id="Node000038" class="node">
 <title>Node38</title>
-<g id="a_Node000038"><a xlink:href="class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" target="_top" xlink:title=" ">
+<g id="a_Node000038"><a xlink:href="class_keysight_gen.html#acb44da0109ba9b90e2e0dd6dcdb552a1" target="_top" xlink:title="Отключает порт">
 <polygon fill="white" stroke="#666666" points="460.5,-146 362,-146 362,-126 460.5,-126 460.5,-146"/>
 <text text-anchor="middle" x="411.25" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::rf_off</text>
 </a>
@@ -775,7 +775,7 @@ var sectionId = 'dynsection-7';
 <!-- Node39 -->
 <g id="Node000039" class="node">
 <title>Node39</title>
-<g id="a_Node000039"><a xlink:href="class_keysight_gen.html#a27f8ef0b4486e9402d4a2491cef702e7" target="_top" xlink:title=" ">
+<g id="a_Node000039"><a xlink:href="class_keysight_gen.html#a27f8ef0b4486e9402d4a2491cef702e7" target="_top" xlink:title="Включает порт">
 <polygon fill="white" stroke="#666666" points="460.88,-298 361.62,-298 361.62,-278 460.88,-278 460.88,-298"/>
 <text text-anchor="middle" x="411.25" y="-284.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::rf_on</text>
 </a>
@@ -811,7 +811,7 @@ var sectionId = 'dynsection-7';
 <!-- Node41 -->
 <g id="Node000041" class="node">
 <title>Node41</title>
-<g id="a_Node000041"><a xlink:href="class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" target="_top" xlink:title=" ">
+<g id="a_Node000041"><a xlink:href="class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" target="_top" xlink:title="Установка требуемой мощности сигнала">
 <polygon fill="white" stroke="#666666" points="472.5,-222 350,-222 350,-202 472.5,-202 472.5,-222"/>
 <text text-anchor="middle" x="411.25" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightGen::set_power</text>
 </a>
@@ -829,7 +829,7 @@ var sectionId = 'dynsection-7';
 <!-- Node42 -->
 <g id="Node000042" class="node">
 <title>Node42</title>
-<g id="a_Node000042"><a xlink:href="class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" target="_top" xlink:title=" ">
+<g id="a_Node000042"><a xlink:href="class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" target="_top" xlink:title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось">
 <polygon fill="white" stroke="#666666" points="457.88,-184 364.62,-184 364.62,-164 457.88,-164 457.88,-184"/>
 <text text-anchor="middle" x="411.25" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::status</text>
 </a>
@@ -847,7 +847,7 @@ var sectionId = 'dynsection-7';
 <!-- Node43 -->
 <g id="Node000043" class="node">
 <title>Node43</title>
-<g id="a_Node000043"><a xlink:href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" target="_top" xlink:title=" ">
+<g id="a_Node000043"><a xlink:href="class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" target="_top" xlink:title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)">
 <polygon fill="white" stroke="#666666" points="466.5,-108 356,-108 356,-88 466.5,-88 466.5,-108"/>
 <text text-anchor="middle" x="411.25" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">TesartRbd::TesartRbd</text>
 </a>

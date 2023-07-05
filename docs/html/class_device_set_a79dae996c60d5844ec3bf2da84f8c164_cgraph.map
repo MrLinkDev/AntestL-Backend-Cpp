@@ -1,5 +1,5 @@
 <map id="DeviceSet::next_angle" name="DeviceSet::next_angle">
 <area shape="rect" id="Node000001" title="Переход к следующей угловой точке" alt="" coords="5,5,156,32"/>
-<area shape="rect" id="Node000002" href="$class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f" title=" " alt="" coords="204,5,357,32"/>
+<area shape="rect" id="Node000002" href="$class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f" title="Переход к следующей угловой точке" alt="" coords="204,5,357,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,16,189,16,189,21,156,21"/>
 </map>

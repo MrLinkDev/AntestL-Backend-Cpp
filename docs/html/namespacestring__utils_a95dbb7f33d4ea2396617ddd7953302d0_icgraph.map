@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title="Деление строки на вектор строк по заданному делителю" alt="" coords="232,31,348,57"/>
 <area shape="rect" id="Node000002" href="$class_keysight_m9807_a.html#a9a23e8c51407edd1aba3cf734d9ea71b" title="Сбор данных, полученных в результате измерения, для одного порта" alt="" coords="5,5,184,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,37,184,33,185,28,217,32"/>
-<area shape="rect" id="Node000003" href="$class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" title=" " alt="" coords="21,56,168,83"/>
+<area shape="rect" id="Node000003" href="$class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)" alt="" coords="21,56,168,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,56,169,62,168,57,217,51"/>
 </map>

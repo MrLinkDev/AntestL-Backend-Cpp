@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_rbd_device.html#a0f3dad1a0133405e7aec1e9dd2236f0f" target="_top" xlink:title="Переход к следующей угловой точке">
 <polygon fill="white" stroke="#666666" points="451.5,-20 336.5,-20 336.5,0 451.5,0 451.5,-20"/>
 <text text-anchor="middle" x="394" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">RbdDevice::next_angle</text>
 </a>

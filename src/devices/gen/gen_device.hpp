@@ -80,22 +80,79 @@ public:
         }
     }
 
+    /**
+     * \brief Сброс настроек
+     */
     virtual void preset() {};
 
+    /**
+     * \brief Установка определённого значения частоты
+     *
+     * \param [in] freq Требуемая частота
+     */
     virtual void set_freq(double freq) {};
+
+    /**
+     * \brief Установка частотного диапазона
+     *
+     * \param [in] start_freq Начальное значение частоты
+     * \param [in] stop_freq Конечное значение частоты
+     * \param [in] points Количество точек
+     */
     virtual void set_freq_range(double start_freq, double stop_freq, int points) {};
 
+    /**
+     * \brief Установка требуемой мощности сигнала
+     *
+     * \param [in] power Требуемое значение мощности
+     */
     virtual void set_power(float power) {};
 
+    /**
+     * \brief Отключает порт
+     */
     virtual void rf_off() {};
+
+    /**
+     * \brief Включает порт
+     */
     virtual void rf_on() {};
 
+    /**
+     * \brief Переход к следующей частотной точке
+     *
+     * \return Если следующая частотная точка находится в пределах
+     * границ изменения, то возвращает FREQ_MOVE_OK. Если точка
+     * находится на границе, то возвращает FREQ_MOVE_BOUND.
+     */
     virtual int next_freq() {return FREQ_MOVE_BOUND;};
+
+    /**
+     * \brief Переход к предыдущей частотной точке
+     *
+     * \return Если предыдущая частотная точка находится в пределах
+     * границ изменения, то возвращает FREQ_MOVE_OK. Если точка
+     * находится на границе, то возвращает FREQ_MOVE_BOUND.
+     */
     virtual int prev_freq() {return FREQ_MOVE_BOUND;};
 
+    /**
+     * \brief Устанавливает частотную точку, соответствующую началу
+     * диапазона.
+     */
     virtual void move_to_start_freq() {};
+
+    /**
+     * \brief Устанавливает частотную точку, соответствующую началу
+     * диапазона.
+     */
     virtual void move_to_stop_freq() {};
 
+    /**
+     * \brief Получает текущее значение частоты сигнала
+     *
+     * \return Значение частоты сигнала
+     */
     virtual double get_current_freq() {return 0.0;};
 };
 

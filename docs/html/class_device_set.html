@@ -569,9 +569,9 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 <div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">while</span> (device_set.next_freq() != <a class="code hl_define" href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a>) {</div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая частотная точка&quot;</span> std::endl;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая частотная точка&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">}</div>
-<div class="ttc" id="agen__device_8hpp_html_aca160815bbdaf96073a27237eb0328a4"><div class="ttname"><a href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a></div><div class="ttdeci">#define FREQ_MOVE_BOUND</div><div class="ttdef"><b>Definition</b> <a href="gen__device_8hpp_source.html#l00019">gen_device.hpp:19</a></div></div>
+<div class="ttc" id="agen__device_8hpp_html_aca160815bbdaf96073a27237eb0328a4"><div class="ttname"><a href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a></div><div class="ttdeci">#define FREQ_MOVE_BOUND</div><div class="ttdoc">Статус изменения частотной точки: находится на границе допустимых значений</div><div class="ttdef"><b>Definition</b> <a href="gen__device_8hpp_source.html#l00037">gen_device.hpp:37</a></div></div>
 </div><!-- fragment --> 
 <p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00260">260</a></p>
 <div class="dynheader">
@@ -610,7 +610,7 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 <div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">while</span> (device_set.prev_freq() != <a class="code hl_define" href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a>) {</div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана предыдущая частотная точка&quot;</span> std::endl;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана предыдущая частотная точка&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
 <p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00287">287</a></p>
@@ -645,7 +645,7 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 <div class="line">device_set.set_freq_range(1e9, 2e9, 11);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">while</span> (device_set.next_freq() != <a class="code hl_define" href="gen__device_8hpp.html#aca160815bbdaf96073a27237eb0328a4">FREQ_MOVE_BOUND</a>) {</div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая частотная точка&quot;</span> std::endl;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая частотная точка&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">if</span> (device_set.move_to_start_freq()) {</div>
@@ -905,7 +905,7 @@ $(document).ready(function(){initNavTree('class_device_set.html',''); initResiza
 <div class="line"><span class="keywordflow">while</span> (device_set.next_angle(0) != <a class="code hl_define" href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a>) {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Выбрана следующая угловая точка&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">}</div>
-<div class="ttc" id="arbd__device_8hpp_html_a822eea0ea5aa0e7a7e966ee9ca1b04c5"><div class="ttname"><a href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a></div><div class="ttdeci">#define ANGLE_MOVE_BOUND</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00008">rbd_device.hpp:8</a></div></div>
+<div class="ttc" id="arbd__device_8hpp_html_a822eea0ea5aa0e7a7e966ee9ca1b04c5"><div class="ttname"><a href="rbd__device_8hpp.html#a822eea0ea5aa0e7a7e966ee9ca1b04c5">ANGLE_MOVE_BOUND</a></div><div class="ttdeci">#define ANGLE_MOVE_BOUND</div><div class="ttdoc">Статус вращения ОПУ: находится на границе допустимых значений</div><div class="ttdef"><b>Definition</b> <a href="rbd__device_8hpp_source.html#l00018">rbd_device.hpp:18</a></div></div>
 </div><!-- fragment --> 
 <p class="definition">См. определение в файле <a class="el" href="device__set_8cpp_source.html">device_set.cpp</a> строка <a class="el" href="device__set_8cpp_source.html#l00472">472</a></p>
 <div class="dynheader">
