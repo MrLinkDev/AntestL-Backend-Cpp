@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="keysight__m9807a_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="keysight__m9807a_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="121.75,-32 0,-32 0,0 121.75,0 121.75,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/keysight</text>
 <text text-anchor="middle" x="60.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_m9807a.cpp</text>

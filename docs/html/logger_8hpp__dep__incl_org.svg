@@ -56,7 +56,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="gen__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="gen__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором представлен класс GenDevice и определён набор констант">
 <polygon fill="white" stroke="#666666" points="499.25,-292 397,-292 397,-260 499.25,-260 499.25,-292"/>
 <text text-anchor="start" x="405" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/gen/gen</text>
 <text text-anchor="middle" x="448.12" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">_device.hpp</text>
@@ -75,7 +75,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="rbd__device_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="rbd__device_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс RbdDevice.">
 <polygon fill="white" stroke="#666666" points="225,-292 127.25,-292 127.25,-260 225,-260 225,-292"/>
 <text text-anchor="start" x="135.25" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/rbd</text>
 <text text-anchor="middle" x="176.12" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">_device.hpp</text>
@@ -251,7 +251,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="keysight__gen_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="keysight__gen_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа KeysightGen.">
 <polygon fill="white" stroke="#666666" points="378.75,-156 255.5,-156 255.5,-124 378.75,-124 378.75,-156"/>
 <text text-anchor="start" x="263.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/gen/keysight</text>
 <text text-anchor="middle" x="317.12" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_gen.cpp</text>
@@ -279,7 +279,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="demo__rdb_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="demo__rdb_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс DemoRbd.">
 <polygon fill="white" stroke="#666666" points="108.25,-224 0,-224 0,-192 108.25,-192 108.25,-224"/>
 <text text-anchor="start" x="8" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/demo</text>
 <text text-anchor="middle" x="54.12" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rdb.hpp</text>
@@ -298,7 +298,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="tesart__rbd_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="tesart__rbd_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определяется класс TesartRbd.">
 <polygon fill="white" stroke="#666666" points="235.62,-224 126.62,-224 126.62,-192 235.62,-192 235.62,-224"/>
 <text text-anchor="start" x="134.62" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/tesart</text>
 <text text-anchor="middle" x="181.12" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rbd.hpp</text>
@@ -335,7 +335,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="tesart__rbd_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="tesart__rbd_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа TesartRbd.">
 <polygon fill="white" stroke="#666666" points="235.62,-156 126.62,-156 126.62,-124 235.62,-124 235.62,-156"/>
 <text text-anchor="start" x="134.62" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/tesart</text>
 <text text-anchor="middle" x="181.12" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rbd.cpp</text>
@@ -363,7 +363,7 @@
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title="Файл, в котором реализован класс KeysightM9807A.">
+<g id="a_Node000017"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title="Файл, в котором определён класс KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="632,-224 510.25,-224 510.25,-192 632,-192 632,-224"/>
 <text text-anchor="start" x="518.25" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/keysight</text>
 <text text-anchor="middle" x="571.12" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_m9807a.hpp</text>
@@ -391,7 +391,7 @@
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="keysight__m9807a_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000018"><a xlink:href="keysight__m9807a_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="632,-156 510.25,-156 510.25,-124 632,-124 632,-156"/>
 <text text-anchor="start" x="518.25" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/keysight</text>
 <text text-anchor="middle" x="571.12" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_m9807a.cpp</text>

@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="demo__rdb_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="demo__rdb_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором реализован класс DemoRbd.">
 <polygon fill="white" stroke="#666666" points="108.25,-100 0,-100 0,-68 108.25,-68 108.25,-100"/>
 <text text-anchor="start" x="8" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/demo</text>
 <text text-anchor="middle" x="54.12" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rdb.hpp</text>
@@ -39,7 +39,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="tesart__rbd_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="tesart__rbd_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа TesartRbd.">
 <polygon fill="white" stroke="#666666" points="235.62,-100 126.62,-100 126.62,-68 235.62,-68 235.62,-100"/>
 <text text-anchor="start" x="134.62" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/rbd/tesart</text>
 <text text-anchor="middle" x="181.12" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rbd.cpp</text>
@@ -58,7 +58,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="keysight__m9807a_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="keysight__m9807a_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="375,-100 253.25,-100 253.25,-68 375,-68 375,-100"/>
 <text text-anchor="start" x="261.25" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/keysight</text>
 <text text-anchor="middle" x="314.12" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">_m9807a.cpp</text>

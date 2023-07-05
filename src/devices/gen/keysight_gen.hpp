@@ -1,9 +1,16 @@
+/**
+ * \brief Заголовочный файл, в котором определён класс KeysightGen
+ */
+
 #ifndef ANTESTL_BACKEND_KEYSIGHT_GEN_HPP
 #define ANTESTL_BACKEND_KEYSIGHT_GEN_HPP
 
-
 #include "gen_device.hpp"
 
+/**
+ * \brief Класс KeysightGen, в котором определены методы для работы с генераторами
+ * Keysight
+ */
 class KeysightGen : public GenDevice {
 
 public:

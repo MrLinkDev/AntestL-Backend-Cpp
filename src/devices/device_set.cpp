@@ -253,7 +253,7 @@ bool DeviceSet::set_freq_range(double start_freq, double stop_freq, int points) 
  * device_set.set_freq_range(1e9, 2e9, 11);
  *
  * while (device_set.next_freq() != FREQ_MOVE_BOUND) {
- *     std::cout << "Выбрана следующая частотная точка" std::endl;
+ *     std::cout << "Выбрана следующая частотная точка" << std::endl;
  * }
  * \endcode
  */
@@ -280,7 +280,7 @@ int DeviceSet::next_freq() {
  * device_set.set_freq_range(1e9, 2e9, 11);
  *
  * while (device_set.prev_freq() != FREQ_MOVE_BOUND) {
- *     std::cout << "Выбрана предыдущая частотная точка" std::endl;
+ *     std::cout << "Выбрана предыдущая частотная точка" << std::endl;
  * }
  * \endcode
  */
@@ -307,7 +307,7 @@ int DeviceSet::prev_freq() {
  * device_set.set_freq_range(1e9, 2e9, 11);
  *
  * while (device_set.next_freq() != FREQ_MOVE_BOUND) {
- *     std::cout << "Выбрана следующая частотная точка" std::endl;
+ *     std::cout << "Выбрана следующая частотная точка" << std::endl;
  * }
  *
  * if (device_set.move_to_start_freq()) {

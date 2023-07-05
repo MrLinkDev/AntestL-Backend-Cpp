@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Файл, в котором реализован класс KeysightM9807A.">
+<g id="a_Node000001"><a xlink:title="Файл, в котором определён класс KeysightM9807A.">
 <polygon fill="#999999" stroke="#666666" points="232.25,-224 110.5,-224 110.5,-192 232.25,-192 232.25,-224"/>
 <text text-anchor="start" x="118.5" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/keysight</text>
 <text text-anchor="middle" x="171.38" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_m9807a.hpp</text>
@@ -50,7 +50,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="keysight__m9807a_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="keysight__m9807a_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="295.25,-156 173.5,-156 173.5,-124 295.25,-124 295.25,-156"/>
 <text text-anchor="start" x="181.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/keysight</text>
 <text text-anchor="middle" x="234.38" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_m9807a.cpp</text>

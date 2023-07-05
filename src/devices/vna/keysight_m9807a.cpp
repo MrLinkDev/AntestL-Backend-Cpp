@@ -225,7 +225,7 @@ void KeysightM9807A::set_freq_range(double start_freq, double stop_freq, int poi
 /**
  * \brief Установка определённого значения частоты
  *
- * \param freq Требуемая частота
+ * \param [in] freq Требуемая частота
  *
  * **Пример**
  * \code
