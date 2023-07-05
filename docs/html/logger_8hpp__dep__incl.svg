@@ -409,7 +409,7 @@ var sectionId = 'dynsection-1';
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title="Файл, в котором реализован класс KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="632,-224 510.25,-224 510.25,-192 632,-192 632,-224"/>
 <text text-anchor="start" x="518.25" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/keysight</text>
 <text text-anchor="middle" x="571.12" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_m9807a.hpp</text>

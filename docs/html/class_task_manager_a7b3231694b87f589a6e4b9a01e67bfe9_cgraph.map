@@ -29,7 +29,7 @@
 <area shape="poly" id="edge25_Node000002_Node000025" title=" " alt="" coords="367,434,382,446,398,469,405,493,406,538,407,581,414,602,430,623,448,636,445,640,426,627,409,605,401,582,400,538,400,493,393,472,378,450,364,439"/>
 <area shape="rect" id="Node000026" href="$class_vna_device.html#a54c899426e88e979532978d36fcfa582" title="Включает все порты" alt="" coords="461,688,579,715"/>
 <area shape="poly" id="edge26_Node000002_Node000026" title=" " alt="" coords="368,435,382,446,401,476,409,506,409,535,405,563,402,591,403,619,411,647,430,674,449,688,445,692,426,678,406,649,397,620,397,591,400,563,404,535,403,506,396,478,378,450,364,439"/>
-<area shape="rect" id="Node000027" href="$class_vna_device.html#a2141273efb5e7aa19f67bf06dc323546" title="Перевод триггера в режим single." alt="" coords="457,181,583,208"/>
+<area shape="rect" id="Node000027" href="$class_vna_device.html#a2141273efb5e7aa19f67bf06dc323546" title="Перевод триггера в режим manual." alt="" coords="457,181,583,208"/>
 <area shape="poly" id="edge27_Node000002_Node000027" title=" " alt="" coords="314,408,327,370,349,319,382,265,403,240,426,218,441,209,444,213,430,222,407,243,386,268,354,321,332,372,319,410"/>
 <area shape="rect" id="Node000005" href="$class_rbd_device.html#ae5b34a03ceb0a14f39724a60fcd6ac3b" title=" " alt="" coords="680,5,823,48"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="595,64,665,46,666,51,597,69"/>

@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief Файл исходного кода, в котором реализованы методы для класа KeysightM9807A
+ *
+ * \author Александр Горбунов
+ * \date 3 июля 2023
+ */
+
 #include "keysight_m9807a.hpp"
 #include "../../utils/string_utils.hpp"
 #include "../../utils/array_utils.hpp"
@@ -21,7 +29,7 @@ KeysightM9807A::KeysightM9807A(std::string device_address) : VnaDevice(std::move
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  * vna->preset();
  * \endcode
  */
@@ -34,7 +42,7 @@ void KeysightM9807A::preset() {
   *
   * **Пример**
   * \code
-  * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+  * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
   * vna->full_preset();
   * \endcode
   */
@@ -54,7 +62,7 @@ void KeysightM9807A::full_preset() {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  *
  * vna->full_preset();
  * vna->init_channel();
@@ -81,7 +89,7 @@ void KeysightM9807A::init_channel() {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  *
  * vna->full_preset();
  * vna->init_channel();
@@ -110,7 +118,7 @@ void KeysightM9807A::configure(int meas_type, float rbw, int source_port) {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  *
  * vna->full_preset();
  * vna->init_channel();
@@ -170,7 +178,7 @@ void KeysightM9807A::create_traces(std::vector<int> port_list, bool external) {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  *
  * vna->set_power(-10.0);
  * \endcode
@@ -192,7 +200,7 @@ void KeysightM9807A::set_power(float power) {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  *
  * vna->full_preset();
  * vna->init_channel();
@@ -221,7 +229,7 @@ void KeysightM9807A::set_freq_range(double start_freq, double stop_freq, int poi
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  *
  * vna->full_preset();
  * vna->init_channel();
@@ -250,7 +258,7 @@ void KeysightM9807A::set_freq(double freq) {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  * vna->set_path({1, 4, 5, 2});
  * \endcode
  */
@@ -274,7 +282,7 @@ void KeysightM9807A::set_path(std::vector<int> path_list) {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  * int count = vna->get_switch_module_count();
  * \endcode
  */
@@ -287,7 +295,7 @@ int KeysightM9807A::get_switch_module_count() {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  * vna->rf_off();
  * \endcode
  */
@@ -306,7 +314,7 @@ void KeysightM9807A::rf_off() {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  * vna->rf_off(1);
  * \endcode
  */
@@ -320,7 +328,7 @@ void KeysightM9807A::rf_off(int port) {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  * vna->rf_on();
  * \endcode
  */
@@ -339,7 +347,7 @@ void KeysightM9807A::rf_on() {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  * vna->rf_oт(1);
  * \endcode
  */
@@ -353,7 +361,7 @@ void KeysightM9807A::rf_on(int port) {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  * vna->trigger();
  * \endcode
  */
@@ -369,7 +377,7 @@ void KeysightM9807A::trigger() {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  *
  * vna->trigger();
  * vna->init();
@@ -388,7 +396,7 @@ void KeysightM9807A::init() {
  *
  * **Пример**
  * \code
- * VnaDevice *vna = new KeusightM9807A("TCPIP0::localhost::5025::SOCKET");
+ * VnaDevice *vna = new KeysightM9807A("TCPIP0::localhost::5025::SOCKET");
  *
  * vna->full_preset();
  * vna->init_channel();

@@ -1,5 +1,5 @@
 <map id="src/devices/vna/keysight_m9807a.hpp" name="src/devices/vna/keysight_m9807a.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="153,5,315,48"/>
+<area shape="rect" id="Node000001" title="Файл, в котором реализован класс KeysightM9807A." alt="" coords="153,5,315,48"/>
 <area shape="rect" id="Node000002" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="87,96,213,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,61,171,98,167,94,203,57"/>
 <area shape="rect" id="Node000007" href="$keysight__m9807a_8cpp.html" title=" " alt="" coords="237,96,399,139"/>

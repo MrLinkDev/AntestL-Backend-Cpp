@@ -128,7 +128,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title="Файл, в котором реализован класс KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="370.12,-244 241.62,-244 241.62,-224 370.12,-224 370.12,-244"/>
 <text text-anchor="middle" x="305.88" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">vna/keysight_m9807a.hpp</text>
 </a>

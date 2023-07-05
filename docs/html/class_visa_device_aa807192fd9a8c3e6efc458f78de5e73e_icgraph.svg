@@ -430,7 +430,7 @@ var sectionId = 'dynsection-7';
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" target="_top" xlink:title="Перевод триггера в режим single.">
+<g id="a_Node000019"><a xlink:href="class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" target="_top" xlink:title="Перевод триггера в режим manual.">
 <polygon fill="white" stroke="#666666" points="129.25,-293 6,-293 6,-273 129.25,-273 129.25,-293"/>
 <text text-anchor="middle" x="67.62" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::trigger</text>
 </a>

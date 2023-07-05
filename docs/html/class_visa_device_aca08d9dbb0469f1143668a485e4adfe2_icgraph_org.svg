@@ -411,7 +411,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" target="_top" xlink:title="Перевод триггера в режим single.">
+<g id="a_Node000020"><a xlink:href="class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" target="_top" xlink:title="Перевод триггера в режим manual.">
 <polygon fill="white" stroke="#666666" points="129.25,-291.92 6,-291.92 6,-271.92 129.25,-271.92 129.25,-291.92"/>
 <text text-anchor="middle" x="67.62" y="-278.42" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A::trigger</text>
 </a>

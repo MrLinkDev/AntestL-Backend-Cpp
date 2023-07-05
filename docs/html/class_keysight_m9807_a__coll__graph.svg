@@ -57,7 +57,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Класс, в котором реализованы методы для работы с ВАЦ Keysight M9807A.">
 <polygon fill="#999999" stroke="none" points="151,-412 0,-412 0,0 151,0 151,-412"/>
 <text text-anchor="start" x="38.38" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">KeysightM9807A</text>
 <text text-anchor="start" x="5.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

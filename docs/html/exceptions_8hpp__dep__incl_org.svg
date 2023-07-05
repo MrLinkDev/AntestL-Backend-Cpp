@@ -271,7 +271,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="keysight__m9807a_8hpp.html" target="_top" xlink:title="Файл, в котором реализован класс KeysightM9807A.">
 <polygon fill="white" stroke="#666666" points="565,-224 443.25,-224 443.25,-192 565,-192 565,-224"/>
 <text text-anchor="start" x="451.25" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/devices/vna/keysight</text>
 <text text-anchor="middle" x="504.12" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_m9807a.hpp</text>
