@@ -1,5 +1,5 @@
 <map id="TaskManager::disconnect_task" name="TaskManager::disconnect_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,208,83"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий задание на отключение" alt="" coords="5,56,208,83"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#a6241d8b37639241e2a370c1f7d533995" title="Отключает все устройства и уничтожает созданные объекты" alt="" coords="256,31,406,57"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,55,241,51,241,57,209,61"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="288,81,374,108"/>

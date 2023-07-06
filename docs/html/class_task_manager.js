@@ -20,7 +20,6 @@ var class_task_manager =
     [ "received_stop_task", "class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7", null ],
     [ "received_disconnect_task", "class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50", null ],
     [ "request_stop", "class_task_manager.html#a601272b5c895a310aec3d430b19c6258", null ],
-    [ "reset_stop_request", "class_task_manager.html#ae49fdc0b6d9b5a18f35045bb4efde443", null ],
     [ "device_set", "class_task_manager.html#a97a87a01b8705db4fb965be54b2d3301", null ],
     [ "stop_requested", "class_task_manager.html#ab95aed84e5431769d1c9faaf9fcb6791", null ]
 ];

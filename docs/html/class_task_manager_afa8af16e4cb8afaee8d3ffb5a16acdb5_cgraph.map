@@ -1,5 +1,5 @@
 <map id="TaskManager::set_path_task" name="TaskManager::set_path_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,127,195,153"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий задание на изменение положений переключателей" alt="" coords="5,127,195,153"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#aeeb8d224788fe0663898a10aad363832" title="Метод позволяет получить число переключателей, подключенных к ВАЦ." alt="" coords="243,60,396,103"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,124,228,103,229,108,153,129"/>
 <area shape="rect" id="Node000005" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="487,127,572,153"/>

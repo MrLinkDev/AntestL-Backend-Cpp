@@ -10,7 +10,7 @@
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="679,29,646,29,646,24,679,24"/>
 <area shape="rect" id="Node000005" href="$class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce" title="Метод, производящий обработку принятого JSON&#45;объекта" alt="" coords="291,13,444,40"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="478,29,444,29,444,24,478,24"/>
-<area shape="rect" id="Node000006" href="$main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" title=" " alt="" coords="103,13,243,40"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" title="Обработка принятых данных и отправка результата обработки клиенту" alt="" coords="103,13,243,40"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="276,29,243,29,243,24,276,24"/>
 <area shape="rect" id="Node000007" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,55,40"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="88,29,55,29,55,24,88,24"/>

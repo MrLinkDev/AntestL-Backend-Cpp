@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -53,22 +49,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -94,15 +74,55 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">AntestL Backend </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a>AntestL Backend - это часть программного обеспечения AntestL, которая позволяет организовать измерение параметров антенн, с помощью ВАЦ, внешнего генератора и ОПУ. Взаимодействие осуществляется с помощью заданий или списков заданий.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Сборка</h1>
+<p>Сборка осуществлялась с помощью <a href="https://github.com/skeeto/w64devkit/releases/download/v1.19.0/w64devkit-1.19.0.zip">MinGW-w64 11.0.0</a> </p><div class="fragment"><div class="line">cmake.exe --build AntestL-Backend-Cpp\cmake-build-debug --target antestl_backend -- -j 6</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2"></a>
+Запуск</h1>
+<p>В AntestL Backend предусмотрены следующие параметры запуска:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>Параметр</b>   </th><th class="markdownTableHeadCenter"><b>Сокращённый <br  />
+вариант</b>   </th><th class="markdownTableHeadLeft"><b>Описание</b>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">-log   </td><td class="markdownTableBodyCenter">-l   </td><td class="markdownTableBodyLeft">Изменяет уровень логирования. <br  />
+ Все сообщения, уровень которых<br  />
+выше, чем установленный уровень, игнорируются.<br  />
+<dl>
+<dt>Возможные варианты:</dt>
+<dd><ul>
+<li>
+error (0)</li>
+<li>
+warn (1)</li>
+<li>
+info (2)</li>
+<li>
+debug (3)</li>
+<li>
+trace (4)<ul>
+<li>
+</li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+<br  />
+По-умолчанию выбран уровень info    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">-task   </td><td class="markdownTableBodyCenter">-t   </td><td class="markdownTableBodyLeft">Изменяет порт для сокета, который отвечает за приём заданий. <br  />
+По-умолчанию выбран порт 5006    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">-data   </td><td class="markdownTableBodyCenter">-d   </td><td class="markdownTableBodyLeft">Изменяет порт для сокета, который отвечает за передачу результатов. <br  />
+По-умолчанию выбран порт 5007   </td></tr>
+</table>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

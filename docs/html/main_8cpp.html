@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,6 +69,11 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Макросы</a> &#124;
@@ -98,6 +82,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
   <div class="headertitle"><div class="title">Файл main.cpp</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Главный файл приложения  
+<a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &lt;condition_variable&gt;</code><br />
 <code>#include &quot;<a class="el" href="socket__server_8hpp_source.html">socket/socket_server.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a>&quot;</code><br />
@@ -112,45 +99,61 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Макросы</h2></td></tr>
 <tr class="memitem:ad234df54142398a5bd41b226599a04fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad234df54142398a5bd41b226599a04fa">DEFAULT_TASK_PORT</a>&#160;&#160;&#160;5006</td></tr>
+<tr class="memdesc:ad234df54142398a5bd41b226599a04fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный порт для входящих заданий  <br /></td></tr>
 <tr class="separator:ad234df54142398a5bd41b226599a04fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d8d345c53759de8ec7fc36e87334ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa7d8d345c53759de8ec7fc36e87334ec">DEFAULT_DATA_PORT</a>&#160;&#160;&#160;5007</td></tr>
+<tr class="memdesc:aa7d8d345c53759de8ec7fc36e87334ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный порт для исходящих данных  <br /></td></tr>
 <tr class="separator:aa7d8d345c53759de8ec7fc36e87334ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ad0d8cbf153984bb319bf489dce4640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a5ad0d8cbf153984bb319bf489dce4640">TASK_SERVER_TAG</a>&#160;&#160;&#160;&quot;TASK_S&quot;</td></tr>
+<tr class="memdesc:a5ad0d8cbf153984bb319bf489dce4640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тег для сокета заданий  <br /></td></tr>
 <tr class="separator:a5ad0d8cbf153984bb319bf489dce4640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5a1c369d3254ba222ed2f18a9685f38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ab5a1c369d3254ba222ed2f18a9685f38">DATA_SERVER_TAG</a>&#160;&#160;&#160;&quot;DATA_S&quot;</td></tr>
+<tr class="memdesc:ab5a1c369d3254ba222ed2f18a9685f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тег для сокета данных  <br /></td></tr>
 <tr class="separator:ab5a1c369d3254ba222ed2f18a9685f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6b967516c063e92b8db89f12cf9d7b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad6b967516c063e92b8db89f12cf9d7b9">LOG_LEVEL_PARAM</a>&#160;&#160;&#160;&quot;-log&quot;</td></tr>
+<tr class="memdesc:ad6b967516c063e92b8db89f12cf9d7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр изменения уровня логирования  <br /></td></tr>
 <tr class="separator:ad6b967516c063e92b8db89f12cf9d7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46bd9ef4cd0f0b71830f63b58bc8acb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a46bd9ef4cd0f0b71830f63b58bc8acb3">LOG_LEVEL_PARAM_SHORT</a>&#160;&#160;&#160;&quot;-l&quot;</td></tr>
+<tr class="memdesc:a46bd9ef4cd0f0b71830f63b58bc8acb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр изменения уровня логирования (укороченный)  <br /></td></tr>
 <tr class="separator:a46bd9ef4cd0f0b71830f63b58bc8acb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15856724811f59e6f351153e89380f5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a15856724811f59e6f351153e89380f5d">LOG_LEVEL_TRACE</a>&#160;&#160;&#160;&quot;trace&quot;</td></tr>
+<tr class="memdesc:a15856724811f59e6f351153e89380f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аргумент для изменения логирования (LOG_LEVEL = LEVEL_TRACE)  <br /></td></tr>
 <tr class="separator:a15856724811f59e6f351153e89380f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a130224df8c6bf22a688e3cb74a45689a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a130224df8c6bf22a688e3cb74a45689a">LOG_LEVEL_DEBUG</a>&#160;&#160;&#160;&quot;debug&quot;</td></tr>
+<tr class="memdesc:a130224df8c6bf22a688e3cb74a45689a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аргумент для изменения логирования (LOG_LEVEL = LEVEL_DEBUG)  <br /></td></tr>
 <tr class="separator:a130224df8c6bf22a688e3cb74a45689a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e25fe130cf710da4ad800747fdd51f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2e25fe130cf710da4ad800747fdd51f3">LOG_LEVEL_INFO</a>&#160;&#160;&#160;&quot;info&quot;</td></tr>
-<tr class="separator:a2e25fe130cf710da4ad800747fdd51f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f43a1fab62b98fc88603cdb988de3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a14f43a1fab62b98fc88603cdb988de3d">LOG_LEVEL_WARN</a>&#160;&#160;&#160;&quot;warn&quot;</td></tr>
+<tr class="memdesc:a14f43a1fab62b98fc88603cdb988de3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аргумент для изменения логирования (LOG_LEVEL = LEVEL_WARN)  <br /></td></tr>
 <tr class="separator:a14f43a1fab62b98fc88603cdb988de3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a742fc70e331d7e568bd893c514756a29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a742fc70e331d7e568bd893c514756a29">LOG_LEVEL_ERROR</a>&#160;&#160;&#160;&quot;error&quot;</td></tr>
+<tr class="memdesc:a742fc70e331d7e568bd893c514756a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аргумент для изменения логирования (LOG_LEVEL = LEVEL_ERROR)  <br /></td></tr>
 <tr class="separator:a742fc70e331d7e568bd893c514756a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61c2755b82e2b596c35ef5a9937585d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a61c2755b82e2b596c35ef5a9937585d8">TASK_PORT_PARAM</a>&#160;&#160;&#160;&quot;-task&quot;</td></tr>
+<tr class="memdesc:a61c2755b82e2b596c35ef5a9937585d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр изменения порта для входящих заданий  <br /></td></tr>
 <tr class="separator:a61c2755b82e2b596c35ef5a9937585d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb212666894bc00784b36d0a688e017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8cb212666894bc00784b36d0a688e017">TASK_PORT_PARAM_SHORT</a>&#160;&#160;&#160;&quot;-t&quot;</td></tr>
+<tr class="memdesc:a8cb212666894bc00784b36d0a688e017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр изменения порта для входящих заданий (укороченный)  <br /></td></tr>
 <tr class="separator:a8cb212666894bc00784b36d0a688e017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada144dd47628c1e0a3397707fd85e943"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ada144dd47628c1e0a3397707fd85e943">DATA_PORT_PARAM</a>&#160;&#160;&#160;&quot;-data&quot;</td></tr>
+<tr class="memdesc:ada144dd47628c1e0a3397707fd85e943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр изменения порта для исходящих данных  <br /></td></tr>
 <tr class="separator:ada144dd47628c1e0a3397707fd85e943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b4dc3e0e11fe972abab864592373909"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3b4dc3e0e11fe972abab864592373909">DATA_PORT_PARAM_SHORT</a>&#160;&#160;&#160;&quot;-d&quot;</td></tr>
+<tr class="memdesc:a3b4dc3e0e11fe972abab864592373909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр изменения порта для исходящих данных (укороченный)  <br /></td></tr>
 <tr class="separator:a3b4dc3e0e11fe972abab864592373909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
 <tr class="memitem:aef72d10ff26fe620d5f0a0f8412d7a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b">task_server_thread_f</a> (std::stop_token s_token)</td></tr>
+<tr class="memdesc:aef72d10ff26fe620d5f0a0f8412d7a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приём данных от клиента и передача их потоку обработки  <br /></td></tr>
 <tr class="separator:aef72d10ff26fe620d5f0a0f8412d7a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205c0f32d26b6f27c711fa201d02c983"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983">data_server_thread_f</a> (std::stop_token s_token)</td></tr>
+<tr class="memdesc:a205c0f32d26b6f27c711fa201d02c983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка принятых данных и отправка результата обработки клиенту  <br /></td></tr>
 <tr class="separator:a205c0f32d26b6f27c711fa201d02c983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35d7de01106a848cf8a5b3d494b40062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062">exit_event_handler</a> (int signal_code)</td></tr>
+<tr class="memdesc:a35d7de01106a848cf8a5b3d494b40062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, вызываемая при нажатии сочетания клавиш Ctrl+C.  <br /></td></tr>
 <tr class="separator:a35d7de01106a848cf8a5b3d494b40062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ef30c42cbc289d899a8be5d2d8f77d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2ef30c42cbc289d899a8be5d2d8f77d0">usage</a> ()</td></tr>
+<tr class="memdesc:a2ef30c42cbc289d899a8be5d2d8f77d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, выводящая справку на экран  <br /></td></tr>
 <tr class="separator:a2ef30c42cbc289d899a8be5d2d8f77d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,31 +161,49 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Переменные</h2></td></tr>
 <tr class="memitem:ae0616aeefbf878ed575490f103af220d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_socket_server.html">SocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae0616aeefbf878ed575490f103af220d">task_server</a> (<a class="el" href="main_8cpp.html#ad234df54142398a5bd41b226599a04fa">DEFAULT_TASK_PORT</a>, <a class="el" href="main_8cpp.html#a5ad0d8cbf153984bb319bf489dce4640">TASK_SERVER_TAG</a>)</td></tr>
+<tr class="memdesc:ae0616aeefbf878ed575490f103af220d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сокета входящих заданий  <br /></td></tr>
 <tr class="separator:ae0616aeefbf878ed575490f103af220d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1db97645d63f7de72d62baf2be9c88c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_socket_server.html">SocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1db97645d63f7de72d62baf2be9c88c9">data_server</a> (<a class="el" href="main_8cpp.html#aa7d8d345c53759de8ec7fc36e87334ec">DEFAULT_DATA_PORT</a>, <a class="el" href="main_8cpp.html#ab5a1c369d3254ba222ed2f18a9685f38">DATA_SERVER_TAG</a>)</td></tr>
+<tr class="memdesc:a1db97645d63f7de72d62baf2be9c88c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сокета исходящих данных  <br /></td></tr>
 <tr class="separator:a1db97645d63f7de72d62baf2be9c88c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeafa8ca169e406f398608a2e7522f14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_task_manager.html">TaskManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#abeafa8ca169e406f398608a2e7522f14">task_manager</a> {}</td></tr>
+<tr class="memdesc:abeafa8ca169e406f398608a2e7522f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект менеджера заданий  <br /></td></tr>
 <tr class="separator:abeafa8ca169e406f398608a2e7522f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac40aba9d05cd1e535a7fe3a91c15a895"><td class="memItemLeft" align="right" valign="top">std::jthread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac40aba9d05cd1e535a7fe3a91c15a895">task_thread</a></td></tr>
+<tr class="memdesc:ac40aba9d05cd1e535a7fe3a91c15a895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для приёма входящих заданий  <br /></td></tr>
 <tr class="separator:ac40aba9d05cd1e535a7fe3a91c15a895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeecd5329ebc87a26c7a09560bd993e6"><td class="memItemLeft" align="right" valign="top">std::jthread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adeecd5329ebc87a26c7a09560bd993e6">data_thread</a></td></tr>
+<tr class="memdesc:adeecd5329ebc87a26c7a09560bd993e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для обработки и отправки данных  <br /></td></tr>
 <tr class="separator:adeecd5329ebc87a26c7a09560bd993e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0afa02d14fff34c480aabfbc41ad193c"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0afa02d14fff34c480aabfbc41ad193c">cv</a></td></tr>
+<tr class="memdesc:a0afa02d14fff34c480aabfbc41ad193c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект, необходимый для организации синхронной обработки данных двумя потоками  <br /></td></tr>
 <tr class="separator:a0afa02d14fff34c480aabfbc41ad193c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5e0dbd36f0d71fce9b00b7f991b2f38"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad5e0dbd36f0d71fce9b00b7f991b2f38">mtx</a></td></tr>
+<tr class="memdesc:ad5e0dbd36f0d71fce9b00b7f991b2f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мьютекс, необходимый для организации синхронной обработки данных двумя потоками  <br /></td></tr>
 <tr class="separator:ad5e0dbd36f0d71fce9b00b7f991b2f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dbe87354d47906dcbb42c7ba634b102"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6dbe87354d47906dcbb42c7ba634b102">received</a> = false</td></tr>
+<tr class="memdesc:a6dbe87354d47906dcbb42c7ba634b102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, показывающий, что данные бьыли приняты от клиента  <br /></td></tr>
 <tr class="separator:a6dbe87354d47906dcbb42c7ba634b102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0115d3c31ef3657b197ace2c06496e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7a0115d3c31ef3657b197ace2c06496e">processed</a> = true</td></tr>
+<tr class="memdesc:a7a0115d3c31ef3657b197ace2c06496e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, показывающий, что данные бьыли обработаны и отправлены клиенту  <br /></td></tr>
 <tr class="separator:a7a0115d3c31ef3657b197ace2c06496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f80ebe6ac4c59f6d6ab88303ae25f5"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a14f80ebe6ac4c59f6d6ab88303ae25f5">input_data</a> {}</td></tr>
+<tr class="memdesc:a14f80ebe6ac4c59f6d6ab88303ae25f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буфер для входящих данных  <br /></td></tr>
 <tr class="separator:a14f80ebe6ac4c59f6d6ab88303ae25f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf676f2d6e5004d3a17584bf0e21b3f9"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf676f2d6e5004d3a17584bf0e21b3f9">data_buffer</a> {}</td></tr>
+<tr class="memdesc:adf676f2d6e5004d3a17584bf0e21b3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буфер для данных, переданных на обработку  <br /></td></tr>
 <tr class="separator:adf676f2d6e5004d3a17584bf0e21b3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5180e02da27b2f3fe932a253aa48cb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac5180e02da27b2f3fe932a253aa48cb3">stop_process</a> = false</td></tr>
+<tr class="memdesc:ac5180e02da27b2f3fe932a253aa48cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, показывающий, что было нажато сочетание клавиш Ctrl+C.  <br /></td></tr>
 <tr class="separator:ac5180e02da27b2f3fe932a253aa48cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Макросы</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Главный файл приложения </p>
+<dl class="section author"><dt>Автор</dt><dd>Александр Горбунов </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>3 июля 2023 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a></p>
+</div><h2 class="groupheader">Макросы</h2>
 <a id="ad234df54142398a5bd41b226599a04fa" name="ad234df54142398a5bd41b226599a04fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad234df54142398a5bd41b226599a04fa">&#9670;&#160;</a></span>DEFAULT_TASK_PORT</h2>
 
@@ -195,7 +216,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00006">6</a></p>
+<p>Стандартный порт для входящих заданий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00015">15</a></p>
 
 </div>
 </div>
@@ -211,7 +234,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00007">7</a></p>
+<p>Стандартный порт для исходящих данных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00017">17</a></p>
 
 </div>
 </div>
@@ -227,7 +252,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00009">9</a></p>
+<p>Тег для сокета заданий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00020">20</a></p>
 
 </div>
 </div>
@@ -243,7 +270,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00010">10</a></p>
+<p>Тег для сокета данных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00022">22</a></p>
 
 </div>
 </div>
@@ -259,7 +288,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00012">12</a></p>
+<p>Параметр изменения уровня логирования </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00025">25</a></p>
 
 </div>
 </div>
@@ -275,7 +306,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00013">13</a></p>
+<p>Параметр изменения уровня логирования (укороченный) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00027">27</a></p>
 
 </div>
 </div>
@@ -291,7 +324,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00015">15</a></p>
+<p>Аргумент для изменения логирования (LOG_LEVEL = LEVEL_TRACE) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00030">30</a></p>
 
 </div>
 </div>
@@ -307,23 +342,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00016">16</a></p>
+<p>Аргумент для изменения логирования (LOG_LEVEL = LEVEL_DEBUG) </p>
 
-</div>
-</div>
-<a id="a2e25fe130cf710da4ad800747fdd51f3" name="a2e25fe130cf710da4ad800747fdd51f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e25fe130cf710da4ad800747fdd51f3">&#9670;&#160;</a></span>LOG_LEVEL_INFO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOG_LEVEL_INFO&#160;&#160;&#160;&quot;info&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00017">17</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00032">32</a></p>
 
 </div>
 </div>
@@ -339,7 +360,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00018">18</a></p>
+<p>Аргумент для изменения логирования (LOG_LEVEL = LEVEL_WARN) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00034">34</a></p>
 
 </div>
 </div>
@@ -355,7 +378,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00019">19</a></p>
+<p>Аргумент для изменения логирования (LOG_LEVEL = LEVEL_ERROR) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00036">36</a></p>
 
 </div>
 </div>
@@ -371,7 +396,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00021">21</a></p>
+<p>Параметр изменения порта для входящих заданий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00039">39</a></p>
 
 </div>
 </div>
@@ -387,7 +414,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00022">22</a></p>
+<p>Параметр изменения порта для входящих заданий (укороченный) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00041">41</a></p>
 
 </div>
 </div>
@@ -403,7 +432,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00024">24</a></p>
+<p>Параметр изменения порта для исходящих данных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00044">44</a></p>
 
 </div>
 </div>
@@ -419,7 +450,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00025">25</a></p>
+<p>Параметр изменения порта для исходящих данных (укороченный) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00046">46</a></p>
 
 </div>
 </div>
@@ -440,7 +473,15 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00097">97</a></p>
+<p>Приём данных от клиента и передача их потоку обработки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s_token</td><td>Токен, показывающий, что была запрошена остановка потока </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00135">135</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -470,7 +511,15 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00139">139</a></p>
+<p>Обработка принятых данных и отправка результата обработки клиенту </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s_token</td><td>Токен, показывающий, что была запрошена остановка потока </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00182">182</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -500,7 +549,15 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00167">167</a></p>
+<p>Функция, вызываемая при нажатии сочетания клавиш Ctrl+C. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">signal_code</td><td>Код сигнала </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00215">215</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -529,7 +586,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00181">181</a></p>
+<p>Функция, выводящая справку на экран </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00232">232</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -564,7 +623,7 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00053">53</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00086">86</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -600,6 +659,8 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
+<p>Объект сокета входящих заданий </p>
+
 </div>
 </div>
 <a id="a1db97645d63f7de72d62baf2be9c88c9" name="a1db97645d63f7de72d62baf2be9c88c9"></a>
@@ -628,6 +689,8 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
+<p>Объект сокета исходящих данных </p>
+
 </div>
 </div>
 <a id="abeafa8ca169e406f398608a2e7522f14" name="abeafa8ca169e406f398608a2e7522f14"></a>
@@ -642,7 +705,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00030">30</a></p>
+<p>Объект менеджера заданий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00054">54</a></p>
 
 </div>
 </div>
@@ -658,7 +723,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00032">32</a></p>
+<p>Поток для приёма входящих заданий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00057">57</a></p>
 
 </div>
 </div>
@@ -674,7 +741,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00033">33</a></p>
+<p>Поток для обработки и отправки данных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00059">59</a></p>
 
 </div>
 </div>
@@ -690,7 +759,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00035">35</a></p>
+<p>Объект, необходимый для организации синхронной обработки данных двумя потоками </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00062">62</a></p>
 
 </div>
 </div>
@@ -706,7 +777,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00036">36</a></p>
+<p>Мьютекс, необходимый для организации синхронной обработки данных двумя потоками </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00064">64</a></p>
 
 </div>
 </div>
@@ -722,7 +795,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00038">38</a></p>
+<p>Флаг, показывающий, что данные бьыли приняты от клиента </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00067">67</a></p>
 
 </div>
 </div>
@@ -738,7 +813,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00039">39</a></p>
+<p>Флаг, показывающий, что данные бьыли обработаны и отправлены клиенту </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00069">69</a></p>
 
 </div>
 </div>
@@ -754,7 +831,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00041">41</a></p>
+<p>Буфер для входящих данных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00072">72</a></p>
 
 </div>
 </div>
@@ -770,7 +849,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00042">42</a></p>
+<p>Буфер для данных, переданных на обработку </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00074">74</a></p>
 
 </div>
 </div>
@@ -786,18 +867,16 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00044">44</a></p>
+<p>Флаг, показывающий, что было нажато сочетание клавиш Ctrl+C. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00077">77</a></p>
 
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
-    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

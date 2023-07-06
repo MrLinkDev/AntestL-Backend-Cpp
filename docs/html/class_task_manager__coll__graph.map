@@ -1,5 +1,5 @@
 <map id="TaskManager" name="TaskManager">
-<area shape="rect" id="Node000001" title=" " alt="" coords="224,2129,399,2897"/>
+<area shape="rect" id="Node000001" title="Класс, в котором реализованы методы для выполнения заданий или списков заданий" alt="" coords="224,2129,399,2876"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html" title="Класс набора устройств, в котором реализованы методы взаимодействия между устройствами" alt="" coords="227,1527,395,2065"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,2065,314,2112,309,2112,309,2065"/>
 <area shape="rect" id="Node000003" href="$class_vna_device.html" title="Класс, в котором реализованы методы для работы с ВАЦ" alt="" coords="5,807,193,1399"/>

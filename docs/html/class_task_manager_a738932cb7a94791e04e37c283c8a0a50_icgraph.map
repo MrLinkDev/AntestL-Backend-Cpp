@@ -1,6 +1,6 @@
 <map id="TaskManager::received_disconnect_task" name="TaskManager::received_disconnect_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="291,5,445,48"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" title=" " alt="" coords="103,13,243,40"/>
+<area shape="rect" id="Node000001" title="Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_DISCONNECT." alt="" coords="291,5,445,48"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" title="Приём данных от клиента и передача их потоку обработки" alt="" coords="103,13,243,40"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,29,244,29,244,24,276,24"/>
 <area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,55,40"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,29,55,29,55,24,88,24"/>

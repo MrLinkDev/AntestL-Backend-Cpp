@@ -120,7 +120,7 @@ var sectionId = 'dynsection-3';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" target="_top" xlink:title="Функция, вызываемая при нажатии сочетания клавиш Ctrl+C.">
 <polygon fill="white" stroke="#666666" points="755,-1775.25 658.75,-1775.25 658.75,-1755.25 755,-1755.25 755,-1775.25"/>
 <text text-anchor="middle" x="706.88" y="-1761.75" font-family="Helvetica,sans-Serif" font-size="10.00">exit_event_handler</text>
 </a>
@@ -174,7 +174,7 @@ var sectionId = 'dynsection-3';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_task_manager.html#a19b51f5809b7aa9dbffbf6293191a06f" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_task_manager.html#a19b51f5809b7aa9dbffbf6293191a06f" target="_top" xlink:title="Метод, обрабатывающий задание на настройку ВАЦ">
 <polygon fill="white" stroke="#666666" points="778.62,-1535.25 635.12,-1535.25 635.12,-1515.25 778.62,-1515.25 778.62,-1535.25"/>
 <text text-anchor="middle" x="706.88" y="-1521.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::configure_task</text>
 </a>
@@ -264,7 +264,7 @@ var sectionId = 'dynsection-3';
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" target="_top" xlink:title="Метод, обрабатывающий задание на подключение">
 <polygon fill="white" stroke="#666666" points="776.38,-1060.25 637.38,-1060.25 637.38,-1040.25 776.38,-1040.25 776.38,-1060.25"/>
 <text text-anchor="middle" x="706.88" y="-1046.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::connect_task</text>
 </a>
@@ -282,7 +282,7 @@ var sectionId = 'dynsection-3';
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" target="_top" xlink:title="Метод, обрабатывающий пришедшее задание.">
 <polygon fill="white" stroke="#666666" points="593.5,-1041.25 454.5,-1041.25 454.5,-1021.25 593.5,-1021.25 593.5,-1041.25"/>
 <text text-anchor="middle" x="524" y="-1027.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::proceed_task</text>
 </a>
@@ -300,7 +300,7 @@ var sectionId = 'dynsection-3';
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce" target="_top" xlink:title="Метод, производящий обработку принятого JSON&#45;объекта">
 <polygon fill="#fff0f0" stroke="red" points="115,-1041.25 0,-1041.25 0,-1021.25 115,-1021.25 115,-1041.25"/>
 <text text-anchor="middle" x="57.5" y="-1027.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::proceed</text>
 </a>
@@ -318,7 +318,7 @@ var sectionId = 'dynsection-3';
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" target="_top" xlink:title="Метод, позволяющий произвести обработку списка заданий, с учётом вложенности">
 <polygon fill="white" stroke="#666666" points="417,-896.25 302,-896.25 302,-864.25 417,-864.25 417,-896.25"/>
 <text text-anchor="start" x="310" y="-882.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::proceed</text>
 <text text-anchor="middle" x="359.5" y="-870.75" font-family="Helvetica,sans-Serif" font-size="10.00">_nested_task_list</text>
@@ -337,7 +337,7 @@ var sectionId = 'dynsection-3';
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4" target="_top" xlink:title=" ">
+<g id="a_Node000018"><a xlink:href="class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4" target="_top" xlink:title="Метод, обрабатывающий список заданий.">
 <polygon fill="white" stroke="#666666" points="266,-950.25 151,-950.25 151,-918.25 266,-918.25 266,-950.25"/>
 <text text-anchor="start" x="159" y="-936.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::proceed</text>
 <text text-anchor="middle" x="208.5" y="-924.75" font-family="Helvetica,sans-Serif" font-size="10.00">_task_list</text>
@@ -374,7 +374,7 @@ var sectionId = 'dynsection-3';
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title="Приём данных от клиента и передача их потоку обработки">
 <polygon fill="white" stroke="#666666" points="759.5,-1680.25 654.25,-1680.25 654.25,-1660.25 759.5,-1660.25 759.5,-1680.25"/>
 <text text-anchor="middle" x="706.88" y="-1666.75" font-family="Helvetica,sans-Serif" font-size="10.00">task_server_thread_f</text>
 </a>
@@ -392,7 +392,7 @@ var sectionId = 'dynsection-3';
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="class_task_manager.html#a87e7ab01c7c2920422402dda863da79c" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="class_task_manager.html#a87e7ab01c7c2920422402dda863da79c" target="_top" xlink:title="Метод, обрабатывающий задание на отключение">
 <polygon fill="white" stroke="#666666" points="782.75,-1022.25 631,-1022.25 631,-1002.25 782.75,-1002.25 782.75,-1022.25"/>
 <text text-anchor="middle" x="706.88" y="-1008.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::disconnect_task</text>
 </a>
@@ -500,7 +500,7 @@ var sectionId = 'dynsection-3';
 <!-- Node42 -->
 <g id="Node000042" class="node">
 <title>Node42</title>
-<g id="a_Node000042"><a xlink:href="class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" target="_top" xlink:title=" ">
+<g id="a_Node000042"><a xlink:href="class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" target="_top" xlink:title="Метод, обрабатывающий задание на проведение измерения и сбор данных">
 <polygon fill="white" stroke="#666666" points="595,-347.25 453,-347.25 453,-327.25 595,-327.25 595,-347.25"/>
 <text text-anchor="middle" x="524" y="-333.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::get_data_task</text>
 </a>
@@ -573,7 +573,7 @@ var sectionId = 'dynsection-3';
 <!-- Node51 -->
 <g id="Node000051" class="node">
 <title>Node51</title>
-<g id="a_Node000051"><a xlink:href="class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1" target="_top" xlink:title=" ">
+<g id="a_Node000051"><a xlink:href="class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1" target="_top" xlink:title="Метод, обрабатывающий задание на изменение углового диапазона">
 <polygon fill="white" stroke="#666666" points="768.12,-965.25 645.62,-965.25 645.62,-933.25 768.12,-933.25 768.12,-965.25"/>
 <text text-anchor="start" x="653.62" y="-951.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_angle</text>
 <text text-anchor="middle" x="706.88" y="-939.75" font-family="Helvetica,sans-Serif" font-size="10.00">_range_task</text>
@@ -611,7 +611,7 @@ var sectionId = 'dynsection-3';
 <!-- Node53 -->
 <g id="Node000053" class="node">
 <title>Node53</title>
-<g id="a_Node000053"><a xlink:href="class_task_manager.html#ac63779261327a9f2b120a6c7dd648110" target="_top" xlink:title=" ">
+<g id="a_Node000053"><a xlink:href="class_task_manager.html#ac63779261327a9f2b120a6c7dd648110" target="_top" xlink:title="Метод, обрабатывающий задание на изменение частотного диапазона">
 <polygon fill="white" stroke="#666666" points="764.38,-720.25 649.38,-720.25 649.38,-688.25 764.38,-688.25 764.38,-720.25"/>
 <text text-anchor="start" x="657.38" y="-706.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_freq</text>
 <text text-anchor="middle" x="706.88" y="-694.75" font-family="Helvetica,sans-Serif" font-size="10.00">_range_task</text>
@@ -756,7 +756,7 @@ var sectionId = 'dynsection-3';
 <!-- Node80 -->
 <g id="Node000080" class="node">
 <title>Node80</title>
-<g id="a_Node000080"><a xlink:href="class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6" target="_top" xlink:title=" ">
+<g id="a_Node000080"><a xlink:href="class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6" target="_top" xlink:title="Метод, обрабатывающий задание на изменение угла">
 <polygon fill="white" stroke="#666666" points="780.12,-1250.25 633.62,-1250.25 633.62,-1230.25 780.12,-1230.25 780.12,-1250.25"/>
 <text text-anchor="middle" x="706.88" y="-1236.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_angle_task</text>
 </a>
@@ -811,7 +811,7 @@ var sectionId = 'dynsection-3';
 <!-- Node83 -->
 <g id="Node000083" class="node">
 <title>Node83</title>
-<g id="a_Node000083"><a xlink:href="class_task_manager.html#a08b009e20bb0c5c16a07b2af6c66de72" target="_top" xlink:title=" ">
+<g id="a_Node000083"><a xlink:href="class_task_manager.html#a08b009e20bb0c5c16a07b2af6c66de72" target="_top" xlink:title="Метод, обрабатывающий задание на изменение частоты">
 <polygon fill="white" stroke="#666666" points="776.38,-119.25 637.38,-119.25 637.38,-99.25 776.38,-99.25 776.38,-119.25"/>
 <text text-anchor="middle" x="706.88" y="-105.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_freq_task</text>
 </a>
@@ -866,7 +866,7 @@ var sectionId = 'dynsection-3';
 <!-- Node86 -->
 <g id="Node000086" class="node">
 <title>Node86</title>
-<g id="a_Node000086"><a xlink:href="class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5" target="_top" xlink:title=" ">
+<g id="a_Node000086"><a xlink:href="class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5" target="_top" xlink:title="Метод, обрабатывающий задание на изменение положений переключателей">
 <polygon fill="white" stroke="#666666" points="777.88,-1174.25 635.88,-1174.25 635.88,-1154.25 777.88,-1154.25 777.88,-1174.25"/>
 <text text-anchor="middle" x="706.88" y="-1160.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_path_task</text>
 </a>
@@ -902,7 +902,7 @@ var sectionId = 'dynsection-3';
 <!-- Node88 -->
 <g id="Node000088" class="node">
 <title>Node88</title>
-<g id="a_Node000088"><a xlink:href="class_task_manager.html#aba128d250f6cf145f0f8bfe8a9a6c6e6" target="_top" xlink:title=" ">
+<g id="a_Node000088"><a xlink:href="class_task_manager.html#aba128d250f6cf145f0f8bfe8a9a6c6e6" target="_top" xlink:title="Метод, обрабатывающий задание на изменение мощности">
 <polygon fill="white" stroke="#666666" points="781.25,-43.25 632.5,-43.25 632.5,-23.25 781.25,-23.25 781.25,-43.25"/>
 <text text-anchor="middle" x="706.88" y="-29.75" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_power_task</text>
 </a>

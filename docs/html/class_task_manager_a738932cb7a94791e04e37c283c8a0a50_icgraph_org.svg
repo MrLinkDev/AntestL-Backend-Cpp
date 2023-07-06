@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_DISCONNECT.">
 <polygon fill="#999999" stroke="#666666" points="330,-32 214.25,-32 214.25,0 330,0 330,-32"/>
 <text text-anchor="start" x="222.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::received</text>
 <text text-anchor="middle" x="272.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_disconnect_task</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title="Приём данных от клиента и передача их потоку обработки">
 <polygon fill="white" stroke="#666666" points="178.25,-26 73,-26 73,-6 178.25,-6 178.25,-26"/>
 <text text-anchor="middle" x="125.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">task_server_thread_f</text>
 </a>

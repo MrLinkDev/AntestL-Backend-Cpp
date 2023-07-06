@@ -1,8 +1,8 @@
 <map id="SocketServer::close" name="SocketServer::close">
 <area shape="rect" id="Node000001" title="Закрытие сокета" alt="" coords="291,31,428,57"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" title=" " alt="" coords="103,5,243,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" title="Обработка принятых данных и отправка результата обработки клиенту" alt="" coords="103,5,243,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,35,243,31,244,26,277,30"/>
-<area shape="rect" id="Node000004" href="$main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" title=" " alt="" coords="109,56,237,83"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" title="Функция, вызываемая при нажатии сочетания клавиш Ctrl+C." alt="" coords="109,56,237,83"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="277,58,238,63,237,58,276,53"/>
 <area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,55,57"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,36,55,42,54,37,87,31"/>

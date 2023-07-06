@@ -102,7 +102,7 @@ var sectionId = 'dynsection-20';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9" target="_top" xlink:title="Метод, обрабатывающий задание на проведение измерения и сбор данных">
 <polygon fill="white" stroke="#666666" points="142,-20 0,-20 0,0 142,0 142,-20"/>
 <text text-anchor="middle" x="71" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::get_data_task</text>
 </a>

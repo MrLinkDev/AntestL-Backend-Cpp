@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" target="_top" xlink:title="Обработка принятых данных и отправка результата обработки клиенту">
 <polygon fill="white" stroke="#666666" points="183.12,-617 77.88,-617 77.88,-597 183.12,-597 183.12,-617"/>
 <text text-anchor="middle" x="130.5" y="-603.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_server_thread_f</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node47 -->
 <g id="Node000047" class="node">
 <title>Node47</title>
-<g id="a_Node000047"><a xlink:href="main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" target="_top" xlink:title=" ">
+<g id="a_Node000047"><a xlink:href="main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" target="_top" xlink:title="Функция, вызываемая при нажатии сочетания клавиш Ctrl+C.">
 <polygon fill="white" stroke="#666666" points="998.5,-832 902.25,-832 902.25,-812 998.5,-812 998.5,-832"/>
 <text text-anchor="middle" x="950.38" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">exit_event_handler</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node52 -->
 <g id="Node000052" class="node">
 <title>Node52</title>
-<g id="a_Node000052"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title=" ">
+<g id="a_Node000052"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title="Приём данных от клиента и передача их потоку обработки">
 <polygon fill="white" stroke="#666666" points="1003,-987 897.75,-987 897.75,-967 1003,-967 1003,-987"/>
 <text text-anchor="middle" x="950.38" y="-973.5" font-family="Helvetica,sans-Serif" font-size="10.00">task_server_thread_f</text>
 </a>
@@ -128,7 +128,7 @@
 <!-- Node56 -->
 <g id="Node000056" class="node">
 <title>Node56</title>
-<g id="a_Node000056"><a xlink:href="main_8cpp.html#a2ef30c42cbc289d899a8be5d2d8f77d0" target="_top" xlink:title=" ">
+<g id="a_Node000056"><a xlink:href="main_8cpp.html#a2ef30c42cbc289d899a8be5d2d8f77d0" target="_top" xlink:title="Функция, выводящая справку на экран">
 <polygon fill="white" stroke="#666666" points="151.62,-20 109.38,-20 109.38,0 151.62,0 151.62,-20"/>
 <text text-anchor="middle" x="130.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">usage</text>
 </a>
@@ -182,7 +182,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce" target="_top" xlink:title="Метод, производящий обработку принятого JSON&#45;объекта">
 <polygon fill="white" stroke="#666666" points="339,-485 224,-485 224,-465 339,-465 339,-485"/>
 <text text-anchor="middle" x="281.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::proceed</text>
 </a>
@@ -336,7 +336,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" target="_top" xlink:title="Метод, обрабатывающий пришедшее задание.">
 <polygon fill="white" stroke="#666666" points="832.12,-588 693.12,-588 693.12,-568 832.12,-568 832.12,-588"/>
 <text text-anchor="middle" x="762.62" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::proceed_task</text>
 </a>
@@ -354,7 +354,7 @@
 <!-- Node32 -->
 <g id="Node000032" class="node">
 <title>Node32</title>
-<g id="a_Node000032"><a xlink:href="class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4" target="_top" xlink:title=" ">
+<g id="a_Node000032"><a xlink:href="class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4" target="_top" xlink:title="Метод, обрабатывающий список заданий.">
 <polygon fill="white" stroke="#666666" points="494.88,-424 379.88,-424 379.88,-392 494.88,-392 494.88,-424"/>
 <text text-anchor="start" x="387.88" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::proceed</text>
 <text text-anchor="middle" x="437.38" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">_task_list</text>
@@ -382,7 +382,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" target="_top" xlink:title="Метод, обрабатывающий задание на подключение">
 <polygon fill="white" stroke="#666666" points="1019.88,-728 880.88,-728 880.88,-708 1019.88,-708 1019.88,-728"/>
 <text text-anchor="middle" x="950.38" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::connect_task</text>
 </a>
@@ -400,7 +400,7 @@
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="class_task_manager.html#a87e7ab01c7c2920422402dda863da79c" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="class_task_manager.html#a87e7ab01c7c2920422402dda863da79c" target="_top" xlink:title="Метод, обрабатывающий задание на отключение">
 <polygon fill="white" stroke="#666666" points="1026.25,-576 874.5,-576 874.5,-556 1026.25,-556 1026.25,-576"/>
 <text text-anchor="middle" x="950.38" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::disconnect_task</text>
 </a>
@@ -418,7 +418,7 @@
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1" target="_top" xlink:title=" ">
+<g id="a_Node000019"><a xlink:href="class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1" target="_top" xlink:title="Метод, обрабатывающий задание на изменение углового диапазона">
 <polygon fill="white" stroke="#666666" points="1011.62,-386 889.12,-386 889.12,-354 1011.62,-354 1011.62,-386"/>
 <text text-anchor="start" x="897.12" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_angle</text>
 <text text-anchor="middle" x="950.38" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range_task</text>
@@ -437,7 +437,7 @@
 <!-- Node24 -->
 <g id="Node000024" class="node">
 <title>Node24</title>
-<g id="a_Node000024"><a xlink:href="class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6" target="_top" xlink:title=" ">
+<g id="a_Node000024"><a xlink:href="class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6" target="_top" xlink:title="Метод, обрабатывающий задание на изменение угла">
 <polygon fill="white" stroke="#666666" points="1023.62,-614 877.12,-614 877.12,-594 1023.62,-594 1023.62,-614"/>
 <text text-anchor="middle" x="950.38" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_angle_task</text>
 </a>
@@ -455,7 +455,7 @@
 <!-- Node27 -->
 <g id="Node000027" class="node">
 <title>Node27</title>
-<g id="a_Node000027"><a xlink:href="class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5" target="_top" xlink:title=" ">
+<g id="a_Node000027"><a xlink:href="class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5" target="_top" xlink:title="Метод, обрабатывающий задание на изменение положений переключателей">
 <polygon fill="white" stroke="#666666" points="1021.38,-671 879.38,-671 879.38,-651 1021.38,-651 1021.38,-671"/>
 <text text-anchor="middle" x="950.38" y="-657.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_path_task</text>
 </a>
@@ -867,7 +867,7 @@
 <!-- Node34 -->
 <g id="Node000034" class="node">
 <title>Node34</title>
-<g id="a_Node000034"><a xlink:href="class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" target="_top" xlink:title=" ">
+<g id="a_Node000034"><a xlink:href="class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" target="_top" xlink:title="Метод, позволяющий произвести обработку списка заданий, с учётом вложенности">
 <polygon fill="white" stroke="#666666" points="650.75,-449 535.75,-449 535.75,-417 650.75,-417 650.75,-449"/>
 <text text-anchor="start" x="543.75" y="-435.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::proceed</text>
 <text text-anchor="middle" x="593.25" y="-423.5" font-family="Helvetica,sans-Serif" font-size="10.00">_nested_task_list</text>
@@ -970,7 +970,7 @@
 <!-- Node38 -->
 <g id="Node000038" class="node">
 <title>Node38</title>
-<g id="a_Node000038"><a xlink:href="class_task_manager.html#a0ad340d364ac4e25a7abb94aea073cb1" target="_top" xlink:title=" ">
+<g id="a_Node000038"><a xlink:href="class_task_manager.html#a0ad340d364ac4e25a7abb94aea073cb1" target="_top" xlink:title="Метод, обрабатывающий задание на сдвиг угловой точки">
 <polygon fill="#fff0f0" stroke="red" points="838.5,-462 686.75,-462 686.75,-442 838.5,-442 838.5,-462"/>
 <text text-anchor="middle" x="762.62" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::next_angle_task</text>
 </a>
@@ -988,7 +988,7 @@
 <!-- Node41 -->
 <g id="Node000041" class="node">
 <title>Node41</title>
-<g id="a_Node000041"><a xlink:href="class_task_manager.html#a2fde49fc27ecd21717c7deefe4b09dd3" target="_top" xlink:title=" ">
+<g id="a_Node000041"><a xlink:href="class_task_manager.html#a2fde49fc27ecd21717c7deefe4b09dd3" target="_top" xlink:title="Метод, обрабатывающий задание на сдвиг частотной точки">
 <polygon fill="#fff0f0" stroke="red" points="834.75,-424 690.5,-424 690.5,-404 834.75,-404 834.75,-424"/>
 <text text-anchor="middle" x="762.62" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::next_freq_task</text>
 </a>
@@ -1060,7 +1060,7 @@
 <!-- Node48 -->
 <g id="Node000048" class="node">
 <title>Node48</title>
-<g id="a_Node000048"><a xlink:href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258" target="_top" xlink:title=" ">
+<g id="a_Node000048"><a xlink:href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258" target="_top" xlink:title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения">
 <polygon fill="white" stroke="#666666" points="1199,-1132 1062.25,-1132 1062.25,-1112 1199,-1112 1199,-1132"/>
 <text text-anchor="middle" x="1130.62" y="-1118.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::request_stop</text>
 </a>
@@ -1150,7 +1150,7 @@
 <!-- Node54 -->
 <g id="Node000054" class="node">
 <title>Node54</title>
-<g id="a_Node000054"><a xlink:href="class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50" target="_top" xlink:title=" ">
+<g id="a_Node000054"><a xlink:href="class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50" target="_top" xlink:title="Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_DISCONNECT.">
 <polygon fill="white" stroke="#666666" points="1188.5,-1232 1072.75,-1232 1072.75,-1200 1188.5,-1200 1188.5,-1232"/>
 <text text-anchor="start" x="1080.75" y="-1218.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::received</text>
 <text text-anchor="middle" x="1130.62" y="-1206.5" font-family="Helvetica,sans-Serif" font-size="10.00">_disconnect_task</text>
@@ -1169,7 +1169,7 @@
 <!-- Node55 -->
 <g id="Node000055" class="node">
 <title>Node55</title>
-<g id="a_Node000055"><a xlink:href="class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7" target="_top" xlink:title=" ">
+<g id="a_Node000055"><a xlink:href="class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7" target="_top" xlink:title="Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_STOP.">
 <polygon fill="white" stroke="#666666" points="1188.5,-1182 1072.75,-1182 1072.75,-1150 1188.5,-1150 1188.5,-1182"/>
 <text text-anchor="start" x="1080.75" y="-1168.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::received</text>
 <text text-anchor="middle" x="1130.62" y="-1156.5" font-family="Helvetica,sans-Serif" font-size="10.00">_stop_task</text>

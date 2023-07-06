@@ -1,13 +1,13 @@
 <map id="DeviceSet::reset_stop_request" name="DeviceSet::reset_stop_request">
 <area shape="rect" id="Node000001" title="Сбрасывает флаг stop_request (присваивает значение false)" alt="" coords="895,35,1043,77"/>
-<area shape="rect" id="Node000002" href="$class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" title=" " alt="" coords="694,5,847,48"/>
+<area shape="rect" id="Node000002" href="$class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" title="Метод, позволяющий произвести обработку списка заданий, с учётом вложенности" alt="" coords="694,5,847,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="880,46,847,41,848,35,881,40"/>
-<area shape="rect" id="Node000003" href="$class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4" title=" " alt="" coords="492,35,646,77"/>
+<area shape="rect" id="Node000003" href="$class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4" title="Метод, обрабатывающий список заданий." alt="" coords="492,35,646,77"/>
 <area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="880,62,847,63,694,63,646,62,646,56,694,57,847,57,880,57"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="679,43,646,47,645,42,679,37"/>
-<area shape="rect" id="Node000004" href="$class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce" title=" " alt="" coords="291,43,444,69"/>
+<area shape="rect" id="Node000004" href="$class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce" title="Метод, производящий обработку принятого JSON&#45;объекта" alt="" coords="291,43,444,69"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="478,59,444,59,444,53,478,53"/>
-<area shape="rect" id="Node000005" href="$main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" title=" " alt="" coords="103,43,243,69"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" title="Обработка принятых данных и отправка результата обработки клиенту" alt="" coords="103,43,243,69"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="276,59,243,59,243,53,276,53"/>
 <area shape="rect" id="Node000006" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,43,55,69"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="88,59,55,59,55,53,88,53"/>

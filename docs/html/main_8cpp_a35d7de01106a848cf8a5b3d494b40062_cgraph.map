@@ -1,10 +1,10 @@
 <map id="exit_event_handler" name="exit_event_handler">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,134,133"/>
+<area shape="rect" id="Node000001" title="Функция, вызываемая при нажатии сочетания клавиш Ctrl+C." alt="" coords="5,107,134,133"/>
 <area shape="rect" id="Node000002" href="$class_socket_server.html#a1e673e526a459bdb3ca92e103ec212ae" title="Закрытие сокета" alt="" coords="204,56,342,83"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,103,202,84,203,89,127,109"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="451,81,536,108"/>
 <area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="134,114,436,95,436,101,134,119"/>
-<area shape="rect" id="Node000008" href="$class_task_manager.html#a601272b5c895a310aec3d430b19c6258" title=" " alt="" coords="182,157,364,184"/>
+<area shape="rect" id="Node000008" href="$class_task_manager.html#a601272b5c895a310aec3d430b19c6258" title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения" alt="" coords="182,157,364,184"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="127,131,203,151,202,156,126,137"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,75,436,86,436,91,342,80"/>
 <area shape="rect" id="Node000004" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="645,5,763,32"/>

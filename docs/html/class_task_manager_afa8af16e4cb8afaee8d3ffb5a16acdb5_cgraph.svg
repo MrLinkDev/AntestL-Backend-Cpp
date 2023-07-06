@@ -57,7 +57,7 @@ var sectionId = 'dynsection-17';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Метод, обрабатывающий задание на изменение положений переключателей">
 <polygon fill="#999999" stroke="#666666" points="142,-77 0,-77 0,-57 142,-57 142,-77"/>
 <text text-anchor="middle" x="71" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_path_task</text>
 </a>

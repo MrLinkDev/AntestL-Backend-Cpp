@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Приём данных от клиента и передача их потоку обработки">
 <polygon fill="#999999" stroke="#666666" points="105.25,-164 0,-164 0,-144 105.25,-144 105.25,-164"/>
 <text text-anchor="middle" x="52.62" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">task_server_thread_f</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50" target="_top" xlink:title="Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_DISCONNECT.">
 <polygon fill="white" stroke="#666666" points="267.5,-170 151.75,-170 151.75,-138 267.5,-138 267.5,-170"/>
 <text text-anchor="start" x="159.75" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::received</text>
 <text text-anchor="middle" x="209.62" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">_disconnect_task</text>
@@ -93,7 +93,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7" target="_top" xlink:title="Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_STOP.">
 <polygon fill="white" stroke="#666666" points="267.5,-120 151.75,-120 151.75,-88 267.5,-88 267.5,-120"/>
 <text text-anchor="start" x="159.75" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::received</text>
 <text text-anchor="middle" x="209.62" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">_stop_task</text>
@@ -112,7 +112,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258" target="_top" xlink:title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения">
 <polygon fill="white" stroke="#666666" points="278,-20 141.25,-20 141.25,0 278,0 278,-20"/>
 <text text-anchor="middle" x="209.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::request_stop</text>
 </a>

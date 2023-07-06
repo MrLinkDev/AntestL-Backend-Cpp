@@ -1,6 +1,6 @@
 <map id="SocketServer::read_data" name="SocketServer::read_data">
 <area shape="rect" id="Node000001" title="Чтение данных от клиента" alt="" coords="291,5,454,32"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" title=" " alt="" coords="103,5,243,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" title="Приём данных от клиента и передача их потоку обработки" alt="" coords="103,5,243,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,21,243,21,243,16,276,16"/>
 <area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,21,55,21,55,16,88,16"/>

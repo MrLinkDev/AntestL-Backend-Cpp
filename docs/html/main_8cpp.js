@@ -8,7 +8,6 @@ var main_8cpp =
     [ "LOG_LEVEL_PARAM_SHORT", "main_8cpp.html#a46bd9ef4cd0f0b71830f63b58bc8acb3", null ],
     [ "LOG_LEVEL_TRACE", "main_8cpp.html#a15856724811f59e6f351153e89380f5d", null ],
     [ "LOG_LEVEL_DEBUG", "main_8cpp.html#a130224df8c6bf22a688e3cb74a45689a", null ],
-    [ "LOG_LEVEL_INFO", "main_8cpp.html#a2e25fe130cf710da4ad800747fdd51f3", null ],
     [ "LOG_LEVEL_WARN", "main_8cpp.html#a14f43a1fab62b98fc88603cdb988de3d", null ],
     [ "LOG_LEVEL_ERROR", "main_8cpp.html#a742fc70e331d7e568bd893c514756a29", null ],
     [ "TASK_PORT_PARAM", "main_8cpp.html#a61c2755b82e2b596c35ef5a9937585d8", null ],

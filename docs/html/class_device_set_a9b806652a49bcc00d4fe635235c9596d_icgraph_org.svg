@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258" target="_top" xlink:title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения">
 <polygon fill="white" stroke="#666666" points="351,-39 214.25,-39 214.25,-19 351,-19 351,-39"/>
 <text text-anchor="middle" x="282.62" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::request_stop</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="main_8cpp.html#a35d7de01106a848cf8a5b3d494b40062" target="_top" xlink:title="Функция, вызываемая при нажатии сочетания клавиш Ctrl+C.">
 <polygon fill="white" stroke="#666666" points="173.75,-58 77.5,-58 77.5,-38 173.75,-38 173.75,-58"/>
 <text text-anchor="middle" x="125.62" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">exit_event_handler</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title="Приём данных от клиента и передача их потоку обработки">
 <polygon fill="white" stroke="#666666" points="178.25,-20 73,-20 73,0 178.25,0 178.25,-20"/>
 <text text-anchor="middle" x="125.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">task_server_thread_f</text>
 </a>

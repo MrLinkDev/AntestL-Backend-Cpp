@@ -1,12 +1,12 @@
 <map id="TaskManager::proceed_task_list" name="TaskManager::proceed_task_list">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,359,159,401"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий список заданий." alt="" coords="5,359,159,401"/>
 <area shape="rect" id="Node000002" href="$namespacearray__utils.html#a1e33a0a2262dcc16869a564112ff43f3" title="Функция для сравнения величины вложенности двух заданий" alt="" coords="214,5,353,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,358,95,301,118,224,153,141,177,101,205,65,215,55,219,59,209,68,181,104,158,143,123,226,101,303,89,359"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="1153,417,1238,444"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,357,155,285,198,240,249,194,306,152,369,116,437,92,472,85,508,83,761,83,850,79,922,76,956,80,990,90,1025,106,1064,133,1084,169,1118,245,1185,402,1180,405,1113,247,1079,172,1060,136,1022,111,988,95,955,85,922,82,850,84,761,88,508,88,473,90,438,97,371,121,309,156,252,198,202,244,159,289,101,360"/>
-<area shape="rect" id="Node000008" href="$class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" title=" " alt="" coords="207,417,360,460"/>
+<area shape="rect" id="Node000008" href="$class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" title="Метод, позволяющий произвести обработку списка заданий, с учётом вложенности" alt="" coords="207,417,360,460"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="158,399,195,410,193,415,157,404"/>
-<area shape="rect" id="Node000020" href="$class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" title=" " alt="" coords="417,367,602,393"/>
+<area shape="rect" id="Node000020" href="$class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be" title="Метод, обрабатывающий пришедшее задание." alt="" coords="417,367,602,393"/>
 <area shape="poly" id="edge54_Node000001_Node000020" title=" " alt="" coords="159,377,402,377,402,383,159,383"/>
 <area shape="rect" id="Node000039" href="$class_device_set.html#adee7ff2a8a80e6ddf44274d6c2828a2c" title="Сбрасывает флаг stop_request (присваивает значение false)" alt="" coords="435,652,583,695"/>
 <area shape="poly" id="edge55_Node000001_Node000039" title=" " alt="" coords="107,400,157,448,229,511,316,578,409,638,423,644,420,649,407,642,313,583,226,516,153,452,103,404"/>
@@ -25,9 +25,9 @@
 <area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="308,415,366,369,449,310,549,253,603,229,658,209,721,195,786,188,903,186,903,191,786,193,722,201,659,215,605,234,552,258,452,315,369,373,311,419"/>
 <area shape="rect" id="Node000012" href="$class_device_set.html#a6b558cdb43f83e3948cd1154a15841ad" title="Устанавливает частотную точку, соответствующую началу диапазона." alt="" coords="442,417,577,460"/>
 <area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="360,436,426,436,426,441,360,441"/>
-<area shape="rect" id="Node000014" href="$class_task_manager.html#a0ad340d364ac4e25a7abb94aea073cb1" title=" " alt="" coords="408,551,610,577"/>
+<area shape="rect" id="Node000014" href="$class_task_manager.html#a0ad340d364ac4e25a7abb94aea073cb1" title="Метод, обрабатывающий задание на сдвиг угловой точки" alt="" coords="408,551,610,577"/>
 <area shape="poly" id="edge16_Node000008_Node000014" title=" " alt="" coords="307,458,352,498,380,519,409,536,425,543,423,548,407,541,377,523,348,502,304,462"/>
-<area shape="rect" id="Node000017" href="$class_task_manager.html#a2fde49fc27ecd21717c7deefe4b09dd3" title=" " alt="" coords="413,601,605,628"/>
+<area shape="rect" id="Node000017" href="$class_task_manager.html#a2fde49fc27ecd21717c7deefe4b09dd3" title="Метод, обрабатывающий задание на сдвиг частотной точки" alt="" coords="413,601,605,628"/>
 <area shape="poly" id="edge19_Node000008_Node000017" title=" " alt="" coords="299,459,342,523,373,558,409,587,420,593,417,597,407,592,369,562,338,526,294,462"/>
 <area shape="poly" id="edge22_Node000008_Node000020" title=" " alt="" coords="360,415,407,403,438,395,439,400,409,408,361,421"/>
 <area shape="poly" id="edge53_Node000008_Node000039" title=" " alt="" coords="300,459,363,565,410,638,423,647,420,651,406,642,359,568,295,462"/>
@@ -46,15 +46,15 @@
 <area shape="rect" id="Node000019" href="$class_gen_device.html#a57adce7e8826e6ae5e6b1612e5f8f750" title="Переход к следующей частотной точке" alt="" coords="913,981,1058,1008"/>
 <area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="831,975,899,982,898,988,830,980"/>
 <area shape="poly" id="edge33_Node000020_Node000003" title=" " alt="" coords="602,374,814,374,938,382,1062,397,1139,413,1137,419,1062,403,938,387,813,380,602,379"/>
-<area shape="rect" id="Node000021" href="$class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" title=" " alt="" coords="667,392,852,419"/>
+<area shape="rect" id="Node000021" href="$class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49" title="Метод, обрабатывающий задание на подключение" alt="" coords="667,392,852,419"/>
 <area shape="poly" id="edge23_Node000020_Node000021" title=" " alt="" coords="603,387,652,392,652,397,602,392"/>
-<area shape="rect" id="Node000026" href="$class_task_manager.html#a87e7ab01c7c2920422402dda863da79c" title=" " alt="" coords="658,443,861,469"/>
+<area shape="rect" id="Node000026" href="$class_task_manager.html#a87e7ab01c7c2920422402dda863da79c" title="Метод, обрабатывающий задание на отключение" alt="" coords="658,443,861,469"/>
 <area shape="poly" id="edge30_Node000020_Node000026" title=" " alt="" coords="575,391,611,403,636,416,659,428,681,436,680,441,657,433,633,420,609,408,574,396"/>
-<area shape="rect" id="Node000028" href="$class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1" title=" " alt="" coords="678,224,841,267"/>
+<area shape="rect" id="Node000028" href="$class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1" title="Метод, обрабатывающий задание на изменение углового диапазона" alt="" coords="678,224,841,267"/>
 <area shape="poly" id="edge34_Node000020_Node000028" title=" " alt="" coords="528,364,585,326,657,283,684,270,686,275,660,288,587,330,531,368"/>
-<area shape="rect" id="Node000031" href="$class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6" title=" " alt="" coords="662,661,857,688"/>
+<area shape="rect" id="Node000031" href="$class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6" title="Метод, обрабатывающий задание на изменение угла" alt="" coords="662,661,857,688"/>
 <area shape="poly" id="edge40_Node000020_Node000031" title=" " alt="" coords="592,392,612,403,671,503,747,647,742,649,666,506,608,407,589,396"/>
-<area shape="rect" id="Node000034" href="$class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5" title=" " alt="" coords="665,763,854,789"/>
+<area shape="rect" id="Node000034" href="$class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5" title="Метод, обрабатывающий задание на изменение положений переключателей" alt="" coords="665,763,854,789"/>
 <area shape="poly" id="edge45_Node000020_Node000034" title=" " alt="" coords="598,392,612,404,638,440,649,476,650,512,645,547,639,583,637,620,643,658,661,699,687,729,719,753,716,757,683,733,656,701,638,659,632,620,634,582,640,546,644,511,643,477,633,443,608,407,595,396"/>
 <area shape="poly" id="edge29_Node000021_Node000003" title=" " alt="" coords="853,408,1138,425,1137,430,853,413"/>
 <area shape="rect" id="Node000022" href="$class_device_set.html#a2dab046962f4ada089046e2fa4769c23" title="Метод, позволяющий осуществить подключение к устройству." alt="" coords="919,560,1052,587"/>

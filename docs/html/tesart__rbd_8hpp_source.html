@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('tesart__rbd_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,6 +69,11 @@ $(document).ready(function(){initNavTree('tesart__rbd_8hpp_source.html',''); ini
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6fac9273c1f4413d2ee63ba6cd0b0eb2.html">devices</a></li><li class="navelem"><a class="el" href="dir_094120fcb12e83d239f59734d21d23c5.html">rbd</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">tesart_rbd.hpp</div></div>
 </div><!--header-->
@@ -172,13 +156,9 @@ $(document).ready(function(){initNavTree('tesart__rbd_8hpp_source.html',''); ini
 <div class="ttc" id="aclass_visa_device_html"><div class="ttname"><a href="class_visa_device.html">VisaDevice</a></div><div class="ttdoc">Класс, в котором реализованы методы для управления устройством с помощью API VISA.</div><div class="ttdef"><b>Definition</b> <a href="visa__device_8hpp_source.html#l00074">visa_device.hpp:74</a></div></div>
 <div class="ttc" id="arbd__device_8hpp_html"><div class="ttname"><a href="rbd__device_8hpp.html">rbd_device.hpp</a></div><div class="ttdoc">Заголовочный файл, в котором реализован класс RbdDevice.</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6fac9273c1f4413d2ee63ba6cd0b0eb2.html">devices</a></li><li class="navelem"><a class="el" href="dir_094120fcb12e83d239f59734d21d23c5.html">rbd</a></li><li class="navelem"><a class="el" href="tesart__rbd_8hpp.html">tesart_rbd.hpp</a></li>
-    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

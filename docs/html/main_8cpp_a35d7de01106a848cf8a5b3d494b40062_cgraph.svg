@@ -57,7 +57,7 @@ var sectionId = 'dynsection-5';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Функция, вызываемая при нажатии сочетания клавиш Ctrl+C.">
 <polygon fill="#999999" stroke="#666666" points="96.25,-58 0,-58 0,-38 96.25,-38 96.25,-58"/>
 <text text-anchor="middle" x="48.12" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">exit_event_handler</text>
 </a>
@@ -102,7 +102,7 @@ var sectionId = 'dynsection-5';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258" target="_top" xlink:title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения">
 <polygon fill="white" stroke="#666666" points="269,-20 132.25,-20 132.25,0 269,0 269,-20"/>
 <text text-anchor="middle" x="200.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::request_stop</text>
 </a>

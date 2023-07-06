@@ -18,11 +18,11 @@
 <area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="563,208,508,247,505,243,560,204"/>
 <area shape="rect" id="Node000005" href="$device__set_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа DeviceSet." alt="" coords="292,427,418,469"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="528,387,413,429,411,424,526,382"/>
-<area shape="rect" id="Node000006" href="$task__manager_8hpp.html" title=" " alt="" coords="592,435,742,461"/>
+<area shape="rect" id="Node000006" href="$task__manager_8hpp.html" title="Заголовочный файл, в котором определён класс TaskManager и набор констант для работы с ним" alt="" coords="592,435,742,461"/>
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="624,389,659,433,655,436,620,392"/>
-<area shape="rect" id="Node000007" href="$main_8cpp.html" title=" " alt="" coords="803,517,899,544"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html" title="Главный файл приложения" alt="" coords="803,517,899,544"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="710,465,823,514,821,519,708,470"/>
-<area shape="rect" id="Node000008" href="$task__manager_8cpp.html" title=" " alt="" coords="592,517,742,544"/>
+<area shape="rect" id="Node000008" href="$task__manager_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа TaskManager." alt="" coords="592,517,742,544"/>
 <area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="670,476,670,517,664,517,664,476"/>
 <area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="518,295,571,333,568,338,515,299"/>
 <area shape="rect" id="Node000010" href="$keysight__gen_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа KeysightGen." alt="" coords="346,336,510,379"/>

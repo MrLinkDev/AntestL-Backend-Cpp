@@ -18,8 +18,8 @@ var task__manager_8hpp =
     [ "TASK_TYPE_NEXT_ANGLE", "task__manager_8hpp.html#a383b124cebb02003ea7143e2605d5848", null ],
     [ "TASK_TYPE_CHANGE_PATH", "task__manager_8hpp.html#abe1b38ade4f536e30b0b53cab9e04584", null ],
     [ "TASK_TYPE_GET_DATA", "task__manager_8hpp.html#af87b2380367ee139ec4bc8afda82b39e", null ],
-    [ "TASK_TYPE_DISCONNECT", "task__manager_8hpp.html#a35c892f8a0f6d69a03b5a42193caf7d2", null ],
     [ "TASK_TYPE_STOP", "task__manager_8hpp.html#a1a9d18fbc855fe972c066be45842ddf0", null ],
+    [ "TASK_TYPE_DISCONNECT", "task__manager_8hpp.html#a35c892f8a0f6d69a03b5a42193caf7d2", null ],
     [ "DEVICE_EXT_GEN", "task__manager_8hpp.html#aadaad9dd32eedc3e66e2e69fbfcbcd34", null ],
     [ "DEVICE_RBD_UPKB", "task__manager_8hpp.html#aefd10a18fbb82547eaa2467527e0dfef", null ],
     [ "DEVICE_RBD_TESART", "task__manager_8hpp.html#a7077c36872a08cfde96f3027e565e4a3", null ],
@@ -57,7 +57,5 @@ var task__manager_8hpp =
     [ "WRONG_TASK_TYPE_ID", "task__manager_8hpp.html#a36ec21082d15145908a3d22d15adc956", null ],
     [ "WRONG_TASK_TYPE_MSG", "task__manager_8hpp.html#a4b042fcfcd1dfb09a0a4373c1ca9ff3c", null ],
     [ "NO_TASK_ID", "task__manager_8hpp.html#aad001e4160b947bd603f710f2d4623a2", null ],
-    [ "NO_TASK_MSG", "task__manager_8hpp.html#a78a771210d05cde6ae043788d0e934e1", null ],
-    [ "PARSE_ERROR_ID", "task__manager_8hpp.html#ac930e625f1433f82540109a2df197d8d", null ],
-    [ "PARSE_ERROR_MSG", "task__manager_8hpp.html#a1a089b89558138a1dd5ebcd11c8a8a86", null ]
+    [ "NO_TASK_MSG", "task__manager_8hpp.html#a78a771210d05cde6ae043788d0e934e1", null ]
 ];

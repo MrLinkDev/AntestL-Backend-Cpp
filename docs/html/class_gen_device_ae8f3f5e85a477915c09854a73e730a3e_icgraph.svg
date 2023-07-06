@@ -161,7 +161,7 @@ var sectionId = 'dynsection-9';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" target="_top" xlink:title="Обработка принятых данных и отправка результата обработки клиенту">
 <polygon fill="white" stroke="#666666" points="178.25,-76 73,-76 73,-56 178.25,-56 178.25,-76"/>
 <text text-anchor="middle" x="125.62" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_server_thread_f</text>
 </a>

@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_task_manager.html#a19b51f5809b7aa9dbffbf6293191a06f" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_task_manager.html#a19b51f5809b7aa9dbffbf6293191a06f" target="_top" xlink:title="Метод, обрабатывающий задание на настройку ВАЦ">
 <polygon fill="white" stroke="#666666" points="143.5,-20 0,-20 0,0 143.5,0 143.5,-20"/>
 <text text-anchor="middle" x="71.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::configure_task</text>
 </a>

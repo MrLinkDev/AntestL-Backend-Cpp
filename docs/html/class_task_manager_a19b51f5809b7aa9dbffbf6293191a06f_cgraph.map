@@ -1,5 +1,5 @@
 <map id="TaskManager::configure_task" name="TaskManager::configure_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,197,159"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий задание на настройку ВАЦ" alt="" coords="5,132,197,159"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#a0d62de2e486d260f500a81c0e39ec22a" title="Настраивает ВАЦ для требуемого измерения" alt="" coords="245,107,384,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,131,230,127,230,133,198,137"/>
 <area shape="rect" id="Node000006" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="469,157,554,184"/>

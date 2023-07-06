@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="main_8cpp.html#a205c0f32d26b6f27c711fa201d02c983" target="_top" xlink:title="Обработка принятых данных и отправка результата обработки клиенту">
 <polygon fill="white" stroke="#666666" points="178.25,-58 73,-58 73,-38 178.25,-38 178.25,-58"/>
 <text text-anchor="middle" x="125.62" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_server_thread_f</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="main_8cpp.html#aef72d10ff26fe620d5f0a0f8412d7a2b" target="_top" xlink:title="Приём данных от клиента и передача их потоку обработки">
 <polygon fill="white" stroke="#666666" points="178.25,-20 73,-20 73,0 178.25,0 178.25,-20"/>
 <text text-anchor="middle" x="125.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">task_server_thread_f</text>
 </a>

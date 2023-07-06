@@ -1,5 +1,5 @@
 <map id="TaskManager::request_stop" name="TaskManager::request_stop">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="Node000001" title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения" alt="" coords="5,5,188,32"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#a9b806652a49bcc00d4fe635235c9596d" title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения" alt="" coords="236,5,398,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,16,221,16,221,21,188,21"/>
 </map>

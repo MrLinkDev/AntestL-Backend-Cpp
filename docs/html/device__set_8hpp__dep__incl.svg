@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="task__manager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="task__manager_8hpp.html" target="_top" xlink:title="Заголовочный файл, в котором определён класс TaskManager и набор констант для работы с ним">
 <polygon fill="white" stroke="#666666" points="225.75,-82 113,-82 113,-62 225.75,-62 225.75,-82"/>
 <text text-anchor="middle" x="169.38" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/task_manager.hpp</text>
 </a>
@@ -68,7 +68,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="main_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="main_8cpp.html" target="_top" xlink:title="Главный файл приложения">
 <polygon fill="white" stroke="#666666" points="149.5,-20 77.25,-20 77.25,0 149.5,0 149.5,-20"/>
 <text text-anchor="middle" x="113.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main.cpp</text>
 </a>
@@ -86,7 +86,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="task__manager_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="task__manager_8cpp.html" target="_top" xlink:title="Файл исходного кода, в котором реализованы методы для класа TaskManager.">
 <polygon fill="white" stroke="#666666" points="280.75,-20 168,-20 168,0 280.75,0 280.75,-20"/>
 <text text-anchor="middle" x="224.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/task_manager.cpp</text>
 </a>

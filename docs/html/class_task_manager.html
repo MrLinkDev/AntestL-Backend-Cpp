@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_task_manager.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,6 +69,7 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
@@ -99,6 +79,9 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
   <div class="headertitle"><div class="title">Класс TaskManager</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Класс, в котором реализованы методы для выполнения заданий или списков заданий  
+ <a href="class_task_manager.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -112,59 +95,79 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 <tr class="memitem:ab1adaa0f5b87d8fb26c09e7883fdd9fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#ab1adaa0f5b87d8fb26c09e7883fdd9fe">TaskManager</a> ()=default</td></tr>
 <tr class="separator:ab1adaa0f5b87d8fb26c09e7883fdd9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62720d3b2e70353688122cf2b706b3ce"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a62720d3b2e70353688122cf2b706b3ce">proceed</a> (const json &amp;data)</td></tr>
+<tr class="memdesc:a62720d3b2e70353688122cf2b706b3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, производящий обработку принятого JSON-объекта  <br /></td></tr>
 <tr class="separator:a62720d3b2e70353688122cf2b706b3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55032bf51c0426d8df0477991e46d9f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7">received_stop_task</a> (const json &amp;data)</td></tr>
+<tr class="memdesc:a55032bf51c0426d8df0477991e46d9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_STOP.  <br /></td></tr>
 <tr class="separator:a55032bf51c0426d8df0477991e46d9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a738932cb7a94791e04e37c283c8a0a50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50">received_disconnect_task</a> (const json &amp;data)</td></tr>
+<tr class="memdesc:a738932cb7a94791e04e37c283c8a0a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_DISCONNECT.  <br /></td></tr>
 <tr class="separator:a738932cb7a94791e04e37c283c8a0a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a601272b5c895a310aec3d430b19c6258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a601272b5c895a310aec3d430b19c6258">request_stop</a> ()</td></tr>
+<tr class="memdesc:a601272b5c895a310aec3d430b19c6258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения  <br /></td></tr>
 <tr class="separator:a601272b5c895a310aec3d430b19c6258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae49fdc0b6d9b5a18f35045bb4efde443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#ae49fdc0b6d9b5a18f35045bb4efde443">reset_stop_request</a> ()</td></tr>
-<tr class="separator:ae49fdc0b6d9b5a18f35045bb4efde443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Закрытые члены</h2></td></tr>
 <tr class="memitem:a77f0d9e4c9363a126cedba6c47cece49"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49">connect_task</a> (json device_list)</td></tr>
+<tr class="memdesc:a77f0d9e4c9363a126cedba6c47cece49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на подключение  <br /></td></tr>
 <tr class="separator:a77f0d9e4c9363a126cedba6c47cece49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e7ab01c7c2920422402dda863da79c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a87e7ab01c7c2920422402dda863da79c">disconnect_task</a> ()</td></tr>
+<tr class="memdesc:a87e7ab01c7c2920422402dda863da79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на отключение  <br /></td></tr>
 <tr class="separator:a87e7ab01c7c2920422402dda863da79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19b51f5809b7aa9dbffbf6293191a06f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a19b51f5809b7aa9dbffbf6293191a06f">configure_task</a> (json config_params)</td></tr>
+<tr class="memdesc:a19b51f5809b7aa9dbffbf6293191a06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на настройку ВАЦ  <br /></td></tr>
 <tr class="separator:a19b51f5809b7aa9dbffbf6293191a06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba128d250f6cf145f0f8bfe8a9a6c6e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#aba128d250f6cf145f0f8bfe8a9a6c6e6">set_power_task</a> (json power_value)</td></tr>
+<tr class="memdesc:aba128d250f6cf145f0f8bfe8a9a6c6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на изменение мощности  <br /></td></tr>
 <tr class="separator:aba128d250f6cf145f0f8bfe8a9a6c6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b009e20bb0c5c16a07b2af6c66de72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a08b009e20bb0c5c16a07b2af6c66de72">set_freq_task</a> (json freq_value)</td></tr>
+<tr class="memdesc:a08b009e20bb0c5c16a07b2af6c66de72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на изменение частоты  <br /></td></tr>
 <tr class="separator:a08b009e20bb0c5c16a07b2af6c66de72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac63779261327a9f2b120a6c7dd648110"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#ac63779261327a9f2b120a6c7dd648110">set_freq_range_task</a> (json freq_range)</td></tr>
+<tr class="memdesc:ac63779261327a9f2b120a6c7dd648110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на изменение частотного диапазона  <br /></td></tr>
 <tr class="separator:ac63779261327a9f2b120a6c7dd648110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fde49fc27ecd21717c7deefe4b09dd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a2fde49fc27ecd21717c7deefe4b09dd3">next_freq_task</a> ()</td></tr>
+<tr class="memdesc:a2fde49fc27ecd21717c7deefe4b09dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на сдвиг частотной точки  <br /></td></tr>
 <tr class="separator:a2fde49fc27ecd21717c7deefe4b09dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0c608c54c59007d9b71fe2b5744bf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#aaa0c608c54c59007d9b71fe2b5744bf6">set_angle_task</a> (json angle_value)</td></tr>
+<tr class="memdesc:aaa0c608c54c59007d9b71fe2b5744bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на изменение угла  <br /></td></tr>
 <tr class="separator:aaa0c608c54c59007d9b71fe2b5744bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9dd8d653be63d6f9834fb96057d50a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#aa9dd8d653be63d6f9834fb96057d50a1">set_angle_range_task</a> (json angle_range)</td></tr>
+<tr class="memdesc:aa9dd8d653be63d6f9834fb96057d50a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на изменение углового диапазона  <br /></td></tr>
 <tr class="separator:aa9dd8d653be63d6f9834fb96057d50a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ad340d364ac4e25a7abb94aea073cb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a0ad340d364ac4e25a7abb94aea073cb1">next_angle_task</a> (int axis_num)</td></tr>
+<tr class="memdesc:a0ad340d364ac4e25a7abb94aea073cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на сдвиг угловой точки  <br /></td></tr>
 <tr class="separator:a0ad340d364ac4e25a7abb94aea073cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa8af16e4cb8afaee8d3ffb5a16acdb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#afa8af16e4cb8afaee8d3ffb5a16acdb5">set_path_task</a> (json path_values)</td></tr>
+<tr class="memdesc:afa8af16e4cb8afaee8d3ffb5a16acdb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на изменение положений переключателей  <br /></td></tr>
 <tr class="separator:afa8af16e4cb8afaee8d3ffb5a16acdb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3231694b87f589a6e4b9a01e67bfe9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a7b3231694b87f589a6e4b9a01e67bfe9">get_data_task</a> (json port_list)</td></tr>
+<tr class="memdesc:a7b3231694b87f589a6e4b9a01e67bfe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий задание на проведение измерения и сбор данных  <br /></td></tr>
 <tr class="separator:a7b3231694b87f589a6e4b9a01e67bfe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf6a739a56cdc1bdf2cd71666c6f31be"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#abf6a739a56cdc1bdf2cd71666c6f31be">proceed_task</a> (const json &amp;task)</td></tr>
+<tr class="memdesc:abf6a739a56cdc1bdf2cd71666c6f31be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий пришедшее задание.  <br /></td></tr>
 <tr class="separator:abf6a739a56cdc1bdf2cd71666c6f31be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b629612e2a111fdcc964c4eb3f8b1f4"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a4b629612e2a111fdcc964c4eb3f8b1f4">proceed_task_list</a> (const json &amp;task_list)</td></tr>
+<tr class="memdesc:a4b629612e2a111fdcc964c4eb3f8b1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, обрабатывающий список заданий.  <br /></td></tr>
 <tr class="separator:a4b629612e2a111fdcc964c4eb3f8b1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9d635ee64d44cc34b619f2e3018e9d1"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1">proceed_nested_task_list</a> (std::vector&lt; json &gt; nested_task_list)</td></tr>
+<tr class="memdesc:ad9d635ee64d44cc34b619f2e3018e9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, позволяющий произвести обработку списка заданий, с учётом вложенности  <br /></td></tr>
 <tr class="separator:ad9d635ee64d44cc34b619f2e3018e9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Закрытые данные</h2></td></tr>
 <tr class="memitem:a97a87a01b8705db4fb965be54b2d3301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_device_set.html">DeviceSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#a97a87a01b8705db4fb965be54b2d3301">device_set</a></td></tr>
+<tr class="memdesc:a97a87a01b8705db4fb965be54b2d3301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Набор устройств  <br /></td></tr>
 <tr class="separator:a97a87a01b8705db4fb965be54b2d3301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95aed84e5431769d1c9faaf9fcb6791"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task_manager.html#ab95aed84e5431769d1c9faaf9fcb6791">stop_requested</a> = false</td></tr>
+<tr class="memdesc:ab95aed84e5431769d1c9faaf9fcb6791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, показывающий требуется ли остановка измерений или нет  <br /></td></tr>
 <tr class="separator:ab95aed84e5431769d1c9faaf9fcb6791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00098">98</a></p>
+<div class="textblock"><p>Класс, в котором реализованы методы для выполнения заданий или списков заданий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00165">165</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="ab1adaa0f5b87d8fb26c09e7883fdd9fe" name="ab1adaa0f5b87d8fb26c09e7883fdd9fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1adaa0f5b87d8fb26c09e7883fdd9fe">&#9670;&#160;</a></span>TaskManager()</h2>
@@ -216,7 +219,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00004">4</a></p>
+<p>Метод, обрабатывающий задание на подключение </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_list</td><td>JSON объект, содержащий в себе список устройств и адресов этих устройств</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат выполнения задания </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00020">20</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -253,7 +265,9 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00047">47</a></p>
+<p>Метод, обрабатывающий задание на отключение </p>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00066">66</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -291,7 +305,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00054">54</a></p>
+<p>Метод, обрабатывающий задание на настройку ВАЦ </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config_params</td><td>JSON объект, в котором хранится список параметров для настройки ВАЦ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если задание обработано успешно - true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00081">81</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -324,7 +347,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00071">71</a></p>
+<p>Метод, обрабатывающий задание на изменение мощности </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">power_value</td><td>JSON объект, в котором хранится значение мощности</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если задание обработано успешно - true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00105">105</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -357,7 +389,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00080">80</a></p>
+<p>Метод, обрабатывающий задание на изменение частоты </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">freq_value</td><td>JSON объект, в котором хранится значение частоты</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если задание обработано успешно - true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00121">121</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -390,7 +431,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00089">89</a></p>
+<p>Метод, обрабатывающий задание на изменение частотного диапазона </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">freq_range</td><td>JSON объект, в котором хранятся данные о частотном диапазоне</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если задание обработано успешно - true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00137">137</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -422,7 +472,10 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00107">107</a></p>
+<p>Метод, обрабатывающий задание на сдвиг частотной точки </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Если следующая частотная точка находится в пределах границ изменения, то возвращает FREQ_MOVE_OK. Если точка находится на границе, то возвращает FREQ_MOVE_BOUND. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00162">162</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -460,7 +513,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00111">111</a></p>
+<p>Метод, обрабатывающий задание на изменение угла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle_value</td><td>JSON объект, в котором хранится значение угла</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если задание обработано успешно - true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00173">173</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -498,7 +560,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00123">123</a></p>
+<p>Метод, обрабатывающий задание на изменение углового диапазона </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle_range</td><td>JSON объект, в котором хранятся данные об угловом диапазоне</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если задание обработано успешно - true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00192">192</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -536,7 +607,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00142">142</a></p>
+<p>Метод, обрабатывающий задание на сдвиг угловой точки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis_num</td><td>Номер оси ОПУ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если угловая точка находится в пределах диапазона изменения угла, то возвращается ANGLE_MOVE_OK. Если угловая точка находится на границе диапазона, то возвращает ANGLE_MOVE_BOUND. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00220">220</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -574,7 +654,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00146">146</a></p>
+<p>Метод, обрабатывающий задание на изменение положений переключателей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path_values</td><td>JSON объект, который содержит список требуемых положений переключателей</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если действие выполнено успешно, возвращает true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00233">233</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -612,7 +701,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00171">171</a></p>
+<p>Метод, обрабатывающий задание на проведение измерения и сбор данных </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_list</td><td>JSON объект, который содержит список портов ВАЦ, для которых требуется провести измерение</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если действие выполнено успешно, возвращает полученные данные. В противном случае, возвращает пустую строку. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00267">267</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -645,7 +743,17 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00180">180</a></p>
+<p>Метод, обрабатывающий пришедшее задание. </p>
+<p>Определяется тип задания, после чего вызывается соответствующий метод для обработки задания. После обработки - формируется JSON объект с результатами выполнения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">task</td><td>Задание, которое требуется обработать</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат обработки задания </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00286">286</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -683,7 +791,18 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00273">273</a></p>
+<p>Метод, обрабатывающий список заданий. </p>
+<p>Выделяются задания, для которых требуется обработка вложенности. Полученный список заданий сортируется по уровню вложенности и передаётся в метод <a class="el" href="class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" title="Метод, позволяющий произвести обработку списка заданий, с учётом вложенности">proceed_nested_task_list()</a> для дальнейшей обработки. Затем, формируется результат обработки всех заданий.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Задания, у которых не требуется обработка вложенности, выполняются в первую очередь! Они не передаются в метод <a class="el" href="class_task_manager.html#ad9d635ee64d44cc34b619f2e3018e9d1" title="Метод, позволяющий произвести обработку списка заданий, с учётом вложенности">proceed_nested_task_list()</a>!</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">task_list</td><td>Список заданий, который требуется обработать</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат обработки списка заданий </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00394">394</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -721,7 +840,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00336">336</a></p>
+<p>Метод, позволяющий произвести обработку списка заданий, с учётом вложенности </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nested_task_list</td><td>Список заданий, имеющих вложенность</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат обработки данных </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00464">464</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -751,7 +879,17 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00489">489</a></p>
+<p>Метод, производящий обработку принятого JSON-объекта </p>
+<p>Проверяется, какой тип данных был получен - задание или список заданий, а затем, передаёт JSON-объект в соответствующий метод для дальнейшей обработки. Также, в методе производится замер времени выполнения задания/списка заданий.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Принятый JSON-объект</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат обработки принятого объекта </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00628">628</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -781,7 +919,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00523">523</a></p>
+<p>Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_STOP. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Принятое задание</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если тип принятого задания равен TASK_TYPE_STOP, возвращается true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00670">670</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -806,7 +953,16 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00531">531</a></p>
+<p>Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_DISCONNECT. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Принятое задание</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Если тип принятого задания равен TASK_TYPE_DISCONNECT, возвращается true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00686">686</a></p>
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
@@ -830,7 +986,9 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00539">539</a></p>
+<p>Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00698">698</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -841,25 +999,6 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_task_manager_a601272b5c895a310aec3d430b19c6258_icgraph.svg" width="479" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-
-</div>
-</div>
-<a id="ae49fdc0b6d9b5a18f35045bb4efde443" name="ae49fdc0b6d9b5a18f35045bb4efde443"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae49fdc0b6d9b5a18f35045bb4efde443">&#9670;&#160;</a></span>reset_stop_request()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TaskManager::reset_stop_request </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a> строка <a class="el" href="task__manager_8cpp_source.html#l00544">544</a></p>
 
 </div>
 </div>
@@ -884,7 +1023,9 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00099">99</a></p>
+<p>Набор устройств </p>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00167">167</a></p>
 
 </div>
 </div>
@@ -908,7 +1049,9 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00101">101</a></p>
+<p>Флаг, показывающий требуется ли остановка измерений или нет </p>
+
+<p class="definition">См. определение в файле <a class="el" href="task__manager_8hpp_source.html">task_manager.hpp</a> строка <a class="el" href="task__manager_8hpp_source.html#l00170">170</a></p>
 
 </div>
 </div>
@@ -917,13 +1060,9 @@ $(document).ready(function(){initNavTree('class_task_manager.html',''); initResi
 <li>src/<a class="el" href="task__manager_8cpp_source.html">task_manager.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_task_manager.html">TaskManager</a></li>
-    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

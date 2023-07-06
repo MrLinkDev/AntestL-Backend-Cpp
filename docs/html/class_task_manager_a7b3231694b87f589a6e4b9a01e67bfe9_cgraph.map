@@ -1,5 +1,5 @@
 <map id="TaskManager::get_data_task" name="TaskManager::get_data_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,409,195,436"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий задание на проведение измерения и сбор данных" alt="" coords="5,409,195,436"/>
 <area shape="rect" id="Node000002" href="$class_device_set.html#acd9efc5319ee177c97aef57f98469d0d" title="Метод, осуществляющий проведение измерения и получение результатов измерения" alt="" coords="243,409,380,436"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,420,228,420,228,425,195,425"/>
 <area shape="rect" id="Node000011" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="709,283,794,309"/>

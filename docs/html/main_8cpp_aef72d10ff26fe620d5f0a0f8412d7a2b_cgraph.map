@@ -1,16 +1,16 @@
 <map id="task_server_thread_f" name="task_server_thread_f">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,165,146,192"/>
+<area shape="rect" id="Node000001" title="Приём данных от клиента и передача их потоку обработки" alt="" coords="5,165,146,192"/>
 <area shape="rect" id="Node000002" href="$class_socket_server.html#a44e1cd686d7580a28e3c840f726b4f80" title="Метод, инициализирующий сокет" alt="" coords="214,5,356,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,163,126,108,157,76,192,48,217,35,219,40,195,53,161,80,130,112,88,167"/>
 <area shape="rect" id="Node000003" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="463,81,548,108"/>
 <area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="88,163,131,126,161,106,193,92,260,78,329,73,393,76,448,82,447,87,393,81,329,79,261,83,194,97,163,111,135,130,91,167"/>
 <area shape="rect" id="Node000008" href="$class_socket_server.html#ac27110c965c4ba07f68ad3422506651c" title="Чтение данных от клиента" alt="" coords="203,107,367,133"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="125,162,193,143,220,135,221,140,194,148,126,167"/>
-<area shape="rect" id="Node000009" href="$class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50" title=" " alt="" coords="208,157,362,200"/>
+<area shape="rect" id="Node000009" href="$class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50" title="Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_DISCONNECT." alt="" coords="208,157,362,200"/>
 <area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="146,176,193,176,193,181,146,181"/>
-<area shape="rect" id="Node000010" href="$class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7" title=" " alt="" coords="208,224,362,267"/>
+<area shape="rect" id="Node000010" href="$class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7" title="Метод, проверяющий, принадлежит тип принятого задания типу TASK_TYPE_STOP." alt="" coords="208,224,362,267"/>
 <area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="121,190,202,216,201,221,119,195"/>
-<area shape="rect" id="Node000011" href="$class_task_manager.html#a601272b5c895a310aec3d430b19c6258" title=" " alt="" coords="194,357,376,384"/>
+<area shape="rect" id="Node000011" href="$class_task_manager.html#a601272b5c895a310aec3d430b19c6258" title="Присваивает флагу stop_request значение true, тем самым, останавливая процес измерения" alt="" coords="194,357,376,384"/>
 <area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="85,191,100,223,124,264,156,307,195,343,203,348,201,353,192,347,152,310,119,267,95,225,80,193"/>
 <area shape="rect" id="Node000013" href="$class_socket_server.html#a47b8a318ef73faa660aa0f2b99225197" title="Метод, ожидающий подключение клиента" alt="" coords="220,291,350,333"/>
 <area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="91,190,135,232,195,276,208,283,206,288,192,281,132,236,88,194"/>

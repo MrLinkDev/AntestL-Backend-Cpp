@@ -1,5 +1,5 @@
 <map id="TaskManager::set_angle_task" name="TaskManager::set_angle_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,201,133"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий задание на изменение угла" alt="" coords="5,107,201,133"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="471,81,556,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,111,455,96,456,101,201,117"/>
 <area shape="rect" id="Node000007" href="$class_device_set.html#af831c582c73b80720d69b771c422a7eb" title="Устанавливает требуемое значение угла у определённой оси ОПУ" alt="" coords="249,132,392,159"/>

@@ -1,5 +1,5 @@
 <map id="TaskManager::set_angle_range_task" name="TaskManager::set_angle_range_task">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,169,116"/>
+<area shape="rect" id="Node000001" title="Метод, обрабатывающий задание на изменение углового диапазона" alt="" coords="5,73,169,116"/>
 <area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="439,81,524,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,92,424,92,424,97,169,97"/>
 <area shape="rect" id="Node000007" href="$class_device_set.html#a42484914aabe91a0d030557db440fab0" title="Устанавливает угловую точку, соответствующую началу диапазона." alt="" coords="221,15,356,57"/>

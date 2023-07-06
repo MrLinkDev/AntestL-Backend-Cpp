@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_task_manager.html#ac63779261327a9f2b120a6c7dd648110" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_task_manager.html#ac63779261327a9f2b120a6c7dd648110" target="_top" xlink:title="Метод, обрабатывающий задание на изменение частотного диапазона">
 <polygon fill="white" stroke="#666666" points="115,-32 0,-32 0,0 115,0 115,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskManager::set_freq</text>
 <text text-anchor="middle" x="57.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_range_task</text>

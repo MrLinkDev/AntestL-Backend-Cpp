@@ -15,7 +15,7 @@ var searchData=
   ['received_5fdisconnect_5ftask_12',['received_disconnect_task',['../class_task_manager.html#a738932cb7a94791e04e37c283c8a0a50',1,'TaskManager']]],
   ['received_5fstop_5ftask_13',['received_stop_task',['../class_task_manager.html#a55032bf51c0426d8df0477991e46d9f7',1,'TaskManager']]],
   ['request_5fstop_14',['request_stop',['../class_device_set.html#a9b806652a49bcc00d4fe635235c9596d',1,'DeviceSet::request_stop()'],['../class_task_manager.html#a601272b5c895a310aec3d430b19c6258',1,'TaskManager::request_stop()']]],
-  ['reset_5fstop_5frequest_15',['reset_stop_request',['../class_device_set.html#adee7ff2a8a80e6ddf44274d6c2828a2c',1,'DeviceSet::reset_stop_request()'],['../class_task_manager.html#ae49fdc0b6d9b5a18f35045bb4efde443',1,'TaskManager::reset_stop_request()']]],
+  ['reset_5fstop_5frequest_15',['reset_stop_request',['../class_device_set.html#adee7ff2a8a80e6ddf44274d6c2828a2c',1,'DeviceSet']]],
   ['resource_5fmanager_16',['resource_manager',['../class_visa_device.html#a295a8eb76bbb6f302d2fcf2a54288618',1,'VisaDevice']]],
   ['result_5fok_5fid_17',['RESULT_OK_ID',['../task__manager_8hpp.html#a89edd5955113b1acf4fc97e8c80a86c7',1,'task_manager.hpp']]],
   ['result_5fok_5fmsg_18',['RESULT_OK_MSG',['../task__manager_8hpp.html#a252dc005c072b09fb9e34f09e7932b36',1,'task_manager.hpp']]],
