@@ -6,6 +6,10 @@
  * \date 3 июля 2023
  */
 
+/**
+ *
+ */
+
 #include <condition_variable>
 
 #include "socket/socket_server.hpp"

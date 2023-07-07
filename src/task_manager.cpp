@@ -83,8 +83,16 @@ bool TaskManager::configure_task(json config_params) {
 
     int meas_type = config_params["meas_type"].get<int>();
     float rbw = config_params["rbw"].get<float>();
-    int source_port = config_params["source_port"].get<int>();
-    bool external = config_params["external"].get<bool>();
+
+    int source_port = 1;
+    if (config_params.contains("source_port")) {
+        source_port = config_params["source_port"].get<int>();
+    }
+
+    bool external = false;
+    if (config_params.contains("external")) {
+        external = config_params["external"].get<bool>();
+    }
     
     logger::log(
             LEVEL_DEBUG, 
@@ -246,7 +254,7 @@ bool TaskManager::set_path_task(json path_values) {
     std::string data = "Paths: ";
 
     for (int i = 1; i < paths.size() + 1; ++i) {
-        data += std::format("\"switch_{}\" = {}{}", i, paths[i], (i == paths.size() ? "" : ";"));
+        data += std::format("\"switch_{}\" = {}{}", i, paths[i], (i == paths.size() ? "" : "; "));
     }
 
     logger::log(LEVEL_DEBUG, data);
