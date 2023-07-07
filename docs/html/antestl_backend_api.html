@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: AntestL Backend API</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">AntestL Backend API</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2><a class="anchor" id="intro"></a>
+Введение</h2>
+<p><b>AntestL Backend</b> работает с подключенным клиентом, от которого получает так называемые задания или списки заданий. Эти объекты должны быть приведены к определённому формату, описаному ниже. В списках заданий у некоторых типов заданий может быть параметр вложенности <b>nested</b>.</p>
+<h2><a class="anchor" id="task_section"></a>
+Информация о заданиях</h2>
+<p>Задание имеет следующий вид: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: &lt;тип задания&gt;,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: &lt;набор аргументов для задания&gt;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Например, задание на подключение к ВАЦ будет выглядеть следующим образом: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;connect&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;m9807a&quot;</span>: <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span></div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><a class="anchor" id="task_types"></a>Определены следующие типы заданий:</p><ul>
+<li><a class="el" href="antestl_backend_api.html#connect_section">connect</a> - Осуществляется подключение к приборам, указанным в аргументах</li>
+<li><a class="el" href="antestl_backend_api.html#configure_section">configure</a> - Производится подготовка ВАЦ к требуемому измерению</li>
+<li><a class="el" href="antestl_backend_api.html#set_power_section">set_power</a> - Изменение мощности зондирующего сигнала у ВАЦ или у внешнего генератора</li>
+<li><a class="el" href="antestl_backend_api.html#set_freq_section">set_freq</a> - Установка определённого значения частоты зондирующего сигнала у ВАЦ или у внешнего генератора</li>
+<li><a class="el" href="antestl_backend_api.html#set_freq_range_section">set_freq_range</a> - Установка диапазона изменения частоты зондирующего сигнала у ВАЦ или у внешнего генератора</li>
+<li><a class="el" href="antestl_backend_api.html#set_angle_section">set_angle</a> - Установка определённой позиции оси ОПУ</li>
+<li><a class="el" href="antestl_backend_api.html#set_angle_range_section">set_angle_range</a> - Установка диапазона изменения позиции оси ОПУ</li>
+<li><a class="el" href="antestl_backend_api.html#set_path_section">set_path</a> - Изменение позиций переключателей</li>
+<li><a class="el" href="antestl_backend_api.html#get_data_section">get_data</a> - Проведение измерения и сбор данных для определённых портов ВАЦ</li>
+<li><a class="el" href="antestl_backend_api.html#stop_section">stop</a> - Остановка выполнения заданий</li>
+<li><a class="el" href="antestl_backend_api.html#disconnect_section">disconnect</a> - Отключение от приборов и закрытие соединений с клиентом</li>
+</ul>
+<h2><a class="anchor" id="connect_section"></a>
+Задание "connect"</h2>
+<p>Данный тип задания необходим для того, чтобы определить набор используемых устройств. В качестве аргумента передаётся JSON-объект, состоящий из пар типа: </p><div class="fragment"><div class="line">&lt;модель прибора&gt;: &lt;адрес прибора&gt;</div>
+<div class="line"> </div>
+<div class="line">     или</div>
+<div class="line"> </div>
+<div class="line">&lt;модель прибора&gt;: &lt;адрес модуля 1;адрес модуля 2;...;адрес модуля N&gt;</div>
+</div><!-- fragment --><p>Пример задания для подключения к ВАЦ Keysight M9807A: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;connect&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;m9807a&quot;</span>: <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span></div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если соединение с ВАЦ было успешно установлено, то от <b>AntestL Backend</b> придёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;m9807a&quot;</span>: <span class="keyword">true</span></div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если соединение с ВАЦ не было установлено, то от <b>AntestL Backend</b> придёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;m9807a&quot;</span>: <span class="keyword">false</span></div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Пример задания для подключения к ВАЦ Keysight M9807A, внешнему генератору и двум осям ОПУ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;connect&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;m9807a&quot;</span>: <span class="stringliteral">&quot;TCPIP0::localhost::5025::SOCKET&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;ext_gen&quot;</span>: <span class="stringliteral">&quot;TCPIP0::localhost::5026::SOCKET&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;tesart_rbd&quot;</span>: <span class="stringliteral">&quot;TCPIP0::localhost::5100::SOCKET;TCPIP0::localhost::5101::SOCKET&quot;</span></div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Данный тип задания не может быть вложенным. Переданный параметр вложенности в данном задании будет проигнорирован.</dd></dl>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="configure_section"></a>
+Задание "configure"</h2>
+<p>С помощью задания "configure" производится подготовка ВАЦ к измерениям. JSON-объект, передаваемый в качестве аргумента, имеет следующий вид: </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;meas_type&quot;</span>: &lt;идентификатор типа измерения&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;rbw&quot;</span>: &lt;полоса разрешающего фильтра&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;source_port&quot;</span>: &lt;номер зондирующего порта&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;external&quot;</span>: &lt;<span class="keyword">true</span> или <span class="keyword">false</span>&gt;</div>
+</div><!-- fragment --><p>Для параметра <b>meas_type</b> имеется два идентификатора измерения:</p><ul>
+<li>0 - Измерение коэффициента передачи</li>
+<li>1 - Измерение коэффициента отражения</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Если измеряется коэффициент отражения или параметр <b>external</b> имеет значение <em>true</em>, то нет необходимости передавать параметр <b>source_port</b>.</dd>
+<dd>
+Если измеряется коэффициент отражения, то нет необходимости передавать параметр <b>external</b></dd></dl>
+<p>Пример задания подготовки ВАЦ для измерения коэффициента отражения с полосой разрешающего фильтра 1 кГц: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;configure&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;meas_type&quot;</span>: 1,</div>
+<div class="line">            <span class="stringliteral">&quot;rbw&quot;</span>: 1e3</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если подготовка ВАЦ прошла успешно, то <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>:<span class="keyword">true</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Пример задания подготовки ВАЦ для измерения коэффициента передачи с полосой разрешающего фильтра 5 кГц и пятым зондирующим портом: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;configure&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;meas_type&quot;</span>: 0,</div>
+<div class="line">            <span class="stringliteral">&quot;rbw&quot;</span>: 5000,</div>
+<div class="line">            <span class="stringliteral">&quot;source_port&quot;</span>: 5</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Пример задания конфигурации ВАЦ для измерения коэффициента передачи с полосой разрешающего фильтра 10 Гц и внешним генератором: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;configure&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;meas_type&quot;</span>: 0,</div>
+<div class="line">            <span class="stringliteral">&quot;rbw&quot;</span>: 10,</div>
+<div class="line">            <span class="stringliteral">&quot;external&quot;</span>: <span class="keyword">true</span></div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Данный тип задания не может быть вложенным. Переданный параметр вложенности в данном задании будет проигнорирован.</dd></dl>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="set_power_section"></a>
+Задание "set_power"</h2>
+<p>С помощью данного задания можно задать требуемую мощность зондирующего сигнала на ВАЦ или на внешнем генераторе. Аргумент будет представлен JSON-объектом следующего вида: </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;value&quot;</span>: &lt;значение требуемой мощности&gt;</div>
+</div><!-- fragment --><p>Пример задания, с помощью которого будет установлена мощность зондирующего сигнала равная -10.5 дБ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_power&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;value&quot;</span>: -10.5</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если изменение мощности прошло успешно, то <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>:<span class="keyword">true</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Данный тип задания не может быть вложенным. Переданный параметр вложенности в данном задании будет проигнорирован.</dd></dl>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="set_freq_section"></a>
+Задание "set_freq"</h2>
+<p>Данный тип задания позволяет выставить определённое значение частоты зондирующего сигнала. JSON-объект, передаваемый в качестве аргумента, будет иметь следующий вид:</p>
+<div class="fragment"><div class="line"><span class="stringliteral">&quot;value&quot;</span>: &lt;требуемая частота&gt;</div>
+</div><!-- fragment --><p>Пример задания, с помощью которого будет установлена частота зондирующего сигнала равная 2.4 ГГц: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_freq&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;value&quot;</span>: 2.4e9</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если изменение частоты прошло успешно, то <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>:<span class="keyword">true</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Пример задания, с помощью которого будет установлена частота зондирующего сигнала равная 3.587 ГГц: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_freq&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;value&quot;</span>: 3587000000</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Данный тип задания не может быть вложенным. Переданный параметр вложенности в данном задании будет проигнорирован.</dd></dl>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="set_freq_range_section"></a>
+Задание "set_freq_range"</h2>
+<p>Данный тип задания позволяет установить диапазон частот, в котором требуется провести измерения JSON-объект, передаваемый в качестве аргумента, будет иметь следующий вид:</p>
+<div class="fragment"><div class="line"><span class="stringliteral">&quot;start_freq&quot;</span>: &lt;начальное значение частоты&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;stop_freq&quot;</span>: &lt;конечное значение частоты&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;points&quot;</span>: &lt;количество точек&gt;</div>
+</div><!-- fragment --><p>Для того, чтобы провести измерение в диапазоне от 1.2 ГГц до 2.4 ГГц и получить измерения в 11 частотных точках, можно, например, отправить следующее задание: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_freq_range&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;start_freq&quot;</span>: 1.2e9,</div>
+<div class="line">            <span class="stringliteral">&quot;stop_freq&quot;</span>: 2.4e9,</div>
+<div class="line">            <span class="stringliteral">&quot;points&quot;</span>: 11</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если установка диапазона частот прошла успешно, то <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>:<span class="keyword">true</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="set_angle_section"></a>
+Задание "set_angle"</h2>
+<p>С помощью типа задания <b>set_angle</b> можно установить ось ОПУ в определённое положение. В данном задании аргумент должен быть представлен JSON-объектом следующего вида: </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;value&quot;</span>: &lt;требуемый угол&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;axis&quot;</span>: &lt;номер ос ОПУ&gt;</div>
+</div><!-- fragment --><p>Например, <b>AntestL</b> установил соединение с одной осью ОПУ - осью крена. Тогда, чтобы развернуть эту ось на 30 градусов, задание должно выглядеть следующим образом: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_angle&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;value&quot;</span>: 30.0,</div>
+<div class="line">            <span class="stringliteral">&quot;axis&quot;</span>: 0</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если изменение угла оси ОПУ прошло успешно, то <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>:<span class="keyword">true</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Данный тип задания не может быть вложенным. Переданный параметр вложенности в данном задании будет проигнорирован.</dd></dl>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="set_angle_range_section"></a>
+Задание "set_angle_range"</h2>
+<p>Тип задания, который позволяет установить диапазон изменения угла оси ОПУ во время проведения измерения. Требуется передать в качестве аргумента JSON-объект вида: </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;start_angle&quot;</span>: &lt;начальное значение угла&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;stop_angle&quot;</span>: &lt;конечное значение угла&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;points&quot;</span>: &lt;количество точек&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;axis&quot;</span>: &lt;номер оси&gt;</div>
+</div><!-- fragment --><p>Например, <b>AntestL</b> установил соединение с двумя осями ОПУ - осью крена и осью азимута. Требуется для оси азимута задать диапазон изменения угла от -20 градусов до 20 градусов и количество угловых точек должно быть равно 21. Тогда задание будет иметь следующий вид: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_angle_range&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;start_angle&quot;</span>: -20,</div>
+<div class="line">            <span class="stringliteral">&quot;stop_angle&quot;</span>: 20,</div>
+<div class="line">            <span class="stringliteral">&quot;points&quot;</span>: 21,</div>
+<div class="line">            <span class="stringliteral">&quot;axis&quot;</span>: 1</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если установка диапазона углов прошла успешно, то <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>:<span class="keyword">true</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="set_path_section"></a>
+Задание "set_path"</h2>
+<p>Данный тип задания позволяет изменить положение переключателей, которые подключены к ВАЦ. В JSON-объекте, который передаётся в качестве аргумента, помещаются требуемые положения переключателей: </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;switch_1&quot;</span>: &lt;положение переключателя&gt;,</div>
+<div class="line"><span class="stringliteral">&quot;switch_2&quot;</span>: &lt;положение переключателя&gt;,</div>
+<div class="line">    ...</div>
+<div class="line"><span class="stringliteral">&quot;switch_N&quot;</span>: &lt;положение переключателя&gt;</div>
+</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd>Если не требуется изменять положение всех переключателей, можно не добавлять в задание те, положение которых останется неизменным.</dd></dl>
+<p>Пример задания, в котором требуется выбрать у первого переключателя пятый порт, а у третьего - второй порт: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_path&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;switch_1&quot;</span>: 5,</div>
+<div class="line">            <span class="stringliteral">&quot;switch_3&quot;</span>: 2</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если изменение положений переключателей прошло успешно, то <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>:<span class="keyword">true</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Данный тип задания не может быть вложенным. Переданный параметр вложенности в данном задании будет проигнорирован.</dd></dl>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="get_data_section"></a>
+Задание "get_data"</h2>
+<p>Тип задания "get_data" запускает измерение и сбор данных с определённых портов ВАЦ. В данном случае аргумент, в виде JSON-объекта, будет выглядеть следующим образом: </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;ports&quot;</span>: &lt;массив портов&gt;</div>
+</div><!-- fragment --><p>Например, требуется запустить измерения и собрать данные для 2, 4 и 7 портов. Тогда задание будет выглядеть следующим образом: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;get_data&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;ports&quot;</span>: [2, 4, 7]</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Если изменение положений переключателей прошло успешно, то <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>: <span class="stringliteral">&quot;2000000000.000000,+4.14350897074E-001,...,-7.07894359948E-005&quot;</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Собранные данные приходят в следующем виде: <em>data</em> = <em>angle_list</em>,<em>freq</em>,<em>iq_port_data_list</em>;...</p>
+<ul>
+<li><em>angle_list</em> - массив угловвых позици ОПУ на момент измерения iq_port_data_list. Если ОПУ не подключено, то массив пустой. Если ОПУ подключено, то массив имеет длину, равную количеству осей. Например, подключено 3 оси, тогда массив углов будет иметь вид: <em>angle_list</em> = <em>axis_angle_1</em>,<em>axis_angle_2</em>,<em>axis_angle_3</em>.</li>
+<li><em>freq</em> - частота зондирующего сигнала на момент измерения точки iq_port_data_list.</li>
+<li><em>iq_port_data_list</em> - массив измеренных данных для каждого требуемого порта. Например, если измерения проводились для трёх портов, то массив будет иметь вид: <em>iq_port_data_list</em> = <em>i_1</em>,<em>q_1</em>,<em>i_2</em>,<em>q_2</em>,<em>i_3</em>,<em>q_3</em>.</li>
+</ul>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="stop_section"></a>
+Задание "stop"</h2>
+<p>Позволяет прервать запущенное измерение. У данного задания отсутствую аргументы. Пример задания: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;stop&quot;</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>После остановки измерений и сбора данных <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 160,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Measurements stopped&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>: null</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Данный тип задания не может быть вложенным. Переданный параметр вложенности в данном задании будет проигнорирован.</dd></dl>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="disconnect_section"></a>
+Задание "disconnect"</h2>
+<p>Данный тип задания позволяет закрыть соединения с подключенным приборами. Аргументы для задания не требуются. Пример задания: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;disconnect&quot;</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>После закрытия подключений <b>AntestL Backend</b> вернёт следующий ответ: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>: <span class="keyword">true</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section warning"><dt>Предупреждения</dt><dd>Данный тип задания не может быть вложенным. Переданный параметр вложенности в данном задании будет проигнорирован.</dd></dl>
+<p><a class="el" href="antestl_backend_api.html#task_types">Вернуться</a> к списку заданий.</p>
+<h2><a class="anchor" id="task_list_section"></a>
+Информация о списках заданий</h2>
+<p>Список заданий - это набор заданий, которые выполняются последовательно. Задания в списке могут быть вложенными.Чем ниже уровень вложенности, тем глуюже находится цикл, обрабатывающий задание с данным уровнем вложэнности. В общем виде, список заданий выглядит следующим образом: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task_list&quot;</span>: [</div>
+<div class="line">    {</div>
+<div class="line">        &lt;задание 1&gt;</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">        &lt;задание 2&gt;</div>
+<div class="line">    },</div>
+<div class="line">        ...</div>
+<div class="line">    {</div>
+<div class="line">        &lt;задание N&gt;</div>
+<div class="line">    }</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd>Задания, которые не имеют вложенности, выполняются в первую очередь.</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Если задание одного из представленных ниже типов будет иметь параметр вложенности, то этот параметр будет проигнорирован и задание будет выполнено в первую очередь. Список типов заданий, которые не могут иметь вложенности:<ul>
+<li>connect</li>
+<li>configure</li>
+<li>set_power</li>
+<li>set_freq</li>
+<li>set_angle</li>
+<li>set_path</li>
+<li>stop</li>
+<li>disconnect</li>
+</ul>
+</dd></dl>
+<p>Пример списка заданий, в котором находятся следующие задания:</p><ol type="1">
+<li>Подключение к ВАЦ и демо-ОПУ</li>
+<li>Настройка ВАЦ</li>
+<li>Установка диапазона изменения частоты от 2 ГГц до 3 ГГц (3 точки). Уровень вложенности = 1</li>
+<li>Установка диапазона изменения угла оси 0 ОПУ от -30 до 30 градусов (3 точки). Уровень вложенности = 2</li>
+<li>Установка угла оси 1 ОПУ. Угол = 0 градусов</li>
+<li>Запуск измерений и сбор данных с портов 2 и 6. Уровень вложенности = 0</li>
+</ol>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;task_list&quot;</span>: [</div>
+<div class="line">    {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;connect&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;m9807a&quot;</span>: <span class="stringliteral">&quot;TCPIP0::K-N9020B-11111::inst0::INSTR&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;demo_rbd&quot;</span>: <span class="stringliteral">&quot;demo_1;demo_2&quot;</span></div>
+<div class="line">        }</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;configure&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;meas_type&quot;</span>: 0,</div>
+<div class="line">            <span class="stringliteral">&quot;rbw&quot;</span>: 1e3,</div>
+<div class="line">            <span class="stringliteral">&quot;source_port&quot;</span>: 1</div>
+<div class="line">        }</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_freq_range&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;start&quot;</span>: 2e9,</div>
+<div class="line">            <span class="stringliteral">&quot;stop&quot;</span>: 3e9,</div>
+<div class="line">            <span class="stringliteral">&quot;points&quot;</span>: 3</div>
+<div class="line">        },</div>
+<div class="line">        <span class="stringliteral">&quot;nested&quot;</span>: 1</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_angle_range&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;start&quot;</span>: -30,</div>
+<div class="line">            <span class="stringliteral">&quot;stop&quot;</span>: 30,</div>
+<div class="line">            <span class="stringliteral">&quot;points&quot;</span>: 3,</div>
+<div class="line">            <span class="stringliteral">&quot;axis&quot;</span>: 0</div>
+<div class="line">        },</div>
+<div class="line">        <span class="stringliteral">&quot;nested&quot;</span>: 2</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;set_angle&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;value&quot;</span>: 0,</div>
+<div class="line">            <span class="stringliteral">&quot;axis&quot;</span>: 1</div>
+<div class="line">        }</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">        <span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;get_data&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;args&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;ports&quot;</span>: [2, 6]</div>
+<div class="line">        },</div>
+<div class="line">        <span class="stringliteral">&quot;nested&quot;</span>: 0</div>
+<div class="line">    }]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Ответ на данное задание от <b>AntestL Backend</b> будет выгляеть следующим образом: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;result&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;id&quot;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&quot;message&quot;</span>: <span class="stringliteral">&quot;Complete&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;data&quot;</span>: <span class="stringliteral">&quot;-30.000000,0.000000,2000000000.000000,+4.14277702570E-001,-2.30189397931E-001,+2.15838317672E-005,-3.33949283231E-005;</span></div>
+<div class="line"><span class="stringliteral">                 -30.000000,0.000000,2500000000.000000,+3.06795567274E-001,+2.29027405381E-001,+3.19726132147E-005,+4.40952753706E-005;</span></div>
+<div class="line"><span class="stringliteral">                 -30.000000,0.000000,3000000000.000000,+5.37890242413E-004,-1.19642261416E-003,+4.00941871703E-006,-3.24066932080E-005;</span></div>
+<div class="line"><span class="stringliteral">                   0.000000,0.000000,2000000000.000000,+4.14257287979E-001,-2.30182722211E-001,-2.53635903391E-006,+3.01790696540E-005;</span></div>
+<div class="line"><span class="stringliteral">                   0.000000,0.000000,2500000000.000000,+3.06839764118E-001,+2.28999942541E-001,-2.63106066996E-005,+1.03447782749E-005;</span></div>
+<div class="line"><span class="stringliteral">                   0.000000,0.000000,3000000000.000000,+5.19057619385E-004,-1.19813089259E-003,-2.44065813604E-005,-1.81656323548E-005;</span></div>
+<div class="line"><span class="stringliteral">                  30.000000,0.000000,2000000000.000000,+4.14304137230E-001,-2.30151802301E-001,+3.76428470190E-005,+4.37085473095E-005;</span></div>
+<div class="line"><span class="stringliteral">                  30.000000,0.000000,2500000000.000000,+3.06824326515E-001,+2.29014515877E-001,+5.91573916608E-006,-3.95927454520E-005;</span></div>
+<div class="line"><span class="stringliteral">                  30.000000,0.000000,3000000000.000000,+5.41601621080E-004,-1.23733305372E-003,-1.20229788081E-005,-2.84282905341E-005&quot;</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><a class="el" href="antestl_backend_api.html#intro">Вернуться</a> в начало </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
