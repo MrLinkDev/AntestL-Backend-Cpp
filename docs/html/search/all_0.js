@@ -11,10 +11,11 @@ var searchData=
   ['antestl_20backend_8',['AntestL Backend',['../index.html',1,'']]],
   ['antestl_20backend_20api_9',['AntestL Backend API',['../antestl_backend_api.html',1,'']]],
   ['antestl_5fbackend_5fapi_2edoxygen_10',['antestl_backend_api.doxygen',['../antestl__backend__api_8doxygen.html',1,'']]],
-  ['antestl_5fexception_11',['antestl_exception',['../classantestl__exception.html',1,'antestl_exception'],['../classantestl__exception.html#af914dbd7fc939cf5caebd4080f4ade85',1,'antestl_exception::antestl_exception()']]],
-  ['array_5futils_12',['array_utils',['../namespacearray__utils.html',1,'']]],
-  ['array_5futils_2ehpp_13',['array_utils.hpp',['../array__utils_8hpp.html',1,'']]],
-  ['axes_14',['axes',['../class_tesart_rbd.html#ac8057360e0817490c8d47c5135b91162',1,'TesartRbd']]],
-  ['axis_5fcount_15',['axis_count',['../class_demo_rbd.html#a2433ef1828c56704cddd05917d9a1616',1,'DemoRbd']]],
-  ['axis_5fpos_16',['axis_pos',['../class_demo_rbd.html#a4adf756b7cd38704464f50c2ae574d51',1,'DemoRbd']]]
+  ['antestl_5fbackend_5ferror_5fcodes_2edoxygen_11',['antestl_backend_error_codes.doxygen',['../antestl__backend__error__codes_8doxygen.html',1,'']]],
+  ['antestl_5fexception_12',['antestl_exception',['../classantestl__exception.html',1,'antestl_exception'],['../classantestl__exception.html#af914dbd7fc939cf5caebd4080f4ade85',1,'antestl_exception::antestl_exception()']]],
+  ['array_5futils_13',['array_utils',['../namespacearray__utils.html',1,'']]],
+  ['array_5futils_2ehpp_14',['array_utils.hpp',['../array__utils_8hpp.html',1,'']]],
+  ['axes_15',['axes',['../class_tesart_rbd.html#ac8057360e0817490c8d47c5135b91162',1,'TesartRbd']]],
+  ['axis_5fcount_16',['axis_count',['../class_demo_rbd.html#a2433ef1828c56704cddd05917d9a1616',1,'DemoRbd']]],
+  ['axis_5fpos_17',['axis_pos',['../class_demo_rbd.html#a4adf756b7cd38704464f50c2ae574d51',1,'DemoRbd']]]
 ];

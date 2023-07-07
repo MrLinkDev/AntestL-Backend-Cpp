@@ -25,7 +25,7 @@
 var menudata={children:[
 {text:"Главная",url:"index.html"},
 {text:"API",url:"antestl_backend_api.html"},
-{text:"Коды ошибок",url:"\\ref antestl_backend_error_codes"},
+{text:"Коды ошибок",url:"antestl_backend_error_codes.html"},
 {text:"Классы",url:"annotated.html",children:[
 {text:"Классы",url:"annotated.html"},
 {text:"Иерархия классов",url:"inherits.html"},
