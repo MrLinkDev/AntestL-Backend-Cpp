@@ -1,0 +1,34 @@
+/**
+ * \page antestl_backend_error_codes Коды ошибок
+ *
+ * **AntestL Backend** отвечает на отправленные клиентом задания пакетом следующего вида:
+ * \code
+ * {
+ *     "result": {
+ *         "id": <идентификатор результата>,
+ *         "message": <информационное сообщение>,
+ *         "data": <результат выполнения задания>
+ *     }
+ * }
+ * \endcode
+ *
+ * Идентификатор результата и информационное сообщение могут быть следующими:
+ * <table>
+ * <tr><th>ID   <th>Сообщение               <th>Описание
+ * <tr><td>0    <td>Complete                <td>Возвращается при успешно выполненом задании/списке заданий
+ * <tr><td>1    <td>No connection with vna  <td>Не удалось подключиться к ВАЦ
+ * <tr><td>2    <td>No connection with external generator   <td>Не удалось подключиться к внешнему генератору
+ * <tr><td>3    <td>No connection with rbd  <td>Не удалось подключиться к ОПУ
+ * <tr><td>16   <td>Can't configure VNA     <td>Не удалось настроить ВАЦ
+ * <tr><td>32   <td>Can't set power         <td>Не удалось изменить мощность зондирующего сигнала
+ * <tr><td>48   <td>Can't set frequency     <td>Не удалось изменить частоту зондирующего сигнала
+ * <tr><td>49   <td>Can't set frequency range   <td>Не удалось изменить диапазон изменения частоты
+ * <tr><td>64   <td>Can't set angle         <td>Не удалось изменить угловое положение ОПУ
+ * <tr><td>65   <td>Can't set angle range   <td>Не удалось изменить диапазон изменения углового положения ОПУ
+ * <tr><td>80   <td>Can't change switch path    <td>Не удалось изменить положение переключателей
+ * <tr><td>96   <td>Can't acquire data from VNA <td>Не удалось провести измерение или (и) собрать данные с ВАЦ
+ * <tr><td>160  <td>Measurements stopped    <td>Измерение было прервано
+ * <tr><td>254  <td>Wrong task type         <td>Неизвестный тип задания
+ * <tr><td>255  <td>No task or task list    <td>Не было обнаружено задания или списка заданий
+ * </table>
+ */

@@ -1,5 +1,6 @@
 /**
- * @page antestl_backend_api AntestL Backend API
+ * \page antestl_backend_api AntestL Backend API
+
  * \subsection intro Введение
  *
  * **AntestL Backend** работает с подключенным клиентом, от которого получает
