@@ -1,21 +1,21 @@
 <map id="src/devices/rbd/rbd_device.hpp" name="src/devices/rbd/rbd_device.hpp">
-<area shape="rect" id="Node000001" title="Заголовочный файл, в котором реализован класс RbdDevice." alt="" coords="122,5,252,48"/>
-<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="124,187,250,229"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,63,190,186,184,186,184,63"/>
-<area shape="rect" id="Node000007" href="$demo__rdb_8hpp.html" title="Заголовочный файл, в котором реализован класс DemoRbd." alt="" coords="5,96,150,139"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="152,60,105,97,101,93,149,55"/>
-<area shape="rect" id="Node000008" href="$tesart__rbd_8hpp.html" title="Заголовочный файл, в котором определяется класс TesartRbd." alt="" coords="225,96,370,139"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="226,55,273,93,270,97,222,60"/>
-<area shape="rect" id="Node000003" href="$device__set_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа DeviceSet." alt="" coords="14,277,141,320"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="152,241,105,279,101,275,149,237"/>
-<area shape="rect" id="Node000004" href="$task__manager_8hpp.html" title="Заголовочный файл, в котором определён класс TaskManager и набор констант для работы с ним" alt="" coords="165,285,315,312"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="209,241,235,284,230,286,204,244"/>
-<area shape="rect" id="Node000005" href="$main_8cpp.html" title="Главный файл приложения" alt="" coords="119,368,215,395"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,325,180,370,176,366,217,321"/>
-<area shape="rect" id="Node000006" href="$task__manager_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа TaskManager." alt="" coords="240,368,390,395"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="263,321,305,366,302,370,259,325"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="80,154,80,277,75,277,75,154"/>
-<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="262,150,214,188,211,184,259,146"/>
-<area shape="rect" id="Node000009" href="$tesart__rbd_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа TesartRbd." alt="" coords="274,187,420,229"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="318,150,338,185,333,188,314,153"/>
+<area shape="rect" id="Node000001" title="Заголовочный файл, в котором реализован класс RbdDevice." alt="" coords="85,5,215,48"/>
+<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="87,187,213,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,59,82,76,68,97,62,117,68,137,88,164,113,184,110,188,84,167,63,140,57,117,63,95,78,73,98,55"/>
+<area shape="rect" id="Node000007" href="$demo__rdb_8hpp.html" title="Заголовочный файл, в котором реализован класс DemoRbd." alt="" coords="78,96,222,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="153,63,153,96,147,96,147,63"/>
+<area shape="rect" id="Node000008" href="$tesart__rbd_8hpp.html" title="Заголовочный файл, в котором определяется класс TesartRbd." alt="" coords="247,96,392,139"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="204,53,281,93,278,98,201,58"/>
+<area shape="rect" id="Node000003" href="$device__set_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа DeviceSet." alt="" coords="5,277,132,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,242,89,279,85,275,119,239"/>
+<area shape="rect" id="Node000004" href="$task__manager_8hpp.html" title="Заголовочный файл, в котором определён класс TaskManager и набор констант для работы с ним" alt="" coords="156,285,306,312"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="180,239,222,283,218,287,177,242"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html" title="Главный файл приложения" alt="" coords="108,368,205,395"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,325,170,370,166,366,208,321"/>
+<area shape="rect" id="Node000006" href="$task__manager_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа TaskManager." alt="" coords="229,368,380,395"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="254,321,295,366,291,370,250,325"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="153,153,153,186,147,186,147,153"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="268,148,191,189,188,184,265,144"/>
+<area shape="rect" id="Node000009" href="$tesart__rbd_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа TesartRbd." alt="" coords="247,187,392,229"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="322,153,322,186,317,186,317,153"/>
 </map>
