@@ -1,18 +1,23 @@
 <map id="src/devices/vna/vna_device.hpp" name="src/devices/vna/vna_device.hpp">
-<area shape="rect" id="Node000001" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="142,5,275,48"/>
-<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="87,187,213,229"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,62,178,97,164,145,156,187,150,186,159,144,173,95,188,60"/>
-<area shape="rect" id="Node000007" href="$keysight__m9807a_8hpp.html" title="Файл, в котором определён класс KeysightM9807A." alt="" coords="187,96,350,139"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="233,59,257,94,252,97,228,62"/>
-<area shape="rect" id="Node000003" href="$device__set_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа DeviceSet." alt="" coords="5,277,132,320"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,242,89,279,85,275,119,239"/>
-<area shape="rect" id="Node000004" href="$task__manager_8hpp.html" title="Заголовочный файл, в котором определён класс TaskManager и набор констант для работы с ним" alt="" coords="156,285,306,312"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="180,239,222,283,218,287,177,242"/>
-<area shape="rect" id="Node000005" href="$main_8cpp.html" title="Главный файл приложения" alt="" coords="108,368,205,395"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,325,170,370,166,366,208,321"/>
-<area shape="rect" id="Node000006" href="$task__manager_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа TaskManager." alt="" coords="229,368,380,395"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="254,321,295,366,291,370,250,325"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="231,150,179,188,176,184,228,146"/>
-<area shape="rect" id="Node000008" href="$keysight__m9807a_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа KeysightM9807A." alt="" coords="237,187,399,229"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="289,150,309,185,304,188,285,153"/>
+<area shape="rect" id="Node000001" title="Заголовочный файл, в котором реализован класс VnaDevice." alt="" coords="188,5,321,48"/>
+<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="191,187,318,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,63,257,186,252,186,252,63"/>
+<area shape="rect" id="Node000007" href="$keysight__m9807a_8hpp.html" title="Файл, в котором определён класс KeysightM9807A." alt="" coords="55,96,217,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="217,59,165,98,162,93,214,55"/>
+<area shape="rect" id="Node000009" href="$planar__s50244_8h.html" title="Файл, в котором определён класс PlanarS50244." alt="" coords="292,96,441,139"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="293,55,342,93,339,97,290,59"/>
+<area shape="rect" id="Node000003" href="$device__set_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа DeviceSet." alt="" coords="110,277,236,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,242,194,279,190,275,224,239"/>
+<area shape="rect" id="Node000004" href="$task__manager_8hpp.html" title="Заголовочный файл, в котором определён класс TaskManager и набор констант для работы с ним" alt="" coords="261,285,411,312"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="285,239,326,283,322,287,281,242"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html" title="Главный файл приложения" alt="" coords="214,368,311,395"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="317,325,276,370,272,366,313,321"/>
+<area shape="rect" id="Node000006" href="$task__manager_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа TaskManager." alt="" coords="335,368,486,395"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="359,321,401,366,397,370,355,325"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="177,146,228,184,225,188,174,150"/>
+<area shape="rect" id="Node000008" href="$keysight__m9807a_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа KeysightM9807A." alt="" coords="5,187,168,229"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="120,153,100,188,96,185,115,150"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="331,150,282,188,279,184,328,146"/>
+<area shape="rect" id="Node000010" href="$planar__s50244_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа PlanarS50244." alt="" coords="342,187,490,229"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="387,150,407,185,402,188,383,153"/>
 </map>

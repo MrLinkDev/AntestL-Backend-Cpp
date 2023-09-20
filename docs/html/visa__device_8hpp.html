@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.1</span>
    </div>
   </td>
  </tr>
@@ -149,9 +149,12 @@ $(function() {
 <tr class="memitem:afadcbe33225bd4df3b3f033a11408785"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#afadcbe33225bd4df3b3f033a11408785">CMD_ERR</a>&#160;&#160;&#160;&quot;SYSTEM:ERROR?&quot;</td></tr>
 <tr class="memdesc:afadcbe33225bd4df3b3f033a11408785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда для запроса ошибок, возникших на приборе  <br /></td></tr>
 <tr class="separator:afadcbe33225bd4df3b3f033a11408785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a857b6af93e27b7e4fbcfdb6db8198cb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a857b6af93e27b7e4fbcfdb6db8198cb0">NO_ERROR_STR</a>&#160;&#160;&#160;&quot;+0,\&quot;No error\&quot;&quot;</td></tr>
-<tr class="memdesc:a857b6af93e27b7e4fbcfdb6db8198cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный ответ прибора, если на нём не возникло ошибок  <br /></td></tr>
-<tr class="separator:a857b6af93e27b7e4fbcfdb6db8198cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498a51338f2bb476eb32391295a44135"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#a498a51338f2bb476eb32391295a44135">NO_ERROR_STR_KEYSIGHT</a>&#160;&#160;&#160;&quot;+0,\&quot;No error\&quot;&quot;</td></tr>
+<tr class="memdesc:a498a51338f2bb476eb32391295a44135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный ответ прибора, если на нём не возникло ошибок  <br /></td></tr>
+<tr class="separator:a498a51338f2bb476eb32391295a44135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c15639f783fc70d7d10eb2770416a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#aa5c15639f783fc70d7d10eb2770416a2">NO_ERROR_STR_PLANAR</a>&#160;&#160;&#160;&quot;0,\&quot;No error\&quot;&quot;</td></tr>
+<tr class="memdesc:aa5c15639f783fc70d7d10eb2770416a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный ответ прибора, если на нём не возникло ошибок  <br /></td></tr>
+<tr class="separator:aa5c15639f783fc70d7d10eb2770416a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f15a6cd96854ce94babde7c05d44ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="visa__device_8hpp.html#ac2f15a6cd96854ce94babde7c05d44ff">OPC_PASS_STR_KEYSIGHT</a>&#160;&#160;&#160;&quot;+1&quot;</td></tr>
 <tr class="memdesc:ac2f15a6cd96854ce94babde7c05d44ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стандартный ответ прибора компании Keysight на команду "*OPC?", если все действия завершены  <br /></td></tr>
 <tr class="separator:ac2f15a6cd96854ce94babde7c05d44ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,14 +390,14 @@ $(function() {
 
 </div>
 </div>
-<a id="a857b6af93e27b7e4fbcfdb6db8198cb0" name="a857b6af93e27b7e4fbcfdb6db8198cb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a857b6af93e27b7e4fbcfdb6db8198cb0">&#9670;&#160;</a></span>NO_ERROR_STR</h2>
+<a id="a498a51338f2bb476eb32391295a44135" name="a498a51338f2bb476eb32391295a44135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498a51338f2bb476eb32391295a44135">&#9670;&#160;</a></span>NO_ERROR_STR_KEYSIGHT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NO_ERROR_STR&#160;&#160;&#160;&quot;+0,\&quot;No error\&quot;&quot;</td>
+          <td class="memname">#define NO_ERROR_STR_KEYSIGHT&#160;&#160;&#160;&quot;+0,\&quot;No error\&quot;&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -402,6 +405,24 @@ $(function() {
 <p>Стандартный ответ прибора, если на нём не возникло ошибок </p>
 
 <p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a id="aa5c15639f783fc70d7d10eb2770416a2" name="aa5c15639f783fc70d7d10eb2770416a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c15639f783fc70d7d10eb2770416a2">&#9670;&#160;</a></span>NO_ERROR_STR_PLANAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_ERROR_STR_PLANAR&#160;&#160;&#160;&quot;0,\&quot;No error\&quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Стандартный ответ прибора, если на нём не возникло ошибок </p>
+
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00052">52</a></p>
 
 </div>
 </div>
@@ -419,7 +440,7 @@ $(function() {
 
 <p>Стандартный ответ прибора компании Keysight на команду "*OPC?", если все действия завершены </p>
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00052">52</a></p>
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00055">55</a></p>
 
 </div>
 </div>
@@ -437,7 +458,7 @@ $(function() {
 
 <p>Стандартный ответ прибора компании Planar на команду "*OPC?", если все действия завершены </p>
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00054">54</a></p>
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00057">57</a></p>
 
 </div>
 </div>
@@ -454,7 +475,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00274">274</a></p>
+<p class="definition">См. определение в файле <a class="el" href="visa__device_8hpp_source.html">visa_device.hpp</a> строка <a class="el" href="visa__device_8hpp_source.html#l00277">277</a></p>
 
 </div>
 </div>

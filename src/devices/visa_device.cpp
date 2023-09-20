@@ -176,6 +176,15 @@ void VisaDevice::connect() {
         return;
     }
 
+    status = viSetAttribute(device, VI_ATTR_TERMCHAR_EN, true);
+
+    if (status < VI_SUCCESS) {
+        logger::log(LEVEL_ERROR, "Can't enable termination character");
+
+        connected = false;
+        return;
+    }
+
     connected = true;
 }
 
@@ -254,7 +263,7 @@ int VisaDevice::err() {
     if (error_info.empty()) {
         logger::log(LEVEL_WARN, "No error data from device");
     } else {
-        if (error_info == NO_ERROR_STR) {
+        if (error_info == NO_ERROR_STR_KEYSIGHT || error_info == NO_ERROR_STR_PLANAR) {
             return NO_ERRORS;
         } else {
             logger::log(LEVEL_ERROR, error_info);

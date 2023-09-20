@@ -2,8 +2,8 @@ var searchData=
 [
   ['idn_0',['idn',['../class_visa_device.html#a3f6602a4daf668fa4a06a1fe2821d0c7',1,'VisaDevice']]],
   ['index_1',['index',['../namespacearray__utils.html#acc51bcd934d5180b0733c6335deaa8a7',1,'array_utils']]],
-  ['init_2',['init',['../class_keysight_m9807_a.html#ae9df428776abd1cc65fa24e57fb713e1',1,'KeysightM9807A::init()'],['../class_vna_device.html#ac77ad0af5fcffde75ad9e53d5b2b8189',1,'VnaDevice::init()']]],
-  ['init_5fchannel_3',['init_channel',['../class_keysight_m9807_a.html#ad48b95d00b8a2ecee1e95dc300d25203',1,'KeysightM9807A::init_channel()'],['../class_vna_device.html#a4975b9caaac2bb8889a011aab9f192e2',1,'VnaDevice::init_channel()']]],
+  ['init_2',['init',['../class_keysight_m9807_a.html#ae9df428776abd1cc65fa24e57fb713e1',1,'KeysightM9807A::init()'],['../class_planar_s50244.html#ae80ef8427e4b488989d81a13a4622141',1,'PlanarS50244::init()'],['../class_vna_device.html#ac77ad0af5fcffde75ad9e53d5b2b8189',1,'VnaDevice::init()']]],
+  ['init_5fchannel_3',['init_channel',['../class_keysight_m9807_a.html#ad48b95d00b8a2ecee1e95dc300d25203',1,'KeysightM9807A::init_channel()'],['../class_planar_s50244.html#a152d5516596ddd1f784ffdd28699c9c3',1,'PlanarS50244::init_channel()'],['../class_vna_device.html#a4975b9caaac2bb8889a011aab9f192e2',1,'VnaDevice::init_channel()']]],
   ['init_5fparams_4',['init_params',['../class_rbd_device.html#a8ae479426b12f8fcd2a08c84acdc7bb5',1,'RbdDevice']]],
   ['insert_5fangles_5',['insert_angles',['../structdata__t.html#acfe619f8272e1fe7cd0e41c4d0da26d3',1,'data_t']]],
   ['insert_5ffreq_6',['insert_freq',['../structdata__t.html#a9de78239ac912f00f5e48333b408192c',1,'data_t']]],

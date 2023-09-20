@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['task_5fmanager_2ecpp_0',['task_manager.cpp',['../task__manager_8cpp.html',1,'']]],
-  ['task_5fmanager_2ehpp_1',['task_manager.hpp',['../task__manager_8hpp.html',1,'']]],
-  ['tesart_5frbd_2ecpp_2',['tesart_rbd.cpp',['../tesart__rbd_8cpp.html',1,'']]],
-  ['tesart_5frbd_2ehpp_3',['tesart_rbd.hpp',['../tesart__rbd_8hpp.html',1,'']]],
-  ['test_5fjson_5frequests_2ehpp_4',['test_json_requests.hpp',['../test__json__requests_8hpp.html',1,'']]]
+  ['socket_5fserver_2ecpp_0',['socket_server.cpp',['../socket__server_8cpp.html',1,'']]],
+  ['socket_5fserver_2ehpp_1',['socket_server.hpp',['../socket__server_8hpp.html',1,'']]],
+  ['string_5futils_2ehpp_2',['string_utils.hpp',['../string__utils_8hpp.html',1,'']]]
 ];

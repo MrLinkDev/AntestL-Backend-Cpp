@@ -1,37 +1,57 @@
 <map id="VisaDevice::err" name="VisaDevice::err">
-<area shape="rect" id="Node000001" title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,..." alt="" coords="455,367,563,393"/>
-<area shape="rect" id="Node000002" href="$class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе." alt="" coords="249,173,392,200"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,358,333,202,337,199,486,354"/>
-<area shape="rect" id="Node000004" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="234,392,407,419"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="441,392,408,396,407,391,440,387"/>
+<area shape="rect" id="Node000001" title="Отправляет команду &quot;SYSTEM:ERROR?&quot; на подключенное устройство и считывает сведения об ошибках,..." alt="" coords="455,652,563,679"/>
+<area shape="rect" id="Node000002" href="$class_visa_device.html#aa8ab94835c465376d5b775478b3b04bf" title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе." alt="" coords="249,316,392,343"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="491,640,327,344,332,342,496,638"/>
+<area shape="rect" id="Node000004" href="$class_visa_device.html#a069e154c5f48779dfd908146db9e66ed" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="234,677,407,704"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="441,677,408,682,407,676,440,672"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#a743747ee232e8ff9723d25539852f94d" title="Отправка данных на прибор и чтение ответа от прибора. Также, проверяется наличие ошибок на приборе." alt="" coords="24,5,167,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,163,252,104,220,73,184,46,161,35,163,30,187,42,223,69,256,100,304,159"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,302,298,247,274,178,236,107,212,74,184,46,166,35,169,30,187,42,216,71,241,104,278,176,303,246,317,301"/>
 <area shape="rect" id="Node000005" href="$class_keysight_m9807_a.html#a85c78a42ccfda3bb9b69cb60b79358f4" title="Настройка ВАЦ для измерения" alt="" coords="5,56,186,83"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="305,380,231,213,220,178,215,149,205,123,184,97,167,85,170,81,187,93,210,120,220,147,225,176,236,211,309,378"/>
-<area shape="rect" id="Node000006" href="$class_keysight_m9807_a.html#ad492f043e51d3e760209af6d59fe7829" title="Создание необходимых трасс, в зависимости от того, используется ли внешний генератор" alt="" coords="13,107,178,149"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="309,379,292,333,266,275,230,215,208,188,184,163,168,152,171,148,187,159,212,184,235,212,271,272,297,331,314,377"/>
-<area shape="rect" id="Node000007" href="$class_keysight_m9807_a.html#ae9df428776abd1cc65fa24e57fb713e1" title="Запуск измерения" alt="" coords="23,173,168,200"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="305,380,287,342,260,298,226,252,184,214,163,203,166,198,187,210,230,249,265,295,292,340,310,377"/>
-<area shape="rect" id="Node000008" href="$class_keysight_m9807_a.html#ad48b95d00b8a2ecee1e95dc300d25203" title="Инициализация канала для измерений" alt="" coords="23,224,168,267"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="297,383,248,332,217,305,184,281,163,270,165,265,187,276,221,301,252,328,301,379"/>
-<area shape="rect" id="Node000009" href="$class_keysight_m9807_a.html#ad4dc40466fecabae451e88d763692076" title="Отключает все порты" alt="" coords="18,291,173,317"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="285,386,238,358,185,332,153,320,154,315,187,327,241,354,288,381"/>
-<area shape="rect" id="Node000010" href="$class_keysight_m9807_a.html#a861c82a08c49f54dd245db73d87181c8" title="Отключает выбранный порт" alt="" coords="18,341,173,368"/>
-<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="243,391,157,371,159,366,244,386"/>
-<area shape="rect" id="Node000011" href="$class_keysight_m9807_a.html#adf9e166699c89ec3c7f53fae5ec81b0c" title="Включает все порты" alt="" coords="17,392,174,419"/>
-<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="219,408,174,408,174,403,219,403"/>
-<area shape="rect" id="Node000012" href="$class_keysight_m9807_a.html#ac6105e309ba2f11a360797e19d34a592" title="Включает выбранный порт" alt="" coords="17,443,174,469"/>
-<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="244,425,159,445,157,439,243,420"/>
-<area shape="rect" id="Node000013" href="$class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="9,493,182,520"/>
-<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="288,429,241,457,187,484,154,495,153,490,185,479,238,452,285,425"/>
-<area shape="rect" id="Node000014" href="$class_keysight_m9807_a.html#a752f62baec908e4e421a95b3c75422fc" title="Установка определённого значения частоты" alt="" coords="8,544,183,571"/>
-<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="301,432,253,484,221,511,187,534,161,546,159,541,184,530,218,507,249,480,298,428"/>
-<area shape="rect" id="Node000015" href="$class_keysight_m9807_a.html#a2b1761a2a4b4dc696a74590c2cb028de" title="Установка частотного диапазона" alt="" coords="22,595,169,637"/>
-<area shape="poly" id="edge14_Node000004_Node000015" title=" " alt="" coords="308,433,261,507,227,549,187,585,168,596,165,592,184,581,223,545,257,504,303,430"/>
-<area shape="rect" id="Node000016" href="$class_keysight_m9807_a.html#a148ac915640756d3ef0c33d92c1b1205" title="Установка положений переключателей в определённые позиции" alt="" coords="6,661,185,688"/>
-<area shape="poly" id="edge15_Node000004_Node000016" title=" " alt="" coords="314,433,298,481,273,539,236,600,213,627,187,651,168,663,165,659,184,647,209,624,232,597,268,537,294,479,309,432"/>
-<area shape="rect" id="Node000017" href="$class_keysight_m9807_a.html#ab3a0a48c7e439fab722d902479ff78eb" title="Установка требуемой мощности зондирующего порта" alt="" coords="22,712,169,755"/>
-<area shape="poly" id="edge16_Node000004_Node000017" title=" " alt="" coords="316,434,303,490,278,561,240,636,216,671,187,702,171,714,168,710,184,698,212,668,236,633,273,559,297,488,311,433"/>
-<area shape="rect" id="Node000018" href="$class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" title="Перевод триггера в режим manual." alt="" coords="13,779,178,805"/>
-<area shape="poly" id="edge17_Node000004_Node000018" title=" " alt="" coords="320,434,310,502,289,592,272,640,250,687,222,730,187,769,170,780,167,776,184,765,217,727,245,684,267,638,284,590,305,501,314,433"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="309,664,274,532,231,355,225,314,224,278,227,214,226,185,220,157,207,127,184,97,169,85,173,81,188,93,212,125,226,155,232,185,233,214,229,278,230,314,236,354,279,530,314,663"/>
+<area shape="rect" id="Node000006" href="$class_planar_s50244.html#a9092c8dda103df83d5e407e768b887b7" title="Настройка ВАЦ для измерения" alt="" coords="14,107,177,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="309,664,231,355,225,322,223,293,223,241,221,218,215,195,203,172,184,147,169,136,172,132,188,143,208,169,220,193,226,217,229,241,229,292,231,322,236,354,314,663"/>
+<area shape="rect" id="Node000007" href="$class_keysight_m9807_a.html#ad492f043e51d3e760209af6d59fe7829" title="Создание необходимых трасс, в зависимости от того, используется ли внешний генератор" alt="" coords="13,157,178,200"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="309,664,243,407,206,277,183,214,170,203,174,198,188,210,211,275,248,406,315,662"/>
+<area shape="rect" id="Node000008" href="$class_planar_s50244.html#a665b4601aa0b252835220280da8d0635" title="Создание необходимых трасс, в зависимости от того, используется ли внешний генератор" alt="" coords="22,224,169,267"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="311,663,291,576,261,462,224,352,204,310,184,280,168,268,171,264,188,277,208,307,229,350,266,460,296,575,316,662"/>
+<area shape="rect" id="Node000009" href="$class_keysight_m9807_a.html#ae9df428776abd1cc65fa24e57fb713e1" title="Запуск измерения" alt="" coords="23,291,168,317"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="314,663,305,595,284,506,267,458,245,412,217,369,184,331,167,320,170,315,187,327,222,366,250,409,272,456,289,504,310,594,320,662"/>
+<area shape="rect" id="Node000010" href="$class_keysight_m9807_a.html#ad48b95d00b8a2ecee1e95dc300d25203" title="Инициализация канала для измерений" alt="" coords="23,341,168,384"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="311,663,297,608,273,537,236,463,212,428,184,398,167,386,170,382,187,394,216,425,240,460,278,535,303,606,316,662"/>
+<area shape="rect" id="Node000011" href="$class_planar_s50244.html#a152d5516596ddd1f784ffdd28699c9c3" title="Инициализация канала для измерений" alt="" coords="32,408,159,451"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="307,664,290,621,264,567,228,512,184,465,158,449,161,444,187,461,233,509,269,565,295,619,312,662"/>
+<area shape="rect" id="Node000012" href="$class_keysight_m9807_a.html#ad4dc40466fecabae451e88d763692076" title="Отключает все порты" alt="" coords="18,475,173,501"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="304,665,285,631,258,590,224,550,184,516,163,504,165,500,187,511,228,546,262,587,289,628,308,663"/>
+<area shape="rect" id="Node000013" href="$class_planar_s50244.html#a3099a6c00551bb147ff03388dceb4743" title="Отключает все порты" alt="" coords="27,525,164,552"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="298,668,249,616,218,589,184,566,159,555,161,550,187,562,221,585,253,612,301,664"/>
+<area shape="rect" id="Node000014" href="$class_keysight_m9807_a.html#a861c82a08c49f54dd245db73d87181c8" title="Отключает выбранный порт" alt="" coords="18,576,173,603"/>
+<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="285,671,238,644,185,617,153,606,154,601,187,612,241,639,288,667"/>
+<area shape="rect" id="Node000015" href="$class_planar_s50244.html#a7cef78ad66899bf7d1ebc675bbacf18d" title="Отключает выбранный порт" alt="" coords="27,627,164,653"/>
+<area shape="poly" id="edge14_Node000004_Node000015" title=" " alt="" coords="243,676,157,657,159,651,244,671"/>
+<area shape="rect" id="Node000016" href="$class_keysight_m9807_a.html#adf9e166699c89ec3c7f53fae5ec81b0c" title="Включает все порты" alt="" coords="17,677,174,704"/>
+<area shape="poly" id="edge15_Node000004_Node000016" title=" " alt="" coords="219,693,174,693,174,688,219,688"/>
+<area shape="rect" id="Node000017" href="$class_planar_s50244.html#a92cf563ce580b8508cad2cdff68ad084" title="Включает все порты" alt="" coords="26,728,165,755"/>
+<area shape="poly" id="edge16_Node000004_Node000017" title=" " alt="" coords="244,710,159,730,157,725,243,705"/>
+<area shape="rect" id="Node000018" href="$class_keysight_m9807_a.html#ac6105e309ba2f11a360797e19d34a592" title="Включает выбранный порт" alt="" coords="17,779,174,805"/>
+<area shape="poly" id="edge17_Node000004_Node000018" title=" " alt="" coords="288,715,241,742,187,769,154,781,153,776,185,764,238,738,285,710"/>
+<area shape="rect" id="Node000019" href="$class_planar_s50244.html#aeec8379aa2d84a196836a99d13d43bf9" title="Включает выбранный порт" alt="" coords="26,829,165,856"/>
+<area shape="poly" id="edge18_Node000004_Node000019" title=" " alt="" coords="301,717,253,769,221,796,187,820,161,831,159,826,184,815,218,792,249,765,298,714"/>
+<area shape="rect" id="Node000020" href="$class_visa_device.html#ab95d81d2e1ebab67621ac7aac769bc64" title="Отправка данных на прибор и чтение ответа от прибора. Также, ожидается завершение выполнения действий..." alt="" coords="9,880,182,907"/>
+<area shape="poly" id="edge19_Node000004_Node000020" title=" " alt="" coords="308,719,289,753,262,794,228,835,187,870,165,882,163,877,184,866,224,831,258,791,285,750,304,716"/>
+<area shape="rect" id="Node000021" href="$class_keysight_m9807_a.html#a752f62baec908e4e421a95b3c75422fc" title="Установка определённого значения частоты" alt="" coords="8,931,183,957"/>
+<area shape="poly" id="edge20_Node000004_Node000021" title=" " alt="" coords="313,719,296,763,270,818,234,873,212,899,187,921,167,932,165,928,184,917,208,895,230,870,265,815,291,761,308,717"/>
+<area shape="rect" id="Node000022" href="$class_planar_s50244.html#a0060e852dd3374f9b4c3c6c93da8c01c" title="Установка определённого значения частоты" alt="" coords="17,981,174,1008"/>
+<area shape="poly" id="edge21_Node000004_Node000022" title=" " alt="" coords="316,719,302,772,278,840,240,911,216,943,187,971,169,983,166,978,184,967,212,940,236,908,273,838,297,771,311,717"/>
+<area shape="rect" id="Node000023" href="$class_keysight_m9807_a.html#a2b1761a2a4b4dc696a74590c2cb028de" title="Установка частотного диапазона" alt="" coords="22,1032,169,1075"/>
+<area shape="poly" id="edge22_Node000004_Node000023" title=" " alt="" coords="318,719,306,781,283,861,265,904,244,947,218,986,187,1022,171,1034,168,1030,184,1018,214,983,240,944,261,902,278,860,301,779,313,718"/>
+<area shape="rect" id="Node000024" href="$class_planar_s50244.html#af52408a261d6845f6d44653f4e429f31" title="Установка частотного диапазона" alt="" coords="17,1099,174,1141"/>
+<area shape="poly" id="edge23_Node000004_Node000024" title=" " alt="" coords="320,719,312,792,291,890,274,943,252,995,223,1045,188,1089,173,1100,170,1096,184,1085,219,1042,247,993,269,941,286,889,307,791,315,718"/>
+<area shape="rect" id="Node000025" href="$class_keysight_m9807_a.html#a148ac915640756d3ef0c33d92c1b1205" title="Установка положений переключателей в определённые позиции" alt="" coords="6,1165,185,1192"/>
+<area shape="poly" id="edge24_Node000004_Node000025" title=" " alt="" coords="322,719,319,803,313,859,302,920,285,983,261,1046,229,1104,188,1155,172,1167,169,1163,184,1151,225,1101,257,1043,280,982,297,919,307,858,314,803,317,718"/>
+<area shape="rect" id="Node000026" href="$class_keysight_m9807_a.html#ab3a0a48c7e439fab722d902479ff78eb" title="Установка требуемой мощности зондирующего порта" alt="" coords="22,1216,169,1259"/>
+<area shape="poly" id="edge25_Node000004_Node000026" title=" " alt="" coords="318,719,301,826,273,971,255,1044,235,1111,212,1167,188,1206,171,1220,167,1215,184,1202,207,1165,230,1110,250,1043,268,969,296,825,312,719"/>
+<area shape="rect" id="Node000027" href="$class_planar_s50244.html#ad1f033021449cf6c4e0a1eaeafc6dbe3" title="Установка требуемой мощности зондирующего порта" alt="" coords="11,1283,180,1309"/>
+<area shape="poly" id="edge26_Node000004_Node000027" title=" " alt="" coords="319,719,305,838,279,1004,261,1088,240,1165,216,1229,188,1272,172,1284,169,1280,184,1269,211,1226,235,1164,256,1087,274,1003,300,837,314,718"/>
+<area shape="rect" id="Node000028" href="$class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8" title="Перевод триггера в режим manual." alt="" coords="13,1333,178,1360"/>
+<area shape="poly" id="edge27_Node000004_Node000028" title=" " alt="" coords="320,719,307,847,282,1028,264,1121,243,1205,218,1275,203,1302,188,1323,173,1335,169,1331,184,1319,199,1299,213,1273,238,1204,259,1119,277,1027,302,846,314,718"/>
 </map>

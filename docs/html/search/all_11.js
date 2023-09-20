@@ -37,5 +37,5 @@ var searchData=
   ['timeout_34',['timeout',['../structvisa__config.html#a125bad74f669de4672d1bda82a4c6ffc',1,'visa_config']]],
   ['to_5fstring_35',['to_string',['../structdata__t.html#afe36ebc9e507ce50faa88f60535d1fac',1,'data_t::to_string()'],['../structiq__port__list__t.html#a4cdffb6e324ad40dc931082648f29886',1,'iq_port_list_t::to_string()']]],
   ['traces_5fconfigured_36',['traces_configured',['../class_device_set.html#a0fcf48bfdbe73cb52ed7766d7bf323e5',1,'DeviceSet']]],
-  ['trigger_37',['trigger',['../class_vna_device.html#a2141273efb5e7aa19f67bf06dc323546',1,'VnaDevice::trigger()'],['../class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8',1,'KeysightM9807A::trigger()']]]
+  ['trigger_37',['trigger',['../class_vna_device.html#a2141273efb5e7aa19f67bf06dc323546',1,'VnaDevice::trigger()'],['../class_planar_s50244.html#ab5d338a1801b1af84302eda8da7e779a',1,'PlanarS50244::trigger()'],['../class_keysight_m9807_a.html#a83a1f840e34e3ecb56c319649725efb8',1,'KeysightM9807A::trigger()']]]
 ];

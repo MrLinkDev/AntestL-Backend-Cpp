@@ -45,6 +45,8 @@ add_executable(
 
         src/task_manager.hpp
         src/task_manager.cpp
+        src/devices/vna/planar_s50244.cpp
+        src/devices/vna/planar_s50244.h
 )
 
 target_link_libraries(

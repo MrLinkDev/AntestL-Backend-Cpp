@@ -89,7 +89,9 @@ void usage();
 
 int main(int argc, char* argv[]) {
     signal(SIGINT, exit_event_handler);
+
     logger::set_log_level(LEVEL_INFO);
+    logger::set_color_state(NO_COLOR);
 
     for (int arg_pos = 1; arg_pos < argc; ++arg_pos) {
         if (strcmp(argv[arg_pos], LOG_LEVEL_PARAM) == 0 || strcmp(argv[arg_pos], LOG_LEVEL_PARAM_SHORT) == 0) {

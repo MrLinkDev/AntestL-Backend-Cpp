@@ -7,7 +7,6 @@
  */
 
 #include "device_set.hpp"
-#include "rbd/demo_rdb.hpp"
 
 /**
  * \brief Метод, позволяющий осуществить подключение к устройству.
@@ -39,11 +38,13 @@ bool DeviceSet::connect(int device_type, std::string device_model, const std::st
 
                 if (device_model == "M9807A") {
                     vna = new KeysightM9807A(device_address);
-                    vna->preset();
+                } else if (device_model == "VNA_PLANAR") {
+                    vna = new PlanarS50244(device_address);
                 } else {
                     return false;
                 }
 
+                vna->preset();
                 return vna->is_connected();
             case DEVICE_GEN:
                 logger::log(LEVEL_TRACE, "Connecting to external gen");

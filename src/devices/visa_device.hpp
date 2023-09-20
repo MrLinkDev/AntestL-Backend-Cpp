@@ -46,7 +46,10 @@
 #define CMD_ERR                 "SYSTEM:ERROR?"
 
 /// Стандартный ответ прибора, если на нём не возникло ошибок
-#define NO_ERROR_STR            "+0,\"No error\""
+#define NO_ERROR_STR_KEYSIGHT   "+0,\"No error\""
+
+/// Стандартный ответ прибора, если на нём не возникло ошибок
+#define NO_ERROR_STR_PLANAR     "0,\"No error\""
 
 /// Стандартный ответ прибора компании Keysight на команду "*OPC?", если все действия завершены
 #define OPC_PASS_STR_KEYSIGHT   "+1"

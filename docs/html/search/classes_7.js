@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['socketserver_0',['SocketServer',['../class_socket_server.html',1,'']]]
+  ['rbddevice_0',['RbdDevice',['../class_rbd_device.html',1,'']]]
 ];

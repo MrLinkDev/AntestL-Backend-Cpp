@@ -15,7 +15,9 @@
 #include "gen/gen_device.hpp"
 #include "rbd/rbd_device.hpp"
 #include "vna/keysight_m9807a.hpp"
+#include "vna/planar_s50244.h"
 #include "gen/keysight_gen.hpp"
+#include "rbd/demo_rdb.hpp"
 #include "rbd/tesart_rbd.hpp"
 
 /// Тип устройства: ВАЦ
