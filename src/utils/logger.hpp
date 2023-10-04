@@ -208,7 +208,7 @@ public:
         std::string log_message = time + " [" + log_level_tag + "] ";
         log_message += std::vformat(fmt, std::make_format_args(args...));
 
-        if (log_message_colored.length() > MAX_MESSAGE_LENGTH) {
+        if (log_message_colored.length() > MAX_MESSAGE_LENGTH && log_level < LEVEL_TRACE) {
             log_message_colored = log_message_colored.substr(0, MAX_MESSAGE_LENGTH) + "...";
         }
 
