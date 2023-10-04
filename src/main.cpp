@@ -15,6 +15,9 @@
 #include "socket/socket_server.hpp"
 #include "task_manager.hpp"
 
+/// Версия AntestL Backend
+#define VERSION     "1.0.2"
+
 /// Стандартный порт для входящих заданий
 #define DEFAULT_TASK_PORT           5006
 /// Стандартный порт для исходящих данных
@@ -116,7 +119,7 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    logger::log(LEVEL_INFO, "Starting AntestL backend...");
+    logger::log(LEVEL_INFO, "Starting AntestL Backend (v{})", VERSION);
 
     while (!stop_process) {
         task_thread = new std::jthread{task_server_thread_f};

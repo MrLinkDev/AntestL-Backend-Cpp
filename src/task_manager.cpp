@@ -145,8 +145,8 @@ bool TaskManager::set_freq_task(json freq_value) {
 bool TaskManager::set_freq_range_task(json freq_range) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_FREQ_RANGE);
 
-    double start_freq = freq_range["start"].get<double>();
-    double stop_freq = freq_range["stop"].get<double>();
+    double start_freq = freq_range["start_freq"].get<double>();
+    double stop_freq = freq_range["stop_freq"].get<double>();
     int points = freq_range["points"].get<int>();
     
     logger::log(

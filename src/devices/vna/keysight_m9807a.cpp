@@ -384,7 +384,7 @@ void KeysightM9807A::trigger() {
  * \endcode
  */
 void KeysightM9807A::init() {
-    send_wait_err("INIT");
+    send_wait_err("INIT:IMM");
 }
 
 /**

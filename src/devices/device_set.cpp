@@ -685,10 +685,13 @@ data_t DeviceSet::get_data(std::vector<int> port_list) {
     data_t acquired_data{};
 
     try {
+        vna->create_traces(port_list, using_ext_gen);
+        /**
         if (!traces_configured) {
             vna->create_traces(port_list, using_ext_gen);
             traces_configured = true;
         }
+        */
 
         logger::log(LEVEL_TRACE, "Traces created");
     } catch (int error_code) {
