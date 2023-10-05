@@ -1,0 +1,13 @@
+<map id="PlanarS50244::set_path" name="PlanarS50244::set_path">
+<area shape="rect" id="Node000001" title="Установка положений переключателей в определённые позиции" alt="" coords="5,81,166,108"/>
+<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="214,81,299,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,92,199,92,199,97,166,97"/>
+<area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="370,5,488,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="278,79,346,42,363,35,365,40,348,46,280,83"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="373,56,484,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="299,86,358,77,359,82,300,91"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="347,107,510,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="300,98,332,103,332,108,299,104"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="362,157,496,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="280,106,348,143,365,150,363,155,346,148,278,111"/>
+</map>

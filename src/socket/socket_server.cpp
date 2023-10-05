@@ -101,6 +101,7 @@ int SocketServer::create() {
         logger::log(LEVEL_ERROR, "{} ({}): Can't create socket!", tag, port);
         return SOCKET_NOT_CREATED;
     }
+    logger::log(LEVEL_TRACE, "{} ({}): Object created", tag, port);
 
     server_address.sin_family = AF_INET;
     server_address.sin_addr.s_addr = address;
@@ -111,6 +112,7 @@ int SocketServer::create() {
         logger::log(LEVEL_ERROR, "{} ({}): Can't bind socket", tag, port);
         return SOCKET_NOT_BOUND;
     }
+    logger::log(LEVEL_TRACE, "{} ({}): Socket bound", tag, port);
 
     logger::log(LEVEL_DEBUG, "{} ({}): Created", tag, port);
     return SOCKET_CREATED;
@@ -146,6 +148,8 @@ int SocketServer::wait_client() {
 
     int client_address_size = sizeof(client_address);
     if ((client = accept(server, (SOCKADDR*)&client_address, &client_address_size)) != INVALID_SOCKET) {
+        connected = true;
+
         logger::log(LEVEL_INFO, "{} ({}): Connected client with address {}", tag, port, inet_ntoa(client_address.sin_addr));
         return CLIENT_CONNECTED;
     }
@@ -170,7 +174,14 @@ std::string SocketServer::read_data() {
     bool finish = false;
 
     while (true) {
-        if (recv(client, buffer, sizeof(buffer), 0) == SOCKET_ERROR) {
+        int bytes = recv(client, buffer, sizeof(buffer), 0);
+
+        if (bytes == SOCKET_ERROR) {
+            return std::string{};
+        } else if (bytes == 0) {
+            connected = false;
+
+            logger::log(LEVEL_WARN, "Client disconnected");
             return std::string{};
         }
 
@@ -233,4 +244,14 @@ void SocketServer::close() {
     if (closesocket(server) == SOCKET_ERROR) {
         logger::log(LEVEL_ERROR, "{} ({}): Can't close socket", tag, port);
     }
+
+    connected = false;
+}
+
+/**
+ * \brief Проверка, подключен ли клиент
+ * \return Если клиент подключен - true. В противном случае - false.
+ */
+bool SocketServer::is_connected() {
+    return connected;
 }

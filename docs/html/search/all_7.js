@@ -17,7 +17,7 @@ var searchData=
   ['iq_5fport_5fdata_5ft_14',['iq_port_data_t',['../vna__device_8hpp.html#a651027f1d078d42fca12f590fb702b41',1,'vna_device.hpp']]],
   ['iq_5fport_5flist_15',['iq_port_list',['../structiq__port__list__t.html#abd3c0cc17c818a426a9018c04c4bfb80',1,'iq_port_list_t']]],
   ['iq_5fport_5flist_5ft_16',['iq_port_list_t',['../structiq__port__list__t.html',1,'iq_port_list_t'],['../structiq__port__list__t.html#a8d95a98d6a403ae50a01b5c14829706f',1,'iq_port_list_t::iq_port_list_t()']]],
-  ['is_5fconnected_17',['is_connected',['../class_demo_rbd.html#a100bff0b0307475e71de7c1228f3146c',1,'DemoRbd::is_connected()'],['../class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9',1,'RbdDevice::is_connected()'],['../class_tesart_rbd.html#a1b9e3d777aac6f972eb4dd56598936ec',1,'TesartRbd::is_connected()'],['../class_visa_device.html#aa53bc03ce9be2af514335565d585414e',1,'VisaDevice::is_connected()']]],
+  ['is_5fconnected_17',['is_connected',['../class_demo_rbd.html#a100bff0b0307475e71de7c1228f3146c',1,'DemoRbd::is_connected()'],['../class_rbd_device.html#a7f0fc01b4d9a94bae816f55828bd74e9',1,'RbdDevice::is_connected()'],['../class_tesart_rbd.html#a1b9e3d777aac6f972eb4dd56598936ec',1,'TesartRbd::is_connected()'],['../class_visa_device.html#aa53bc03ce9be2af514335565d585414e',1,'VisaDevice::is_connected()'],['../class_socket_server.html#aa7bacfc3a50bcbc8f9911f73b6ae8c92',1,'SocketServer::is_connected()']]],
   ['is_5fstopped_18',['is_stopped',['../class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e',1,'TesartRbd']]],
   ['is_5fusing_5fext_5fgen_19',['is_using_ext_gen',['../class_device_set.html#a548166665d062dc3a5a468ca184d8e08',1,'DeviceSet']]]
 ];

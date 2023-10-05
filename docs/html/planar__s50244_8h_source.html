@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AntestL Backend: Исходный файл src/devices/vna/planar_s50244.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6fac9273c1f4413d2ee63ba6cd0b0eb2.html">devices</a></li><li class="navelem"><a class="el" href="dir_2ffa1d14b5f35f28d185488534f68ce5.html">vna</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">planar_s50244.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="planar__s50244_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef ANTESTL_BACKEND_PLANAR_S50244_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define ANTESTL_BACKEND_PLANAR_S50244_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="vna__device_8hpp.html">vna_device.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="planar__s50244_8h.html#a1997cb09f4a56468ee22d04e02de6d49">   15</a></span><span class="preprocessor">#define S50244_PORT_COUNT   2</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_planar_s50244.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="class_planar_s50244.html">PlanarS50244</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_vna_device.html">VnaDevice</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_planar_s50244.html#a7dc382c9a961ada935df6ec924e8e127">   22</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="class_planar_s50244.html#a7dc382c9a961ada935df6ec924e8e127">port_names</a>[<a class="code hl_define" href="planar__s50244_8h.html#a1997cb09f4a56468ee22d04e02de6d49">S50244_PORT_COUNT</a>]  = {<span class="charliteral">&#39;B&#39;</span>, <span class="charliteral">&#39;A&#39;</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_planar_s50244.html#a8f7ef0c6c5cafa84b26ea0070bca05a8">   24</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_planar_s50244.html#a8f7ef0c6c5cafa84b26ea0070bca05a8">port_numbers</a>[<a class="code hl_define" href="planar__s50244_8h.html#a1997cb09f4a56468ee22d04e02de6d49">S50244_PORT_COUNT</a>] = {2, 1};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_planar_s50244.html#a571662e933b4b43cc9bd759d0f621ad3">   27</a></span>    <a class="code hl_function" href="class_planar_s50244.html#a571662e933b4b43cc9bd759d0f621ad3">PlanarS50244</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_planar_s50244.html#a571662e933b4b43cc9bd759d0f621ad3">PlanarS50244</a>(std::string device_address);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#aa198db841f0f619b6d652c2d7008d1c5">preset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a73a885b6efbbb86493ef88d787877ac3">full_preset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a152d5516596ddd1f784ffdd28699c9c3">init_channel</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a9092c8dda103df83d5e407e768b887b7">configure</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_vna_device.html#ae60166c40aef6b94da9a8f7b0b0a0f30">meas_type</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_vna_device.html#a91b12646e7d6440f127fb7fd4c374bc0">rbw</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="class_vna_device.html#a59be4118d64eed794aba28d4ca229976">source_port</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a665b4601aa0b252835220280da8d0635">create_traces</a>(std::vector&lt;int&gt; port_list, <span class="keywordtype">bool</span> external) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#ad1f033021449cf6c4e0a1eaeafc6dbe3">set_power</a>(<span class="keywordtype">float</span> power_) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#af52408a261d6845f6d44653f4e429f31">set_freq_range</a>(<span class="keywordtype">double</span> <a class="code hl_variable" href="class_vna_device.html#a25b8df8f8ae839409aea3c2101129eea">start_freq</a>, <span class="keywordtype">double</span> <a class="code hl_variable" href="class_vna_device.html#a51d1eff917f6c889139f7afd9ba0f702">stop_freq</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="class_vna_device.html#a7968e3bb567b6bff0e625abef1910018">points</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a0060e852dd3374f9b4c3c6c93da8c01c">set_freq</a>(<span class="keywordtype">double</span> freq) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a02dd1134c4ffb9ef3766b18c6c547971">set_path</a>(std::vector&lt;int&gt; path_list) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a3099a6c00551bb147ff03388dceb4743">rf_off</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a3099a6c00551bb147ff03388dceb4743">rf_off</a>(<span class="keywordtype">int</span> port) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a92cf563ce580b8508cad2cdff68ad084">rf_on</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#a92cf563ce580b8508cad2cdff68ad084">rf_on</a>(<span class="keywordtype">int</span> port) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#ab5d338a1801b1af84302eda8da7e779a">trigger</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_planar_s50244.html#ae80ef8427e4b488989d81a13a4622141">init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_typedef" href="vna__device_8hpp.html#a651027f1d078d42fca12f590fb702b41">iq_port_data_t</a> <a class="code hl_function" href="class_planar_s50244.html#af8e278b134bfe73329fee623c7c62ad2">get_data</a>(<span class="keywordtype">int</span> trace_index) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">//ANTESTL_BACKEND_PLANAR_S50244_H</span></div>
+<div class="ttc" id="aclass_planar_s50244_html"><div class="ttname"><a href="class_planar_s50244.html">PlanarS50244</a></div><div class="ttdoc">Класс, в котором реализованы методы для работы с ВАЦ Planar S50244.</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8h_source.html#l00020">planar_s50244.h:20</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a0060e852dd3374f9b4c3c6c93da8c01c"><div class="ttname"><a href="class_planar_s50244.html#a0060e852dd3374f9b4c3c6c93da8c01c">PlanarS50244::set_freq</a></div><div class="ttdeci">void set_freq(double freq) override</div><div class="ttdoc">Установка определённого значения частоты</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00214">planar_s50244.cpp:214</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a02dd1134c4ffb9ef3766b18c6c547971"><div class="ttname"><a href="class_planar_s50244.html#a02dd1134c4ffb9ef3766b18c6c547971">PlanarS50244::set_path</a></div><div class="ttdeci">void set_path(std::vector&lt; int &gt; path_list) override</div><div class="ttdoc">Установка положений переключателей в определённые позиции</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00366">planar_s50244.cpp:366</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a152d5516596ddd1f784ffdd28699c9c3"><div class="ttname"><a href="class_planar_s50244.html#a152d5516596ddd1f784ffdd28699c9c3">PlanarS50244::init_channel</a></div><div class="ttdeci">void init_channel() override</div><div class="ttdoc">Инициализация канала для измерений</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00069">planar_s50244.cpp:69</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a3099a6c00551bb147ff03388dceb4743"><div class="ttname"><a href="class_planar_s50244.html#a3099a6c00551bb147ff03388dceb4743">PlanarS50244::rf_off</a></div><div class="ttdeci">void rf_off() override</div><div class="ttdoc">Отключает все порты</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00236">planar_s50244.cpp:236</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a571662e933b4b43cc9bd759d0f621ad3"><div class="ttname"><a href="class_planar_s50244.html#a571662e933b4b43cc9bd759d0f621ad3">PlanarS50244::PlanarS50244</a></div><div class="ttdeci">PlanarS50244()=default</div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a665b4601aa0b252835220280da8d0635"><div class="ttname"><a href="class_planar_s50244.html#a665b4601aa0b252835220280da8d0635">PlanarS50244::create_traces</a></div><div class="ttdeci">void create_traces(std::vector&lt; int &gt; port_list, bool external) override</div><div class="ttdoc">Создание необходимых трасс, в зависимости от того, используется ли внешний генератор</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00131">planar_s50244.cpp:131</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a73a885b6efbbb86493ef88d787877ac3"><div class="ttname"><a href="class_planar_s50244.html#a73a885b6efbbb86493ef88d787877ac3">PlanarS50244::full_preset</a></div><div class="ttdeci">void full_preset() override</div><div class="ttdoc">Полный сброс настроек</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00050">planar_s50244.cpp:50</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a7dc382c9a961ada935df6ec924e8e127"><div class="ttname"><a href="class_planar_s50244.html#a7dc382c9a961ada935df6ec924e8e127">PlanarS50244::port_names</a></div><div class="ttdeci">char port_names[S50244_PORT_COUNT]</div><div class="ttdoc">Массив буквенных обозначений портов</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8h_source.html#l00022">planar_s50244.h:22</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a8f7ef0c6c5cafa84b26ea0070bca05a8"><div class="ttname"><a href="class_planar_s50244.html#a8f7ef0c6c5cafa84b26ea0070bca05a8">PlanarS50244::port_numbers</a></div><div class="ttdeci">int port_numbers[S50244_PORT_COUNT]</div><div class="ttdoc">Массив номеров портов</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8h_source.html#l00024">planar_s50244.h:24</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a9092c8dda103df83d5e407e768b887b7"><div class="ttname"><a href="class_planar_s50244.html#a9092c8dda103df83d5e407e768b887b7">PlanarS50244::configure</a></div><div class="ttdeci">void configure(int meas_type, float rbw, int source_port) override</div><div class="ttdoc">Настройка ВАЦ для измерения</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00100">planar_s50244.cpp:100</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_a92cf563ce580b8508cad2cdff68ad084"><div class="ttname"><a href="class_planar_s50244.html#a92cf563ce580b8508cad2cdff68ad084">PlanarS50244::rf_on</a></div><div class="ttdeci">void rf_on() override</div><div class="ttdoc">Включает все порты</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00265">planar_s50244.cpp:265</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_aa198db841f0f619b6d652c2d7008d1c5"><div class="ttname"><a href="class_planar_s50244.html#aa198db841f0f619b6d652c2d7008d1c5">PlanarS50244::preset</a></div><div class="ttdeci">void preset() override</div><div class="ttdoc">Сброс настроек</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00037">planar_s50244.cpp:37</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_ab5d338a1801b1af84302eda8da7e779a"><div class="ttname"><a href="class_planar_s50244.html#ab5d338a1801b1af84302eda8da7e779a">PlanarS50244::trigger</a></div><div class="ttdeci">void trigger() override</div><div class="ttdoc">Перевод триггера в режим manual.</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00294">planar_s50244.cpp:294</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_ad1f033021449cf6c4e0a1eaeafc6dbe3"><div class="ttname"><a href="class_planar_s50244.html#ad1f033021449cf6c4e0a1eaeafc6dbe3">PlanarS50244::set_power</a></div><div class="ttdeci">void set_power(float power_) override</div><div class="ttdoc">Установка требуемой мощности зондирующего порта</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00159">planar_s50244.cpp:159</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_ae80ef8427e4b488989d81a13a4622141"><div class="ttname"><a href="class_planar_s50244.html#ae80ef8427e4b488989d81a13a4622141">PlanarS50244::init</a></div><div class="ttdeci">void init() override</div><div class="ttdoc">Запуск измерения</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00324">planar_s50244.cpp:324</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_af52408a261d6845f6d44653f4e429f31"><div class="ttname"><a href="class_planar_s50244.html#af52408a261d6845f6d44653f4e429f31">PlanarS50244::set_freq_range</a></div><div class="ttdeci">void set_freq_range(double start_freq, double stop_freq, int points) override</div><div class="ttdoc">Установка частотного диапазона</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00185">planar_s50244.cpp:185</a></div></div>
+<div class="ttc" id="aclass_planar_s50244_html_af8e278b134bfe73329fee623c7c62ad2"><div class="ttname"><a href="class_planar_s50244.html#af8e278b134bfe73329fee623c7c62ad2">PlanarS50244::get_data</a></div><div class="ttdeci">iq_port_data_t get_data(int trace_index) override</div><div class="ttdoc">Сбор данных, полученных в результате измерения, для одного порта</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8cpp_source.html#l00353">planar_s50244.cpp:353</a></div></div>
+<div class="ttc" id="aclass_vna_device_html"><div class="ttname"><a href="class_vna_device.html">VnaDevice</a></div><div class="ttdoc">Класс, в котором реализованы методы для работы с ВАЦ</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00053">vna_device.hpp:53</a></div></div>
+<div class="ttc" id="aclass_vna_device_html_a25b8df8f8ae839409aea3c2101129eea"><div class="ttname"><a href="class_vna_device.html#a25b8df8f8ae839409aea3c2101129eea">VnaDevice::start_freq</a></div><div class="ttdeci">double start_freq</div><div class="ttdoc">Начальная частота</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00057">vna_device.hpp:57</a></div></div>
+<div class="ttc" id="aclass_vna_device_html_a51d1eff917f6c889139f7afd9ba0f702"><div class="ttname"><a href="class_vna_device.html#a51d1eff917f6c889139f7afd9ba0f702">VnaDevice::stop_freq</a></div><div class="ttdeci">double stop_freq</div><div class="ttdoc">Конечная частота</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00059">vna_device.hpp:59</a></div></div>
+<div class="ttc" id="aclass_vna_device_html_a59be4118d64eed794aba28d4ca229976"><div class="ttname"><a href="class_vna_device.html#a59be4118d64eed794aba28d4ca229976">VnaDevice::source_port</a></div><div class="ttdeci">int source_port</div><div class="ttdoc">Номер зондирующего порта</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00073">vna_device.hpp:73</a></div></div>
+<div class="ttc" id="aclass_vna_device_html_a7968e3bb567b6bff0e625abef1910018"><div class="ttname"><a href="class_vna_device.html#a7968e3bb567b6bff0e625abef1910018">VnaDevice::points</a></div><div class="ttdeci">int points</div><div class="ttdoc">Количество точек трассы</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00064">vna_device.hpp:64</a></div></div>
+<div class="ttc" id="aclass_vna_device_html_a91b12646e7d6440f127fb7fd4c374bc0"><div class="ttname"><a href="class_vna_device.html#a91b12646e7d6440f127fb7fd4c374bc0">VnaDevice::rbw</a></div><div class="ttdeci">float rbw</div><div class="ttdoc">Полоса разрешающего фильтра</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00062">vna_device.hpp:62</a></div></div>
+<div class="ttc" id="aclass_vna_device_html_ae60166c40aef6b94da9a8f7b0b0a0f30"><div class="ttname"><a href="class_vna_device.html#ae60166c40aef6b94da9a8f7b0b0a0f30">VnaDevice::meas_type</a></div><div class="ttdeci">int meas_type</div><div class="ttdoc">Тип измерения</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00075">vna_device.hpp:75</a></div></div>
+<div class="ttc" id="aplanar__s50244_8h_html_a1997cb09f4a56468ee22d04e02de6d49"><div class="ttname"><a href="planar__s50244_8h.html#a1997cb09f4a56468ee22d04e02de6d49">S50244_PORT_COUNT</a></div><div class="ttdeci">#define S50244_PORT_COUNT</div><div class="ttdoc">Количество портов у ВАЦ Planar S50244.</div><div class="ttdef"><b>Definition</b> <a href="planar__s50244_8h_source.html#l00015">planar_s50244.h:15</a></div></div>
+<div class="ttc" id="avna__device_8hpp_html"><div class="ttname"><a href="vna__device_8hpp.html">vna_device.hpp</a></div><div class="ttdoc">Заголовочный файл, в котором реализован класс VnaDevice.</div></div>
+<div class="ttc" id="avna__device_8hpp_html_a651027f1d078d42fca12f590fb702b41"><div class="ttname"><a href="vna__device_8hpp.html#a651027f1d078d42fca12f590fb702b41">iq_port_data_t</a></div><div class="ttdeci">std::vector&lt; iq &gt; iq_port_data_t</div><div class="ttdef"><b>Definition</b> <a href="vna__device_8hpp_source.html#l00048">vna_device.hpp:48</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

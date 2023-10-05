@@ -76,6 +76,8 @@ class SocketServer {
     /// Структура, содержащая сведения о реализации сокета для ОС Windows
     WSADATA WSAData{};
 
+    bool connected = false;
+
 public:
     SocketServer();
     SocketServer(port_t port, std::string tag = DEFAULT_TAG);
@@ -90,6 +92,8 @@ public:
     int send_data(std::string data);
 
     void close();
+
+    bool is_connected();
 };
 
 

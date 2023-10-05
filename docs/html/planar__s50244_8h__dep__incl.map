@@ -1,0 +1,15 @@
+<map id="src/devices/vna/planar_s50244.h" name="src/devices/vna/planar_s50244.h">
+<area shape="rect" id="Node000001" title="Файл, в котором определён класс PlanarS50244." alt="" coords="156,5,304,48"/>
+<area shape="rect" id="Node000002" href="$device__set_8hpp.html" title="Заголовочный файл, содержащий в себе класс DeviceSet и набор констант, необходимых для данного класса..." alt="" coords="87,96,213,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,61,170,97,166,94,200,57"/>
+<area shape="rect" id="Node000007" href="$planar__s50244_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа PlanarS50244." alt="" coords="237,96,385,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="260,57,294,94,290,98,257,61"/>
+<area shape="rect" id="Node000003" href="$device__set_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа DeviceSet." alt="" coords="5,187,132,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,152,89,188,85,185,119,148"/>
+<area shape="rect" id="Node000004" href="$task__manager_8hpp.html" title="Заголовочный файл, в котором определён класс TaskManager и набор констант для работы с ним" alt="" coords="156,195,306,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="180,148,222,192,218,196,177,152"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html" title="Главный файл приложения" alt="" coords="108,277,205,304"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,234,170,279,166,275,208,230"/>
+<area shape="rect" id="Node000006" href="$task__manager_8cpp.html" title="Файл исходного кода, в котором реализованы методы для класа TaskManager." alt="" coords="229,277,380,304"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="254,231,295,275,291,279,250,234"/>
+</map>

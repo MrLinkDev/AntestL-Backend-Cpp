@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">AntestL Backend<span id="projectnumber">&#160;1.0.3</span>
    </div>
   </td>
  </tr>
@@ -86,7 +86,7 @@ $(function() {
 <div class="dynheader">
 Граф связей класса SocketServer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server__coll__graph.svg" width="222" height="550"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server__coll__graph.svg" width="222" height="592"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -118,6 +118,9 @@ $(function() {
 <tr class="memitem:a1e673e526a459bdb3ca92e103ec212ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a1e673e526a459bdb3ca92e103ec212ae">close</a> ()</td></tr>
 <tr class="memdesc:a1e673e526a459bdb3ca92e103ec212ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрытие сокета  <br /></td></tr>
 <tr class="separator:a1e673e526a459bdb3ca92e103ec212ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7bacfc3a50bcbc8f9911f73b6ae8c92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#aa7bacfc3a50bcbc8f9911f73b6ae8c92">is_connected</a> ()</td></tr>
+<tr class="memdesc:aa7bacfc3a50bcbc8f9911f73b6ae8c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка, подключен ли клиент  <br /></td></tr>
+<tr class="separator:aa7bacfc3a50bcbc8f9911f73b6ae8c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Закрытые данные</h2></td></tr>
@@ -146,6 +149,8 @@ $(function() {
 <tr class="memitem:a78fe7ba24b9d07cd16f759ccef86ef5c"><td class="memItemLeft" align="right" valign="top">WSADATA&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a78fe7ba24b9d07cd16f759ccef86ef5c">WSAData</a> {}</td></tr>
 <tr class="memdesc:a78fe7ba24b9d07cd16f759ccef86ef5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, содержащая сведения о реализации сокета для ОС Windows.  <br /></td></tr>
 <tr class="separator:a78fe7ba24b9d07cd16f759ccef86ef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd9ddd7187064be146b5117201bad4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_socket_server.html#a8dd9ddd7187064be146b5117201bad4d">connected</a> = false</td></tr>
+<tr class="separator:a8dd9ddd7187064be146b5117201bad4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс <a class="el" href="class_socket_server.html" title="Класс SocketServer, в котором имеется набор методов для установки соединения и обмена данными с клиен...">SocketServer</a>, в котором имеется набор методов для установки соединения и обмена данными с клиентом </p>
@@ -369,7 +374,7 @@ $(function() {
 <div class="line">}</div>
 <div class="ttc" id="asocket__server_8hpp_html_ae028ff93c5743ef2de923b242eeab18d"><div class="ttname"><a href="socket__server_8hpp.html#ae028ff93c5743ef2de923b242eeab18d">CLIENT_CONNECTED</a></div><div class="ttdeci">#define CLIENT_CONNECTED</div><div class="ttdoc">Возвращаемый статус, если клиент был подключен к серверу</div><div class="ttdef"><b>Definition</b> <a href="socket__server_8hpp_source.html#l00041">socket_server.hpp:41</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00139">139</a></p>
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00141">141</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -402,7 +407,7 @@ $(function() {
 <p>Функция осуществляет чтение данных от клиента и записывает их в буфер, который возрващает при завершении. Выход из цикла чтения происходит в момент, когда была принята последовательность termination.</p>
 <dl class="section return"><dt>Возвращает</dt><dd>Принятые данные </dd></dl>
 
-<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00166">166</a></p>
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00170">170</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -442,7 +447,7 @@ $(function() {
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>Если данные были успешно отправлены, то возвращается DATA_SEND_OK. В противном случае - DATA_SEND_ERROR. </dd></dl>
 
-<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00212">212</a></p>
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00223">223</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -474,7 +479,7 @@ $(function() {
 <p>Закрытие сокета </p>
 <p>Функция разрывает соединение между сервером и клиентом закрывая оба сокета </p>
 
-<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00230">230</a></p>
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00241">241</a></p>
 <div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
@@ -483,7 +488,34 @@ $(function() {
 <div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a1e673e526a459bdb3ca92e103ec212ae_icgraph.svg" width="434" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_a1e673e526a459bdb3ca92e103ec212ae_icgraph.svg" width="434" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa7bacfc3a50bcbc8f9911f73b6ae8c92" name="aa7bacfc3a50bcbc8f9911f73b6ae8c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7bacfc3a50bcbc8f9911f73b6ae8c92">&#9670;&#160;</a></span>is_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SocketServer::is_connected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка, подключен ли клиент </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Если клиент подключен - true. В противном случае - false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8cpp_source.html">socket_server.cpp</a> строка <a class="el" href="socket__server_8cpp_source.html#l00255">255</a></p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_socket_server_aa7bacfc3a50bcbc8f9911f73b6ae8c92_icgraph.svg" width="480" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -716,6 +748,30 @@ $(function() {
 <p>Структура, содержащая сведения о реализации сокета для ОС Windows. </p>
 
 <p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00077">77</a></p>
+
+</div>
+</div>
+<a id="a8dd9ddd7187064be146b5117201bad4d" name="a8dd9ddd7187064be146b5117201bad4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd9ddd7187064be146b5117201bad4d">&#9670;&#160;</a></span>connected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SocketServer::connected = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="socket__server_8hpp_source.html">socket_server.hpp</a> строка <a class="el" href="socket__server_8hpp_source.html#l00079">79</a></p>
 
 </div>
 </div>

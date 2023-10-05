@@ -19,7 +19,7 @@ var searchData=
   ['configure_5ftask_16',['configure_task',['../class_task_manager.html#a19b51f5809b7aa9dbffbf6293191a06f',1,'TaskManager::configure_task()'],['../test__json__requests_8hpp.html#a67b9b18d4f571875dbe464f8fbe5a92d',1,'configure_task:&#160;test_json_requests.hpp']]],
   ['connect_17',['connect',['../class_device_set.html#a2dab046962f4ada089046e2fa4769c23',1,'DeviceSet::connect()'],['../class_visa_device.html#abdcf5ce2846fecd0908bf7419c73c595',1,'VisaDevice::connect()']]],
   ['connect_5ftask_18',['connect_task',['../class_task_manager.html#a77f0d9e4c9363a126cedba6c47cece49',1,'TaskManager']]],
-  ['connected_19',['connected',['../class_visa_device.html#a19c11336eececceeb30ec15c2dfc54bd',1,'VisaDevice']]],
+  ['connected_19',['connected',['../class_visa_device.html#a19c11336eececceeb30ec15c2dfc54bd',1,'VisaDevice::connected'],['../class_socket_server.html#a8dd9ddd7187064be146b5117201bad4d',1,'SocketServer::connected']]],
   ['connection_5ftask_20',['connection_task',['../test__json__requests_8hpp.html#a45dd6447b14988eda3fde2ba19681f12',1,'test_json_requests.hpp']]],
   ['connection_5ftask_5f2_21',['connection_task_2',['../test__json__requests_8hpp.html#acb39275c07e7038eae733c96f02683f2',1,'test_json_requests.hpp']]],
   ['count_22',['count',['../namespacestring__utils.html#a9b3d7b7f8178f32f598b1bc31d61445a',1,'string_utils']]],

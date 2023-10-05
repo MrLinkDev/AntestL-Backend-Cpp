@@ -16,7 +16,7 @@
 #include "task_manager.hpp"
 
 /// Версия AntestL Backend
-#define VERSION     "1.0.2"
+#define VERSION     "1.0.3"
 
 /// Стандартный порт для входящих заданий
 #define DEFAULT_TASK_PORT           5006
@@ -83,6 +83,9 @@ json data_buffer{};
 /// Флаг, показывающий, что было нажато сочетание клавиш Ctrl+C
 bool stop_process = false;
 
+/// Флаг, показывающий, что требуется ожидание нового клиента
+bool wait_another = false;
+
 void task_server_thread_f(std::stop_token s_token);
 void data_server_thread_f(std::stop_token s_token);
 
@@ -122,6 +125,10 @@ int main(int argc, char* argv[]) {
     logger::log(LEVEL_INFO, "Starting AntestL Backend (v{})", VERSION);
 
     while (!stop_process) {
+        if (wait_another) {
+            wait_another = false;
+        }
+
         task_thread = new std::jthread{task_server_thread_f};
         std::this_thread::sleep_for(50ms);
 
@@ -150,14 +157,33 @@ void task_server_thread_f(std::stop_token s_token) {
         exit(1);
     }
 
-    while (!s_token.stop_requested() || !stop_process) {
+    while (!s_token.stop_requested() && !stop_process && !wait_another) {
         try {
             input_data = std::move(json::parse(task_server.read_data()));
         } catch (const json::parse_error &err) {
-            logger::log(LEVEL_ERROR, "Seems like input data cannot be parsed into json. Check input data!");
+            if (!task_server.is_connected()) {
+                task_thread->request_stop();
+                data_thread->request_stop();
 
-            std::this_thread::sleep_for(50ms);
-            continue;
+                wait_another = true;
+
+                /**
+                task_server.close();
+                data_server.close();
+
+                if (task_server.create() != SOCKET_CREATED && !stop_process) {
+                    exit(1);
+                }
+
+                if (task_server.wait_client() != CLIENT_CONNECTED && !stop_process) {
+                    exit(1);
+                }*/
+            } else {
+                logger::log(LEVEL_ERROR, "Seems like input data cannot be parsed into json. Check input data!");
+
+                std::this_thread::sleep_for(50ms);
+                continue;
+            }
         }
 
         if (task_manager.received_stop_task(input_data)) {
@@ -181,6 +207,8 @@ void task_server_thread_f(std::stop_token s_token) {
         u_lk.unlock();
         cv.notify_one();
     }
+
+    task_server.close();
 }
 
 /**
@@ -199,12 +227,14 @@ void data_server_thread_f(std::stop_token s_token) {
 
     std::string result{};
 
-    while (!s_token.stop_requested() || !stop_process) {
+    while (!s_token.stop_requested() && !stop_process && !wait_another) {
         std::unique_lock u_lk(mtx);
         cv.wait(u_lk, []{return received;});
 
-        result = std::move(task_manager.proceed(data_buffer));
-        data_server.send_data(result);
+        if (data_server.is_connected() && !wait_another) {
+            result = std::move(task_manager.proceed(data_buffer));
+            data_server.send_data(result);
+        }
 
         processed = true;
         received = false;
@@ -226,13 +256,13 @@ void exit_event_handler(int signal_code) {
 
     stop_process = true;
 
+    task_server.close();
+    data_server.close();
+
     task_manager.request_stop();
 
     task_thread->request_stop();
     data_thread->request_stop();
-
-    task_server.close();
-    data_server.close();
 }
 
 /**
