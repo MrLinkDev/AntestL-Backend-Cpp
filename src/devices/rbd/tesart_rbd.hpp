@@ -19,7 +19,7 @@
 #define BIT_IN_POS                      0x00080000
 #define BIT_MOVE_BLOCK                  0x00010000
 
-#define SCALE                           1000
+#define SCALE                           10000
 
 using namespace std::chrono_literals;
 

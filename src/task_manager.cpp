@@ -200,8 +200,8 @@ bool TaskManager::set_angle_task(json angle_value) {
 bool TaskManager::set_angle_range_task(json angle_range) {
     logger::log(LEVEL_TRACE, "Received \"{}\" task", TASK_TYPE_SET_ANGLE_RANGE);
 
-    float start_angle = angle_range["start"].get<float>();
-    float stop_angle = angle_range["stop"].get<float>();
+    float start_angle = angle_range["start_angle"].get<float>();
+    float stop_angle = angle_range["stop_angle"].get<float>();
     int points = angle_range["points"].get<int>();
     int axis_num = angle_range["axis"].get<int>();
 
