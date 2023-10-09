@@ -24,12 +24,12 @@ int TesartRbd::status(int axis_num) {
     axes[axis_num].clear();
 
     try {
-        str_answer = axes[axis_num].send("TRJSTAT", true);
+        str_answer = axes[axis_num].send("TRJSTAT\r", true);
         str_answer = string_utils::lstrip(str_answer, 'H');
 
         answer = stoi(str_answer);
     } catch (std::invalid_argument inv_arg) {
-        str_answer = axes[axis_num].send("TRJSTAT", true);
+        str_answer = axes[axis_num].send("TRJSTAT\r", true);
         str_answer = string_utils::lstrip(str_answer, 'H');
 
         answer = stoi(str_answer);
@@ -52,12 +52,12 @@ int TesartRbd::status(VisaDevice *axis) {
     axis->clear();
 
     try {
-        str_answer = axis->send("TRJSTAT", true);
+        str_answer = axis->send("TRJSTAT\r", true);
         str_answer = string_utils::lstrip(str_answer, 'H');
 
         answer = stoi(str_answer);
     } catch (std::invalid_argument inv_arg) {
-        str_answer = axis->send("TRJSTAT", true);
+        str_answer = axis->send("TRJSTAT\r", true);
         str_answer = string_utils::lstrip(str_answer, 'H');
 
         answer = stoi(str_answer);
@@ -80,18 +80,23 @@ int TesartRbd::status(VisaDevice *axis) {
 TesartRbd::TesartRbd(const std::string &device_addresses) {
     std::vector<std::string> address_list = string_utils::split(device_addresses, ADDRESS_DELIMITER);
 
+    for (int i = 0; i < address_list.size(); ++i) {
+        logger::log(LEVEL_TRACE, "Address [{}] = {}", i + 1, address_list[i]);
+    }
+
     for (const std::string &address : address_list) {
         VisaDevice axis(address);
+        axis.connect();
 
-        axis.send("PROMPT 0");
-        axis.send("CLRFAULT");
-        axis.send("EN");
+        axis.send("PROMPT 0\r");
+        axis.send("CLRFAULT\r");
+        axis.send("EN\r");
 
         axis.clear();
         std::this_thread::sleep_for(TESART_RBD_SLEEP_TIME_INIT);
 
         if (!(status(&axis) & BIT_REF_SET)) {
-            axis.send("MH");
+            axis.send("MH\r");
         }
 
         axes.push_back(axis);
@@ -164,9 +169,9 @@ void TesartRbd::move(float pos, int axis_num) {
     logger::log(LEVEL_TRACE, "Axis {} pos = ", axis_num, pos);
 
     axes[axis_num].send(
-            "ORDER 0 {} {} 8192 {} {} 0 -1 0 0",
+            "ORDER 0 {} {} 8192 {} {} 0 -1 0 0\r",
             int(pos * SCALE), velocity, acceleration, acceleration);
-    axes[axis_num].send("MOVE 0");
+    axes[axis_num].send("MOVE 0\r");
 }
 
 /**
@@ -182,7 +187,7 @@ void TesartRbd::move(float pos, int axis_num) {
  */
 void TesartRbd::stop() {
     for (int axis_num = 0; axis_num < axes.size(); ++axis_num) {
-        axes[axis_num].send("STOP");
+        axes[axis_num].send("STOP\r");
 
         while (!is_stopped(axis_num)) {
             std::this_thread::sleep_for(50ms);
@@ -381,7 +386,7 @@ float TesartRbd::get_pos(int axis_num) {
 
     axes[axis_num].clear();
 
-    str_answer = axes[axis_num].send("PFB", true);
+    str_answer = axes[axis_num].send("PFB\r", true);
     answer = stof(str_answer) / SCALE;
 
     return answer;
