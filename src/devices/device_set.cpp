@@ -408,6 +408,7 @@ std::vector<double> DeviceSet::get_freq_list() {
  */
 bool DeviceSet::set_angle(float angle, int axis_num) {
     try {
+        logger::log(LEVEL_TRACE, "DeviceSet: set_angle({}, {})", angle, axis_num);
         rbd->set_angle(angle, axis_num);
     } catch (const antestl_exception &exception) {
         logger::log(LEVEL_ERROR, "Can't set angle on RBD");
