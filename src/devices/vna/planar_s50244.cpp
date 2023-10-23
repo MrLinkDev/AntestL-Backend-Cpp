@@ -358,6 +358,10 @@ iq_port_data_t PlanarS50244::get_data(int trace_index) {
 
     for (int pos = 0; pos < cached_data.size(); pos += 2) {
         iq_data.emplace_back(cached_data[pos], cached_data[pos + 1]);
+
+        if (points == 1) {
+            return iq_data;
+        }
     }
 
     return iq_data;

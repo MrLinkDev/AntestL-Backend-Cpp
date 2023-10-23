@@ -16,7 +16,7 @@
 #include "task_manager.hpp"
 
 /// Версия AntestL Backend
-#define VERSION     "1.0.6"
+#define VERSION     "1.0.7"
 
 /// Стандартный порт для входящих заданий
 #define DEFAULT_TASK_PORT           5006
@@ -166,18 +166,6 @@ void task_server_thread_f(std::stop_token s_token) {
                 data_thread->request_stop();
 
                 wait_another = true;
-
-                /**
-                task_server.close();
-                data_server.close();
-
-                if (task_server.create() != SOCKET_CREATED && !stop_process) {
-                    exit(1);
-                }
-
-                if (task_server.wait_client() != CLIENT_CONNECTED && !stop_process) {
-                    exit(1);
-                }*/
             } else {
                 logger::log(LEVEL_ERROR, "Seems like input data cannot be parsed into json. Check input data!");
 
