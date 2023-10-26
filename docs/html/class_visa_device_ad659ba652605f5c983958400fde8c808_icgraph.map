@@ -30,7 +30,7 @@
 <area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="688,566,611,547,612,542,690,561"/>
 <area shape="rect" id="Node000047" href="$class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" title="Установка требуемой мощности сигнала" alt="" coords="472,872,635,899"/>
 <area shape="poly" id="edge51_Node000001_Node000047" title=" " alt="" coords="760,610,751,663,733,731,719,767,702,802,680,834,654,862,637,874,634,869,651,858,676,830,697,799,715,765,728,729,746,662,755,609"/>
-<area shape="rect" id="Node000048" href="$class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="492,923,616,949"/>
+<area shape="rect" id="Node000048" href="$class_tesart_rbd.html#a8868208a84be63fde36300b16e315423" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="492,923,616,949"/>
 <area shape="poly" id="edge52_Node000001_Node000048" title=" " alt="" coords="762,610,756,672,740,753,726,797,708,839,684,878,654,913,637,925,617,932,615,927,634,920,651,909,680,875,703,836,721,795,735,752,751,671,756,609"/>
 <area shape="rect" id="Node000049" href="$class_planar_s50244.html#ab5d338a1801b1af84302eda8da7e779a" title="Перевод триггера в режим manual." alt="" coords="481,973,627,1000"/>
 <area shape="poly" id="edge53_Node000001_Node000049" title=" " alt="" coords="763,610,761,681,747,776,733,826,714,876,688,923,654,963,629,979,626,975,651,959,684,919,709,874,728,825,742,775,755,680,758,610"/>

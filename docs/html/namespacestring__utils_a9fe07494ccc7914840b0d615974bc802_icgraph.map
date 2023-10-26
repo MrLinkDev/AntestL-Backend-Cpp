@@ -1,13 +1,25 @@
 <map id="string_utils::lstrip" name="string_utils::lstrip">
-<area shape="rect" id="Node000001" title="Делит строку на две части по требуемому символу и возвращает содержимое правой части" alt="" coords="538,56,659,83"/>
-<area shape="rect" id="Node000002" href="$class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1" title="Запрос статуса оси ОПУ по номеру оси" alt="" coords="366,31,490,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="523,61,491,56,491,51,524,56"/>
-<area shape="rect" id="Node000006" href="$class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="366,81,490,108"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="524,83,491,88,491,83,523,78"/>
-<area shape="rect" id="Node000003" href="$class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e" title="Метод позволяет проверить, остановлена ли ось" alt="" coords="167,5,318,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,36,318,32,319,26,352,31"/>
-<area shape="rect" id="Node000005" href="$class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)" alt="" coords="169,56,316,83"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="352,57,317,62,316,57,351,52"/>
-<area shape="rect" id="Node000004" href="$class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317" title="Остановка всех осей" alt="" coords="5,5,119,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,21,119,21,119,16,152,16"/>
+<area shape="rect" id="Node000001" title="Делит строку на две части по требуемому символу и возвращает содержимое правой части" alt="" coords="743,215,863,241"/>
+<area shape="rect" id="Node000002" href="$class_tesart_rbd.html#affbded46e17aa303601ba7ef885107b8" title="Запрос статуса оси ОПУ по номеру оси" alt="" coords="570,189,695,216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="728,220,695,215,696,209,729,214"/>
+<area shape="rect" id="Node000012" href="$class_tesart_rbd.html#a8868208a84be63fde36300b16e315423" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="570,240,695,267"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="729,242,696,247,695,241,728,236"/>
+<area shape="rect" id="Node000003" href="$class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e" title="Метод позволяет проверить, остановлена ли ось" alt="" coords="371,164,522,191"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="556,195,522,190,523,185,556,190"/>
+<area shape="rect" id="Node000011" href="$class_tesart_rbd.html#a592c41abaa2f8d44ffecb17434644d51" title="Конструктор, в который передаётся адрес (или список одресов, разделённых символом &#39;;&#39;)" alt="" coords="373,215,520,241"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="556,216,521,221,520,215,555,210"/>
+<area shape="rect" id="Node000004" href="$class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла" alt="" coords="205,139,323,165"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="356,167,323,163,324,158,356,162"/>
+<area shape="rect" id="Node000010" href="$class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317" title="Остановка всех осей" alt="" coords="207,189,321,216"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="357,192,321,197,320,192,356,187"/>
+<area shape="rect" id="Node000005" href="$class_tesart_rbd.html#a3d5ce486456ebdac4128023e4c307903" title="Устанавливает угловую точку, соответствующую началу диапазона." alt="" coords="13,5,149,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="237,130,200,96,155,62,135,51,137,46,158,58,203,92,241,126"/>
+<area shape="rect" id="Node000006" href="$class_tesart_rbd.html#a55d5b271d03db8d05abea14ea52be540" title="Устанавливает угловую точку, соответствующую концу диапазона." alt="" coords="13,72,149,115"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="205,136,149,118,151,113,207,131"/>
+<area shape="rect" id="Node000007" href="$class_tesart_rbd.html#aa064f5779459c676b41d3c22f8202bc8" title="Переход к следующей угловой точке" alt="" coords="5,139,157,165"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="190,155,157,155,157,149,190,149"/>
+<area shape="rect" id="Node000008" href="$class_tesart_rbd.html#a33a877f951cb3096020d9cb8ab406c63" title="Переход к предыдущей угловой точке" alt="" coords="6,189,156,216"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="199,172,133,191,131,186,198,167"/>
+<area shape="rect" id="Node000009" href="$class_tesart_rbd.html#a0d830bf286416fb259ca84edd583bce3" title="Поворачивает ось ОПУ на требуемый угол" alt="" coords="9,240,153,267"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="213,175,206,179,192,192,183,205,174,217,158,230,135,242,133,237,155,226,170,214,179,201,188,189,203,175,210,170"/>
 </map>

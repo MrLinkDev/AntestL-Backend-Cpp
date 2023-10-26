@@ -35,7 +35,7 @@ var searchData=
   ['split_32',['split',['../namespacestring__utils.html#a95dbb7f33d4ea2396617ddd7953302d0',1,'string_utils']]],
   ['start_5fangle_33',['start_angle',['../class_rbd_device.html#a18b96b3ec533ebb30651702b58a72ab5',1,'RbdDevice']]],
   ['start_5ffreq_34',['start_freq',['../class_gen_device.html#aa2c2fd5a701dfac8bbc9b6588f932951',1,'GenDevice::start_freq'],['../class_vna_device.html#a25b8df8f8ae839409aea3c2101129eea',1,'VnaDevice::start_freq']]],
-  ['status_35',['status',['../class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1',1,'TesartRbd::status()'],['../class_visa_device.html#aa45a2a1f03cb441642c360ffbb6a68cd',1,'VisaDevice::status'],['../class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2',1,'TesartRbd::status()']]],
+  ['status_35',['status',['../class_tesart_rbd.html#affbded46e17aa303601ba7ef885107b8',1,'TesartRbd::status()'],['../class_visa_device.html#aa45a2a1f03cb441642c360ffbb6a68cd',1,'VisaDevice::status'],['../class_tesart_rbd.html#a8868208a84be63fde36300b16e315423',1,'TesartRbd::status()']]],
   ['stop_36',['stop',['../class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66',1,'RbdDevice::stop()'],['../class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317',1,'TesartRbd::stop()']]],
   ['stop_5fangle_37',['stop_angle',['../class_rbd_device.html#a1e6ead71a94fa3f7c0963f15d8c32f4d',1,'RbdDevice']]],
   ['stop_5ffreq_38',['stop_freq',['../class_gen_device.html#aa083322f975986f071001629037deeef',1,'GenDevice::stop_freq'],['../class_vna_device.html#a51d1eff917f6c889139f7afd9ba0f702',1,'VnaDevice::stop_freq']]],

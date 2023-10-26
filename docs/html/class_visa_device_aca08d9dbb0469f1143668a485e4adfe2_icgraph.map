@@ -99,7 +99,7 @@
 <area shape="poly" id="edge52_Node000043_Node000054" title=" " alt="" coords="756,870,712,818,683,791,651,769,614,754,616,749,654,764,686,787,716,814,760,866"/>
 <area shape="rect" id="Node000055" href="$class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" title="Установка требуемой мощности сигнала" alt="" coords="472,779,635,805"/>
 <area shape="poly" id="edge55_Node000043_Node000055" title=" " alt="" coords="744,873,701,846,651,820,619,808,621,803,653,815,704,841,747,869"/>
-<area shape="rect" id="Node000056" href="$class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="492,829,616,856"/>
+<area shape="rect" id="Node000056" href="$class_tesart_rbd.html#a8868208a84be63fde36300b16e315423" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="492,829,616,856"/>
 <area shape="poly" id="edge56_Node000043_Node000056" title=" " alt="" coords="701,879,615,859,617,854,702,874"/>
 <area shape="rect" id="Node000057" href="$class_planar_s50244.html#ab5d338a1801b1af84302eda8da7e779a" title="Перевод триггера в режим manual." alt="" coords="481,880,627,907"/>
 <area shape="poly" id="edge57_Node000043_Node000057" title=" " alt="" coords="701,896,627,896,627,891,701,891"/>

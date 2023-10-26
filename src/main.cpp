@@ -16,7 +16,7 @@
 #include "task_manager.hpp"
 
 /// Версия AntestL Backend
-#define VERSION     "1.0.7"
+#define VERSION     "1.0.8"
 
 /// Стандартный порт для входящих заданий
 #define DEFAULT_TASK_PORT           5006

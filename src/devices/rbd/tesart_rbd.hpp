@@ -43,7 +43,7 @@ class TesartRbd : public RbdDevice {
      *
      * \return Полученный статус
      */
-    int status(int axis_num);
+    long long status(int axis_num);
 
     /**
      * \brief Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось
@@ -52,7 +52,7 @@ class TesartRbd : public RbdDevice {
      *
      * \return Полученный статус
      */
-    int status(VisaDevice *axis);
+    long long status(VisaDevice *axis);
 
 public:
     TesartRbd() = default;

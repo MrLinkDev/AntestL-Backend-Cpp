@@ -407,6 +407,8 @@ json TaskManager::proceed_task_list(const json &task_list) {
     std::vector<json> task_cache = task_list.get<std::vector<json>>();
 
     for (const json &task : task_cache) {
+        logger::log(LEVEL_TRACE, "Preparing task = {}", to_string(task));
+
         if (stop_requested) {
             logger::log(LEVEL_WARN, "Task list proceeding stopped");
             device_set.reset_stop_request();
@@ -436,6 +438,7 @@ json TaskManager::proceed_task_list(const json &task_list) {
                     R"(Task '{}' has arg 'nested', but this task cannot be nested. This arg ignored.)",
                     task[WORD_TASK_TYPE].get<std::string>());
 
+            logger::log(LEVEL_TRACE, "Processing task without 'nested' argument");
             result = proceed_task(task);
 
             if (result[WORD_RESULT][WORD_RESULT_ID] != 0) {
@@ -446,14 +449,16 @@ json TaskManager::proceed_task_list(const json &task_list) {
         }
     }
 
-    if (result[WORD_RESULT][WORD_RESULT_ID] != 0) {
+    if (!result.is_null() && result[WORD_RESULT][WORD_RESULT_ID] != 0) {
         return result;
     }
 
     std::sort(nested_task_list.begin(), nested_task_list.end(), array_utils::compare_nested);
+    logger::log(LEVEL_TRACE, "Nested task list size = {}", nested_task_list.size());
+
     nested_result = proceed_nested_task_list(std::move(nested_task_list));
 
-    if (nested_result[WORD_RESULT][WORD_RESULT_ID] != 0) {
+    if (nested_result[WORD_RESULT][WORD_RESULT_ID] != 0 || result.is_null()) {
         return nested_result;
     } else {
         result[WORD_RESULT][WORD_RESULT_DATA] = nested_result[WORD_RESULT][WORD_RESULT_DATA];
@@ -475,6 +480,8 @@ json TaskManager::proceed_nested_task_list(std::vector<json> nested_task_list) {
     std::string acquired_data{};
 
     for (json &nested_task : nested_task_list) {
+        logger::log(LEVEL_TRACE, "Preparing nested task = {}", to_string(nested_task));
+
         if (stop_requested) {
             logger::log(LEVEL_WARN, "Nested task list proceeding stopped");
             device_set.reset_stop_request();

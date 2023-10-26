@@ -1,16 +1,24 @@
 <map id="TesartRbd::set_angle" name="TesartRbd::set_angle">
-<area shape="rect" id="Node000001" title="Поворачивает ось ОПУ на требуемый угол" alt="" coords="5,81,150,108"/>
-<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="364,81,449,108"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,92,349,92,349,97,150,97"/>
-<area shape="rect" id="Node000007" href="$class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла" alt="" coords="198,107,316,133"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="151,102,183,107,183,112,150,108"/>
-<area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="520,5,638,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,79,496,42,513,35,515,40,498,46,431,83"/>
-<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="523,56,635,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="450,86,508,77,509,82,450,91"/>
-<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="497,107,661,133"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="450,98,483,103,482,108,450,104"/>
-<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="512,157,646,184"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="431,106,498,143,515,150,513,155,496,148,428,111"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="316,107,349,102,350,107,317,113"/>
+<area shape="rect" id="Node000001" title="Поворачивает ось ОПУ на требуемый угол" alt="" coords="5,31,150,57"/>
+<area shape="rect" id="Node000002" href="$class_logger.html#af7709105c2708359b7b082218f4cc3e1" title="Метод, осуществляющий логирование" alt="" coords="753,81,839,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,39,255,38,390,40,539,48,688,65,739,76,738,81,687,71,538,53,389,45,255,43,150,44"/>
+<area shape="rect" id="Node000007" href="$class_tesart_rbd.html#a1317670f51c7e529ca5960e69b7563a7" title="Поворачивает ось до тех пор, пока она не достигнет требуемого угла" alt="" coords="198,56,316,83"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="151,52,183,56,183,62,150,57"/>
+<area shape="rect" id="Node000003" href="$logger_8hpp.html#a49284b7befa8e31f81e01ee8f3735dd0" title="Функция, которая снимает значение текущего времени и конвертирует его в строку с заданным шаблоном." alt="" coords="927,5,1045,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="823,78,903,42,922,35,924,40,905,46,825,83"/>
+<area shape="rect" id="Node000004" href="$class_logger.html#a6edb7b263f080d417b82a537ed50fee4" title="Возвращает тег в зависимости от уровня логирования и от назначения тега." alt="" coords="930,56,1041,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="838,86,915,76,915,81,839,92"/>
+<area shape="rect" id="Node000005" href="$class_logger.html#a4825613142ebb093bf8fa26f21f7f3fc" title="Метод, который выводит сообщение в консоль." alt="" coords="904,107,1067,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="839,98,890,104,889,110,838,103"/>
+<area shape="rect" id="Node000006" href="$class_logger.html#a999bb33f7cf079cb98f32fae6016a2f3" title="Метод, который записывает сообщение в файл." alt="" coords="919,157,1053,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="825,106,905,143,924,150,922,155,903,148,823,111"/>
+<area shape="poly" id="edge12_Node000007_Node000002" title=" " alt="" coords="317,69,688,87,739,89,738,94,688,92,316,75"/>
+<area shape="rect" id="Node000008" href="$class_tesart_rbd.html#a9a7da6f896259d62e9f1b1850371fa5e" title="Метод позволяет проверить, остановлена ли ось" alt="" coords="364,107,515,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="309,81,375,100,374,105,307,86"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="516,112,738,96,738,101,516,117"/>
+<area shape="rect" id="Node000009" href="$class_tesart_rbd.html#affbded46e17aa303601ba7ef885107b8" title="Запрос статуса оси ОПУ по номеру оси" alt="" coords="563,157,688,184"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="492,131,561,150,559,156,491,137"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="656,154,750,112,752,117,659,159"/>
+<area shape="rect" id="Node000010" href="$namespacestring__utils.html#a9fe07494ccc7914840b0d615974bc802" title="Делит строку на две части по требуемому символу и возвращает содержимое правой части" alt="" coords="736,157,856,184"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="688,168,721,168,721,173,688,173"/>
 </map>

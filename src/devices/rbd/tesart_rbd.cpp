@@ -17,23 +17,26 @@
  *
  * \return Полученный статус
  */
-int TesartRbd::status(int axis_num) {
+long long TesartRbd::status(int axis_num) {
     std::string str_answer{};
-    int answer{};
+
+    std::stringstream stream{};
+    long long answer{};
 
     axes[axis_num].clear();
 
     try {
         str_answer = axes[axis_num].send("TRJSTAT\r", true);
         str_answer = string_utils::lstrip(str_answer, 'H');
-
-        answer = stoi(str_answer);
     } catch (std::invalid_argument inv_arg) {
         str_answer = axes[axis_num].send("TRJSTAT\r", true);
         str_answer = string_utils::lstrip(str_answer, 'H');
-
-        answer = stoi(str_answer);
     }
+
+    stream << std::hex << str_answer;
+    stream >> answer;
+
+    logger::log(LEVEL_TRACE, "Status = {} ({})", answer, str_answer);
 
     return answer;
 }
@@ -45,23 +48,26 @@ int TesartRbd::status(int axis_num) {
  *
  * \return Полученный статус
  */
-int TesartRbd::status(VisaDevice *axis) {
+long long TesartRbd::status(VisaDevice *axis) {
     std::string str_answer{};
-    int answer{};
+
+    std::stringstream stream{};
+    long long answer{};
 
     axis->clear();
 
     try {
         str_answer = axis->send("TRJSTAT\r", true);
         str_answer = string_utils::lstrip(str_answer, 'H');
-
-        answer = stoi(str_answer);
     } catch (std::invalid_argument inv_arg) {
         str_answer = axis->send("TRJSTAT\r", true);
         str_answer = string_utils::lstrip(str_answer, 'H');
-
-        answer = stoi(str_answer);
     }
+
+    stream << std::hex << str_answer;
+    stream >> answer;
+
+    logger::log(LEVEL_TRACE, "Status = {} ({})", answer, str_answer);
 
     return answer;
 }
@@ -149,7 +155,10 @@ bool TesartRbd::is_connected() {
 bool TesartRbd::is_stopped(int axis_num) {
     int status_code = status(axis_num);
 
-    return bool(status_code & BIT_IN_POS) and bool(!(status_code & BIT_MOVE_BLOCK));
+    Logger::log(LEVEL_TRACE, "IN POS = {} ({})", bool(status_code & BIT_IN_POS), status_code & BIT_IN_POS);
+    Logger::log(LEVEL_TRACE, "MOVE BLOCK = {} ({})", bool(status_code & BIT_MOVE_BLOCK), status_code & BIT_MOVE_BLOCK);
+
+    return bool(status_code & BIT_IN_POS) and !bool(status_code & BIT_MOVE_BLOCK);
 }
 
 /**
@@ -171,6 +180,10 @@ void TesartRbd::move(float pos, int axis_num) {
             "ORDER 0 {} {} 8192 {} {} 0 -1 0 0\r",
             int(pos * SCALE), velocity, acceleration, acceleration);
     axes[axis_num].send("MOVE 0\r");
+
+    while(!is_stopped(axis_num)) {
+        std::this_thread::sleep_for(100ms);
+    }
 }
 
 /**

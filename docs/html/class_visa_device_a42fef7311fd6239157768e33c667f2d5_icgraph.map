@@ -1,6 +1,6 @@
 <map id="VisaDevice::clear" name="VisaDevice::clear">
 <area shape="rect" id="Node000001" title="Очищает входящий и исходящие буферы устройства" alt="" coords="219,31,340,57"/>
-<area shape="rect" id="Node000002" href="$class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="26,5,150,32"/>
+<area shape="rect" id="Node000002" href="$class_tesart_rbd.html#a8868208a84be63fde36300b16e315423" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="26,5,150,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,37,150,30,151,24,204,31"/>
 <area shape="rect" id="Node000003" href="$class_visa_device.html#ad6eefa87dd7817e61c833d344b5147ee" title="Деструктор, который выполняет отключение от прибора" alt="" coords="5,56,171,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,57,171,61,171,56,204,51"/>

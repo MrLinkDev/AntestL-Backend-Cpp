@@ -22,6 +22,6 @@ var searchData=
   ['set_5fpower_5ftask_19',['set_power_task',['../class_task_manager.html#aba128d250f6cf145f0f8bfe8a9a6c6e6',1,'TaskManager']]],
   ['socketserver_20',['SocketServer',['../class_socket_server.html#a262ba93dc8ad71b260fb75124b3453ee',1,'SocketServer::SocketServer()'],['../class_socket_server.html#a5bf519d83475f538d88d3ba9303e71a0',1,'SocketServer::SocketServer(port_t port, std::string tag=DEFAULT_TAG)'],['../class_socket_server.html#a509c9e31bd06b7cc8e3ba4cfb107ccf8',1,'SocketServer::SocketServer(address_t address, port_t port, std::string tag=DEFAULT_TAG)']]],
   ['split_21',['split',['../namespacestring__utils.html#a95dbb7f33d4ea2396617ddd7953302d0',1,'string_utils']]],
-  ['status_22',['status',['../class_tesart_rbd.html#a650fde87d6af5531ac225689e1f912f1',1,'TesartRbd::status(int axis_num)'],['../class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2',1,'TesartRbd::status(VisaDevice *axis)']]],
+  ['status_22',['status',['../class_tesart_rbd.html#affbded46e17aa303601ba7ef885107b8',1,'TesartRbd::status(int axis_num)'],['../class_tesart_rbd.html#a8868208a84be63fde36300b16e315423',1,'TesartRbd::status(VisaDevice *axis)']]],
   ['stop_23',['stop',['../class_rbd_device.html#a4ad22f51538a1e9083fb36068a543e66',1,'RbdDevice::stop()'],['../class_tesart_rbd.html#abd28c6d7c0d3ccbc76cae094ab825317',1,'TesartRbd::stop()']]]
 ];

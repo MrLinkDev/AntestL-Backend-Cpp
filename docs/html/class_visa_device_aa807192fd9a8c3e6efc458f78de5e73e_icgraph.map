@@ -98,7 +98,7 @@
 <area shape="poly" id="edge49_Node000042_Node000053" title=" " alt="" coords="702,1048,615,1048,615,1043,702,1043"/>
 <area shape="rect" id="Node000054" href="$class_keysight_gen.html#a6f4ac8651f6a5409ad317480bdce022f" title="Установка требуемой мощности сигнала" alt="" coords="472,1083,635,1109"/>
 <area shape="poly" id="edge52_Node000042_Node000054" title=" " alt="" coords="702,1065,617,1085,615,1079,701,1060"/>
-<area shape="rect" id="Node000055" href="$class_tesart_rbd.html#a149160a31d947bef5d67b8bec64c52b2" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="492,1133,616,1160"/>
+<area shape="rect" id="Node000055" href="$class_tesart_rbd.html#a8868208a84be63fde36300b16e315423" title="Запрос статуса оси ОПУ по номеру оси по указателю на нужную ось" alt="" coords="492,1133,616,1160"/>
 <area shape="poly" id="edge53_Node000042_Node000055" title=" " alt="" coords="711,1068,702,1073,688,1085,679,1098,669,1111,654,1124,617,1139,615,1134,651,1119,665,1107,674,1095,684,1082,699,1068,709,1063"/>
 <area shape="rect" id="Node000056" href="$class_planar_s50244.html#ab5d338a1801b1af84302eda8da7e779a" title="Перевод триггера в режим manual." alt="" coords="481,1184,627,1211"/>
 <area shape="poly" id="edge54_Node000042_Node000056" title=" " alt="" coords="707,1069,702,1073,691,1085,685,1097,679,1122,673,1148,666,1161,654,1174,628,1189,626,1184,651,1170,662,1158,668,1146,674,1121,680,1095,687,1082,698,1069,704,1065"/>
