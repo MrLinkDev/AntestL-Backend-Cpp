@@ -1,0 +1,21 @@
+version: 25
+jobs:
+- name: Push to GitHub
+  steps:
+  - !PushRepository
+    name: push
+    remoteUrl: https://github.com/MrLinkDev/AntestL-Backend-Cpp.git
+    passwordSecret: access-token
+    force: false
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  triggers:
+  - !BranchUpdateTrigger
+    branches: main
+    projects: AntestL-Backend-Cpp
+  - !TagCreateTrigger
+    branches: main
+    projects: AntestL-Backend-Cpp
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 3600
