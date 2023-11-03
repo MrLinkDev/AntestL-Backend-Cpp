@@ -36,7 +36,7 @@ long long TesartRbd::status(int axis_num) {
     stream << std::hex << str_answer;
     stream >> answer;
 
-    logger::log(LEVEL_TRACE, "Status = {} ({})", answer, str_answer);
+    logger::log(LEVEL_TRACE, "Status = {}",str_answer);
 
     return answer;
 }
@@ -67,7 +67,7 @@ long long TesartRbd::status(VisaDevice *axis) {
     stream << std::hex << str_answer;
     stream >> answer;
 
-    logger::log(LEVEL_TRACE, "Status = {} ({})", answer, str_answer);
+    logger::log(LEVEL_TRACE, "Status = {}", str_answer);
 
     return answer;
 }
@@ -91,7 +91,9 @@ TesartRbd::TesartRbd(const std::string &device_addresses) {
     }
 
     for (const std::string &address : address_list) {
-        axes.push_back(VisaDevice(address));
+        axes.emplace_back(address);
+
+        logger::log(LEVEL_TRACE, "Connecting to axis {}", axes.size() - 1);
 
         axes[axes.size() - 1].connect();
 
@@ -154,10 +156,6 @@ bool TesartRbd::is_connected() {
  */
 bool TesartRbd::is_stopped(int axis_num) {
     int status_code = status(axis_num);
-
-    Logger::log(LEVEL_TRACE, "IN POS = {} ({})", bool(status_code & BIT_IN_POS), status_code & BIT_IN_POS);
-    Logger::log(LEVEL_TRACE, "MOVE BLOCK = {} ({})", bool(status_code & BIT_MOVE_BLOCK), status_code & BIT_MOVE_BLOCK);
-
     return bool(status_code & BIT_IN_POS) and !bool(status_code & BIT_MOVE_BLOCK);
 }
 
@@ -174,7 +172,7 @@ bool TesartRbd::is_stopped(int axis_num) {
  * \endcode
  */
 void TesartRbd::move(float pos, int axis_num) {
-    logger::log(LEVEL_TRACE, "Axis {} pos = {}", axis_num, pos);
+    logger::log(LEVEL_TRACE, "Axis {} angle = {}", axis_num, pos);
 
     axes[axis_num].send(
             "ORDER 0 {} {} 8192 {} {} 0 -1 0 0\r",
